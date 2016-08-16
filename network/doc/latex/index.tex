@@ -1,0 +1,705 @@
+La bibliothèque \hyperlink{namespacextd_1_1network}{xtd\+::network} est la base de toutes les communications réseaux utilisée dans le moteur.
+
+Elle s\textquotesingle{}appuie sur la bibliothèque boost\+::asio pour fournir des interfaces de haut niveau de client/serveur http et bip (binary-\/protocol).\hypertarget{index_sec_main}{}\section{Sommaire}\label{index_sec_main}
+
+
+ 
+\begin{DoxyEnumerate}
+\item \hyperlink{index_sec_boost}{Un mot sur boost\+::asio} 
+\begin{DoxyEnumerate}
+\item \hyperlink{index_ssec_boost_practice}{Les bonnes pratiques}  
+\item \hyperlink{index_ssec_boost_bug}{Bug dans la version 1.\+48}  
+\end{DoxyEnumerate}
+
+
+\item \hyperlink{index_sec_design}{Le design} 
+\begin{DoxyEnumerate}
+\item \hyperlink{index_ssec_design_obj1}{Objectif n°1 \+: mutualiser la gestion des sockets entre client et serveur}  
+\item \hyperlink{index_ssec_design_obj2}{Objectif n°2 \+: rester procotole agnostique}  
+\end{DoxyEnumerate}
+
+
+\item \hyperlink{index_sec_bip}{Protocol Bip} 
+\begin{DoxyEnumerate}
+\item \hyperlink{index_ssec_bip_cnx}{Format et workflow}  
+\item \hyperlink{index_ssec_bip_client}{Client bip}  
+\item \hyperlink{index_ssec_bip_server}{Serveur bip}  
+\end{DoxyEnumerate}
+
+
+\item \hyperlink{index_sec_http}{Protocol H\+T\+TP} 
+\begin{DoxyEnumerate}
+\item \hyperlink{index_ssec_http_cnx}{Format et workflow}  
+\item \hyperlink{index_ssec_http_server}{Serveur http}  
+\end{DoxyEnumerate}
+
+
+\item \hyperlink{index_sec_usages}{Matrice d\textquotesingle{}utilisation} 
+
+
+\item \hyperlink{index_sec_tests}{Les tests}  
+\end{DoxyEnumerate}~\newline
+~\newline
+
+
+
+
+ \hypertarget{index_sec_boost}{}\section{Un mot sur boost\+::asio}\label{index_sec_boost}
+
+
+
+
+Boost\+::asio (\href{http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio.html}{\tt http\+://www.\+boost.\+org/doc/libs/1\+\_\+48\+\_\+0/doc/html/boost\+\_\+asio.\+html}) est une bibliothèque réseau et I/O écrite en c++ et utilisée dans de nombreux software.~\newline
+ {\bfseries Son utilisation n\textquotesingle{}est pas triviale}, aussi la première chose à faire est de bien lire la documentation et se familiariser avec la gestion des événements asynchrones et de l\textquotesingle{}utilisation du boost\+::asio\+::io\+\_\+service.~\newline
+
+
+~\newline
+ \hypertarget{index_ssec_boost_practice}{}\subsection{Les bonnes pratiques}\label{index_ssec_boost_practice}
+Pour résumer, on retiendra de la documentation \+:
+
+
+\begin{DoxyEnumerate}
+\item qu\textquotesingle{}il est fortement {\bfseries déconseillé} de mélanger synchrone et asynchrone
+\item qu\textquotesingle{}il n\textquotesingle{}est pas possible d\textquotesingle{}utiliser des timeouts en synchrone. En réalité, on peut fermer la socket pendant l\textquotesingle{}éxécution d\textquotesingle{}un événement synchrone mais cette approche n\textquotesingle{}est pas \char`\"{}naturelle\char`\"{} pour le framework boost\+::asio est cela nous a posé beaucoup de problème en production.
+\item qu\textquotesingle{}il faut, en toutes circonstance, garantir la durée de vie des objets et données utilisée dans les callback des événements asynchrones. L\textquotesingle{}utilisation des shared\+\_\+ptr sera ici très utile.
+\item qu\textquotesingle{}il est possible de débugguer la gestion des événements à l\textquotesingle{}aide de la macro {\bfseries -\/\+D\+B\+O\+O\+S\+T\+\_\+\+A\+S\+I\+O\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+T\+R\+A\+C\+K\+I\+NG} (\href{http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio/overview/core/handler_tracking.html}{\tt http\+://www.\+boost.\+org/doc/libs/1\+\_\+48\+\_\+0/doc/html/boost\+\_\+asio/overview/core/handler\+\_\+tracking.\+html})
+\end{DoxyEnumerate}
+
+~\newline
+ \hypertarget{index_ssec_boost_bug}{}\subsection{Bug dans la version 1.\+48}\label{index_ssec_boost_bug}
+Aujourd\textquotesingle{}hui (18-\/10-\/2013), on utilise boost\+::asio en compilant avec la macro {\bfseries -\/\+D\+B\+O\+O\+S\+T\+\_\+\+A\+S\+I\+O\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+E\+P\+O\+LL}. Cette macro a pour effet de forcer l\textquotesingle{}utilisation de l\textquotesingle{}appel systeme \char`\"{}select\char`\"{} a la place de son jeune remplaçant \char`\"{}epoll\char`\"{}.
+
+Ce point nous a posé énormément de problèmes. Pendant plusieurs semaines, des simples \char`\"{}toy problem\char`\"{} ne marchaient pas dès que le serveur avait plus qu\textquotesingle{}une thread en écoute sur son boost\+::asio\+::io\+\_\+service. De temps en temps, le client envoyait une requête, les données traversent le réseaux (wireshark) mais le serveur ne déclenche pas son événement de lecture de donnée sur la socket... rien ne se passe et la socket est perdue.
+
+On a jamais trouvé l\textquotesingle{}explication finale de ce problème, ni de bug précis dans le tracker boost ni d\textquotesingle{}explication à la lecture du code. Toujours est-\/il qu\textquotesingle{}un faisceau d\textquotesingle{}indices nous a fait conclure à une faille de boost\+::asio dans sa gestion du epoll.
+
+Les indices étants \+:
+\begin{DoxyItemize}
+\item de nombreuse va-\/et-\/vient dans les changelog asio sur le epoll entre la version 1.\+48 (qu\textquotesingle{}on utilise) et la version 1.\+54 actuelle
+\item la disparition de ces problèmes lorsqu\textquotesingle{}on passe en select
+\item la disparition de ces problèmes lorsqu\textquotesingle{}on passe en boost\+::asio 1.\+52
+\end{DoxyItemize}
+
+~\newline
+
+
+ \hypertarget{index_sec_design}{}\section{Le design}\label{index_sec_design}
+
+
+
+
+Le design de la bibliothèque \hyperlink{namespacextd_1_1network}{xtd\+::network} est composé de deux couches \+:
+\begin{DoxyItemize}
+\item la couche haute xtd\+::network\+::protocol qui implémentent les clients serveurs pour les protocoles H\+T\+TP et B\+IP utilisés dans le moteur
+\item la couche basse \hyperlink{namespacextd_1_1network_1_1base}{xtd\+::network\+::base} qui fournie les primitives de bas niveau pour l\textquotesingle{}implémentation de ces protocoles.
+\end{DoxyItemize}\hypertarget{index_ssec_design_obj1}{}\subsection{Objectif n°1 \+: mutualiser la gestion des sockets entre client et serveur}\label{index_ssec_design_obj1}
+Pour y parvenir, on crée un objet \char`\"{}\+Connection\char`\"{} qui sera utilisé à la fois dans le client et dans le serveur. Cet objet fera office d\textquotesingle{}interface avec la socket en proposant des primitives simples d\textquotesingle{}ouverture, d\textquotesingle{}envoi et de réception de données.
+
+De plus, cet objet va nous aider dans la gestion du multithreading en garantissant, en travaillant sur son propre boost\+::asio\+::strand, qu\textquotesingle{}une seule opération soit exécutée à la fois.
+
+On se retrouve donc à définir 3 objets dans cette couche basse \+:
+\begin{DoxyItemize}
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{xtd\+::network\+::base\+::\+Connection} \+: un objet s\textquotesingle{}occupant des interactions avec la socket
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Client}{xtd\+::network\+::base\+::\+Client} \+: un client
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Server}{xtd\+::network\+::base\+::\+Server} \+: un serveur
+\end{DoxyItemize}
+
+
+
+On parlera de triplet client/server/connection \+: \hypertarget{index_ssec_design_obj2}{}\subsection{Objectif n°2 \+: rester procotole agnostique}\label{index_ssec_design_obj2}
+On définit un protocol comme étant \+:
+\begin{DoxyItemize}
+\item le format du message échangé \+: quelle langue parlent les deux interlocuteurs et, en particulier, comment font-\/il pour savoir qu\textquotesingle{}un message est terminé (problème du morcelement des packets par le transport T\+C\+P/\+IP).
+\item la séquence du dialogue \+: qui commence à parler ? qui commence à écouter ? En tout temps, il faut qu\textquotesingle{}un interlocuteur écoute lorsque l\textquotesingle{}autre parle et vis/versa.
+\end{DoxyItemize}
+
+Pour rester agnostique du protocol, notre triplet (client, server, connexion) ne doit pas faire de supposition ni le format du message ni sur l\textquotesingle{}enchaînement des envois et des réceptions. En ce qui concerne le format, cela implique que la \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{xtd\+::network\+::base\+::\+Connection} ne peut pas directement écrire et lire sur la socket. Dans certains cas, on voudra lire une donnée de taille fixe, dans d\textquotesingle{}autres cas, un header puis une data, bref, on il faut déléguer ces opérations à la couche xtd\+::network\+::protocol. En ce qui concerne l\textquotesingle{}enchainement des envois/receptions, cela implique que ces objets ne peuvent pas lancer une réception ou un envoi, ils ne peuvent que définir ces primitives mais sans jamais les appeler.
+
+Au final, on se retrouve avec \+:
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{xtd\+::network\+::base\+::\+Connection} \+:
+\begin{DoxyItemize}
+\item ownership de la socket
+\item gestion des envois de message avec timeout (partie abstraite de création et mise sur le socket du message)
+\item gestion des réceptions de message avec timeout (partie abstraite de décodage et lecture sur le socket du message)
+\item gestion ouverture et fermeture de la socket
+\end{DoxyItemize}
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Client}{xtd\+::network\+::base\+::\+Client} \+:
+\begin{DoxyItemize}
+\item gère l\textquotesingle{}instanciation d\textquotesingle{}un connexion
+\item la connexion vers un serveur (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a408b83f0e43d18e32f31d6c13d6dcdf3}{xtd\+::network\+::base\+::\+Connection\+::connect})
+\item l\textquotesingle{}envoie d\textquotesingle{}un message (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a8ebc5958cf7d27a902bd75a55c4648bf}{xtd\+::network\+::base\+::\+Connection\+::send})
+\item la réception d\textquotesingle{}un message (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a09146c9c2dbf1ad85867fd0afab15c0c}{xtd\+::network\+::base\+::\+Connection\+::receive})
+\item la fermeture de la connexion (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a73097d339a3716c05fee7ee19753ee4a}{xtd\+::network\+::base\+::\+Connection\+::close})
+\item les compteurs d\textquotesingle{}exploitation
+\end{DoxyItemize}
+\item \hyperlink{classxtd_1_1network_1_1base_1_1Server}{xtd\+::network\+::base\+::\+Server} \+:
+\begin{DoxyItemize}
+\item l\textquotesingle{}initialisation des threads de traitement et de connexion
+\item l\textquotesingle{}ouverture d\textquotesingle{}une connexion entrante (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_af8da803db4caa1f125548508cf3db134}{xtd\+::network\+::base\+::\+Connection\+::accept})
+\item réception d\textquotesingle{}un message (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a09146c9c2dbf1ad85867fd0afab15c0c}{xtd\+::network\+::base\+::\+Connection\+::receive})
+\item envoie d\textquotesingle{}un message (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a8ebc5958cf7d27a902bd75a55c4648bf}{xtd\+::network\+::base\+::\+Connection\+::send})
+\item fermeture des connexion (utilise \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a73097d339a3716c05fee7ee19753ee4a}{xtd\+::network\+::base\+::\+Connection\+::close})
+\item les compteurs d\textquotesingle{}exploitation
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Ensuite, chaque protocole n\textquotesingle{}a plus qu\textquotesingle{}a définir ses spécificités en créant son propre son triplet de client/server/connexion qui dérive du triplet de base.~\newline
+ Au final ou abouti au modèle suivant \+:
+
+
+
+~\newline
+
+
+ \hypertarget{index_sec_bip}{}\section{Protocol Bip}\label{index_sec_bip}
+
+
+
+
+~\newline
+ \hypertarget{index_ssec_bip_cnx}{}\subsection{Format et workflow}\label{index_ssec_bip_cnx}
+\subsection*{Format }
+
+Un message bip est composé de deux parties \+:
+\begin{DoxyItemize}
+\item un header \+: une suite de Connection\+::mcs\+\_\+header\+Size uint32\+\_\+t (donc taille fixe)
+\item une data \+: une suite de taille variable de uint8
+\item un crc de data \+: un crc en uint8 calculé sur les Connection\+::mcs\+\_\+max\+Data\+Crc\+Size derniers octects de la partie donnée.
+\end{DoxyItemize}
+
+Le header embarque 3 informations \+:
+\begin{DoxyItemize}
+\item la taille de la partie donnée (comptabilise le crc finale) en nombre d\textquotesingle{}octect
+\item un identifiant de requête croissant (s\textquotesingle{}incrémente à chaque requete)
+\item un crc de header calculé sur les (Connection\+::mcs\+\_\+header\+Size -\/ 1) unit32 du header
+\end{DoxyItemize}
+
+A la réception \+:
+\begin{DoxyItemize}
+\item on commence par lire le header
+\item on vérifie l\textquotesingle{}integrité du header en comparant le crc de header reçu et le crc du header re-\/calculé
+\item on extrait la taille du message N attendu a partir du header, on on va lire sur la socket ces N octects.
+\end{DoxyItemize}
+
+A la réception de la partie donnée \+:
+\begin{DoxyItemize}
+\item on vérifie l\textquotesingle{}intégrité du message en comparant le crc de donnée contenu dans dernier octet du message au crc recalculé.
+\end{DoxyItemize}
+
+\subsection*{Séquence de dialogue }
+
+
+
+~\newline
+ \hypertarget{index_ssec_bip_client}{}\subsection{Client bip}\label{index_ssec_bip_client}
+
+\begin{DoxyParams}{Parameters}
+{\em T\+Domain} & \+: mode de connexion, utils\+::af\+\_\+inet ou utils\+::af\+\_\+unix \\
+\hline
+{\em T\+Request} & Structure requète serialisable avec boost\+::serialization \\
+\hline
+{\em T\+Response} & Structure réponse serialisable avec boost\+::serialization\\
+\hline
+\end{DoxyParams}
+Client générique bip \+: gère l\textquotesingle{}envoi de structure T\+Request et la réception de structure T\+Response vers un serveur bip de même type.
+
+Selon la configuration transmise au constructeur, les données pourront etre compressées avant l\textquotesingle{}envoi et décompressée à la réception.
+
+La méthode send de cet objet est non bloquante et déclenche, en interne, la réception de la réponse du serveur. La méthode receive, elle, est bloquante jusqu\textquotesingle{}à la réception effective de la réponse. Cette approche permet à un utilisateur, qui aurait plusieurs client connectés vers plusieurs serveurs, d\textquotesingle{}envoyer ses requètes et de réceptionner en parallèle ses réponses pour au final aller au rythme du serveur le plus lent et pas subir la somme de tous les temps de réponse.
+
+Thread safety \+:
+\begin{DoxyItemize}
+\item même instance \+: non
+\item instances différentes \+: oui
+\end{DoxyItemize}
+
+~\newline
+ \hypertarget{index_ssec_bip_server}{}\subsection{Serveur bip}\label{index_ssec_bip_server}
+
+\begin{DoxyParams}{Parameters}
+{\em Domain} & \+: mode de connexion, utils\+::af\+\_\+inet ou utils\+::af\+\_\+unix \\
+\hline
+{\em T\+Req} & \+: Structure requête serialisable avec boost\+::serialization \\
+\hline
+{\em T\+Res} & \+: Structure réponse serialisable avec boost\+::serialization\\
+\hline
+\end{DoxyParams}
+Serveur générique bip \+: gère la réception de structure T\+Request et l\textquotesingle{}envoi de structure T\+Response vers un client bip de même type.
+
+Cet objet est destiné à être hérité des différents serveurs qui souhaitent communiquer en bip, ces derniers n\textquotesingle{}ont qu\textquotesingle{}a implémenter la méthode virtuelle pure Server\+::process\+Object\+Request pour calculer la réponse à envoyer à partir de la requête reçue
+
+~\newline
+
+
+ \hypertarget{index_sec_http}{}\section{Protocol H\+T\+TP}\label{index_sec_http}
+
+
+
+
+~\newline
+ \hypertarget{index_ssec_http_cnx}{}\subsection{Format et workflow}\label{index_ssec_http_cnx}
+Le protocol http implémenté ici gère les version 1.\+0 et une sous-\/partie de la version 1.\+1 des spécifications données par le W3C. \subsection*{Format}
+
+Un message H\+T\+TP est composé de deux parties \+:
+\begin{DoxyItemize}
+\item un header \+: une suite de caractère ascii de taille variable terminant par une ligne vide (donc identifiable par la séquence d\textquotesingle{}octets \char`\"{}\+C\+R-\/\+L\+F-\/\+C\+R-\/\+L\+R\char`\"{})
+\item une data \+: une suite de caractère ascii de taille variable, optionnelle et potentiellement encodée dans différents formats
+\end{DoxyItemize}
+
+Sans rentrer dans le détail du format du header, ce qui nous intéresse ici c\textquotesingle{}est que, lorsqu\textquotesingle{}une data est envoyée, il contient une directive {\bfseries Content-\/\+Length} qui renseigne sur la taille en octet de la data.
+
+A la réception, on lit des données par petits bouts jusqu\textquotesingle{}à trouver la fin du header (ligne vide), on extrait ensuite la taille de la donnée et, si elle présente et est non-\/nulle, on se met à lire jusqu\textquotesingle{}à avoir suffisamment d\textquotesingle{}octets.
+
+Pour des raisons pratique, le parsing du header et la récupération de la taille de la data est déléguée à l\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Request}{xtd\+::network\+::http\+::\+Request}
+
+\subsection*{Séquence de dialogue }
+
+
+
+~\newline
+ \hypertarget{index_ssec_http_server}{}\subsection{Serveur http}\label{index_ssec_http_server}
+~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em Domain} & mode de connexion, utils\+::af\+\_\+inet ou utils\+::af\+\_\+unix\\
+\hline
+\end{DoxyParams}
+Serveur générique http. Gère la réception de requête H\+T\+TP, les transforme en objet Request, et envoie des réponses H\+T\+TP à partir d\textquotesingle{}objet Response.
+
+En interne, cet objet gère une liste de \char`\"{}handlers\char`\"{}, capables de transformer un objet Request en un objet Response. Il gère également un mécanisme d\textquotesingle{}enregistrement et de routage des requête ces différents handlers.
+
+~\newline
+ \subsection*{Le routage }
+
+Le routage est extrêmement simple. On pacourt la liste des handlers enregistrés, et on exécute le premier vérifiant toutes les conditions. Si aucun handler est trouvé, on exécute le handler par défaut.
+
+Pour être exécuté, un handler doit remplir deux critère \+:
+\begin{DoxyItemize}
+\item l\textquotesingle{}url sur laquelle il à été enregistré correspond a la ressource demandée dans la requête (ce qui suit le G\+ET ou le P\+O\+ST de la première ligne du header). On note le cas spécial où un handler peut être enregistré sur toutes les urls en même temps.
+\item si le handler a été enregistré avec un filtre, on vérifie la condition posée le filtre est vrai pour la requête.
+\end{DoxyItemize}
+
+~\newline
+ \subsection*{Les handlers }
+
+Un handler doit être vu comme un pointeur sur fonction dont le prototype serait \+: 
+\begin{DoxyCode}
+status myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\end{DoxyCode}
+
+
+En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est \char`\"{}h\char`\"{}. Exemple \+: 
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+bind(\textcolor{stringliteral}{"/index"}, h(&MyServer::myhandler, \textcolor{keyword}{this}));
+\end{DoxyCode}
+
+
+La raison pour laquelle ces handlers ont été wrappé dans un objet interne est d\textquotesingle{}une part de ne pas demander à l\textquotesingle{}utilisateur de systématiquement binder 3 placeholders \+\_\+1, \+\_\+2, \+\_\+3.
+
+~\newline
+ \subsection*{Les filtres }
+
+De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait \+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} filter(\textcolor{keyword}{const} Request&);
+\end{DoxyCode}
+
+
+Ils se contruisent à partir de l\textquotesingle{}objet interne du server dont le raccourcis est \char`\"{}f\char`\"{}. Exemple \+: 
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\textcolor{keywordtype}{bool}  MyServer::myfilter(\textcolor{keyword}{const} Request& p\_req);
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+bind(\textcolor{stringliteral}{"/index"}, h(&MyServer::myhandler, \textcolor{keyword}{this}), f(&MyServer::myfilter, \textcolor{keyword}{this}));
+\end{DoxyCode}
+
+
+Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens $\vert$$\vert$, \&\& et !. Exemple \+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\textcolor{keywordtype}{bool}  MyServer::hasHeader(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} Request& p\_req)
+\{
+  \textcolor{keywordflow}{return} p\_req.existsHeader(p\_headerName);
+\}
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+bind(\textcolor{stringliteral}{"/index"},
+     h(&MyServer::myhandler, \textcolor{keyword}{this}),
+     f(&MyServer::hasHeader, \textcolor{keyword}{this}, \textcolor{stringliteral}{"Content-type"}) &&
+     f(&MyServer::hasHeader, \textcolor{keyword}{this}, \textcolor{stringliteral}{"Content-Length"}));
+\end{DoxyCode}
+
+
+~\newline
+ \subsection*{L\textquotesingle{}enregistrement }
+
+Cet objet founi de nombreuses méthodes utilitaires pour faciliter l\textquotesingle{}enregistrement des handlers. Elles sont toutes préfixées par \char`\"{}bind\char`\"{}.
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_url, handler p\_handler, [filter p\_filter]); 
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+url} & ressource à enregistrer \\
+\hline
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel \\
+\hline
+{\em p\+\_\+descr} & description du handler (optionnel)\\
+\hline
+\end{DoxyParams}
+Enregistrement générique de la ressource p\+\_\+url sous condition optionnelle p\+\_\+filter sur le handler p\+\_\+handler. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind\_any(handler p\_handler, [filter p\_filter]); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{xtd\+::network\+::http\+::\+Server\+::bind} mais se déclenche quelque soit la ressource demandée. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind\_default(handler p\_handler); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer\\
+\hline
+\end{DoxyParams}
+Enregistrement du handler à exécuter lorsqu\textquotesingle{}aucun handler valide n\textquotesingle{}a été trouvé. A la construction, le handler par défaut est Server\+::h\+\_\+error\+\_\+template. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind\_redirect(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_src, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dst, [filter p\_filter]); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+src} & ressource sur laquelle déclencher la redirection \\
+\hline
+{\em p\+\_\+dst} & destination de la redirection \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Enregistrement d\textquotesingle{}un handler de redirection. Créer une réponse http qui contient le header \char`\"{}\+Location \+: p\+\_\+dst\char`\"{} et le code H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind\_file(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_path,
+               \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath,
+               \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType = \textcolor{stringliteral}{"text/plain"},
+               [filter            p\_filter]);
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} bind\_dir(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_path,
+              \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath,
+              \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType = \textcolor{stringliteral}{"text/plain"},
+              [filter            p\_filter]);
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+dir} ~\newline
+~\newline
+
+\end{DoxyItemize}
+
+\subsection*{Les handlers prédéfinis }
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+h\_redirect(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dst, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, Response& p\_response)
+      ; 
+\end{DoxyCode}
+ Handler de redirection. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dst} & destination de la redirection H\+T\+TP \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une redirection H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302 \char`\"{}code 302\char`\"{} redirigeant sur p\+\_\+dst
+\item 
+\begin{DoxyCode}
+h\_raw(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_data, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& 
+      p\_request, Response& p\_response); 
+\end{DoxyCode}
+ Handler de contenu. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & donnée à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME de la donnée \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP (Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 contenant la donnée p\+\_\+data et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type
+\item 
+\begin{DoxyCode}
+h\_file(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& 
+      p\_request, Response& p\_response); 
+\end{DoxyCode}
+ Handler de fichier. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+file\+Path} & chemin vers le fichier à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME du fichier \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 embarquant le contenu du fichier pointé par p\+\_\+file\+Path et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type. Si p\+\_\+file\+Path n\textquotesingle{}éxiste pas, la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}.
+\item 
+\begin{DoxyCode}
+h\_dir(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dirPath, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& 
+      p\_request, Response& p\_response); 
+\end{DoxyCode}
+ Handler de répertoire. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dir\+Path} & chemin vers le répertoire à servir \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME des fichiers du répertoire \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} mais trouve automatiquement quel fichier de p\+\_\+dir\+Path à servir en fonction de la ressource demandé dans p\+\_\+request.
+\item 
+\begin{DoxyCode}
+h\_template\_file(\textcolor{keyword}{const} Template& p\_tmpl, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& \textcolor{keyword}{const} uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_request,
+       Response& p\_response); 
+\end{DoxyCode}
+ Handler de texte templaté a partir d\textquotesingle{}un fichier. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tmpl} & objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{template} \\
+\hline
+{\em p\+\_\+file\+Path} & fichier a partir duquel initialiser le template \\
+\hline
+{\em p\+\_\+request\+ID} & identifiant de requête \\
+\hline
+{\em p\+\_\+req} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+res} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP pré-\/formatée par l\textquotesingle{}objet Template p\+\_\+tmpl Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200. Le header {\bfseries Content-\/\+Type} est également donné par p\+\_\+tmpl. Si la lecture du fichier p\+\_\+file\+Path ou si la résolution des variable du template échouent, alors la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}.
+\item 
+\begin{DoxyCode}
+h\_error\_text(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_message, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, Response& 
+      p\_response); 
+\end{DoxyCode}
+ Handler de génération de message d\textquotesingle{}erreur en texte. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP d\textquotesingle{}erreur Response\+::\+S\+T\+A\+T\+U\+S\+\_\+500 de type {\bfseries Content-\/\+Type} \char`\"{}text/plain\char`\"{} contenant le message p\+\_\+message.
+\item 
+\begin{DoxyCode}
+h\_error\_html(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_message, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, Response& 
+      p\_response); 
+\end{DoxyCode}
+ Handler de génération de message d\textquotesingle{}erreur en html. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Même chose que \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text} mais le méssage généré est de type \char`\"{}text/html\char`\"{}.
+\end{DoxyItemize}
+
+\subsection*{Les filtres prédéfinis }
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{bool} f\_none(\textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Toujours vrai. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_cgi\_exist(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_one\_cgi\_exist(\textcolor{keyword}{const} vector <string > & p\_cgiName, \textcolor{keyword}{const} Request& p\_req); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET dont le nom correspond à l\textquotesingle{}un des éléments du tableau p\+\_\+cgi\+Name ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_cgi\_equal(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_cgi\_match(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_regex, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_post\_exist(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_post\_equal(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_post\_match(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_regex, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_header\_exist(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_header\_equal(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur est egale a p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} f\_header\_match(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur match la regexp p\+\_\+value ~\newline
+~\newline
+
+\end{DoxyItemize}
+
+
+
+ \hypertarget{index_sec_usages}{}\section{Matrice d\textquotesingle{}utilisation}\label{index_sec_usages}
+
+
+
+
+
+\begin{DoxyItemize}
+\item matrices des utilisations dans le moteurs  
+\end{DoxyItemize}
+
+
+
+ \hypertarget{index_sec_tests}{}\section{Les tests}\label{index_sec_tests}
+
+
+
+
+
+\begin{DoxyItemize}
+\item cachier de tests  
+\end{DoxyItemize}

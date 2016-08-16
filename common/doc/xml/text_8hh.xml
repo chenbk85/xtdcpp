@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="text_8hh" kind="file" language="C++">
+    <compoundname>text.hh</compoundname>
+    <includes local="no">boost/tuple/tuple.hpp</includes>
+    <includes refid="types_8hh" local="yes">types.hh</includes>
+    <includedby refid="text_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/text.cc</includedby>
+    <incdepgraph>
+      <node id="455">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="456">
+        <label>string</label>
+      </node>
+      <node id="457">
+        <label>map</label>
+      </node>
+      <node id="460">
+        <label>fstream</label>
+      </node>
+      <node id="458">
+        <label>vector</label>
+      </node>
+      <node id="459">
+        <label>sstream</label>
+      </node>
+      <node id="453">
+        <label>/home/psyco/dev/xtdcpp/common/src/text.hh</label>
+        <link refid="text.hh"/>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="462">
+        <label>/home/psyco/dev/xtdcpp/common/src/text.cc</label>
+        <link refid="text_8cc"/>
+      </node>
+      <node id="461">
+        <label>/home/psyco/dev/xtdcpp/common/src/text.hh</label>
+        <link refid="text.hh"/>
+        <childnode refid="462" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1text_1_1xml" prot="public">xtd::text::xml</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1text">xtd::text</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_TEXT_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_TEXT_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/tuple/tuple.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">text<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classxtd_1_1text_1_1xml" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1text_1_1xml" kindref="compound">xml</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::tuple&lt;string,<sp/>string,<sp/>string&gt;<sp/>t_entity;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;t_entity&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_data;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1text_1_1xml_1ab53ec8f1cf407b142479fa90b4d41bdb" kindref="member">encode</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_str);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1text_1_1xml_1a75c4caafbada294ca593a907b9ad1e00" kindref="member">encode_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_str);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>t_data<sp/>initialize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>t_data<sp/>ms_entityList;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_TEXT_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/text.hh"/>
+  </compounddef>
+</doxygen>

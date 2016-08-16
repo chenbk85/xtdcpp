@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1serializer_1_1mode_1_1text" kind="struct" language="C++" prot="public">
+    <compoundname>xtd::serializer::mode::text</compoundname>
+    <includes refid="serializer_8hh" local="no">serializer.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structxtd_1_1serializer_1_1mode_1_1text_1a8be416039df8bbed799423bb996811a8" prot="public" static="no">
+        <type><ref refid="classxtd_1_1serializer_1_1DebugTextOArchive" kindref="compound">DebugTextOArchive</ref></type>
+        <definition>typedef DebugTextOArchive xtd::serializer::mode::text::saver</definition>
+        <argsstring></argsstring>
+        <name>saver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structxtd_1_1serializer_1_1mode_1_1text_1ad178828d538da6465ca47886a70ac664" prot="public" static="no">
+        <type><ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref></type>
+        <definition>typedef DebugTextIArchive xtd::serializer::mode::text::loader</definition>
+        <argsstring></argsstring>
+        <name>loader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1serializer_1_1mode_1_1text_1ad178828d538da6465ca47886a70ac664" prot="public" virt="non-virtual"><scope>xtd::serializer::mode::text</scope><name>loader</name></member>
+      <member refid="structxtd_1_1serializer_1_1mode_1_1text_1a8be416039df8bbed799423bb996811a8" prot="public" virt="non-virtual"><scope>xtd::serializer::mode::text</scope><name>saver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

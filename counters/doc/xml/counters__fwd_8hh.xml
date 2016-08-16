@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="counters__fwd_8hh" kind="file" language="C++">
+    <compoundname>counters_fwd.hh</compoundname>
+    <includedby refid="CounterManager_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh</includedby>
+    <invincdepgraph>
+      <node id="700">
+        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</label>
+        <link refid="CounterManager_8cc"/>
+      </node>
+      <node id="699">
+        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh</label>
+        <link refid="CounterManager_8hh"/>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="698">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh</label>
+        <link refid="counters_fwd.hh"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1Value" prot="public">xtd::counters::Value</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1ExtValue" prot="public">xtd::counters::ExtValue</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1AvgValue" prot="public">xtd::counters::AvgValue</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1SumExt" prot="public">xtd::counters::SumExt</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1AvgExt" prot="public">xtd::counters::AvgExt</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_LIBCOUNTERS_FWD_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_LIBCOUNTERS_FWD_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Base;</highlight></codeline>
+<codeline lineno="9" refid="classxtd_1_1counters_1_1Value" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>;</highlight></codeline>
+<codeline lineno="10" refid="classxtd_1_1counters_1_1ExtValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1ExtValue" kindref="compound">ExtValue</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classxtd_1_1counters_1_1SumExt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1SumExt" kindref="compound">SumExt</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1counters_1_1AvgExt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgExt" kindref="compound">AvgExt</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue" kindref="compound">AvgTimedValue</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SumAvgTimedValue;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Perf" kindref="compound">Perf</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache" kindref="compound">Cache</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1JsonVisitor" kindref="compound">JsonVisitor</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1FileVisitor" kindref="compound">FileVisitor</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager" kindref="compound">CounterManager</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_LIBCOUNTERS_FWD_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh"/>
+  </compounddef>
+</doxygen>

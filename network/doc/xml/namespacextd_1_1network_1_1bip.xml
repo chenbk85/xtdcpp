@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1network_1_1bip" kind="namespace" language="C++">
+    <compoundname>xtd::network::bip</compoundname>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1Client" prot="public">xtd::network::bip::Client</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1ClientPool" prot="public">xtd::network::bip::ClientPool</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1Connection" prot="public">xtd::network::bip::Connection</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1Server" prot="public">xtd::network::bip::Server</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1_1network_1_1bip_1a48193a997dc7b1e8f5515c86ec50405c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Mode</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>status</type>
+        <definition>status xtd::network::bip::loadCompress</definition>
+        <argsstring>(const utils::Config &amp;p_conf, const utils::vectorBytes_t &amp;p_data, T &amp;p_obj, bool &amp;p_debug)</argsstring>
+        <name>loadCompress</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref> &amp;</type>
+          <declname>p_conf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref> &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/tools.hh" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1network_1_1bip_1a86bf6b3f22dd9b8c49cc138e4cd44921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Mode</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>status</type>
+        <definition>status xtd::network::bip::saveCompress</definition>
+        <argsstring>(const utils::Config &amp;p_conf, const T p_obj, const bool p_debug, utils::vectorBytes_t &amp;p_data)</argsstring>
+        <name>saveCompress</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref> &amp;</type>
+          <declname>p_conf</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref> &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/tools.hh" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.cc" line="7" column="1"/>
+  </compounddef>
+</doxygen>

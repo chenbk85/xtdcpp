@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1serializer_1_1serializer" kind="struct" language="C++" prot="public">
+    <compoundname>xtd::serializer::serializer</compoundname>
+    <includes refid="serializer_8hh" local="no">serializer.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>class Mode</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structxtd_1_1serializer_1_1serializer_1a3e2f6195fd27da1f10e131facc8e017f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::serializer::serializer&lt; Mode &gt;::save</definition>
+        <argsstring>(std::ostream &amp;p_stream, const T &amp;p_object, bool p_debug, option p_opt=option())</argsstring>
+        <name>save</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>p_stream</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_object</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structxtd_1_1serializer_1_1serializer_1ac8fd960ff27c165ad77f657f685add30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::serializer::serializer&lt; Mode &gt;::load</definition>
+        <argsstring>(std::istream &amp;p_stream, T &amp;p_object, bool &amp;p_debug, option p_opt=option())</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_stream</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_object</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" bodystart="70" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1serializer_1_1serializer_1ac8fd960ff27c165ad77f657f685add30" prot="public" virt="non-virtual"><scope>xtd::serializer::serializer</scope><name>load</name></member>
+      <member refid="structxtd_1_1serializer_1_1serializer_1a3e2f6195fd27da1f10e131facc8e017f" prot="public" virt="non-virtual"><scope>xtd::serializer::serializer</scope><name>save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1FileVisitor" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::FileVisitor</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Visitor" prot="public" virt="non-virtual">xtd::counters::Visitor</basecompoundref>
+    <includes refid="FileVisitor_8hh" local="no">FileVisitor.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1FileVisitor_1a31d107063997c9caf28dcf7f11be5595" prot="private" static="no">
+        <type>boost::filesystem::path</type>
+        <definition>typedef boost::filesystem::path xtd::counters::FileVisitor::t_path</definition>
+        <argsstring></argsstring>
+        <name>t_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1FileVisitor_1a6840aff0af0e9e443c065f01df4e47c7" prot="private" static="no" mutable="no">
+        <type>const t_path &amp;</type>
+        <definition>const t_path&amp; xtd::counters::FileVisitor::m_path</definition>
+        <argsstring></argsstring>
+        <name>m_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1a1cdf1a2d8abde62c1e4d340e4b68351d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::FileVisitor::FileVisitor</definition>
+        <argsstring>(const t_path &amp;p_path)</argsstring>
+        <name>FileVisitor</name>
+        <param>
+          <type>const t_path &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1af6936e3e1e62880b0eb9fc76b0b0a120" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1a69214d261c695bb48335c58ed2a76cae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint8_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a1a5da2c523703b0c9132595f22e1700e">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1a687eff42ec19d5aed86689e0405fa181" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint16_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a6139d735b720a83e87f49932855f1ade">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1ae5807c31711d611b93e435071855ce2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a0bc4c30e3df6ef796878b85ce1be17fb">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1a9e5edd247355cc9c3387d1bd5cda0642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint64_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1aba895c10dd1a28fa7a8b64e61adee5ac">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1FileVisitor_1a95744f4b5c8e1a63cb50500db82ea037" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::counters::FileVisitor::write</definition>
+        <argsstring>(const string &amp;p_name, TType p_data)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>TType</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="34" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="192">
+        <label>xtd::counters::Visitor</label>
+        <link refid="classxtd_1_1counters_1_1Visitor"/>
+      </node>
+      <node id="191">
+        <label>xtd::counters::FileVisitor</label>
+        <link refid="classxtd_1_1counters_1_1FileVisitor"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="194">
+        <label>xtd::counters::Visitor</label>
+        <link refid="classxtd_1_1counters_1_1Visitor"/>
+      </node>
+      <node id="193">
+        <label>xtd::counters::FileVisitor</label>
+        <link refid="classxtd_1_1counters_1_1FileVisitor"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh" bodystart="14" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a1cdf1a2d8abde62c1e4d340e4b68351d" prot="public" virt="non-virtual"><scope>xtd::counters::FileVisitor</scope><name>FileVisitor</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a6840aff0af0e9e443c065f01df4e47c7" prot="private" virt="non-virtual"><scope>xtd::counters::FileVisitor</scope><name>m_path</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1af6936e3e1e62880b0eb9fc76b0b0a120" prot="public" virt="virtual"><scope>xtd::counters::FileVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a69214d261c695bb48335c58ed2a76cae" prot="public" virt="virtual"><scope>xtd::counters::FileVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a687eff42ec19d5aed86689e0405fa181" prot="public" virt="virtual"><scope>xtd::counters::FileVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1ae5807c31711d611b93e435071855ce2f" prot="public" virt="virtual"><scope>xtd::counters::FileVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a9e5edd247355cc9c3387d1bd5cda0642" prot="public" virt="virtual"><scope>xtd::counters::FileVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a31d107063997c9caf28dcf7f11be5595" prot="private" virt="non-virtual"><scope>xtd::counters::FileVisitor</scope><name>t_path</name></member>
+      <member refid="classxtd_1_1counters_1_1FileVisitor_1a95744f4b5c8e1a63cb50500db82ea037" prot="private" virt="non-virtual"><scope>xtd::counters::FileVisitor</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

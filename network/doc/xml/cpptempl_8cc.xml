@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cpptempl_8cc" kind="file" language="C++">
+    <compoundname>cpptempl.cc</compoundname>
+    <includes refid="cpptempl_8hh" local="yes">cpptempl.hh</includes>
+    <includes local="no">boost/format.hpp</includes>
+    <includes local="no">boost/algorithm/string/replace.hpp</includes>
+    <incdepgraph>
+      <node id="1633">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="1632">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1634">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1636">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="1631">
+        <label>exception</label>
+      </node>
+      <node id="1629">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc</label>
+        <link refid="cpptempl.cc"/>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>cpptempl.hh</label>
+        <link refid="cpptempl_8hh"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>types.hh</label>
+      </node>
+      <node id="1637">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1http">xtd::network::http</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1http_1_1cpptempl">xtd::network::http::cpptempl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cpptempl_8hh" kindref="compound">cpptempl.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/algorithm/string/replace.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
+<codeline lineno="8" refid="namespacextd_1_1network_1_1http_1_1cpptempl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">cpptempl<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">//<sp/>Data<sp/>classes</highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a85999dd8f43177cabf072ddbc406e556" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a85999dd8f43177cabf072ddbc406e556" kindref="member">Data::getvalue</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;Data<sp/>item<sp/>is<sp/>not<sp/>a<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1abb82f257b867cd0da2469cc6c5ecdbae" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kindref="member">data_list</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1abb82f257b867cd0da2469cc6c5ecdbae" kindref="member">Data::getlist</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;Data<sp/>item<sp/>is<sp/>not<sp/>a<sp/>list&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a39713cc7cdc05a2375c1c5d4f00772db" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a39713cc7cdc05a2375c1c5d4f00772db" kindref="member">Data::getmap</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;Data<sp/>item<sp/>is<sp/>not<sp/>a<sp/>dictionary&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1ad84465a538215444a2493150073941da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1ad84465a538215444a2493150073941da" kindref="member">DataValue::getvalue</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_value;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1a34a0c38c41dee41c241bd0b3141a051a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1a34a0c38c41dee41c241bd0b3141a051a" kindref="member">DataValue::empty</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_value.empty();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1a104f3da36e9cc95c9ebb7439febe6eac" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kindref="member">data_list</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1a104f3da36e9cc95c9ebb7439febe6eac" kindref="member">DataList::getlist</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_items;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1ad495c709bd808f6864b9d4d4a3456cd8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1ad495c709bd808f6864b9d4d4a3456cd8" kindref="member">DataList::empty</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_items.empty();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1abfcc73cb22b66dd0be8ad9cd66a75117" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1abfcc73cb22b66dd0be8ad9cd66a75117" kindref="member">DataMap:: getmap</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_items;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1aecf13229511725a1e352f8c25fd1a40e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1aecf13229511725a1e352f8c25fd1a40e" kindref="member">DataMap::empty</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_items.empty();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">//<sp/>parse_val</highlight></codeline>
+<codeline lineno="56" refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kindref="member">data_ptr</ref><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>key,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;data)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>data_map::const_iterator<sp/>cc_value;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>quoted<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(key[0]<sp/>==<sp/>L</highlight><highlight class="charliteral">&apos;\&quot;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a32fe5ec0914372b09492647a168dbbcb" kindref="member">make_data</ref>(boost::trim_copy_if(key,<sp/>boost::is_any_of(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>for<sp/>dotted<sp/>notation,<sp/>i.e<sp/>[foo.bar]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>key.find(</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/>string::npos)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.end()<sp/>==<sp/>(cc_value<sp/>=<sp/>data.find(key)))</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(boost::str(boost::format(</highlight><highlight class="stringliteral">&quot;unresolved<sp/>key<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">)<sp/>%<sp/>key));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cc_value-&gt;second;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.end()<sp/>==<sp/>(cc_value<sp/>=<sp/>data.find(key.substr(0,<sp/>index))))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(boost::str(boost::format(</highlight><highlight class="stringliteral">&quot;unresolved<sp/>key<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">)<sp/>%<sp/>key.substr(0,<sp/>index)));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kindref="member">data_ptr</ref><sp/>item<sp/>=<sp/>cc_value-&gt;second;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(key.substr(index+1),<sp/>item-&gt;getmap());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment">//<sp/>Token<sp/>classes</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adc8822088b8b9a148b755bc25cd1df6e" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adc8822088b8b9a148b755bc25cd1df6e" kindref="member">Token::set_children</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref>&amp;<sp/></highlight><highlight class="comment">/*<sp/>children<sp/>*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;This<sp/>token<sp/>type<sp/>cannot<sp/>have<sp/>children&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref>&amp;</highlight></codeline>
+<codeline lineno="92" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a2611c2d4d0dc383142fb1628df09f381" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a2611c2d4d0dc383142fb1628df09f381" kindref="member">Token::get_children</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;This<sp/>token<sp/>type<sp/>cannot<sp/>have<sp/>children&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1a20f746142036d4dd0025838be6f2139d" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1a20f746142036d4dd0025838be6f2139d" kindref="member">TokenText::gettype</ref>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eeaa3056860c42c00806c737551b598885c" kindref="member">TOKEN_TYPE_TEXT</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1ab29bbfde766c78614ef64cbef8cbf4bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1ab29bbfde766c78614ef64cbef8cbf4bf" kindref="member">TokenText::gettext</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;<sp/>)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_text;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a8e536c216ab9bc23bf74662d47191d7f" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a8e536c216ab9bc23bf74662d47191d7f" kindref="member">TokenVar::gettype</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea0e5df4476507663b07b952aefc096a86" kindref="member">TOKEN_TYPE_VAR</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1afc42a67378efaef5e04552634ac369a8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1afc42a67378efaef5e04552634ac369a8" kindref="member">TokenVar::gettext</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;data<sp/>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(m_key,<sp/>data)-&gt;getvalue();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a536e770283d1ce5e433ad069febdd592" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a536e770283d1ce5e433ad069febdd592" kindref="member">TokenFor::TokenFor</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>expr)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>boost::split(elements,<sp/>expr,<sp/>boost::is_space(),<sp/>boost::token_compress_on);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements.size()<sp/>!=<sp/>4u)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>syntax<sp/>in<sp/>for<sp/>statement&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>m_val<sp/>=<sp/>elements[1];</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>m_key<sp/>=<sp/>elements[3];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a6901a6f0d625a48ae1ca6abc5b5b4d9e" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a6901a6f0d625a48ae1ca6abc5b5b4d9e" kindref="member">TokenFor::gettype</ref>()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea77914f6881c1bc9ec1910ca843bb6965" kindref="member">TOKEN_TYPE_FOR</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a27dde182755e5a44c3d11f1a1ed9aa65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a27dde182755e5a44c3d11f1a1ed9aa65" kindref="member">TokenFor::gettext</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;data<sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kindref="member">data_ptr</ref><sp/>value<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(m_key,<sp/>data);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kindref="member">data_list</ref><sp/>&amp;items<sp/>=<sp/>value-&gt;getlist();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>items.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>data[</highlight><highlight class="stringliteral">&quot;loop&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a32fe5ec0914372b09492647a168dbbcb" kindref="member">make_data</ref>(boost::lexical_cast&lt;string&gt;(i+1));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>data[</highlight><highlight class="stringliteral">&quot;loop0&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a32fe5ec0914372b09492647a168dbbcb" kindref="member">make_data</ref>(boost::lexical_cast&lt;string&gt;(i));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>data[m_val]<sp/>=<sp/>items[i];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>m_children.size();<sp/>++j)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>elements.push_back(m_children[j]-&gt;gettext(data));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::join(elements,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a8256ae71e4f40e1e84426e837b4090ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a8256ae71e4f40e1e84426e837b4090ef" kindref="member">TokenFor::set_children</ref>(<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;children<sp/>)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>m_children.clear();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>std::copy(children.begin(),<sp/>children.end(),<sp/>std::back_inserter(m_children));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1ab742d87d8aea8968ebb3403333ec021e" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1ab742d87d8aea8968ebb3403333ec021e" kindref="member">TokenFor::get_children</ref>()</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_children;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a8f79f4e2ee4ea4eca0ff1730679a28d3" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a8f79f4e2ee4ea4eca0ff1730679a28d3" kindref="member">TokenIf::gettype</ref>()</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea63ca41e19f481129f654b675913cc557" kindref="member">TOKEN_TYPE_IF</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a326aa566357136e9c331be938442176d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a326aa566357136e9c331be938442176d" kindref="member">TokenIf::gettext</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref>&amp;<sp/>data)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_true(m_expr,<sp/>data))</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>m_children.size();<sp/>++j)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>elements.push_back(m_children[j]-&gt;gettext(data));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::join(elements,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1aa803ceac00459d9ceae20b64e4e366e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1aa803ceac00459d9ceae20b64e4e366e7" kindref="member">TokenIf::is_true</ref>(<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>expr,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;data<sp/>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>boost::split(elements,<sp/>expr,<sp/>boost::is_space(),<sp/>boost::token_compress_on);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements[1]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;def&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[2],<sp/>data);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements[1]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ndef&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[2],<sp/>data);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">TemplateException</ref>&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements[1]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;not&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[2],<sp/>data)-&gt;empty();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements.size()<sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[1],<sp/>data)-&gt;empty();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kindref="member">data_ptr</ref><sp/>lhs<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[1],<sp/>data);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kindref="member">data_ptr</ref><sp/>rhs<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kindref="member">parse_val</ref>(elements[3],<sp/>data);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elements[2]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;==&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs-&gt;getvalue()<sp/>==<sp/>rhs-&gt;getvalue();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs-&gt;getvalue()<sp/>!=<sp/>rhs-&gt;getvalue();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ab88a2991518e79ec41c90372c4153210" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ab88a2991518e79ec41c90372c4153210" kindref="member">TokenIf::set_children</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref>&amp;<sp/>children)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>m_children.clear();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>std::copy(children.begin(),<sp/>children.end(),<sp/>std::back_inserter(m_children));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ad289850734bbb131bfef741a80664e31" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ad289850734bbb131bfef741a80664e31" kindref="member">TokenIf::get_children</ref>()</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_children;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a77abd2ae16d92f64368a24bcb273977e" refkind="member"><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a77abd2ae16d92f64368a24bcb273977e" kindref="member">TokenEnd::gettype</ref>()</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;endfor&quot;</highlight><highlight class="normal"><sp/>?<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea7a23df3b1f7078c58e56a3c51c24948c" kindref="member">TOKEN_TYPE_ENDFOR</ref><sp/>:<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea20879254cae890cea9ab4fbdb6223165" kindref="member">TOKEN_TYPE_ENDIF</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a678edd353d6767db6d7a4d3c7c253135" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a678edd353d6767db6d7a4d3c7c253135" kindref="member">TokenEnd::gettext</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref>&amp;<sp/></highlight><highlight class="comment">/*<sp/>data<sp/>*/</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="comment">//<sp/>parse_tree</highlight></codeline>
+<codeline lineno="245" refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" kindref="member">parse_tree</ref>(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;tokens,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;tree,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref><sp/>until)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<sp/>tokens.empty())</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref><sp/>token<sp/>=<sp/>tokens[0];</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>tokens.erase(tokens.begin());</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token-&gt;gettype()<sp/>==<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea77914f6881c1bc9ec1910ca843bb6965" kindref="member">TOKEN_TYPE_FOR</ref>)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>children;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" kindref="member">parse_tree</ref>(tokens,<sp/>children,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea7a23df3b1f7078c58e56a3c51c24948c" kindref="member">TOKEN_TYPE_ENDFOR</ref>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>token-&gt;set_children(children);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token-&gt;gettype()<sp/>==<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea63ca41e19f481129f654b675913cc557" kindref="member">TOKEN_TYPE_IF</ref>)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>children;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" kindref="member">parse_tree</ref>(tokens,<sp/>children,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea20879254cae890cea9ab4fbdb6223165" kindref="member">TOKEN_TYPE_ENDIF</ref>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>token-&gt;set_children(children);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token-&gt;gettype()<sp/>==<sp/>until)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>tree.push_back(token);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="comment">//<sp/>tokenize</highlight></codeline>
+<codeline lineno="273" refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ab8c502f7e8347124c43f3dab3a583b34" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ab8c502f7e8347124c43f3dab3a583b34" kindref="member">tokenize</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>&amp;tokens)</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>text.find(</highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>==<sp/>string::npos)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>text.empty())</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText" kindref="compound">TokenText</ref>(text)));</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tokens;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pre_text<sp/>=<sp/>text.substr(0,<sp/>pos);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>pre_text.empty())</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText" kindref="compound">TokenText</ref>(pre_text)));</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>text<sp/>=<sp/>text.substr(pos+1);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text.empty())</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText" kindref="compound">TokenText</ref>(</highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tokens;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text[0]<sp/>==<sp/>L</highlight><highlight class="charliteral">&apos;$&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>text.find(</highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>!=<sp/>string::npos)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar" kindref="compound">TokenVar</ref>(text.substr(1,<sp/>pos-1))));</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/>text.substr(pos+1);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>control<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(text[0]<sp/>==<sp/>L</highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>text.find(</highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>!=<sp/>string::npos)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>expression<sp/>=<sp/>boost::trim_copy(text.substr(1,<sp/>pos-2));</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/>text.substr(pos+1);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boost::starts_with(expression,<sp/></highlight><highlight class="stringliteral">&quot;for&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor" kindref="compound">TokenFor</ref>(expression)));</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boost::starts_with(expression,<sp/></highlight><highlight class="stringliteral">&quot;if&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf" kindref="compound">TokenIf</ref>(expression)));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd" kindref="compound">TokenEnd</ref>(boost::trim_copy(expression))));</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tokens.push_back(<ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kindref="member">token_ptr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText" kindref="compound">TokenText</ref>(</highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tokens;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="comment">//<sp/>parse</highlight></codeline>
+<codeline lineno="341" refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a10e259ee95bf5effff9095cdd140a058" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a10e259ee95bf5effff9095cdd140a058" kindref="member">parse</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>templ_text,<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref><sp/>&amp;data)</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>tokens;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ab8c502f7e8347124c43f3dab3a583b34" kindref="member">tokenize</ref>(templ_text,<sp/>tokens);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kindref="member">token_vector</ref><sp/>tree;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" kindref="member">parse_tree</ref>(tokens,<sp/>tree);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>nodes;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>nodes.push_back(tree[i]-&gt;gettext(data));</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::join(nodes,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc"/>
+  </compounddef>
+</doxygen>

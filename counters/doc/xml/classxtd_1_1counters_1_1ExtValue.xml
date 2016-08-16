@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1ExtValue" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::ExtValue</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Base" prot="public" virt="non-virtual">xtd::counters::Base</basecompoundref>
+    <includes refid="counters__fwd_8hh" local="no">counters_fwd.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1ExtValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1ExtValue_1ac47193f04ffa774186e4f60060d1c382" prot="private" static="no" mutable="no">
+        <type>const TType &amp;</type>
+        <definition>const TType&amp; xtd::counters::ExtValue&lt; TType &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="25" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1ExtValue_1ac56f634edb50ac47aca158e479bebeae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::ExtValue&lt; TType &gt;::ExtValue</definition>
+        <argsstring>(const string &amp;p_name, const TType &amp;p_value)</argsstring>
+        <name>ExtValue</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::ExtValue&lt; TType &gt;::~ExtValue</definition>
+        <argsstring>(void)</argsstring>
+        <name>~ExtValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" bodystart="19" bodyend="19"/>
+        <references refid="classxtd_1_1counters_1_1ExtValue_1af9ea755a42e20d03d325edfe27e05a75">xtd::counters::ExtValue&lt; TType &gt;::visit_safe</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1ExtValue_1af9ea755a42e20d03d325edfe27e05a75" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::ExtValue&lt; TType &gt;::visit_safe</definition>
+        <argsstring>(Visitor &amp;p_visitor) const </argsstring>
+        <name>visit_safe</name>
+        <reimplements refid="classxtd_1_1counters_1_1Base_1a0b8f3bdc6880dc03da750aa815dfdf0b">visit_safe</reimplements>
+        <param>
+          <type><ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref> &amp;</type>
+          <declname>p_visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="22" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" compoundref="ExtValue_8hh" startline="19" endline="19">xtd::counters::ExtValue&lt; TType &gt;::~ExtValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="187">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="186">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="187" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>xtd::counters::ExtValue&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1ExtValue"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="190">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="189">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="190" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>xtd::counters::ExtValue&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1ExtValue"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh" bodystart="10" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1ExtValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1ExtValue_1ac56f634edb50ac47aca158e479bebeae" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>ExtValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1ExtValue_1ac47193f04ffa774186e4f60060d1c382" prot="private" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>m_value</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa0ea634f1a5e3df87418566a3e8fcbd6" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea" prot="protected" virt="virtual"><scope>xtd::counters::ExtValue</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::ExtValue</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1ExtValue_1af9ea755a42e20d03d325edfe27e05a75" prot="protected" virt="virtual"><scope>xtd::counters::ExtValue</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::ExtValue</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" prot="public" virt="virtual"><scope>xtd::counters::ExtValue</scope><name>~ExtValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

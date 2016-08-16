@@ -1,0 +1,1333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1HttpServer" kind="class" language="C++" prot="public">
+    <compoundname>xtd::servers::app::HttpServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">network::http::Server&lt; network::utils::af_inet &gt;</basecompoundref>
+    <derivedcompoundref refid="classxtd_1_1servers_1_1app_1_1Server" prot="public" virt="non-virtual">xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;</derivedcompoundref>
+    <includes refid="HttpServer_8hh" local="no">HttpServer.hh</includes>
+    <innerclass refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator" prot="private">xtd::servers::app::HttpServer::id_translator</innerclass>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad879d72fb0151a3c383ccbe75bb642cc" prot="protected" static="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer" kindref="compound">HttpServer</ref></type>
+        <definition>typedef HttpServer xtd::servers::app::HttpServer::http_app</definition>
+        <argsstring></argsstring>
+        <name>http_app</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac5263de622bb17c3ec921a00266ea053" prot="protected" static="no">
+        <type>network::http::Server&lt; network::utils::af_inet &gt;</type>
+        <definition>typedef network::http::Server&lt;network::utils::af_inet&gt; xtd::servers::app::HttpServer::http_net</definition>
+        <argsstring></argsstring>
+        <name>http_net</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" prot="protected" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1servers_1_1param_1_1Handler" kindref="compound">servers::param::Handler</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;servers::param::Handler&gt; xtd::servers::app::HttpServer::t_param_handler</definition>
+        <argsstring></argsstring>
+        <name>t_param_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" prot="protected" static="no">
+        <type>counters::CounterManager::t_sptr</type>
+        <definition>typedef counters::CounterManager::t_sptr xtd::servers::app::HttpServer::t_prober</definition>
+        <argsstring></argsstring>
+        <name>t_prober</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" prot="protected" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1servers_1_1app_1_1Action" kindref="compound">Action</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;Action&gt; xtd::servers::app::HttpServer::t_action</definition>
+        <argsstring></argsstring>
+        <name>t_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" prot="protected" static="no">
+        <type>map&lt; string, <ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" kindref="member">t_action</ref> &gt;</type>
+        <definition>typedef map&lt;string, t_action&gt; xtd::servers::app::HttpServer::t_actions</definition>
+        <argsstring></argsstring>
+        <name>t_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" prot="protected" static="no">
+        <type>boost::shared_ptr&lt; counters::Base &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;counters::Base&gt; xtd::servers::app::HttpServer::t_counter</definition>
+        <argsstring></argsstring>
+        <name>t_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="70" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a9ca36e61f5c201a51a68b3919e0badb7" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::HttpServer::mcs_defaultProbeDelay</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultProbeDelay</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="73" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abdc02697ffc7fa9f8f88252101b5d1b9" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::HttpServer::mcs_defaultTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultTimeoutMs</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="74" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad21741083478d35b92ba0b1da7499950" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::HttpServer::mcs_defaultThresholdMs</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultThresholdMs</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="75" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a38433b4c2d0bba9f0bae81266b42bac1" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char xtd::servers::app::HttpServer::mcs_defaultListenInterface</definition>
+        <argsstring>[]</argsstring>
+        <name>mcs_defaultListenInterface</name>
+        <initializer>= &quot;0.0.0.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="76" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" prot="protected" static="no" mutable="no">
+        <type>ConfParser::t_sptr</type>
+        <definition>ConfParser::t_sptr xtd::servers::app::HttpServer::m_config</definition>
+        <argsstring></argsstring>
+        <name>m_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="173" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="173" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::m_configPath</definition>
+        <argsstring></argsstring>
+        <name>m_configPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="174" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="174" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t xtd::servers::app::HttpServer::m_nbThread</definition>
+        <argsstring></argsstring>
+        <name>m_nbThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="175" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="175" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t xtd::servers::app::HttpServer::m_timeoutMs</definition>
+        <argsstring></argsstring>
+        <name>m_timeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="176" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="176" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::HttpServer::m_isModeProbe</definition>
+        <argsstring></argsstring>
+        <name>m_isModeProbe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="177" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="177" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" compoundref="HttpServer_8cc" startline="312" endline="315">modeProbeActivation</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::HttpServer::m_isDebug</definition>
+        <argsstring></argsstring>
+        <name>m_isDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="178" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="178" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::m_snmpPath</definition>
+        <argsstring></argsstring>
+        <name>m_snmpPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="181" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="181" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::app::HttpServer::m_probeDelay</definition>
+        <argsstring></argsstring>
+        <name>m_probeDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="182" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="182" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" kindref="member">t_prober</ref></type>
+        <definition>t_prober xtd::servers::app::HttpServer::m_prober</definition>
+        <argsstring></argsstring>
+        <name>m_prober</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="183" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="183" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" compoundref="HttpServer_8cc" startline="82" endline="88">start</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" compoundref="HttpServer_8cc" startline="91" endline="96">stop</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" compoundref="HttpServer_8cc" startline="206" endline="211">addProbe</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" prot="protected" static="no" mutable="no">
+        <type>counters::Value32::t_sptr</type>
+        <definition>counters::Value32::t_sptr xtd::servers::app::HttpServer::m_ramCounter</definition>
+        <argsstring></argsstring>
+        <name>m_ramCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="184" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="184" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" prot="protected" static="no" mutable="no">
+        <type>counters::AvgTimedValue::t_sptr</type>
+        <definition>counters::AvgTimedValue::t_sptr xtd::servers::app::HttpServer::m_perfCounter</definition>
+        <argsstring></argsstring>
+        <name>m_perfCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="185" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::app::HttpServer::m_thresholdMs</definition>
+        <argsstring></argsstring>
+        <name>m_thresholdMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="186" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="186" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::m_httpHost</definition>
+        <argsstring></argsstring>
+        <name>m_httpHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="189" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="189" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::app::HttpServer::m_httpPort</definition>
+        <argsstring></argsstring>
+        <name>m_httpPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="190" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="190" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" prot="protected" static="no" mutable="no">
+        <type>network::utils::Config</type>
+        <definition>network::utils::Config xtd::servers::app::HttpServer::m_httpConfig</definition>
+        <argsstring></argsstring>
+        <name>m_httpConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="191" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="191" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::m_httpConfigPath</definition>
+        <argsstring></argsstring>
+        <name>m_httpConfigPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="192" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="192" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" kindref="member">t_param_handler</ref></type>
+        <definition>t_param_handler xtd::servers::app::HttpServer::m_params</definition>
+        <argsstring></argsstring>
+        <name>m_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="195" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="195" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" compoundref="HttpServer_8cc" startline="82" endline="88">start</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::m_adminDir</definition>
+        <argsstring></argsstring>
+        <name>m_adminDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="196" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="196" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" kindref="member">t_actions</ref></type>
+        <definition>t_actions xtd::servers::app::HttpServer::m_actions</definition>
+        <argsstring></argsstring>
+        <name>m_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="197" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="197" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" compoundref="HttpServer_8cc" startline="318" endline="326">bind_action</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::HttpServer::HttpServer</definition>
+        <argsstring>(bool p_isDebug=false)</argsstring>
+        <name>HttpServer</name>
+        <param>
+          <type>bool</type>
+          <declname>p_isDebug</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="38" bodyend="68"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" compoundref="HttpServer_8hh" startline="174">m_configPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" compoundref="HttpServer_8hh" startline="176">m_timeoutMs</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" compoundref="HttpServer_8hh" startline="191">m_httpConfig</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" compoundref="HttpServer_8cc" startline="306" endline="310">handleUSR2</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" compoundref="HttpServer_8cc" startline="75" endline="79">handleTERM</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a1082944f193865fc303c2d4a5569eaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>xtd::servers::app::HttpServer::~HttpServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>~HttpServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="80" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::getCommonConfKey</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getCommonConfKey</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="83" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="423" bodyend="426"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::getSpecificConfKey</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSpecificConfKey</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="84" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="429" bodyend="432"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" compoundref="HttpServer_8cc" startline="423" endline="426">getCommonConfKey</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string xtd::servers::app::HttpServer::getSnmpPath</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSnmpPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="85" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="435" bodyend="438"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" compoundref="HttpServer_8hh" startline="181">m_snmpPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" compoundref="HttpServer_8hh" startline="192">m_httpConfigPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" compoundref="HttpServer_8hh" startline="195">m_params</references>
+        <references refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" compoundref="Visitor_8cc" startline="22" endline="25">xtd::servers::param::JsonVisitor::writeExtraInfo</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" compoundref="HttpServer_8hh" startline="173">m_config</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::handleTERM</definition>
+        <argsstring>(void)</argsstring>
+        <name>handleTERM</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="86" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="75" bodyend="79"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" compoundref="HttpServer_8cc" startline="91" endline="96">stop</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int xtd::servers::app::HttpServer::process</definition>
+        <argsstring>(void)</argsstring>
+        <name>process</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1aa9c2d3c2a645f77babb7d0fcbf79ebce">process</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="87" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="273" bodyend="297"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" compoundref="HttpServer_8hh" startline="189">m_httpHost</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" compoundref="HttpServer_8hh" startline="191">m_httpConfig</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" compoundref="HttpServer_8cc" startline="82" endline="88">start</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1a37fe0eca660f81a9edde0c1ce6938f39">stop</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="88" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="91" bodyend="96"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" compoundref="HttpServer_8cc" startline="75" endline="79">handleTERM</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::start</definition>
+        <argsstring>(void)</argsstring>
+        <name>start</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1a8e21bf6e7993a2e04fd70d0ce88ca487">start</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="89" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="82" bodyend="88"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" compoundref="HttpServer_8hh" startline="195">m_params</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::parseConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>parseConfig</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1a04ac2d5b3a0a229a3b54ef33b9b7056d">parseConfig</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="90" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="99" bodyend="182"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" compoundref="HttpServer_8cc" startline="423" endline="426">getCommonConfKey</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" compoundref="HttpServer_8hh" startline="174">m_configPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" compoundref="HttpServer_8hh" startline="173">m_config</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd">readConf</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" compoundref="HttpServer_8hh" startline="181">m_snmpPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" compoundref="HttpServer_8hh" startline="196">m_adminDir</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" compoundref="HttpServer_8hh" startline="182">m_probeDelay</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" compoundref="HttpServer_8hh" startline="192">m_httpConfigPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" compoundref="HttpServer_8hh" startline="189">m_httpHost</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a38433b4c2d0bba9f0bae81266b42bac1" compoundref="HttpServer_8hh" startline="76">mcs_defaultListenInterface</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" compoundref="HttpServer_8hh" startline="186">m_thresholdMs</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" compoundref="HttpServer_8hh" startline="191">m_httpConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::parseHttpPort</definition>
+        <argsstring>(void)</argsstring>
+        <name>parseHttpPort</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="91" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="185" bodyend="189"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd">readConf</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::checkOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>checkOptions</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1a6f5fff5c5058dc43aea7b27a046c985b">checkOptions</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="92" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="193" bodyend="203"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" compoundref="HttpServer_8hh" startline="176">m_timeoutMs</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1aabde8b6a3810b09f029821dddafe3b8c">initialize</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="93" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="240" bodyend="270"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" compoundref="HttpServer_8hh" startline="184">m_ramCounter</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" compoundref="HttpServer_8hh" startline="185">m_perfCounter</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" compoundref="HttpServer_8hh" startline="186">m_thresholdMs</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" compoundref="HttpServer_8hh" startline="182">m_probeDelay</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" compoundref="HttpServer_8hh" startline="195">m_params</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" compoundref="HttpServer_8hh" startline="196">m_adminDir</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" compoundref="HttpServer_8hh" startline="192">m_httpConfigPath</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::defineProbes</definition>
+        <argsstring>(void)</argsstring>
+        <name>defineProbes</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1app_1_1Server_1afbe76a86e66e635907229d37b1267037">defineProbes</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="94" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="215" bodyend="236"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" compoundref="HttpServer_8hh" startline="178">m_isDebug</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" compoundref="HttpServer_8cc" startline="206" endline="211">addProbe</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" compoundref="HttpServer_8hh" startline="184">m_ramCounter</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" compoundref="HttpServer_8hh" startline="185">m_perfCounter</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::handleUSR2</definition>
+        <argsstring>(void)</argsstring>
+        <name>handleUSR2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gestion vip hebex desactivation du service http et reponse 503 mode probe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="306" bodyend="310"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" compoundref="HttpServer_8cc" startline="312" endline="315">modeProbeActivation</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::modeProbeActivation</definition>
+        <argsstring>(void)</argsstring>
+        <name>modeProbeActivation</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="97" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="312" bodyend="315"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" compoundref="HttpServer_8hh" startline="177">m_isModeProbe</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" compoundref="HttpServer_8cc" startline="306" endline="310">handleUSR2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a9247cbc7930939b40df98a20167007c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::setLastAdminLog</definition>
+        <argsstring>(const string &amp;p_message)</argsstring>
+        <name>setLastAdminLog</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::bind_action</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_description, h p_action)</argsstring>
+        <name>bind_action</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_description</declname>
+        </param>
+        <param>
+          <type>h</type>
+          <declname>p_action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="100" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="318" bodyend="326"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" compoundref="HttpServer_8hh" startline="197">m_actions</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_runAction</definition>
+        <argsstring>(const string &amp;p_name, h p_action, const uint32_t p_requestId, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_runAction</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>h</type>
+          <declname>p_action</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestId</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="104" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="329" bodyend="376"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" compoundref="HttpServer_8hh" startline="197">m_actions</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" compoundref="HttpServer_8hh" startline="177">m_isModeProbe</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" compoundref="HttpServer_8cc" startline="318" endline="326">bind_action</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::addProbe</definition>
+        <argsstring>(t_counter p_counter, const string &amp;p_path)</argsstring>
+        <name>addProbe</name>
+        <param>
+          <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" kindref="member">t_counter</ref></type>
+          <declname>p_counter</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="111" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="206" bodyend="211"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a6126daf3a088048921d4e809231c3716" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::addProbe</definition>
+        <argsstring>(const TType &amp;p_value, const string &amp;p_path, const string &amp;p_name)</argsstring>
+        <name>addProbe</name>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::readConf</definition>
+        <argsstring>(const std::string &amp;p_key, T &amp;p_dst, const T &amp;p_default)</argsstring>
+        <name>readConf</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="120" column="1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abe54ee996274b1f6d4a89d29bba56ae8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::readConf</definition>
+        <argsstring>(const std::string &amp;p_key, T &amp;p_dst)</argsstring>
+        <name>readConf</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a433d23eb580dfc0a93b838d192c84f59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HttpServer::process_mem_usage</definition>
+        <argsstring>(uint32_t &amp;p_vmUsage, uint32_t &amp;p_residentSet)</argsstring>
+        <name>process_mem_usage</name>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>p_vmUsage</declname>
+        </param>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>p_residentSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>process_mem_usage(double &amp;, double &amp;) - takes two doubles by reference, attempts to read the system-dependent data for a process&apos; virtual memory size and resident set size, and return the results in KB.</para><para>On failure, returns 0.0, 0.0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="136" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="710" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a34edc125aba91eca5cd8483a6c3f9532" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_actionList</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_actionList</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="138" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="380" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a899871bd03f884d5cf2e639a614e3cbf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_ident</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_ident</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>recuperation des informations vmstats</para></listitem><listitem><para>récupération de tous les compteurs et filtrage</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>création de la réponse http </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="142" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="489" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa24805a306ebd89203c5704cef2123d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_index</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_index</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="146" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="442" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa564d54e5f78c0dc6d16ec7dc4b6c8a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_counter</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_counter</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>recuperation des informations vmstats</para></listitem><listitem><para>récupération de tous les compteurs et filtrage</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>création de la réponse http </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="150" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="533" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa080d8e425c895bea7e989c214c18440" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_admin</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_admin</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="154" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="589" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a1450d81f9f62d9e10d2c360252b7a32c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_conf</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_conf</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="159" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="656" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abcb898bb9cc6817fba1dd0dc950b908b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_log</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_log</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="163" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="673" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f4454e3d32ab7ab793a59987977f20b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::HttpServer::h_probe</definition>
+        <argsstring>(const uint32_t p_requestID, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_probe</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="401" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1Server"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>xtd::servers::app::HttpServer</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HttpServer"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Application</label>
+      </node>
+      <node id="58">
+        <label>network::http::Server&lt; network::utils::af_inet &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>xtd::servers::app::HttpServer</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HttpServer"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Application</label>
+      </node>
+      <node id="62">
+        <label>network::http::Server&lt; network::utils::af_inet &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="47" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>addProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6126daf3a088048921d4e809231c3716" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>addProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>bind_action</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>checkOptions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>defineProbes</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>getCommonConfKey</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>getSnmpPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>getSpecificConfKey</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a34edc125aba91eca5cd8483a6c3f9532" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_actionList</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa080d8e425c895bea7e989c214c18440" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_admin</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1450d81f9f62d9e10d2c360252b7a32c" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_conf</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa564d54e5f78c0dc6d16ec7dc4b6c8a7" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_counter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a899871bd03f884d5cf2e639a614e3cbf" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_ident</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa24805a306ebd89203c5704cef2123d3" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_index</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abcb898bb9cc6817fba1dd0dc950b908b" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_log</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f4454e3d32ab7ab793a59987977f20b" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_probe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>h_runAction</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>handleTERM</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>handleUSR2</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad879d72fb0151a3c383ccbe75bb642cc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>http_app</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac5263de622bb17c3ec921a00266ea053" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>http_net</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>HttpServer</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_actions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_adminDir</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_config</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_configPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_httpConfig</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_httpConfigPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_httpHost</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_httpPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_isDebug</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_isModeProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_nbThread</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_params</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_perfCounter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_probeDelay</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_prober</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_ramCounter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_snmpPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_thresholdMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>m_timeoutMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a38433b4c2d0bba9f0bae81266b42bac1" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>mcs_defaultListenInterface</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9ca36e61f5c201a51a68b3919e0badb7" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>mcs_defaultProbeDelay</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad21741083478d35b92ba0b1da7499950" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>mcs_defaultThresholdMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abdc02697ffc7fa9f8f88252101b5d1b9" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>mcs_defaultTimeoutMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>modeProbeActivation</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>parseConfig</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>parseHttpPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>process</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a433d23eb580dfc0a93b838d192c84f59" prot="private" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>process_mem_usage</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>readConf</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abe54ee996274b1f6d4a89d29bba56ae8" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>readConf</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9247cbc7930939b40df98a20167007c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>setLastAdminLog</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>start</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" prot="protected" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>stop</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>t_action</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>t_actions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>t_counter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>t_param_handler</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>t_prober</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1082944f193865fc303c2d4a5569eaf9" prot="public" virt="virtual"><scope>xtd::servers::app::HttpServer</scope><name>~HttpServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

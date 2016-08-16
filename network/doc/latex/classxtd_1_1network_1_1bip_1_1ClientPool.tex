@@ -1,0 +1,350 @@
+\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool}{}\section{xtd\+:\+:network\+:\+:bip\+:\+:Client\+Pool$<$ T\+Request, T\+Response, T\+Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1bip_1_1ClientPool}\index{xtd\+::network\+::bip\+::\+Client\+Pool$<$ T\+Request, T\+Response, T\+Domain $>$@{xtd\+::network\+::bip\+::\+Client\+Pool$<$ T\+Request, T\+Response, T\+Domain $>$}}
+
+
+{\ttfamily \#include $<$Client\+Pool.\+hh$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient}{Persistent\+Client}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient}{Persistent\+Client} $>$ \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr}
+\item 
+typedef std\+::deque$<$ \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr} $>$ \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ab0b045804570a41e6e491a715d56a469}{t\+\_\+pool}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a19357fadc950be3b681e4c13b602b9ff}{Client\+Pool} (const string \&p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port, const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+conf, const uint32\+\_\+t p\+\_\+ttl\+Ms=20000)
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac38bce359cae12634348f3baceb31668}{get\+Send\+Total} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ae744842f18c70979bf792d10fe799716}{get\+Send\+Success} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a48e713a842d7d5bf0c9142d4f65ab719}{get\+Send\+Error} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a65c430ef8ee5a65ec6289ea554df9ccf}{get\+Send\+Timeout} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_aae35b25fd8d491a7b4e42dcb3b00dbc8}{get\+Rcv\+Total} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a118010103ded46a9d997765e74a9fddf}{get\+Rcv\+Success} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a44f712ba35d274fcb093c55f197539da}{get\+Rcv\+Error} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_abdb1cb0ea47af82189a3df7e074ba123}{get\+Rcv\+Timeout} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a70de85e8b181bd82214bff2aa27600f1}{get\+Cur\+Nb\+Client} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a616b3398d55725cdf1cee89a9c7f1154}{get\+Recycle\+Hit} (void) const 
+\item 
+const uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a0432fecefc0e16d58581e71d9796a423}{get\+Recycle\+Miss} (void) const 
+\item 
+\hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr} \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a9d2d89926ce38e5fbb73ef297945c586}{acquire} (void)
+\begin{DoxyCompactList}\small\item\em Réservation d\textquotesingle{}un client. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a1cba2c44a7995319a0aa2bbb7f823ff4}{send} (\hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr} \&p\+\_\+client, const T\+Request \&p\+\_\+request, bool p\+\_\+debug)
+\begin{DoxyCompactList}\small\item\em Envoie d\textquotesingle{}une requete en utilisant l\textquotesingle{}identifiant de client reservé \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a5884f162a9ca3dee26768eb1f683b6ec}{receive} (\hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr} \&p\+\_\+client, T\+Response \&p\+\_\+response, bool \&p\+\_\+debug)
+\begin{DoxyCompactList}\small\item\em reception d\textquotesingle{}une reponse en utilisant l\textquotesingle{}identifiant de client reservé \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_a390ed6d8afa1812690fbe120bdea5059}{release} (\hyperlink{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{t\+\_\+client\+\_\+sptr} \&p\+\_\+client)
+\begin{DoxyCompactList}\small\item\em libration d\textquotesingle{}un client reservé \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T\+Request, class T\+Response, typename T\+Domain = utils\+::af\+\_\+inet$>$\\*
+class xtd\+::network\+::bip\+::\+Client\+Pool$<$ T\+Request, T\+Response, T\+Domain $>$}
+
+
+
+Definition at line 22 of file Client\+Pool.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!t\+\_\+client\+\_\+sptr@{t\+\_\+client\+\_\+sptr}}
+\index{t\+\_\+client\+\_\+sptr@{t\+\_\+client\+\_\+sptr}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{t\+\_\+client\+\_\+sptr}{t_client_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ typedef boost\+::shared\+\_\+ptr$<${\bf Persistent\+Client}$>$ {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::{\bf t\+\_\+client\+\_\+sptr}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_ac3b215a76aeb124011801824f993a52b}
+
+
+Definition at line 53 of file Client\+Pool.\+hh.
+
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!t\+\_\+pool@{t\+\_\+pool}}
+\index{t\+\_\+pool@{t\+\_\+pool}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{t\+\_\+pool}{t_pool}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ typedef std\+::deque$<${\bf t\+\_\+client\+\_\+sptr}$>$ {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::{\bf t\+\_\+pool}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_ab0b045804570a41e6e491a715d56a469}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_ab0b045804570a41e6e491a715d56a469}
+
+
+Definition at line 54 of file Client\+Pool.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!Client\+Pool@{Client\+Pool}}
+\index{Client\+Pool@{Client\+Pool}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{Client\+Pool(const string \&p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port, const utils\+::\+Config \&p\+\_\+conf, const uint32\+\_\+t p\+\_\+ttl\+Ms=20000)}{ClientPool(const string &p_hostname, const uint32_t p_port, const utils::Config &p_conf, const uint32_t p_ttlMs=20000)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::{\bf Client\+Pool} (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+hostname, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port, }
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+conf, }
+\item[{const uint32\+\_\+t}]{p\+\_\+ttl\+Ms = {\ttfamily 20000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a19357fadc950be3b681e4c13b602b9ff}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a19357fadc950be3b681e4c13b602b9ff}
+Constructor 
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!acquire@{acquire}}
+\index{acquire@{acquire}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{acquire(void)}{acquire(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ {\bf t\+\_\+client\+\_\+sptr} {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::acquire (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a9d2d89926ce38e5fbb73ef297945c586}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a9d2d89926ce38e5fbb73ef297945c586}
+
+
+Réservation d\textquotesingle{}un client. 
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1bip_1_1ClientPool_a9d2d89926ce38e5fbb73ef297945c586_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Cur\+Nb\+Client@{get\+Cur\+Nb\+Client}}
+\index{get\+Cur\+Nb\+Client@{get\+Cur\+Nb\+Client}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Cur\+Nb\+Client(void) const }{getCurNbClient(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Cur\+Nb\+Client (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a70de85e8b181bd82214bff2aa27600f1}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a70de85e8b181bd82214bff2aa27600f1}
+
+
+Definition at line 74 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+74 \{ \textcolor{keywordflow}{return} m\_curNbClient; \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Rcv\+Error@{get\+Rcv\+Error}}
+\index{get\+Rcv\+Error@{get\+Rcv\+Error}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Rcv\+Error(void) const }{getRcvError(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Rcv\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a44f712ba35d274fcb093c55f197539da}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a44f712ba35d274fcb093c55f197539da}
+
+
+Definition at line 72 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+72 \{ \textcolor{keywordflow}{return} m\_rcvError;    \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Rcv\+Success@{get\+Rcv\+Success}}
+\index{get\+Rcv\+Success@{get\+Rcv\+Success}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Rcv\+Success(void) const }{getRcvSuccess(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Rcv\+Success (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a118010103ded46a9d997765e74a9fddf}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a118010103ded46a9d997765e74a9fddf}
+
+
+Definition at line 71 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+71 \{ \textcolor{keywordflow}{return} m\_rcvSuccess;  \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Rcv\+Timeout@{get\+Rcv\+Timeout}}
+\index{get\+Rcv\+Timeout@{get\+Rcv\+Timeout}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Rcv\+Timeout(void) const }{getRcvTimeout(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Rcv\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_abdb1cb0ea47af82189a3df7e074ba123}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_abdb1cb0ea47af82189a3df7e074ba123}
+
+
+Definition at line 73 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+73 \{ \textcolor{keywordflow}{return} m\_rcvTimeout;  \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Rcv\+Total@{get\+Rcv\+Total}}
+\index{get\+Rcv\+Total@{get\+Rcv\+Total}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Rcv\+Total(void) const }{getRcvTotal(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Rcv\+Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_aae35b25fd8d491a7b4e42dcb3b00dbc8}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_aae35b25fd8d491a7b4e42dcb3b00dbc8}
+
+
+Definition at line 70 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+70 \{ \textcolor{keywordflow}{return} m\_rcvTotal;    \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Recycle\+Hit@{get\+Recycle\+Hit}}
+\index{get\+Recycle\+Hit@{get\+Recycle\+Hit}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Recycle\+Hit(void) const }{getRecycleHit(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Recycle\+Hit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a616b3398d55725cdf1cee89a9c7f1154}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a616b3398d55725cdf1cee89a9c7f1154}
+
+
+Definition at line 75 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+75 \{ \textcolor{keywordflow}{return} m\_recycleHit;  \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Recycle\+Miss@{get\+Recycle\+Miss}}
+\index{get\+Recycle\+Miss@{get\+Recycle\+Miss}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Recycle\+Miss(void) const }{getRecycleMiss(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Recycle\+Miss (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a0432fecefc0e16d58581e71d9796a423}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a0432fecefc0e16d58581e71d9796a423}
+
+
+Definition at line 76 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+76 \{ \textcolor{keywordflow}{return} m\_recycleMiss; \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1bip_1_1ClientPool_a0432fecefc0e16d58581e71d9796a423_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Send\+Error@{get\+Send\+Error}}
+\index{get\+Send\+Error@{get\+Send\+Error}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Send\+Error(void) const }{getSendError(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Send\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a48e713a842d7d5bf0c9142d4f65ab719}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a48e713a842d7d5bf0c9142d4f65ab719}
+
+
+Definition at line 68 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+68 \{ \textcolor{keywordflow}{return} m\_sendError;   \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Send\+Success@{get\+Send\+Success}}
+\index{get\+Send\+Success@{get\+Send\+Success}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Send\+Success(void) const }{getSendSuccess(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Send\+Success (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_ae744842f18c70979bf792d10fe799716}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_ae744842f18c70979bf792d10fe799716}
+
+
+Definition at line 67 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+67 \{ \textcolor{keywordflow}{return} m\_sendSuccess; \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Send\+Timeout@{get\+Send\+Timeout}}
+\index{get\+Send\+Timeout@{get\+Send\+Timeout}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Send\+Timeout(void) const }{getSendTimeout(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Send\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a65c430ef8ee5a65ec6289ea554df9ccf}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a65c430ef8ee5a65ec6289ea554df9ccf}
+
+
+Definition at line 69 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+69 \{ \textcolor{keywordflow}{return} m\_sendTimeout; \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!get\+Send\+Total@{get\+Send\+Total}}
+\index{get\+Send\+Total@{get\+Send\+Total}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{get\+Send\+Total(void) const }{getSendTotal(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ const uint32\+\_\+t\& {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::get\+Send\+Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_ac38bce359cae12634348f3baceb31668}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_ac38bce359cae12634348f3baceb31668}
+
+
+Definition at line 66 of file Client\+Pool.\+hh.
+
+
+\begin{DoxyCode}
+66 \{ \textcolor{keywordflow}{return} m\_sendTotal;   \}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!receive@{receive}}
+\index{receive@{receive}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{receive(t\+\_\+client\+\_\+sptr \&p\+\_\+client, T\+Response \&p\+\_\+response, bool \&p\+\_\+debug)}{receive(t_client_sptr &p_client, TResponse &p_response, bool &p_debug)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+client\+\_\+sptr} \&}]{p\+\_\+client, }
+\item[{T\+Response \&}]{p\+\_\+response, }
+\item[{bool \&}]{p\+\_\+debug}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a5884f162a9ca3dee26768eb1f683b6ec}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a5884f162a9ca3dee26768eb1f683b6ec}
+
+
+reception d\textquotesingle{}une reponse en utilisant l\textquotesingle{}identifiant de client reservé 
+
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!release@{release}}
+\index{release@{release}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{release(t\+\_\+client\+\_\+sptr \&p\+\_\+client)}{release(t_client_sptr &p_client)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::release (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+client\+\_\+sptr} \&}]{p\+\_\+client}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a390ed6d8afa1812690fbe120bdea5059}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a390ed6d8afa1812690fbe120bdea5059}
+
+
+libration d\textquotesingle{}un client reservé 
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1bip_1_1ClientPool_a390ed6d8afa1812690fbe120bdea5059_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}!send@{send}}
+\index{send@{send}!xtd\+::network\+::bip\+::\+Client\+Pool@{xtd\+::network\+::bip\+::\+Client\+Pool}}
+\subsubsection[{\texorpdfstring{send(t\+\_\+client\+\_\+sptr \&p\+\_\+client, const T\+Request \&p\+\_\+request, bool p\+\_\+debug)}{send(t_client_sptr &p_client, const TRequest &p_request, bool p_debug)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\+Request , class T\+Response , typename T\+Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::bip\+::\+Client\+Pool}$<$ T\+Request, T\+Response, T\+Domain $>$\+::send (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+client\+\_\+sptr} \&}]{p\+\_\+client, }
+\item[{const T\+Request \&}]{p\+\_\+request, }
+\item[{bool}]{p\+\_\+debug}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1ClientPool_a1cba2c44a7995319a0aa2bbb7f823ff4}{}\label{classxtd_1_1network_1_1bip_1_1ClientPool_a1cba2c44a7995319a0aa2bbb7f823ff4}
+
+
+Envoie d\textquotesingle{}une requete en utilisant l\textquotesingle{}identifiant de client reservé 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/bip/\hyperlink{ClientPool_8hh}{Client\+Pool.\+hh}\end{DoxyCompactItemize}

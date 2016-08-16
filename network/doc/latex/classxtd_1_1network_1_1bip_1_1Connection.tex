@@ -1,0 +1,102 @@
+\hypertarget{classxtd_1_1network_1_1bip_1_1Connection}{}\section{xtd\+:\+:network\+:\+:bip\+:\+:Connection$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1bip_1_1Connection}\index{xtd\+::network\+::bip\+::\+Connection$<$ Domain $>$@{xtd\+::network\+::bip\+::\+Connection$<$ Domain $>$}}
+
+
+{\ttfamily \#include $<$Connection.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:bip\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classxtd_1_1network_1_1bip_1_1Connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:bip\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1bip_1_1Connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1bip_1_1Connection_a5c981bbe6f8f26ac8eb25f70b2427d5c}{Connection} (const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)
+\item 
+void \hyperlink{classxtd_1_1network_1_1bip_1_1Connection_acac00964a4fc76de35cdb516e9d73051}{inc\+Counter} (void)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain$>$\\*
+class xtd\+::network\+::bip\+::\+Connection$<$ Domain $>$}
+
+\subsubsection*{Format }
+
+Un message bip est composé de deux parties \+:
+\begin{DoxyItemize}
+\item un header \+: une suite de Connection\+::mcs\+\_\+header\+Size uint32\+\_\+t (donc taille fixe)
+\item une data \+: une suite de taille variable de uint8
+\item un crc de data \+: un crc en uint8 calculé sur les Connection\+::mcs\+\_\+max\+Data\+Crc\+Size derniers octects de la partie donnée.
+\end{DoxyItemize}
+
+Le header embarque 3 informations \+:
+\begin{DoxyItemize}
+\item la taille de la partie donnée (comptabilise le crc finale) en nombre d\textquotesingle{}octect
+\item un identifiant de requête croissant (s\textquotesingle{}incrémente à chaque requete)
+\item un crc de header calculé sur les (Connection\+::mcs\+\_\+header\+Size -\/ 1) unit32 du header
+\end{DoxyItemize}
+
+A la réception \+:
+\begin{DoxyItemize}
+\item on commence par lire le header
+\item on vérifie l\textquotesingle{}integrité du header en comparant le crc de header reçu et le crc du header re-\/calculé
+\item on extrait la taille du message N attendu a partir du header, on on va lire sur la socket ces N octects.
+\end{DoxyItemize}
+
+A la réception de la partie donnée \+:
+\begin{DoxyItemize}
+\item on vérifie l\textquotesingle{}intégrité du message en comparant le crc de donnée contenu dans dernier octet du message au crc recalculé.
+\end{DoxyItemize}
+
+\subsubsection*{Séquence de dialogue }
+
+ 
+
+Definition at line 43 of file Connection.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::bip\+::\+Connection@{xtd\+::network\+::bip\+::\+Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!xtd\+::network\+::bip\+::\+Connection@{xtd\+::network\+::bip\+::\+Connection}}
+\subsubsection[{\texorpdfstring{Connection(const utils\+::\+Config \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)}{Connection(const utils::Config &p_configuration, boost::asio::io_service &p_ioService, const string p_hostname, const uint32_t p_port)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf xtd\+::network\+::bip\+::\+Connection}$<$ Domain $>$\+::{\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+configuration, }
+\item[{boost\+::asio\+::io\+\_\+service \&}]{p\+\_\+io\+Service, }
+\item[{const string}]{p\+\_\+hostname, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Connection_a5c981bbe6f8f26ac8eb25f70b2427d5c}{}\label{classxtd_1_1network_1_1bip_1_1Connection_a5c981bbe6f8f26ac8eb25f70b2427d5c}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::bip\+::\+Connection@{xtd\+::network\+::bip\+::\+Connection}!inc\+Counter@{inc\+Counter}}
+\index{inc\+Counter@{inc\+Counter}!xtd\+::network\+::bip\+::\+Connection@{xtd\+::network\+::bip\+::\+Connection}}
+\subsubsection[{\texorpdfstring{inc\+Counter(void)}{incCounter(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::bip\+::\+Connection}$<$ Domain $>$\+::inc\+Counter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1Connection_acac00964a4fc76de35cdb516e9d73051}{}\label{classxtd_1_1network_1_1bip_1_1Connection_acac00964a4fc76de35cdb516e9d73051}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/bip/\hyperlink{bip_2Connection_8hh}{Connection.\+hh}\end{DoxyCompactItemize}

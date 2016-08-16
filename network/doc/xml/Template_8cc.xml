@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Template_8cc" kind="file" language="C++">
+    <compoundname>Template.cc</compoundname>
+    <includes refid="Template_8hh" local="yes">Template.hh</includes>
+    <includes local="no">boost/algorithm/string/replace.hpp</includes>
+    <includes local="no">boost/format.hpp</includes>
+    <includes local="no">json_parser.hpp</includes>
+    <includes local="no">logger.hh</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">boost/assign/std/vector.hpp</includes>
+    <includes local="no">boost/range/algorithm/for_each.hpp</includes>
+    <includes local="no">boost/lambda/lambda.hpp</includes>
+    <includes local="no">boost/lambda/bind.hpp</includes>
+    <includes local="no">text.hh</includes>
+    <incdepgraph>
+      <node id="1714">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="1725">
+        <label>boost/lambda/lambda.hpp</label>
+      </node>
+      <node id="1719">
+        <label>json_parser.hpp</label>
+      </node>
+      <node id="1716">
+        <label>Template.hxx</label>
+      </node>
+      <node id="1713">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1722">
+        <label>iterator</label>
+      </node>
+      <node id="1715">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1726">
+        <label>boost/lambda/bind.hpp</label>
+      </node>
+      <node id="1727">
+        <label>text.hh</label>
+      </node>
+      <node id="1718">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="1708">
+        <label>string</label>
+      </node>
+      <node id="1712">
+        <label>exception</label>
+      </node>
+      <node id="1721">
+        <label>fstream</label>
+      </node>
+      <node id="1723">
+        <label>boost/assign/std/vector.hpp</label>
+      </node>
+      <node id="1706">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Template.cc</label>
+        <link refid="Template.cc"/>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>Template.hh</label>
+        <link refid="Template_8hh"/>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+      </node>
+      <node id="1709">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="1711">
+        <label>cpptempl.hh</label>
+        <link refid="cpptempl_8hh"/>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>logger.hh</label>
+      </node>
+      <node id="1724">
+        <label>boost/range/algorithm/for_each.hpp</label>
+      </node>
+      <node id="1710">
+        <label>types.hh</label>
+      </node>
+      <node id="1717">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1http">xtd::network::http</innernamespace>
+    <innernamespace refid="namespaceboost_1_1assign">boost::assign</innernamespace>
+    <innernamespace refid="namespaceboost">boost</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Template_8hh" kindref="compound">Template.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/assign/std/vector.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/range/algorithm/for_each.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lambda/lambda.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lambda/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;json_parser.hpp&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;text.hh&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost_1_1assign" kindref="compound">boost::assign</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Generator::mcs_defaultContentType<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>HtmlTemplate::mcs_htmlTemplate<sp/>=</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;!DOCTYPE<sp/>html<sp/>PUBLIC<sp/>\&quot;-//W3C//DTD<sp/>XHTML<sp/>1.0<sp/>Strict//EN\&quot;<sp/>\&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\&quot;&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;html<sp/>xmlns=&apos;http://www.w3.org/1999/xhtml&apos;&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&lt;head&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;meta<sp/>http-equiv=&apos;Content-Type&apos;<sp/>content=&apos;{$__mimeType};<sp/>charset={$__charset}&apos;/&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;meta<sp/>name=&apos;description&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content=&apos;{$__metaDescription}&apos;/&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;meta<sp/>name=&apos;keywords&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content=&apos;{$__metaKeywords}&apos;/&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&apos;shortcut<sp/>icon&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>type=&apos;image/x-icon&apos;<sp/>href=&apos;{$__favico}&apos;/&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;title&gt;{$__title}&lt;/title&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>for<sp/>jsUrl<sp/>in<sp/>__jsList<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;script<sp/>type=&apos;text/javascript&apos;<sp/>src=&apos;{$jsUrl}&apos;&gt;&lt;/script&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>endfor<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>for<sp/>cssUrl<sp/>in<sp/>__cssList<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&apos;stylesheet&apos;<sp/>type=&apos;text/css&apos;<sp/>href=&apos;{$cssUrl}&apos;/&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>endfor<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&lt;/head&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&lt;body<sp/>id=&apos;main_body&apos;&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>{$__content}\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&lt;/body&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;/html&gt;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>XmlTemplate::mcs_xmlTemplate<sp/>=</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;?xml<sp/>version=&apos;1.0&apos;<sp/>encoding=&apos;{$__charset}&apos;?&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>if<sp/>__xsltUrl<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;?xml-stylesheet<sp/>href=&apos;{$__xsltUrl}&apos;<sp/>type=&apos;text/xsl&apos;?&gt;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{%<sp/>endif<sp/>%}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;{$__xmlData}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classxtd_1_1network_1_1http_1_1Generator_1a5f8bfffa6c7fe8ae46158e976af3d666" refkind="member"><highlight class="normal">Generator::Generator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType)<sp/>:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>m_contentType(p_contentType),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>m_error()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" kindref="member">Generator::~Generator</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classxtd_1_1network_1_1http_1_1Json_1ac94f0562a18b08ddedf5d63b432f9669" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Json_1ac94f0562a18b08ddedf5d63b432f9669" kindref="member">Json::Json</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Generator" kindref="compound">Generator</ref>(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>m_root()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classxtd_1_1network_1_1http_1_1Json_1afcafba0e5e474b974c750652523dd402" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Json_1afcafba0e5e474b974c750652523dd402" kindref="member">Json::~Json</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="78" refid="classxtd_1_1network_1_1http_1_1Json_1a7a9ed4f957c77813ecbb84e228936b5e" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Json_1a7a9ed4f957c77813ecbb84e228936b5e" kindref="member">Json::resolve</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_result)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::stringstream<sp/>l_out;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::property_tree::json_parser::write_json(l_out,<sp/>m_root);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>p_result<sp/>=<sp/>l_out.str();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::property_tree::ptree_error&amp;<sp/>l_error)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" kindref="member">addError</ref>(str(format(</highlight><highlight class="stringliteral">&quot;json<sp/>resolve<sp/>error<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">)<sp/>%<sp/>l_error.what()));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classxtd_1_1network_1_1http_1_1Template_1a1887dcae44d24a8594bc41a349a7e6fe" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1a1887dcae44d24a8594bc41a349a7e6fe" kindref="member">Template::Template</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType)<sp/>:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Generator" kindref="compound">Generator</ref>(p_contentType),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>m_template(),</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>m_data(),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>m_content()</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classxtd_1_1network_1_1http_1_1Template_1aa31bb4b8ade7e47fb564004bbf92c542" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1aa31bb4b8ade7e47fb564004bbf92c542" kindref="member">Template::~Template</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="111" refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kindref="member">Template::resolve</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_result)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((0<sp/>==<sp/>m_template.size())<sp/>&amp;&amp;<sp/>(m_content.size()<sp/>==<sp/>0))</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" kindref="member">addError</ref>(</highlight><highlight class="stringliteral">&quot;you<sp/>must<sp/>set<sp/>either<sp/>template<sp/>content<sp/>or<sp/>raw<sp/>content&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/>m_template.size())</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p_result<sp/>=<sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a10e259ee95bf5effff9095cdd140a058" kindref="member">cpptempl::parse</ref>(m_template,<sp/>m_data);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kindref="compound">cpptempl::TemplateException</ref>&amp;<sp/>l_error)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" kindref="member">addError</ref>(str(format(</highlight><highlight class="stringliteral">&quot;template<sp/>parsing<sp/>error<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">)<sp/>%<sp/>l_error.<ref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException_1ae7f1bb4b84c8689b502cdbaa0954ed41" kindref="member">what</ref>()));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p_result.clear();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>p_result<sp/>=<sp/>m_content;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="141" refid="classxtd_1_1network_1_1http_1_1Template_1a1250db96f0300bf4f56aae5929e5dbb2" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1a1250db96f0300bf4f56aae5929e5dbb2" kindref="member">Template::loadTemplate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_templatePath)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_templateText;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>std::ifstream<sp/>l_templateFile(p_templatePath.c_str());</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!l_templateFile)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::err(</highlight><highlight class="stringliteral">&quot;network.http.template&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;unable<sp/>to<sp/>open<sp/>template<sp/>file<sp/>&apos;%s&apos;&quot;</highlight><highlight class="normal">,<sp/>p_templatePath,<sp/>HERE);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>copy(std::istreambuf_iterator&lt;char&gt;(l_templateFile.rdbuf()),</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::istreambuf_iterator&lt;char&gt;(),</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::insert_iterator&lt;string&gt;(l_templateText,<sp/>l_templateText.begin()));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86" kindref="member">setTemplate</ref>(l_templateText);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1a3834dff3cec2cc0fbc66efed74f29459" kindref="member">Template::t_val</ref></highlight></codeline>
+<codeline lineno="162" refid="classxtd_1_1network_1_1http_1_1Template_1a3a96743542ae1a063e90ec3ec2e774f8" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">Template::val</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_val,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_encode)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_value<sp/>=<sp/>p_val;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>==<sp/>p_encode)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>xtd::text::xml::encode(l_value);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a32fe5ec0914372b09492647a168dbbcb" kindref="member">cpptempl::make_data</ref>(l_value);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref>&amp;</highlight></codeline>
+<codeline lineno="172" refid="classxtd_1_1network_1_1http_1_1Template_1a543a79fedf08f519912e9ad42a3d3f64" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Template_1aade6209a71f79db50f37ac18c0afd5a1" kindref="member">Template::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_val,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_encode)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>m_data[p_key]<sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(p_val,<sp/>p_encode);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" kindref="member">HtmlTemplate::HtmlTemplate</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_defaultAssests)<sp/>:</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref>(</highlight><highlight class="stringliteral">&quot;text/html&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>m_title(</highlight><highlight class="stringliteral">&quot;unspecified<sp/>page<sp/>title&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>m_cssList(),</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>m_jsList(),</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>m_metaDescription(),</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>m_metaKeywords(),</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>m_mimeType(</highlight><highlight class="stringliteral">&quot;text/html&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>m_charset(</highlight><highlight class="stringliteral">&quot;UTF-8&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>m_favico()</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>==<sp/>p_defaultAssests)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" kindref="member">setFavico</ref>(</highlight><highlight class="stringliteral">&quot;/favico.ico&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.cookie.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.mousewheel.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.dataTables.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.sprintf.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery-ui.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery-ui.timepicker.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery-ui.multiselect.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.validate.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.validate.methods.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kindref="member">addJs</ref>(</highlight><highlight class="stringliteral">&quot;/js/jquery.validate.locale_fr-utf8.js&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kindref="member">addCss</ref>(</highlight><highlight class="stringliteral">&quot;/css/jquery-ui.css&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kindref="member">addCss</ref>(</highlight><highlight class="stringliteral">&quot;/css/jquery-ui.dataTables.css&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kindref="member">addCss</ref>(</highlight><highlight class="stringliteral">&quot;/css/jquery-ui.multiselect.css&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kindref="member">addCss</ref>(</highlight><highlight class="stringliteral">&quot;/css/jquery-ui.timepicker.css&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kindref="member">addCss</ref>(</highlight><highlight class="stringliteral">&quot;/css/codemirror.css&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="217" refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70" kindref="member">HtmlTemplate::resolve</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_result)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_content;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">cpptempl::data_map</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_data;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kindref="member">cpptempl::data_list</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_cssList;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kindref="member">cpptempl::data_list</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_jsList;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;::const_iterator<sp/>cc_item;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_template;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref><sp/>!=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kindref="member">Template::resolve</ref>(l_content))</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>log</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(cc_item<sp/>=<sp/>m_cssList.begin();<sp/>cc_item<sp/>!=<sp/>m_cssList.end();<sp/>cc_item++)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>l_cssList<sp/>+=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(*cc_item,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(cc_item<sp/>=<sp/>m_jsList.begin();<sp/>cc_item<sp/>!=<sp/>m_jsList.end();<sp/>cc_item++)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>l_jsList<sp/>+=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(*cc_item,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__title&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_title,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__favico&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_favico);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__content&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(l_content);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__cssList&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(l_cssList);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__jsList&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(l_jsList);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__mimeType&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_mimeType,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__charset&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_charset,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__metaDescription&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_metaDescription,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__metaKeywords&quot;</highlight><highlight class="normal">]<sp/><sp/><sp/><sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_metaKeywords,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86" kindref="member">setTemplate</ref>(mcs_htmlTemplate);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1ad6ba5fa3f5e0a2256cc356d1c6fd21f8" kindref="member">setData</ref>(l_data);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kindref="member">resolve</ref>(p_result);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref>&amp;</highlight></codeline>
+<codeline lineno="254" refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" kindref="member">HtmlTemplate::setFavico</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_ico)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>m_favico<sp/>=<sp/>p_ico;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab0eae39816b64d8e60218426d017624d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab0eae39816b64d8e60218426d017624d" kindref="member">XmlTemplate::XmlTemplate</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref>(</highlight><highlight class="stringliteral">&quot;text/xml&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>m_charset(</highlight><highlight class="stringliteral">&quot;UTF-8&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>m_xsltUrl()</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="272" refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab221547a643e3db5ba99640fe14b9f68" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab221547a643e3db5ba99640fe14b9f68" kindref="member">XmlTemplate::resolve</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_result)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_content;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">cpptempl::data_map</ref><sp/>l_data;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_template;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref><sp/>!=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kindref="member">Template::resolve</ref>(l_content))</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>log</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status::error;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__charset&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_charset,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__xsltUrl&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(m_xsltUrl,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>l_data[</highlight><highlight class="stringliteral">&quot;__xmlData&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kindref="member">val</ref>(l_content);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86" kindref="member">setTemplate</ref>(mcs_xmlTemplate);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1ad6ba5fa3f5e0a2256cc356d1c6fd21f8" kindref="member">setData</ref>(l_data);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_template.<ref refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kindref="member">resolve</ref>(p_result);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.cc"/>
+  </compounddef>
+</doxygen>

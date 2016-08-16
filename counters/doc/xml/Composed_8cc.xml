@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Composed_8cc" kind="file" language="C++">
+    <compoundname>Composed.cc</compoundname>
+    <includes refid="Composed_8hh" local="yes">Composed.hh</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/range/algorithm/for_each.hpp</includes>
+    <incdepgraph>
+      <node id="607">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="606">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="604">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+      </node>
+      <node id="603">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.cc</label>
+        <link refid="Composed.cc"/>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="609" relation="include">
+        </childnode>
+      </node>
+      <node id="605">
+        <label>vector</label>
+      </node>
+      <node id="611">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="612">
+        <label>boost/range/algorithm/for_each.hpp</label>
+      </node>
+      <node id="609">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Composed_8hh" kindref="compound">Composed.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/range/algorithm/for_each.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" kindref="member">Composed::Composed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)<sp/>:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Base" kindref="compound">Base</ref>(p_name)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">Composed::addItem</ref>(<ref refid="classxtd_1_1counters_1_1Base" kindref="compound">Base</ref>&amp;<sp/>p_item)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/><ref refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" kindref="member">m_name</ref>.size())</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>p_item.<ref refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" kindref="member">m_name</ref><sp/>=<sp/><ref refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" kindref="member">m_name</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>+<sp/>p_item.<ref refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>m_items.push_back(&amp;p_item);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" kindref="member">Composed::visit_safe</ref>(<ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="24"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>boost::for_each(m_items,<sp/>boost::bind(&amp;<ref refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" kindref="member">Base::visit</ref>,<sp/>_1,<sp/>boost::ref(p_visitor)));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" kindref="member">Composed::update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>boost::for_each(m_items,<sp/>boost::bind(&amp;<ref refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" kindref="member">Base::update</ref>,<sp/>_1));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Composed.cc"/>
+  </compounddef>
+</doxygen>

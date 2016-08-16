@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1Visitor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xtd::counters::Visitor</compoundname>
+    <derivedcompoundref refid="classxtd_1_1counters_1_1FileVisitor" prot="public" virt="non-virtual">xtd::counters::FileVisitor</derivedcompoundref>
+    <derivedcompoundref refid="classxtd_1_1counters_1_1JsonVisitor" prot="public" virt="non-virtual">xtd::counters::JsonVisitor</derivedcompoundref>
+    <includes refid="Visitor_8hh" local="no">Visitor.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::Visitor::operator()</definition>
+        <argsstring>(const string &amp;, const string &amp;)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classxtd_1_1counters_1_1FileVisitor_1af6936e3e1e62880b0eb9fc76b0b0a120">operator()</reimplementedby>
+        <reimplementedby refid="classxtd_1_1counters_1_1JsonVisitor_1a903824cfba9c121a0441a774edc232a1">operator()</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Visitor_1a1a5da2c523703b0c9132595f22e1700e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::Visitor::operator()</definition>
+        <argsstring>(const string &amp;, uint8_t)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classxtd_1_1counters_1_1FileVisitor_1a69214d261c695bb48335c58ed2a76cae">operator()</reimplementedby>
+        <reimplementedby refid="classxtd_1_1counters_1_1JsonVisitor_1a6d650a21f6ee33b1748ae7cb432c3de6">operator()</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Visitor_1a6139d735b720a83e87f49932855f1ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::Visitor::operator()</definition>
+        <argsstring>(const string &amp;, uint16_t)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classxtd_1_1counters_1_1FileVisitor_1a687eff42ec19d5aed86689e0405fa181">operator()</reimplementedby>
+        <reimplementedby refid="classxtd_1_1counters_1_1JsonVisitor_1ad0e11fe1f362f071132d6828de269517">operator()</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <param>
+          <type>uint16_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Visitor_1a0bc4c30e3df6ef796878b85ce1be17fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::Visitor::operator()</definition>
+        <argsstring>(const string &amp;, uint32_t)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classxtd_1_1counters_1_1FileVisitor_1ae5807c31711d611b93e435071855ce2f">operator()</reimplementedby>
+        <reimplementedby refid="classxtd_1_1counters_1_1JsonVisitor_1ae9dc018222ce25751d712783377b63a3">operator()</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <param>
+          <type>uint32_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Visitor_1aba895c10dd1a28fa7a8b64e61adee5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::Visitor::operator()</definition>
+        <argsstring>(const string &amp;, uint64_t)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classxtd_1_1counters_1_1FileVisitor_1a9e5edd247355cc9c3387d1bd5cda0642">operator()</reimplementedby>
+        <reimplementedby refid="classxtd_1_1counters_1_1JsonVisitor_1a89f860915a12f1e99b629b5d385864cc">operator()</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+        </param>
+        <param>
+          <type>uint64_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="244">
+        <label>xtd::counters::Visitor</label>
+        <link refid="classxtd_1_1counters_1_1Visitor"/>
+      </node>
+      <node id="246">
+        <label>xtd::counters::JsonVisitor</label>
+        <link refid="classxtd_1_1counters_1_1JsonVisitor"/>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>xtd::counters::FileVisitor</label>
+        <link refid="classxtd_1_1counters_1_1FileVisitor"/>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh" bodystart="9" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" prot="public" virt="pure-virtual"><scope>xtd::counters::Visitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1Visitor_1a1a5da2c523703b0c9132595f22e1700e" prot="public" virt="pure-virtual"><scope>xtd::counters::Visitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1Visitor_1a6139d735b720a83e87f49932855f1ade" prot="public" virt="pure-virtual"><scope>xtd::counters::Visitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1Visitor_1a0bc4c30e3df6ef796878b85ce1be17fb" prot="public" virt="pure-virtual"><scope>xtd::counters::Visitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1Visitor_1aba895c10dd1a28fa7a8b64e61adee5ac" prot="public" virt="pure-virtual"><scope>xtd::counters::Visitor</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

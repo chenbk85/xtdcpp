@@ -1,0 +1,522 @@
+\hypertarget{namespaceboost_1_1property__tree_1_1json__parser}{}\section{boost\+:\+:property\+\_\+tree\+:\+:json\+\_\+parser Namespace Reference}
+\label{namespaceboost_1_1property__tree_1_1json__parser}\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator}{translator}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4}{translator$<$ bool $>$}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4}{translator$<$ std\+::string $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a7aed126d35d2893e51c49399ba33c51e}{read\+\_\+json} (std\+::basic\+\_\+istream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, Ptree \&pt)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_aa8344dc0b7987cba89b0630195d7a34d}{read\+\_\+json} (const std\+::string \&filename, Ptree \&pt, const std\+::locale \&loc=std\+::locale())
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0}{write\+\_\+json} (std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, bool pretty=true)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a49f6a7c920e5ac943603a5f10ccf3a32}{write\+\_\+json} (const std\+::string \&filename, const Ptree \&pt, const std\+::locale \&loc=std\+::locale(), bool pretty=true)
+\item 
+{\footnotesize template$<$class Ch $>$ }\\std\+::basic\+\_\+string$<$ Ch $>$ \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a}{create\+\_\+escapes} (const std\+::basic\+\_\+string$<$ Ch $>$ \&s)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}{write\+\_\+json\+\_\+helper} (std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, int indent, bool pretty)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\bool \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465}{verify\+\_\+json} (const Ptree \&pt, int depth)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b}{write\+\_\+json\+\_\+internal} (std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, const std\+::string \&filename, bool pretty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!create\+\_\+escapes@{create\+\_\+escapes}}
+\index{create\+\_\+escapes@{create\+\_\+escapes}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{create\+\_\+escapes(const std\+::basic\+\_\+string$<$ Ch $>$ \&s)}{create_escapes(const std::basic_string< Ch > &s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ch $>$ std\+::basic\+\_\+string$<$Ch$>$ boost\+::property\+\_\+tree\+::json\+\_\+parser\+::create\+\_\+escapes (
+\begin{DoxyParamCaption}
+\item[{const std\+::basic\+\_\+string$<$ Ch $>$ \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a}{}\label{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a}
+
+
+Definition at line 25 of file json\+\_\+parser\+\_\+write.\+hpp.
+
+
+\begin{DoxyCode}
+26 \{
+27   std::basic\_string<Ch> result;
+28   \textcolor{keyword}{typename} std::basic\_string<Ch>::const\_iterator b = s.begin();
+29   \textcolor{keyword}{typename} std::basic\_string<Ch>::const\_iterator e = s.end();
+30   \textcolor{keywordflow}{while} (b != e)
+31   \{
+32     \textcolor{comment}{// This assumes an ASCII superset. But so does everything in PTree.}
+33     \textcolor{comment}{// We escape everything outside ASCII, because this code can't}
+34     \textcolor{comment}{// handle high unicode characters.}
+35     \textcolor{keywordflow}{if} (*b == 0x20 || *b == 0x21 || (*b >= 0x23 && *b <= 0x2E) ||
+36         (*b >= 0x30 && *b <= 0x5B) || (*b >= 0x5D && *b <= 0xFF))
+37       result += *b;
+38     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'\(\backslash\)b'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'b'});
+39     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'\(\backslash\)f'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'f'});
+40     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'\(\backslash\)n'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'n'});
+41     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'\(\backslash\)r'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'r'});
+42     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'/'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'/'});
+43     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'"'}))
+44     \{
+45       \textcolor{keywordflow}{if} ((b == s.begin()) || (b+1) == s.end())
+46         result += Ch(\textcolor{charliteral}{'"'});
+47       \textcolor{keywordflow}{else}
+48         result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'"'});
+49     \}
+50     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (*b == Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'})) result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), result += Ch(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'});
+51     \textcolor{keywordflow}{else}
+52     \{
+53       result += *b;
+54       \textcolor{comment}{// const char *hexdigits = "0123456789ABCDEF";}
+55       \textcolor{comment}{// unsigned char u = static\_cast<unsigned char>(*b);}
+56       \textcolor{comment}{// int d3 = u / 16; u -= d3 * 16;}
+57       \textcolor{comment}{// int d4 = u;}
+58       \textcolor{comment}{// result += Ch('\(\backslash\)\(\backslash\)');}
+59       \textcolor{comment}{// result += Ch('x');}
+60       \textcolor{comment}{// result += Ch(hexdigits[d3]); result += Ch(hexdigits[d4]);}
+61       \textcolor{comment}{//                              0xFFFFul);}
+62       \textcolor{comment}{// int d1 = u / 4096; u -= d1 * 4096;}
+63       \textcolor{comment}{// int d2 = u / 256; u -= d2 * 256;}
+64       \textcolor{comment}{// int d3 = u / 16; u -= d3 * 16;}
+65       \textcolor{comment}{// int d4 = u;}
+66       \textcolor{comment}{// result += Ch('\(\backslash\)\(\backslash\)'); result += Ch('u');}
+67       \textcolor{comment}{// result += Ch(hexdigits[d1]); result += Ch(hexdigits[d2]);}
+68       \textcolor{comment}{// result += Ch(hexdigits[d3]); result += Ch(hexdigits[d4]);}
+69     \}
+70     ++b;
+71   \}
+72   \textcolor{keywordflow}{return} result;
+73 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!read\+\_\+json@{read\+\_\+json}}
+\index{read\+\_\+json@{read\+\_\+json}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{read\+\_\+json(std\+::basic\+\_\+istream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, Ptree \&pt)}{read_json(std::basic_istream< typename Ptree::key_type::value_type > &stream, Ptree &pt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::read\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+istream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&}]{stream, }
+\item[{Ptree \&}]{pt}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_a7aed126d35d2893e51c49399ba33c51e}{}\label{namespaceboost_1_1property__tree_1_1json__parser_a7aed126d35d2893e51c49399ba33c51e}
+Read J\+S\+ON from a the given stream and translate it to a property tree. \begin{DoxyNote}{Note}
+Clears existing contents of property tree. In case of error the property tree unmodified. 
+
+Items of J\+S\+ON arrays are translated into ptree keys with empty names. Members of objects are translated into named keys. 
+
+J\+S\+ON data can be a string, a numeric value, or one of literals \char`\"{}null\char`\"{}, \char`\"{}true\char`\"{} and \char`\"{}false\char`\"{}. During parse, any of the above is copied verbatim into ptree data string. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em json\+\_\+parser\+\_\+error} & In case of error deserializing the property tree. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em stream} & Stream from which to read in the property tree. \\
+\hline
+\mbox{\tt out}  & {\em pt} & The property tree to populate. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+102 \{
+103   read\_json\_internal(stream, pt, std::string());
+104 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_a7aed126d35d2893e51c49399ba33c51e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!read\+\_\+json@{read\+\_\+json}}
+\index{read\+\_\+json@{read\+\_\+json}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{read\+\_\+json(const std\+::string \&filename, Ptree \&pt, const std\+::locale \&loc=std\+::locale())}{read_json(const std::string &filename, Ptree &pt, const std::locale &loc=std::locale())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::read\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{Ptree \&}]{pt, }
+\item[{const std\+::locale \&}]{loc = {\ttfamily std\+:\+:locale()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_aa8344dc0b7987cba89b0630195d7a34d}{}\label{namespaceboost_1_1property__tree_1_1json__parser_aa8344dc0b7987cba89b0630195d7a34d}
+Read J\+S\+ON from a the given file and translate it to a property tree. \begin{DoxyNote}{Note}
+Clears existing contents of property tree. In case of error the property tree unmodified. 
+
+Items of J\+S\+ON arrays are translated into ptree keys with empty names. Members of objects are translated into named keys. 
+
+J\+S\+ON data can be a string, a numeric value, or one of literals \char`\"{}null\char`\"{}, \char`\"{}true\char`\"{} and \char`\"{}false\char`\"{}. During parse, any of the above is copied verbatim into ptree data string. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em json\+\_\+parser\+\_\+error} & In case of error deserializing the property tree. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em filename} & Name of file from which to read in the property tree. \\
+\hline
+\mbox{\tt out}  & {\em pt} & The property tree to populate. \\
+\hline
+ & {\em loc} & The locale to use when reading in the file contents. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+125 \{
+126   std::basic\_ifstream<typename Ptree::key\_type::value\_type>
+127     stream(filename.c\_str());
+128   \textcolor{keywordflow}{if} (!stream)
+129     BOOST\_PROPERTY\_TREE\_THROW(json\_parser\_error(
+130                                                 \textcolor{stringliteral}{"cannot open file"}, filename, 0));
+131   stream.imbue(loc);
+132   read\_json\_internal(stream, pt, filename);
+133 \}
+\end{DoxyCode}
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!verify\+\_\+json@{verify\+\_\+json}}
+\index{verify\+\_\+json@{verify\+\_\+json}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{verify\+\_\+json(const Ptree \&pt, int depth)}{verify_json(const Ptree &pt, int depth)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ bool boost\+::property\+\_\+tree\+::json\+\_\+parser\+::verify\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{const Ptree \&}]{pt, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465}{}\label{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465}
+
+
+Definition at line 138 of file json\+\_\+parser\+\_\+write.\+hpp.
+
+
+\begin{DoxyCode}
+139 \{
+140 
+141   \textcolor{keyword}{typedef} \textcolor{keyword}{typename} Ptree::key\_type::value\_type Ch;
+142   \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::basic\_string<Ch> Str;
+143 
+144   \textcolor{comment}{// Root ptree cannot have data}
+145   \textcolor{keywordflow}{if} (depth == 0 && !pt.template get\_value<Str>().empty())
+146     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+147 
+148   \textcolor{comment}{// Ptree cannot have both children and data}
+149   \textcolor{keywordflow}{if} (!pt.template get\_value<Str>().empty() && !pt.empty())
+150     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+151 
+152   \textcolor{comment}{// Check children}
+153   \textcolor{keyword}{typename} Ptree::const\_iterator it = pt.begin();
+154   \textcolor{keywordflow}{for} (; it != pt.end(); ++it)
+155     \textcolor{keywordflow}{if} (!\hyperlink{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465}{verify\_json}(it->second, depth + 1))
+156       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+157 
+158   \textcolor{comment}{// Success}
+159   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+160 
+161 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!write\+\_\+json@{write\+\_\+json}}
+\index{write\+\_\+json@{write\+\_\+json}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{write\+\_\+json(std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, bool pretty=true)}{write_json(std::basic_ostream< typename Ptree::key_type::value_type > &stream, const Ptree &pt, bool pretty=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&}]{stream, }
+\item[{const Ptree \&}]{pt, }
+\item[{bool}]{pretty = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0}{}\label{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0}
+Translates the property tree to J\+S\+ON and writes it the given output stream. \begin{DoxyNote}{Note}
+Any property tree key containing only unnamed subkeys will be rendered as J\+S\+ON arrays. 
+\end{DoxyNote}
+\begin{DoxyPrecond}{Precondition}
+{\itshape pt} cannot contain keys that have both subkeys and non-\/empty data. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em json\+\_\+parser\+\_\+error} & In case of error translating the property tree to J\+S\+ON or writing to the output stream. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to which to write the J\+S\+ON representation of the property tree. \\
+\hline
+{\em pt} & The property tree to tranlsate to J\+S\+ON and output. \\
+\hline
+{\em pretty} & Whether to pretty-\/print. Defaults to true for backward compatibility. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+155 \{
+156   \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b}{write\_json\_internal}(stream, pt, std::string(), pretty);
+157 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!write\+\_\+json@{write\+\_\+json}}
+\index{write\+\_\+json@{write\+\_\+json}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{write\+\_\+json(const std\+::string \&filename, const Ptree \&pt, const std\+::locale \&loc=std\+::locale(), bool pretty=true)}{write_json(const std::string &filename, const Ptree &pt, const std::locale &loc=std::locale(), bool pretty=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{const Ptree \&}]{pt, }
+\item[{const std\+::locale \&}]{loc = {\ttfamily std\+:\+:locale()}, }
+\item[{bool}]{pretty = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_a49f6a7c920e5ac943603a5f10ccf3a32}{}\label{namespaceboost_1_1property__tree_1_1json__parser_a49f6a7c920e5ac943603a5f10ccf3a32}
+Translates the property tree to J\+S\+ON and writes it the given file. \begin{DoxyNote}{Note}
+Any property tree key containing only unnamed subkeys will be rendered as J\+S\+ON arrays. 
+\end{DoxyNote}
+\begin{DoxyPrecond}{Precondition}
+{\itshape pt} cannot contain keys that have both subkeys and non-\/empty data. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em json\+\_\+parser\+\_\+error} & In case of error translating the property tree to J\+S\+ON or writing to the file. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to which to write the J\+S\+ON representation of the property tree. \\
+\hline
+{\em pt} & The property tree to translate to J\+S\+ON and output. \\
+\hline
+{\em loc} & The locale to use when writing out to the output file. \\
+\hline
+{\em pretty} & Whether to pretty-\/print. Defaults to true and last place for backward compatibility. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+178 \{
+179   std::basic\_ofstream<typename Ptree::key\_type::value\_type>
+180     stream(filename.c\_str());
+181   \textcolor{keywordflow}{if} (!stream)
+182     BOOST\_PROPERTY\_TREE\_THROW(json\_parser\_error(
+183                                                 \textcolor{stringliteral}{"cannot open file"}, filename, 0));
+184   stream.imbue(loc);
+185   \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b}{write\_json\_internal}(stream, pt, filename, pretty);
+186 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_a49f6a7c920e5ac943603a5f10ccf3a32_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!write\+\_\+json\+\_\+helper@{write\+\_\+json\+\_\+helper}}
+\index{write\+\_\+json\+\_\+helper@{write\+\_\+json\+\_\+helper}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{write\+\_\+json\+\_\+helper(std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, int indent, bool pretty)}{write_json_helper(std::basic_ostream< typename Ptree::key_type::value_type > &stream, const Ptree &pt, int indent, bool pretty)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json\+\_\+helper (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&}]{stream, }
+\item[{const Ptree \&}]{pt, }
+\item[{int}]{indent, }
+\item[{bool}]{pretty}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}{}\label{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}
+
+
+Definition at line 76 of file json\+\_\+parser\+\_\+write.\+hpp.
+
+
+\begin{DoxyCode}
+79 \{
+80 
+81   \textcolor{keyword}{typedef} \textcolor{keyword}{typename} Ptree::key\_type::value\_type Ch;
+82   \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::basic\_string<Ch> Str;
+83 
+84   \textcolor{comment}{// Value or object or array}
+85   \textcolor{keywordflow}{if} (indent > 0 && pt.empty())
+86   \{
+87     \textcolor{comment}{// Write value}
+88     Str data = \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a}{create\_escapes}(pt.template get\_value<Str>());
+89     stream << data;
+90 
+91   \}
+92   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (indent > 0 && pt.count(Str()) == pt.size())
+93   \{
+94     \textcolor{comment}{// Write array}
+95     stream << Ch(\textcolor{charliteral}{'['});
+96     \textcolor{keywordflow}{if} (pretty) stream << Ch(\textcolor{charliteral}{'\(\backslash\)n'});
+97     \textcolor{keyword}{typename} Ptree::const\_iterator it = pt.begin();
+98     \textcolor{keywordflow}{for} (; it != pt.end(); ++it)
+99     \{
+100       \textcolor{keywordflow}{if} (pretty) stream << Str(4 * (indent + 1), Ch(\textcolor{charliteral}{' '}));
+101       \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}{write\_json\_helper}(stream, it->second, indent + 1, pretty);
+102       \textcolor{keywordflow}{if} (boost::next(it) != pt.end())
+103         stream << Ch(\textcolor{charliteral}{','});
+104       \textcolor{keywordflow}{if} (pretty) stream << Ch(\textcolor{charliteral}{'\(\backslash\)n'});
+105     \}
+106     stream << Str(4 * indent, Ch(\textcolor{charliteral}{' '})) << Ch(\textcolor{charliteral}{']'});
+107 
+108   \}
+109   \textcolor{keywordflow}{else}
+110   \{
+111     \textcolor{comment}{// Write object}
+112     stream << Ch(\textcolor{charliteral}{'\{'});
+113     \textcolor{keywordflow}{if} (pretty) stream << Ch(\textcolor{charliteral}{'\(\backslash\)n'});
+114     \textcolor{keyword}{typename} Ptree::const\_iterator it = pt.begin();
+115     \textcolor{keywordflow}{for} (; it != pt.end(); ++it)
+116     \{
+117       \textcolor{keywordflow}{if} (pretty) stream << Str(4 * (indent + 1), Ch(\textcolor{charliteral}{' '}));
+118       stream << Ch(\textcolor{charliteral}{'"'}) << \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a747e92e137769eb6b27edb76d613f37a}{create\_escapes}(it->first) << Ch(\textcolor{charliteral}{'"'}) << Ch(\textcolor{charliteral}{':'});
+119       \textcolor{keywordflow}{if} (pretty) \{
+120         \textcolor{keywordflow}{if} (it->second.empty())
+121           stream << Ch(\textcolor{charliteral}{' '});
+122         \textcolor{keywordflow}{else}
+123           stream << Ch(\textcolor{charliteral}{'\(\backslash\)n'}) << Str(4 * (indent + 1), Ch(\textcolor{charliteral}{' '}));
+124       \}
+125       \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}{write\_json\_helper}(stream, it->second, indent + 1, pretty);
+126       \textcolor{keywordflow}{if} (boost::next(it) != pt.end())
+127         stream << Ch(\textcolor{charliteral}{','});
+128       \textcolor{keywordflow}{if} (pretty) stream << Ch(\textcolor{charliteral}{'\(\backslash\)n'});
+129     \}
+130     \textcolor{keywordflow}{if} (pretty) stream << Str(4 * indent, Ch(\textcolor{charliteral}{' '}));
+131     stream << Ch(\textcolor{charliteral}{'\}'});
+132   \}
+133 
+134 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}!write\+\_\+json\+\_\+internal@{write\+\_\+json\+\_\+internal}}
+\index{write\+\_\+json\+\_\+internal@{write\+\_\+json\+\_\+internal}!boost\+::property\+\_\+tree\+::json\+\_\+parser@{boost\+::property\+\_\+tree\+::json\+\_\+parser}}
+\subsubsection[{\texorpdfstring{write\+\_\+json\+\_\+internal(std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, const std\+::string \&filename, bool pretty)}{write_json_internal(std::basic_ostream< typename Ptree::key_type::value_type > &stream, const Ptree &pt, const std::string &filename, bool pretty)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ptree $>$ void boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json\+\_\+internal (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&}]{stream, }
+\item[{const Ptree \&}]{pt, }
+\item[{const std\+::string \&}]{filename, }
+\item[{bool}]{pretty}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b}{}\label{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b}
+
+
+Definition at line 165 of file json\+\_\+parser\+\_\+write.\+hpp.
+
+
+\begin{DoxyCode}
+169 \{
+170   \textcolor{keywordflow}{if} (!\hyperlink{namespaceboost_1_1property__tree_1_1json__parser_ad1f43753e8e91845fdb1177c1aa0c465}{verify\_json}(pt, 0))
+171     BOOST\_PROPERTY\_TREE\_THROW(json\_parser\_error(\textcolor{stringliteral}{"ptree contains data that cannot be represented in JSON
+       format"}, filename, 0));
+172   \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a133973ddea67e6d77424312cd297b332}{write\_json\_helper}(stream, pt, 0, pretty);
+173   stream << std::endl;
+174   \textcolor{keywordflow}{if} (!stream.good())
+175     BOOST\_PROPERTY\_TREE\_THROW(json\_parser\_error(\textcolor{stringliteral}{"write error"}, filename, 0));
+176 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceboost_1_1property__tree_1_1json__parser_af1059520397d396ae91e776391a2f32b_icgraph}
+\end{center}
+\end{figure}
+
+

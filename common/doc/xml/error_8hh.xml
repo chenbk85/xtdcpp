@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="error_8hh" kind="file" language="C++">
+    <compoundname>error.hh</compoundname>
+    <includes refid="types_8hh" local="yes">types.hh</includes>
+    <includes refid="logger_8hh" local="yes">logger.hh</includes>
+    <includedby refid="ConfParser_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</includedby>
+    <incdepgraph>
+      <node id="343">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>stdarg.h</label>
+      </node>
+      <node id="351">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="349">
+        <label>logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>string</label>
+      </node>
+      <node id="345">
+        <label>map</label>
+      </node>
+      <node id="348">
+        <label>fstream</label>
+      </node>
+      <node id="352">
+        <label>syslog.h</label>
+      </node>
+      <node id="346">
+        <label>vector</label>
+      </node>
+      <node id="347">
+        <label>sstream</label>
+      </node>
+      <node id="350">
+        <label>iostream</label>
+      </node>
+      <node id="354">
+        <label>logger.hxx</label>
+      </node>
+      <node id="342">
+        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
+        <link refid="error.hh"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="356">
+        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
+        <link refid="ConfParser_8cc"/>
+      </node>
+      <node id="355">
+        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
+        <link refid="error.hh"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1error" prot="public">xtd::error</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_ERROR_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_ERROR_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="logger_8hh" kindref="compound">logger.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classxtd_1_1error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1error" kindref="compound">error</ref><sp/>:<sp/>std::exception</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Arguments&gt;</highlight></codeline>
+<codeline lineno="12" refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" kindref="member">do_throw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Arguments&amp;&amp;...<sp/>p_args)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" kindref="member">logger::crit</ref>(p_module,<sp/>p_format,<sp/>p_args...);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" kindref="member">error</ref>(<ref refid="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce" kindref="member">logger::format_vargs</ref>(p_format<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>in<sp/>%s:%s:%d<sp/>&quot;</highlight><highlight class="normal">,<sp/>p_args...));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" kindref="member">error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_message)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>m_message(p_message)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1error_1abeceaf42dfbad136014dc3921696e26f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1error_1abeceaf42dfbad136014dc3921696e26f" kindref="member">~error</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classxtd_1_1error_1a463ff8177561abd418c1f00aa2bcd154" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classxtd_1_1error_1a463ff8177561abd418c1f00aa2bcd154" kindref="member">what</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_message.c_str();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>m_message;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_ERROR_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/error.hh"/>
+  </compounddef>
+</doxygen>

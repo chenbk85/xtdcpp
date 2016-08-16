@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Freq_8cc" kind="file" language="C++">
+    <compoundname>Freq.cc</compoundname>
+    <includes refid="Freq_8hh" local="yes">Freq.hh</includes>
+    <includes local="no">boost/interprocess/detail/atomic.hpp</includes>
+    <incdepgraph>
+      <node id="736">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="734">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="733">
+        <label>string</label>
+      </node>
+      <node id="739">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.cc</label>
+        <link refid="Freq.cc"/>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>boost/interprocess/detail/atomic.hpp</label>
+      </node>
+      <node id="738">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Freq_8hh" kindref="compound">Freq.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/interprocess/detail/atomic.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bpt<sp/>=<sp/>boost::posix_time;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">atom<sp/>=<sp/>boost::interprocess::ipcdetail;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" kindref="member">Freq::Freq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)<sp/>:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>(p_name),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>m_beginTime(bpt::microsec_clock::local_time()),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_nbEvent(0)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref>&amp;</highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" kindref="member">Freq::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>p_value)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0" kindref="member">Value&lt;uint32_t&gt;::operator=</ref>(p_value);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">Freq::tick</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>atom::atomic_inc32(&amp;m_nbEvent);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" kindref="member">Freq::update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>bpt::time_duration<sp/>l_diffTime<sp/>=<sp/>bpt::microsec_clock::local_time()<sp/>-<sp/>m_beginTime;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_diffTime.total_milliseconds()<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" kindref="member">m_value</ref><sp/>=<sp/>(m_nbEvent<sp/>*<sp/>1000)<sp/>/<sp/>l_diffTime.total_milliseconds();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.cc"/>
+  </compounddef>
+</doxygen>

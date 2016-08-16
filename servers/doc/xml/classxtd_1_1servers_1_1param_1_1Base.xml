@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1param_1_1Base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xtd::servers::param::Base</compoundname>
+    <derivedcompoundref refid="classxtd_1_1servers_1_1param_1_1POD" prot="public" virt="non-virtual">xtd::servers::param::POD&lt; T &gt;</derivedcompoundref>
+    <includes refid="Base_8hh" local="no">Base.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;Base&gt; xtd::servers::param::Base::t_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Base_1aa4d2e5f8b9756071b34c6394f19670bc" prot="private" static="no">
+        <type>boost::function&lt; void(const boost::any &amp;, const boost::any &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;void(const boost::any&amp;, const boost::any&amp;)&gt; xtd::servers::param::Base::t_listener</definition>
+        <argsstring></argsstring>
+        <name>t_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Base_1abe1caab834f5982dea8c19156d47cb23" prot="private" static="no">
+        <type>boost::function&lt; bool(const boost::any &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;bool(const boost::any&amp;)&gt; xtd::servers::param::Base::t_constraint</definition>
+        <argsstring></argsstring>
+        <name>t_constraint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Base_1a1c3a82c337c1a18862b0fbe5f7573849" prot="private" static="no">
+        <type>vector&lt; t_listener &gt;</type>
+        <definition>typedef vector&lt;t_listener&gt; xtd::servers::param::Base::t_listeners</definition>
+        <argsstring></argsstring>
+        <name>t_listeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Base_1aa5176a35476f09c20a55c3d0c213c7bd" prot="private" static="no">
+        <type>vector&lt; t_constraint &gt;</type>
+        <definition>typedef vector&lt;t_constraint&gt; xtd::servers::param::Base::t_constraints</definition>
+        <argsstring></argsstring>
+        <name>t_constraints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="48" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1ad58be70e57e339d4843e31f889687174" prot="private" static="no" mutable="no">
+        <type>boost::any</type>
+        <definition>boost::any xtd::servers::param::Base::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="211" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1a753bf2d46d27995061650d6502130351" prot="private" static="no" mutable="no">
+        <type>boost::any</type>
+        <definition>boost::any xtd::servers::param::Base::m_defaultValue</definition>
+        <argsstring></argsstring>
+        <name>m_defaultValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="212" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1aeb13820f6d85f1324db11b179b6525e0" prot="private" static="no" mutable="no">
+        <type>t_constraints</type>
+        <definition>t_constraints xtd::servers::param::Base::m_constraints</definition>
+        <argsstring></argsstring>
+        <name>m_constraints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="213" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1a1077b1ee922bb447e0e9f9ce17bd0c72" prot="private" static="no" mutable="no">
+        <type>t_listeners</type>
+        <definition>t_listeners xtd::servers::param::Base::m_listeners</definition>
+        <argsstring></argsstring>
+        <name>m_listeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="214" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1a7b6c76ce6476e7e8bf0978c6d7999347" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="215" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1ab8bddbc2f5e1c9d28908ffd56891714d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Base::m_sync</definition>
+        <argsstring></argsstring>
+        <name>m_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="216" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1a06c091a61de972bb9d5d285aade4a9e6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::m_actionPath</definition>
+        <argsstring></argsstring>
+        <name>m_actionPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="217" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1a62bdaafbcb205c13635ed31f722e5b9c" prot="private" static="no" mutable="no">
+        <type>boost::posix_time::ptime</type>
+        <definition>boost::posix_time::ptime xtd::servers::param::Base::m_timestamp</definition>
+        <argsstring></argsstring>
+        <name>m_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="218" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Base_1abc9ee3116cde81616e34e6235eff5c10" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::m_log</definition>
+        <argsstring></argsstring>
+        <name>m_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="219" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T xtd::servers::param::Base::cast</definition>
+        <argsstring>(const boost::any &amp;p_val)</argsstring>
+        <name>cast</name>
+        <param>
+          <type>const boost::any &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+<para>Generic cast. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>generic instance reference </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>generic type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>specific type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="284" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>xtd::servers::param::Base::Base</definition>
+        <argsstring>(const T &amp;p_value)</argsstring>
+        <name>Base</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="52" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="291" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1aeadfa5af86a0dd70c6068a994f7ff567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>xtd::servers::param::Base::Base</definition>
+        <argsstring>(const T &amp;p_value, const string &amp;p_name)</argsstring>
+        <name>Base</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="54" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="306" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool xtd::servers::param::Base::fromStr</definition>
+        <argsstring>(const string &amp;p_src)=0</argsstring>
+        <name>fromStr</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1param_1_1POD_1ac6754089526df6eb0eef539be830c668">fromStr</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool xtd::servers::param::Base::verify</definition>
+        <argsstring>(const string &amp;p_src)=0</argsstring>
+        <name>verify</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1param_1_1POD_1aded664a97a02450a9270dd04af042d0c">verify</reimplementedby>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool xtd::servers::param::Base::toStr</definition>
+        <argsstring>(string &amp;p_dst) const =0</argsstring>
+        <name>toStr</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1param_1_1POD_1a6b40b7e5cd208c4ab848edb753c612f7">toStr</reimplementedby>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="59" column="1"/>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" compoundref="Base_8hh" startline="365" endline="392">set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::param::Base::accept</definition>
+        <argsstring>(Visitor &amp;p_visitor) const =0</argsstring>
+        <name>accept</name>
+        <reimplementedby refid="classxtd_1_1servers_1_1param_1_1POD_1a828a1fa2391bc087f396b87a1d7c793a">accept</reimplementedby>
+        <param>
+          <type><ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref> &amp;</type>
+          <declname>p_visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a1e688aa518e874229d45a348c7596c82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::getName</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getName</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get parameter name. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A <simplesect kind="return"><para>associated name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1af0a668bb0360d7c2a8821527888d16d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Base::setName</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter name. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requested name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a3d83345a6e83bbe96cb7e13c81061c7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Base::getSync</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get sync property. </para>        </briefdescription>
+        <detaileddescription>
+<para>[long description] <simplesect kind="return"><para>true if the parameter needs to be synchronized on the filesystem else false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a912fb989f6ecb224596add4d0b388102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Base::setSync</definition>
+        <argsstring>(const bool &amp;p_sync)</argsstring>
+        <name>setSync</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>p_sync</declname>
+        </param>
+        <briefdescription>
+<para>Set sync property. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requested sync property </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a824470386f5a0f25824b6be50d15a38a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Base::setActionPath</definition>
+        <argsstring>(const string &amp;p_actionPath)</argsstring>
+        <name>setActionPath</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_actionPath</declname>
+        </param>
+        <briefdescription>
+<para>Specify filesystem path to synchronize the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_actionPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filesystem path </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a69c3c92644e04f22b9dba10095b0ed3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::getActionPath</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getActionPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the filesystem path. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A <simplesect kind="return"><para>the filesystem path </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a74c2c5e1bac271ebbb80b93c1b976b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Base::sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>sync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Process synchronization action. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a532c7d291a15c2d611af8ab9898239f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::param::Base::date</definition>
+        <argsstring>(void) const </argsstring>
+        <name>date</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get last parameter change date. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><simplesect kind="return"><para>the last parameter change </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref> &amp;</type>
+        <definition>Base&amp; xtd::servers::param::Base::constraint</definition>
+        <argsstring>(t_constraint p_constraint)</argsstring>
+        <name>constraint</name>
+        <param>
+          <type>t_constraint</type>
+          <declname>p_constraint</declname>
+        </param>
+        <briefdescription>
+<para>Add a specific constraint the parameter must conform to. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each time a modification is requested, the constraint will be checked Many constraints can be added, they will be checked in declaration order Opposite constraints must be avoided</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the constraint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a self reference </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref> &amp;</type>
+        <definition>Base&amp; xtd::servers::param::Base::listen</definition>
+        <argsstring>(t_listener p_listener)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>t_listener</type>
+          <declname>p_listener</declname>
+        </param>
+        <briefdescription>
+<para>Specify the setter to modify the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will be called each time a call to set is done</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a modification function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a self reference </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1afa9ec13039176f5e8da4c1ac6dfd4063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref> &amp;</type>
+        <definition>Base &amp; xtd::servers::param::Base::constraint</definition>
+        <argsstring>(boost::function&lt; bool(const T &amp;)&gt; p_constraint)</argsstring>
+        <name>constraint</name>
+        <param>
+          <type>boost::function&lt; bool(const T &amp;)&gt;</type>
+          <declname>p_constraint</declname>
+        </param>
+        <briefdescription>
+<para>Add a specific constraint the parameter must conform to. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each time a modification is requested, the constraint will be checked Many constraints can be added, they will be checked in declaration order Opposite constraints must be avoided</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the constraint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a self reference </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="153" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="322" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1af34d052ef13b435479838c0372f1edb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref> &amp;</type>
+        <definition>Base &amp; xtd::servers::param::Base::listen</definition>
+        <argsstring>(boost::function&lt; void(const T &amp;, const T &amp;)&gt; p_constraint)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>boost::function&lt; void(const T &amp;, const T &amp;)&gt;</type>
+          <declname>p_constraint</declname>
+        </param>
+        <briefdescription>
+<para>Specify the setter to modify the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function will be called each time a call to set is done <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a modification function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a self reference </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="162" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="396" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Base::isAccepted</definition>
+        <argsstring>(const T &amp;p_src)</argsstring>
+        <name>isAccepted</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+<para>Tells if value is accepted by parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if value is accepted </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="172" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="347" bodyend="361"/>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" compoundref="Base_8hh" startline="365" endline="392">set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Base::set</definition>
+        <argsstring>(const T &amp;p_src)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+<para>Function to set the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if setting succeeds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="182" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="365" bodyend="392"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" compoundref="Base_8hh" startline="347" endline="361">isAccepted</references>
+        <references refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116">toStr</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a47d5b5e494732932d25fa992e0a06190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Base::setLog</definition>
+        <argsstring>(const string p_log)</argsstring>
+        <name>setLog</name>
+        <param>
+          <type>const string</type>
+          <declname>p_log</declname>
+        </param>
+        <briefdescription>
+<para>Function to set log associated to parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a48c6b4f36d84c640cc68b347090a6ec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Base::get</definition>
+        <argsstring>(T &amp;p_dst) const </argsstring>
+        <name>get</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+<para>Function to get the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if getting succeeds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="200" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="332" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Base_1a48e7dac1fe3c43d62057e7a92e4bece9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::servers::param::Base::log</definition>
+        <argsstring>() const </argsstring>
+        <name>log</name>
+        <briefdescription>
+<para>Function to get log associated to parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><simplesect kind="return"><para>log associated with parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="208" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Param base class. </para>    </briefdescription>
+    <detaileddescription>
+<para>provide generic methods to handle generic parameters </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="45">
+        <label>xtd::servers::param::Base</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1Base"/>
+      </node>
+      <node id="46">
+        <label>xtd::servers::param::POD&lt; T &gt;</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1POD"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh" bodystart="27" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" prot="public" virt="pure-virtual"><scope>xtd::servers::param::Base</scope><name>accept</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>Base</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeadfa5af86a0dd70c6068a994f7ff567" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>Base</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>cast</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>constraint</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1afa9ec13039176f5e8da4c1ac6dfd4063" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>constraint</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a532c7d291a15c2d611af8ab9898239f2" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>date</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" prot="public" virt="pure-virtual"><scope>xtd::servers::param::Base</scope><name>fromStr</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a48c6b4f36d84c640cc68b347090a6ec5" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>get</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a69c3c92644e04f22b9dba10095b0ed3b" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>getActionPath</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1e688aa518e874229d45a348c7596c82" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>getName</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a3d83345a6e83bbe96cb7e13c81061c7d" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>getSync</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>isAccepted</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>listen</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1af34d052ef13b435479838c0372f1edb2" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>listen</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a48e7dac1fe3c43d62057e7a92e4bece9" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>log</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a06c091a61de972bb9d5d285aade4a9e6" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_actionPath</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeb13820f6d85f1324db11b179b6525e0" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_constraints</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a753bf2d46d27995061650d6502130351" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_defaultValue</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1077b1ee922bb447e0e9f9ce17bd0c72" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_listeners</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1abc9ee3116cde81616e34e6235eff5c10" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_log</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a7b6c76ce6476e7e8bf0978c6d7999347" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1ab8bddbc2f5e1c9d28908ffd56891714d" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_sync</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a62bdaafbcb205c13635ed31f722e5b9c" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_timestamp</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1ad58be70e57e339d4843e31f889687174" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>m_value</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>set</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a824470386f5a0f25824b6be50d15a38a" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>setActionPath</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a47d5b5e494732932d25fa992e0a06190" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>setLog</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1af0a668bb0360d7c2a8821527888d16d2" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>setName</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a912fb989f6ecb224596add4d0b388102" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>setSync</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74c2c5e1bac271ebbb80b93c1b976b47" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>sync</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1abe1caab834f5982dea8c19156d47cb23" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>t_constraint</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aa5176a35476f09c20a55c3d0c213c7bd" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>t_constraints</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aa4d2e5f8b9756071b34c6394f19670bc" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>t_listener</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1c3a82c337c1a18862b0fbe5f7573849" prot="private" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>t_listeners</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" prot="public" virt="non-virtual"><scope>xtd::servers::param::Base</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" prot="public" virt="pure-virtual"><scope>xtd::servers::param::Base</scope><name>toStr</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" prot="public" virt="pure-virtual"><scope>xtd::servers::param::Base</scope><name>verify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

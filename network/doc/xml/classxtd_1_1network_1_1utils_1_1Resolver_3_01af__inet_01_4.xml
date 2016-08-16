@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::Resolver&lt; af_inet &gt;</compoundname>
+    <includes refid="Resolver_8hh" local="no">Resolver.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a46ccd1501fa68e3c1523e7c846ba16a6" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service&amp; xtd::network::utils::Resolver&lt; af_inet &gt;::m_ioService</definition>
+        <argsstring></argsstring>
+        <name>m_ioService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a9be7300774ebdd878ef0944dd57dcdad" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1network_1_1utils_1_1CacheDns" kindref="compound">CacheDns</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;CacheDns&gt; xtd::network::utils::Resolver&lt; af_inet &gt;::m_cacheDns_ptr</definition>
+        <argsstring></argsstring>
+        <name>m_cacheDns_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a227d9b53586520412dde2ff93e373b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Resolver&lt; af_inet &gt;::Resolver</definition>
+        <argsstring>(boost::asio::io_service &amp;p_ioService, uint32_t p_ttl)</argsstring>
+        <name>Resolver</name>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>p_ioService</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ttl</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_ioService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>référence sur le io_server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duree de vie de la mise en cache des resolutions dns</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_ioService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: boost::asio::io_service </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cache entry time to live in seconds </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="13" bodyend="17"/>
+        <references refid="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" compoundref="CacheDns_8hh" startline="29">xtd::network::utils::CACHE_CAPACITY_MAX</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a52780e208a95d05c6eeacc4842851162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Resolver&lt; af_inet &gt;::~Resolver</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Resolver</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a014b2c1347380dece13b309969ed25c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>af_inet::endpoint</type>
+        <definition>af_inet::endpoint xtd::network::utils::Resolver&lt; af_inet &gt;::resolve</definition>
+        <argsstring>(const string &amp;p_host, const string &amp;p_port)</argsstring>
+        <name>resolve</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_host</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_port</declname>
+        </param>
+        <briefdescription>
+<para>Resoudre un dns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nom de domaine ou ip à résoudre </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port de destination </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>représentation boost asio d&apos;une résolution, un endpoint. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="48" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="25" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1ac98e2d8aec992068faa974ccca220e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Resolver&lt; af_inet &gt;::getPort</definition>
+        <argsstring>(const af_inet::endpoint &amp;p_endpoint)</argsstring>
+        <name>getPort</name>
+        <param>
+          <type>const af_inet::endpoint &amp;</type>
+          <declname>p_endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Extraction du port à partir d&apos;un endpoint. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="54" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a32b299d5a15042feea05622ee3df0d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::network::utils::Resolver&lt; af_inet &gt;::getAddr</definition>
+        <argsstring>(const af_inet::endpoint &amp;p_endpoint)</argsstring>
+        <name>getAddr</name>
+        <param>
+          <type>const af_inet::endpoint &amp;</type>
+          <declname>p_endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Extraction de l&apos;IP à partir d&apos;un endpoind. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="72" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="30" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a32b299d5a15042feea05622ee3df0d4c" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>getAddr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1ac98e2d8aec992068faa974ccca220e4c" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>getPort</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a9be7300774ebdd878ef0944dd57dcdad" prot="private" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>m_cacheDns_ptr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a46ccd1501fa68e3c1523e7c846ba16a6" prot="private" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a014b2c1347380dece13b309969ed25c3" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>resolve</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a227d9b53586520412dde2ff93e373b65" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>Resolver</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a52780e208a95d05c6eeacc4842851162" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_inet &gt;</scope><name>~Resolver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

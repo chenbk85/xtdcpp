@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="network_8hh" kind="file" language="C++">
+    <compoundname>network.hh</compoundname>
+    <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
+    <includes refid="Request_8hh" local="yes">http/Request.hh</includes>
+    <includes refid="Response_8hh" local="yes">http/Response.hh</includes>
+    <includes refid="http_2Server_8hh" local="yes">http/Server.hh</includes>
+    <includes refid="bip_2Client_8hh" local="yes">bip/Client.hh</includes>
+    <includes refid="bip_2Server_8hh" local="yes">bip/Server.hh</includes>
+    <includes refid="Config_8hh" local="yes">utils/Config.hh</includes>
+    <incdepgraph>
+      <node id="1786">
+        <label>list</label>
+      </node>
+      <node id="1769">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1778">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="1759">
+        <label>http/Response.hh</label>
+        <link refid="Response_8hh"/>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1779">
+        <label>Template.hxx</label>
+      </node>
+      <node id="1749">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1771">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1761">
+        <label>base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+      </node>
+      <node id="1764">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1763">
+        <label>cstdint</label>
+      </node>
+      <node id="1752">
+        <label>http/Request.hh</label>
+        <link refid="Request_8hh"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+      </node>
+      <node id="1765">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="1773">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1766">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1757">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1753">
+        <label>string</label>
+      </node>
+      <node id="1755">
+        <label>map</label>
+      </node>
+      <node id="1781">
+        <label>base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+      </node>
+      <node id="1790">
+        <label>bip/Server.hh</label>
+        <link refid="bip_2Server_8hh"/>
+        <childnode refid="1761" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>exception</label>
+      </node>
+      <node id="1750">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1783">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1762">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1780">
+        <label>bip/Client.hh</label>
+        <link refid="bip_2Client_8hh"/>
+        <childnode refid="1781" relation="include">
+        </childnode>
+      </node>
+      <node id="1768">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1784">
+        <label>utils/CacheDns.hh</label>
+        <link refid="CacheDns_8hh"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>ctime</label>
+      </node>
+      <node id="1788">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1754">
+        <label>vector</label>
+      </node>
+      <node id="1767">
+        <label>streambuf</label>
+      </node>
+      <node id="1785">
+        <label>utility</label>
+      </node>
+      <node id="1770">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1774">
+        <label>http/Template.hh</label>
+        <link refid="Template_8hh"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+      </node>
+      <node id="1775">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="1758">
+        <label>Request.hxx</label>
+      </node>
+      <node id="1746">
+        <label>deque</label>
+      </node>
+      <node id="1787">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="1744">
+        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
+        <link refid="network.hh"/>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>boost/regex.hpp</label>
+      </node>
+      <node id="1776">
+        <label>cpptempl.hh</label>
+        <link refid="cpptempl_8hh"/>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1789">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1745">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1782">
+        <label>logger.hh</label>
+      </node>
+      <node id="1751">
+        <label>types.hh</label>
+      </node>
+      <node id="1760">
+        <label>http/Server.hh</label>
+        <link refid="http_2Server_8hh"/>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Request_8hh" kindref="compound">http/Request.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Response_8hh" kindref="compound">http/Response.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="http_2Server_8hh" kindref="compound">http/Server.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bip_2Client_8hh" kindref="compound">bip/Client.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bip_2Server_8hh" kindref="compound">bip/Server.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Config_8hh" kindref="compound">utils/Config.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/network.hh"/>
+  </compounddef>
+</doxygen>

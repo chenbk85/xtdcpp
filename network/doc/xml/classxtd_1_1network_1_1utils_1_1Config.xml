@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1Config" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::Config</compoundname>
+    <includes refid="Config_8hh" local="no">Config.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a35ba52df60fc921cf37a27d867a89607" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::m_noDelay</definition>
+        <argsstring></argsstring>
+        <name>m_noDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="54" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a634bebf01fa1b0984aacfc50f3d5cccb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::m_reuseAddr</definition>
+        <argsstring></argsstring>
+        <name>m_reuseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="55" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1af9136ffd16a41bb71a73f5d6cb7a3baa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::m_linger</definition>
+        <argsstring></argsstring>
+        <name>m_linger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="56" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a77d45dee3cbca7aa494b7a7879142b45" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::m_lingerTime</definition>
+        <argsstring></argsstring>
+        <name>m_lingerTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="57" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1aa298a34510c445da6a51dabf23bbb337" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::m_compress</definition>
+        <argsstring></argsstring>
+        <name>m_compress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="58" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a5b73511b2f8e412a8a13ac7813e8eada" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref></type>
+        <definition>codec xtd::network::utils::Config::m_compressionCodec</definition>
+        <argsstring></argsstring>
+        <name>m_compressionCodec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a0403cd53779f72f5d72048b14f485929" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::m_dnsCacheTTL</definition>
+        <argsstring></argsstring>
+        <name>m_dnsCacheTTL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1ae15617cf3f48a378898164d0e34de5d2" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::m_connectTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>m_connectTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="61" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1a6a72c4d24f7074a1b3c78b836500fe58" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::m_sendTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>m_sendTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Config_1af4ec1eebfe8633cbaa44ec0c5ff54b8d" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::m_receiveTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>m_receiveTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Config::Config</definition>
+        <argsstring>(void)</argsstring>
+        <name>Config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>default constructor set nothing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.cc" bodystart="8" bodyend="20"/>
+        <references refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23">xtd::network::utils::zlib</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Config::Config</definition>
+        <argsstring>(uint32_t p_flags, uint32_t p_lingerInterval=0)</argsstring>
+        <name>Config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_flags</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_lingerInterval</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor make the socket setting. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>configuration flags </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_lingerInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linger interval </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.cc" bodystart="22" bodyend="38"/>
+        <references refid="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333">setNoDelay</references>
+        <references refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3">xtd::network::utils::nodelay</references>
+        <references refid="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f">setReuseAddr</references>
+        <references refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2">xtd::network::utils::reuseaddr</references>
+        <references refid="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2">setLinger</references>
+        <references refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a">xtd::network::utils::linger</references>
+        <references refid="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009">setCompress</references>
+        <references refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994">xtd::network::utils::compress</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1ab43d43856cea3b9bf159b38d2d13d82b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::getLinger</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getLinger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1aacb13cdd90746d5684feb00d7cdbefcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::getLingerTime</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getLingerTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a499712a4fd63e48be43ff24eb94e72ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::getNoDelay</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNoDelay</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a3914a56737d69dd8879e03ed9b3dc855" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::getReuseAddr</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReuseAddr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a89faeb4f4a949ae6fe18b907814987ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::Config::getCompress</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getCompress</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a82a7b809f4d41f4124badef452b9698d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref></type>
+        <definition>codec xtd::network::utils::Config::getCompressionCodec</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getCompressionCodec</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a2dfd5c85238ef930891d3696e6f6246c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::getConnectTimeoutMs</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getConnectTimeoutMs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a300d76106dcc338d662894dd04373d91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::getSendTimeoutMs</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSendTimeoutMs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a4484d8887f26682beb5aaa45f801dc57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::getReceiveTimeoutMs</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReceiveTimeoutMs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a1ef6d7fcee95df86143dfbdd007f64f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Config::getDnsCacheTTL</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getDnsCacheTTL</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setLinger</definition>
+        <argsstring>(bool p_linger, uint32_t p_lingerTime)</argsstring>
+        <name>setLinger</name>
+        <param>
+          <type>bool</type>
+          <declname>p_linger</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_lingerTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="43" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" compoundref="Config_8cc" startline="22" endline="38">Config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setNoDelay</definition>
+        <argsstring>(bool p_noDelay)</argsstring>
+        <name>setNoDelay</name>
+        <param>
+          <type>bool</type>
+          <declname>p_noDelay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="44" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" compoundref="Config_8cc" startline="22" endline="38">Config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setReuseAddr</definition>
+        <argsstring>(bool p_reuseAddr)</argsstring>
+        <name>setReuseAddr</name>
+        <param>
+          <type>bool</type>
+          <declname>p_reuseAddr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="45" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" compoundref="Config_8cc" startline="22" endline="38">Config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setCompress</definition>
+        <argsstring>(bool p_compress)</argsstring>
+        <name>setCompress</name>
+        <param>
+          <type>bool</type>
+          <declname>p_compress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="46" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" compoundref="Config_8cc" startline="22" endline="38">Config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a604e4ade1c49d83d204024f28a3d461d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setCompressionCodec</definition>
+        <argsstring>(codec p_compressionCodec)</argsstring>
+        <name>setCompressionCodec</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref></type>
+          <declname>p_compressionCodec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a5ecd1cd77dd3bd937aa021d3bf0ad860" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setConnectTimeoutMs</definition>
+        <argsstring>(uint32_t p_ms)</argsstring>
+        <name>setConnectTimeoutMs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a583358bf6945cbddd657f6db8c31618e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setSendTimeoutMs</definition>
+        <argsstring>(uint32_t p_ms)</argsstring>
+        <name>setSendTimeoutMs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1ad633fb35c7202550d444e4bf5ae213df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setReceiveTimeoutMs</definition>
+        <argsstring>(uint32_t p_ms)</argsstring>
+        <name>setReceiveTimeoutMs</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Config_1a9a2d3e9de6f26708a4bddc4ba7c31428" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::Config::setDnsCacheTTL</definition>
+        <argsstring>(uint32_t p_ms)</argsstring>
+        <name>setDnsCacheTTL</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="18" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="17" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>Config</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>Config</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a89faeb4f4a949ae6fe18b907814987ee" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getCompress</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a82a7b809f4d41f4124badef452b9698d" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getCompressionCodec</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a2dfd5c85238ef930891d3696e6f6246c" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getConnectTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1ef6d7fcee95df86143dfbdd007f64f9" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getDnsCacheTTL</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1ab43d43856cea3b9bf159b38d2d13d82b" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getLinger</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1aacb13cdd90746d5684feb00d7cdbefcc" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getLingerTime</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a499712a4fd63e48be43ff24eb94e72ff" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getNoDelay</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a4484d8887f26682beb5aaa45f801dc57" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getReceiveTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a3914a56737d69dd8879e03ed9b3dc855" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getReuseAddr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a300d76106dcc338d662894dd04373d91" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>getSendTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1aa298a34510c445da6a51dabf23bbb337" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_compress</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5b73511b2f8e412a8a13ac7813e8eada" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_compressionCodec</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1ae15617cf3f48a378898164d0e34de5d2" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_connectTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a0403cd53779f72f5d72048b14f485929" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_dnsCacheTTL</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1af9136ffd16a41bb71a73f5d6cb7a3baa" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_linger</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a77d45dee3cbca7aa494b7a7879142b45" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_lingerTime</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a35ba52df60fc921cf37a27d867a89607" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_noDelay</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1af4ec1eebfe8633cbaa44ec0c5ff54b8d" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_receiveTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a634bebf01fa1b0984aacfc50f3d5cccb" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_reuseAddr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a6a72c4d24f7074a1b3c78b836500fe58" prot="private" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>m_sendTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setCompress</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a604e4ade1c49d83d204024f28a3d461d" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setCompressionCodec</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5ecd1cd77dd3bd937aa021d3bf0ad860" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setConnectTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a9a2d3e9de6f26708a4bddc4ba7c31428" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setDnsCacheTTL</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setLinger</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setNoDelay</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1ad633fb35c7202550d444e4bf5ae213df" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setReceiveTimeoutMs</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setReuseAddr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Config_1a583358bf6945cbddd657f6db8c31618e" prot="public" virt="non-virtual"><scope>xtd::network::utils::Config</scope><name>setSendTimeoutMs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

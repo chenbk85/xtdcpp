@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1HtmlTemplate" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::http::HtmlTemplate</compoundname>
+    <basecompoundref refid="classxtd_1_1network_1_1http_1_1Template" prot="public" virt="non-virtual">xtd::network::http::Template</basecompoundref>
+    <includes refid="Template_8hh" local="no">Template.hh</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a15109206261d0bb4f8c2420e3aa122f6" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string xtd::network::http::HtmlTemplate::mcs_htmlTemplate</definition>
+        <argsstring></argsstring>
+        <name>mcs_htmlTemplate</name>
+        <initializer>=
+  &quot;&lt;!DOCTYPE html PUBLIC \&quot;-//W3C//DTD XHTML 1.0 Strict//EN\&quot; \&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\&quot;&gt;\n&quot;
+  &quot;&lt;html xmlns=&apos;http://www.w3.org/1999/xhtml&apos;&gt;\n&quot;
+  &quot;  &lt;head&gt;\n&quot;
+  &quot;    &lt;meta http-equiv=&apos;Content-Type&apos; content=&apos;{$__mimeType}; charset={$__charset}&apos;/&gt;\n&quot;
+  &quot;    &lt;meta name=&apos;description&apos;        content=&apos;{$__metaDescription}&apos;/&gt;\n&quot;
+  &quot;    &lt;meta name=&apos;keywords&apos;           content=&apos;{$__metaKeywords}&apos;/&gt;\n&quot;
+  &quot;    &lt;link rel=&apos;shortcut icon&apos;       type=&apos;image/x-icon&apos; href=&apos;{$__favico}&apos;/&gt;&quot;
+  &quot;    &lt;title&gt;{$__title}&lt;/title&gt;\n&quot;
+  &quot;{% for jsUrl in __jsList %}&quot;
+  &quot;    &lt;script type=&apos;text/javascript&apos; src=&apos;{$jsUrl}&apos;&gt;&lt;/script&gt;\n&quot;
+  &quot;{% endfor %}&quot;
+  &quot;{% for cssUrl in __cssList %}&quot;
+  &quot;    &lt;link rel=&apos;stylesheet&apos; type=&apos;text/css&apos; href=&apos;{$cssUrl}&apos;/&gt;\n&quot;
+  &quot;{% endfor %}&quot;
+  &quot;  &lt;/head&gt;\n&quot;
+  &quot;  &lt;body id=&apos;main_body&apos;&gt;\n&quot;
+  &quot;   {$__content}\n&quot;
+  &quot;  &lt;/body&gt;\n&quot;
+  &quot;&lt;/html&gt;\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="104" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a321e760f747abe09f82c27731c440c10" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_title</definition>
+        <argsstring></argsstring>
+        <name>m_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="124" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a3ad60768a68198dd5edadaddfa1ebdfb" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; xtd::network::http::HtmlTemplate::m_cssList</definition>
+        <argsstring></argsstring>
+        <name>m_cssList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af23a149c449857b27c53af5034f0c0fa" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; xtd::network::http::HtmlTemplate::m_jsList</definition>
+        <argsstring></argsstring>
+        <name>m_jsList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="126" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2dfcc5f94ac17a87febbd1e820396cf4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_metaDescription</definition>
+        <argsstring></argsstring>
+        <name>m_metaDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="127" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a832b23c37aa1ed4894404e62f906bf2e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_metaKeywords</definition>
+        <argsstring></argsstring>
+        <name>m_metaKeywords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="128" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a354abbdb18aefb82751f3ddaaea07445" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_mimeType</definition>
+        <argsstring></argsstring>
+        <name>m_mimeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="129" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a412ccde20815314b318f6b472d9031a2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_charset</definition>
+        <argsstring></argsstring>
+        <name>m_charset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="130" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a94dd9ec9e758ff47ceac4f579dc19d46" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::HtmlTemplate::m_favico</definition>
+        <argsstring></argsstring>
+        <name>m_favico</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="131" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::HtmlTemplate::HtmlTemplate</definition>
+        <argsstring>(bool p_defaultAssests=false)</argsstring>
+        <name>HtmlTemplate</name>
+        <param>
+          <type>bool</type>
+          <declname>p_defaultAssests</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="107" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.cc" bodystart="183" bodyend="214"/>
+        <references refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" compoundref="Template_8cc" startline="254" endline="258">setFavico</references>
+        <references refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8">addJs</references>
+        <references refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc">addCss</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate &amp; xtd::network::http::HtmlTemplate::setFavico</definition>
+        <argsstring>(const string &amp;p_ico)</argsstring>
+        <name>setFavico</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_ico</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="110" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.cc" bodystart="254" bodyend="258"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" compoundref="Template_8cc" startline="183" endline="214">HtmlTemplate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a360a57a8ca473b72fd76807d5cc7265a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::setTitle</definition>
+        <argsstring>(const string &amp;p_title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::addCss</definition>
+        <argsstring>(const string &amp;p_cssUrl)</argsstring>
+        <name>addCss</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_cssUrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="112" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" compoundref="Template_8cc" startline="183" endline="214">HtmlTemplate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::addJs</definition>
+        <argsstring>(const string &amp;p_jsUrl)</argsstring>
+        <name>addJs</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_jsUrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="113" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" compoundref="Template_8cc" startline="183" endline="214">HtmlTemplate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a1a87439632dc4f30fb247602b1bbadba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::setMetaKeywords</definition>
+        <argsstring>(const string &amp;p_keywords)</argsstring>
+        <name>setMetaKeywords</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_keywords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a67b44ce076eac00c888eb24ec3b9675b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::setCharset</definition>
+        <argsstring>(const string &amp;p_charset)</argsstring>
+        <name>setCharset</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_charset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4ef586066cbae8ffc86e851dbb43782c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::setMetaDescription</definition>
+        <argsstring>(const string &amp;p_description)</argsstring>
+        <name>setMetaDescription</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1ad2b01a5058edcc704e2f0057e7cd7d06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kindref="compound">HtmlTemplate</ref> &amp;</type>
+        <definition>HtmlTemplate&amp; xtd::network::http::HtmlTemplate::setContentType</definition>
+        <argsstring>(const string &amp;p_mimeType, const string &amp;p_charset)</argsstring>
+        <name>setContentType</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_mimeType</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_charset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::HtmlTemplate::resolve</definition>
+        <argsstring>(string &amp;p_result)</argsstring>
+        <name>resolve</name>
+        <reimplements refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd">resolve</reimplements>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="121" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.cc" bodystart="217" bodyend="251"/>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" compoundref="Template_8cc" startline="111" endline="137">xtd::network::http::Template::resolve</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473">xtd::network::http::Template::val</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86">xtd::network::http::Template::setTemplate</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Template_1ad6ba5fa3f5e0a2256cc356d1c6fd21f8">xtd::network::http::Template::setData</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="292">
+        <label>xtd::network::http::Generator</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Generator"/>
+      </node>
+      <node id="290">
+        <label>xtd::network::http::HtmlTemplate</label>
+        <link refid="classxtd_1_1network_1_1http_1_1HtmlTemplate"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>xtd::network::http::Template</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Template"/>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="295">
+        <label>xtd::network::http::Generator</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Generator"/>
+      </node>
+      <node id="293">
+        <label>xtd::network::http::HtmlTemplate</label>
+        <link refid="classxtd_1_1network_1_1http_1_1HtmlTemplate"/>
+        <childnode refid="294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>xtd::network::http::Template</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Template"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="102" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="101" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1aade6209a71f79db50f37ac18c0afd5a1" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>add</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a543a79fedf08f519912e9ad42a3d3f64" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>add</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>addCss</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" prot="protected" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>addError</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>addJs</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a5f8bfffa6c7fe8ae46158e976af3d666" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>Generator</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a4052d01b0d4849321b61688eac757b41" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>getContentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1ac4fa462833bedc8bde7c7e81b1a29f37" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>getError</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>HtmlTemplate</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a1250db96f0300bf4f56aae5929e5dbb2" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>loadTemplate</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a412ccde20815314b318f6b472d9031a2" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_charset</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a3ad60768a68198dd5edadaddfa1ebdfb" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_cssList</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a94dd9ec9e758ff47ceac4f579dc19d46" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_favico</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af23a149c449857b27c53af5034f0c0fa" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_jsList</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2dfcc5f94ac17a87febbd1e820396cf4" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_metaDescription</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a832b23c37aa1ed4894404e62f906bf2e" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_metaKeywords</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a354abbdb18aefb82751f3ddaaea07445" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_mimeType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a321e760f747abe09f82c27731c440c10" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>m_title</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1aef564fc3152e7477bb429e45b19328fc" prot="protected" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>mcs_defaultContentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a15109206261d0bb4f8c2420e3aa122f6" prot="private" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>mcs_htmlTemplate</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70" prot="public" virt="virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>resolve</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a67b44ce076eac00c888eb24ec3b9675b" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setCharset</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a0c28c6cc5e8cc71bcb026ff73551c4be" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setContent</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1ad2b01a5058edcc704e2f0057e7cd7d06" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setContentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1ad6ba5fa3f5e0a2256cc356d1c6fd21f8" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setFavico</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4ef586066cbae8ffc86e851dbb43782c" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setMetaDescription</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a1a87439632dc4f30fb247602b1bbadba" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setMetaKeywords</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setTemplate</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a360a57a8ca473b72fd76807d5cc7265a" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>setTitle</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a8ff314b3439353e666efc48a8443ea17" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>t_list</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a0593ea520f0e2cfa6279b01b0aeee5fd" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>t_map</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a3834dff3cec2cc0fbc66efed74f29459" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>t_val</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a1887dcae44d24a8594bc41a349a7e6fe" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>Template</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>val</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1a3a96743542ae1a063e90ec3ec2e774f8" prot="public" virt="non-virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>val</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" prot="public" virt="virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>~Generator</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Template_1aa31bb4b8ade7e47fb564004bbf92c542" prot="public" virt="virtual"><scope>xtd::network::http::HtmlTemplate</scope><name>~Template</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

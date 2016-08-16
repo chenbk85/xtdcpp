@@ -1,0 +1,111 @@
+\hypertarget{namespacextd_1_1serializer}{}\section{xtd\+:\+:serializer Namespace Reference}
+\label{namespacextd_1_1serializer}\index{xtd\+::serializer@{xtd\+::serializer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugBinIArchive}{Debug\+Bin\+I\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugBinOArchive}{Debug\+Bin\+O\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugTextIArchive}{Debug\+Text\+I\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive}{Debug\+Text\+O\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugXmlIArchive}{Debug\+Xml\+I\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugXmlOArchive}{Debug\+Xml\+O\+Archive}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1Doc}{Doc}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1mode}{mode}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1option}{option}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1serializer}{serializer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\string \hyperlink{namespacextd_1_1serializer_aff0b24f230c8b5083104eccb94242a8c}{as\+\_\+xml} (const T \&p\+\_\+obj, bool p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ char $>$ \hyperlink{namespacextd_1_1serializer_a0088e6d509f6652e58c7c0eea9102884}{as\+\_\+bin} (const T \&p\+\_\+obj, bool p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a1c43eba643505bba5858d6d5431201fb}{as\+\_\+bin} (const T \&p\+\_\+obj, std\+::vector$<$ char $>$ \&p\+\_\+data, bool p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ char $>$ \hyperlink{namespacextd_1_1serializer_a5ac463bb961b98f1b8b7c2655d2772db}{as\+\_\+text} (const T \&p\+\_\+obj, bool p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a601beccda10ec2760c371d39045bec0e}{from\+\_\+bin} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a76ec6ed068121fc7ff0f6514132c5683}{from\+\_\+bin} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a27ea640a20bff130274562ddd8762c0a}{from\+\_\+text} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, \hyperlink{structxtd_1_1serializer_1_1option}{option} p\+\_\+opt=\hyperlink{structxtd_1_1serializer_1_1option}{option}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{xtd\+::serializer@{xtd\+::serializer}!as\+\_\+bin@{as\+\_\+bin}}
+\index{as\+\_\+bin@{as\+\_\+bin}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{as\+\_\+bin(const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())}{as_bin(const T &p_obj, bool p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\+::vector$<$char$>$ xtd\+::serializer\+::as\+\_\+bin (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+obj, }
+\item[{bool}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a0088e6d509f6652e58c7c0eea9102884}{}\label{namespacextd_1_1serializer_a0088e6d509f6652e58c7c0eea9102884}
+\index{xtd\+::serializer@{xtd\+::serializer}!as\+\_\+bin@{as\+\_\+bin}}
+\index{as\+\_\+bin@{as\+\_\+bin}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{as\+\_\+bin(const T \&p\+\_\+obj, std\+::vector$<$ char $>$ \&p\+\_\+data, bool p\+\_\+debug, option p\+\_\+opt=option())}{as_bin(const T &p_obj, std::vector< char > &p_data, bool p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void xtd\+::serializer\+::as\+\_\+bin (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+obj, }
+\item[{std\+::vector$<$ char $>$ \&}]{p\+\_\+data, }
+\item[{bool}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a1c43eba643505bba5858d6d5431201fb}{}\label{namespacextd_1_1serializer_a1c43eba643505bba5858d6d5431201fb}
+\index{xtd\+::serializer@{xtd\+::serializer}!as\+\_\+text@{as\+\_\+text}}
+\index{as\+\_\+text@{as\+\_\+text}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{as\+\_\+text(const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())}{as_text(const T &p_obj, bool p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\+::vector$<$char$>$ xtd\+::serializer\+::as\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+obj, }
+\item[{bool}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a5ac463bb961b98f1b8b7c2655d2772db}{}\label{namespacextd_1_1serializer_a5ac463bb961b98f1b8b7c2655d2772db}
+\index{xtd\+::serializer@{xtd\+::serializer}!as\+\_\+xml@{as\+\_\+xml}}
+\index{as\+\_\+xml@{as\+\_\+xml}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{as\+\_\+xml(const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())}{as_xml(const T &p_obj, bool p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ string xtd\+::serializer\+::as\+\_\+xml (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+obj, }
+\item[{bool}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_aff0b24f230c8b5083104eccb94242a8c}{}\label{namespacextd_1_1serializer_aff0b24f230c8b5083104eccb94242a8c}
+\index{xtd\+::serializer@{xtd\+::serializer}!from\+\_\+bin@{from\+\_\+bin}}
+\index{from\+\_\+bin@{from\+\_\+bin}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{from\+\_\+bin(const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, option p\+\_\+opt=option())}{from_bin(const std::vector< char > &p_data, T &p_obj, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void xtd\+::serializer\+::from\+\_\+bin (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ char $>$ \&}]{p\+\_\+data, }
+\item[{T \&}]{p\+\_\+obj, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a601beccda10ec2760c371d39045bec0e}{}\label{namespacextd_1_1serializer_a601beccda10ec2760c371d39045bec0e}
+\index{xtd\+::serializer@{xtd\+::serializer}!from\+\_\+bin@{from\+\_\+bin}}
+\index{from\+\_\+bin@{from\+\_\+bin}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{from\+\_\+bin(const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, option p\+\_\+opt=option())}{from_bin(const std::vector< char > &p_data, T &p_obj, bool &p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void xtd\+::serializer\+::from\+\_\+bin (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ char $>$ \&}]{p\+\_\+data, }
+\item[{T \&}]{p\+\_\+obj, }
+\item[{bool \&}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a76ec6ed068121fc7ff0f6514132c5683}{}\label{namespacextd_1_1serializer_a76ec6ed068121fc7ff0f6514132c5683}
+\index{xtd\+::serializer@{xtd\+::serializer}!from\+\_\+text@{from\+\_\+text}}
+\index{from\+\_\+text@{from\+\_\+text}!xtd\+::serializer@{xtd\+::serializer}}
+\subsubsection[{\texorpdfstring{from\+\_\+text(const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, option p\+\_\+opt=option())}{from_text(const std::vector< char > &p_data, T &p_obj, bool &p_debug, option p_opt=option())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void xtd\+::serializer\+::from\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ char $>$ \&}]{p\+\_\+data, }
+\item[{T \&}]{p\+\_\+obj, }
+\item[{bool \&}]{p\+\_\+debug, }
+\item[{{\bf option}}]{p\+\_\+opt = {\ttfamily {\bf option}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1serializer_a27ea640a20bff130274562ddd8762c0a}{}\label{namespacextd_1_1serializer_a27ea640a20bff130274562ddd8762c0a}

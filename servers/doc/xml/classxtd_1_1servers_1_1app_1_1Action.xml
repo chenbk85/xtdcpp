@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1Action" kind="class" language="C++" prot="public">
+    <compoundname>xtd::servers::app::Action</compoundname>
+    <includes refid="HttpServer_8hh" local="no">HttpServer.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Action_1a397748b5fd8412efcf779978ed4f4eef" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::Action::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="40" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Action_1a78d15b580f1f537cc273f05500a823e8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::Action::m_description</definition>
+        <argsstring></argsstring>
+        <name>m_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Action_1a8ac7e4975e2fde1bb9237454bd99faec" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::Action::m_log</definition>
+        <argsstring></argsstring>
+        <name>m_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Action_1a3baf29675a2f46cf5946816cf6c9b7b6" prot="public" static="no" mutable="no">
+        <type>boost::posix_time::ptime</type>
+        <definition>boost::posix_time::ptime xtd::servers::app::Action::m_timestamp</definition>
+        <argsstring></argsstring>
+        <name>m_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Action_1aea5ec95c3aa4f39ac164507a0684b6c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::Action::Action</definition>
+        <argsstring>(string p_name, string p_description)</argsstring>
+        <name>Action</name>
+        <param>
+          <type>string</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>p_description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Action_1a0859f1ac8244776126115daf388985af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::Action::~Action</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Action</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="27" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1aea5ec95c3aa4f39ac164507a0684b6c2" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>Action</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1a78d15b580f1f537cc273f05500a823e8" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>m_description</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1a8ac7e4975e2fde1bb9237454bd99faec" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>m_log</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1a397748b5fd8412efcf779978ed4f4eef" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1a3baf29675a2f46cf5946816cf6c9b7b6" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>m_timestamp</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Action_1a0859f1ac8244776126115daf388985af" prot="public" virt="non-virtual"><scope>xtd::servers::app::Action</scope><name>~Action</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1text_1_1xml" kind="class" language="C++" prot="public">
+    <compoundname>xtd::text::xml</compoundname>
+    <includes refid="text_8hh" local="no">text.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1text_1_1xml_1a47e9eeb37d838f7892580df49d9af4b9" prot="private" static="no">
+        <type>boost::tuple&lt; string, string, string &gt;</type>
+        <definition>typedef boost::tuple&lt;string, string, string&gt; xtd::text::xml::t_entity</definition>
+        <argsstring></argsstring>
+        <name>t_entity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="12" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1text_1_1xml_1a9b3918b7ebded616690be19640cdba21" prot="private" static="no">
+        <type>vector&lt; t_entity &gt;</type>
+        <definition>typedef vector&lt;t_entity&gt; xtd::text::xml::t_data</definition>
+        <argsstring></argsstring>
+        <name>t_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="13" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.hh" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1text_1_1xml_1a767f42dc9e5c40f7021bf41c17292902" prot="private" static="yes" mutable="no">
+        <type>t_data</type>
+        <definition>xml::t_data xtd::text::xml::ms_entityList</definition>
+        <argsstring></argsstring>
+        <name>ms_entityList</name>
+        <initializer>= xml::initialize()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.hh" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxtd_1_1text_1_1xml_1ab53ec8f1cf407b142479fa90b4d41bdb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::text::xml::encode</definition>
+        <argsstring>(string &amp;p_str)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.cc" bodystart="23" bodyend="31"/>
+        <referencedby refid="classxtd_1_1text_1_1xml_1a75c4caafbada294ca593a907b9ad1e00" compoundref="text_8cc" startline="34" endline="39">encode_copy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1text_1_1xml_1a75c4caafbada294ca593a907b9ad1e00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::text::xml::encode_copy</definition>
+        <argsstring>(const string &amp;p_str)</argsstring>
+        <name>encode_copy</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.cc" bodystart="34" bodyend="39"/>
+        <references refid="classxtd_1_1text_1_1xml_1ab53ec8f1cf407b142479fa90b4d41bdb" compoundref="text_8cc" startline="23" endline="31">encode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classxtd_1_1text_1_1xml_1a358995dad405fbcd3734f8e555f84ee1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>t_data</type>
+        <definition>xml::t_data xtd::text::xml::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.cc" bodystart="11" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/common/src/text.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/text.hh" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1text_1_1xml_1ab53ec8f1cf407b142479fa90b4d41bdb" prot="public" virt="non-virtual"><scope>xtd::text::xml</scope><name>encode</name></member>
+      <member refid="classxtd_1_1text_1_1xml_1a75c4caafbada294ca593a907b9ad1e00" prot="public" virt="non-virtual"><scope>xtd::text::xml</scope><name>encode_copy</name></member>
+      <member refid="classxtd_1_1text_1_1xml_1a358995dad405fbcd3734f8e555f84ee1" prot="private" virt="non-virtual"><scope>xtd::text::xml</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1text_1_1xml_1a767f42dc9e5c40f7021bf41c17292902" prot="private" virt="non-virtual"><scope>xtd::text::xml</scope><name>ms_entityList</name></member>
+      <member refid="classxtd_1_1text_1_1xml_1a9b3918b7ebded616690be19640cdba21" prot="private" virt="non-virtual"><scope>xtd::text::xml</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1text_1_1xml_1a47e9eeb37d838f7892580df49d9af4b9" prot="private" virt="non-virtual"><scope>xtd::text::xml</scope><name>t_entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

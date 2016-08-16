@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ClientThreadManager_8hh" kind="file" language="C++">
+    <compoundname>ClientThreadManager.hh</compoundname>
+    <includes local="no">boost/asio.hpp</includes>
+    <includes local="no">boost/thread.hpp</includes>
+    <includes local="no">boost/thread/mutex.hpp</includes>
+    <includes local="no">boost/noncopyable.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">boost/make_shared.hpp</includes>
+    <includes local="no">types.hh</includes>
+    <includedby refid="ClientThreadManager_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc</includedby>
+    <incdepgraph>
+      <node id="1198">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1200">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1199">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1197">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="1196">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1201">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1202">
+        <label>types.hh</label>
+      </node>
+      <node id="1195">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh</label>
+        <link refid="ClientThreadManager.hh"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1204">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc</label>
+        <link refid="ClientThreadManager_8cc"/>
+      </node>
+      <node id="1203">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh</label>
+        <link refid="ClientThreadManager.hh"/>
+        <childnode refid="1204" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1network_1_1base_1_1ThreadManager" prot="public">xtd::network::base::ThreadManager</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1base">xtd::network::base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BASE_CLIENTTHREADMANAGER_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BASE_CLIENTTHREADMANAGER_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/thread/mutex.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/noncopyable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/make_shared.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classxtd_1_1network_1_1base_1_1ThreadManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref><sp/>:<sp/>boost::noncopyable</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a589ebd86682829a8dc09475c24d303c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;size_t,<sp/>boost::shared_ptr&lt;boost::thread&gt;<sp/>&gt;<sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a589ebd86682829a8dc09475c24d303c7" kindref="member">threadMap_t</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>~<ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>&amp;<sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a987b37b09ba82f07f870f4720561c958" kindref="member">getInstance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a8401b77963df643d6ca29e5abd7da9ba" kindref="member">createThread</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>p_threadId);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>boost::asio::io_service&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1afe3f6bc402d13a07cad5fc8d09473739" kindref="member">getIoService</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attention<sp/>à<sp/>l&apos;initialisation<sp/>d&apos;un<sp/>pointeur<sp/>static<sp/>lors<sp/>des<sp/>tests<sp/>unitaires<sp/>qui<sp/>cachent<sp/>un<sp/>fork</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>pour<sp/>garantir<sp/>l&apos;ordre<sp/>d&apos;initialisation,<sp/>création<sp/>du<sp/>pointeur<sp/>au<sp/>constructeur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::asio::io_service*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ioService;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mutex;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_threadManager;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;boost::asio::io_service::work&gt;<sp/>m_workPtr;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>threadMap_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_threadMap;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;boost::thread&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_threadPtr;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BASE_CLIENTTHREADMANAGER_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh"/>
+  </compounddef>
+</doxygen>

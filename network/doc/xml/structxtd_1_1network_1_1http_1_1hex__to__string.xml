@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1network_1_1http_1_1hex__to__string" kind="struct" language="C++" prot="public">
+    <compoundname>xtd::network::http::hex_to_string</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxtd_1_1network_1_1http_1_1hex__to__string_1a88d313368d68cfdddb20e4496b73af87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string xtd::network::http::hex_to_string::operator()</definition>
+        <argsstring>(const T &amp;p_match) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_match</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" line="344" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="344" bodyend="353"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a42304776ec9355ab89c6e8e0391f4309" compoundref="Request_8cc" startline="77" endline="81">xtd::network::http::Request::addCgi</references>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" line="342" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="341" bodyend="354"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1network_1_1http_1_1hex__to__string_1a88d313368d68cfdddb20e4496b73af87" prot="public" virt="non-virtual"><scope>xtd::network::http::hex_to_string</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

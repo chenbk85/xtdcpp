@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="InstantFreq_8hh" kind="file" language="C++">
+    <compoundname>InstantFreq.hh</compoundname>
+    <includes local="no">deque</includes>
+    <includes refid="Value_8hh" local="yes">Value.hh</includes>
+    <includedby refid="AvgTimedValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
+    <includedby refid="Cache_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Cache.hh</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="Perf_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Perf.hh</includedby>
+    <includedby refid="InstantFreq_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc</includedby>
+    <incdepgraph>
+      <node id="773">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh</label>
+        <link refid="InstantFreq.hh"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="775">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="776">
+        <label>string</label>
+      </node>
+      <node id="781">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>deque</label>
+      </node>
+      <node id="780">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="782">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh</label>
+        <link refid="InstantFreq.hh"/>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
+      </node>
+      <node id="790">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc</label>
+        <link refid="InstantFreq_8cc"/>
+      </node>
+      <node id="788">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="787">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="786">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
+      </node>
+      <node id="783">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1InstantFreq" prot="public">xtd::counters::InstantFreq</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_INSTANTFREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_INSTANTFREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Value_8hh" kindref="compound">Value.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1counters_1_1InstantFreq" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt;uint32_t&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="classxtd_1_1counters_1_1InstantFreq_1a93e934ad70d5b32b14beed5572450abf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::deque&lt;boost::posix_time::ptime&gt;<sp/>t_timevect;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq_1a428c013f73c1322ee3fc74cc08171c8c" kindref="member">InstantFreq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_timeDeltaMs<sp/>=<sp/>1000);</highlight></codeline>
+<codeline lineno="23" refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" kindref="member">~InstantFreq</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kindref="member">tick</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref>&amp;<sp/><ref refid="classxtd_1_1counters_1_1InstantFreq_1a3ae7dc13ff6209a0628cdf481ab0a37c" kindref="member">operator=</ref>(uint32_t<sp/>p_value);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq_1a2e4629f5a835d7b52425a72f25dcd4d2" kindref="member">update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>expired_safe(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_item,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_now)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shrink_safe(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_now);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>t_timevect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_samples;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>m_timeDeltaMs;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_INSTANTFREQ_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh"/>
+  </compounddef>
+</doxygen>

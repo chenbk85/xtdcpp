@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="json__parser_8hpp" kind="file" language="C++">
+    <compoundname>json_parser.hpp</compoundname>
+    <includes local="no">boost/property_tree/ptree.hpp</includes>
+    <includes local="no">boost/property_tree/detail/json_parser_read.hpp</includes>
+    <includes refid="json__parser__write_8hpp" local="yes">json_parser_write.hpp</includes>
+    <includes local="no">boost/property_tree/detail/json_parser_error.hpp</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">locale</includes>
+    <includes local="no">boost/lexical_cast.hpp</includes>
+    <incdepgraph>
+      <node id="368">
+        <label>locale</label>
+      </node>
+      <node id="365">
+        <label>iomanip</label>
+      </node>
+      <node id="361">
+        <label>boost/next_prior.hpp</label>
+      </node>
+      <node id="369">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="366">
+        <label>boost/property_tree/detail/json_parser_error.hpp</label>
+      </node>
+      <node id="363">
+        <label>string</label>
+      </node>
+      <node id="367">
+        <label>fstream</label>
+      </node>
+      <node id="364">
+        <label>ostream</label>
+      </node>
+      <node id="362">
+        <label>boost/type_traits/make_unsigned.hpp</label>
+      </node>
+      <node id="358">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="360">
+        <label>json_parser_write.hpp</label>
+        <link refid="json__parser__write_8hpp"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>boost/property_tree/detail/json_parser_read.hpp</label>
+      </node>
+      <node id="357">
+        <label>/home/psyco/dev/xtdcpp/common/src/json_parser.hpp</label>
+        <link refid="json_parser.hpp"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator" prot="public">boost::property_tree::json_parser::translator</innerclass>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4" prot="public">boost::property_tree::json_parser::translator&lt; std::string &gt;</innerclass>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4" prot="public">boost::property_tree::json_parser::translator&lt; bool &gt;</innerclass>
+    <innernamespace refid="namespaceboost">boost</innernamespace>
+    <innernamespace refid="namespaceboost_1_1property__tree">boost::property_tree</innernamespace>
+    <innernamespace refid="namespaceboost_1_1property__tree_1_1json__parser">boost::property_tree::json_parser</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="json__parser_8hpp_1a021df3c720c2c295aa44478b28940a42" prot="public" static="no">
+        <name>BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On a copier le header de boost pour palier a une limitation du writer json qui ne gere que des strings ptree.put&lt;int&gt;(&quot;key&quot;, 5) ptree.put&lt;string&gt;(&quot;key1&quot;, &quot;salut&quot;) write_json(cout, ptree) -&gt; { &quot;key&quot; : &quot;5&quot;, &quot;key1&quot; : &quot;salut&quot; } on coudrait avoir : -&gt; { &quot;key&quot; : 5, &quot;key1&quot; : &quot;salut&quot; } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="27" column="10" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2002-2006<sp/>Marcin<sp/>Kalicinski</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(See<sp/>accompanying<sp/>file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>more<sp/>information,<sp/>see<sp/>www.boost.org</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>on<sp/>empeche<sp/>l&apos;inclusion<sp/>du<sp/>header<sp/>de<sp/>boost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="json__parser_8hpp_1a021df3c720c2c295aa44478b28940a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/ptree.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/detail/json_parser_read.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wtype-limits&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;<ref refid="json__parser__write_8hpp" kindref="compound">json_parser_write.hpp</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/detail/json_parser_error.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;locale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/lexical_cast.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespaceboost_1_1property__tree_1_1json__parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref><sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">json_parser</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52" refid="structboost_1_1property__tree_1_1json__parser_1_1translator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator" kindref="compound">translator</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aa6939259165594c66343c4fd2b92fee0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aa6939259165594c66343c4fd2b92fee0" kindref="member">internal_type</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1a41e329b10777c2a4a756b65911746a8a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1a41e329b10777c2a4a756b65911746a8a" kindref="member">external_type</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aef3c8478be3ecb503113f433ece01628" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;T&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aef3c8478be3ecb503113f433ece01628" kindref="member">get_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;v)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::lexical_cast&lt;T&gt;(v);<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aab997fa3043e1decab15845b61a9c801" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;std::string&gt;<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aab997fa3043e1decab15845b61a9c801" kindref="member">put_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::lexical_cast&lt;std::string&gt;(v);<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="62" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator" kindref="compound">translator</ref>&lt;std::string&gt;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a0442088549debbf3d26b2506b4bd7aad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a0442088549debbf3d26b2506b4bd7aad" kindref="member">internal_type</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a31b953272d7ddc4de96930a64e01c25a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a31b953272d7ddc4de96930a64e01c25a" kindref="member">external_type</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a156c6497ef493978904665ba508226a8" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;std::string&gt;<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a156c6497ef493978904665ba508226a8" kindref="member">get_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>v)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v.substr(1,<sp/>v.size()<sp/>-<sp/>2);<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1ae7eee6b74826f7b16599c38be93c0e37" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;std::string&gt;<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1ae7eee6b74826f7b16599c38be93c0e37" kindref="member">put_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>v)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>v<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="73" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator" kindref="compound">translator</ref>&lt;bool&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb06d7dd56a70ab4a34df47427f9498d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb06d7dd56a70ab4a34df47427f9498d" kindref="member">internal_type</ref>;</highlight></codeline>
+<codeline lineno="76" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a735dcf537d03fd03712c193e56de30bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a735dcf537d03fd03712c193e56de30bc" kindref="member">external_type</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a8e1c4f5fe17ec4a1a4bfd9acadc99403" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;bool&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a8e1c4f5fe17ec4a1a4bfd9acadc99403" kindref="member">get_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>v)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(v<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79" refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb6097b473b4da99966191d43317ad64" refkind="member"><highlight class="normal"><sp/><sp/>boost::optional&lt;std::string&gt;<sp/><ref refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb6097b473b4da99966191d43317ad64" kindref="member">put_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(</highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(</highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Ptree&gt;</highlight></codeline>
+<codeline lineno="98" refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" kindref="member">read_json</ref>(std::basic_istream&lt;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ptree::key_type::value_type</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;<sp/>&amp;stream,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ptree<sp/>&amp;pt)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>read_json_internal(stream,<sp/>pt,<sp/>std::string());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Ptree&gt;</highlight></codeline>
+<codeline lineno="122" refid="namespaceboost_1_1property__tree_1_1json__parser_1aa8344dc0b7987cba89b0630195d7a34d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" kindref="member">read_json</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;filename,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ptree<sp/>&amp;pt,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::locale<sp/>&amp;loc<sp/>=<sp/>std::locale())</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>std::basic_ifstream&lt;typename<sp/>Ptree::key_type::value_type&gt;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>stream(filename.c_str());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!stream)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_PROPERTY_TREE_THROW(json_parser_error(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>open<sp/>file&quot;</highlight><highlight class="normal">,<sp/>filename,<sp/>0));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>stream.imbue(loc);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>read_json_internal(stream,<sp/>pt,<sp/>filename);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Ptree&gt;</highlight></codeline>
+<codeline lineno="150" refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" kindref="member">write_json</ref>(std::basic_ostream&lt;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ptree::key_type::value_type</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;<sp/>&amp;stream,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ptree<sp/>&amp;pt,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pretty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" kindref="member">write_json_internal</ref>(stream,<sp/>pt,<sp/>std::string(),<sp/>pretty);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Ptree&gt;</highlight></codeline>
+<codeline lineno="174" refid="namespaceboost_1_1property__tree_1_1json__parser_1a49f6a7c920e5ac943603a5f10ccf3a32" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" kindref="member">write_json</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;filename,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ptree<sp/>&amp;pt,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::locale<sp/>&amp;loc<sp/>=<sp/>std::locale(),</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pretty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>std::basic_ofstream&lt;typename<sp/>Ptree::key_type::value_type&gt;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>stream(filename.c_str());</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!stream)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_PROPERTY_TREE_THROW(json_parser_error(</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>open<sp/>file&quot;</highlight><highlight class="normal">,<sp/>filename,<sp/>0));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>stream.imbue(loc);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" kindref="member">write_json_internal</ref>(stream,<sp/>pt,<sp/>filename,<sp/>pretty);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}<sp/>}<sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref><sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" kindref="member">json_parser::read_json</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" kindref="member">json_parser::write_json</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>json_parser::json_parser_error;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp"/>
+  </compounddef>
+</doxygen>

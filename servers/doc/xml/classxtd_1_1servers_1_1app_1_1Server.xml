@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1Server" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xtd::servers::app::Server</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">network::bip::Server&lt; TReq, TRes, Domain &gt;</basecompoundref>
+    <basecompoundref refid="classxtd_1_1servers_1_1app_1_1HttpServer" prot="public" virt="non-virtual">xtd::servers::app::HttpServer</basecompoundref>
+    <includes refid="Server_8hh" local="no">Server.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TReq</type>
+      </param>
+      <param>
+        <type>typename TRes</type>
+      </param>
+      <param>
+        <type>typename Domain</type>
+        <defval>network::utils::af_inet</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2e" prot="private" static="no">
+        <name>stopper_status</name>
+        <enumvalue id="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea075ae3d2fc31640504f814f60e5ef713" prot="private">
+          <name>disabled</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea8684b8d2826f255bfc5a07b107e7eec9" prot="private">
+          <name>waitting</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2eaa10311459433adf322f2590a4987c423" prot="private">
+          <name>enabled</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="34" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1Server_1a6159422bbffe0fd3d02eb21c4e61011e" prot="protected" static="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1Server" kindref="compound">Server</ref>&lt; TReq, TRes, Domain &gt;</type>
+        <definition>typedef Server&lt;TReq, TRes, Domain&gt; xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::bip_app</definition>
+        <argsstring></argsstring>
+        <name>bip_app</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1Server_1a7254e9a899be59bbe8ea13ca127108dc" prot="protected" static="no">
+        <type>network::bip::Server&lt; TReq, TRes, Domain &gt;</type>
+        <definition>typedef network::bip::Server&lt;TReq, TRes, Domain&gt; xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::bip_net</definition>
+        <argsstring></argsstring>
+        <name>bip_net</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1Server_1a72a3c0bea3f2fc2e87b98e09e54fc9ac" prot="protected" static="no">
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" kindref="member">param::Base::t_sptr</ref></type>
+        <definition>typedef param::Base::t_sptr xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::t_param_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_param_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::mcs_defaultProbeDelay</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultProbeDelay</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::mcs_defaultTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultTimeoutMs</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::mcs_httpNbThread</definition>
+        <argsstring></argsstring>
+        <name>mcs_httpNbThread</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::mcs_defaultListenInterface[]</definition>
+        <argsstring>[]</argsstring>
+        <name>mcs_defaultListenInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1afae8d71c231f3e48ec8270217fddae10" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::mcs_defaultStructGenDumpPath</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultStructGenDumpPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a08752041a6fc98289ad93c93c1d4fd75" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_bipHost</definition>
+        <argsstring></argsstring>
+        <name>m_bipHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="91" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a849adda20d929ad1116564177986e146" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_bipPort</definition>
+        <argsstring></argsstring>
+        <name>m_bipPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="92" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a4e7cb3d792a27b1572aa775f8f0018f3" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_bipNbThread</definition>
+        <argsstring></argsstring>
+        <name>m_bipNbThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="93" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a62a3f48e47eba551b53d0bef859aa906" prot="protected" static="no" mutable="no">
+        <type>network::utils::Config</type>
+        <definition>network::utils::Config xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_bipConfig</definition>
+        <argsstring></argsstring>
+        <name>m_bipConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="94" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a143d0eeee15dd57ba4d03737a0128551" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_useCompression</definition>
+        <argsstring></argsstring>
+        <name>m_useCompression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="95" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1ae5180a630e0f23596a0909f845d00e69" prot="protected" static="no" mutable="no">
+        <type>stopper_status</type>
+        <definition>stopper_status xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_stopperStatus</definition>
+        <argsstring></argsstring>
+        <name>m_stopperStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1afb80e8da001aafc8ffbf5b2dd8a9213e" prot="protected" static="no" mutable="no">
+        <type>TRes</type>
+        <definition>TRes xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_stopperResponse</definition>
+        <argsstring></argsstring>
+        <name>m_stopperResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="97" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a3ad929be560e47d7193da946cd74e557" prot="protected" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_structgenMutex</definition>
+        <argsstring></argsstring>
+        <name>m_structgenMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="98" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a66a9242f7a55a296f1ca25cb18764eec" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_structgenFilename</definition>
+        <argsstring></argsstring>
+        <name>m_structgenFilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="99" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1ae4f23d9c3abe0d511b7ff112c368e496" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; counters::AvgTimedValue &gt;</type>
+        <definition>boost::shared_ptr&lt;counters::AvgTimedValue&gt; xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_perfCounter</definition>
+        <argsstring></argsstring>
+        <name>m_perfCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="102" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1Server_1a82f99ede6c5e97ce4f9fba768bc6329e" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a72a3c0bea3f2fc2e87b98e09e54fc9ac" kindref="member">t_param_sptr</ref></type>
+        <definition>t_param_sptr xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::m_assertRTT</definition>
+        <argsstring></argsstring>
+        <name>m_assertRTT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="103" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1ac30046979fc32ad42c2436c0f3854ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::Server</definition>
+        <argsstring>(void)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a1b30c4e9066d130569acb7d31c125e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::~Server</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Server</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1ad3c9fd71ba0399f18c27b15cb1d28e65" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::processRequest</definition>
+        <argsstring>(uint32_t p_requestID, const TReq &amp;p_request, const bool p_requestDebug, TRes &amp;p_response, bool &amp;p_responseDebug)=0</argsstring>
+        <name>processRequest</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const TReq &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>p_requestDebug</declname>
+        </param>
+        <param>
+          <type>TRes &amp;</type>
+          <declname>p_response</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_responseDebug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a04ac2d5b3a0a229a3b54ef33b9b7056d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::parseConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>parseConfig</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f">parseConfig</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1aeb01b34fd4e8564b8cd18c2041dc253f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::parseBipPort</definition>
+        <argsstring>(void)</argsstring>
+        <name>parseBipPort</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a6f5fff5c5058dc43aea7b27a046c985b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::checkOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>checkOptions</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9">checkOptions</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1aabde8b6a3810b09f029821dddafe3b8c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d">initialize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1afbe76a86e66e635907229d37b1267037" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>status</type>
+        <definition>virtual status xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::defineProbes</definition>
+        <argsstring>(void)</argsstring>
+        <name>defineProbes</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3">defineProbes</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a00c2f9aaa3c130299a4c77f86bf37d38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::isResponseValid</definition>
+        <argsstring>(const TRes &amp;p_response)</argsstring>
+        <name>isResponseValid</name>
+        <param>
+          <type>const TRes &amp;</type>
+          <declname>p_response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a37fe0eca660f81a9edde0c1ce6938f39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049">stop</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a8e21bf6e7993a2e04fd70d0ce88ca487" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::start</definition>
+        <argsstring>(void)</argsstring>
+        <name>start</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9">start</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1ad1161e88fb26561ffbef7254fb263d15" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::isStructgenMode</definition>
+        <argsstring>(void) const </argsstring>
+        <name>isStructgenMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1ae4ad855e88777c7e5afe9d673037ca6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::h_query</definition>
+        <argsstring>(const uint32_t p_requestId, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_query</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestId</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a10fc93bccaf973467b0df7de87b4ae79" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::h_ihm_query</definition>
+        <argsstring>(const uint32_t p_requestId, const network::http::Request &amp;p_req, network::http::Response &amp;p_res)</argsstring>
+        <name>h_ihm_query</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_requestId</declname>
+        </param>
+        <param>
+          <type>const network::http::Request &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <param>
+          <type>network::http::Response &amp;</type>
+          <declname>p_res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1ab6700b87291ddfa7de81f11ec4f866e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::setAssertRTT</definition>
+        <argsstring>(bool p_assert)</argsstring>
+        <name>setAssertRTT</name>
+        <param>
+          <type>bool</type>
+          <declname>p_assert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1aa9c2d3c2a645f77babb7d0fcbf79ebce" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::process</definition>
+        <argsstring>(void)</argsstring>
+        <name>process</name>
+        <reimplements refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8">process</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a50045bee14d75be030142c485127fe22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::dumpRequest</definition>
+        <argsstring>(const TReq &amp;p_req)</argsstring>
+        <name>dumpRequest</name>
+        <param>
+          <type>const TReq &amp;</type>
+          <declname>p_req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1Server_1a6b4f59b5e52a6b21119577757405f7dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;::processObjectRequest</definition>
+        <argsstring>(uint32_t p_requestID, const TReq &amp;p_request, const bool p_requestDebug, TRes &amp;p_response, bool &amp;p_responseDebug)</argsstring>
+        <name>processObjectRequest</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <param>
+          <type>const TReq &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>p_requestDebug</declname>
+        </param>
+        <param>
+          <type>TRes &amp;</type>
+          <declname>p_response</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_responseDebug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1Server"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>xtd::servers::app::HttpServer</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HttpServer"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Application</label>
+      </node>
+      <node id="80">
+        <label>network::bip::Server&lt; TReq, TRes, Domain &gt;</label>
+      </node>
+      <node id="83">
+        <label>network::http::Server&lt; network::utils::af_inet &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>xtd::servers::app::Server&lt; TReq, TRes, Domain &gt;</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1Server"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>xtd::servers::app::HttpServer</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HttpServer"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>Application</label>
+      </node>
+      <node id="85">
+        <label>network::bip::Server&lt; TReq, TRes, Domain &gt;</label>
+      </node>
+      <node id="88">
+        <label>network::http::Server&lt; network::utils::af_inet &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh" bodystart="24" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>addProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6126daf3a088048921d4e809231c3716" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>addProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>bind_action</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6159422bbffe0fd3d02eb21c4e61011e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>bip_app</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a7254e9a899be59bbe8ea13ca127108dc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>bip_net</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6f5fff5c5058dc43aea7b27a046c985b" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>checkOptions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1afbe76a86e66e635907229d37b1267037" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>defineProbes</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a50045bee14d75be030142c485127fe22" prot="private" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>dumpRequest</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>getCommonConfKey</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>getSnmpPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>getSpecificConfKey</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a10fc93bccaf973467b0df7de87b4ae79" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>h_ihm_query</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae4ad855e88777c7e5afe9d673037ca6b" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>h_query</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>h_runAction</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>handleTERM</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>handleUSR2</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad879d72fb0151a3c383ccbe75bb642cc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>http_app</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac5263de622bb17c3ec921a00266ea053" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>http_net</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>HttpServer</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1aabde8b6a3810b09f029821dddafe3b8c" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a00c2f9aaa3c130299a4c77f86bf37d38" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>isResponseValid</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ad1161e88fb26561ffbef7254fb263d15" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>isStructgenMode</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_actions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_adminDir</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a82f99ede6c5e97ce4f9fba768bc6329e" prot="private" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_assertRTT</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a62a3f48e47eba551b53d0bef859aa906" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_bipConfig</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a08752041a6fc98289ad93c93c1d4fd75" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_bipHost</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a4e7cb3d792a27b1572aa775f8f0018f3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_bipNbThread</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a849adda20d929ad1116564177986e146" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_bipPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_config</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_configPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_httpConfig</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_httpConfigPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_httpHost</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_httpPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_isDebug</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_isModeProbe</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_nbThread</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_params</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae4f23d9c3abe0d511b7ff112c368e496" prot="private" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_perfCounter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_probeDelay</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_prober</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_ramCounter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_snmpPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1afb80e8da001aafc8ffbf5b2dd8a9213e" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_stopperResponse</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae5180a630e0f23596a0909f845d00e69" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_stopperStatus</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a66a9242f7a55a296f1ca25cb18764eec" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_structgenFilename</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a3ad929be560e47d7193da946cd74e557" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_structgenMutex</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_thresholdMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_timeoutMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a143d0eeee15dd57ba4d03737a0128551" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>m_useCompression</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_defaultListenInterface</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_defaultProbeDelay</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1afae8d71c231f3e48ec8270217fddae10" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_defaultStructGenDumpPath</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad21741083478d35b92ba0b1da7499950" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_defaultThresholdMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_defaultTimeoutMs</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>mcs_httpNbThread</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>modeProbeActivation</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1aeb01b34fd4e8564b8cd18c2041dc253f" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>parseBipPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a04ac2d5b3a0a229a3b54ef33b9b7056d" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>parseConfig</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>parseHttpPort</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1aa9c2d3c2a645f77babb7d0fcbf79ebce" prot="private" virt="virtual"><scope>xtd::servers::app::Server</scope><name>process</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6b4f59b5e52a6b21119577757405f7dd" prot="private" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>processObjectRequest</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ad3c9fd71ba0399f18c27b15cb1d28e65" prot="protected" virt="pure-virtual"><scope>xtd::servers::app::Server</scope><name>processRequest</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>readConf</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abe54ee996274b1f6d4a89d29bba56ae8" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>readConf</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ac30046979fc32ad42c2436c0f3854ea2" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>Server</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ab6700b87291ddfa7de81f11ec4f866e6" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>setAssertRTT</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9247cbc7930939b40df98a20167007c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>setLastAdminLog</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a8e21bf6e7993a2e04fd70d0ce88ca487" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>start</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a37fe0eca660f81a9edde0c1ce6938f39" prot="protected" virt="virtual"><scope>xtd::servers::app::Server</scope><name>stop</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2e" prot="private" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>stopper_status</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_action</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_actions</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_counter</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_param_handler</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a72a3c0bea3f2fc2e87b98e09e54fc9ac" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_param_sptr</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" prot="protected" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>t_prober</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1082944f193865fc303c2d4a5569eaf9" prot="public" virt="virtual"><scope>xtd::servers::app::Server</scope><name>~HttpServer</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1Server_1a1b30c4e9066d130569acb7d31c125e20" prot="public" virt="non-virtual"><scope>xtd::servers::app::Server</scope><name>~Server</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

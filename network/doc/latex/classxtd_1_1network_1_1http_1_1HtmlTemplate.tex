@@ -1,0 +1,295 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Html\+Template Class Reference}
+\label{classxtd_1_1network_1_1http_1_1HtmlTemplate}\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+
+
+{\ttfamily \#include $<$Template.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:Html\+Template\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:Html\+Template\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a2e40e5f2ad3b6b5cdb8b8f73656efe6d}{Html\+Template} (bool p\+\_\+default\+Assests=false)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a92496dd5d269160aeb2640908b1920a1}{set\+Favico} (const string \&p\+\_\+ico)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a360a57a8ca473b72fd76807d5cc7265a}{set\+Title} (const string \&p\+\_\+title)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{add\+Css} (const string \&p\+\_\+css\+Url)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{add\+Js} (const string \&p\+\_\+js\+Url)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a1a87439632dc4f30fb247602b1bbadba}{set\+Meta\+Keywords} (const string \&p\+\_\+keywords)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a67b44ce076eac00c888eb24ec3b9675b}{set\+Charset} (const string \&p\+\_\+charset)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4ef586066cbae8ffc86e851dbb43782c}{set\+Meta\+Description} (const string \&p\+\_\+description)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate}{Html\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_ad2b01a5058edcc704e2f0057e7cd7d06}{set\+Content\+Type} (const string \&p\+\_\+mime\+Type, const string \&p\+\_\+charset)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_af621b5bf866fa828f0bd5eaf225d5f70}{resolve} (string \&p\+\_\+result)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 101 of file Template.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!Html\+Template@{Html\+Template}}
+\index{Html\+Template@{Html\+Template}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{Html\+Template(bool p\+\_\+default\+Assests=false)}{HtmlTemplate(bool p_defaultAssests=false)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::\+Html\+Template\+::\+Html\+Template (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+default\+Assests = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a2e40e5f2ad3b6b5cdb8b8f73656efe6d}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a2e40e5f2ad3b6b5cdb8b8f73656efe6d}
+
+
+Definition at line 183 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+183                                                 :
+184   \hyperlink{classxtd_1_1network_1_1http_1_1Template_a1887dcae44d24a8594bc41a349a7e6fe}{Template}(\textcolor{stringliteral}{"text/html"}),
+185   m\_title(\textcolor{stringliteral}{"unspecified page title"}),
+186   m\_cssList(),
+187   m\_jsList(),
+188   m\_metaDescription(),
+189   m\_metaKeywords(),
+190   m\_mimeType(\textcolor{stringliteral}{"text/html"}),
+191   m\_charset(\textcolor{stringliteral}{"UTF-8"}),
+192   m\_favico()
+193 \{
+194   \textcolor{keywordflow}{if} (\textcolor{keyword}{true} == p\_defaultAssests)
+195   \{
+196     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a92496dd5d269160aeb2640908b1920a1}{setFavico}(\textcolor{stringliteral}{"/favico.ico"});
+197     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.js"});
+198     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.cookie.js"});
+199     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.mousewheel.js"});
+200     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.dataTables.js"});
+201     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.sprintf.js"});
+202     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery-ui.js"});
+203     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery-ui.timepicker.js"});
+204     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery-ui.multiselect.js"});
+205     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.validate.js"});
+206     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.validate.methods.js"});
+207     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{addJs}(\textcolor{stringliteral}{"/js/jquery.validate.locale\_fr-utf8.js"});
+208     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{addCss}(\textcolor{stringliteral}{"/css/jquery-ui.css"});
+209     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{addCss}(\textcolor{stringliteral}{"/css/jquery-ui.dataTables.css"});
+210     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{addCss}(\textcolor{stringliteral}{"/css/jquery-ui.multiselect.css"});
+211     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{addCss}(\textcolor{stringliteral}{"/css/jquery-ui.timepicker.css"});
+212     \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{addCss}(\textcolor{stringliteral}{"/css/codemirror.css"});
+213   \}
+214 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate_a2e40e5f2ad3b6b5cdb8b8f73656efe6d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!add\+Css@{add\+Css}}
+\index{add\+Css@{add\+Css}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{add\+Css(const string \&p\+\_\+css\+Url)}{addCss(const string &p_cssUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::add\+Css (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+css\+Url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate_a29763c3949d6906bdbe02e9b147deacc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!add\+Js@{add\+Js}}
+\index{add\+Js@{add\+Js}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{add\+Js(const string \&p\+\_\+js\+Url)}{addJs(const string &p_jsUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::add\+Js (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+js\+Url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4a16bbd6749d71c5fe72d9e8bf3c1fa8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!resolve@{resolve}}
+\index{resolve@{resolve}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{resolve(string \&p\+\_\+result)}{resolve(string &p_result)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Html\+Template\+::resolve (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_af621b5bf866fa828f0bd5eaf225d5f70}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_af621b5bf866fa828f0bd5eaf225d5f70}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1http_1_1Template_a476ce5e5b8465ea80ade07c003ab5cfd}{xtd\+::network\+::http\+::\+Template}.
+
+
+
+Definition at line 217 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+218 \{
+219   \textcolor{keywordtype}{string}                    l\_content;
+220   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a638d1d81c8fb63c0bbafd508d6a2a007}{cpptempl::data\_map}             l\_data;
+221   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_aff1b51bcf8064f69c85dd4833c1853b4}{cpptempl::data\_list}            l\_cssList;
+222   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_aff1b51bcf8064f69c85dd4833c1853b4}{cpptempl::data\_list}            l\_jsList;
+223   vector<string>::const\_iterator cc\_item;
+224   \hyperlink{classxtd_1_1network_1_1http_1_1Template_a1887dcae44d24a8594bc41a349a7e6fe}{Template}                       l\_template;
+225 
+226   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != \hyperlink{classxtd_1_1network_1_1http_1_1Template_a476ce5e5b8465ea80ade07c003ab5cfd}{Template::resolve}(l\_content))
+227   \{
+228     \textcolor{comment}{// log}
+229     \textcolor{keywordflow}{return} status::error;
+230   \}
+231 
+232   \textcolor{keywordflow}{for} (cc\_item = m\_cssList.begin(); cc\_item != m\_cssList.end(); cc\_item++)
+233     l\_cssList += \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(*cc\_item, \textcolor{keyword}{true});
+234 
+235   \textcolor{keywordflow}{for} (cc\_item = m\_jsList.begin(); cc\_item != m\_jsList.end(); cc\_item++)
+236     l\_jsList += \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(*cc\_item, \textcolor{keyword}{true});
+237 
+238   l\_data[\textcolor{stringliteral}{"\_\_title"}]           = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_title, \textcolor{keyword}{true});
+239   l\_data[\textcolor{stringliteral}{"\_\_favico"}]          = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_favico);
+240   l\_data[\textcolor{stringliteral}{"\_\_content"}]         = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(l\_content);
+241   l\_data[\textcolor{stringliteral}{"\_\_cssList"}]         = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(l\_cssList);
+242   l\_data[\textcolor{stringliteral}{"\_\_jsList"}]          = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(l\_jsList);
+243   l\_data[\textcolor{stringliteral}{"\_\_mimeType"}]        = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_mimeType, \textcolor{keyword}{true});
+244   l\_data[\textcolor{stringliteral}{"\_\_charset"}]         = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_charset, \textcolor{keyword}{true});
+245   l\_data[\textcolor{stringliteral}{"\_\_metaDescription"}] = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_metaDescription, \textcolor{keyword}{true});
+246   l\_data[\textcolor{stringliteral}{"\_\_metaKeywords"}]    = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_metaKeywords, \textcolor{keyword}{true});
+247 
+248   l\_template.setTemplate(mcs\_htmlTemplate);
+249   l\_template.setData(l\_data);
+250   \textcolor{keywordflow}{return} l\_template.resolve(p\_result);
+251 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate_af621b5bf866fa828f0bd5eaf225d5f70_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Charset@{set\+Charset}}
+\index{set\+Charset@{set\+Charset}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Charset(const string \&p\+\_\+charset)}{setCharset(const string &p_charset)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Charset (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+charset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a67b44ce076eac00c888eb24ec3b9675b}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a67b44ce076eac00c888eb24ec3b9675b}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Content\+Type(const string \&p\+\_\+mime\+Type, const string \&p\+\_\+charset)}{setContentType(const string &p_mimeType, const string &p_charset)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+mime\+Type, }
+\item[{const string \&}]{p\+\_\+charset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_ad2b01a5058edcc704e2f0057e7cd7d06}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_ad2b01a5058edcc704e2f0057e7cd7d06}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Favico@{set\+Favico}}
+\index{set\+Favico@{set\+Favico}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Favico(const string \&p\+\_\+ico)}{setFavico(const string &p_ico)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template} \& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Favico (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+ico}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a92496dd5d269160aeb2640908b1920a1}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a92496dd5d269160aeb2640908b1920a1}
+
+
+Definition at line 254 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+255 \{
+256   m\_favico = p\_ico;
+257   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+258 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1HtmlTemplate_a92496dd5d269160aeb2640908b1920a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Meta\+Description@{set\+Meta\+Description}}
+\index{set\+Meta\+Description@{set\+Meta\+Description}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Meta\+Description(const string \&p\+\_\+description)}{setMetaDescription(const string &p_description)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Meta\+Description (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+description}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4ef586066cbae8ffc86e851dbb43782c}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a4ef586066cbae8ffc86e851dbb43782c}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Meta\+Keywords@{set\+Meta\+Keywords}}
+\index{set\+Meta\+Keywords@{set\+Meta\+Keywords}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Meta\+Keywords(const string \&p\+\_\+keywords)}{setMetaKeywords(const string &p_keywords)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Meta\+Keywords (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+keywords}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a1a87439632dc4f30fb247602b1bbadba}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a1a87439632dc4f30fb247602b1bbadba}
+\index{xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!xtd\+::network\+::http\+::\+Html\+Template@{xtd\+::network\+::http\+::\+Html\+Template}}
+\subsubsection[{\texorpdfstring{set\+Title(const string \&p\+\_\+title)}{setTitle(const string &p_title)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Html\+Template}\& xtd\+::network\+::http\+::\+Html\+Template\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1HtmlTemplate_a360a57a8ca473b72fd76807d5cc7265a}{}\label{classxtd_1_1network_1_1http_1_1HtmlTemplate_a360a57a8ca473b72fd76807d5cc7265a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8hh}{Template.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8cc}{Template.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\hypertarget{classxtd_1_1counters_1_1JsonVisitor}{}\section{xtd\+:\+:counters\+:\+:Json\+Visitor Class Reference}
+\label{classxtd_1_1counters_1_1JsonVisitor}\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+
+
+{\ttfamily \#include $<$Json\+Visitor.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Json\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classxtd_1_1counters_1_1JsonVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Json\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classxtd_1_1counters_1_1JsonVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1JsonVisitor_a2b3777d2d80ba2c7131afad6385f2433}{Json\+Visitor} (const t\+\_\+path \&p\+\_\+path, t\+\_\+elem \&p\+\_\+elem)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1JsonVisitor_a903824cfba9c121a0441a774edc232a1}{operator()} (const string \&p\+\_\+name, const string \&p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1JsonVisitor_a6d650a21f6ee33b1748ae7cb432c3de6}{operator()} (const string \&p\+\_\+name, uint8\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1JsonVisitor_ad0e11fe1f362f071132d6828de269517}{operator()} (const string \&p\+\_\+name, uint16\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1JsonVisitor_ae9dc018222ce25751d712783377b63a3}{operator()} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1JsonVisitor_a89f860915a12f1e99b629b5d385864cc}{operator()} (const string \&p\+\_\+name, uint64\+\_\+t p\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Json\+Visitor.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!Json\+Visitor@{Json\+Visitor}}
+\index{Json\+Visitor@{Json\+Visitor}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{Json\+Visitor(const t\+\_\+path \&p\+\_\+path, t\+\_\+elem \&p\+\_\+elem)}{JsonVisitor(const t_path &p_path, t_elem &p_elem)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Json\+Visitor\+::\+Json\+Visitor (
+\begin{DoxyParamCaption}
+\item[{const t\+\_\+path \&}]{p\+\_\+path, }
+\item[{t\+\_\+elem \&}]{p\+\_\+elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_a2b3777d2d80ba2c7131afad6385f2433}{}\label{classxtd_1_1counters_1_1JsonVisitor_a2b3777d2d80ba2c7131afad6385f2433}
+
+
+Definition at line 20 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+20                                                     :
+21     m\_path(p\_path),
+22     m\_elem(p\_elem)
+23   \{
+24   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, const string \&p\+\_\+data)}{operator()(const string &p_name, const string &p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Json\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const string \&}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_a903824cfba9c121a0441a774edc232a1}{}\label{classxtd_1_1counters_1_1JsonVisitor_a903824cfba9c121a0441a774edc232a1}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a1341281b8c4cbf4de5a37e035f75e214}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 27 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+27 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint8\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint8_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Json\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint8\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_a6d650a21f6ee33b1748ae7cb432c3de6}{}\label{classxtd_1_1counters_1_1JsonVisitor_a6d650a21f6ee33b1748ae7cb432c3de6}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a1a5da2c523703b0c9132595f22e1700e}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 28 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+28 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint16\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint16_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Json\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint16\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_ad0e11fe1f362f071132d6828de269517}{}\label{classxtd_1_1counters_1_1JsonVisitor_ad0e11fe1f362f071132d6828de269517}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a6139d735b720a83e87f49932855f1ade}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 29 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+29 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint32_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Json\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_ae9dc018222ce25751d712783377b63a3}{}\label{classxtd_1_1counters_1_1JsonVisitor_ae9dc018222ce25751d712783377b63a3}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a0bc4c30e3df6ef796878b85ce1be17fb}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 30 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+30 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+Json\+Visitor@{xtd\+::counters\+::\+Json\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint64\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint64_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Json\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint64\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1JsonVisitor_a89f860915a12f1e99b629b5d385864cc}{}\label{classxtd_1_1counters_1_1JsonVisitor_a89f860915a12f1e99b629b5d385864cc}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_aba895c10dd1a28fa7a8b64e61adee5ac}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 31 of file Json\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+31 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{JsonVisitor_8hh}{Json\+Visitor.\+hh}\end{DoxyCompactItemize}

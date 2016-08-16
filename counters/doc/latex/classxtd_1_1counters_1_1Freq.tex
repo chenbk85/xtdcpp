@@ -1,0 +1,232 @@
+\hypertarget{classxtd_1_1counters_1_1Freq}{}\section{xtd\+:\+:counters\+:\+:Freq Class Reference}
+\label{classxtd_1_1counters_1_1Freq}\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+
+
+{\ttfamily \#include $<$Freq.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Freq\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classxtd_1_1counters_1_1Freq__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Freq\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classxtd_1_1counters_1_1Freq__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Freq_ac48f859e66bef29a24a2cd9e2ad2aff6}{Freq} (const string \&p\+\_\+name)
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1Freq_ac5d39dc4ea5211f48bf6f4834fe2558b}{$\sim$\+Freq} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}{tick} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Freq}{Freq} \& \hyperlink{classxtd_1_1counters_1_1Freq_a622e28502b8613bbac6fd40f324ddb8c}{operator=} (const uint32\+\_\+t \&p\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classxtd_1_1counters_1_1Freq_af4ee512e594def96c8bd907d2a369729}{update\+\_\+safe} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1Freq_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Freq.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!Freq@{Freq}}
+\index{Freq@{Freq}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{Freq(const string \&p\+\_\+name)}{Freq(const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Freq\+::\+Freq (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Freq_ac48f859e66bef29a24a2cd9e2ad2aff6}{}\label{classxtd_1_1counters_1_1Freq_ac48f859e66bef29a24a2cd9e2ad2aff6}
+
+
+Definition at line 14 of file Freq.\+cc.
+
+
+\begin{DoxyCode}
+14                                :
+15   \hyperlink{classxtd_1_1counters_1_1Value_a298f146ab57eaed8e6f783c26e78e0f4}{Value}(p\_name),
+16   m\_beginTime(bpt::microsec\_clock::local\_time()),
+17   m\_nbEvent(0)
+18 \{
+19 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!````~Freq@{$\sim$\+Freq}}
+\index{````~Freq@{$\sim$\+Freq}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{$\sim$\+Freq(void)}{~Freq(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual xtd\+::counters\+::\+Freq\+::$\sim$\+Freq (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1Freq_ac5d39dc4ea5211f48bf6f4834fe2558b}{}\label{classxtd_1_1counters_1_1Freq_ac5d39dc4ea5211f48bf6f4834fe2558b}
+
+
+Definition at line 17 of file Freq.\+hh.
+
+
+\begin{DoxyCode}
+17 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Freq_ac5d39dc4ea5211f48bf6f4834fe2558b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!operator=@{operator=}}
+\index{operator=@{operator=}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{operator=(const uint32\+\_\+t \&p\+\_\+value)}{operator=(const uint32_t &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Freq} \& xtd\+::counters\+::\+Freq\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Freq_a622e28502b8613bbac6fd40f324ddb8c}{}\label{classxtd_1_1counters_1_1Freq_a622e28502b8613bbac6fd40f324ddb8c}
+
+
+Definition at line 22 of file Freq.\+cc.
+
+
+\begin{DoxyCode}
+23 \{
+24   \hyperlink{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0}{Value<uint32\_t>::operator=}(p\_value);
+25   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+26 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classxtd_1_1counters_1_1Freq_a622e28502b8613bbac6fd40f324ddb8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classxtd_1_1counters_1_1Freq_a622e28502b8613bbac6fd40f324ddb8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!tick@{tick}}
+\index{tick@{tick}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{tick(void)}{tick(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Freq\+::tick (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}{}\label{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}
+
+
+Definition at line 29 of file Freq.\+cc.
+
+
+\begin{DoxyCode}
+30 \{
+31   atom::atomic\_inc32(&m\_nbEvent);
+32 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!update\+\_\+safe@{update\+\_\+safe}}
+\index{update\+\_\+safe@{update\+\_\+safe}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{update\+\_\+safe(void)}{update_safe(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Freq\+::update\+\_\+safe (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1Freq_af4ee512e594def96c8bd907d2a369729}{}\label{classxtd_1_1counters_1_1Freq_af4ee512e594def96c8bd907d2a369729}
+
+
+Reimplemented from \hyperlink{classxtd_1_1counters_1_1Base_a8b3d10c9fb2bea1d240f887bbe4008ea}{xtd\+::counters\+::\+Base}.
+
+
+
+Definition at line 36 of file Freq.\+cc.
+
+
+\begin{DoxyCode}
+37 \{
+38   bpt::time\_duration l\_diffTime = bpt::microsec\_clock::local\_time() - m\_beginTime;
+39 
+40   \textcolor{keywordflow}{if} (l\_diffTime.total\_milliseconds() == 0)
+41     \textcolor{keywordflow}{return};
+42   \hyperlink{classxtd_1_1counters_1_1Value_abe06c1cebededaf2f216707171f63c3c}{m\_value} = (m\_nbEvent * 1000) / l\_diffTime.total\_milliseconds();
+43 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classxtd_1_1counters_1_1Freq_af4ee512e594def96c8bd907d2a369729_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Freq@{xtd\+::counters\+::\+Freq}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1Freq_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1Freq_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 13 of file Freq.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Freq_8hh}{Freq.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Freq_8cc}{Freq.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ClientThreadManager_8cc" kind="file" language="C++">
+    <compoundname>ClientThreadManager.cc</compoundname>
+    <includes refid="ClientThreadManager_8hh" local="yes">base/ClientThreadManager.hh</includes>
+    <incdepgraph>
+      <node id="1189">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1191">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1190">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1188">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="1187">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1192">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1193">
+        <label>types.hh</label>
+      </node>
+      <node id="1185">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc</label>
+        <link refid="ClientThreadManager.cc"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+      </node>
+      <node id="1186">
+        <label>base/ClientThreadManager.hh</label>
+        <link refid="ClientThreadManager_8hh"/>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1base">xtd::network::base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ClientThreadManager_8hh" kindref="compound">base/ClientThreadManager.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">boost::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThreadManager::m_mutex;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">boost::asio::io_service*<sp/><sp/>ThreadManager::m_ioService<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">ThreadManager*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThreadManager::m_threadManager<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">ThreadManager::ThreadManager(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>m_ioService<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>boost::asio::io_service;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>m_workPtr.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>boost::asio::io_service::work(*m_ioService));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_threadPtr.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>boost::thread(boost::bind(&amp;boost::asio::io_service::run,<sp/>m_ioService)));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">ThreadManager::~ThreadManager(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_workPtr.reset();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>threadMap_t::iterator<sp/>l_threadMapIt<sp/>=<sp/>m_threadMap.begin();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(l_threadMapIt<sp/>!=<sp/>m_threadMap.end())</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>(l_threadMapIt-&gt;second)-&gt;join();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a8401b77963df643d6ca29e5abd7da9ba" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a8401b77963df643d6ca29e5abd7da9ba" kindref="member">ThreadManager::createThread</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>p_threadId)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>threadMap_t::iterator<sp/>l_threadMapIt<sp/>=<sp/>m_threadMap.find(p_threadId);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_threadMapIt<sp/>==<sp/>m_threadMap.end())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>m_threadMap[p_threadId]<sp/>=<sp/>boost::make_shared&lt;boost::thread&gt;(boost::bind(&amp;boost::asio::io_service::run,<sp/>m_ioService));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">boost::asio::io_service&amp;</highlight></codeline>
+<codeline lineno="44" refid="classxtd_1_1network_1_1base_1_1ThreadManager_1afe3f6bc402d13a07cad5fc8d09473739" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1afe3f6bc402d13a07cad5fc8d09473739" kindref="member">ThreadManager::getIoService</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*m_ioService;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>&amp;</highlight></codeline>
+<codeline lineno="51" refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a987b37b09ba82f07f870f4720561c958" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a987b37b09ba82f07f870f4720561c958" kindref="member">ThreadManager::getInstance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>boost::mutex::scoped_lock<sp/>l_lock(m_mutex);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!m_threadManager)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>m_threadManager<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*m_threadManager;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc"/>
+  </compounddef>
+</doxygen>

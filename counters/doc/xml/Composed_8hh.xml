@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Composed_8hh" kind="file" language="C++">
+    <compoundname>Composed.hh</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="Base_8hh" local="yes">Base.hh</includes>
+    <includedby refid="AvgTimedValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
+    <includedby refid="AvgValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh</includedby>
+    <includedby refid="Cache_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Cache.hh</includedby>
+    <includedby refid="Composed_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/Composed.cc</includedby>
+    <includedby refid="Perf_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Perf.hh</includedby>
+    <incdepgraph>
+      <node id="617">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="616">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="617" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+        <childnode refid="620" relation="include">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="614">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.hh</label>
+        <link refid="Composed.hh"/>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="619" relation="include">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>vector</label>
+      </node>
+      <node id="619">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="628">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
+      </node>
+      <node id="627">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="628" relation="include">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.hh</label>
+        <link refid="Composed.hh"/>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.cc</label>
+        <link refid="Composed_8cc"/>
+      </node>
+      <node id="624">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="625">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+      <node id="630">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="629">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="630" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+      </node>
+      <node id="626">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.cc</label>
+        <link refid="AvgValue_8cc"/>
+      </node>
+      <node id="623">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
+      </node>
+      <node id="622">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1Composed" prot="public">xtd::counters::Composed</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_COMPOSED_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_COMPOSED_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classxtd_1_1counters_1_1Composed" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" kindref="member">Composed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="16" refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" kindref="member">~Composed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1Base" kindref="compound">Base</ref>&amp;<sp/>p_item);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" kindref="member">update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" kindref="member">visit_safe</ref>(<ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>vector&lt;Base*&gt;<sp/>m_items;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_COMPOSED_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Composed.hh"/>
+  </compounddef>
+</doxygen>

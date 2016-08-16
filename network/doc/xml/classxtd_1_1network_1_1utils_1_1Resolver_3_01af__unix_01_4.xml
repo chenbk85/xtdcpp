@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::Resolver&lt; af_unix &gt;</compoundname>
+    <includes refid="Resolver_8hh" local="no">Resolver.hh</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1af4ec1990136a9220f357a7533f01f863" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service&amp; xtd::network::utils::Resolver&lt; af_unix &gt;::m_ioService</definition>
+        <argsstring></argsstring>
+        <name>m_ioService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="82" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a718a54afe150ba5044a6b6796e740978" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Resolver&lt; af_unix &gt;::m_port</definition>
+        <argsstring></argsstring>
+        <name>m_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="83" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a6c22d97efd1096a2b32c3b6b82707685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Resolver&lt; af_unix &gt;::Resolver</definition>
+        <argsstring>(boost::asio::io_service &amp;p_ioService, uint32_t)</argsstring>
+        <name>Resolver</name>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>p_ioService</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a4ef41796801ac9b2b223e907512c6937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::Resolver&lt; af_unix &gt;::~Resolver</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Resolver</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="72" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1acabb7ae9d31e60d034e46a7f172f3ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>af_unix::endpoint</type>
+        <definition>af_unix::endpoint xtd::network::utils::Resolver&lt; af_unix &gt;::resolve</definition>
+        <argsstring>(const string &amp;p_host, const string &amp;p_port)</argsstring>
+        <name>resolve</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_host</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="75" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="93" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a75ade0a088898962a4ca8055885dd09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::Resolver&lt; af_unix &gt;::getPort</definition>
+        <argsstring>(const af_unix::endpoint &amp;p_endpoint)</argsstring>
+        <name>getPort</name>
+        <param>
+          <type>const af_unix::endpoint &amp;</type>
+          <declname>p_endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="78" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1ac684f093294b139e46a7e5b89857c7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::network::utils::Resolver&lt; af_unix &gt;::getAddr</definition>
+        <argsstring>(const af_unix::endpoint &amp;p_endpoint)</argsstring>
+        <name>getAddr</name>
+        <param>
+          <type>const af_unix::endpoint &amp;</type>
+          <declname>p_endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc" bodystart="111" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh" bodystart="68" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1ac684f093294b139e46a7e5b89857c7f1" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>getAddr</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a75ade0a088898962a4ca8055885dd09d" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>getPort</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1af4ec1990136a9220f357a7533f01f863" prot="private" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a718a54afe150ba5044a6b6796e740978" prot="private" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>m_port</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1acabb7ae9d31e60d034e46a7f172f3ffb" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>resolve</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a6c22d97efd1096a2b32c3b6b82707685" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>Resolver</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a4ef41796801ac9b2b223e907512c6937" prot="public" virt="non-virtual"><scope>xtd::network::utils::Resolver&lt; af_unix &gt;</scope><name>~Resolver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

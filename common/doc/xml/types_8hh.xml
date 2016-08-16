@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="types_8hh" kind="file" language="C++">
+    <compoundname>types.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="src_2Application_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/Application.hh</includedby>
+    <includedby refid="logger_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/logger.hh</includedby>
+    <includedby refid="ConfParser_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/ConfParser.hh</includedby>
+    <includedby refid="error_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/error.hh</includedby>
+    <includedby refid="text_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/text.hh</includedby>
+    <incdepgraph>
+      <node id="463">
+        <label>/home/psyco/dev/xtdcpp/common/src/types.hh</label>
+        <link refid="types.hh"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>string</label>
+      </node>
+      <node id="465">
+        <label>map</label>
+      </node>
+      <node id="468">
+        <label>fstream</label>
+      </node>
+      <node id="466">
+        <label>vector</label>
+      </node>
+      <node id="467">
+        <label>sstream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="469">
+        <label>/home/psyco/dev/xtdcpp/common/src/types.hh</label>
+        <link refid="types.hh"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>/home/psyco/dev/xtdcpp/common/src/Application.cc</label>
+        <link refid="Application_8cc"/>
+      </node>
+      <node id="473">
+        <label>/home/psyco/dev/xtdcpp/common/src/logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>/home/psyco/dev/xtdcpp/common/src/Application.hh</label>
+        <link refid="src_2Application_8hh"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>/home/psyco/dev/xtdcpp/common/src/logger.cc</label>
+        <link refid="logger_8cc"/>
+      </node>
+      <node id="472">
+        <label>/home/psyco/dev/xtdcpp/common/src/main.cc</label>
+        <link refid="main_8cc"/>
+      </node>
+      <node id="477">
+        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.hh</label>
+        <link refid="ConfParser_8hh"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
+        <link refid="ConfParser_8cc"/>
+      </node>
+      <node id="479">
+        <label>/home/psyco/dev/xtdcpp/common/src/text.cc</label>
+        <link refid="text_8cc"/>
+      </node>
+      <node id="474">
+        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
+        <link refid="error_8hh"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>/home/psyco/dev/xtdcpp/common/src/text.hh</label>
+        <link refid="text_8hh"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_TYPES_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_TYPES_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::map;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::vector;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::uint8_t;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::uint16_t;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::uint32_t;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::uint64_t;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::int8_t;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::int16_t;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::int32_t;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::int64_t;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::size_t;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::stringstream;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ifstream;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ofstream;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::istream;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ostream;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="32" refid="namespacextd_1a518b0ddcbf87f6c21175d2760f4fbe21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::underlying_type&lt;T&gt;::type<sp/><ref refid="namespacextd_1a518b0ddcbf87f6c21175d2760f4fbe21" kindref="member">valueof</ref>(T<sp/>p_item)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">typename<sp/>std::underlying_type&lt;T&gt;::type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p_item);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50" kindref="member">status</ref><sp/>:<sp/>uint32_t<sp/>{<sp/><ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a444bcb3a3fcf8389296c49467f27e1d6" kindref="member">ok</ref><sp/>=<sp/>0,<sp/><ref refid="classxtd_1_1error" kindref="compound">error</ref><sp/>=<sp/>1,<sp/><ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a90272dda245ae1fb3cf197e91a8689dc" kindref="member">timeout</ref><sp/>=<sp/>2,<sp/><ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50ac2adf6ecc220f2711801d6e466340183" kindref="member">notfound</ref><sp/>=<sp/>3<sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_TYPES_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/types.hh"/>
+  </compounddef>
+</doxygen>

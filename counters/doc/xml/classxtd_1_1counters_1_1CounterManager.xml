@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1CounterManager" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::CounterManager</compoundname>
+    <includes refid="CounterManager_8hh" local="no">CounterManager.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1CounterManager_1ac136b7de8a55b55a2700d93901ba1e9a" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1counters_1_1CounterManager" kindref="compound">CounterManager</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;CounterManager&gt; xtd::counters::CounterManager::t_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" prot="public" static="no">
+        <type>std::multimap&lt; boost::filesystem::path, <ref refid="classxtd_1_1counters_1_1Base_1aa0ea634f1a5e3df87418566a3e8fcbd6" kindref="member">Base::t_sptr</ref> &gt;</type>
+        <definition>typedef std::multimap&lt;boost::filesystem::path, Base::t_sptr&gt; xtd::counters::CounterManager::t_counters</definition>
+        <argsstring></argsstring>
+        <name>t_counters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1a303a50fe1c1c45a0983769f33d0fe278" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::counters::CounterManager::m_refreshDelay</definition>
+        <argsstring></argsstring>
+        <name>m_refreshDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1ae87b766f4f798b175cf1e8cdb915554b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::counters::CounterManager::m_snmpPath</definition>
+        <argsstring></argsstring>
+        <name>m_snmpPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1abd9630f70376e41f57a3a7b056f516fc" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" kindref="member">t_counters</ref></type>
+        <definition>t_counters xtd::counters::CounterManager::m_counters</definition>
+        <argsstring></argsstring>
+        <name>m_counters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1adc07a55864dece71c656f867636e656b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::counters::CounterManager::m_isRunning</definition>
+        <argsstring></argsstring>
+        <name>m_isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1ac13bc7ddc8c008d484fdfb4477f058c6" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread xtd::counters::CounterManager::m_thread</definition>
+        <argsstring></argsstring>
+        <name>m_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1CounterManager_1a0ec3e6493c979a46dc76b35ef7a3510a" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex xtd::counters::CounterManager::m_writeMutex</definition>
+        <argsstring></argsstring>
+        <name>m_writeMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::CounterManager::CounterManager</definition>
+        <argsstring>(const uint32_t p_deplay, const string &amp;p_path)</argsstring>
+        <name>CounterManager</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_deplay</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1aff5438182c449dd719382d2d8ca2b1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>xtd::counters::CounterManager::~CounterManager</definition>
+        <argsstring>(void)</argsstring>
+        <name>~CounterManager</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a65755963d9293fa457c6562a38b2dff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::counters::CounterManager::start</definition>
+        <argsstring>(void)</argsstring>
+        <name>start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="34" bodyend="54"/>
+        <references refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8acb5e100e5a9a3e7f6d1fd97512215282">xtd::counters::error</references>
+        <references refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6">xtd::counters::ok</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::CounterManager::stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="77" bodyend="86"/>
+        <references refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" compoundref="CounterManager_8cc" startline="116" endline="126">writeOnDisk</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::CounterManager::toJson</definition>
+        <argsstring>(boost::property_tree::ptree &amp;p_dst)</argsstring>
+        <name>toJson</name>
+        <param>
+          <type>boost::property_tree::ptree &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="89" bodyend="103"/>
+        <references refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" compoundref="CounterManager_8cc" startline="116" endline="126">writeOnDisk</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a01f164d28b794064ed5cba2ab94e3583" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::counters::CounterManager::getSnmpPath</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSnmpPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a7e0f54fa25b0d8592362159604cc4310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::counters::CounterManager::add</definition>
+        <argsstring>(Base::t_sptr p_counter, const string &amp;p_path)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classxtd_1_1counters_1_1Base_1aa0ea634f1a5e3df87418566a3e8fcbd6" kindref="member">Base::t_sptr</ref></type>
+          <declname>p_counter</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="69" bodyend="74"/>
+        <references refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6">xtd::counters::ok</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1afb314857888b269ca3ea0f2b4870b3e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" kindref="member">t_counters</ref></type>
+        <definition>const CounterManager::t_counters xtd::counters::CounterManager::getCounters</definition>
+        <argsstring>(void)</argsstring>
+        <name>getCounters</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::CounterManager::writeOnDisk</definition>
+        <argsstring>(void) const </argsstring>
+        <name>writeOnDisk</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="116" bodyend="126"/>
+        <referencedby refid="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" compoundref="CounterManager_8cc" startline="77" endline="86">stop</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" compoundref="CounterManager_8cc" startline="89" endline="103">toJson</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1CounterManager_1a9ad276156607a3bda1217caff5aaa52c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::CounterManager::refresh</definition>
+        <argsstring>(void) const </argsstring>
+        <name>refresh</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc" bodystart="106" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a7e0f54fa25b0d8592362159604cc4310" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>add</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>CounterManager</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1afb314857888b269ca3ea0f2b4870b3e5" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>getCounters</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a01f164d28b794064ed5cba2ab94e3583" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>getSnmpPath</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1abd9630f70376e41f57a3a7b056f516fc" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_counters</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1adc07a55864dece71c656f867636e656b" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_isRunning</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a303a50fe1c1c45a0983769f33d0fe278" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_refreshDelay</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1ae87b766f4f798b175cf1e8cdb915554b" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_snmpPath</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1ac13bc7ddc8c008d484fdfb4477f058c6" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_thread</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a0ec3e6493c979a46dc76b35ef7a3510a" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>m_writeMutex</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a9ad276156607a3bda1217caff5aaa52c" prot="private" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>refresh</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a65755963d9293fa457c6562a38b2dff3" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>start</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>stop</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>t_counters</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1ac136b7de8a55b55a2700d93901ba1e9a" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>toJson</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" prot="public" virt="non-virtual"><scope>xtd::counters::CounterManager</scope><name>writeOnDisk</name></member>
+      <member refid="classxtd_1_1counters_1_1CounterManager_1aff5438182c449dd719382d2d8ca2b1c8" prot="public" virt="virtual"><scope>xtd::counters::CounterManager</scope><name>~CounterManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

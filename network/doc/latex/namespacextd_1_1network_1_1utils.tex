@@ -1,0 +1,364 @@
+\hypertarget{namespacextd_1_1network_1_1utils}{}\section{xtd\+:\+:network\+:\+:utils Namespace Reference}
+\label{namespacextd_1_1network_1_1utils}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns}{Cache\+Dns}
+\begin{DoxyCompactList}\small\item\em Cache local de resolution de dns. \end{DoxyCompactList}\item 
+struct \hyperlink{structxtd_1_1network_1_1utils_1_1CacheEntry}{Cache\+Entry}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{Config}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1deque__id}{deque\+\_\+id}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver}{Resolver}
+\begin{DoxyCompactList}\small\item\em Resolution des noms de domaines. \end{DoxyCompactList}\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4}{Resolver$<$ af\+\_\+inet $>$}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4}{Resolver$<$ af\+\_\+unix $>$}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1scoped__method}{scoped\+\_\+method}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1vectorbuf}{vectorbuf}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ string, boost\+::shared\+\_\+ptr$<$ \hyperlink{structxtd_1_1network_1_1utils_1_1CacheEntry}{Cache\+Entry} $>$ $>$ \hyperlink{namespacextd_1_1network_1_1utils_a1118a93e3ee4c3aba74b90600794145b}{Entry\+Pair}
+\begin{DoxyCompactList}\small\item\em typedef for U\+R\+L/\+Entry(IP address) pair \end{DoxyCompactList}\item 
+typedef std\+::list$<$ boost\+::shared\+\_\+ptr$<$ \hyperlink{namespacextd_1_1network_1_1utils_a1118a93e3ee4c3aba74b90600794145b}{Entry\+Pair} $>$ $>$ \hyperlink{namespacextd_1_1network_1_1utils_a6eef494cdc6ca2b10bf4f36f6fa110ee}{Cache\+List}
+\begin{DoxyCompactList}\small\item\em typedef for Cache list \end{DoxyCompactList}\item 
+typedef boost\+::unordered\+\_\+map$<$ string, Cache\+List\+::iterator $>$ \hyperlink{namespacextd_1_1network_1_1utils_aa648e4975dce81f2fd0a9999f684781d}{Cache\+Map}
+\begin{DoxyCompactList}\small\item\em typedef for U\+R\+L-\/indexed map (aka hash map) into the Cache\+List \end{DoxyCompactList}\item 
+typedef boost\+::asio\+::deadline\+\_\+timer \hyperlink{namespacextd_1_1network_1_1utils_af551b4a44731a154a57b9447dac595cd}{dead\+Line\+Timer\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::io\+\_\+service $>$ \hyperlink{namespacextd_1_1network_1_1utils_a67dfba91438896976d636d5aea36c848}{io\+Service\+Ptr\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::io\+\_\+service\+::work $>$ \hyperlink{namespacextd_1_1network_1_1utils_a9e0bae7b0da2b42ca8930a927f3a7c4d}{work\+Ptr\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::streambuf $>$ \hyperlink{namespacextd_1_1network_1_1utils_aaaf1b50be1864a40d85efd18979631e1}{streambuf\+Ptr\+\_\+t}
+\item 
+typedef map$<$ boost\+::thread\+::id, size\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_a778bf7884b2296561ffc1fc5a5f14e38}{t\+\_\+\+Id\+Number\+Map}
+\item 
+typedef std\+::pair$<$ boost\+::thread\+::id, size\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_aa6bd02256b6023347de116a773dd9500}{t\+\_\+\+Id\+Number\+Pair}
+\item 
+typedef boost\+::asio\+::local\+::stream\+\_\+protocol \hyperlink{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{af\+\_\+unix}
+\item 
+typedef boost\+::asio\+::ip\+::tcp \hyperlink{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{af\+\_\+inet}
+\item 
+typedef uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_a0bdb4094852a77df867e219999175200}{request\+Id\+\_\+t}
+\item 
+typedef vector$<$ char $>$ \hyperlink{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{vector\+Bytes\+\_\+t}
+\item 
+typedef vector$<$ uint32\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_a2b135df55039cd8024b40ef3e1817681}{vector\+Uint32\+\_\+t}
+\item 
+typedef std\+::deque$<$ \hyperlink{namespacextd_1_1network_1_1utils_a0bdb4094852a77df867e219999175200}{request\+Id\+\_\+t} $>$ \hyperlink{namespacextd_1_1network_1_1utils_ac3ca189267ad1167fa141608f8b3a2de}{deque\+Id\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{vector\+Bytes\+\_\+t} $>$ \hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{shared\+Buf\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{namespacextd_1_1network_1_1utils_a2b135df55039cd8024b40ef3e1817681}{vector\+Uint32\+\_\+t} $>$ \hyperlink{namespacextd_1_1network_1_1utils_af5b287652a0fd8fca54642f8d3ca07fa}{shared\+Header\+\_\+t}
+\item 
+typedef boost\+::function$<$ void(const boost\+::system\+::error\+\_\+code)$>$ \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{handler\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4f}{option} \+: uint32\+\_\+t \{ \\*
+\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3}{option\+::nodelay} = 1, 
+\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2}{option\+::reuseaddr} = 2, 
+\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1}{option\+::keepalive} = 4, 
+\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a}{option\+::linger} = 8, 
+\\*
+\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994}{option\+::compress} = 64
+ \}
+\item 
+enum \hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161}{codec} \+: uint32\+\_\+t \{ \hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}{codec\+::zlib} = 1, 
+\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c}{codec\+::gzip} = 2, 
+\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b}{codec\+::bzip2} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacextd_1_1network_1_1utils_a181758eb475ef5f4aebfec6c0ebec0c5}{do\+\_\+sem\+\_\+wait} (boost\+::interprocess\+::interprocess\+\_\+semaphore \&p\+\_\+sem)
+\item 
+std\+::time\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_aeee4bc5a0636807dd491f21938b7a1ca}{ptime\+\_\+to\+\_\+time\+\_\+t} (const boost\+::posix\+\_\+time\+::ptime \&t)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_a8939e806c4a6bc08b78a32941db7a130}{C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX} = 200
+\item 
+const uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_adb4767541db3a79016a24142db705161}{C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX} = 1800
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!af\+\_\+inet@{af\+\_\+inet}}
+\index{af\+\_\+inet@{af\+\_\+inet}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{af\+\_\+inet}{af_inet}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::asio\+::ip\+::tcp {\bf xtd\+::network\+::utils\+::af\+\_\+inet}}\hypertarget{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{}\label{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}
+
+
+Definition at line 24 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!af\+\_\+unix@{af\+\_\+unix}}
+\index{af\+\_\+unix@{af\+\_\+unix}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{af\+\_\+unix}{af_unix}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::asio\+::local\+::stream\+\_\+protocol {\bf xtd\+::network\+::utils\+::af\+\_\+unix}}\hypertarget{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{}\label{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}
+
+
+Definition at line 23 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!Cache\+List@{Cache\+List}}
+\index{Cache\+List@{Cache\+List}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{Cache\+List}{CacheList}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<$ boost\+::shared\+\_\+ptr$<${\bf Entry\+Pair}$>$ $>$ {\bf xtd\+::network\+::utils\+::\+Cache\+List}}\hypertarget{namespacextd_1_1network_1_1utils_a6eef494cdc6ca2b10bf4f36f6fa110ee}{}\label{namespacextd_1_1network_1_1utils_a6eef494cdc6ca2b10bf4f36f6fa110ee}
+
+
+typedef for Cache list 
+
+
+
+Definition at line 47 of file Cache\+Dns.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!Cache\+Map@{Cache\+Map}}
+\index{Cache\+Map@{Cache\+Map}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{Cache\+Map}{CacheMap}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::unordered\+\_\+map$<$ string, Cache\+List\+::iterator $>$ {\bf xtd\+::network\+::utils\+::\+Cache\+Map}}\hypertarget{namespacextd_1_1network_1_1utils_aa648e4975dce81f2fd0a9999f684781d}{}\label{namespacextd_1_1network_1_1utils_aa648e4975dce81f2fd0a9999f684781d}
+
+
+typedef for U\+R\+L-\/indexed map (aka hash map) into the Cache\+List 
+
+
+
+Definition at line 49 of file Cache\+Dns.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!dead\+Line\+Timer\+\_\+t@{dead\+Line\+Timer\+\_\+t}}
+\index{dead\+Line\+Timer\+\_\+t@{dead\+Line\+Timer\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{dead\+Line\+Timer\+\_\+t}{deadLineTimer_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::asio\+::deadline\+\_\+timer {\bf xtd\+::network\+::utils\+::dead\+Line\+Timer\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_af551b4a44731a154a57b9447dac595cd}{}\label{namespacextd_1_1network_1_1utils_af551b4a44731a154a57b9447dac595cd}
+
+
+Definition at line 15 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!deque\+Id\+\_\+t@{deque\+Id\+\_\+t}}
+\index{deque\+Id\+\_\+t@{deque\+Id\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{deque\+Id\+\_\+t}{dequeId_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::deque$<${\bf request\+Id\+\_\+t}$>$ {\bf xtd\+::network\+::utils\+::deque\+Id\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_ac3ca189267ad1167fa141608f8b3a2de}{}\label{namespacextd_1_1network_1_1utils_ac3ca189267ad1167fa141608f8b3a2de}
+
+
+Definition at line 30 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!Entry\+Pair@{Entry\+Pair}}
+\index{Entry\+Pair@{Entry\+Pair}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{Entry\+Pair}{EntryPair}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$ string, boost\+::shared\+\_\+ptr$<${\bf Cache\+Entry}$>$ $>$ {\bf xtd\+::network\+::utils\+::\+Entry\+Pair}}\hypertarget{namespacextd_1_1network_1_1utils_a1118a93e3ee4c3aba74b90600794145b}{}\label{namespacextd_1_1network_1_1utils_a1118a93e3ee4c3aba74b90600794145b}
+
+
+typedef for U\+R\+L/\+Entry(IP address) pair 
+
+
+
+Definition at line 45 of file Cache\+Dns.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!handler\+\_\+t@{handler\+\_\+t}}
+\index{handler\+\_\+t@{handler\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{handler\+\_\+t}{handler_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::function$<$void(const boost\+::system\+::error\+\_\+code)$>$ {\bf xtd\+::network\+::utils\+::handler\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{}\label{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}
+
+
+Definition at line 33 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!io\+Service\+Ptr\+\_\+t@{io\+Service\+Ptr\+\_\+t}}
+\index{io\+Service\+Ptr\+\_\+t@{io\+Service\+Ptr\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{io\+Service\+Ptr\+\_\+t}{ioServicePtr_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<$boost\+::asio\+::io\+\_\+service$>$ {\bf xtd\+::network\+::utils\+::io\+Service\+Ptr\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a67dfba91438896976d636d5aea36c848}{}\label{namespacextd_1_1network_1_1utils_a67dfba91438896976d636d5aea36c848}
+
+
+Definition at line 16 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!request\+Id\+\_\+t@{request\+Id\+\_\+t}}
+\index{request\+Id\+\_\+t@{request\+Id\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{request\+Id\+\_\+t}{requestId_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\+\_\+t {\bf xtd\+::network\+::utils\+::request\+Id\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a0bdb4094852a77df867e219999175200}{}\label{namespacextd_1_1network_1_1utils_a0bdb4094852a77df867e219999175200}
+
+
+Definition at line 25 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!shared\+Buf\+\_\+t@{shared\+Buf\+\_\+t}}
+\index{shared\+Buf\+\_\+t@{shared\+Buf\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{shared\+Buf\+\_\+t}{sharedBuf_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<${\bf vector\+Bytes\+\_\+t}$>$ {\bf xtd\+::network\+::utils\+::shared\+Buf\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{}\label{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}
+
+
+Definition at line 31 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!shared\+Header\+\_\+t@{shared\+Header\+\_\+t}}
+\index{shared\+Header\+\_\+t@{shared\+Header\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{shared\+Header\+\_\+t}{sharedHeader_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<${\bf vector\+Uint32\+\_\+t}$>$ {\bf xtd\+::network\+::utils\+::shared\+Header\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_af5b287652a0fd8fca54642f8d3ca07fa}{}\label{namespacextd_1_1network_1_1utils_af5b287652a0fd8fca54642f8d3ca07fa}
+
+
+Definition at line 32 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!streambuf\+Ptr\+\_\+t@{streambuf\+Ptr\+\_\+t}}
+\index{streambuf\+Ptr\+\_\+t@{streambuf\+Ptr\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{streambuf\+Ptr\+\_\+t}{streambufPtr_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<$boost\+::asio\+::streambuf$>$ {\bf xtd\+::network\+::utils\+::streambuf\+Ptr\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_aaaf1b50be1864a40d85efd18979631e1}{}\label{namespacextd_1_1network_1_1utils_aaaf1b50be1864a40d85efd18979631e1}
+
+
+Definition at line 18 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!t\+\_\+\+Id\+Number\+Map@{t\+\_\+\+Id\+Number\+Map}}
+\index{t\+\_\+\+Id\+Number\+Map@{t\+\_\+\+Id\+Number\+Map}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{t\+\_\+\+Id\+Number\+Map}{t_IdNumberMap}}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$boost\+::thread\+::id, size\+\_\+t$>$ {\bf xtd\+::network\+::utils\+::t\+\_\+\+Id\+Number\+Map}}\hypertarget{namespacextd_1_1network_1_1utils_a778bf7884b2296561ffc1fc5a5f14e38}{}\label{namespacextd_1_1network_1_1utils_a778bf7884b2296561ffc1fc5a5f14e38}
+
+
+Definition at line 19 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!t\+\_\+\+Id\+Number\+Pair@{t\+\_\+\+Id\+Number\+Pair}}
+\index{t\+\_\+\+Id\+Number\+Pair@{t\+\_\+\+Id\+Number\+Pair}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{t\+\_\+\+Id\+Number\+Pair}{t_IdNumberPair}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$boost\+::thread\+::id, size\+\_\+t$>$ {\bf xtd\+::network\+::utils\+::t\+\_\+\+Id\+Number\+Pair}}\hypertarget{namespacextd_1_1network_1_1utils_aa6bd02256b6023347de116a773dd9500}{}\label{namespacextd_1_1network_1_1utils_aa6bd02256b6023347de116a773dd9500}
+
+
+Definition at line 20 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!vector\+Bytes\+\_\+t@{vector\+Bytes\+\_\+t}}
+\index{vector\+Bytes\+\_\+t@{vector\+Bytes\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{vector\+Bytes\+\_\+t}{vectorBytes_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef vector$<$char$>$ {\bf xtd\+::network\+::utils\+::vector\+Bytes\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{}\label{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}
+
+
+Definition at line 28 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!vector\+Uint32\+\_\+t@{vector\+Uint32\+\_\+t}}
+\index{vector\+Uint32\+\_\+t@{vector\+Uint32\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{vector\+Uint32\+\_\+t}{vectorUint32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef vector$<$uint32\+\_\+t$>$ {\bf xtd\+::network\+::utils\+::vector\+Uint32\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a2b135df55039cd8024b40ef3e1817681}{}\label{namespacextd_1_1network_1_1utils_a2b135df55039cd8024b40ef3e1817681}
+
+
+Definition at line 29 of file Comm\+Type\+Defs.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!work\+Ptr\+\_\+t@{work\+Ptr\+\_\+t}}
+\index{work\+Ptr\+\_\+t@{work\+Ptr\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{work\+Ptr\+\_\+t}{workPtr_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<$boost\+::asio\+::io\+\_\+service\+::work$>$ {\bf xtd\+::network\+::utils\+::work\+Ptr\+\_\+t}}\hypertarget{namespacextd_1_1network_1_1utils_a9e0bae7b0da2b42ca8930a927f3a7c4d}{}\label{namespacextd_1_1network_1_1utils_a9e0bae7b0da2b42ca8930a927f3a7c4d}
+
+
+Definition at line 17 of file Comm\+Type\+Defs.\+hh.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!codec@{codec}}
+\index{codec@{codec}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{codec}{codec}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::network\+::utils\+::codec} \+: uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161}{}\label{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{zlib@{zlib}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!zlib@{zlib}}\item[{\em 
+zlib\hypertarget{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}{}\label{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}
+}]\index{gzip@{gzip}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!gzip@{gzip}}\item[{\em 
+gzip\hypertarget{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c}{}\label{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c}
+}]\index{bzip2@{bzip2}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!bzip2@{bzip2}}\item[{\em 
+bzip2\hypertarget{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b}{}\label{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 15 of file Config.\+hh.
+
+
+\begin{DoxyCode}
+15 : uint32\_t \{ \hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}{zlib} = 1,    \hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c}{gzip} = 2,      \hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b}{bzip2} = 3 \};
+\end{DoxyCode}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!option@{option}}
+\index{option@{option}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{option}{option}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::network\+::utils\+::option} \+: uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4f}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{nodelay@{nodelay}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!nodelay@{nodelay}}\item[{\em 
+nodelay\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3}
+}]\index{reuseaddr@{reuseaddr}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!reuseaddr@{reuseaddr}}\item[{\em 
+reuseaddr\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2}
+}]\index{keepalive@{keepalive}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!keepalive@{keepalive}}\item[{\em 
+keepalive\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1}
+}]\index{linger@{linger}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!linger@{linger}}\item[{\em 
+linger\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a}
+}]\index{compress@{compress}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!compress@{compress}}\item[{\em 
+compress\hypertarget{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994}{}\label{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 14 of file Config.\+hh.
+
+
+\begin{DoxyCode}
+14 : uint32\_t \{ \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3}{nodelay} = 1, \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2}{reuseaddr} = 2, \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1}{keepalive} = 4, 
+      \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a}{linger} = 8, \hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994}{compress} = 64 \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!do\+\_\+sem\+\_\+wait@{do\+\_\+sem\+\_\+wait}}
+\index{do\+\_\+sem\+\_\+wait@{do\+\_\+sem\+\_\+wait}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{do\+\_\+sem\+\_\+wait(boost\+::interprocess\+::interprocess\+\_\+semaphore \&p\+\_\+sem)}{do_sem_wait(boost::interprocess::interprocess_semaphore &p_sem)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::do\+\_\+sem\+\_\+wait (
+\begin{DoxyParamCaption}
+\item[{boost\+::interprocess\+::interprocess\+\_\+semaphore \&}]{p\+\_\+sem}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1network_1_1utils_a181758eb475ef5f4aebfec6c0ebec0c5}{}\label{namespacextd_1_1network_1_1utils_a181758eb475ef5f4aebfec6c0ebec0c5}
+
+
+Definition at line 9 of file Utils.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11   \textcolor{keywordflow}{try}
+12   \{
+13     p\_sem.wait();
+14   \}
+15   \textcolor{keywordflow}{catch}(boost::interprocess::interprocess\_exception e)
+16   \{
+17     \textcolor{keywordflow}{if} (e.get\_native\_error() == EINTR)
+18     \{
+19       \hyperlink{namespacextd_1_1network_1_1utils_a181758eb475ef5f4aebfec6c0ebec0c5}{do\_sem\_wait}(p\_sem);
+20     \}
+21   \}
+22 \};
+\end{DoxyCode}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!ptime\+\_\+to\+\_\+time\+\_\+t@{ptime\+\_\+to\+\_\+time\+\_\+t}}
+\index{ptime\+\_\+to\+\_\+time\+\_\+t@{ptime\+\_\+to\+\_\+time\+\_\+t}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{ptime\+\_\+to\+\_\+time\+\_\+t(const boost\+::posix\+\_\+time\+::ptime \&t)}{ptime_to_time_t(const boost::posix_time::ptime &t)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::time\+\_\+t xtd\+::network\+::utils\+::ptime\+\_\+to\+\_\+time\+\_\+t (
+\begin{DoxyParamCaption}
+\item[{const boost\+::posix\+\_\+time\+::ptime \&}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacextd_1_1network_1_1utils_aeee4bc5a0636807dd491f21938b7a1ca}{}\label{namespacextd_1_1network_1_1utils_aeee4bc5a0636807dd491f21938b7a1ca}
+
+
+Definition at line 26 of file Utils.\+cc.
+
+
+\begin{DoxyCode}
+27 \{
+28   \textcolor{keyword}{static} \textcolor{keyword}{const} boost::posix\_time::ptime epoch(boost::gregorian::date(1970,1,1) );
+29   \textcolor{keyword}{const} boost::posix\_time::time\_duration::sec\_type ss((t - epoch).total\_seconds() );
+30   \textcolor{keywordflow}{return} ss;
+31 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacextd_1_1network_1_1utils_aeee4bc5a0636807dd491f21938b7a1ca_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX@{C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX}}
+\index{C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX@{C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX}{CACHE_CAPACITY_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t xtd\+::network\+::utils\+::\+C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX = 200}\hypertarget{namespacextd_1_1network_1_1utils_a8939e806c4a6bc08b78a32941db7a130}{}\label{namespacextd_1_1network_1_1utils_a8939e806c4a6bc08b78a32941db7a130}
+
+
+Definition at line 29 of file Cache\+Dns.\+hh.
+
+\index{xtd\+::network\+::utils@{xtd\+::network\+::utils}!C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX@{C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX}}
+\index{C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX@{C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX}!xtd\+::network\+::utils@{xtd\+::network\+::utils}}
+\subsubsection[{\texorpdfstring{C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX}{CACHE_TTL_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t xtd\+::network\+::utils\+::\+C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX = 1800}\hypertarget{namespacextd_1_1network_1_1utils_adb4767541db3a79016a24142db705161}{}\label{namespacextd_1_1network_1_1utils_adb4767541db3a79016a24142db705161}
+
+
+Definition at line 30 of file Cache\+Dns.\+hh.
+

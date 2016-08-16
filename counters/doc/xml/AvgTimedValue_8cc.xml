@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="AvgTimedValue_8cc" kind="file" language="C++">
+    <compoundname>AvgTimedValue.cc</compoundname>
+    <includes refid="AvgTimedValue_8hh" local="yes">AvgTimedValue.hh</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
+    <includes local="no">logger.hh</includes>
+    <incdepgraph>
+      <node id="476">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="467">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="469">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="477">
+        <label>numeric</label>
+      </node>
+      <node id="471">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="468">
+        <label>string</label>
+      </node>
+      <node id="473">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="475">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>vector</label>
+      </node>
+      <node id="464">
+        <label>deque</label>
+      </node>
+      <node id="479">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="462">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue.cc"/>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>logger.hh</label>
+      </node>
+      <node id="466">
+        <label>types.hh</label>
+      </node>
+      <node id="478">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AvgTimedValue_8hh" kindref="compound">AvgTimedValue.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/date_time/posix_time/posix_time.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bpt<sp/>=<sp/>boost::posix_time;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="namespacextd_1_1counters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" kindref="member">AvgTimedValue::AvgTimedValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>p_nbThread,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>p_timeDeltaMs,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>p_thresholdMs)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>(p_name),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>m_samples(),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>m_startTimes(p_nbThread),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_reseted(p_nbThread,<sp/>0),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_globalPerf(</highlight><highlight class="stringliteral">&quot;perf&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_instantPerf(</highlight><highlight class="stringliteral">&quot;instant.perf&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_mean(</highlight><highlight class="stringliteral">&quot;RTT.moy&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>m_min(</highlight><highlight class="stringliteral">&quot;RTT.min&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>m_max(</highlight><highlight class="stringliteral">&quot;RTT.max&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>m_overThreshold(</highlight><highlight class="stringliteral">&quot;RTT.threshold&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>m_timeDeltaMs(p_timeDeltaMs),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>m_thresholdMs(p_thresholdMs),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_assert(false)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" kindref="member">m_globalPerf</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" kindref="member">m_instantPerf</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" kindref="member">m_mean</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" kindref="member">m_min</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" kindref="member">m_max</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" kindref="member">m_overThreshold</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" kindref="member">m_mean</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" kindref="member">m_min</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" kindref="member">m_max</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" kindref="member">m_overThreshold</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" kindref="member">m_globalPerf</ref><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" kindref="member">m_instantPerf</ref><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" kindref="member">AvgTimedValue::startChrono</ref>(uint32_t<sp/>p_requestID)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kindref="member">m_reseted</ref>[p_requestID]<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;counters.avgtimedvalue&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AvgTimedValue<sp/>chrono<sp/>started<sp/>but<sp/>not<sp/>stopped<sp/>(ID:%d)!!!<sp/>Cancel<sp/>init<sp/>start<sp/>date.<sp/>&quot;</highlight><highlight class="normal">,<sp/>p_requestID,<sp/>HERE);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" kindref="member">m_startTimes</ref>[p_requestID]<sp/>=<sp/>bpt::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kindref="member">m_reseted</ref>[p_requestID]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" kindref="member">AvgTimedValue::stopChrono</ref>(uint32_t<sp/>p_requestID)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>boost::mutex::scoped_lock<sp/>l_lock(<ref refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kindref="member">m_reseted</ref>[p_requestID]<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;counters.avgtimedvalue&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AvgTimedValue<sp/>chrono<sp/>stopped<sp/>but<sp/>not<sp/>started<sp/>(ID:%d)!!!<sp/>Value<sp/>is<sp/>discarded.<sp/>&quot;</highlight><highlight class="normal">,<sp/>p_requestID,<sp/>HERE);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>bpt::ptime<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_now<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>bpt::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>bpt::time_duration<sp/>l_diffTime<sp/>=<sp/>l_now<sp/>-<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" kindref="member">m_startTimes</ref>[p_requestID];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_timeUs<sp/><sp/><sp/>=<sp/>l_diffTime.total_microseconds();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>responsetime_safe(l_timeUs);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kindref="member">m_reseted</ref>[p_requestID]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" kindref="member">AvgTimedValue::addResponseTime</ref>(uint32_t<sp/>p_timeUs)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>boost::mutex::scoped_lock<sp/>l_lock(<ref refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>responsetime_safe(p_timeUs);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">AvgTimedValue::responsetime_safe(uint32_t<sp/>p_timeUs)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>bpt::ptime<sp/>l_now<sp/>=<sp/>bpt::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>==<sp/>thresdhold_safe(p_timeUs))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" kindref="member">m_globalPerf</ref>.<ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" kindref="member">m_instantPerf</ref>.<ref refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.push_front(std::make_pair(l_now,<sp/>p_timeUs));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">AvgTimedValue::thresdhold_safe(uint32_t<sp/>p_timeUs)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" kindref="member">m_thresholdMs</ref><sp/>!=<sp/>0)<sp/>&amp;&amp;<sp/>(p_timeUs<sp/>&gt;<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" kindref="member">m_thresholdMs</ref><sp/>*<sp/>1000))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" kindref="member">m_overThreshold</ref>++;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;counters.avgtimedvalue&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AvgTimedValue<sp/>over<sp/>threshold<sp/>(%d<sp/>us<sp/>/<sp/>threshold<sp/>:<sp/>%d000<sp/>us)&quot;</highlight><highlight class="normal">,<sp/>p_timeUs,<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" kindref="member">m_thresholdMs</ref>,<sp/>HERE);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>==<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" kindref="member">m_assert</ref>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>/!\<sp/>WARINING<sp/>/!\<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>core<sp/>has<sp/>been<sp/>asked<sp/>here<sp/>to<sp/>study<sp/>context<sp/>:<sp/>must<sp/>be<sp/>removed<sp/>after!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exit(-3);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">AvgTimedValue::shrink_safe()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>bpt::ptime<sp/>l_now<sp/><sp/><sp/><sp/><sp/>=<sp/>bpt::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>bpt::ptime<sp/>l_maxTime<sp/>=<sp/>l_now<sp/>-<sp/>bpt::milliseconds(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a2986c9cf3526f6f86d340dafd25ae04f" kindref="member">m_timeDeltaMs</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>t_samples::iterator<sp/>c_elem<sp/><sp/>=</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>std::lower_bound(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.begin(),</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.end(),</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_maxTime,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::bind(&amp;AvgTimedValue::is_greater,<sp/>_1,<sp/>_2));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.erase(c_elem,<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.end());</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">AvgTimedValue::is_greater(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kindref="member">t_elem</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_elem,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_maxTime)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_elem.first<sp/>&gt;<sp/>p_maxTime;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" kindref="member">AvgTimedValue::update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>shrink_safe();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.empty())</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" kindref="member">m_min</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" kindref="member">m_max</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" kindref="member">m_mean</ref>.<ref refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kindref="member">NaN</ref>();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>compute_safe();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">AvgTimedValue::compute_safe(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>uint64_t<sp/>l_sum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>uint32_t<sp/>l_min<sp/>=<sp/>std::numeric_limits&lt;uint32_t&gt;::max();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>uint32_t<sp/>l_max<sp/>=<sp/>std::numeric_limits&lt;uint32_t&gt;::min();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>BOOST_FOREACH(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_samples::value_type&amp;<sp/>c_sample,<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>l_min<sp/>=<sp/>std::min(l_min,<sp/>c_sample.second);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>l_max<sp/>=<sp/>std::max(l_max,<sp/>c_sample.second);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>l_sum<sp/>+=<sp/>c_sample.second;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" kindref="member">m_mean</ref><sp/>=<sp/>l_sum<sp/>/<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>.size();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" kindref="member">m_min</ref><sp/><sp/>=<sp/>l_min;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" kindref="member">m_max</ref><sp/><sp/>=<sp/>l_max;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" kindref="member">AvgTimedValue::setAssert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_assert)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" kindref="member">m_assert</ref><sp/>=<sp/>p_assert;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc"/>
+  </compounddef>
+</doxygen>

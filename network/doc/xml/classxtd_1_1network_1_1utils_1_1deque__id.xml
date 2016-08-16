@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1deque__id" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::deque_id</compoundname>
+    <includes refid="Utils_8hh" local="no">Utils.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1deque__id_1a3f0ab7f9a5ff488eccdc7fd9b4892b8e" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex xtd::network::utils::deque_id&lt; T &gt;::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1deque__id_1af653666b7ec01b6b68b8a5bf48f06e9c" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; T &gt;</type>
+        <definition>std::deque&lt;T&gt; xtd::network::utils::deque_id&lt; T &gt;::m_deque</definition>
+        <argsstring></argsstring>
+        <name>m_deque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1deque__id_1ace5bd507db72397f457723944c21b575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::deque_id&lt; T &gt;::push</definition>
+        <argsstring>(const T &amp;p_param)</argsstring>
+        <name>push</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1deque__id_1ae947d106bc8943450c1eab9df3880401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::deque_id&lt; T &gt;::push_back</definition>
+        <argsstring>(const T &amp;p_param)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1deque__id_1a4d61e0412fbc4bb454141e8f760d191b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::deque_id&lt; T &gt;::pop</definition>
+        <argsstring>(T &amp;p_param)</argsstring>
+        <name>pop</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1deque__id_1ad18ee554089fe3016e1dd4c7b363c6a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::deque_id&lt; T &gt;::find</definition>
+        <argsstring>(const T &amp;p_param)</argsstring>
+        <name>find</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1deque__id_1a6038f59387bc5dcffb339b0d8c9424fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t xtd::network::utils::deque_id&lt; T &gt;::size</definition>
+        <argsstring>(void)</argsstring>
+        <name>size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="40" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ad18ee554089fe3016e1dd4c7b363c6a8" prot="public" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>find</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1af653666b7ec01b6b68b8a5bf48f06e9c" prot="private" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>m_deque</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a3f0ab7f9a5ff488eccdc7fd9b4892b8e" prot="private" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a4d61e0412fbc4bb454141e8f760d191b" prot="public" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>pop</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ace5bd507db72397f457723944c21b575" prot="public" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>push</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ae947d106bc8943450c1eab9df3880401" prot="public" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>push_back</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a6038f59387bc5dcffb339b0d8c9424fa" prot="public" virt="non-virtual"><scope>xtd::network::utils::deque_id</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

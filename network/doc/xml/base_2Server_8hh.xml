@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="base_2Server_8hh" kind="file" language="C++">
+    <compoundname>Server.hh</compoundname>
+    <includes local="no">boost/noncopyable.hpp</includes>
+    <includes refid="Config_8hh" local="yes">utils/Config.hh</includes>
+    <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
+    <includes refid="Utils_8hh" local="yes">utils/Utils.hh</includes>
+    <includedby refid="base_2Server_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Server.cc</includedby>
+    <includedby refid="bip_2Server_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</includedby>
+    <includedby refid="http_2Server_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Server.hh</includedby>
+    <incdepgraph>
+      <node id="1521">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1513">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1523">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1503">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.hh</label>
+        <link refid="base/Server.hh"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1509">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1507">
+        <label>cstdint</label>
+      </node>
+      <node id="1516">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="1525">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1517">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1506">
+        <label>string</label>
+      </node>
+      <node id="1504">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1514">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1505">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1506" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1516" relation="include">
+        </childnode>
+      </node>
+      <node id="1508">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1520">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1524">
+        <label>ctime</label>
+      </node>
+      <node id="1518">
+        <label>vector</label>
+      </node>
+      <node id="1519">
+        <label>streambuf</label>
+      </node>
+      <node id="1522">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1511">
+        <label>deque</label>
+      </node>
+      <node id="1510">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+      </node>
+      <node id="1515">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1532">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.cc</label>
+        <link refid="http_2Server_8cc"/>
+      </node>
+      <node id="1526">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.hh</label>
+        <link refid="base/Server.hh"/>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+      </node>
+      <node id="1529">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</label>
+        <link refid="bip_2Server_8cc"/>
+      </node>
+      <node id="1528">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</label>
+        <link refid="bip_2Server_8hh"/>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1530">
+        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1531">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.hh</label>
+        <link refid="http_2Server_8hh"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1527">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.cc</label>
+        <link refid="base_2Server_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1Resolver" prot="public">xtd::network::utils::Resolver</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1base_1_1Connection" prot="public">xtd::network::base::Connection</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1base_1_1Server" prot="public">xtd::network::base::Server</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1base">xtd::network::base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BASE_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BASE_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/noncopyable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Config_8hh" kindref="compound">utils/Config.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Utils_8hh" kindref="compound">utils/Utils.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespacextd_1_1network_1_1utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>D&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver</ref>;<sp/>}<sp/></highlight><highlight class="comment">//<sp/>fwd<sp/>decl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fwd<sp/>decl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>D&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Connection;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;</highlight></codeline>
+<codeline lineno="30" refid="classxtd_1_1network_1_1base_1_1Server" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server</ref><sp/>:<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>boost::noncopyable</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;Connection&lt;Domain&gt;<sp/>&gt;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_host,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_port,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_configuration,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_nbThread);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>join(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stop(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>cnx_sptr_t<sp/>createCnx(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_hostname,<sp/>uint32_t<sp/>p_port)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterAccept(cnx_sptr_t<sp/>p_conn)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterSend(cnx_sptr_t<sp/><sp/><sp/>p_conn)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterReceive(cnx_sptr_t<sp/>p_conn,<sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_inBuffer)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onReceiveError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/>cnx_sptr_t<sp/>p_conn);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onReceiveTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/>cnx_sptr_t<sp/>p_conn);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_receive(cnx_sptr_t<sp/>p_conn);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_send(cnx_sptr_t<sp/>p_conn,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref>&amp;<sp/>p_outData);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>accept(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onAccepted(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/>cnx_sptr_t<sp/>p_conn);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onReceived(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnx_sptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_conn,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_request);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onSent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnx_sptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_conn);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getNbCurrentThread(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getReceiveTotal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getReceiveError(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getReceiveTimeout(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getReceiveSuccess(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getReceivedLastTime(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getSendTotal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getSendSuccess(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getSendError(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getSendTimeout(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getCnxTotal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getCnxAccepted(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>getCnxRejected(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130" refid="classxtd_1_1network_1_1base_1_1Server_1a5465aab6a4cbdaa664eeaf9eef6da5ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1a5465aab6a4cbdaa664eeaf9eef6da5ac" kindref="member">m_conf</ref>;</highlight></codeline>
+<codeline lineno="131" refid="classxtd_1_1network_1_1base_1_1Server_1a5092eab162e1e793aaeac42368c5c06f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1deque__id" kindref="compound">utils::deque_id&lt;uint32_t&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1a5092eab162e1e793aaeac42368c5c06f" kindref="member">m_dequeId</ref>;</highlight></codeline>
+<codeline lineno="132" refid="classxtd_1_1network_1_1base_1_1Server_1a2b67486dfc934466300fa48295f94b46" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" kindref="member">utils::ioServicePtr_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1a2b67486dfc934466300fa48295f94b46" kindref="member">m_ioService</ref>;</highlight></codeline>
+<codeline lineno="133" refid="classxtd_1_1network_1_1base_1_1Server_1ad762843698e4e7b4e70974c2daab0932" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" kindref="member">utils::workPtr_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1ad762843698e4e7b4e70974c2daab0932" kindref="member">m_work</ref>;</highlight></codeline>
+<codeline lineno="134" refid="classxtd_1_1network_1_1base_1_1Server_1a03e4c0a664c471e756217b20b2209980" refkind="member"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;boost::asio::basic_socket_acceptor&lt;Domain&gt;<sp/>&gt;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1a03e4c0a664c471e756217b20b2209980" kindref="member">m_acceptor</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;utils::Resolver&lt;Domain&gt;<sp/>&gt;<sp/>m_resolver;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_threadNb;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>boost::thread_group<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_threadGroup;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>counters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_nbCurrentThread;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_cnxTotal;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_cnxAccepted;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_cnxRejected;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_receiveTotal;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_receiveError;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_receiveTimeout;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_receiveSuccess;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_receivedLastTime;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendTotal;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendError;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendSuccess;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendTimeout;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classxtd_1_1network_1_1base_1_1Server_1afdbfe06eac7640eed92c86ea38c089d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getNbCurrentThread</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nbCurrentThread;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="158" refid="classxtd_1_1network_1_1base_1_1Server_1a2f1c82fa4d94a0868ab1a9b957b0e1ed" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getReceiveTotal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_receiveTotal;<sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159" refid="classxtd_1_1network_1_1base_1_1Server_1a798d800b0cda41fb3d6bc9be0cb07036" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getReceiveError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_receiveError;<sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160" refid="classxtd_1_1network_1_1base_1_1Server_1a897bb823741706c6f3f91aef601ab3d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getReceiveTimeout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_receiveTimeout;<sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161" refid="classxtd_1_1network_1_1base_1_1Server_1ae2e9b2858e9a7f142f98fcc4299b2a4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getReceiveSuccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_receiveSuccess;<sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162" refid="classxtd_1_1network_1_1base_1_1Server_1a48e49f13ebcc958cb05737af08c761fc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getReceivedLastTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_receivedLastTime;<sp/>}</highlight></codeline>
+<codeline lineno="163" refid="classxtd_1_1network_1_1base_1_1Server_1a4b5d9bb1401c63af63598ab987dc1ea1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getSendTotal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendTotal;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164" refid="classxtd_1_1network_1_1base_1_1Server_1ad225f1e73ec0fc1ba2a54e3363881aa4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getSendSuccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendSuccess;<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165" refid="classxtd_1_1network_1_1base_1_1Server_1adeb8afa131ea136a61297f6d6e7af96a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getSendError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendError;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166" refid="classxtd_1_1network_1_1base_1_1Server_1af7fb5d4acd247d070d7330686d2d0717" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getSendTimeout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendTimeout;<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167" refid="classxtd_1_1network_1_1base_1_1Server_1aaed2e2436b27ebb7609c66e1002a8c56" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getCnxTotal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_cnxTotal;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168" refid="classxtd_1_1network_1_1base_1_1Server_1a3025e5dd8f30f36ebe52568d5c45966b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getCnxAccepted</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_cnxAccepted;<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169" refid="classxtd_1_1network_1_1base_1_1Server_1a07a3891c57d59f642d491e1d30e3eaa1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;<sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">Server&lt;Domain&gt;::getCnxRejected</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_cnxRejected;<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BASE_SERVER_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1Generator}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Generator Class Reference}
+\label{classxtd_1_1network_1_1http_1_1Generator}\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+
+
+{\ttfamily \#include $<$Template.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classxtd_1_1network_1_1http_1_1Generator__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Generator_a5f8bfffa6c7fe8ae46158e976af3d666}{Generator} (const string \&p\+\_\+content\+Type=\hyperlink{classxtd_1_1network_1_1http_1_1Generator_aef564fc3152e7477bb429e45b19328fc}{mcs\+\_\+default\+Content\+Type})
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1http_1_1Generator_a1d1e0656a6ffeecd718230613681c56d}{$\sim$\+Generator} (void)
+\item 
+const string \& \hyperlink{classxtd_1_1network_1_1http_1_1Generator_a4052d01b0d4849321b61688eac757b41}{get\+Content\+Type} (void) const 
+\item 
+const string \& \hyperlink{classxtd_1_1network_1_1http_1_1Generator_ac4fa462833bedc8bde7c7e81b1a29f37}{get\+Error} (void) const 
+\item 
+virtual status \hyperlink{classxtd_1_1network_1_1http_1_1Generator_a20ee788dc76ee76f4be5f44091b655ca}{resolve} (string \&p\+\_\+result)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Generator_a289cfd48cc9c5646c8f06455df41f09d}{add\+Error} (const string \&p\+\_\+error)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const string \hyperlink{classxtd_1_1network_1_1http_1_1Generator_aef564fc3152e7477bb429e45b19328fc}{mcs\+\_\+default\+Content\+Type} = \char`\"{}text/plain\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Template.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{Generator(const string \&p\+\_\+content\+Type=mcs\+\_\+default\+Content\+Type)}{Generator(const string &p_contentType=mcs_defaultContentType)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::\+Generator\+::\+Generator (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+content\+Type = {\ttfamily {\bf mcs\+\_\+default\+Content\+Type}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_a5f8bfffa6c7fe8ae46158e976af3d666}{}\label{classxtd_1_1network_1_1http_1_1Generator_a5f8bfffa6c7fe8ae46158e976af3d666}
+
+
+Definition at line 55 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+55                                                 :
+56   m\_contentType(p\_contentType),
+57   m\_error()
+58 \{
+59 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!````~Generator@{$\sim$\+Generator}}
+\index{````~Generator@{$\sim$\+Generator}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{$\sim$\+Generator(void)}{~Generator(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::\+Generator\+::$\sim$\+Generator (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_a1d1e0656a6ffeecd718230613681c56d}{}\label{classxtd_1_1network_1_1http_1_1Generator_a1d1e0656a6ffeecd718230613681c56d}
+
+
+Definition at line 61 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+62 \{
+63 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!add\+Error@{add\+Error}}
+\index{add\+Error@{add\+Error}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{add\+Error(const string \&p\+\_\+error)}{addError(const string &p_error)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Generator\+::add\+Error (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_a289cfd48cc9c5646c8f06455df41f09d}{}\label{classxtd_1_1network_1_1http_1_1Generator_a289cfd48cc9c5646c8f06455df41f09d}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Generator_a289cfd48cc9c5646c8f06455df41f09d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!get\+Content\+Type@{get\+Content\+Type}}
+\index{get\+Content\+Type@{get\+Content\+Type}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Content\+Type(void) const }{getContentType(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const string\& xtd\+::network\+::http\+::\+Generator\+::get\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_a4052d01b0d4849321b61688eac757b41}{}\label{classxtd_1_1network_1_1http_1_1Generator_a4052d01b0d4849321b61688eac757b41}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{get\+Error(void) const }{getError(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const string\& xtd\+::network\+::http\+::\+Generator\+::get\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_ac4fa462833bedc8bde7c7e81b1a29f37}{}\label{classxtd_1_1network_1_1http_1_1Generator_ac4fa462833bedc8bde7c7e81b1a29f37}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!resolve@{resolve}}
+\index{resolve@{resolve}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{resolve(string \&p\+\_\+result)=0}{resolve(string &p_result)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual status xtd\+::network\+::http\+::\+Generator\+::resolve (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_a20ee788dc76ee76f4be5f44091b655ca}{}\label{classxtd_1_1network_1_1http_1_1Generator_a20ee788dc76ee76f4be5f44091b655ca}
+
+
+Implemented in \hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate_ab221547a643e3db5ba99640fe14b9f68}{xtd\+::network\+::http\+::\+Xml\+Template}, \hyperlink{classxtd_1_1network_1_1http_1_1HtmlTemplate_af621b5bf866fa828f0bd5eaf225d5f70}{xtd\+::network\+::http\+::\+Html\+Template}, \hyperlink{classxtd_1_1network_1_1http_1_1Template_a476ce5e5b8465ea80ade07c003ab5cfd}{xtd\+::network\+::http\+::\+Template}, and \hyperlink{classxtd_1_1network_1_1http_1_1Json_a7a9ed4f957c77813ecbb84e228936b5e}{xtd\+::network\+::http\+::\+Json}.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}!mcs\+\_\+default\+Content\+Type@{mcs\+\_\+default\+Content\+Type}}
+\index{mcs\+\_\+default\+Content\+Type@{mcs\+\_\+default\+Content\+Type}!xtd\+::network\+::http\+::\+Generator@{xtd\+::network\+::http\+::\+Generator}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Content\+Type}{mcs_defaultContentType}}]{\setlength{\rightskip}{0pt plus 5cm}const string xtd\+::network\+::http\+::\+Generator\+::mcs\+\_\+default\+Content\+Type = \char`\"{}text/plain\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Generator_aef564fc3152e7477bb429e45b19328fc}{}\label{classxtd_1_1network_1_1http_1_1Generator_aef564fc3152e7477bb429e45b19328fc}
+
+
+Definition at line 16 of file Template.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8hh}{Template.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8cc}{Template.\+cc}\end{DoxyCompactItemize}

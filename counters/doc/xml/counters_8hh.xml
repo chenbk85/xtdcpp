@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="counters_8hh" kind="file" language="C++">
+    <compoundname>counters.hh</compoundname>
+    <includes refid="Base_8hh" local="yes">Base.hh</includes>
+    <includes refid="Value_8hh" local="yes">Value.hh</includes>
+    <includes refid="AvgValue_8hh" local="yes">AvgValue.hh</includes>
+    <includes refid="AvgTimedValue_8hh" local="yes">AvgTimedValue.hh</includes>
+    <includes refid="ExtValue_8hh" local="yes">ExtValue.hh</includes>
+    <includes refid="SumExt_8hh" local="yes">SumExt.hh</includes>
+    <includes refid="Freq_8hh" local="yes">Freq.hh</includes>
+    <includes refid="InstantFreq_8hh" local="yes">InstantFreq.hh</includes>
+    <includes refid="Perf_8hh" local="yes">Perf.hh</includes>
+    <includes refid="Cache_8hh" local="yes">Cache.hh</includes>
+    <includes refid="JsonVisitor_8hh" local="yes">JsonVisitor.hh</includes>
+    <includes refid="FileVisitor_8hh" local="yes">FileVisitor.hh</includes>
+    <includes refid="CounterManager_8hh" local="yes">CounterManager.hh</includes>
+    <incdepgraph>
+      <node id="682">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="689">
+        <label>json_parser.hpp</label>
+      </node>
+      <node id="673">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="683">
+        <label>ExtValue.hh</label>
+        <link refid="ExtValue_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>FileVisitor.hh</label>
+        <link refid="FileVisitor_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+      </node>
+      <node id="674">
+        <label>string</label>
+      </node>
+      <node id="670">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="694">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="677">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>CounterManager.hh</label>
+        <link refid="CounterManager_8hh"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters.hh"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>fstream</label>
+      </node>
+      <node id="672">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="671" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>JsonVisitor.hh</label>
+        <link refid="JsonVisitor_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>vector</label>
+      </node>
+      <node id="684">
+        <label>SumExt.hh</label>
+        <link refid="SumExt_8hh"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="695">
+        <label>counters_fwd.hh</label>
+        <link refid="counters__fwd_8hh"/>
+      </node>
+      <node id="688">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="676">
+        <label>deque</label>
+      </node>
+      <node id="679">
+        <label>AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_LIBCOUNTERS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_LIBCOUNTERS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Value_8hh" kindref="compound">Value.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="AvgValue_8hh" kindref="compound">AvgValue.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="AvgTimedValue_8hh" kindref="compound">AvgTimedValue.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="ExtValue_8hh" kindref="compound">ExtValue.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="SumExt_8hh" kindref="compound">SumExt.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Freq_8hh" kindref="compound">Freq.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="InstantFreq_8hh" kindref="compound">InstantFreq.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Perf_8hh" kindref="compound">Perf.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Cache_8hh" kindref="compound">Cache.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="JsonVisitor_8hh" kindref="compound">JsonVisitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="FileVisitor_8hh" kindref="compound">FileVisitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CounterManager_8hh" kindref="compound">CounterManager.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_LIBCOUNTERS_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/counters.hh"/>
+  </compounddef>
+</doxygen>

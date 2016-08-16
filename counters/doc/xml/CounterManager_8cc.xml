@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="CounterManager_8cc" kind="file" language="C++">
+    <compoundname>CounterManager.cc</compoundname>
+    <includes refid="CounterManager_8hh" local="yes">CounterManager.hh</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/algorithm/string.hpp</includes>
+    <includes refid="JsonVisitor_8hh" local="yes">JsonVisitor.hh</includes>
+    <includes refid="FileVisitor_8hh" local="yes">FileVisitor.hh</includes>
+    <includes local="no">logger.hh</includes>
+    <incdepgraph>
+      <node id="635">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="647">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="650">
+        <label>json_parser.hpp</label>
+      </node>
+      <node id="640">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>FileVisitor.hh</label>
+        <link refid="FileVisitor_8hh"/>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>string</label>
+      </node>
+      <node id="641">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="632">
+        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</label>
+        <link refid="CounterManager.cc"/>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="633">
+        <label>CounterManager.hh</label>
+        <link refid="CounterManager_8hh"/>
+        <childnode refid="634" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>fstream</label>
+      </node>
+      <node id="642">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="648">
+        <label>JsonVisitor.hh</label>
+        <link refid="JsonVisitor_8hh"/>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="639">
+        <label>counters_fwd.hh</label>
+        <link refid="counters__fwd_8hh"/>
+      </node>
+      <node id="637">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="644">
+        <label>iostream</label>
+      </node>
+      <node id="646">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="652">
+        <label>logger.hh</label>
+      </node>
+      <node id="638">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CounterManager_8hh" kindref="compound">CounterManager.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/date_time/posix_time/posix_time.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/algorithm/string.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="JsonVisitor_8hh" kindref="compound">JsonVisitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FileVisitor_8hh" kindref="compound">FileVisitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bfs<sp/>=<sp/>boost::filesystem;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bp<sp/><sp/>=<sp/>boost::posix_time;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bt<sp/><sp/>=<sp/>boost::this_thread;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" kindref="member">CounterManager::CounterManager</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_delay,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path)<sp/>:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>m_refreshDelay(p_delay),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_snmpPath(p_path),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_counters(),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_isRunning(false)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classxtd_1_1counters_1_1CounterManager_1aff5438182c449dd719382d2d8ca2b1c8" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1aff5438182c449dd719382d2d8ca2b1c8" kindref="member">CounterManager::~CounterManager</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="34" refid="classxtd_1_1counters_1_1CounterManager_1a65755963d9293fa457c6562a38b2dff3" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a65755963d9293fa457c6562a38b2dff3" kindref="member">CounterManager::start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_counters.size()<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;counters.manager&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;no<sp/>counter<sp/>to<sp/>monitor&quot;</highlight><highlight class="normal">,<sp/>HERE);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8acb5e100e5a9a3e7f6d1fd97512215282" kindref="member">status::error</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>t_counters::const_iterator<sp/>l_it<sp/>=<sp/>m_counters.begin();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>l_it<sp/>!=<sp/>m_counters.end();<sp/>l_it++)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_path<sp/>=<sp/>m_snmpPath<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>(*l_it).first.string()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>bfs::create_directories(l_path);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>m_isRunning<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>m_thread<sp/><sp/><sp/><sp/>=<sp/>boost::thread(boost::bind(&amp;CounterManager::refresh,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classxtd_1_1counters_1_1CounterManager_1a01f164d28b794064ed5cba2ab94e3583" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a01f164d28b794064ed5cba2ab94e3583" kindref="member">CounterManager::getSnmpPath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_snmpPath;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" kindref="member">CounterManager::t_counters</ref></highlight></codeline>
+<codeline lineno="63" refid="classxtd_1_1counters_1_1CounterManager_1afb314857888b269ca3ea0f2b4870b3e5" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1afb314857888b269ca3ea0f2b4870b3e5" kindref="member">CounterManager::getCounters</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_counters;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">status</highlight></codeline>
+<codeline lineno="69" refid="classxtd_1_1counters_1_1CounterManager_1a7e0f54fa25b0d8592362159604cc4310" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a7e0f54fa25b0d8592362159604cc4310" kindref="member">CounterManager::add</ref>(<ref refid="classxtd_1_1counters_1_1Base_1aa0ea634f1a5e3df87418566a3e8fcbd6" kindref="member">Base::t_sptr</ref><sp/><sp/>p_counter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_subDir)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>bfs::path<sp/>l_subDir(p_subDir);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>m_counters.insert(std::make_pair(l_subDir,<sp/>p_counter));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" kindref="member">CounterManager::stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_isRunning)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>m_isRunning<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>m_thread.interrupt();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>m_thread.join();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" kindref="member">writeOnDisk</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" kindref="member">CounterManager::toJson</ref>(boost::property_tree::ptree&amp;<sp/>p_json)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_path;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c_data<sp/>:<sp/>m_counters)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>l_path<sp/>=<sp/>c_data.first.string();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::replace_all(l_path,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::property_tree::ptree::path_type<sp/>l_jsonPath(l_path,<sp/></highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1JsonVisitor" kindref="compound">JsonVisitor</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_jsonVisitor(l_jsonPath,<sp/>p_json);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>c_data.second-&gt;update();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>c_data.second-&gt;visit(l_jsonVisitor);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">CounterManager::refresh(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="107"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(m_isRunning)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" kindref="member">writeOnDisk</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>bt::sleep(bp::seconds(m_refreshDelay));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" kindref="member">CounterManager::writeOnDisk</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="117"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c_data<sp/>:<sp/>m_counters)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>bfs::path<sp/><sp/><sp/>l_path(bfs::path(m_snmpPath)<sp/>/<sp/>c_data.first);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1FileVisitor" kindref="compound">FileVisitor</ref><sp/>l_fileVisitor(l_path);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>c_data.second-&gt;update();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>c_data.second-&gt;visit(l_fileVisitor);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1network_1_1utils_1_1CacheEntry" kind="struct" language="C++" prot="public">
+    <compoundname>xtd::network::utils::CacheEntry</compoundname>
+    <includes refid="CacheDns_8hh" local="no">CacheDns.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::utils::CacheEntry::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="40" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" prot="public" static="no" mutable="no">
+        <type>std::time_t</type>
+        <definition>std::time_t xtd::network::utils::CacheEntry::m_stamp</definition>
+        <argsstring></argsstring>
+        <name>m_stamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxtd_1_1network_1_1utils_1_1CacheEntry_1acaf6749bc9eb587ffe1181dd4d7306b5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::CacheEntry::CacheEntry</definition>
+        <argsstring>(const string &amp;p_ipAddress, uint32_t p_timeStamp)</argsstring>
+        <name>CacheEntry</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_ipAddress</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeStamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="34" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="32" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1acaf6749bc9eb587ffe1181dd4d7306b5" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheEntry</scope><name>CacheEntry</name></member>
+      <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheEntry</scope><name>m_stamp</name></member>
+      <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheEntry</scope><name>m_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

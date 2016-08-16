@@ -1,0 +1,65 @@
+\hypertarget{CacheDns_8hh}{}\section{/home/psyco/dev/xtdcpp/network/src/utils/\+Cache\+Dns.hh File Reference}
+\label{CacheDns_8hh}\index{/home/psyco/dev/xtdcpp/network/src/utils/\+Cache\+Dns.\+hh@{/home/psyco/dev/xtdcpp/network/src/utils/\+Cache\+Dns.\+hh}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$boost/thread/thread.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/function.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/shared\+\_\+ptr.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/noncopyable.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/unordered\+\_\+map.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/make\+\_\+shared.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/date\+\_\+time/posix\+\_\+time/posix\+\_\+time.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}utils/\+Comm\+Type\+Defs.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils/\+Utils.\+hh\char`\"{}}\\*
+Include dependency graph for Cache\+Dns.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CacheDns_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CacheDns_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxtd_1_1network_1_1utils_1_1CacheEntry}{xtd\+::network\+::utils\+::\+Cache\+Entry}
+\item 
+class \hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns}{xtd\+::network\+::utils\+::\+Cache\+Dns}
+\begin{DoxyCompactList}\small\item\em Cache local de resolution de dns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacextd}{xtd}
+\item 
+ \hyperlink{namespacextd_1_1network}{xtd\+::network}
+\item 
+ \hyperlink{namespacextd_1_1network_1_1utils}{xtd\+::network\+::utils}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ string, boost\+::shared\+\_\+ptr$<$ Cache\+Entry $>$ $>$ \hyperlink{namespacextd_1_1network_1_1utils_a1118a93e3ee4c3aba74b90600794145b}{xtd\+::network\+::utils\+::\+Entry\+Pair}
+\begin{DoxyCompactList}\small\item\em typedef for U\+R\+L/\+Entry(IP address) pair \end{DoxyCompactList}\item 
+typedef std\+::list$<$ boost\+::shared\+\_\+ptr$<$ Entry\+Pair $>$ $>$ \hyperlink{namespacextd_1_1network_1_1utils_a6eef494cdc6ca2b10bf4f36f6fa110ee}{xtd\+::network\+::utils\+::\+Cache\+List}
+\begin{DoxyCompactList}\small\item\em typedef for Cache list \end{DoxyCompactList}\item 
+typedef boost\+::unordered\+\_\+map$<$ string, Cache\+List\+::iterator $>$ \hyperlink{namespacextd_1_1network_1_1utils_aa648e4975dce81f2fd0a9999f684781d}{xtd\+::network\+::utils\+::\+Cache\+Map}
+\begin{DoxyCompactList}\small\item\em typedef for U\+R\+L-\/indexed map (aka hash map) into the Cache\+List \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_a8939e806c4a6bc08b78a32941db7a130}{xtd\+::network\+::utils\+::\+C\+A\+C\+H\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+M\+AX} = 200
+\item 
+const uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_adb4767541db3a79016a24142db705161}{xtd\+::network\+::utils\+::\+C\+A\+C\+H\+E\+\_\+\+T\+T\+L\+\_\+\+M\+AX} = 1800
+\end{DoxyCompactItemize}

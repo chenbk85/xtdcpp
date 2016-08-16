@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Config_8cc" kind="file" language="C++">
+    <compoundname>Config.cc</compoundname>
+    <includes refid="Config_8hh" local="yes">utils/Config.hh</includes>
+    <includes local="no">types.hh</includes>
+    <incdepgraph>
+      <node id="1905">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1901">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1899">
+        <label>cstdint</label>
+      </node>
+      <node id="1908">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="1904">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1898">
+        <label>string</label>
+      </node>
+      <node id="1896">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.cc</label>
+        <link refid="Config.cc"/>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1897">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+      </node>
+      <node id="1900">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1903">
+        <label>deque</label>
+      </node>
+      <node id="1902">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Config_8hh" kindref="compound">utils/Config.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" kindref="member">Config::Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>m_noDelay(false),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>m_reuseAddr(false),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>m_linger(false),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>m_lingerTime(0),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>m_compress(false),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>m_compressionCodec(<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref>::<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23" kindref="member">zlib</ref>),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>m_dnsCacheTTL(1800),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>m_connectTimeoutMs(1800),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_sendTimeoutMs(1800),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_receiveTimeoutMs(1800)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" kindref="member">Config::Config</ref>(uint32_t<sp/>p_flags,<sp/>uint32_t<sp/>p_lingerInterval):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_noDelay(false),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_reuseAddr(false),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_linger(false),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_lingerTime(0),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>m_compress(false),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>m_compressionCodec(<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref>::<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23" kindref="member">zlib</ref>),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>m_dnsCacheTTL(1800),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>m_connectTimeoutMs(1800),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>m_sendTimeoutMs(1800),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_receiveTimeoutMs(1800)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333" kindref="member">setNoDelay</ref><sp/><sp/><sp/>(p_flags<sp/>&amp;<sp/>valueof(<ref refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3" kindref="member">option::nodelay</ref>));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f" kindref="member">setReuseAddr</ref><sp/>(p_flags<sp/>&amp;<sp/>valueof(<ref refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2" kindref="member">option::reuseaddr</ref>));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2" kindref="member">setLinger</ref><sp/><sp/><sp/><sp/>(p_flags<sp/>&amp;<sp/>valueof(<ref refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a" kindref="member">option::linger</ref>),<sp/>p_lingerInterval);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009" kindref="member">setCompress</ref><sp/><sp/>(p_flags<sp/>&amp;<sp/>valueof(<ref refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994" kindref="member">option::compress</ref>));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.cc"/>
+  </compounddef>
+</doxygen>

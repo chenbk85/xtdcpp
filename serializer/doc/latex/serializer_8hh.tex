@@ -1,0 +1,88 @@
+\hypertarget{serializer_8hh}{}\section{/home/psyco/dev/xtdcpp/serializer/src/serializer.hh File Reference}
+\label{serializer_8hh}\index{/home/psyco/dev/xtdcpp/serializer/src/serializer.\+hh@{/home/psyco/dev/xtdcpp/serializer/src/serializer.\+hh}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$types.\+hh$>$}\\*
+{\ttfamily \#include \char`\"{}serializer\+\_\+fwd.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}archives/\+Debug\+Archive.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}serializer.\+hxx\char`\"{}}\\*
+Include dependency graph for serializer.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serializer_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serializer_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1mode}{xtd\+::serializer\+::mode}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1mode_1_1text}{xtd\+::serializer\+::mode\+::text}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1mode_1_1xml}{xtd\+::serializer\+::mode\+::xml}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1mode_1_1bin}{xtd\+::serializer\+::mode\+::bin}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1option}{xtd\+::serializer\+::option}
+\item 
+struct \hyperlink{structxtd_1_1serializer_1_1serializer}{xtd\+::serializer\+::serializer$<$ Mode $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacextd}{xtd}
+\item 
+ \hyperlink{namespacextd_1_1serializer}{xtd\+::serializer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{serializer_8hh_a54ebd30f6967d7f47176460bf889311b}{E\+N\+U\+M\+\_\+\+C\+A\+SE}(p\+\_\+value,  p\+\_\+dst)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\string \hyperlink{namespacextd_1_1serializer_aff0b24f230c8b5083104eccb94242a8c}{xtd\+::serializer\+::as\+\_\+xml} (const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ char $>$ \hyperlink{namespacextd_1_1serializer_a0088e6d509f6652e58c7c0eea9102884}{xtd\+::serializer\+::as\+\_\+bin} (const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a1c43eba643505bba5858d6d5431201fb}{xtd\+::serializer\+::as\+\_\+bin} (const T \&p\+\_\+obj, std\+::vector$<$ char $>$ \&p\+\_\+data, bool p\+\_\+debug, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ char $>$ \hyperlink{namespacextd_1_1serializer_a5ac463bb961b98f1b8b7c2655d2772db}{xtd\+::serializer\+::as\+\_\+text} (const T \&p\+\_\+obj, bool p\+\_\+debug, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a601beccda10ec2760c371d39045bec0e}{xtd\+::serializer\+::from\+\_\+bin} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a76ec6ed068121fc7ff0f6514132c5683}{xtd\+::serializer\+::from\+\_\+bin} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, option p\+\_\+opt=option())
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacextd_1_1serializer_a27ea640a20bff130274562ddd8762c0a}{xtd\+::serializer\+::from\+\_\+text} (const std\+::vector$<$ char $>$ \&p\+\_\+data, T \&p\+\_\+obj, bool \&p\+\_\+debug, option p\+\_\+opt=option())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{serializer.\+hh@{serializer.\+hh}!E\+N\+U\+M\+\_\+\+C\+A\+SE@{E\+N\+U\+M\+\_\+\+C\+A\+SE}}
+\index{E\+N\+U\+M\+\_\+\+C\+A\+SE@{E\+N\+U\+M\+\_\+\+C\+A\+SE}!serializer.\+hh@{serializer.\+hh}}
+\subsubsection[{\texorpdfstring{E\+N\+U\+M\+\_\+\+C\+A\+SE}{ENUM_CASE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+N\+U\+M\+\_\+\+C\+A\+SE(
+\begin{DoxyParamCaption}
+\item[{}]{p\+\_\+value, }
+\item[{}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+)}\hypertarget{serializer_8hh_a54ebd30f6967d7f47176460bf889311b}{}\label{serializer_8hh_a54ebd30f6967d7f47176460bf889311b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{case} p\_value :                                \(\backslash\)
+  p\_dst = #p\_value;                             \(\backslash\)
+  break;
+\end{DoxyCode}
+
+
+Definition at line 12 of file serializer.\+hh.
+

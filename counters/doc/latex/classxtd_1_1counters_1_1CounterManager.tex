@@ -1,0 +1,307 @@
+\hypertarget{classxtd_1_1counters_1_1CounterManager}{}\section{xtd\+:\+:counters\+:\+:Counter\+Manager Class Reference}
+\label{classxtd_1_1counters_1_1CounterManager}\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+
+
+{\ttfamily \#include $<$Counter\+Manager.\+hh$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1counters_1_1CounterManager}{Counter\+Manager} $>$ \hyperlink{classxtd_1_1counters_1_1CounterManager_ac136b7de8a55b55a2700d93901ba1e9a}{t\+\_\+sptr}
+\item 
+typedef std\+::multimap$<$ boost\+::filesystem\+::path, \hyperlink{classxtd_1_1counters_1_1Base_aa0ea634f1a5e3df87418566a3e8fcbd6}{Base\+::t\+\_\+sptr} $>$ \hyperlink{classxtd_1_1counters_1_1CounterManager_ae675635fccfde42cc3831d07adacd2cb}{t\+\_\+counters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1CounterManager_a13c765c1d8c326d3a040c779975d0149}{Counter\+Manager} (const uint32\+\_\+t p\+\_\+deplay, const string \&p\+\_\+path)
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1CounterManager_aff5438182c449dd719382d2d8ca2b1c8}{$\sim$\+Counter\+Manager} (void)
+\item 
+status \hyperlink{classxtd_1_1counters_1_1CounterManager_a65755963d9293fa457c6562a38b2dff3}{start} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1CounterManager_a2b50e714f748fc2298bd3ca0c77c668d}{stop} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1CounterManager_a1677a12619a23ba162a19ebc74fe41e9}{to\+Json} (boost\+::property\+\_\+tree\+::ptree \&p\+\_\+dst)
+\item 
+string \hyperlink{classxtd_1_1counters_1_1CounterManager_a01f164d28b794064ed5cba2ab94e3583}{get\+Snmp\+Path} (void) const 
+\item 
+status \hyperlink{classxtd_1_1counters_1_1CounterManager_a7e0f54fa25b0d8592362159604cc4310}{add} (\hyperlink{classxtd_1_1counters_1_1Base_aa0ea634f1a5e3df87418566a3e8fcbd6}{Base\+::t\+\_\+sptr} p\+\_\+counter, const string \&p\+\_\+path)
+\item 
+const \hyperlink{classxtd_1_1counters_1_1CounterManager_ae675635fccfde42cc3831d07adacd2cb}{t\+\_\+counters} \hyperlink{classxtd_1_1counters_1_1CounterManager_afb314857888b269ca3ea0f2b4870b3e5}{get\+Counters} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1CounterManager_a6b9bb7cbdc06c137d04d7a944232b264}{write\+On\+Disk} (void) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Counter\+Manager.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!t\+\_\+counters@{t\+\_\+counters}}
+\index{t\+\_\+counters@{t\+\_\+counters}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{t\+\_\+counters}{t_counters}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::multimap$<$boost\+::filesystem\+::path, {\bf Base\+::t\+\_\+sptr}$>$ {\bf xtd\+::counters\+::\+Counter\+Manager\+::t\+\_\+counters}}\hypertarget{classxtd_1_1counters_1_1CounterManager_ae675635fccfde42cc3831d07adacd2cb}{}\label{classxtd_1_1counters_1_1CounterManager_ae675635fccfde42cc3831d07adacd2cb}
+
+
+Definition at line 23 of file Counter\+Manager.\+hh.
+
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!t\+\_\+sptr@{t\+\_\+sptr}}
+\index{t\+\_\+sptr@{t\+\_\+sptr}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{t\+\_\+sptr}{t_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<${\bf Counter\+Manager}$>$ {\bf xtd\+::counters\+::\+Counter\+Manager\+::t\+\_\+sptr}}\hypertarget{classxtd_1_1counters_1_1CounterManager_ac136b7de8a55b55a2700d93901ba1e9a}{}\label{classxtd_1_1counters_1_1CounterManager_ac136b7de8a55b55a2700d93901ba1e9a}
+
+
+Definition at line 22 of file Counter\+Manager.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!Counter\+Manager@{Counter\+Manager}}
+\index{Counter\+Manager@{Counter\+Manager}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{Counter\+Manager(const uint32\+\_\+t p\+\_\+deplay, const string \&p\+\_\+path)}{CounterManager(const uint32_t p_deplay, const string &p_path)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Counter\+Manager\+::\+Counter\+Manager (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t}]{p\+\_\+deplay, }
+\item[{const string \&}]{p\+\_\+path}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_a13c765c1d8c326d3a040c779975d0149}{}\label{classxtd_1_1counters_1_1CounterManager_a13c765c1d8c326d3a040c779975d0149}
+
+
+Definition at line 21 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+21                                                                            :
+22   m\_refreshDelay(p\_delay),
+23   m\_snmpPath(p\_path),
+24   m\_counters(),
+25   m\_isRunning(\textcolor{keyword}{false})
+26 \{
+27 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!````~Counter\+Manager@{$\sim$\+Counter\+Manager}}
+\index{````~Counter\+Manager@{$\sim$\+Counter\+Manager}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{$\sim$\+Counter\+Manager(void)}{~CounterManager(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Counter\+Manager\+::$\sim$\+Counter\+Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1CounterManager_aff5438182c449dd719382d2d8ca2b1c8}{}\label{classxtd_1_1counters_1_1CounterManager_aff5438182c449dd719382d2d8ca2b1c8}
+
+
+Definition at line 29 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+30 \{
+31 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!add@{add}}
+\index{add@{add}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{add(\+Base\+::t\+\_\+sptr p\+\_\+counter, const string \&p\+\_\+path)}{add(Base::t_sptr p_counter, const string &p_path)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::counters\+::\+Counter\+Manager\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+::t\+\_\+sptr}}]{p\+\_\+counter, }
+\item[{const string \&}]{p\+\_\+path}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_a7e0f54fa25b0d8592362159604cc4310}{}\label{classxtd_1_1counters_1_1CounterManager_a7e0f54fa25b0d8592362159604cc4310}
+
+
+Definition at line 69 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+70 \{
+71   bfs::path l\_subDir(p\_subDir);
+72   m\_counters.insert(std::make\_pair(l\_subDir, p\_counter));
+73   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1counters_a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+74 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!get\+Counters@{get\+Counters}}
+\index{get\+Counters@{get\+Counters}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Counters(void)}{getCounters(void)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Counter\+Manager\+::t\+\_\+counters} xtd\+::counters\+::\+Counter\+Manager\+::get\+Counters (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_afb314857888b269ca3ea0f2b4870b3e5}{}\label{classxtd_1_1counters_1_1CounterManager_afb314857888b269ca3ea0f2b4870b3e5}
+
+
+Definition at line 63 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+64 \{
+65   \textcolor{keywordflow}{return} m\_counters;
+66 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!get\+Snmp\+Path@{get\+Snmp\+Path}}
+\index{get\+Snmp\+Path@{get\+Snmp\+Path}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Snmp\+Path(void) const }{getSnmpPath(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::counters\+::\+Counter\+Manager\+::get\+Snmp\+Path (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1counters_1_1CounterManager_a01f164d28b794064ed5cba2ab94e3583}{}\label{classxtd_1_1counters_1_1CounterManager_a01f164d28b794064ed5cba2ab94e3583}
+
+
+Definition at line 57 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+58 \{
+59   \textcolor{keywordflow}{return} m\_snmpPath;
+60 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!start@{start}}
+\index{start@{start}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{start(void)}{start(void)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::counters\+::\+Counter\+Manager\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_a65755963d9293fa457c6562a38b2dff3}{}\label{classxtd_1_1counters_1_1CounterManager_a65755963d9293fa457c6562a38b2dff3}
+
+
+Definition at line 34 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+35 \{
+36   \textcolor{keywordflow}{if} (m\_counters.size() == 0)
+37   \{
+38     logger::crit(\textcolor{stringliteral}{"counters.manager"}, \textcolor{stringliteral}{"no counter to monitor"}, HERE);
+39     \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1counters_a408a8b2fd75b44228e1741ac4a32aff8acb5e100e5a9a3e7f6d1fd97512215282}{status::error};
+40   \}
+41 
+42   t\_counters::const\_iterator l\_it = m\_counters.begin();
+43 
+44   \textcolor{keywordflow}{for} (; l\_it != m\_counters.end(); l\_it++)
+45   \{
+46     \textcolor{keywordtype}{string} l\_path = m\_snmpPath + \textcolor{stringliteral}{"/"} + (*l\_it).first.string() + \textcolor{stringliteral}{"/"};
+47     bfs::create\_directories(l\_path);
+48   \}
+49 
+50   m\_isRunning = \textcolor{keyword}{true};
+51   m\_thread    = boost::thread(boost::bind(&CounterManager::refresh, \textcolor{keyword}{this}));
+52 
+53   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1counters_a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+54 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!stop@{stop}}
+\index{stop@{stop}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{stop(void)}{stop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Counter\+Manager\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_a2b50e714f748fc2298bd3ca0c77c668d}{}\label{classxtd_1_1counters_1_1CounterManager_a2b50e714f748fc2298bd3ca0c77c668d}
+
+
+Definition at line 77 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+78 \{
+79   \textcolor{keywordflow}{if} (m\_isRunning)
+80   \{
+81     m\_isRunning = \textcolor{keyword}{false};
+82     m\_thread.interrupt();
+83     m\_thread.join();
+84     \hyperlink{classxtd_1_1counters_1_1CounterManager_a6b9bb7cbdc06c137d04d7a944232b264}{writeOnDisk}();
+85   \}
+86 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1CounterManager_a2b50e714f748fc2298bd3ca0c77c668d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!to\+Json@{to\+Json}}
+\index{to\+Json@{to\+Json}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{to\+Json(boost\+::property\+\_\+tree\+::ptree \&p\+\_\+dst)}{toJson(boost::property_tree::ptree &p_dst)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Counter\+Manager\+::to\+Json (
+\begin{DoxyParamCaption}
+\item[{boost\+::property\+\_\+tree\+::ptree \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1CounterManager_a1677a12619a23ba162a19ebc74fe41e9}{}\label{classxtd_1_1counters_1_1CounterManager_a1677a12619a23ba162a19ebc74fe41e9}
+
+
+Definition at line 89 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+90 \{
+91   \textcolor{keywordtype}{string} l\_path;
+92 
+93   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& c\_data : m\_counters)
+94   \{
+95     l\_path = c\_data.first.string();
+96     boost::replace\_all(l\_path, \textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"!"});
+97 
+98     boost::property\_tree::ptree::path\_type l\_jsonPath(l\_path, \textcolor{charliteral}{'!'});
+99     JsonVisitor                            l\_jsonVisitor(l\_jsonPath, p\_json);
+100     c\_data.second->update();
+101     c\_data.second->visit(l\_jsonVisitor);
+102   \}
+103 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1CounterManager_a1677a12619a23ba162a19ebc74fe41e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}!write\+On\+Disk@{write\+On\+Disk}}
+\index{write\+On\+Disk@{write\+On\+Disk}!xtd\+::counters\+::\+Counter\+Manager@{xtd\+::counters\+::\+Counter\+Manager}}
+\subsubsection[{\texorpdfstring{write\+On\+Disk(void) const }{writeOnDisk(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Counter\+Manager\+::write\+On\+Disk (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1counters_1_1CounterManager_a6b9bb7cbdc06c137d04d7a944232b264}{}\label{classxtd_1_1counters_1_1CounterManager_a6b9bb7cbdc06c137d04d7a944232b264}
+
+
+Definition at line 116 of file Counter\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+117 \{
+118   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& c\_data : m\_counters)
+119   \{
+120     bfs::path   l\_path(bfs::path(m\_snmpPath) / c\_data.first);
+121     FileVisitor l\_fileVisitor(l\_path);
+122 
+123     c\_data.second->update();
+124     c\_data.second->visit(l\_fileVisitor);
+125   \}
+126 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1CounterManager_a6b9bb7cbdc06c137d04d7a944232b264_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{CounterManager_8hh}{Counter\+Manager.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{CounterManager_8cc}{Counter\+Manager.\+cc}\end{DoxyCompactItemize}

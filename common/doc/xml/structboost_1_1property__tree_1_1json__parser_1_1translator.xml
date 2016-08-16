@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structboost_1_1property__tree_1_1json__parser_1_1translator" kind="struct" language="C++" prot="public">
+    <compoundname>boost::property_tree::json_parser::translator</compoundname>
+    <includes refid="json__parser_8hpp" local="no">json_parser.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1property__tree_1_1json__parser_1_1translator_1aa6939259165594c66343c4fd2b92fee0" prot="public" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string boost::property_tree::json_parser::translator&lt; T &gt;::internal_type</definition>
+        <argsstring></argsstring>
+        <name>internal_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="54" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structboost_1_1property__tree_1_1json__parser_1_1translator_1a41e329b10777c2a4a756b65911746a8a" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T boost::property_tree::json_parser::translator&lt; T &gt;::external_type</definition>
+        <argsstring></argsstring>
+        <name>external_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="55" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structboost_1_1property__tree_1_1json__parser_1_1translator_1aef3c8478be3ecb503113f433ece01628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::optional&lt; T &gt;</type>
+        <definition>boost::optional&lt;T&gt; boost::property_tree::json_parser::translator&lt; T &gt;::get_value</definition>
+        <argsstring>(const std::string &amp;v)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="57" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1property__tree_1_1json__parser_1_1translator_1aab997fa3043e1decab15845b61a9c801" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::optional&lt; std::string &gt;</type>
+        <definition>boost::optional&lt;std::string&gt; boost::property_tree::json_parser::translator&lt; T &gt;::put_value</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>put_value</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="58" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="53" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="52" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1a41e329b10777c2a4a756b65911746a8a" prot="public" virt="non-virtual"><scope>boost::property_tree::json_parser::translator</scope><name>external_type</name></member>
+      <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aef3c8478be3ecb503113f433ece01628" prot="public" virt="non-virtual"><scope>boost::property_tree::json_parser::translator</scope><name>get_value</name></member>
+      <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aa6939259165594c66343c4fd2b92fee0" prot="public" virt="non-virtual"><scope>boost::property_tree::json_parser::translator</scope><name>internal_type</name></member>
+      <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aab997fa3043e1decab15845b61a9c801" prot="public" virt="non-virtual"><scope>boost::property_tree::json_parser::translator</scope><name>put_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

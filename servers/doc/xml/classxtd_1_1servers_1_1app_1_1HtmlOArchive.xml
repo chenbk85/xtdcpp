@@ -1,0 +1,986 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kind="class" language="C++" prot="public">
+    <compoundname>xtd::servers::app::HtmlOArchive</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">boost::archive::xml_oarchive_impl&lt; HtmlOArchive &gt;</basecompoundref>
+    <includes refid="HtmlOArchive_8hh" local="no">HtmlOArchive.hh</includes>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context" prot="private">xtd::servers::app::HtmlOArchive::context</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object" prot="private">xtd::servers::app::HtmlOArchive::Object</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject" prot="private">xtd::servers::app::HtmlOArchive::PodObject</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject" prot="private">xtd::servers::app::HtmlOArchive::StructObject</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1VectorObject" prot="private">xtd::servers::app::HtmlOArchive::VectorObject</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae69efb3db0a6ffc1d580ed5b272bc7a0" prot="private" static="no">
+        <type>boost::archive::xml_oarchive_impl&lt; <ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">HtmlOArchive</ref> &gt;</type>
+        <definition>typedef boost::archive::xml_oarchive_impl&lt;HtmlOArchive&gt; xtd::servers::app::HtmlOArchive::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" prot="public" static="no">
+        <type>std::stack&lt; context &gt;</type>
+        <definition>typedef std::stack&lt;context&gt; xtd::servers::app::HtmlOArchive::t_info</definition>
+        <argsstring></argsstring>
+        <name>t_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="179" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" prot="public" static="no">
+        <type>std::stack&lt; Object * &gt;</type>
+        <definition>typedef std::stack&lt;Object*&gt; xtd::servers::app::HtmlOArchive::t_objects</definition>
+        <argsstring></argsstring>
+        <name>t_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="180" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a725f48824bde766dcd0e8049b4df3df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::detail::interface_oarchive&lt; HtmlOArchive &gt;</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::detail::interface_oarchive&lt; HtmlOArchive &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a350c2afaed5c679f01f1b4e36a6ad91f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::basic_xml_oarchive&lt; HtmlOArchive &gt;</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::basic_xml_oarchive&lt; HtmlOArchive &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aaca003bb8a4fc59424e4025130da4edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::save_access</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::save_access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" kindref="member">t_info</ref></type>
+        <definition>t_info xtd::servers::app::HtmlOArchive::m_info</definition>
+        <argsstring></argsstring>
+        <name>m_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="182" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="182" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a8675544faff21c5a5acd0af123b48d6d" compoundref="HtmlOArchive_8cc" startline="232" endline="248">save_start</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" compoundref="HtmlOArchive_8cc" startline="251" endline="307">save_end</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a25bc0aa46ecbc81d01e50e318d85136f" compoundref="HtmlOArchive_8cc" startline="311" endline="316">save</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0cd8f9056f209afd354f74073436b70e" compoundref="HtmlOArchive_8cc" startline="433" endline="436">save_override</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" kindref="member">t_objects</ref></type>
+        <definition>t_objects xtd::servers::app::HtmlOArchive::m_objects</definition>
+        <argsstring></argsstring>
+        <name>m_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="183" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="183" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" compoundref="HtmlOArchive_8cc" startline="251" endline="307">save_end</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2a221009143b4b22152920d4665676d6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::HtmlOArchive::m_pass</definition>
+        <argsstring></argsstring>
+        <name>m_pass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="186" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab7b1a6aa4696b13f7e5298651b01c3cf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t xtd::servers::app::HtmlOArchive::m_depth</definition>
+        <argsstring></argsstring>
+        <name>m_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="187" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a6892dbd6be47af4557599ca51be10b5c" prot="private" static="no" mutable="no">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; xtd::servers::app::HtmlOArchive::m_os</definition>
+        <argsstring></argsstring>
+        <name>m_os</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="188" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a203be0218a9944ac1e09bd791164cecd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::servers::app::HtmlOArchive::m_isVector</definition>
+        <argsstring></argsstring>
+        <name>m_isVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="189" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae016000cf5b06b408aa4bfd37c6b354c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">HtmlOArchive</ref> &amp;</type>
+        <definition>HtmlOArchive&amp; xtd::servers::app::HtmlOArchive::operator*</definition>
+        <argsstring>(T &amp;p_value)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">HtmlOArchive</ref> &amp;</type>
+        <definition>HtmlOArchive&amp; xtd::servers::app::HtmlOArchive::operator/</definition>
+        <argsstring>(T &amp;p_value)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="128" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="128" bodyend="131"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e5b0b22cf26a77dd62c328a9e51c06f" compoundref="HtmlOArchive_8cc" startline="226" endline="229">save_binary</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a8675544faff21c5a5acd0af123b48d6d" compoundref="HtmlOArchive_8cc" startline="232" endline="248">save_start</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" compoundref="HtmlOArchive_8cc" startline="251" endline="307">save_end</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ace3d9830281bb02de4b775b1ec9891a4">save_override</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a25bc0aa46ecbc81d01e50e318d85136f" compoundref="HtmlOArchive_8cc" startline="311" endline="316">save</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" compoundref="HtmlOArchive_8cc" startline="216" endline="223">HtmlOArchive</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e5b0b22cf26a77dd62c328a9e51c06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_binary</definition>
+        <argsstring>(void *address, size_t count)</argsstring>
+        <name>save_binary</name>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="133" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="226" bodyend="229"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a8675544faff21c5a5acd0af123b48d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_start</definition>
+        <argsstring>(const char *p_name)</argsstring>
+        <name>save_start</name>
+        <param>
+          <type>const char *</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="134" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="232" bodyend="248"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_end</definition>
+        <argsstring>(const char *p_name)</argsstring>
+        <name>save_end</name>
+        <param>
+          <type>const char *</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="135" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="251" bodyend="307"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" compoundref="HtmlOArchive_8hh" startline="183">m_objects</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ace3d9830281bb02de4b775b1ec9891a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(T &amp;t, BOOST_PFTO int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>BOOST_PFTO</type>
+          <declname>int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="138" column="1"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a05042a771dbeccf101cfa84f170f9f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::serialization::nvp&lt; T &gt; &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::serialization::nvp&lt; T &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1abde3d494192429180da751c92e31dc63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::serialization::nvp&lt; vector&lt; T &gt; &gt; &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::serialization::nvp&lt; vector&lt; T &gt; &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae389e1d1af8f9e39956617521cfefa5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::serialization::nvp&lt; std::deque&lt; T &gt; &gt; &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::serialization::nvp&lt; std::deque&lt; T &gt; &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a629a5c1bd96df5f295be173e4f62883e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::serialization::nvp&lt; std::list&lt; T &gt; &gt; &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::serialization::nvp&lt; std::list&lt; T &gt; &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a25bc0aa46ecbc81d01e50e318d85136f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const char *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="150" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="311" bodyend="316"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab4a02b5763b656039665add3da76d56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const string &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="151" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="319" bodyend="323"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac34aa74161df424b2a19e41b0c405c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const unsigned char &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const unsigned char &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="152" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="326" bodyend="330"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac86a79783a5ca046d5eda24a9e6fc558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const unsigned short &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const unsigned short &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="153" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="333" bodyend="337"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d426b7d61941d71ca43730cdb055055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const unsigned int &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const unsigned int &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="154" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="340" bodyend="344"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a4082468458d3b4966bb75d4b92f0d476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const unsigned long &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const unsigned long &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="155" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="347" bodyend="351"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a146b049587fa8d292fb9f90f3e23f59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const unsigned long long &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const unsigned long long &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="156" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="354" bodyend="358"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a70c1e6b78feb34413275e208fd043964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const char &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const char &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="157" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="361" bodyend="365"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7dd264fc7222a8689764f4d8ab5c033b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const short &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const short &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="158" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="368" bodyend="372"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1af94e2907eba4d436906dc61f57459cd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const int &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const int &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="159" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="375" bodyend="379"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e99b889f990c3fa26b24b6ca1684265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const long &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const long &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="160" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="382" bodyend="386"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1addee578d18549c53b00e4c676a568c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const long long &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const long long &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="161" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="389" bodyend="393"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a468a544e41a404c35321f89b1d4cb59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const bool &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const bool &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="162" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="396" bodyend="403"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5e14af7ab3311cf61fafe8b2742e22be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="163" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="406" bodyend="410"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab9f8811eb20eb372e6cabfa328d2ccf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const float &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const float &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="164" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="413" bodyend="417"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a9029ddca116a4a843ec6668d1bc3fc90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const boost::serialization::collection_size_type &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const boost::serialization::collection_size_type &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="165" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1afae32c6090882adc5a310a9ba9297c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save</definition>
+        <argsstring>(const boost::serialization::item_version_type &amp;)</argsstring>
+        <name>save</name>
+        <param>
+          <type>const boost::serialization::item_version_type &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="166" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="426" bodyend="429"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0cd8f9056f209afd354f74073436b70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::object_id_type &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::object_id_type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="433" bodyend="436"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1add8049c6091432811543e5288706c3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::object_reference_type &amp;, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::object_reference_type &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="168" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="439" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a1afeaad47abf3aff1f91b5faa94f869b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::version_type &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::version_type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="169" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="444" bodyend="447"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1adbb73e26344036aa3c370bd1a133bf70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::class_id_type &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::class_id_type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="170" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="450" bodyend="453"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aa2bce7ac03f460426a47e25463212908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::class_id_reference_type &amp;, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::class_id_reference_type &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="171" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="456" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a10cb86717b8b49afd68e5b6120662ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::class_id_optional_type &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::class_id_optional_type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="172" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="461" bodyend="464"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a3238b152ed11274e09c1b0c5995b62c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::class_name_type &amp;, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::class_name_type &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="173" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="467" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a62245e0fd68d61841e8e8f34922e5588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::save_override</definition>
+        <argsstring>(const boost::archive::tracking_type &amp;t, int)</argsstring>
+        <name>save_override</name>
+        <param>
+          <type>const boost::archive::tracking_type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="174" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="472" bodyend="475"/>
+        <references refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" compoundref="HtmlOArchive_8hh" startline="182">m_info</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::HtmlOArchive::HtmlOArchive</definition>
+        <argsstring>(std::ostream &amp;p_stream)</argsstring>
+        <name>HtmlOArchive</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>p_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="176" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="216" bodyend="223"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" compoundref="HtmlOArchive_8hh" startline="128" endline="131">operator/</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="53">
+        <label>boost::archive::xml_oarchive_impl&lt; HtmlOArchive &gt;</label>
+      </node>
+      <node id="52">
+        <label>xtd::servers::app::HtmlOArchive</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="55">
+        <label>boost::archive::xml_oarchive_impl&lt; HtmlOArchive &gt;</label>
+      </node>
+      <node id="54">
+        <label>xtd::servers::app::HtmlOArchive</label>
+        <link refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="19" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae69efb3db0a6ffc1d580ed5b272bc7a0" prot="private" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>base</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a350c2afaed5c679f01f1b4e36a6ad91f" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>boost::archive::basic_xml_oarchive&lt; HtmlOArchive &gt;</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a725f48824bde766dcd0e8049b4df3df0" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>boost::archive::detail::interface_oarchive&lt; HtmlOArchive &gt;</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aaca003bb8a4fc59424e4025130da4edd" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>boost::archive::save_access</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>HtmlOArchive</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab7b1a6aa4696b13f7e5298651b01c3cf" prot="private" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_depth</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_info</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a203be0218a9944ac1e09bd791164cecd" prot="private" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_isVector</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_objects</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a6892dbd6be47af4557599ca51be10b5c" prot="private" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_os</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2a221009143b4b22152920d4665676d6" prot="private" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>m_pass</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae016000cf5b06b408aa4bfd37c6b354c" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>operator*</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>operator/</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a25bc0aa46ecbc81d01e50e318d85136f" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab4a02b5763b656039665add3da76d56f" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac34aa74161df424b2a19e41b0c405c25" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac86a79783a5ca046d5eda24a9e6fc558" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d426b7d61941d71ca43730cdb055055" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a4082468458d3b4966bb75d4b92f0d476" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a146b049587fa8d292fb9f90f3e23f59b" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a70c1e6b78feb34413275e208fd043964" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7dd264fc7222a8689764f4d8ab5c033b" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1af94e2907eba4d436906dc61f57459cd3" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e99b889f990c3fa26b24b6ca1684265" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1addee578d18549c53b00e4c676a568c25" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a468a544e41a404c35321f89b1d4cb59c" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5e14af7ab3311cf61fafe8b2742e22be" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab9f8811eb20eb372e6cabfa328d2ccf6" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a9029ddca116a4a843ec6668d1bc3fc90" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1afae32c6090882adc5a310a9ba9297c12" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e5b0b22cf26a77dd62c328a9e51c06f" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_binary</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_end</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ace3d9830281bb02de4b775b1ec9891a4" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a05042a771dbeccf101cfa84f170f9f85" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1abde3d494192429180da751c92e31dc63" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae389e1d1af8f9e39956617521cfefa5e" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a629a5c1bd96df5f295be173e4f62883e" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0cd8f9056f209afd354f74073436b70e" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1add8049c6091432811543e5288706c3c9" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a1afeaad47abf3aff1f91b5faa94f869b" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1adbb73e26344036aa3c370bd1a133bf70" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aa2bce7ac03f460426a47e25463212908" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a10cb86717b8b49afd68e5b6120662ce9" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a3238b152ed11274e09c1b0c5995b62c6" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a62245e0fd68d61841e8e8f34922e5588" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_override</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a8675544faff21c5a5acd0af123b48d6d" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>save_start</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>t_info</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive</scope><name>t_objects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

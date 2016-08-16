@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1AvgTimedValue" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::AvgTimedValue</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Composed" prot="public" virt="non-virtual">xtd::counters::Composed</basecompoundref>
+    <includes refid="AvgTimedValue_8hh" local="no">AvgTimedValue.hh</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" prot="protected" static="no">
+        <type>std::pair&lt; boost::posix_time::ptime, uint32_t &gt;</type>
+        <definition>typedef std::pair&lt;boost::posix_time::ptime, uint32_t&gt; xtd::counters::AvgTimedValue::t_elem</definition>
+        <argsstring></argsstring>
+        <name>t_elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="24" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgTimedValue_1a71d5e67cb282762c880dc4986e5a8d7c" prot="protected" static="no">
+        <type>std::deque&lt; <ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kindref="member">t_elem</ref> &gt;</type>
+        <definition>typedef std::deque&lt;t_elem&gt; xtd::counters::AvgTimedValue::t_samples</definition>
+        <argsstring></argsstring>
+        <name>t_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="25" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgTimedValue_1a901afa3b937939c2132a593d4a801cad" prot="protected" static="no">
+        <type>std::deque&lt; boost::posix_time::ptime &gt;</type>
+        <definition>typedef std::deque&lt; boost::posix_time::ptime &gt; xtd::counters::AvgTimedValue::t_timevect</definition>
+        <argsstring></argsstring>
+        <name>t_timevect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgTimedValue_1a68434add28044efc37c616ec7002d0f8" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1counters_1_1AvgTimedValue" kindref="compound">AvgTimedValue</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;AvgTimedValue&gt; xtd::counters::AvgTimedValue::t_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1AvgTimedValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a71d5e67cb282762c880dc4986e5a8d7c" kindref="member">t_samples</ref></type>
+        <definition>t_samples xtd::counters::AvgTimedValue::m_samples</definition>
+        <argsstring></argsstring>
+        <name>m_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="56" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" compoundref="AvgTimedValue_8cc" startline="161" endline="173">update_safe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a901afa3b937939c2132a593d4a801cad" kindref="member">t_timevect</ref></type>
+        <definition>t_timevect xtd::counters::AvgTimedValue::m_startTimes</definition>
+        <argsstring></argsstring>
+        <name>m_startTimes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="57" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" compoundref="AvgTimedValue_8cc" startline="50" endline="62">startChrono</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" compoundref="AvgTimedValue_8cc" startline="65" endline="81">stopChrono</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" prot="public" static="no" mutable="no">
+        <type>vector&lt; uint32_t &gt;</type>
+        <definition>vector&lt;uint32_t&gt; xtd::counters::AvgTimedValue::m_reseted</definition>
+        <argsstring></argsstring>
+        <name>m_reseted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="58" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" compoundref="AvgTimedValue_8cc" startline="50" endline="62">startChrono</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" compoundref="AvgTimedValue_8cc" startline="65" endline="81">stopChrono</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref></type>
+        <definition>Freq xtd::counters::AvgTimedValue::m_globalPerf</definition>
+        <argsstring></argsstring>
+        <name>m_globalPerf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref></type>
+        <definition>InstantFreq xtd::counters::AvgTimedValue::m_instantPerf</definition>
+        <argsstring></argsstring>
+        <name>m_instantPerf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::AvgTimedValue::m_mean</definition>
+        <argsstring></argsstring>
+        <name>m_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="61" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" compoundref="AvgTimedValue_8cc" startline="161" endline="173">update_safe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::AvgTimedValue::m_min</definition>
+        <argsstring></argsstring>
+        <name>m_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" compoundref="AvgTimedValue_8cc" startline="161" endline="173">update_safe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::AvgTimedValue::m_max</definition>
+        <argsstring></argsstring>
+        <name>m_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" compoundref="AvgTimedValue_8cc" startline="161" endline="173">update_safe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::AvgTimedValue::m_overThreshold</definition>
+        <argsstring></argsstring>
+        <name>m_overThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" compoundref="AvgTimedValue_8cc" startline="16" endline="47">AvgTimedValue</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a2986c9cf3526f6f86d340dafd25ae04f" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::counters::AvgTimedValue::m_timeDeltaMs</definition>
+        <argsstring></argsstring>
+        <name>m_timeDeltaMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::counters::AvgTimedValue::m_thresholdMs</definition>
+        <argsstring></argsstring>
+        <name>m_thresholdMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::counters::AvgTimedValue::m_assert</definition>
+        <argsstring></argsstring>
+        <name>m_assert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" compoundref="AvgTimedValue_8cc" startline="197" endline="200">setAssert</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::AvgTimedValue::AvgTimedValue</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_nbThread, uint32_t p_timeDeltaMs=5 *60 *1000, uint32_t p_thresholdMs=0)</argsstring>
+        <name>AvgTimedValue</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_nbThread</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeDeltaMs</declname>
+          <defval>5 *60 *1000</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_thresholdMs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="16" bodyend="47"/>
+        <references refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" compoundref="Composed_8cc" startline="15" endline="20">xtd::counters::Composed::addItem</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" compoundref="AvgTimedValue_8hh" startline="59">m_globalPerf</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" compoundref="AvgTimedValue_8hh" startline="60">m_instantPerf</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" compoundref="AvgTimedValue_8hh" startline="61">m_mean</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" compoundref="AvgTimedValue_8hh" startline="62">m_min</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" compoundref="AvgTimedValue_8hh" startline="63">m_max</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" compoundref="AvgTimedValue_8hh" startline="64">m_overThreshold</references>
+        <references refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b">xtd::counters::Value&lt; TType &gt;::NaN</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::AvgTimedValue::~AvgTimedValue</definition>
+        <argsstring>(void)</argsstring>
+        <name>~AvgTimedValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="37" bodyend="37"/>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" compoundref="AvgTimedValue_8cc" startline="50" endline="62">startChrono</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" compoundref="AvgTimedValue_8cc" startline="65" endline="81">stopChrono</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">addResponseTime</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" compoundref="AvgTimedValue_8cc" startline="197" endline="200">setAssert</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" compoundref="AvgTimedValue_8cc" startline="161" endline="173">update_safe</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::startChrono</definition>
+        <argsstring>(uint32_t p_requestID)</argsstring>
+        <name>startChrono</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="40" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="50" bodyend="62"/>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" compoundref="AvgTimedValue_8hh" startline="58">m_reseted</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" compoundref="AvgTimedValue_8hh" startline="57">m_startTimes</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" compoundref="AvgTimedValue_8hh" startline="37" endline="37">~AvgTimedValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::stopChrono</definition>
+        <argsstring>(uint32_t p_requestID)</argsstring>
+        <name>stopChrono</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_requestID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="65" bodyend="81"/>
+        <references refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" compoundref="Base_8hh" startline="36">xtd::counters::Base::m_mutex</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" compoundref="AvgTimedValue_8hh" startline="58">m_reseted</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" compoundref="AvgTimedValue_8hh" startline="57">m_startTimes</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" compoundref="AvgTimedValue_8hh" startline="37" endline="37">~AvgTimedValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::addResponseTime</definition>
+        <argsstring>(uint32_t p_timeUs)</argsstring>
+        <name>addResponseTime</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeUs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="84" bodyend="88"/>
+        <references refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" compoundref="Base_8hh" startline="36">xtd::counters::Base::m_mutex</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" compoundref="AvgTimedValue_8hh" startline="59">m_globalPerf</references>
+        <references refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" compoundref="Freq_8cc" startline="29" endline="32">xtd::counters::Freq::tick</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" compoundref="AvgTimedValue_8hh" startline="60">m_instantPerf</references>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" compoundref="InstantFreq_8cc" startline="24" endline="31">xtd::counters::InstantFreq::tick</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" compoundref="AvgTimedValue_8hh" startline="56">m_samples</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" compoundref="AvgTimedValue_8hh" startline="66">m_thresholdMs</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" compoundref="AvgTimedValue_8hh" startline="64">m_overThreshold</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" compoundref="AvgTimedValue_8hh" startline="67">m_assert</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a2986c9cf3526f6f86d340dafd25ae04f" compoundref="AvgTimedValue_8hh" startline="65">m_timeDeltaMs</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" compoundref="AvgTimedValue_8hh" startline="37" endline="37">~AvgTimedValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::setAssert</definition>
+        <argsstring>(const bool p_assert)</argsstring>
+        <name>setAssert</name>
+        <param>
+          <type>const bool</type>
+          <declname>p_assert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="197" bodyend="200"/>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" compoundref="AvgTimedValue_8hh" startline="67">m_assert</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" compoundref="AvgTimedValue_8hh" startline="37" endline="37">~AvgTimedValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::update_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_safe</name>
+        <reimplements refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d">update_safe</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="161" bodyend="173"/>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" compoundref="AvgTimedValue_8hh" startline="56">m_samples</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" compoundref="AvgTimedValue_8hh" startline="62">m_min</references>
+        <references refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b">xtd::counters::Value&lt; TType &gt;::NaN</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" compoundref="AvgTimedValue_8hh" startline="63">m_max</references>
+        <references refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" compoundref="AvgTimedValue_8hh" startline="61">m_mean</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" compoundref="AvgTimedValue_8hh" startline="37" endline="37">~AvgTimedValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a2254daae3cb819bd1dcb0d7c101f1176" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::counters::AvgTimedValue::is_greater</definition>
+        <argsstring>(t_elem &amp;p_elem, const boost::posix_time::ptime &amp;p_maxTime)</argsstring>
+        <name>is_greater</name>
+        <param>
+          <type><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kindref="member">t_elem</ref> &amp;</type>
+          <declname>p_elem</declname>
+        </param>
+        <param>
+          <type>const boost::posix_time::ptime &amp;</type>
+          <declname>p_maxTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="153" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a92a01a2efcd4a035f3f3f7da9cccbd20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::shrink_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>shrink_safe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>On calcul le timestamp &quot;frontiere&quot; entre les elements qu&apos;il faut garder et ceux qu&apos;il faut supprimer</para></listitem><listitem><para>On trouve (en dichotomie) le premier element a supprimer</para></listitem><listitem><para>On supprime les echantillons a partir de cet element jusqu&apos;a la fin </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="133" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1af86f12d40e7b166a91aaea2464042c10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::compute_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>compute_safe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="176" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1a02ee675dae38a14531be82b6b2b26169" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::counters::AvgTimedValue::thresdhold_safe</definition>
+        <argsstring>(uint32_t p_timeUs)</argsstring>
+        <name>thresdhold_safe</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeUs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="52" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="107" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgTimedValue_1aaed8d9524b19100ab6b9d9b1a629fe7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgTimedValue::responsetime_safe</definition>
+        <argsstring>(uint32_t p_timeUs)</argsstring>
+        <name>responsetime_safe</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeUs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="53" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" bodystart="92" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="131">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="130">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="131" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>xtd::counters::AvgTimedValue</label>
+        <link refid="classxtd_1_1counters_1_1AvgTimedValue"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>xtd::counters::Value&lt; uint32_t &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+        <childnode refid="137" relation="usage">
+          <edgelabel>m_atom</edgelabel>
+        </childnode>
+      </node>
+      <node id="135">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="134">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="135" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>xtd::counters::InstantFreq</label>
+        <link refid="classxtd_1_1counters_1_1InstantFreq"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>xtd::counters::Atomic</label>
+        <link refid="classxtd_1_1counters_1_1Atomic"/>
+      </node>
+      <node id="132">
+        <label>xtd::counters::AvgTimedValue</label>
+        <link refid="classxtd_1_1counters_1_1AvgTimedValue"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>m_mean</edgelabel>
+          <edgelabel>m_min</edgelabel>
+          <edgelabel>m_overThreshold</edgelabel>
+          <edgelabel>m_max</edgelabel>
+        </childnode>
+        <childnode refid="138" relation="usage">
+          <edgelabel>m_instantPerf</edgelabel>
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>m_globalPerf</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>xtd::counters::Freq</label>
+        <link refid="classxtd_1_1counters_1_1Freq"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh" bodystart="19" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>addItem</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>addResponseTime</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>AvgTimedValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" prot="public" virt="non-virtual" ambiguityscope="xtd::counters::Composed::"><scope>xtd::counters::AvgTimedValue</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1af86f12d40e7b166a91aaea2464042c10" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>compute_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2254daae3cb819bd1dcb0d7c101f1176" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>is_greater</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_assert</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_globalPerf</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_instantPerf</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_max</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_mean</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_min</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_overThreshold</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_reseted</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_samples</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_startTimes</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_thresholdMs</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2986c9cf3526f6f86d340dafd25ae04f" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>m_timeDeltaMs</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aaed8d9524b19100ab6b9d9b1a629fe7d" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>responsetime_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>setAssert</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a92a01a2efcd4a035f3f3f7da9cccbd20" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>shrink_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>startChrono</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>stopChrono</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>t_elem</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a71d5e67cb282762c880dc4986e5a8d7c" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>t_samples</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a68434add28044efc37c616ec7002d0f8" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a901afa3b937939c2132a593d4a801cad" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>t_timevect</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a02ee675dae38a14531be82b6b2b26169" prot="private" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>thresdhold_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" prot="protected" virt="virtual"><scope>xtd::counters::AvgTimedValue</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::AvgTimedValue</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" prot="protected" virt="virtual"><scope>xtd::counters::AvgTimedValue</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" prot="public" virt="virtual"><scope>xtd::counters::AvgTimedValue</scope><name>~AvgTimedValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::AvgTimedValue</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" prot="public" virt="virtual"><scope>xtd::counters::AvgTimedValue</scope><name>~Composed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

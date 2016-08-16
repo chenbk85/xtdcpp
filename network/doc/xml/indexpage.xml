@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>xtdcpp [network]</title>
+    <detaileddescription>
+<para>La bibliothèque <ref refid="namespacextd_1_1network" kindref="compound">xtd::network</ref> est la base de toutes les communications réseaux utilisée dans le moteur.</para><para>Elle s&apos;appuie sur la bibliothèque boost::asio pour fournir des interfaces de haut niveau de client/serveur http et bip (binary-protocol).</para><sect1 id="index_1sec_main">
+<title>Sommaire</title>
+<para><hruler/>
+ <orderedlist>
+<listitem>
+<para><ref refid="index_1sec_boost" kindref="member">Un mot sur boost::asio</ref> <orderedlist>
+<listitem>
+<para><ref refid="index_1ssec_boost_practice" kindref="member">Les bonnes pratiques</ref>  </para></listitem>
+<listitem>
+<para><ref refid="index_1ssec_boost_bug" kindref="member">Bug dans la version 1.48</ref>  </para></listitem>
+</orderedlist>
+</para><para></para></listitem>
+<listitem>
+<para><ref refid="index_1sec_design" kindref="member">Le design</ref> <orderedlist>
+<listitem>
+<para><ref refid="index_1ssec_design_obj1" kindref="member">Objectif n°1 : mutualiser la gestion des sockets entre client et serveur</ref>  </para></listitem>
+<listitem>
+<para><ref refid="index_1ssec_design_obj2" kindref="member">Objectif n°2 : rester procotole agnostique</ref>  </para></listitem>
+</orderedlist>
+</para><para></para></listitem>
+<listitem>
+<para><ref refid="index_1sec_bip" kindref="member">Protocol Bip</ref> <orderedlist>
+<listitem>
+<para><ref refid="index_1ssec_bip_cnx" kindref="member">Format et workflow</ref>  </para></listitem>
+<listitem>
+<para><ref refid="index_1ssec_bip_client" kindref="member">Client bip</ref>  </para></listitem>
+<listitem>
+<para><ref refid="index_1ssec_bip_server" kindref="member">Serveur bip</ref>  </para></listitem>
+</orderedlist>
+</para><para></para></listitem>
+<listitem>
+<para><ref refid="index_1sec_http" kindref="member">Protocol HTTP</ref> <orderedlist>
+<listitem>
+<para><ref refid="index_1ssec_http_cnx" kindref="member">Format et workflow</ref>  </para></listitem>
+<listitem>
+<para><ref refid="index_1ssec_http_server" kindref="member">Serveur http</ref>  </para></listitem>
+</orderedlist>
+</para><para></para></listitem>
+<listitem>
+<para><ref refid="index_1sec_usages" kindref="member">Matrice d&apos;utilisation</ref> </para><para></para></listitem>
+<listitem>
+<para><ref refid="index_1sec_tests" kindref="member">Les tests</ref>  </para></listitem>
+</orderedlist>
+<linebreak/>
+<linebreak/>
+</para><para><hruler/>
+ </para></sect1>
+<sect1 id="index_1sec_boost">
+<title>Un mot sur boost::asio</title>
+<para><hruler/>
+</para><para>Boost::asio (<ulink url="http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio.html">http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio.html</ulink>) est une bibliothèque réseau et I/O écrite en c++ et utilisée dans de nombreux software.<linebreak/>
+ <bold>Son utilisation n&apos;est pas triviale</bold>, aussi la première chose à faire est de bien lire la documentation et se familiariser avec la gestion des événements asynchrones et de l&apos;utilisation du boost::asio::io_service.<linebreak/>
+</para><para><linebreak/>
+ </para><sect2 id="index_1ssec_boost_practice">
+<title>Les bonnes pratiques</title>
+<para>Pour résumer, on retiendra de la documentation :</para><para><orderedlist>
+<listitem><para>qu&apos;il est fortement <bold>déconseillé</bold> de mélanger synchrone et asynchrone</para></listitem><listitem><para>qu&apos;il n&apos;est pas possible d&apos;utiliser des timeouts en synchrone. En réalité, on peut fermer la socket pendant l&apos;éxécution d&apos;un événement synchrone mais cette approche n&apos;est pas &quot;naturelle&quot; pour le framework boost::asio est cela nous a posé beaucoup de problème en production.</para></listitem><listitem><para>qu&apos;il faut, en toutes circonstance, garantir la durée de vie des objets et données utilisée dans les callback des événements asynchrones. L&apos;utilisation des shared_ptr sera ici très utile.</para></listitem><listitem><para>qu&apos;il est possible de débugguer la gestion des événements à l&apos;aide de la macro <bold>-DBOOST_ASIO_ENABLE_HANDLER_TRACKING</bold> (<ulink url="http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio/overview/core/handler_tracking.html">http://www.boost.org/doc/libs/1_48_0/doc/html/boost_asio/overview/core/handler_tracking.html</ulink>)</para></listitem></orderedlist>
+</para><para><linebreak/>
+ </para></sect2>
+<sect2 id="index_1ssec_boost_bug">
+<title>Bug dans la version 1.48</title>
+<para>Aujourd&apos;hui (18-10-2013), on utilise boost::asio en compilant avec la macro <bold>-DBOOST_ASIO_DISABLE_EPOLL</bold>. Cette macro a pour effet de forcer l&apos;utilisation de l&apos;appel systeme &quot;select&quot; a la place de son jeune remplaçant &quot;epoll&quot;.</para><para>Ce point nous a posé énormément de problèmes. Pendant plusieurs semaines, des simples &quot;toy problem&quot; ne marchaient pas dès que le serveur avait plus qu&apos;une thread en écoute sur son boost::asio::io_service. De temps en temps, le client envoyait une requête, les données traversent le réseaux (wireshark) mais le serveur ne déclenche pas son événement de lecture de donnée sur la socket... rien ne se passe et la socket est perdue.</para><para>On a jamais trouvé l&apos;explication finale de ce problème, ni de bug précis dans le tracker boost ni d&apos;explication à la lecture du code. Toujours est-il qu&apos;un faisceau d&apos;indices nous a fait conclure à une faille de boost::asio dans sa gestion du epoll.</para><para>Les indices étants :<itemizedlist>
+<listitem><para>de nombreuse va-et-vient dans les changelog asio sur le epoll entre la version 1.48 (qu&apos;on utilise) et la version 1.54 actuelle</para></listitem><listitem><para>la disparition de ces problèmes lorsqu&apos;on passe en select</para></listitem><listitem><para>la disparition de ces problèmes lorsqu&apos;on passe en boost::asio 1.52</para></listitem></itemizedlist>
+</para><para><linebreak/>
+<hruler/>
+ </para></sect2>
+</sect1>
+<sect1 id="index_1sec_design">
+<title>Le design</title>
+<para><hruler/>
+</para><para>Le design de la bibliothèque <ref refid="namespacextd_1_1network" kindref="compound">xtd::network</ref> est composé de deux couches :<itemizedlist>
+<listitem><para>la couche haute xtd::network::protocol qui implémentent les clients serveurs pour les protocoles HTTP et BIP utilisés dans le moteur</para></listitem><listitem><para>la couche basse <ref refid="namespacextd_1_1network_1_1base" kindref="compound">xtd::network::base</ref> qui fournie les primitives de bas niveau pour l&apos;implémentation de ces protocoles.</para></listitem></itemizedlist>
+</para><sect2 id="index_1ssec_design_obj1">
+<title>Objectif n°1 : mutualiser la gestion des sockets entre client et serveur</title>
+<para>Pour y parvenir, on crée un objet &quot;Connection&quot; qui sera utilisé à la fois dans le client et dans le serveur. Cet objet fera office d&apos;interface avec la socket en proposant des primitives simples d&apos;ouverture, d&apos;envoi et de réception de données.</para><para>De plus, cet objet va nous aider dans la gestion du multithreading en garantissant, en travaillant sur son propre boost::asio::strand, qu&apos;une seule opération soit exécutée à la fois.</para><para>On se retrouve donc à définir 3 objets dans cette couche basse :<itemizedlist>
+<listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Connection" kindref="compound">xtd::network::base::Connection</ref> : un objet s&apos;occupant des interactions avec la socket</para></listitem><listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Client" kindref="compound">xtd::network::base::Client</ref> : un client</para></listitem><listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">xtd::network::base::Server</ref> : un serveur</para></listitem></itemizedlist>
+</para><para><image type="html" name="interface.png"></image>
+</para><para>On parlera de triplet client/server/connection : <image type="html" name="triplet.png"></image>
+</para></sect2>
+<sect2 id="index_1ssec_design_obj2">
+<title>Objectif n°2 : rester procotole agnostique</title>
+<para>On définit un protocol comme étant :<itemizedlist>
+<listitem><para>le format du message échangé : quelle langue parlent les deux interlocuteurs et, en particulier, comment font-il pour savoir qu&apos;un message est terminé (problème du morcelement des packets par le transport TCP/IP).</para></listitem><listitem><para>la séquence du dialogue : qui commence à parler ? qui commence à écouter ? En tout temps, il faut qu&apos;un interlocuteur écoute lorsque l&apos;autre parle et vis/versa.</para></listitem></itemizedlist>
+</para><para>Pour rester agnostique du protocol, notre triplet (client, server, connexion) ne doit pas faire de supposition ni le format du message ni sur l&apos;enchaînement des envois et des réceptions. En ce qui concerne le format, cela implique que la <ref refid="classxtd_1_1network_1_1base_1_1Connection" kindref="compound">xtd::network::base::Connection</ref> ne peut pas directement écrire et lire sur la socket. Dans certains cas, on voudra lire une donnée de taille fixe, dans d&apos;autres cas, un header puis une data, bref, on il faut déléguer ces opérations à la couche xtd::network::protocol. En ce qui concerne l&apos;enchainement des envois/receptions, cela implique que ces objets ne peuvent pas lancer une réception ou un envoi, ils ne peuvent que définir ces primitives mais sans jamais les appeler.</para><para>Au final, on se retrouve avec :</para><para><itemizedlist>
+<listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Connection" kindref="compound">xtd::network::base::Connection</ref> :<itemizedlist>
+<listitem><para>ownership de la socket</para></listitem><listitem><para>gestion des envois de message avec timeout (partie abstraite de création et mise sur le socket du message)</para></listitem><listitem><para>gestion des réceptions de message avec timeout (partie abstraite de décodage et lecture sur le socket du message)</para></listitem><listitem><para>gestion ouverture et fermeture de la socket</para></listitem></itemizedlist>
+</para></listitem><listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Client" kindref="compound">xtd::network::base::Client</ref> :<itemizedlist>
+<listitem><para>gère l&apos;instanciation d&apos;un connexion</para></listitem><listitem><para>la connexion vers un serveur (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" kindref="member">xtd::network::base::Connection::connect</ref>)</para></listitem><listitem><para>l&apos;envoie d&apos;un message (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" kindref="member">xtd::network::base::Connection::send</ref>)</para></listitem><listitem><para>la réception d&apos;un message (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" kindref="member">xtd::network::base::Connection::receive</ref>)</para></listitem><listitem><para>la fermeture de la connexion (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" kindref="member">xtd::network::base::Connection::close</ref>)</para></listitem><listitem><para>les compteurs d&apos;exploitation</para></listitem></itemizedlist>
+</para></listitem><listitem><para><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">xtd::network::base::Server</ref> :<itemizedlist>
+<listitem><para>l&apos;initialisation des threads de traitement et de connexion</para></listitem><listitem><para>l&apos;ouverture d&apos;une connexion entrante (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" kindref="member">xtd::network::base::Connection::accept</ref>)</para></listitem><listitem><para>réception d&apos;un message (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" kindref="member">xtd::network::base::Connection::receive</ref>)</para></listitem><listitem><para>envoie d&apos;un message (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" kindref="member">xtd::network::base::Connection::send</ref>)</para></listitem><listitem><para>fermeture des connexion (utilise <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" kindref="member">xtd::network::base::Connection::close</ref>)</para></listitem><listitem><para>les compteurs d&apos;exploitation</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>Ensuite, chaque protocole n&apos;a plus qu&apos;a définir ses spécificités en créant son propre son triplet de client/server/connexion qui dérive du triplet de base.<linebreak/>
+ Au final ou abouti au modèle suivant :</para><para><image type="html" name="diagram.png"></image>
+</para><para><linebreak/>
+<hruler/>
+ </para></sect2>
+</sect1>
+<sect1 id="index_1sec_bip">
+<title>Protocol Bip</title>
+<para><hruler/>
+</para><para><linebreak/>
+ </para><sect2 id="index_1ssec_bip_cnx">
+<title>Format et workflow</title>
+<para><heading level="2">Format </heading>
+</para><para>Un message bip est composé de deux parties :<itemizedlist>
+<listitem><para>un header : une suite de Connection::mcs_headerSize uint32_t (donc taille fixe)</para></listitem><listitem><para>une data : une suite de taille variable de uint8</para></listitem><listitem><para>un crc de data : un crc en uint8 calculé sur les Connection::mcs_maxDataCrcSize derniers octects de la partie donnée.</para></listitem></itemizedlist>
+</para><para>Le header embarque 3 informations :<itemizedlist>
+<listitem><para>la taille de la partie donnée (comptabilise le crc finale) en nombre d&apos;octect</para></listitem><listitem><para>un identifiant de requête croissant (s&apos;incrémente à chaque requete)</para></listitem><listitem><para>un crc de header calculé sur les (Connection::mcs_headerSize - 1) unit32 du header</para></listitem></itemizedlist>
+</para><para>A la réception :<itemizedlist>
+<listitem><para>on commence par lire le header</para></listitem><listitem><para>on vérifie l&apos;integrité du header en comparant le crc de header reçu et le crc du header re-calculé</para></listitem><listitem><para>on extrait la taille du message N attendu a partir du header, on on va lire sur la socket ces N octects.</para></listitem></itemizedlist>
+</para><para>A la réception de la partie donnée :<itemizedlist>
+<listitem><para>on vérifie l&apos;intégrité du message en comparant le crc de donnée contenu dans dernier octet du message au crc recalculé.</para></listitem></itemizedlist>
+</para><para><heading level="2">Séquence de dialogue </heading>
+</para><para><image type="html" name="bip_flow.png"></image>
+</para><para><linebreak/>
+ </para></sect2>
+<sect2 id="index_1ssec_bip_client">
+<title>Client bip</title>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TDomain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: mode de connexion, utils::af_inet ou utils::af_unix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure requète serialisable avec boost::serialization </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure réponse serialisable avec boost::serialization</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Client générique bip : gère l&apos;envoi de structure TRequest et la réception de structure TResponse vers un serveur bip de même type.</para><para>Selon la configuration transmise au constructeur, les données pourront etre compressées avant l&apos;envoi et décompressée à la réception.</para><para>La méthode send de cet objet est non bloquante et déclenche, en interne, la réception de la réponse du serveur. La méthode receive, elle, est bloquante jusqu&apos;à la réception effective de la réponse. Cette approche permet à un utilisateur, qui aurait plusieurs client connectés vers plusieurs serveurs, d&apos;envoyer ses requètes et de réceptionner en parallèle ses réponses pour au final aller au rythme du serveur le plus lent et pas subir la somme de tous les temps de réponse.</para><para>Thread safety :<itemizedlist>
+<listitem><para>même instance : non</para></listitem><listitem><para>instances différentes : oui</para></listitem></itemizedlist>
+</para><para><linebreak/>
+ </para></sect2>
+<sect2 id="index_1ssec_bip_server">
+<title>Serveur bip</title>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: mode de connexion, utils::af_inet ou utils::af_unix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TReq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Structure requête serialisable avec boost::serialization </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TRes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Structure réponse serialisable avec boost::serialization</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Serveur générique bip : gère la réception de structure TRequest et l&apos;envoi de structure TResponse vers un client bip de même type.</para><para>Cet objet est destiné à être hérité des différents serveurs qui souhaitent communiquer en bip, ces derniers n&apos;ont qu&apos;a implémenter la méthode virtuelle pure Server::processObjectRequest pour calculer la réponse à envoyer à partir de la requête reçue</para><para><linebreak/>
+<hruler/>
+ </para></sect2>
+</sect1>
+<sect1 id="index_1sec_http">
+<title>Protocol HTTP</title>
+<para><hruler/>
+</para><para><linebreak/>
+ </para><sect2 id="index_1ssec_http_cnx">
+<title>Format et workflow</title>
+<para>Le protocol http implémenté ici gère les version 1.0 et une sous-partie de la version 1.1 des spécifications données par le W3C. <heading level="2">Format</heading>
+</para><para>Un message HTTP est composé de deux parties :<itemizedlist>
+<listitem><para>un header : une suite de caractère ascii de taille variable terminant par une ligne vide (donc identifiable par la séquence d&apos;octets &quot;CR-LF-CR-LR&quot;)</para></listitem><listitem><para>une data : une suite de caractère ascii de taille variable, optionnelle et potentiellement encodée dans différents formats</para></listitem></itemizedlist>
+</para><para>Sans rentrer dans le détail du format du header, ce qui nous intéresse ici c&apos;est que, lorsqu&apos;une data est envoyée, il contient une directive <bold>Content-Length</bold> qui renseigne sur la taille en octet de la data.</para><para>A la réception, on lit des données par petits bouts jusqu&apos;à trouver la fin du header (ligne vide), on extrait ensuite la taille de la donnée et, si elle présente et est non-nulle, on se met à lire jusqu&apos;à avoir suffisamment d&apos;octets.</para><para>Pour des raisons pratique, le parsing du header et la récupération de la taille de la data est déléguée à l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">xtd::network::http::Request</ref></para><para><heading level="2">Séquence de dialogue </heading>
+</para><para><image type="html" name="http_flow.png"></image>
+</para><para><linebreak/>
+ </para></sect2>
+<sect2 id="index_1ssec_http_server">
+<title>Serveur http</title>
+<para><linebreak/>
+<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mode de connexion, utils::af_inet ou utils::af_unix</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Serveur générique http. Gère la réception de requête HTTP, les transforme en objet Request, et envoie des réponses HTTP à partir d&apos;objet Response.</para><para>En interne, cet objet gère une liste de &quot;handlers&quot;, capables de transformer un objet Request en un objet Response. Il gère également un mécanisme d&apos;enregistrement et de routage des requête ces différents handlers.</para><para><linebreak/>
+ <heading level="2">Le routage </heading>
+</para><para>Le routage est extrêmement simple. On pacourt la liste des handlers enregistrés, et on exécute le premier vérifiant toutes les conditions. Si aucun handler est trouvé, on exécute le handler par défaut.</para><para>Pour être exécuté, un handler doit remplir deux critère :<itemizedlist>
+<listitem><para>l&apos;url sur laquelle il à été enregistré correspond a la ressource demandée dans la requête (ce qui suit le GET ou le POST de la première ligne du header). On note le cas spécial où un handler peut être enregistré sur toutes les urls en même temps.</para></listitem><listitem><para>si le handler a été enregistré avec un filtre, on vérifie la condition posée le filtre est vrai pour la requête.</para></listitem></itemizedlist>
+</para><para><linebreak/>
+ <heading level="2">Les handlers </heading>
+</para><para>Un handler doit être vu comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">status<sp/>myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+</programlisting></para><para>En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est &quot;h&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
+<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this));</highlight></codeline>
+</programlisting></para><para>La raison pour laquelle ces handlers ont été wrappé dans un objet interne est d&apos;une part de ne pas demander à l&apos;utilisateur de systématiquement binder 3 placeholders _1, _2, _3.</para><para><linebreak/>
+ <heading level="2">Les filtres </heading>
+</para><para>De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">bool<sp/>filter(const<sp/>Request&amp;);</highlight></codeline>
+</programlisting></para><para>Ils se contruisent à partir de l&apos;objet interne du server dont le raccourcis est &quot;f&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal">bool<sp/><sp/>MyServer::myfilter(const<sp/>Request&amp;<sp/>p_req);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
+<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this),<sp/>f(&amp;MyServer::myfilter,<sp/>this));</highlight></codeline>
+</programlisting></para><para>Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens ||, &amp;&amp; et !. Exemple :</para><para><programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal">bool<sp/><sp/>MyServer::hasHeader(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_req)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>p_req.existsHeader(p_headerName);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
+<codeline><highlight class="normal">bind(&quot;/index&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>h(&amp;MyServer::myhandler,<sp/>this),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-type&quot;)<sp/>&amp;&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-Length&quot;));</highlight></codeline>
+</programlisting></para><para><linebreak/>
+ <heading level="2">L&apos;enregistrement </heading>
+</para><para>Cet objet founi de nombreuses méthodes utilitaires pour faciliter l&apos;enregistrement des handlers. Elles sont toutes préfixées par &quot;bind&quot;.</para><para><itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind(const<sp/>string&amp;<sp/>p_url,<sp/>handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ressource à enregistrer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handler à enregistrer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filter &quot;filtre&quot; optionnel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_descr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description du handler (optionnel)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enregistrement générique de la ressource p_url sous condition optionnelle p_filter sur le handler p_handler. <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_any(handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handler à enregistrer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filter &quot;filtre&quot; optionnel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_default(handler<sp/>p_handler);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handler à enregistrer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a été trouvé. A la construction, le handler par défaut est Server::h_error_template. <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_redirect(const<sp/>string&amp;<sp/>p_src,<sp/>const<sp/>string&amp;<sp/>p_dst,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ressource sur laquelle déclencher la redirection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination de la redirection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filter &quot;filtre&quot; optionnel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enregistrement d&apos;un handler de redirection. Créer une réponse http qui contient le header &quot;Location : p_dst&quot; et le code HTTP Response::STATUS_302. <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_file(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_dir(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" kindref="member">xtd::network::http::Server::h_dir</ref> <linebreak/>
+<linebreak/>
+</para></listitem></itemizedlist>
+</para><para><heading level="2">Les handlers prédéfinis </heading>
+</para><para><itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal">h_redirect(const<sp/>string&amp;<sp/>p_dst,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de redirection. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination de la redirection HTTP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_raw(const<sp/>string&amp;<sp/>p_data,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de contenu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>donnée à insérer dans la réponse </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_contentType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type MIME de la donnée </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_file(const<sp/>string&amp;<sp/>p_filePath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de fichier. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chemin vers le fichier à insérer dans la réponse </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_contentType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type MIME du fichier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_cachable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La reponse peut elle mettre en mis en cache par le navigateur ? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_dir(const<sp/>string&amp;<sp/>p_dirPath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de répertoire. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_dirPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chemin vers le répertoire à servir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_contentType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type MIME des fichiers du répertoire </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_cachable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La reponse peut elle mettre en mis en cache par le navigateur ? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_template_file(const<sp/>Template&amp;<sp/>p_tmpl,<sp/>const<sp/>string&amp;<sp/>const<sp/>uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de texte templaté a partir d&apos;un fichier. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_tmpl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">template</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fichier a partir duquel initialiser le template </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Génère une réponse HTTP pré-formatée par l&apos;objet Template p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_text(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de génération de message d&apos;erreur en texte. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contenu du message d&apos;erreur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_html(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+</programlisting> Handler de génération de message d&apos;erreur en html. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contenu du message d&apos;erreur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_requestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifiant de requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">requête</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;.</para></listitem></itemizedlist>
+</para><para><heading level="2">Les filtres prédéfinis </heading>
+</para><para><itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal">static<sp/>bool<sp/>f_none(const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> Toujours vrai. <linebreak/>
+<linebreak/>
+ <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> Vrai si la requête contient un paramètre GET nommé p_cgiName. <linebreak/>
+<linebreak/>
+ <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_one_cgi_exist(const<sp/>vector<sp/>&lt;string<sp/>&gt;<sp/>&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_req);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si la requête contient un paramètre GET dont le nom correspond à l&apos;un des éléments du tableau p_cgiName <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> Vrai si la requête contient un paramètre POST nommé p_cgiName. <linebreak/>
+<linebreak/>
+ <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_exist(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> Vrai si p_request contient le header p_headerName. <linebreak/>
+<linebreak/>
+ <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_equal(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si p_request contient le header p_headerName dont la valeur est egale a p_value <linebreak/>
+<linebreak/>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_match(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</programlisting> <linebreak/>
+<linebreak/>
+ Vrai si p_request contient le header p_headerName dont la valeur match la regexp p_value <linebreak/>
+<linebreak/>
+</para></listitem></itemizedlist>
+</para><para><hruler/>
+ </para></sect2>
+</sect1>
+<sect1 id="index_1sec_usages">
+<title>Matrice d&apos;utilisation</title>
+<para><hruler/>
+</para><para><itemizedlist>
+<listitem>
+<para>matrices des utilisations dans le moteurs  </para></listitem>
+</itemizedlist>
+</para><para><hruler/>
+ </para></sect1>
+<sect1 id="index_1sec_tests">
+<title>Les tests</title>
+<para><hruler/>
+</para><para><itemizedlist>
+<listitem>
+<para>cachier de tests  </para></listitem>
+</itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Base_8hh" kind="file" language="C++">
+    <compoundname>Base.hh</compoundname>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/any.hpp</includes>
+    <includes local="no">boost/function.hpp</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <includes local="no">boost/lexical_cast.hpp</includes>
+    <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">types.hh</includes>
+    <includes local="no">logger.hh</includes>
+    <includedby refid="Server_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</includedby>
+    <includedby refid="Base_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Base.cc</includedby>
+    <includedby refid="Handler_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</includedby>
+    <includedby refid="Handler_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</includedby>
+    <includedby refid="Visitor_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh</includedby>
+    <incdepgraph>
+      <node id="436">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="435">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="434">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="433">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="437">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="431">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.hh</label>
+        <link refid="Base.hh"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>ctime</label>
+      </node>
+      <node id="432">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="440">
+        <label>logger.hh</label>
+      </node>
+      <node id="439">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="443">
+        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.cc</label>
+        <link refid="Server_8cc"/>
+      </node>
+      <node id="442">
+        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</label>
+        <link refid="Server_8hh"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.hh</label>
+        <link refid="Base.hh"/>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</label>
+        <link refid="Handler_8hh"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</label>
+        <link refid="Handler_8cc"/>
+      </node>
+      <node id="444">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.cc</label>
+        <link refid="Base_8cc"/>
+      </node>
+      <node id="447">
+        <label>/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</label>
+        <link refid="HttpServer_8cc"/>
+      </node>
+      <node id="449">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc</label>
+        <link refid="Visitor_8cc"/>
+      </node>
+      <node id="448">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1servers_1_1param_1_1Base" prot="public">xtd::servers::param::Base</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1param_1_1POD" prot="public">xtd::servers::param::POD</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers">xtd::servers</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers_1_1param">xtd::servers::param</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/any.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/function.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/lexical_cast.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/date_time/posix_time/posix_time.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Visitor;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classxtd_1_1servers_1_1param_1_1Base" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" kindref="member">cast</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::any&amp;<sp/>p_val);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;Base&gt;<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" kindref="member">t_sptr</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void(const<sp/>boost::any&amp;,<sp/>const<sp/>boost::any&amp;)&gt;<sp/>t_listener;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool(const<sp/>boost::any&amp;)&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_constraint;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;t_listener&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_listeners;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;t_constraint&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_constraints;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" kindref="member">Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" kindref="member">Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" kindref="member">fromStr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" kindref="member">verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src)<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kindref="member">toStr</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" kindref="member">accept</ref>(<ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a1e688aa518e874229d45a348c7596c82" kindref="member">getName</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1af0a668bb0360d7c2a8821527888d16d2" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a3d83345a6e83bbe96cb7e13c81061c7d" kindref="member">getSync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a912fb989f6ecb224596add4d0b388102" kindref="member">setSync</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_sync);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a824470386f5a0f25824b6be50d15a38a" kindref="member">setActionPath</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_actionPath);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a69c3c92644e04f22b9dba10095b0ed3b" kindref="member">getActionPath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74c2c5e1bac271ebbb80b93c1b976b47" kindref="member">sync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a532c7d291a15c2d611af8ab9898239f2" kindref="member">date</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" kindref="member">constraint</ref>(t_constraint<sp/>p_constraint);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" kindref="member">listen</ref>(t_listener<sp/>p_listener);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" kindref="member">constraint</ref>(boost::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)&gt;<sp/>p_constraint);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" kindref="member">listen</ref>(boost::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)&gt;<sp/>p_constraint);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" kindref="member">isAccepted</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a47d5b5e494732932d25fa992e0a06190" kindref="member">setLog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_log);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(T&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a48e7dac1fe3c43d62057e7a92e4bece9" kindref="member">log</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>boost::any<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_value;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>boost::any<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_defaultValue;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>t_constraints<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_constraints;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>t_listeners<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_listeners;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_name;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_sync;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_actionPath;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>boost::posix_time::ptime<sp/>m_timestamp;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_log;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="230" refid="classxtd_1_1servers_1_1param_1_1POD" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" kindref="member">fromStr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" kindref="member">verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kindref="member">toStr</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" kindref="member">accept</ref>(<ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>as(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>to(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>V&gt;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>as(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>V&amp;<sp/>p_src,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>V&gt;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>to(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/>V&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">T</highlight></codeline>
+<codeline lineno="284" refid="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" kindref="member">Base::cast</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::any&amp;<sp/>p_val)</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::any_cast&lt;T&gt;(p_val);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="291" refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" kindref="member">Base::Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value)<sp/>:</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>m_value(p_value),</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>m_defaultValue(p_value),</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>m_constraints(),</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>m_listeners(),</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>m_name(),</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>m_sync(true),</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>m_actionPath(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/>m_timestamp(<ref refid="namespaceboost" kindref="compound">boost</ref>::posix_time::microsec_clock::local_time()),</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>m_log(</highlight><highlight class="stringliteral">&quot;no<sp/>log&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="306" refid="classxtd_1_1servers_1_1param_1_1Base_1aeadfa5af86a0dd70c6068a994f7ff567" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" kindref="member">Base::Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)<sp/>:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>m_value(p_value),</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/>m_defaultValue(p_value),</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>m_constraints(),</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>m_listeners(),</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>m_name(p_name),</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>m_sync(true),</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>m_actionPath(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>m_timestamp(<ref refid="namespaceboost" kindref="compound">boost</ref>::posix_time::microsec_clock::local_time()),</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/>m_log(</highlight><highlight class="stringliteral">&quot;no<sp/>log&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;</highlight></codeline>
+<codeline lineno="322" refid="classxtd_1_1servers_1_1param_1_1Base_1afa9ec13039176f5e8da4c1ac6dfd4063" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" kindref="member">Base::constraint</ref>(boost::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)&gt;<sp/>p_constraint)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>m_constraints.push_back(boost::bind(p_constraint,<sp/>boost::bind(cast&lt;T&gt;,<sp/>_1)));</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="classxtd_1_1servers_1_1param_1_1Base_1a48c6b4f36d84c640cc68b347090a6ec5" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a48c6b4f36d84c640cc68b347090a6ec5" kindref="member">Base::get</ref>(T&amp;<sp/>p_dst)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="333"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>p_dst<sp/>=<sp/>boost::any_cast&lt;T&gt;(m_value);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(boost::bad_any_cast<sp/>l_error)<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;servers.param.base&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;unable<sp/>to<sp/>cast<sp/>param<sp/>&apos;%s&apos;<sp/>as<sp/>destination<sp/>type<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>m_name,<sp/>l_error.what(),<sp/>HERE);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" kindref="member">Base::isAccepted</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src)</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Verify<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(T)<sp/>!=<sp/>m_defaultValue.type())</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Verify<sp/>constraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/>BOOST_FOREACH(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_constraint&amp;<sp/>c_cond,<sp/>m_constraints)</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>c_cond(p_src))</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" kindref="member">Base::set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src)</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>T<sp/>l_value;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" kindref="member">isAccepted</ref>(p_src))</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>timestamp<sp/>last<sp/>parameter<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/>m_timestamp<sp/>=<sp/>boost::posix_time::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>new<sp/>value<sp/>is<sp/>different,<sp/>update<sp/>value<sp/>and<sp/>trace<sp/>parameter<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(l_value)<sp/>&amp;&amp;<sp/>(l_value<sp/>!=<sp/>p_src))</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_oldStr,<sp/>l_newStr;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::any<sp/><sp/>l_old<sp/>=<sp/>m_value;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kindref="member">toStr</ref>(l_oldStr);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>m_value<sp/>=<sp/>p_src;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kindref="member">toStr</ref>(l_newStr);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;servers.param.base&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;parameter<sp/>&apos;%s&apos;<sp/>has<sp/>been<sp/>changed<sp/>from<sp/>&apos;%s&apos;<sp/>to<sp/>&apos;%s&apos;&quot;</highlight><highlight class="normal">,<sp/>m_name,<sp/>l_oldStr,<sp/>l_newStr,<sp/>HERE);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c_callback<sp/>:<sp/>m_listeners)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c_callback(l_old,<sp/>m_value);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref>&amp;</highlight></codeline>
+<codeline lineno="396" refid="classxtd_1_1servers_1_1param_1_1Base_1af34d052ef13b435479838c0372f1edb2" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" kindref="member">Base::listen</ref>(boost::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)&gt;<sp/>p_constraint)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>m_listeners.push_back(boost::bind(p_constraint,</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::bind(cast&lt;T&gt;,<sp/>_1),</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::bind(cast&lt;T&gt;,<sp/>_2)));</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal">}}}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!KESERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Local<sp/>Variables:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ispell-local-dictionary:<sp/>&quot;american&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End:</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh"/>
+  </compounddef>
+</doxygen>

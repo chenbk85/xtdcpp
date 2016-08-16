@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classApp" kind="class"><name>App</name>
+    <member refid="classApp_1a26165d5369ac1c7aa04442dbd89a773d" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="classxtd_1_1Application" kind="class"><name>xtd::Application</name>
+    <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" kind="enum"><name>argument</name></member>
+    <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" kind="enumvalue"><name>optional</name></member>
+    <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kind="enumvalue"><name>mandatory</name></member>
+    <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" kind="enumvalue"><name>none</name></member>
+    <member refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" kind="enum"><name>requirement</name></member>
+    <member refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" kind="enumvalue"><name>optional</name></member>
+    <member refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95" kind="enumvalue"><name>mandatory</name></member>
+    <member refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" kind="typedef"><name>t_sig_handler</name></member>
+    <member refid="classxtd_1_1Application_1a8a1a6cf1d4d2d29394e9ee260dce02fe" kind="typedef"><name>t_callback</name></member>
+    <member refid="classxtd_1_1Application_1a9f8c4bd162a47570ae60cf529e8d3447" kind="typedef"><name>t_option_list</name></member>
+    <member refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" kind="variable"><name>m_binName</name></member>
+    <member refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" kind="variable"><name>m_logLevel</name></member>
+    <member refid="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" kind="variable"><name>m_remainingArgs</name></member>
+    <member refid="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" kind="variable"><name>m_rcsid</name></member>
+    <member refid="classxtd_1_1Application_1a172e7346007a9c9c415676dc20448c05" kind="variable"><name>m_optionList</name></member>
+    <member refid="classxtd_1_1Application_1af5fd841d5c408ada5da58fc02e41b0e1" kind="variable"><name>m_helpText</name></member>
+    <member refid="classxtd_1_1Application_1aa26b372f33d11dcb19fce8b1893df5c5" kind="variable"><name>m_runThread</name></member>
+    <member refid="classxtd_1_1Application_1a653309319aa3e9fcc8dee7e5cade810f" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1Application_1a6bd57141044477f115c88780084bfedd" kind="variable"><name>m_work</name></member>
+    <member refid="classxtd_1_1Application_1a75a6b93ec5f607c08f3d337ccaf498cc" kind="variable"><name>m_signals</name></member>
+    <member refid="classxtd_1_1Application_1a096f6f3a0f526c0744fd59f096f743e8" kind="variable"><name>m_signalHandlerMap</name></member>
+    <member refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" kind="function"><name>Application</name></member>
+    <member refid="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" kind="function"><name>~Application</name></member>
+    <member refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" kind="function"><name>execute</name></member>
+    <member refid="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" kind="function"><name>parseConfig</name></member>
+    <member refid="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" kind="function"><name>checkOptions</name></member>
+    <member refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kind="function"><name>process</name></member>
+    <member refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" kind="function"><name>addSignalHandler</name></member>
+    <member refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" kind="function"><name>getVersion</name></member>
+    <member refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" kind="function"><name>addOption</name></member>
+    <member refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" kind="function"><name>isOptionGiven</name></member>
+    <member refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" kind="function"><name>addHelpMsg</name></member>
+    <member refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" kind="function"><name>bindDir</name></member>
+    <member refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" kind="function"><name>bindFile</name></member>
+    <member refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" kind="function"><name>bindGiven</name></member>
+    <member refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" kind="function"><name>bindString</name></member>
+    <member refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" kind="function"><name>bindCallback</name></member>
+    <member refid="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c" kind="function"><name>bindValueIfGiven</name></member>
+    <member refid="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173" kind="function"><name>bindNumber</name></member>
+    <member refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" kind="function"><name>bindValues</name></member>
+    <member refid="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366" kind="function"><name>bindAccumulator</name></member>
+    <member refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9" kind="function"><name>error_nohelp</name></member>
+    <member refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kind="function"><name>error</name></member>
+    <member refid="classxtd_1_1Application_1a931877468f6b948909d596d91d60b7a2" kind="function"><name>warn</name></member>
+    <member refid="classxtd_1_1Application_1a076d6a7c18af2f332f5b4d5a740a8732" kind="function"><name>readArgs</name></member>
+    <member refid="classxtd_1_1Application_1a124e8cb7e45ae07b2b59dbd6618f0c8b" kind="function"><name>usageWrapper</name></member>
+    <member refid="classxtd_1_1Application_1a58b4fccc81a43c5a6ce4bfa5d925af3c" kind="function"><name>usage</name></member>
+    <member refid="classxtd_1_1Application_1a45951e6f6bbdc44043dc296fadf2ffa8" kind="function"><name>handleSignal</name></member>
+  </compound>
+  <compound refid="classxtd_1_1ConfParser" kind="class"><name>xtd::ConfParser</name>
+    <member refid="classxtd_1_1ConfParser_1a7de68f27f0ec35cb04466bff161f9c03" kind="typedef"><name>t_value_map</name></member>
+    <member refid="classxtd_1_1ConfParser_1a6267e08b9f18b9da2d860c2670551436" kind="typedef"><name>t_section_data</name></member>
+    <member refid="classxtd_1_1ConfParser_1ae6e589a9b9c227db6f3e24f6d0713143" kind="typedef"><name>t_section_list</name></member>
+    <member refid="classxtd_1_1ConfParser_1a715a3e39fd796046c94546e60f22414d" kind="typedef"><name>t_param_map</name></member>
+    <member refid="classxtd_1_1ConfParser_1ae1e724e304256650bac2e9b2d63a51df" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1ConfParser_1a4c58cc4fa96ebaddd180a0c67edb481f" kind="variable"><name>m_values</name></member>
+    <member refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kind="variable"><name>m_sections</name></member>
+    <member refid="classxtd_1_1ConfParser_1a5203f3b8cb6e9070b33371c9acabbc8c" kind="variable"><name>m_nblines</name></member>
+    <member refid="classxtd_1_1ConfParser_1abc9e0b073f91de77b76db39bfbc27508" kind="variable"><name>m_filename</name></member>
+    <member refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" kind="variable"><name>m_paramMap</name></member>
+    <member refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kind="function"><name>ConfParser</name></member>
+    <member refid="classxtd_1_1ConfParser_1a460c904cfe815a6141feb088022c9564" kind="function"><name>ConfParser</name></member>
+    <member refid="classxtd_1_1ConfParser_1a2a72cefc513e103b86d90785862c620f" kind="function"><name>getFilePath</name></member>
+    <member refid="classxtd_1_1ConfParser_1a18acbfe7e5828eff045bdcc941626974" kind="function"><name>find</name></member>
+    <member refid="classxtd_1_1ConfParser_1aff7ee8bcd3de4359eff719bc4a6570ba" kind="function"><name>find</name></member>
+    <member refid="classxtd_1_1ConfParser_1ab772ae8e571f1a3f719eca2f9d056d7c" kind="function"><name>end</name></member>
+    <member refid="classxtd_1_1ConfParser_1a18fa4083def8aaf86796b9ddbc331daf" kind="function"><name>begin</name></member>
+    <member refid="classxtd_1_1ConfParser_1a5ef18d8778c844ce60f2c93579be7926" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1ac8f46e56cdd5d015719c682707b12bc2" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1adaf860ed87b32df2ac16f73cab8bbbed" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a6edfffe778ba93a7dc0ce3b71e1a293d" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1abd0bb9c9e8568c0b2dd28b133f700681" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a902dfe3ab82e8d1710659f65fa0e853b" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1aeabbb63eeeafaf9d0853fdcf5b2a83eb" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a38c007fd9a93cf370a9e2de14e021faf" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a39e678dc0205b82f4cce76533f4f4d84" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a1e8fd9399881ef9910fd144377ff4c93" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a6d091368a02f05c377c7d27d748b64be" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1ac0d9efc31b6b6989f4a9f6061ad03596" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1a8a8e729b8e11c5efd19dec29baa31f66" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1ConfParser_1aa3a209f68c61547141194a305049eeae" kind="function"><name>get_default</name></member>
+    <member refid="classxtd_1_1ConfParser_1a7f1323a9ef1f85c73a0bff383e24967c" kind="function"><name>exists</name></member>
+    <member refid="classxtd_1_1ConfParser_1ae7e7ade9440517b79cc22f21b10df7a5" kind="function"><name>dumpKeys</name></member>
+    <member refid="classxtd_1_1ConfParser_1a1be1c2813abf959d85bb6cf695c74dec" kind="function"><name>getParamMap</name></member>
+    <member refid="classxtd_1_1ConfParser_1a34d7366228341b5501bfec94607dd396" kind="function"><name>getValueMap</name></member>
+    <member refid="classxtd_1_1ConfParser_1af7a384a328f4a7fe7054d71ce99b3ca9" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1ConfParser_1a9fd962e1a8cffba3c171190f4a133536" kind="function"><name>parseSection</name></member>
+    <member refid="classxtd_1_1ConfParser_1ac1f2c25d3fb6d1719233df5e2c4a6ffe" kind="function"><name>parseFile</name></member>
+    <member refid="classxtd_1_1ConfParser_1acd8c8a4ff18b316736607a20dff781a4" kind="function"><name>loadFile</name></member>
+    <member refid="classxtd_1_1ConfParser_1a23eef0718acd932e6af7d868e0ff7e3a" kind="function"><name>evaluateVal</name></member>
+  </compound>
+  <compound refid="classxtd_1_1ConfParser_1_1const__iterator" kind="class"><name>xtd::ConfParser::const_iterator</name>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a4f49bb5f692aa9b4f8ccf8081a3d9f67" kind="typedef"><name>t_result</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1acbfbd6e9d13dc0aa004169f245413c89" kind="variable"><name>m_iter</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a9c17a000740a8558dddb0dd1187939b5" kind="function"><name>const_iterator</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1af09c45149cd53e97902123aa770c0867" kind="function"><name>const_iterator</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a0fb34a1a672ceecfc5eb756e712bb977" kind="function"><name>const_iterator</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1acef9a9b328552d35dec3b1736d775cf5" kind="function"><name>operator=</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a6c3a5f37a31973077c3067a8d892aca0" kind="function"><name>operator++</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a7c5bfdfc6f85ac43469fc6dcd8601b98" kind="function"><name>operator++</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a1acb3ce9b1fb4892d77dcd649ec7768a" kind="function"><name>operator==</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1a380f55fdaee860e5cc7c4f8fcfade27b" kind="function"><name>operator!=</name></member>
+    <member refid="classxtd_1_1ConfParser_1_1const__iterator_1ab148b39b2f0e83242aeae432814eae7d" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="classxtd_1_1error" kind="class"><name>xtd::error</name>
+    <member refid="classxtd_1_1error_1aa5469e78c700426f0bf56e3f04b72c44" kind="variable"><name>m_message</name></member>
+    <member refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" kind="function"><name>do_throw</name></member>
+    <member refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" kind="function"><name>error</name></member>
+    <member refid="classxtd_1_1error_1abeceaf42dfbad136014dc3921696e26f" kind="function"><name>~error</name></member>
+    <member refid="classxtd_1_1error_1a463ff8177561abd418c1f00aa2bcd154" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classxtd_1_1logger" kind="class"><name>xtd::logger</name>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kind="enum"><name>level</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc" kind="enumvalue"><name>emerg</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f" kind="enumvalue"><name>alert</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" kind="enumvalue"><name>crit</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6" kind="enumvalue"><name>err</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd" kind="enumvalue"><name>warning</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65" kind="enumvalue"><name>notice</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c" kind="enumvalue"><name>info</name></member>
+    <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d" kind="enumvalue"><name>debug</name></member>
+    <member refid="classxtd_1_1logger_1a0c98b63f525ea62151a12e8c2520f461" kind="typedef"><name>t_levels</name></member>
+    <member refid="classxtd_1_1logger_1a8c79a770ef82ac7e591d4fa3c12687eb" kind="variable"><name>m_name</name></member>
+    <member refid="classxtd_1_1logger_1a7936d6543c09ea5841a7624b24213db3" kind="variable"><name>m_initialized</name></member>
+    <member refid="classxtd_1_1logger_1ac2c294938116042039672af172abcb13" kind="variable"><name>m_levels</name></member>
+    <member refid="classxtd_1_1logger_1a921177349f5374d008d6cc55af0bf75e" kind="variable"><name>ms_pInstance</name></member>
+    <member refid="classxtd_1_1logger_1a794da1cd7618a6796d639d11845f9006" kind="function"><name>logger</name></member>
+    <member refid="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1logger_1a8559c9744e68ecab37076d8744499c8f" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" kind="function"><name>setLevel</name></member>
+    <member refid="classxtd_1_1logger_1af88d4c20247cb62433e660ab7f9f5a97" kind="function"><name>updateLevels</name></member>
+    <member refid="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" kind="function"><name>setAllLevels</name></member>
+    <member refid="classxtd_1_1logger_1a10ec7455d964067fc1ca79f3a7cc14b4" kind="function"><name>setAllValueLevels</name></member>
+    <member refid="classxtd_1_1logger_1a18cd978561fcaf48e2fc935331834fe9" kind="function"><name>clearAll</name></member>
+    <member refid="classxtd_1_1logger_1a314e15f9d6eeeafbcf93b2bb757e2143" kind="function"><name>setName</name></member>
+    <member refid="classxtd_1_1logger_1afa70268de8cc055f4903a54fa61c52df" kind="function"><name>levelOf</name></member>
+    <member refid="classxtd_1_1logger_1a615e10d21938ff8681a98894aa31490e" kind="function"><name>valueOf</name></member>
+    <member refid="classxtd_1_1logger_1a791f6ccde4fa459cf05085d9b7a0f2d5" kind="function"><name>stringOf</name></member>
+    <member refid="classxtd_1_1logger_1a88420216bbafe0a36bbd25080ac14567" kind="function"><name>fromString</name></member>
+    <member refid="classxtd_1_1logger_1a4cb9dd27ead213c0a9f3d85d80e9a7b4" kind="function"><name>getLevel</name></member>
+    <member refid="classxtd_1_1logger_1a8b22d69269de5f4269fbbf43fe6f9b53" kind="function"><name>getLevels</name></member>
+    <member refid="classxtd_1_1logger_1aaca2ec5d979b7f57c2060ecaac2715ec" kind="function"><name>isValidStringLevel</name></member>
+    <member refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1logger_1a07697b74619641014fb6e51130b5c837" kind="function"><name>emerg</name></member>
+    <member refid="classxtd_1_1logger_1abea0d6d16f6138d94e9373457fa08513" kind="function"><name>alert</name></member>
+    <member refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" kind="function"><name>crit</name></member>
+    <member refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kind="function"><name>err</name></member>
+    <member refid="classxtd_1_1logger_1a7432d0a490aef6bfe2de6f5ff5b77c06" kind="function"><name>warning</name></member>
+    <member refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kind="function"><name>info</name></member>
+    <member refid="classxtd_1_1logger_1a74886bf7a5d2bb1f2b2bf0265b13b38b" kind="function"><name>notice</name></member>
+    <member refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kind="function"><name>debug</name></member>
+    <member refid="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce" kind="function"><name>format_vargs</name></member>
+    <member refid="classxtd_1_1logger_1a8b4b9ba2c423f547f9c96022fe05b545" kind="function"><name>wrap_syslog</name></member>
+    <member refid="classxtd_1_1logger_1ae5dda6abccc897f3ea0fd60125290263" kind="function"><name>log</name></member>
+  </compound>
+  <compound refid="classMyApp" kind="class"><name>MyApp</name>
+    <member refid="classMyApp_1a3f599b300b27f792b1ab563144c59bf2" kind="variable"><name>m_inputFile</name></member>
+    <member refid="classMyApp_1a9a9841f1e420ab6de44d3dc1fff55ec6" kind="function"><name>MyApp</name></member>
+    <member refid="classMyApp_1a589d0fe895e6f6c16330a7b44e500a94" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="structxtd_1_1Application_1_1t__option" kind="struct"><name>xtd::Application::t_option</name>
+    <member refid="structxtd_1_1Application_1_1t__option_1a74f46755b278edcf6d3b07531bb1d9f0" kind="variable"><name>m_shortOpt</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1a028a65ae9ae83b5302726f70dfd4893b" kind="variable"><name>m_longOpt</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1a53cc01265ab04897008c7dcb27e89d4b" kind="variable"><name>m_description</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1a592a9fca5f2d9634259ba1f5aa831f28" kind="variable"><name>m_argumentType</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1af55ca16ca4cc96c6a0e2f30467712090" kind="variable"><name>m_callback</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1a2abcf020edd37389ef7fbe75ecbc43e1" kind="variable"><name>m_status</name></member>
+    <member refid="structxtd_1_1Application_1_1t__option_1a2726359acde22afbbbb1a8fbf11267bb" kind="variable"><name>m_given</name></member>
+  </compound>
+  <compound refid="structboost_1_1property__tree_1_1json__parser_1_1translator" kind="struct"><name>boost::property_tree::json_parser::translator</name>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aa6939259165594c66343c4fd2b92fee0" kind="typedef"><name>internal_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1a41e329b10777c2a4a756b65911746a8a" kind="typedef"><name>external_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aef3c8478be3ecb503113f433ece01628" kind="function"><name>get_value</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_1aab997fa3043e1decab15845b61a9c801" kind="function"><name>put_value</name></member>
+  </compound>
+  <compound refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4" kind="struct"><name>boost::property_tree::json_parser::translator&lt; bool &gt;</name>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb06d7dd56a70ab4a34df47427f9498d" kind="typedef"><name>internal_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a735dcf537d03fd03712c193e56de30bc" kind="typedef"><name>external_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1a8e1c4f5fe17ec4a1a4bfd9acadc99403" kind="function"><name>get_value</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4_1afb6097b473b4da99966191d43317ad64" kind="function"><name>put_value</name></member>
+  </compound>
+  <compound refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4" kind="struct"><name>boost::property_tree::json_parser::translator&lt; std::string &gt;</name>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a0442088549debbf3d26b2506b4bd7aad" kind="typedef"><name>internal_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a31b953272d7ddc4de96930a64e01c25a" kind="typedef"><name>external_type</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1a156c6497ef493978904665ba508226a8" kind="function"><name>get_value</name></member>
+    <member refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4_1ae7eee6b74826f7b16599c38be93c0e37" kind="function"><name>put_value</name></member>
+  </compound>
+  <compound refid="classxtd_1_1text_1_1xml" kind="class"><name>xtd::text::xml</name>
+    <member refid="classxtd_1_1text_1_1xml_1a47e9eeb37d838f7892580df49d9af4b9" kind="typedef"><name>t_entity</name></member>
+    <member refid="classxtd_1_1text_1_1xml_1a9b3918b7ebded616690be19640cdba21" kind="typedef"><name>t_data</name></member>
+    <member refid="classxtd_1_1text_1_1xml_1a767f42dc9e5c40f7021bf41c17292902" kind="variable"><name>ms_entityList</name></member>
+    <member refid="classxtd_1_1text_1_1xml_1ab53ec8f1cf407b142479fa90b4d41bdb" kind="function"><name>encode</name></member>
+    <member refid="classxtd_1_1text_1_1xml_1a75c4caafbada294ca593a907b9ad1e00" kind="function"><name>encode_copy</name></member>
+    <member refid="classxtd_1_1text_1_1xml_1a358995dad405fbcd3734f8e555f84ee1" kind="function"><name>initialize</name></member>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespaceboost_1_1property__tree" kind="namespace"><name>boost::property_tree</name>
+  </compound>
+  <compound refid="namespaceboost_1_1property__tree_1_1json__parser" kind="namespace"><name>boost::property_tree::json_parser</name>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" kind="function"><name>read_json</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1aa8344dc0b7987cba89b0630195d7a34d" kind="function"><name>read_json</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" kind="function"><name>write_json</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1a49f6a7c920e5ac943603a5f10ccf3a32" kind="function"><name>write_json</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1a747e92e137769eb6b27edb76d613f37a" kind="function"><name>create_escapes</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1a133973ddea67e6d77424312cd297b332" kind="function"><name>write_json_helper</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1ad1f43753e8e91845fdb1177c1aa0c465" kind="function"><name>verify_json</name></member>
+    <member refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" kind="function"><name>write_json_internal</name></member>
+  </compound>
+  <compound refid="namespacextd" kind="namespace"><name>xtd</name>
+    <member refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50" kind="enum"><name>status</name></member>
+    <member refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a444bcb3a3fcf8389296c49467f27e1d6" kind="enumvalue"><name>ok</name></member>
+    <member refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50acb5e100e5a9a3e7f6d1fd97512215282" kind="enumvalue"><name>error</name></member>
+    <member refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a90272dda245ae1fb3cf197e91a8689dc" kind="enumvalue"><name>timeout</name></member>
+    <member refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50ac2adf6ecc220f2711801d6e466340183" kind="enumvalue"><name>notfound</name></member>
+    <member refid="namespacextd_1a518b0ddcbf87f6c21175d2760f4fbe21" kind="function"><name>valueof</name></member>
+  </compound>
+  <compound refid="namespacextd_1_1text" kind="namespace"><name>xtd::text</name>
+  </compound>
+  <compound refid="documentation_8hh" kind="file"><name>documentation.hh</name>
+  </compound>
+  <compound refid="Application_8cc" kind="file"><name>Application.cc</name>
+    <member refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kind="variable"><name>rcsid</name></member>
+  </compound>
+  <compound refid="src_2Application_8hh" kind="file"><name>Application.hh</name>
+  </compound>
+  <compound refid="doc_2example_2Application_8hh" kind="file"><name>Application.hh</name>
+    <member refid="doc_2example_2Application_8hh_1a6b77b2233054447db17959182b5fb02b" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="ConfParser_8cc" kind="file"><name>ConfParser.cc</name>
+  </compound>
+  <compound refid="ConfParser_8hh" kind="file"><name>ConfParser.hh</name>
+  </compound>
+  <compound refid="error_8hh" kind="file"><name>error.hh</name>
+  </compound>
+  <compound refid="json__parser_8hpp" kind="file"><name>json_parser.hpp</name>
+    <member refid="json__parser_8hpp_1a021df3c720c2c295aa44478b28940a42" kind="define"><name>BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</name></member>
+  </compound>
+  <compound refid="json__parser__write_8hpp" kind="file"><name>json_parser_write.hpp</name>
+  </compound>
+  <compound refid="logger_8cc" kind="file"><name>logger.cc</name>
+  </compound>
+  <compound refid="logger_8hh" kind="file"><name>logger.hh</name>
+    <member refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kind="define"><name>HERE</name></member>
+  </compound>
+  <compound refid="main_8cc" kind="file"><name>main.cc</name>
+    <member refid="main_8cc_1af847876e048f60529674b0f221f6edc1" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="text_8cc" kind="file"><name>text.cc</name>
+  </compound>
+  <compound refid="text_8hh" kind="file"><name>text.hh</name>
+  </compound>
+  <compound refid="types_8hh" kind="file"><name>types.hh</name>
+  </compound>
+  <compound refid="dir_bdd9a5d540de89e9fe90efdfc6973a4f" kind="dir"><name>/home/psyco/dev/xtdcpp/common</name>
+  </compound>
+  <compound refid="dir_2c9a45370de0f3babf0a7bf64c822e74" kind="dir"><name>/home/psyco/dev/xtdcpp/common/doc</name>
+  </compound>
+  <compound refid="dir_d59346abf77ad950fc9a3ee0263c95ce" kind="dir"><name>/home/psyco/dev/xtdcpp/common/doc/example</name>
+  </compound>
+  <compound refid="dir_4e4d22e38ca4e2e8207825ee2d00bc54" kind="dir"><name>/home/psyco/dev/xtdcpp/common/src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

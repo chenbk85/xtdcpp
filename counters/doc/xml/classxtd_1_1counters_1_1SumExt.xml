@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1SumExt" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::SumExt</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Value" prot="public" virt="non-virtual">xtd::counters::Value&lt; TType &gt;</basecompoundref>
+    <includes refid="counters__fwd_8hh" local="no">counters_fwd.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1SumExt_1a45bd88cd35c9d86331d56feffca1df53" prot="private" static="no">
+        <type>vector&lt; const TType * &gt;</type>
+        <definition>typedef vector&lt;const TType*&gt; xtd::counters::SumExt&lt; TType &gt;::t_items</definition>
+        <argsstring></argsstring>
+        <name>t_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="18" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1SumExt_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1SumExt_1ae9c3d0eb4ccf8913cc6559abf264b709" prot="private" static="no" mutable="no">
+        <type>t_items</type>
+        <definition>t_items xtd::counters::SumExt&lt; TType &gt;::m_values</definition>
+        <argsstring></argsstring>
+        <name>m_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1SumExt_1aeed4a5cca01073d91a3c24212618ab9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::SumExt&lt; TType &gt;::SumExt</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>SumExt</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1SumExt_1a304ba48e158f8f75120b9449300c688a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::SumExt&lt; TType &gt;::~SumExt</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SumExt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="22" bodyend="22"/>
+        <references refid="classxtd_1_1counters_1_1SumExt_1a05b01643f8724ccdfd98f8a3209dc99c">xtd::counters::SumExt&lt; TType &gt;::addItem</references>
+        <references refid="classxtd_1_1counters_1_1SumExt_1a1f3c5d348aa4b16104027fb2175acbe6">xtd::counters::SumExt&lt; TType &gt;::update_safe</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1SumExt_1a05b01643f8724ccdfd98f8a3209dc99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::SumExt&lt; TType &gt;::addItem</definition>
+        <argsstring>(const TType &amp;p_val)</argsstring>
+        <name>addItem</name>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="25" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1SumExt_1a304ba48e158f8f75120b9449300c688a" compoundref="SumExt_8hh" startline="22" endline="22">xtd::counters::SumExt&lt; TType &gt;::~SumExt</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1SumExt_1a1f3c5d348aa4b16104027fb2175acbe6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::counters::SumExt&lt; TType &gt;::update_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_safe</name>
+        <reimplements refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea">update_safe</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="28" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1SumExt_1a304ba48e158f8f75120b9449300c688a" compoundref="SumExt_8hh" startline="22" endline="22">xtd::counters::SumExt&lt; TType &gt;::~SumExt</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="228">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="227">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="228" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>xtd::counters::Value&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>xtd::counters::SumExt&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1SumExt"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="232">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="231">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="232" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>xtd::counters::Value&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>m_atom</edgelabel>
+        </childnode>
+        <childnode refid="234" relation="usage">
+          <edgelabel>m_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="233">
+        <label>xtd::counters::Atomic</label>
+        <link refid="classxtd_1_1counters_1_1Atomic"/>
+      </node>
+      <node id="234">
+        <label>TType</label>
+      </node>
+      <node id="229">
+        <label>xtd::counters::SumExt&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1SumExt"/>
+        <childnode refid="230" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh" line="12" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/counters_fwd.hh" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1SumExt_1a05b01643f8724ccdfd98f8a3209dc99c" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>addItem</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a459b2e9fc6974821968f5c05a62ec4ca" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>getValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a6fab70b05b6e99db492e0a3d8a0d9fb6" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" prot="protected" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_atom</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" prot="protected" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" prot="protected" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_value</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1ae9c3d0eb4ccf8913cc6559abf264b709" prot="private" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>m_values</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>NaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a8e7e5f0ff7388f18deaddf51e016c905" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a4a8989a7f9585998eb4210dfdd1b099e" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ac94ea7115378eb16dbef10d030b52a66" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a9036f1b2a2904960e67c1faef11f1835" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>operator=</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1aeed4a5cca01073d91a3c24212618ab9e" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>SumExt</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1a45bd88cd35c9d86331d56feffca1df53" prot="private" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>t_items</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1a1f3c5d348aa4b16104027fb2175acbe6" prot="protected" virt="virtual"><scope>xtd::counters::SumExt</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a298f146ab57eaed8e6f783c26e78e0f4" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>Value</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::SumExt</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a7be35e9a5a52891c5946425152b4db30" prot="protected" virt="virtual"><scope>xtd::counters::SumExt</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::SumExt</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1SumExt_1a304ba48e158f8f75120b9449300c688a" prot="public" virt="virtual"><scope>xtd::counters::SumExt</scope><name>~SumExt</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" prot="public" virt="virtual"><scope>xtd::counters::SumExt</scope><name>~Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

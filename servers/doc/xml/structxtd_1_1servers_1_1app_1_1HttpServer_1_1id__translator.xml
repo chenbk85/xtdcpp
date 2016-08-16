@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator" kind="struct" language="C++" prot="private">
+    <compoundname>xtd::servers::app::HttpServer::id_translator</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ada54bdbb036f3498f8fe7c85d442acb7" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T xtd::servers::app::HttpServer::id_translator&lt; T &gt;::internal_type</definition>
+        <argsstring></argsstring>
+        <name>internal_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="56" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1a0133f6618f0d37c33f3f8632e717c47d" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T xtd::servers::app::HttpServer::id_translator&lt; T &gt;::external_type</definition>
+        <argsstring></argsstring>
+        <name>external_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="57" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ad6a117cca376678a8712a93fa3ad4d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::optional&lt; T &gt;</type>
+        <definition>boost::optional&lt;T&gt; xtd::servers::app::HttpServer::id_translator&lt; T &gt;::get_value</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1aeb2b49a0fb6af4bb86aa76c887064961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::optional&lt; T &gt;</type>
+        <definition>boost::optional&lt;T&gt; xtd::servers::app::HttpServer::id_translator&lt; T &gt;::put_value</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>put_value</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="60" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="55" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="54" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1a0133f6618f0d37c33f3f8632e717c47d" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer::id_translator</scope><name>external_type</name></member>
+      <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ad6a117cca376678a8712a93fa3ad4d24" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer::id_translator</scope><name>get_value</name></member>
+      <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ada54bdbb036f3498f8fe7c85d442acb7" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer::id_translator</scope><name>internal_type</name></member>
+      <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1aeb2b49a0fb6af4bb86aa76c887064961" prot="public" virt="non-virtual"><scope>xtd::servers::app::HttpServer::id_translator</scope><name>put_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

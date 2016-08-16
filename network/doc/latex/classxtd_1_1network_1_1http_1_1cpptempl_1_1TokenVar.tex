@@ -1,0 +1,123 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar}{}\section{xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+Var Class Reference}
+\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar}\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}}
+
+
+{\ttfamily \#include $<$cpptempl.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a11cda0dc135ade3f27be7331beb42541}{Token\+Var} (string key)
+\item 
+\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a39833083d228a5b5ef9f6bb7896479ee}{Token\+Type} \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a8e536c216ab9bc23bf74662d47191d7f}{gettype} ()
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_afc42a67378efaef5e04552634ac369a8}{gettext} (\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a638d1d81c8fb63c0bbafd508d6a2a007}{data\+\_\+map} \&data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 209 of file cpptempl.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}!Token\+Var@{Token\+Var}}
+\index{Token\+Var@{Token\+Var}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}}
+\subsubsection[{\texorpdfstring{Token\+Var(string key)}{TokenVar(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var\+::\+Token\+Var (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a11cda0dc135ade3f27be7331beb42541}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a11cda0dc135ade3f27be7331beb42541}
+
+
+Definition at line 213 of file cpptempl.\+hh.
+
+
+\begin{DoxyCode}
+213 : m\_key(key)\{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}!gettext@{gettext}}
+\index{gettext@{gettext}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}}
+\subsubsection[{\texorpdfstring{gettext(data\+\_\+map \&data)}{gettext(data_map &data)}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var\+::gettext (
+\begin{DoxyParamCaption}
+\item[{{\bf data\+\_\+map} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_afc42a67378efaef5e04552634ac369a8}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_afc42a67378efaef5e04552634ac369a8}
+
+
+Implements \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_a5aeb3ae0fe7478101eaaa90898709a1b}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 109 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+110 \{
+111   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_af79d10d06cd5bc9ce629bb2d21fbcfd6}{parse\_val}(m\_key, data)->getvalue();
+112 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_afc42a67378efaef5e04552634ac369a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}!gettype@{gettype}}
+\index{gettype@{gettype}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var}}
+\subsubsection[{\texorpdfstring{gettype()}{gettype()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token\+Type} xtd\+::network\+::http\+::cpptempl\+::\+Token\+Var\+::gettype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a8e536c216ab9bc23bf74662d47191d7f}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_a8e536c216ab9bc23bf74662d47191d7f}
+
+
+Implements \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_afd7dd97138bbac2734e414a406a8e4fe}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 105 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+106 \{
+107   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a39833083d228a5b5ef9f6bb7896479eea0e5df4476507663b07b952aefc096a86}{TOKEN\_TYPE\_VAR};
+108 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{cpptempl_8hh}{cpptempl.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{cpptempl_8cc}{cpptempl.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+    <includes refid="logger_8hh" local="yes">logger.hh</includes>
+    <includes refid="src_2Application_8hh" local="yes">Application.hh</includes>
+    <incdepgraph>
+      <node id="423">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>stdarg.h</label>
+      </node>
+      <node id="431">
+        <label>functional</label>
+      </node>
+      <node id="429">
+        <label>iomanip</label>
+      </node>
+      <node id="430">
+        <label>limits</label>
+      </node>
+      <node id="438">
+        <label>boost/asio/signal_set.hpp</label>
+      </node>
+      <node id="434">
+        <label>stdlib.h</label>
+      </node>
+      <node id="420">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="428">
+        <label>Application.hh</label>
+        <link refid="src_2Application_8hh"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>string</label>
+      </node>
+      <node id="419">
+        <label>map</label>
+      </node>
+      <node id="436">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="426">
+        <label>fstream</label>
+      </node>
+      <node id="415">
+        <label>/home/psyco/dev/xtdcpp/common/src/main.cc</label>
+        <link refid="main.cc"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>syslog.h</label>
+      </node>
+      <node id="437">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="439">
+        <label>Application.hxx</label>
+      </node>
+      <node id="433">
+        <label>libgen.h</label>
+      </node>
+      <node id="435">
+        <label>boost/system/error_code.hpp</label>
+      </node>
+      <node id="418">
+        <label>vector</label>
+      </node>
+      <node id="425">
+        <label>sstream</label>
+      </node>
+      <node id="417">
+        <label>iostream</label>
+      </node>
+      <node id="432">
+        <label>getopt.h</label>
+      </node>
+      <node id="427">
+        <label>logger.hxx</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classApp" prot="public">App</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cc_1af847876e048f60529674b0f221f6edc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int pArgc, char **pArgv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>pArgc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>pArgv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/main.cc" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/main.cc" bodystart="38" bodyend="43"/>
+        <references refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logger_8hh" kindref="compound">logger.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2Application_8hh" kindref="compound">Application.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classApp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classApp" kindref="compound">App</ref><sp/>:<sp/><ref refid="classxtd_1_1Application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>process(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>l_filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/tmp/conf/test.conf&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>l_line<sp/><sp/>=<sp/>324;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" kindref="member">initialize</ref>(m_binName,<sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" kindref="member">logger::level::crit</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" kindref="member">setLevel</ref>(</highlight><highlight class="stringliteral">&quot;module1&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c" kindref="member">logger::level::info</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" kindref="member">setLevel</ref>(</highlight><highlight class="stringliteral">&quot;module2&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6" kindref="member">logger::level::err</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" kindref="member">setLevel</ref>(</highlight><highlight class="stringliteral">&quot;module2.submodule2&quot;</highlight><highlight class="normal">,<sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" kindref="member">logger::level::crit</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kindref="member">logger::err</ref><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;error<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kindref="member">logger::info</ref><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;info<sp/><sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kindref="member">logger::debug</ref><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;debug<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kindref="member">logger::err</ref><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;error<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kindref="member">logger::info</ref><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;info<sp/><sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kindref="member">logger::debug</ref><sp/>(</highlight><highlight class="stringliteral">&quot;module1.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;debug<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kindref="member">logger::err</ref><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;error<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kindref="member">logger::info</ref><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;info<sp/><sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kindref="member">logger::debug</ref><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;debug<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kindref="member">logger::err</ref><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;error<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kindref="member">logger::info</ref><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;info<sp/><sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kindref="member">logger::debug</ref><sp/>(</highlight><highlight class="stringliteral">&quot;module2.submodule2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;debug<sp/><sp/>in<sp/>file<sp/>&apos;%s&apos;<sp/>line<sp/>&apos;%d&apos;&quot;</highlight><highlight class="normal">,<sp/>l_filename,<sp/>l_line,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="main_8cc_1af847876e048f60529674b0f221f6edc1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cc_1af847876e048f60529674b0f221f6edc1" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pArgc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>pArgv)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1Application" kindref="compound">Application</ref><sp/>lApp;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lApp.<ref refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" kindref="member">execute</ref>(pArgc,<sp/>pArgv);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/main.cc"/>
+  </compounddef>
+</doxygen>

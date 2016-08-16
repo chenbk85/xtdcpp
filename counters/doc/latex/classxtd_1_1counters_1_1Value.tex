@@ -1,0 +1,252 @@
+\hypertarget{classxtd_1_1counters_1_1Value}{}\section{xtd\+:\+:counters\+:\+:Value$<$ T\+Type $>$ Class Template Reference}
+\label{classxtd_1_1counters_1_1Value}\index{xtd\+::counters\+::\+Value$<$ T\+Type $>$@{xtd\+::counters\+::\+Value$<$ T\+Type $>$}}
+
+
+{\ttfamily \#include $<$counters\+\_\+fwd.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Value$<$ T\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classxtd_1_1counters_1_1Value__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Value$<$ T\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Value__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1counters_1_1Value}{Value}$<$ T\+Type $>$ $>$ \hyperlink{classxtd_1_1counters_1_1Value_a24669b6d950db6c5c20546ce12a467cf}{t\+\_\+sptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value_a298f146ab57eaed8e6f783c26e78e0f4}{Value} (const string \&p\+\_\+name)
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1Value_a500d43a2cea3f654aa524959a7893e31}{$\sim$\+Value} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN} (void)
+\item 
+bool \hyperlink{classxtd_1_1counters_1_1Value_a6fab70b05b6e99db492e0a3d8a0d9fb6}{is\+NaN} (void) const 
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0}{operator=} (const T\+Type \&p\+\_\+value)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_a8e7e5f0ff7388f18deaddf51e016c905}{operator++} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_a4a8989a7f9585998eb4210dfdd1b099e}{operator++} (int)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_ac94ea7115378eb16dbef10d030b52a66}{operator-\/-\/} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value} \& \hyperlink{classxtd_1_1counters_1_1Value_a9036f1b2a2904960e67c1faef11f1835}{operator-\/-\/} (int)
+\item 
+const T\+Type \& \hyperlink{classxtd_1_1counters_1_1Value_a459b2e9fc6974821968f5c05a62ec4ca}{get\+Value} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Value_a7be35e9a5a52891c5946425152b4db30}{visit\+\_\+safe} (\hyperlink{classxtd_1_1counters_1_1Visitor}{Visitor} \&p\+\_\+visitor) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classxtd_1_1counters_1_1Value_a28be66961121bb488351e2c2722fd18a}{m\+\_\+is\+NaN}
+\item 
+T\+Type \hyperlink{classxtd_1_1counters_1_1Value_abe06c1cebededaf2f216707171f63c3c}{m\+\_\+value}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Atomic}{Atomic} \hyperlink{classxtd_1_1counters_1_1Value_a0cf45c8f82588321af127529ba4f214a}{m\+\_\+atom}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1Value_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Type$>$\\*
+class xtd\+::counters\+::\+Value$<$ T\+Type $>$}
+
+
+
+Definition at line 9 of file counters\+\_\+fwd.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!t\+\_\+sptr@{t\+\_\+sptr}}
+\index{t\+\_\+sptr@{t\+\_\+sptr}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+sptr}{t_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ typedef boost\+::shared\+\_\+ptr$<${\bf Value}$<$T\+Type$>$ $>$ {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::{\bf t\+\_\+sptr}}\hypertarget{classxtd_1_1counters_1_1Value_a24669b6d950db6c5c20546ce12a467cf}{}\label{classxtd_1_1counters_1_1Value_a24669b6d950db6c5c20546ce12a467cf}
+
+
+Definition at line 41 of file Value.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!Value@{Value}}
+\index{Value@{Value}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{Value(const string \&p\+\_\+name)}{Value(const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::{\bf Value} (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_a298f146ab57eaed8e6f783c26e78e0f4}{}\label{classxtd_1_1counters_1_1Value_a298f146ab57eaed8e6f783c26e78e0f4}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!````~Value@{$\sim$\+Value}}
+\index{````~Value@{$\sim$\+Value}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{$\sim$\+Value(void)}{~Value(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ virtual {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::$\sim${\bf Value} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1Value_a500d43a2cea3f654aa524959a7893e31}{}\label{classxtd_1_1counters_1_1Value_a500d43a2cea3f654aa524959a7893e31}
+
+
+Definition at line 45 of file Value.\+hh.
+
+
+\begin{DoxyCode}
+45 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{get\+Value(void) const }{getValue(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ const T\+Type\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::get\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1counters_1_1Value_a459b2e9fc6974821968f5c05a62ec4ca}{}\label{classxtd_1_1counters_1_1Value_a459b2e9fc6974821968f5c05a62ec4ca}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!is\+NaN@{is\+NaN}}
+\index{is\+NaN@{is\+NaN}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{is\+Na\+N(void) const }{isNaN(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ bool {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::is\+NaN (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1counters_1_1Value_a6fab70b05b6e99db492e0a3d8a0d9fb6}{}\label{classxtd_1_1counters_1_1Value_a6fab70b05b6e99db492e0a3d8a0d9fb6}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!NaN@{NaN}}
+\index{NaN@{NaN}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{Na\+N(void)}{NaN(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::NaN (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{}\label{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!operator++@{operator++}}
+\index{operator++@{operator++}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{operator++(void)}{operator++(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_a8e7e5f0ff7388f18deaddf51e016c905}{}\label{classxtd_1_1counters_1_1Value_a8e7e5f0ff7388f18deaddf51e016c905}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!operator++@{operator++}}
+\index{operator++@{operator++}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{operator++(int)}{operator++(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_a4a8989a7f9585998eb4210dfdd1b099e}{}\label{classxtd_1_1counters_1_1Value_a4a8989a7f9585998eb4210dfdd1b099e}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{operator-\/-\/(void)}{operator--(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_ac94ea7115378eb16dbef10d030b52a66}{}\label{classxtd_1_1counters_1_1Value_ac94ea7115378eb16dbef10d030b52a66}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{operator-\/-\/(int)}{operator--(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_a9036f1b2a2904960e67c1faef11f1835}{}\label{classxtd_1_1counters_1_1Value_a9036f1b2a2904960e67c1faef11f1835}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const T\+Type \&p\+\_\+value)}{operator=(const TType &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}\& {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const T\+Type \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0}{}\label{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!visit\+\_\+safe@{visit\+\_\+safe}}
+\index{visit\+\_\+safe@{visit\+\_\+safe}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{visit\+\_\+safe(\+Visitor \&p\+\_\+visitor) const }{visit_safe(Visitor &p_visitor) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ void {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::visit\+\_\+safe (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{p\+\_\+visitor}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1Value_a7be35e9a5a52891c5946425152b4db30}{}\label{classxtd_1_1counters_1_1Value_a7be35e9a5a52891c5946425152b4db30}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Base_a0b8f3bdc6880dc03da750aa815dfdf0b}{xtd\+::counters\+::\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1Value_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1Value_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 38 of file Value.\+hh.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!m\+\_\+atom@{m\+\_\+atom}}
+\index{m\+\_\+atom@{m\+\_\+atom}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+atom}{m_atom}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Atomic} {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::m\+\_\+atom\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1Value_a0cf45c8f82588321af127529ba4f214a}{}\label{classxtd_1_1counters_1_1Value_a0cf45c8f82588321af127529ba4f214a}
+
+
+Definition at line 65 of file Value.\+hh.
+
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!m\+\_\+is\+NaN@{m\+\_\+is\+NaN}}
+\index{m\+\_\+is\+NaN@{m\+\_\+is\+NaN}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+is\+NaN}{m_isNaN}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ bool {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::m\+\_\+is\+NaN\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1Value_a28be66961121bb488351e2c2722fd18a}{}\label{classxtd_1_1counters_1_1Value_a28be66961121bb488351e2c2722fd18a}
+
+
+Definition at line 63 of file Value.\+hh.
+
+\index{xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}!m\+\_\+value@{m\+\_\+value}}
+\index{m\+\_\+value@{m\+\_\+value}!xtd\+::counters\+::\+Value@{xtd\+::counters\+::\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+value}{m_value}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ T\+Type {\bf xtd\+::counters\+::\+Value}$<$ T\+Type $>$\+::m\+\_\+value\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1Value_abe06c1cebededaf2f216707171f63c3c}{}\label{classxtd_1_1counters_1_1Value_abe06c1cebededaf2f216707171f63c3c}
+
+
+Definition at line 64 of file Value.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{counters__fwd_8hh}{counters\+\_\+fwd.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Value_8hh}{Value.\+hh}\end{DoxyCompactItemize}

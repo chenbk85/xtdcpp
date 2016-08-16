@@ -1,0 +1,218 @@
+\hypertarget{classxtd_1_1network_1_1bip_1_1Server}{}\section{xtd\+:\+:network\+:\+:bip\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1bip_1_1Server}\index{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$@{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}}
+
+
+{\ttfamily \#include $<$Server.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:bip\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classxtd_1_1network_1_1bip_1_1Server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:bip\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1bip_1_1Server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1bip_1_1Server_ab4c6f8f28b5d56b69c575a6dc1be30b4}{Server} (void)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a9731cfd5eda9f51604b9b0195acfb208}{$\sim$\+Server} (void)
+\item 
+void \hyperlink{classxtd_1_1network_1_1bip_1_1Server_aaa19f560d98c05518caa68bf94c36b91}{start} (void)
+\begin{DoxyCompactList}\small\item\em invoke base start method and print log \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a12041b5218057930724c15e83c478c50}{stop} (void)
+\begin{DoxyCompactList}\small\item\em invoke base stop method and print log \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a3ba1e98abbe7516f5ec02b2ac9031e3c}{initialize} (const string \&p\+\_\+host, const uint32\+\_\+t p\+\_\+port, const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+configuration, const size\+\_\+t p\+\_\+nb\+Thread)
+\begin{DoxyCompactList}\small\item\em Initialize server with params. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1bip_1_1Server_ab50170b42e25b207fb0af9f4d47a3430}{process\+Object\+Request} (uint32\+\_\+t p\+\_\+request\+ID, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)=0
+\begin{DoxyCompactList}\small\item\em Calcul d\textquotesingle{}une réponse à partir d\textquotesingle{}une requête. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a81b22d0e5ce1b5f8f6cfbe8618f09cad}{should\+Reply} (uint32\+\_\+t p\+\_\+request\+ID, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1bip_1_1Server_aaeacc82ce89563b36e863ba4bbab2470}{get\+Receive\+Eof} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classxtd_1_1network_1_1bip_1_1Server_ae9efbc2f358222636d3134bf8973f906}{m\+\_\+is\+Persistent}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Req, typename T\+Res, typename Domain = utils\+::af\+\_\+inet$>$\\*
+class xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Domain} & \+: mode de connexion, \hyperlink{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{utils\+::af\+\_\+inet} ou \hyperlink{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{utils\+::af\+\_\+unix} \\
+\hline
+{\em T\+Req} & \+: Structure requête serialisable avec boost\+::serialization \\
+\hline
+{\em T\+Res} & \+: Structure réponse serialisable avec boost\+::serialization\\
+\hline
+\end{DoxyParams}
+Serveur générique bip \+: gère la réception de structure T\+Request et l\textquotesingle{}envoi de structure T\+Response vers un client bip de même type.
+
+Cet objet est destiné à être hérité des différents serveurs qui souhaitent communiquer en bip, ces derniers n\textquotesingle{}ont qu\textquotesingle{}a implémenter la méthode virtuelle pure \hyperlink{classxtd_1_1network_1_1bip_1_1Server_ab50170b42e25b207fb0af9f4d47a3430}{Server\+::process\+Object\+Request} pour calculer la réponse à envoyer à partir de la requête reçue 
+
+Definition at line 24 of file Server.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!Server@{Server}}
+\index{Server@{Server}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{Server(void)}{Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::{\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_ab4c6f8f28b5d56b69c575a6dc1be30b4}{}\label{classxtd_1_1network_1_1bip_1_1Server_ab4c6f8f28b5d56b69c575a6dc1be30b4}
+
+
+Constructeur. 
+
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!````~Server@{$\sim$\+Server}}
+\index{````~Server@{$\sim$\+Server}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{$\sim$\+Server(void)}{~Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ virtual {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::$\sim${\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_a9731cfd5eda9f51604b9b0195acfb208}{}\label{classxtd_1_1network_1_1bip_1_1Server_a9731cfd5eda9f51604b9b0195acfb208}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_ab17ca2e2332664f4cb83e89d027976d9}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!get\+Receive\+Eof@{get\+Receive\+Eof}}
+\index{get\+Receive\+Eof@{get\+Receive\+Eof}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Eof(void)}{getReceiveEof(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::get\+Receive\+Eof (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_aaeacc82ce89563b36e863ba4bbab2470}{}\label{classxtd_1_1network_1_1bip_1_1Server_aaeacc82ce89563b36e863ba4bbab2470}
+
+
+Definition at line 98 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+98 \{ \textcolor{keywordflow}{return} m\_receiveEof;\}
+\end{DoxyCode}
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{initialize(const string \&p\+\_\+host, const uint32\+\_\+t p\+\_\+port, const utils\+::\+Config \&p\+\_\+configuration, const size\+\_\+t p\+\_\+nb\+Thread)}{initialize(const string &p_host, const uint32_t p_port, const utils::Config &p_configuration, const size_t p_nbThread)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+host, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port, }
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+configuration, }
+\item[{const size\+\_\+t}]{p\+\_\+nb\+Thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_a3ba1e98abbe7516f5ec02b2ac9031e3c}{}\label{classxtd_1_1network_1_1bip_1_1Server_a3ba1e98abbe7516f5ec02b2ac9031e3c}
+
+
+Initialize server with params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+host} & \+: string hostname \\
+\hline
+{\em p\+\_\+port} & \+: uint32\+\_\+t port \\
+\hline
+{\em p\+\_\+configuration} & \+: low level network configuration params \\
+\hline
+{\em p\+\_\+nb\+Thread} & \+: number of threads \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_a97d54b5ded7a8b02333347a5ffbbd347}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!process\+Object\+Request@{process\+Object\+Request}}
+\index{process\+Object\+Request@{process\+Object\+Request}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{process\+Object\+Request(uint32\+\_\+t p\+\_\+request\+I\+D, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)=0}{processObjectRequest(uint32_t p_requestID, const TReq &p_request, const bool p_requestDebug, TRes &p_response, bool &p_responseDebug)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::process\+Object\+Request (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID, }
+\item[{const T\+Req \&}]{p\+\_\+request, }
+\item[{const bool}]{p\+\_\+request\+Debug, }
+\item[{T\+Res \&}]{p\+\_\+response, }
+\item[{bool \&}]{p\+\_\+response\+Debug}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_ab50170b42e25b207fb0af9f4d47a3430}{}\label{classxtd_1_1network_1_1bip_1_1Server_ab50170b42e25b207fb0af9f4d47a3430}
+
+
+Calcul d\textquotesingle{}une réponse à partir d\textquotesingle{}une requête. 
+
+Cette méthode virtuelle pure est à définir dans les différents serveurs bip, c\textquotesingle{}est la partie metier qui calcul la réponse à envoyer à partir d\textquotesingle{}une requête reçue \index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!should\+Reply@{should\+Reply}}
+\index{should\+Reply@{should\+Reply}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{should\+Reply(uint32\+\_\+t p\+\_\+request\+I\+D, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)}{shouldReply(uint32_t p_requestID, const TReq &p_request, const bool p_requestDebug, TRes &p_response, bool &p_responseDebug)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ virtual bool {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::should\+Reply (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID, }
+\item[{const T\+Req \&}]{p\+\_\+request, }
+\item[{const bool}]{p\+\_\+request\+Debug, }
+\item[{T\+Res \&}]{p\+\_\+response, }
+\item[{bool \&}]{p\+\_\+response\+Debug}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_a81b22d0e5ce1b5f8f6cfbe8618f09cad}{}\label{classxtd_1_1network_1_1bip_1_1Server_a81b22d0e5ce1b5f8f6cfbe8618f09cad}
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!start@{start}}
+\index{start@{start}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{start(void)}{start(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_aaa19f560d98c05518caa68bf94c36b91}{}\label{classxtd_1_1network_1_1bip_1_1Server_aaa19f560d98c05518caa68bf94c36b91}
+
+
+invoke base start method and print log 
+
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_ae9d5a1070819996c244003adc92a35ee}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!stop@{stop}}
+\index{stop@{stop}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{stop(void)}{stop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_a12041b5218057930724c15e83c478c50}{}\label{classxtd_1_1network_1_1bip_1_1Server_a12041b5218057930724c15e83c478c50}
+
+
+invoke base stop method and print log 
+
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_a0746f85458e7eff28cfe6e156ad99402}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}!m\+\_\+is\+Persistent@{m\+\_\+is\+Persistent}}
+\index{m\+\_\+is\+Persistent@{m\+\_\+is\+Persistent}!xtd\+::network\+::bip\+::\+Server@{xtd\+::network\+::bip\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+is\+Persistent}{m_isPersistent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::bip\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+is\+Persistent\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1bip_1_1Server_ae9efbc2f358222636d3134bf8973f906}{}\label{classxtd_1_1network_1_1bip_1_1Server_ae9efbc2f358222636d3134bf8973f906}
+
+
+Definition at line 81 of file Server.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/bip/\hyperlink{bip_2Server_8hh}{Server.\+hh}\end{DoxyCompactItemize}

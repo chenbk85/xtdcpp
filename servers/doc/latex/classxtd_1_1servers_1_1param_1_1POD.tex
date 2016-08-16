@@ -1,0 +1,174 @@
+\hypertarget{classxtd_1_1servers_1_1param_1_1POD}{}\section{xtd\+:\+:servers\+:\+:param\+:\+:P\+OD$<$ T $>$ Class Template Reference}
+\label{classxtd_1_1servers_1_1param_1_1POD}\index{xtd\+::servers\+::param\+::\+P\+O\+D$<$ T $>$@{xtd\+::servers\+::param\+::\+P\+O\+D$<$ T $>$}}
+
+
+Templated param class.  
+
+
+
+
+{\ttfamily \#include $<$Base.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:servers\+:\+:param\+:\+:P\+OD$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classxtd_1_1servers_1_1param_1_1POD__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:servers\+:\+:param\+:\+:P\+OD$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classxtd_1_1servers_1_1param_1_1POD__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1servers_1_1param_1_1POD_a8f374c2b8622bdcec87a746b07bad388}{P\+OD} (const T \&p\+\_\+value)
+\item 
+\hyperlink{classxtd_1_1servers_1_1param_1_1POD_aec8808c77e41c5156828840c5764a0af}{P\+OD} (const T \&p\+\_\+value, const string \&p\+\_\+name)
+\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1POD_ac6754089526df6eb0eef539be830c668}{from\+Str} (const string \&p\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Initialize the \hyperlink{classxtd_1_1servers_1_1param_1_1POD}{P\+OD} from a string. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1POD_aded664a97a02450a9270dd04af042d0c}{verify} (const string \&p\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Function to verify if given string value can be setted on parameter. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1POD_a6b40b7e5cd208c4ab848edb753c612f7}{to\+Str} (string \&p\+\_\+dst) const 
+\begin{DoxyCompactList}\small\item\em Get a string from the \hyperlink{classxtd_1_1servers_1_1param_1_1POD}{P\+OD} representing the current value. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1servers_1_1param_1_1POD_a828a1fa2391bc087f396b87a1d7c793a}{accept} (\hyperlink{classxtd_1_1servers_1_1param_1_1Visitor}{Visitor} \&p\+\_\+visitor) const 
+\begin{DoxyCompactList}\small\item\em Register this parameter to a visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class xtd\+::servers\+::param\+::\+P\+O\+D$<$ T $>$}
+
+Templated param class. 
+
+handle type specific operation of a parameter (\hyperlink{classxtd_1_1servers_1_1param_1_1Base}{Base} inheritence) 
+
+Definition at line 230 of file Base.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!P\+OD@{P\+OD}}
+\index{P\+OD@{P\+OD}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{P\+O\+D(const T \&p\+\_\+value)}{POD(const T &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::{\bf P\+OD} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_a8f374c2b8622bdcec87a746b07bad388}{}\label{classxtd_1_1servers_1_1param_1_1POD_a8f374c2b8622bdcec87a746b07bad388}
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!P\+OD@{P\+OD}}
+\index{P\+OD@{P\+OD}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{P\+O\+D(const T \&p\+\_\+value, const string \&p\+\_\+name)}{POD(const T &p_value, const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::{\bf P\+OD} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+value, }
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_aec8808c77e41c5156828840c5764a0af}{}\label{classxtd_1_1servers_1_1param_1_1POD_aec8808c77e41c5156828840c5764a0af}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!accept@{accept}}
+\index{accept@{accept}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{accept(\+Visitor \&p\+\_\+visitor) const }{accept(Visitor &p_visitor) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{p\+\_\+visitor}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_a828a1fa2391bc087f396b87a1d7c793a}{}\label{classxtd_1_1servers_1_1param_1_1POD_a828a1fa2391bc087f396b87a1d7c793a}
+
+
+Register this parameter to a visitor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+visitor} & the right visitor\\
+\hline
+\end{DoxyParams}
+N/A 
+
+Implements \hyperlink{classxtd_1_1servers_1_1param_1_1Base_a37a0c2247274dce2395517186ec70d7a}{xtd\+::servers\+::param\+::\+Base}.
+
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!from\+Str@{from\+Str}}
+\index{from\+Str@{from\+Str}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{from\+Str(const string \&p\+\_\+src)}{fromStr(const string &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::from\+Str (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_ac6754089526df6eb0eef539be830c668}{}\label{classxtd_1_1servers_1_1param_1_1POD_ac6754089526df6eb0eef539be830c668}
+
+
+Initialize the \hyperlink{classxtd_1_1servers_1_1param_1_1POD}{P\+OD} from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+src} & The string to be casted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string casting and the value setting succeeds
+\end{DoxyReturn}
+N/A 
+
+Implements \hyperlink{classxtd_1_1servers_1_1param_1_1Base_a74a64bb56c20b892c9be9b786a2d94d1}{xtd\+::servers\+::param\+::\+Base}.
+
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!to\+Str@{to\+Str}}
+\index{to\+Str@{to\+Str}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{to\+Str(string \&p\+\_\+dst) const }{toStr(string &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::to\+Str (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_a6b40b7e5cd208c4ab848edb753c612f7}{}\label{classxtd_1_1servers_1_1param_1_1POD_a6b40b7e5cd208c4ab848edb753c612f7}
+
+
+Get a string from the \hyperlink{classxtd_1_1servers_1_1param_1_1POD}{P\+OD} representing the current value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dst} & The string containing the current value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value getting and string building succeeds
+\end{DoxyReturn}
+N/A 
+
+Implements \hyperlink{classxtd_1_1servers_1_1param_1_1Base_ab80c9c70cacf5a8cebb98486fba83116}{xtd\+::servers\+::param\+::\+Base}.
+
+\index{xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}!verify@{verify}}
+\index{verify@{verify}!xtd\+::servers\+::param\+::\+P\+OD@{xtd\+::servers\+::param\+::\+P\+OD}}
+\subsubsection[{\texorpdfstring{verify(const string \&p\+\_\+src)}{verify(const string &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf xtd\+::servers\+::param\+::\+P\+OD}$<$ T $>$\+::verify (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1param_1_1POD_aded664a97a02450a9270dd04af042d0c}{}\label{classxtd_1_1servers_1_1param_1_1POD_aded664a97a02450a9270dd04af042d0c}
+
+
+Function to verify if given string value can be setted on parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+src} & the new value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value can be setted
+\end{DoxyReturn}
+N/A 
+
+Implements \hyperlink{classxtd_1_1servers_1_1param_1_1Base_a74d9a61d65e6e66492b2205489d9b2cf}{xtd\+::servers\+::param\+::\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/servers/src/param/\hyperlink{Base_8hh}{Base.\+hh}\end{DoxyCompactItemize}

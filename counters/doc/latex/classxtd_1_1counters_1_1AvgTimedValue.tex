@@ -1,0 +1,532 @@
+\hypertarget{classxtd_1_1counters_1_1AvgTimedValue}{}\section{xtd\+:\+:counters\+:\+:Avg\+Timed\+Value Class Reference}
+\label{classxtd_1_1counters_1_1AvgTimedValue}\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+
+
+{\ttfamily \#include $<$Avg\+Timed\+Value.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Avg\+Timed\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classxtd_1_1counters_1_1AvgTimedValue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Avg\+Timed\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue}{Avg\+Timed\+Value} $>$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a68434add28044efc37c616ec7002d0f8}{t\+\_\+sptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a2c4e692d5e33a1155d7c869be55af0de}{Avg\+Timed\+Value} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+nb\+Thread, uint32\+\_\+t p\+\_\+time\+Delta\+Ms=5 $\ast$60 $\ast$1000, uint32\+\_\+t p\+\_\+threshold\+Ms=0)
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a08aa140f45a1160943a494e5eab59aa7}{$\sim$\+Avg\+Timed\+Value} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab5b5b6e1b4dae4bb4172ebc11ffc7c91}{start\+Chrono} (uint32\+\_\+t p\+\_\+request\+ID)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9a6818ff8c4f882a1445e9c49ed79e0f}{stop\+Chrono} (uint32\+\_\+t p\+\_\+request\+ID)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a8d3f9dbf787c7c307957038a879fb69a}{add\+Response\+Time} (uint32\+\_\+t p\+\_\+time\+Us)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a789b1bdb5596f6cb332435892411dbb0}{set\+Assert} (const bool p\+\_\+assert)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a71d5e67cb282762c880dc4986e5a8d7c}{t\+\_\+samples} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_af33c7f1f69e37ef49e4195de8f4ac6e2}{m\+\_\+samples}
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a901afa3b937939c2132a593d4a801cad}{t\+\_\+timevect} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}{m\+\_\+start\+Times}
+\item 
+vector$<$ uint32\+\_\+t $>$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\+\_\+reseted}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Freq}{Freq} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}{m\+\_\+global\+Perf}
+\item 
+\hyperlink{classxtd_1_1counters_1_1InstantFreq}{Instant\+Freq} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}{m\+\_\+instant\+Perf}
+\item 
+\hyperlink{namespacextd_1_1counters_ad10dfbcb762ad7dfc7199ab5a268bc6e}{Value32} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{m\+\_\+mean}
+\item 
+\hyperlink{namespacextd_1_1counters_ad10dfbcb762ad7dfc7199ab5a268bc6e}{Value32} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{m\+\_\+min}
+\item 
+\hyperlink{namespacextd_1_1counters_ad10dfbcb762ad7dfc7199ab5a268bc6e}{Value32} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{m\+\_\+max}
+\item 
+\hyperlink{namespacextd_1_1counters_ad10dfbcb762ad7dfc7199ab5a268bc6e}{Value32} \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}{m\+\_\+over\+Threshold}
+\item 
+const uint32\+\_\+t \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a2986c9cf3526f6f86d340dafd25ae04f}{m\+\_\+time\+Delta\+Ms}
+\item 
+const uint32\+\_\+t \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a96ae1248a1019b22cf41bae4a47314c2}{m\+\_\+threshold\+Ms}
+\item 
+bool \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a6e4edcfa3fcd639b23195119f2b28bd3}{m\+\_\+assert}
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ boost\+::posix\+\_\+time\+::ptime, uint32\+\_\+t $>$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a1495aff37899fa6b011aed1b4283db18}{t\+\_\+elem}
+\item 
+typedef std\+::deque$<$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a1495aff37899fa6b011aed1b4283db18}{t\+\_\+elem} $>$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a71d5e67cb282762c880dc4986e5a8d7c}{t\+\_\+samples}
+\item 
+typedef std\+::deque$<$ boost\+::posix\+\_\+time\+::ptime $>$ \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a901afa3b937939c2132a593d4a801cad}{t\+\_\+timevect}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a1430fd5ff91e960a251b0656c2b5c0ca}{update\+\_\+safe} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Avg\+Timed\+Value.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!t\+\_\+elem@{t\+\_\+elem}}
+\index{t\+\_\+elem@{t\+\_\+elem}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+elem}{t_elem}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$boost\+::posix\+\_\+time\+::ptime, uint32\+\_\+t$>$ {\bf xtd\+::counters\+::\+Avg\+Timed\+Value\+::t\+\_\+elem}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a1495aff37899fa6b011aed1b4283db18}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a1495aff37899fa6b011aed1b4283db18}
+
+
+Definition at line 24 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!t\+\_\+samples@{t\+\_\+samples}}
+\index{t\+\_\+samples@{t\+\_\+samples}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+samples}{t_samples}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::deque$<${\bf t\+\_\+elem}$>$ {\bf xtd\+::counters\+::\+Avg\+Timed\+Value\+::t\+\_\+samples}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a71d5e67cb282762c880dc4986e5a8d7c}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a71d5e67cb282762c880dc4986e5a8d7c}
+
+
+Definition at line 25 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!t\+\_\+sptr@{t\+\_\+sptr}}
+\index{t\+\_\+sptr@{t\+\_\+sptr}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+sptr}{t_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<${\bf Avg\+Timed\+Value}$>$ {\bf xtd\+::counters\+::\+Avg\+Timed\+Value\+::t\+\_\+sptr}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a68434add28044efc37c616ec7002d0f8}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a68434add28044efc37c616ec7002d0f8}
+
+
+Definition at line 29 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!t\+\_\+timevect@{t\+\_\+timevect}}
+\index{t\+\_\+timevect@{t\+\_\+timevect}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+timevect}{t_timevect}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::deque$<$ boost\+::posix\+\_\+time\+::ptime $>$ {\bf xtd\+::counters\+::\+Avg\+Timed\+Value\+::t\+\_\+timevect}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a901afa3b937939c2132a593d4a801cad}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a901afa3b937939c2132a593d4a801cad}
+
+
+Definition at line 26 of file Avg\+Timed\+Value.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!Avg\+Timed\+Value@{Avg\+Timed\+Value}}
+\index{Avg\+Timed\+Value@{Avg\+Timed\+Value}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{Avg\+Timed\+Value(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+nb\+Thread, uint32\+\_\+t p\+\_\+time\+Delta\+Ms=5 $\ast$60 $\ast$1000, uint32\+\_\+t p\+\_\+threshold\+Ms=0)}{AvgTimedValue(const string &p_name, uint32_t p_nbThread, uint32_t p_timeDeltaMs=5 *60 *1000, uint32_t p_thresholdMs=0)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Avg\+Timed\+Value\+::\+Avg\+Timed\+Value (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+nb\+Thread, }
+\item[{uint32\+\_\+t}]{p\+\_\+time\+Delta\+Ms = {\ttfamily 5~$\ast$~60~$\ast$~1000}, }
+\item[{uint32\+\_\+t}]{p\+\_\+threshold\+Ms = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a2c4e692d5e33a1155d7c869be55af0de}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a2c4e692d5e33a1155d7c869be55af0de}
+
+
+Definition at line 16 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+19                                                      :
+20   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a93e934ad70d5b32b14beed5572450abf}{Composed}(p\_name),
+21   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_af33c7f1f69e37ef49e4195de8f4ac6e2}{m\_samples}(),
+22   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}{m\_startTimes}(p\_nbThread),
+23   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\_reseted}(p\_nbThread, 0),
+24   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}{m\_globalPerf}(\textcolor{stringliteral}{"perf"}),
+25   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}{m\_instantPerf}(\textcolor{stringliteral}{"instant.perf"}),
+26   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{m\_mean}(\textcolor{stringliteral}{"RTT.moy"}),
+27   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{m\_min}(\textcolor{stringliteral}{"RTT.min"}),
+28   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{m\_max}(\textcolor{stringliteral}{"RTT.max"}),
+29   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}{m\_overThreshold}(\textcolor{stringliteral}{"RTT.threshold"}),
+30   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a2986c9cf3526f6f86d340dafd25ae04f}{m\_timeDeltaMs}(p\_timeDeltaMs),
+31   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a96ae1248a1019b22cf41bae4a47314c2}{m\_thresholdMs}(p\_thresholdMs),
+32   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a6e4edcfa3fcd639b23195119f2b28bd3}{m\_assert}(\textcolor{keyword}{false})
+33 \{
+34   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}{m\_globalPerf});
+35   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}{m\_instantPerf});
+36   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{m\_mean});
+37   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{m\_min});
+38   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{m\_max});
+39   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}{m\_overThreshold});
+40 
+41   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{m\_mean}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+42   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{m\_min}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+43   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{m\_max}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+44   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}{m\_overThreshold} = 0;
+45   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}{m\_globalPerf}    = 0;
+46   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}{m\_instantPerf}   = 0;
+47 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a2c4e692d5e33a1155d7c869be55af0de_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!````~Avg\+Timed\+Value@{$\sim$\+Avg\+Timed\+Value}}
+\index{````~Avg\+Timed\+Value@{$\sim$\+Avg\+Timed\+Value}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{$\sim$\+Avg\+Timed\+Value(void)}{~AvgTimedValue(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual xtd\+::counters\+::\+Avg\+Timed\+Value\+::$\sim$\+Avg\+Timed\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a08aa140f45a1160943a494e5eab59aa7}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a08aa140f45a1160943a494e5eab59aa7}
+
+
+Definition at line 37 of file Avg\+Timed\+Value.\+hh.
+
+
+\begin{DoxyCode}
+37 \{\};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a08aa140f45a1160943a494e5eab59aa7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!add\+Response\+Time@{add\+Response\+Time}}
+\index{add\+Response\+Time@{add\+Response\+Time}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{add\+Response\+Time(uint32\+\_\+t p\+\_\+time\+Us)}{addResponseTime(uint32_t p_timeUs)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Avg\+Timed\+Value\+::add\+Response\+Time (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+time\+Us}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a8d3f9dbf787c7c307957038a879fb69a}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a8d3f9dbf787c7c307957038a879fb69a}
+
+
+Definition at line 84 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+85 \{
+86   boost::mutex::scoped\_lock l\_lock(\hyperlink{classxtd_1_1counters_1_1Base_aeeac2ffcae02eb6341418d708188a353}{m\_mutex});
+87   responsetime\_safe(p\_timeUs);
+88 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a8d3f9dbf787c7c307957038a879fb69a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a8d3f9dbf787c7c307957038a879fb69a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!set\+Assert@{set\+Assert}}
+\index{set\+Assert@{set\+Assert}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{set\+Assert(const bool p\+\_\+assert)}{setAssert(const bool p_assert)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Avg\+Timed\+Value\+::set\+Assert (
+\begin{DoxyParamCaption}
+\item[{const bool}]{p\+\_\+assert}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a789b1bdb5596f6cb332435892411dbb0}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a789b1bdb5596f6cb332435892411dbb0}
+
+
+Definition at line 197 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+198 \{
+199   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a6e4edcfa3fcd639b23195119f2b28bd3}{m\_assert} = p\_assert;
+200 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a789b1bdb5596f6cb332435892411dbb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!start\+Chrono@{start\+Chrono}}
+\index{start\+Chrono@{start\+Chrono}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{start\+Chrono(uint32\+\_\+t p\+\_\+request\+I\+D)}{startChrono(uint32_t p_requestID)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Avg\+Timed\+Value\+::start\+Chrono (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_ab5b5b6e1b4dae4bb4172ebc11ffc7c91}{}\label{classxtd_1_1counters_1_1AvgTimedValue_ab5b5b6e1b4dae4bb4172ebc11ffc7c91}
+
+
+Definition at line 50 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+51 \{
+52   \textcolor{keywordflow}{if}(\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\_reseted}[p\_requestID] == 1)
+53   \{
+54     logger::crit(\textcolor{stringliteral}{"counters.avgtimedvalue"}, \textcolor{stringliteral}{"AvgTimedValue chrono started but not stopped (ID:%d)!!! Cancel
+       init start date. "}, p\_requestID, HERE);
+55   \}
+56   \textcolor{keywordflow}{else}
+57   \{
+58     \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}{m\_startTimes}[p\_requestID] = bpt::microsec\_clock::local\_time();
+59   \}
+60 
+61   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\_reseted}[p\_requestID] = 1;
+62 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_ab5b5b6e1b4dae4bb4172ebc11ffc7c91_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!stop\+Chrono@{stop\+Chrono}}
+\index{stop\+Chrono@{stop\+Chrono}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{stop\+Chrono(uint32\+\_\+t p\+\_\+request\+I\+D)}{stopChrono(uint32_t p_requestID)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Avg\+Timed\+Value\+::stop\+Chrono (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a9a6818ff8c4f882a1445e9c49ed79e0f}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a9a6818ff8c4f882a1445e9c49ed79e0f}
+
+
+Definition at line 65 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+66 \{
+67   boost::mutex::scoped\_lock l\_lock(\hyperlink{classxtd_1_1counters_1_1Base_aeeac2ffcae02eb6341418d708188a353}{m\_mutex});
+68 
+69   \textcolor{keywordflow}{if} (\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\_reseted}[p\_requestID] == 0)
+70   \{
+71     logger::crit(\textcolor{stringliteral}{"counters.avgtimedvalue"}, \textcolor{stringliteral}{"AvgTimedValue chrono stopped but not started (ID:%d)!!! Value
+       is discarded. "}, p\_requestID, HERE);
+72     \textcolor{keywordflow}{return};
+73   \}
+74 
+75   bpt::ptime         l\_now      = bpt::microsec\_clock::local\_time();
+76   bpt::time\_duration l\_diffTime = l\_now - \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}{m\_startTimes}[p\_requestID];
+77   uint32\_t           l\_timeUs   = l\_diffTime.total\_microseconds();
+78 
+79   responsetime\_safe(l\_timeUs);
+80   \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{m\_reseted}[p\_requestID] = 0;
+81 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a9a6818ff8c4f882a1445e9c49ed79e0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!update\+\_\+safe@{update\+\_\+safe}}
+\index{update\+\_\+safe@{update\+\_\+safe}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{update\+\_\+safe(void)}{update_safe(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Avg\+Timed\+Value\+::update\+\_\+safe (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a1430fd5ff91e960a251b0656c2b5c0ca}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a1430fd5ff91e960a251b0656c2b5c0ca}
+
+
+Reimplemented from \hyperlink{classxtd_1_1counters_1_1Composed_ab6c13e603340cd00da4edc968d747c4d}{xtd\+::counters\+::\+Composed}.
+
+
+
+Definition at line 161 of file Avg\+Timed\+Value.\+cc.
+
+
+\begin{DoxyCode}
+162 \{
+163   shrink\_safe();
+164 
+165   \textcolor{keywordflow}{if} (\hyperlink{classxtd_1_1counters_1_1AvgTimedValue_af33c7f1f69e37ef49e4195de8f4ac6e2}{m\_samples}.empty())
+166   \{
+167     \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{m\_min}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+168     \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{m\_max}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+169     \hyperlink{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{m\_mean}.\hyperlink{classxtd_1_1counters_1_1Value_ab206db077ef38ac776a7e64774f56f2b}{NaN}();
+170   \}
+171   \textcolor{keywordflow}{else}
+172     compute\_safe();
+173 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a1430fd5ff91e960a251b0656c2b5c0ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgTimedValue_a1430fd5ff91e960a251b0656c2b5c0ca_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 21 of file Avg\+Timed\+Value.\+hh.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+assert@{m\+\_\+assert}}
+\index{m\+\_\+assert@{m\+\_\+assert}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+assert}{m_assert}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+assert}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a6e4edcfa3fcd639b23195119f2b28bd3}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a6e4edcfa3fcd639b23195119f2b28bd3}
+
+
+Definition at line 67 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+global\+Perf@{m\+\_\+global\+Perf}}
+\index{m\+\_\+global\+Perf@{m\+\_\+global\+Perf}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+global\+Perf}{m_globalPerf}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Freq} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+global\+Perf}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}{}\label{classxtd_1_1counters_1_1AvgTimedValue_ad0b3148989210f269416e5af2169278e}
+
+
+Definition at line 59 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+instant\+Perf@{m\+\_\+instant\+Perf}}
+\index{m\+\_\+instant\+Perf@{m\+\_\+instant\+Perf}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+instant\+Perf}{m_instantPerf}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instant\+Freq} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+instant\+Perf}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a16f6336d72850b29aa10a97d72309ec4}
+
+
+Definition at line 60 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+max@{m\+\_\+max}}
+\index{m\+\_\+max@{m\+\_\+max}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+max}{m_max}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value32} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+max}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a90ef2640c6d711a3eef2585aaef50afb}
+
+
+Definition at line 63 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+mean@{m\+\_\+mean}}
+\index{m\+\_\+mean@{m\+\_\+mean}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+mean}{m_mean}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value32} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+mean}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}{}\label{classxtd_1_1counters_1_1AvgTimedValue_ab0eb52c60a1fe28c6ea148270ca8cc74}
+
+
+Definition at line 61 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+min@{m\+\_\+min}}
+\index{m\+\_\+min@{m\+\_\+min}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+min}{m_min}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value32} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+min}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}{}\label{classxtd_1_1counters_1_1AvgTimedValue_aeed066e7062c73d577033308bc0344bf}
+
+
+Definition at line 62 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+over\+Threshold@{m\+\_\+over\+Threshold}}
+\index{m\+\_\+over\+Threshold@{m\+\_\+over\+Threshold}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+over\+Threshold}{m_overThreshold}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value32} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+over\+Threshold}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a7a91ad83dade8f67c4df8150ddb33060}
+
+
+Definition at line 64 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+reseted@{m\+\_\+reseted}}
+\index{m\+\_\+reseted@{m\+\_\+reseted}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+reseted}{m_reseted}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$uint32\+\_\+t$>$ xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+reseted}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a9f3477cd3eb3fb75f2ba8d75d706eb88}
+
+
+Definition at line 58 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+samples@{m\+\_\+samples}}
+\index{m\+\_\+samples@{m\+\_\+samples}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+samples}{m_samples}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+samples} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+samples}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_af33c7f1f69e37ef49e4195de8f4ac6e2}{}\label{classxtd_1_1counters_1_1AvgTimedValue_af33c7f1f69e37ef49e4195de8f4ac6e2}
+
+
+Definition at line 56 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+start\+Times@{m\+\_\+start\+Times}}
+\index{m\+\_\+start\+Times@{m\+\_\+start\+Times}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+start\+Times}{m_startTimes}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\+\_\+timevect} xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+start\+Times}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}{}\label{classxtd_1_1counters_1_1AvgTimedValue_aff4e550c326e9e16ad2f9e5ff384ae2e}
+
+
+Definition at line 57 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+threshold\+Ms@{m\+\_\+threshold\+Ms}}
+\index{m\+\_\+threshold\+Ms@{m\+\_\+threshold\+Ms}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+threshold\+Ms}{m_thresholdMs}}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+threshold\+Ms}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a96ae1248a1019b22cf41bae4a47314c2}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a96ae1248a1019b22cf41bae4a47314c2}
+
+
+Definition at line 66 of file Avg\+Timed\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}!m\+\_\+time\+Delta\+Ms@{m\+\_\+time\+Delta\+Ms}}
+\index{m\+\_\+time\+Delta\+Ms@{m\+\_\+time\+Delta\+Ms}!xtd\+::counters\+::\+Avg\+Timed\+Value@{xtd\+::counters\+::\+Avg\+Timed\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+time\+Delta\+Ms}{m_timeDeltaMs}}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t xtd\+::counters\+::\+Avg\+Timed\+Value\+::m\+\_\+time\+Delta\+Ms}\hypertarget{classxtd_1_1counters_1_1AvgTimedValue_a2986c9cf3526f6f86d340dafd25ae04f}{}\label{classxtd_1_1counters_1_1AvgTimedValue_a2986c9cf3526f6f86d340dafd25ae04f}
+
+
+Definition at line 65 of file Avg\+Timed\+Value.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{AvgTimedValue_8hh}{Avg\+Timed\+Value.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{AvgTimedValue_8cc}{Avg\+Timed\+Value.\+cc}\end{DoxyCompactItemize}

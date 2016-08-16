@@ -1,0 +1,275 @@
+\hypertarget{classxtd_1_1counters_1_1Cache}{}\section{xtd\+:\+:counters\+:\+:Cache Class Reference}
+\label{classxtd_1_1counters_1_1Cache}\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+
+
+{\ttfamily \#include $<$Cache.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1Cache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1Cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1counters_1_1Cache}{Cache} $>$ \hyperlink{classxtd_1_1counters_1_1Cache_ad248c57507dbfd4b90332551fd0d5f1b}{t\+\_\+sptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Cache_a73df8a43eff5fd364e41dccabc562d54}{Cache} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+delta\+Time\+Ms=10000)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Cache_a57101c273f95f2cf4d5a71627f0b23de}{hit} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Cache_a71c25293724fa534633e6d5c9f2cc36d}{miss} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Cache_a419b5620c93818158193cb6aca015c9b}{invalid} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Cache_a42ea3f207a0399b1864f3ee918e8a0e4}{valid} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Cache_a827a66e44b127d38c5f808fa38a2535a}{filtered} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1Cache_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+On choisi l\textquotesingle{}heritage plutot que la composition pour garder une coherence sur la visibilite des methodes internes collect\+\_\+safe update\+\_\+safe (qu\textquotesingle{}on serait onbligé de mettre en public ou en friend pour faire de la composition). 
+
+Definition at line 22 of file Cache.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!t\+\_\+sptr@{t\+\_\+sptr}}
+\index{t\+\_\+sptr@{t\+\_\+sptr}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{t\+\_\+sptr}{t_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::shared\+\_\+ptr$<${\bf Cache}$>$ {\bf xtd\+::counters\+::\+Cache\+::t\+\_\+sptr}}\hypertarget{classxtd_1_1counters_1_1Cache_ad248c57507dbfd4b90332551fd0d5f1b}{}\label{classxtd_1_1counters_1_1Cache_ad248c57507dbfd4b90332551fd0d5f1b}
+
+
+Definition at line 27 of file Cache.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!Cache@{Cache}}
+\index{Cache@{Cache}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{Cache(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+delta\+Time\+Ms=10000)}{Cache(const string &p_name, uint32_t p_deltaTimeMs=10000)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Cache\+::\+Cache (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+delta\+Time\+Ms = {\ttfamily 10000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a73df8a43eff5fd364e41dccabc562d54}{}\label{classxtd_1_1counters_1_1Cache_a73df8a43eff5fd364e41dccabc562d54}
+
+
+Definition at line 9 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+10                                             :
+11   \hyperlink{classxtd_1_1counters_1_1Cache_a93e934ad70d5b32b14beed5572450abf}{Composed}(p\_name),
+12   m\_nb                   (\textcolor{stringliteral}{"requests"}),
+13   m\_nbFiltered           (\textcolor{stringliteral}{"requests.filtered"}),
+14   m\_nbAccepted           (\textcolor{stringliteral}{"requests.accepted"}),
+15   m\_nbAcceptedMiss       (\textcolor{stringliteral}{"requests.accepted.miss"}),
+16   m\_nbAcceptedHit        (\textcolor{stringliteral}{"requests.accepted.hit"}),
+17   m\_nbAcceptedHitInvalid (\textcolor{stringliteral}{"requests.accepted.hit.invalid"}),
+18   m\_nbAcceptedHitValid   (\textcolor{stringliteral}{"requests.accepted.hit.valid"}),
+19   m\_freqHit              (\textcolor{stringliteral}{"perf.hit"}),
+20   m\_freqMiss             (\textcolor{stringliteral}{"perf.miss"}),
+21   m\_iFreqHit             (\textcolor{stringliteral}{"perf.instant.hit"}, p\_deltaTimeMs),
+22   m\_iFreqMiss            (\textcolor{stringliteral}{"perf.instant.miss"}, p\_deltaTimeMs)
+23 \{
+24   m\_nb                   = 0;
+25   m\_nbFiltered           = 0;
+26   m\_nbAccepted           = 0;
+27   m\_nbAcceptedMiss       = 0;
+28   m\_nbAcceptedHit        = 0;
+29   m\_nbAcceptedHitInvalid = 0;
+30   m\_nbAcceptedHitValid   = 0;
+31 
+32   m\_freqMiss    = 0;
+33   m\_freqHit     = 0;
+34   m\_iFreqMiss   = 0;
+35   m\_iFreqHit    = 0;
+36 
+37   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nb);
+38   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbFiltered);
+39   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbAccepted);
+40   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbAcceptedMiss);
+41   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbAcceptedHit);
+42   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbAcceptedHitInvalid);
+43   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_nbAcceptedHitValid);
+44   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_freqMiss);
+45   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_freqHit);
+46   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_iFreqMiss);
+47   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_iFreqHit);
+48 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Cache_a73df8a43eff5fd364e41dccabc562d54_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!filtered@{filtered}}
+\index{filtered@{filtered}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{filtered(void)}{filtered(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Cache\+::filtered (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a827a66e44b127d38c5f808fa38a2535a}{}\label{classxtd_1_1counters_1_1Cache_a827a66e44b127d38c5f808fa38a2535a}
+
+
+Definition at line 83 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+84 \{
+85   m\_nb++;
+86   m\_nbFiltered++;
+87 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!hit@{hit}}
+\index{hit@{hit}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{hit(void)}{hit(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Cache\+::hit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a57101c273f95f2cf4d5a71627f0b23de}{}\label{classxtd_1_1counters_1_1Cache_a57101c273f95f2cf4d5a71627f0b23de}
+
+
+Definition at line 51 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+52 \{
+53   m\_nb++;
+54   m\_nbAccepted++;
+55   m\_nbAcceptedHit++;
+56   m\_freqHit.\hyperlink{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}{tick}();
+57   m\_iFreqHit.\hyperlink{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}{tick}();
+58 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Cache_a57101c273f95f2cf4d5a71627f0b23de_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!invalid@{invalid}}
+\index{invalid@{invalid}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{invalid(void)}{invalid(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Cache\+::invalid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a419b5620c93818158193cb6aca015c9b}{}\label{classxtd_1_1counters_1_1Cache_a419b5620c93818158193cb6aca015c9b}
+
+
+Definition at line 71 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+72 \{
+73   m\_nbAcceptedHitInvalid++;
+74 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!miss@{miss}}
+\index{miss@{miss}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{miss(void)}{miss(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Cache\+::miss (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a71c25293724fa534633e6d5c9f2cc36d}{}\label{classxtd_1_1counters_1_1Cache_a71c25293724fa534633e6d5c9f2cc36d}
+
+
+Definition at line 61 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+62 \{
+63   m\_nb++;
+64   m\_nbAccepted++;
+65   m\_nbAcceptedMiss++;
+66   m\_freqMiss.\hyperlink{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}{tick}();
+67   m\_iFreqMiss.\hyperlink{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}{tick}();
+68 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1Cache_a71c25293724fa534633e6d5c9f2cc36d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!valid@{valid}}
+\index{valid@{valid}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{valid(void)}{valid(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Cache\+::valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Cache_a42ea3f207a0399b1864f3ee918e8a0e4}{}\label{classxtd_1_1counters_1_1Cache_a42ea3f207a0399b1864f3ee918e8a0e4}
+
+
+Definition at line 77 of file Cache.\+cc.
+
+
+\begin{DoxyCode}
+78 \{
+79   m\_nbAcceptedHitValid++;
+80 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Cache@{xtd\+::counters\+::\+Cache}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1Cache_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1Cache_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 24 of file Cache.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Cache_8hh}{Cache.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Cache_8cc}{Cache.\+cc}\end{DoxyCompactItemize}

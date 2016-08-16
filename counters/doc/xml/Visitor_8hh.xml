@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Visitor_8hh" kind="file" language="C++">
+    <compoundname>Visitor.hh</compoundname>
+    <includes local="no">types.hh</includes>
+    <includedby refid="Base_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Base.hh</includedby>
+    <includedby refid="JsonVisitor_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh</includedby>
+    <includedby refid="FileVisitor_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh</includedby>
+    <incdepgraph>
+      <node id="894">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Visitor.hh</label>
+        <link refid="Visitor.hh"/>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="908">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
+      </node>
+      <node id="920">
+        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh</label>
+        <link refid="ExtValue_8hh"/>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+      </node>
+      <node id="909">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc</label>
+        <link refid="InstantFreq_8cc"/>
+      </node>
+      <node id="914">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Value.cc</label>
+        <link refid="Value_8cc"/>
+      </node>
+      <node id="897">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="920" relation="include">
+        </childnode>
+      </node>
+      <node id="921">
+        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.cc</label>
+        <link refid="ExtValue_8cc"/>
+      </node>
+      <node id="923">
+        <label>/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh</label>
+        <link refid="FileVisitor_8hh"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+      </node>
+      <node id="917">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Base.cc</label>
+        <link refid="Base_8cc"/>
+      </node>
+      <node id="919">
+        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</label>
+        <link refid="CounterManager_8cc"/>
+      </node>
+      <node id="915">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="916" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+      </node>
+      <node id="918">
+        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh</label>
+        <link refid="CounterManager_8hh"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="916">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Composed.cc</label>
+        <link refid="Composed_8cc"/>
+      </node>
+      <node id="901">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="910">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+      </node>
+      <node id="904">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="896">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Visitor.hh</label>
+        <link refid="Visitor.hh"/>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+      </node>
+      <node id="903">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="904" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="911">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.cc</label>
+        <link refid="AvgValue_8cc"/>
+      </node>
+      <node id="902">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+      </node>
+      <node id="922">
+        <label>/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh</label>
+        <link refid="JsonVisitor_8hh"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="912">
+        <label>/home/psyco/dev/xtdcpp/counters/src/SumExt.hh</label>
+        <link refid="SumExt_8hh"/>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="913">
+        <label>/home/psyco/dev/xtdcpp/counters/src/SumExt.cc</label>
+        <link refid="SumExt_8cc"/>
+      </node>
+      <node id="907">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.cc</label>
+        <link refid="Freq_8cc"/>
+      </node>
+      <node id="900">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
+      </node>
+      <node id="899">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1Visitor" prot="public">xtd::counters::Visitor</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_VISITOR_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_VISITOR_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classxtd_1_1counters_1_1Visitor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/>uint8_t)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/>uint16_t)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/>uint32_t)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/>uint64_t)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_VISITOR_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Visitor.hh"/>
+  </compounddef>
+</doxygen>

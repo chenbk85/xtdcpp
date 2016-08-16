@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1counters" kind="namespace" language="C++">
+    <compoundname>xtd::counters</compoundname>
+    <innerclass refid="classxtd_1_1counters_1_1Atomic" prot="public">xtd::counters::Atomic</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1AvgExt" prot="public">xtd::counters::AvgExt</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1AvgTimedValue" prot="public">xtd::counters::AvgTimedValue</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1AvgValue" prot="public">xtd::counters::AvgValue</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Base" prot="public">xtd::counters::Base</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Cache" prot="public">xtd::counters::Cache</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Composed" prot="public">xtd::counters::Composed</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1CounterManager" prot="public">xtd::counters::CounterManager</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1ExtValue" prot="public">xtd::counters::ExtValue</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1FileVisitor" prot="public">xtd::counters::FileVisitor</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Freq" prot="public">xtd::counters::Freq</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1InstantFreq" prot="public">xtd::counters::InstantFreq</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1JsonVisitor" prot="public">xtd::counters::JsonVisitor</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Perf" prot="public">xtd::counters::Perf</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1SumExt" prot="public">xtd::counters::SumExt</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Value" prot="public">xtd::counters::Value</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Visitor" prot="public">xtd::counters::Visitor</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8" prot="public" static="no">
+        <name>exec_status</name>
+        <enumvalue id="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a1ee85f6c60017a7f0646ba8dc5824de6" prot="public">
+          <name>starting</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a75101dcdfc88455bcafc9e53e0b06689" prot="public">
+          <name>running</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8acb5e100e5a9a3e7f6d1fd97512215282" prot="public">
+          <name>error</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6" prot="public">
+          <name>ok</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/CounterManager.hh" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1a162dd5cde0e6fcc970c543f7420b4c14" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref>&lt; uint32_t &gt;</type>
+        <definition>typedef AvgValue&lt;uint32_t&gt; xtd::counters::AvgValue32</definition>
+        <argsstring></argsstring>
+        <name>AvgValue32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1aa43118623f65cdf1ba43bffd8f17ea0e" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref>&lt; uint64_t &gt;</type>
+        <definition>typedef AvgValue&lt;uint64_t&gt; xtd::counters::AvgValue64</definition>
+        <argsstring></argsstring>
+        <name>AvgValue64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1ae049cff0f00adb1728a511d333c2aa50" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1ExtValue" kindref="compound">ExtValue</ref>&lt; uint32_t &gt;</type>
+        <definition>typedef ExtValue&lt;uint32_t&gt; xtd::counters::ExtValue32</definition>
+        <argsstring></argsstring>
+        <name>ExtValue32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1ad0d26d26ad71069f92a20b6d870e4872" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1ExtValue" kindref="compound">ExtValue</ref>&lt; uint64_t &gt;</type>
+        <definition>typedef ExtValue&lt;uint64_t&gt; xtd::counters::ExtValue64</definition>
+        <argsstring></argsstring>
+        <name>ExtValue64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1a7e0abdd1fae0f70421c2e0ea3924db6f" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1SumExt" kindref="compound">SumExt</ref>&lt; uint32_t &gt;</type>
+        <definition>typedef SumExt&lt;uint32_t&gt; xtd::counters::SumExt32</definition>
+        <argsstring></argsstring>
+        <name>SumExt32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1a268d063d4f32d16f65c388b8791602e3" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1SumExt" kindref="compound">SumExt</ref>&lt; uint64_t &gt;</type>
+        <definition>typedef SumExt&lt;uint64_t&gt; xtd::counters::SumExt64</definition>
+        <argsstring></argsstring>
+        <name>SumExt64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/SumExt.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt; uint32_t &gt;</type>
+        <definition>typedef Value&lt;uint32_t&gt; xtd::counters::Value32</definition>
+        <argsstring></argsstring>
+        <name>Value32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1counters_1a20cdfbbbf5aa96abb1c5d461497d1769" prot="public" static="no">
+        <type><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt; uint64_t &gt;</type>
+        <definition>typedef Value&lt;uint64_t&gt; xtd::counters::Value64</definition>
+        <argsstring></argsstring>
+        <name>Value64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc" line="14" column="1"/>
+  </compounddef>
+</doxygen>

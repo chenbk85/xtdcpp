@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1bip_1_1Connection" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::bip::Connection</compoundname>
+    <basecompoundref refid="classxtd_1_1network_1_1base_1_1Connection" prot="public" virt="non-virtual">xtd::network::base::Connection&lt; Domain &gt;</basecompoundref>
+    <includes refid="bip_2Connection_8hh" local="no">Connection.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Domain</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Connection_1a5e395530dde4192ddd2b358e8f5af366" prot="private" static="no">
+        <type><ref refid="classxtd_1_1network_1_1base_1_1Connection" kindref="compound">base::Connection</ref>&lt; Domain &gt;</type>
+        <definition>typedef base::Connection&lt;Domain&gt; xtd::network::bip::Connection&lt; Domain &gt;::TBase</definition>
+        <argsstring></argsstring>
+        <name>TBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Connection_1a0b99dc924bede46b76d885828fcf5c2a" prot="private" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::network::bip::Connection&lt; Domain &gt;::mcs_headerSize</definition>
+        <argsstring></argsstring>
+        <name>mcs_headerSize</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Connection_1abc521841be594f2cb66681cf53f2807e" prot="private" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::network::bip::Connection&lt; Domain &gt;::mcs_maxDataCrcSize</definition>
+        <argsstring></argsstring>
+        <name>mcs_maxDataCrcSize</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Connection_1aaddebc65046e4ac9f05362510a6bc08f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" kindref="member">utils::vectorUint32_t</ref></type>
+        <definition>utils::vectorUint32_t xtd::network::bip::Connection&lt; Domain &gt;::m_header</definition>
+        <argsstring></argsstring>
+        <name>m_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="116" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Connection_1aa58b7210faaf68e8437548438656cb01" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref></type>
+        <definition>utils::vectorBytes_t xtd::network::bip::Connection&lt; Domain &gt;::m_inboundData</definition>
+        <argsstring></argsstring>
+        <name>m_inboundData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="117" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Connection_1ab3ae3c9569e9995a3e64ca3aea377fb7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Connection&lt; Domain &gt;::m_counter</definition>
+        <argsstring></argsstring>
+        <name>m_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1a5c981bbe6f8f26ac8eb25f70b2427d5c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::bip::Connection&lt; Domain &gt;::Connection</definition>
+        <argsstring>(const utils::Config &amp;p_configuration, boost::asio::io_service &amp;p_ioService, const string p_hostname, const uint32_t p_port)</argsstring>
+        <name>Connection</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref> &amp;</type>
+          <declname>p_configuration</declname>
+        </param>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>p_ioService</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>p_hostname</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1acac00964a4fc76de35cdb516e9d73051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::incCounter</definition>
+        <argsstring>(void)</argsstring>
+        <name>incCounter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="60" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1a49b1fef4b8572748848044b27231281b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t xtd::network::bip::Connection&lt; Domain &gt;::computeDataCrc</definition>
+        <argsstring>(const utils::vectorBytes_t &amp;p_data)</argsstring>
+        <name>computeDataCrc</name>
+        <param>
+          <type>const <ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref> &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1ab1d6af26d05d28bec5d05e3e431a19a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Connection&lt; Domain &gt;::calcCRC</definition>
+        <argsstring>(void const *p_buffer, size_t p_byteCount)</argsstring>
+        <name>calcCRC</name>
+        <param>
+          <type>void const *</type>
+          <declname>p_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>p_byteCount</declname>
+        </param>
+        <briefdescription>
+<para>calculates the CRC32 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to calculate the CRC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_byteCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to process </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t the CRC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="124" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1aeb42aaeb07f9a3426b77d37ca97a743f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t xtd::network::bip::Connection&lt; Domain &gt;::calcCRC8</definition>
+        <argsstring>(void const *p_buffer, size_t p_byteCount)</argsstring>
+        <name>calcCRC8</name>
+        <param>
+          <type>void const *</type>
+          <declname>p_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>p_byteCount</declname>
+        </param>
+        <briefdescription>
+<para>calculates the CRC8 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to calculate the CRC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_byteCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to process </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint8_t the CRC </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1ad000841f4e3d649740ec64f1b10078a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::async_write</definition>
+        <argsstring>(utils::sharedBuf_t p_outData, utils::handler_t p_onSent)</argsstring>
+        <name>async_write</name>
+        <reimplements refid="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4">async_write</reimplements>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1ad9891e66c48ddf2871a9f3c57e05ff5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::async_read</definition>
+        <argsstring>(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>async_read</name>
+        <reimplements refid="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6">async_read</reimplements>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1aed4825983fc47fd6202647097e08e623" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::onSent</definition>
+        <argsstring>(boost::system::error_code p_error, size_t, boost::shared_ptr&lt; utils::vectorUint32_t &gt; p_outHeader, utils::sharedBuf_t p_outData, utils::handler_t p_onSent)</argsstring>
+        <name>onSent</name>
+        <param>
+          <type>boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" kindref="member">utils::vectorUint32_t</ref> &gt;</type>
+          <declname>p_outHeader</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1aac9748b98ae47933c597d1df0202585e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::onHeaderReceived</definition>
+        <argsstring>(const boost::system::error_code &amp;p_error, size_t, utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>onHeaderReceived</name>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1a125f7efc55d98a45bc1f8943e3bcfa20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::receive_data</definition>
+        <argsstring>(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>receive_data</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1a0f7aba57bb18982bc12a3ae488a419b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::do_receive_data</definition>
+        <argsstring>(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>do_receive_data</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Connection_1aa419d3171235eaab2aa9896a25ea493a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Connection&lt; Domain &gt;::onDataReceived</definition>
+        <argsstring>(const boost::system::error_code &amp;p_error, size_t, utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>onDataReceived</name>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="109" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><heading level="2">Format </heading>
+</para><para>Un message bip est composé de deux parties :<itemizedlist>
+<listitem><para>un header : une suite de Connection::mcs_headerSize uint32_t (donc taille fixe)</para></listitem><listitem><para>une data : une suite de taille variable de uint8</para></listitem><listitem><para>un crc de data : un crc en uint8 calculé sur les Connection::mcs_maxDataCrcSize derniers octects de la partie donnée.</para></listitem></itemizedlist>
+</para><para>Le header embarque 3 informations :<itemizedlist>
+<listitem><para>la taille de la partie donnée (comptabilise le crc finale) en nombre d&apos;octect</para></listitem><listitem><para>un identifiant de requête croissant (s&apos;incrémente à chaque requete)</para></listitem><listitem><para>un crc de header calculé sur les (Connection::mcs_headerSize - 1) unit32 du header</para></listitem></itemizedlist>
+</para><para>A la réception :<itemizedlist>
+<listitem><para>on commence par lire le header</para></listitem><listitem><para>on vérifie l&apos;integrité du header en comparant le crc de header reçu et le crc du header re-calculé</para></listitem><listitem><para>on extrait la taille du message N attendu a partir du header, on on va lire sur la socket ces N octects.</para></listitem></itemizedlist>
+</para><para>A la réception de la partie donnée :<itemizedlist>
+<listitem><para>on vérifie l&apos;intégrité du message en comparant le crc de donnée contenu dans dernier octet du message au crc recalculé.</para></listitem></itemizedlist>
+</para><para><heading level="2">Séquence de dialogue </heading>
+</para><para><image type="html" name="bip_flow.png"></image>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="223">
+        <label>xtd::network::base::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Connection"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>xtd::network::bip::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1Connection"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>noncopyable</label>
+      </node>
+      <node id="224">
+        <label>boost::enable_shared_from_this&lt; Connection&lt; Domain &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="227">
+        <label>xtd::network::base::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Connection"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="229" relation="public-inheritance">
+        </childnode>
+        <childnode refid="230" relation="usage">
+          <edgelabel>m_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="226">
+        <label>xtd::network::bip::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1Connection"/>
+        <childnode refid="227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>noncopyable</label>
+      </node>
+      <node id="230">
+        <label>xtd::network::utils::Config</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1Config"/>
+      </node>
+      <node id="228">
+        <label>boost::enable_shared_from_this&lt; Connection&lt; Domain &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh" bodystart="43" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>accept</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ad9891e66c48ddf2871a9f3c57e05ff5f" prot="private" virt="virtual"><scope>xtd::network::bip::Connection</scope><name>async_read</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ad000841f4e3d649740ec64f1b10078a1" prot="private" virt="virtual"><scope>xtd::network::bip::Connection</scope><name>async_write</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ab1d6af26d05d28bec5d05e3e431a19a2" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>calcCRC</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aeb42aaeb07f9a3426b77d37ca97a743f" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>calcCRC8</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a0bde1ab3f89862d0680c820645b7244d" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>cancel</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>close</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>cnx_sptr_t</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a49b1fef4b8572748848044b27231281b" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>computeDataCrc</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>connect</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a5c981bbe6f8f26ac8eb25f70b2427d5c" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>Connection</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a0f7aba57bb18982bc12a3ae488a419b4" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>do_receive_data</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>getProcessID</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1acac00964a4fc76de35cdb516e9d73051" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>incCounter</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a6f249c285df79485b06f9c7b6ed03237" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>info</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_conf</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ab3ae3c9569e9995a3e64ca3aea377fb7" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_counter</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aaddebc65046e4ac9f05362510a6bc08f" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_header</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aa58b7210faaf68e8437548438656cb01" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_inboundData</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_socket</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>m_strand</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a0b99dc924bede46b76d885828fcf5c2a" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>mcs_headerSize</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1abc521841be594f2cb66681cf53f2807e" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>mcs_maxDataCrcSize</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aa419d3171235eaab2aa9896a25ea493a" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>onDataReceived</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aac9748b98ae47933c597d1df0202585e" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>onHeaderReceived</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aed4825983fc47fd6202647097e08e623" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>onSent</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>receive</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a125f7efc55d98a45bc1f8943e3bcfa20" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>receive_data</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>send</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" prot="public" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>setProcessID</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a5e395530dde4192ddd2b358e8f5af366" prot="private" virt="non-virtual"><scope>xtd::network::bip::Connection</scope><name>TBase</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a51f309c311421eb6a378354914816fac" prot="public" virt="virtual"><scope>xtd::network::bip::Connection</scope><name>~Connection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

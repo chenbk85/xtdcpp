@@ -1,0 +1,85 @@
+\hypertarget{structboost_1_1property__tree_1_1json__parser_1_1translator}{}\section{boost\+:\+:property\+\_\+tree\+:\+:json\+\_\+parser\+:\+:translator$<$ T $>$ Struct Template Reference}
+\label{structboost_1_1property__tree_1_1json__parser_1_1translator}\index{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ T $>$@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$json\+\_\+parser.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_aa6939259165594c66343c4fd2b92fee0}{internal\+\_\+type}
+\item 
+typedef T \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_a41e329b10777c2a4a756b65911746a8a}{external\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::optional$<$ T $>$ \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_aef3c8478be3ecb503113f433ece01628}{get\+\_\+value} (const std\+::string \&v)
+\item 
+boost\+::optional$<$ std\+::string $>$ \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_aab997fa3043e1decab15845b61a9c801}{put\+\_\+value} (const T \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+struct boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ T $>$}
+
+
+
+Definition at line 52 of file json\+\_\+parser.\+hpp.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}!external\+\_\+type@{external\+\_\+type}}
+\index{external\+\_\+type@{external\+\_\+type}!boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}}
+\subsubsection[{\texorpdfstring{external\+\_\+type}{external_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ typedef T {\bf boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}$<$ T $>$\+::{\bf external\+\_\+type}}\hypertarget{structboost_1_1property__tree_1_1json__parser_1_1translator_a41e329b10777c2a4a756b65911746a8a}{}\label{structboost_1_1property__tree_1_1json__parser_1_1translator_a41e329b10777c2a4a756b65911746a8a}
+
+
+Definition at line 55 of file json\+\_\+parser.\+hpp.
+
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}!internal\+\_\+type@{internal\+\_\+type}}
+\index{internal\+\_\+type@{internal\+\_\+type}!boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}}
+\subsubsection[{\texorpdfstring{internal\+\_\+type}{internal_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ typedef std\+::string {\bf boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}$<$ T $>$\+::{\bf internal\+\_\+type}}\hypertarget{structboost_1_1property__tree_1_1json__parser_1_1translator_aa6939259165594c66343c4fd2b92fee0}{}\label{structboost_1_1property__tree_1_1json__parser_1_1translator_aa6939259165594c66343c4fd2b92fee0}
+
+
+Definition at line 54 of file json\+\_\+parser.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}!get\+\_\+value@{get\+\_\+value}}
+\index{get\+\_\+value@{get\+\_\+value}!boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}}
+\subsubsection[{\texorpdfstring{get\+\_\+value(const std\+::string \&v)}{get_value(const std::string &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ boost\+::optional$<$T$>$ {\bf boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}$<$ T $>$\+::get\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structboost_1_1property__tree_1_1json__parser_1_1translator_aef3c8478be3ecb503113f433ece01628}{}\label{structboost_1_1property__tree_1_1json__parser_1_1translator_aef3c8478be3ecb503113f433ece01628}
+
+
+Definition at line 57 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+57 \{ \textcolor{keywordflow}{return} boost::lexical\_cast<T>(v); \}
+\end{DoxyCode}
+\index{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}!put\+\_\+value@{put\+\_\+value}}
+\index{put\+\_\+value@{put\+\_\+value}!boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator@{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}}
+\subsubsection[{\texorpdfstring{put\+\_\+value(const T \&v)}{put_value(const T &v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ boost\+::optional$<$std\+::string$>$ {\bf boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator}$<$ T $>$\+::put\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structboost_1_1property__tree_1_1json__parser_1_1translator_aab997fa3043e1decab15845b61a9c801}{}\label{structboost_1_1property__tree_1_1json__parser_1_1translator_aab997fa3043e1decab15845b61a9c801}
+
+
+Definition at line 58 of file json\+\_\+parser.\+hpp.
+
+
+\begin{DoxyCode}
+58 \{ \textcolor{keywordflow}{return} boost::lexical\_cast<std::string>(v); \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{json__parser_8hpp}{json\+\_\+parser.\+hpp}\end{DoxyCompactItemize}

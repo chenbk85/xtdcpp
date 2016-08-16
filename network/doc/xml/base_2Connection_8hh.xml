@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="base_2Connection_8hh" kind="file" language="C++">
+    <compoundname>Connection.hh</compoundname>
+    <includes local="no">boost/asio.hpp</includes>
+    <includes local="no">types.hh</includes>
+    <includes refid="Config_8hh" local="yes">utils/Config.hh</includes>
+    <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
+    <includes refid="Resolver_8hh" local="yes">utils/Resolver.hh</includes>
+    <includedby refid="base_2Connection_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</includedby>
+    <includedby refid="bip_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</includedby>
+    <includedby refid="http_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</includedby>
+    <incdepgraph>
+      <node id="1328">
+        <label>list</label>
+      </node>
+      <node id="1336">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1320">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1338">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1316">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1315">
+        <label>cstdint</label>
+      </node>
+      <node id="1322">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="1340">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1334">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1325" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1333" relation="include">
+        </childnode>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+      </node>
+      <node id="1319">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1329">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1314">
+        <label>string</label>
+      </node>
+      <node id="1326">
+        <label>map</label>
+      </node>
+      <node id="1321">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1323">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+      </node>
+      <node id="1311">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1333">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1324">
+        <label>utils/CacheDns.hh</label>
+        <link refid="CacheDns_8hh"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1325" relation="include">
+        </childnode>
+        <childnode refid="1326" relation="include">
+        </childnode>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+        <childnode refid="1331" relation="include">
+        </childnode>
+        <childnode refid="1332" relation="include">
+        </childnode>
+        <childnode refid="1333" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1339">
+        <label>ctime</label>
+      </node>
+      <node id="1331">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1325">
+        <label>vector</label>
+      </node>
+      <node id="1335">
+        <label>streambuf</label>
+      </node>
+      <node id="1327">
+        <label>utility</label>
+      </node>
+      <node id="1337">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1318">
+        <label>deque</label>
+      </node>
+      <node id="1330">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="1332">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1317">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+      <node id="1310">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base/Connection.hh"/>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1343">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="1344" relation="include">
+        </childnode>
+      </node>
+      <node id="1344">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
+      </node>
+      <node id="1345">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http_2Connection_8hh"/>
+        <childnode refid="1346" relation="include">
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
+      </node>
+      <node id="1341">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base/Connection.hh"/>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+      </node>
+      <node id="1342">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
+        <link refid="base_2Connection_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1network_1_1base_1_1Connection" prot="public">xtd::network::base::Connection</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1base">xtd::network::base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BASE_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BASE_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Config_8hh" kindref="compound">utils/Config.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Resolver_8hh" kindref="compound">utils/Resolver.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Connection<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::enable_shared_from_this&lt;Connection&lt;Domain&gt;<sp/>&gt;,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::noncopyable</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;Connection&lt;Domain&gt;<sp/>&gt;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" kindref="member">cnx_sptr_t</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1ac1ed59726de3423a3fc2e21e50d04542" kindref="member">Connection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_configuration,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::asio::io_service&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_ioService,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_hostname,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_port);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a51f309c311421eb6a378354914816fac" kindref="member">~Connection</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" kindref="member">setProcessID</ref>(uint32_t<sp/>p_procesID);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" kindref="member">getProcessID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" kindref="member">accept</ref>(boost::shared_ptr&lt;boost::asio::basic_socket_acceptor&lt;Domain&gt;<sp/>&gt;<sp/>p_acceptor,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onAccepted);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" kindref="member">connect</ref>(boost::shared_ptr&lt;<ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">utils::Resolver&lt;Domain&gt;</ref><sp/>&gt;<sp/>p_resolver,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onConnected);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" kindref="member">send</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref>&amp;<sp/>p_outData,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onSent);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" kindref="member">receive</ref>(<ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_inData,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/>p_onReceived);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" kindref="member">close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a0bde1ab3f89862d0680c820645b7244d" kindref="member">cancel</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a6f249c285df79485b06f9c7b6ed03237" kindref="member">info</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_accept(boost::shared_ptr&lt;boost::asio::basic_socket_acceptor&lt;Domain&gt;<sp/>&gt;<sp/>p_acceptor,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onAccepted);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onAccepted(boost::system::error_code<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_error,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;boost::asio::basic_socket_acceptor&lt;Domain&gt;<sp/>&gt;<sp/>p_acceptor,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onAccepted);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>connextion<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_connect(boost::shared_ptr&lt;<ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">utils::Resolver&lt;Domain&gt;</ref><sp/>&gt;<sp/>p_resolver,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onConnected);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>connectTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onConnected(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_error,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;utils::deadLineTimer_t&gt;<sp/>p_timer,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onConnected);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>envoi<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_send(<ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_outData,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/>p_onSent);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sendTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onSent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_error,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_outData,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;utils::deadLineTimer_t&gt;<sp/>p_timer,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onSent);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>reception<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_receive(<ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_inData,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/>p_onReceived);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>receiveTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onReceived(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_error,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;utils::deadLineTimer_t&gt;<sp/>p_timer,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_onReceived);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>status<sp/>setSocketInfo(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSocketOptions(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readEndpoint(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4" kindref="member">async_write</ref>(<ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_outData,<sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/>p_onSent)<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6" kindref="member">async_read</ref>(<ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/><sp/>p_inDataData,<sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref><sp/>p_onReceived)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="200" refid="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" kindref="member">m_conf</ref>;</highlight></codeline>
+<codeline lineno="201" refid="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" refkind="member"><highlight class="normal"><sp/><sp/>boost::asio::io_service&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" kindref="member">m_ioService</ref>;</highlight></codeline>
+<codeline lineno="202" refid="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" refkind="member"><highlight class="normal"><sp/><sp/>boost::asio::strand<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" kindref="member">m_strand</ref>;</highlight></codeline>
+<codeline lineno="203" refid="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" refkind="member"><highlight class="normal"><sp/><sp/>boost::asio::basic_stream_socket&lt;Domain&gt;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" kindref="member">m_socket</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>m_hostname;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_port;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>m_remoteAddr;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_remotePort;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>m_localAddr;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_localPort;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_processID;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>m_info;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" kindref="member">Connection&lt;Domain&gt;::setProcessID</ref>(uint32_t<sp/>p_processID)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>m_processID<sp/>=<sp/>p_processID;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">uint32_t</highlight></codeline>
+<codeline lineno="226" refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" kindref="member">Connection&lt;Domain&gt;::getProcessID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="227"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_processID;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>NETWORK_BASE_CONNECTION_HH_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ExtValue_8hh" kind="file" language="C++">
+    <compoundname>ExtValue.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="Base_8hh" local="yes">Base.hh</includes>
+    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="ExtValue_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/ExtValue.cc</includedby>
+    <incdepgraph>
+      <node id="715">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="712">
+        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh</label>
+        <link refid="ExtValue.hh"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="713">
+        <label>string</label>
+      </node>
+      <node id="718">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="717" relation="include">
+        </childnode>
+      </node>
+      <node id="717">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="719">
+        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh</label>
+        <link refid="ExtValue.hh"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.cc</label>
+        <link refid="ExtValue_8cc"/>
+      </node>
+      <node id="720">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1ExtValue" prot="public">xtd::counters::ExtValue</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_EXTVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_EXTVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExtValue<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Base</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="classxtd_1_1counters_1_1ExtValue_1a93e934ad70d5b32b14beed5572450abf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1ExtValue_1ac56f634edb50ac47aca158e479bebeae" kindref="member">ExtValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TType&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="19" refid="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" kindref="member">~ExtValue</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1ExtValue_1af9ea755a42e20d03d325edfe27e05a75" kindref="member">visit_safe</ref>(<ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TType&amp;<sp/>m_value;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespacextd_1_1counters_1ae049cff0f00adb1728a511d333c2aa50" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1ExtValue" kindref="compound">ExtValue&lt;uint32_t&gt;</ref><sp/><ref refid="namespacextd_1_1counters_1ae049cff0f00adb1728a511d333c2aa50" kindref="member">ExtValue32</ref>;</highlight></codeline>
+<codeline lineno="29" refid="namespacextd_1_1counters_1ad0d26d26ad71069f92a20b6d870e4872" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1ExtValue" kindref="compound">ExtValue&lt;uint64_t&gt;</ref><sp/><ref refid="namespacextd_1_1counters_1ad0d26d26ad71069f92a20b6d870e4872" kindref="member">ExtValue64</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_EXTVALUE_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh"/>
+  </compounddef>
+</doxygen>

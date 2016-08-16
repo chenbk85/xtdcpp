@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd" kind="namespace" language="C++">
+    <compoundname>xtd</compoundname>
+    <innerclass refid="classxtd_1_1Application" prot="public">xtd::Application</innerclass>
+    <innerclass refid="classxtd_1_1ConfParser" prot="public">xtd::ConfParser</innerclass>
+    <innerclass refid="classxtd_1_1error" prot="public">xtd::error</innerclass>
+    <innerclass refid="classxtd_1_1logger" prot="public">xtd::logger</innerclass>
+    <innernamespace refid="namespacextd_1_1text">xtd::text</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50" prot="public" static="no">
+        <name>status</name>
+        <enumvalue id="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a444bcb3a3fcf8389296c49467f27e1d6" prot="public">
+          <name>ok</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50acb5e100e5a9a3e7f6d1fd97512215282" prot="public">
+          <name>error</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a90272dda245ae1fb3cf197e91a8689dc" prot="public">
+          <name>timeout</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50ac2adf6ecc220f2711801d6e466340183" prot="public">
+          <name>notfound</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/types.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/types.hh" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1a518b0ddcbf87f6c21175d2760f4fbe21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::underlying_type&lt; T &gt;::type</type>
+        <definition>std::underlying_type&lt;T&gt;::type xtd::valueof</definition>
+        <argsstring>(T p_item)</argsstring>
+        <name>valueof</name>
+        <param>
+          <type>T</type>
+          <declname>p_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/types.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/types.hh" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/common/src/Application.cc" line="18" column="1"/>
+  </compounddef>
+</doxygen>

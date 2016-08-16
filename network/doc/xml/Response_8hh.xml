@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Response_8hh" kind="file" language="C++">
+    <compoundname>Response.hh</compoundname>
+    <includes local="no">types.hh</includes>
+    <includedby refid="Response_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Response.cc</includedby>
+    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
+    <incdepgraph>
+      <node id="1701">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Response.hh</label>
+        <link refid="Response.hh"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1703">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Response.hh</label>
+        <link refid="Response.hh"/>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1704">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Response.cc</label>
+        <link refid="Response_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Response" prot="public">xtd::network::http::Response</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1http">xtd::network::http</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HTTP_RESPONSE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HTTP_RESPONSE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kindref="member">code</ref><sp/>:<sp/>uint32_t<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Information<sp/>1xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cab41e384919d3fded84fe2803c82af70f" kindref="member">proceeed</ref>,<sp/></highlight><highlight class="comment">//Continue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca95e78c491edb90cfdcd3ff95e4700d46" kindref="member">switch_protocol</ref>,<sp/></highlight><highlight class="comment">//Switching<sp/>protocol</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Successful<sp/>2xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kindref="member">ok</ref>,<sp/></highlight><highlight class="comment">//OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae2fa538867c3830a859a5b17ab24644b" kindref="member">created</ref>,<sp/></highlight><highlight class="comment">//Created</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3e4d891a5df3d6d0d7dd9432a1bc6470" kindref="member">accepted</ref>,<sp/></highlight><highlight class="comment">//Accepted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7d1e27253ac06e307e599edb2b0558bd" kindref="member">no_content</ref>,<sp/></highlight><highlight class="comment">//No<sp/>Content</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae5e1e80aaecf3acf426c699f9e298164" kindref="member">partial_content</ref>,<sp/></highlight><highlight class="comment">//Partial<sp/>content</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Redirection<sp/>3xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca9aeba7eb915334acd922761566c2ac86" kindref="member">multiple_choices</ref>,<sp/></highlight><highlight class="comment">//Multiple<sp/>Choices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca522c7a01a5f0022064cc90149c179fa7" kindref="member">moved_permanently</ref>,<sp/></highlight><highlight class="comment">//Moved<sp/>Permanently</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca14e3761228bfc71752251125a5f11087" kindref="member">moved_temporarily</ref>,<sp/></highlight><highlight class="comment">//Moved<sp/>Temporarily</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca72d9cf8a74038672b394991359756c35" kindref="member">not_modified</ref>,<sp/></highlight><highlight class="comment">//Not<sp/>Modified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Client<sp/>Error<sp/>4xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca373d9e6e1aaf30e691dadb57eb22d7b1" kindref="member">bad_request</ref>,<sp/></highlight><highlight class="comment">//Bad<sp/>Request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca36fd540552b3b1b34e8f0bd8897cbf1e" kindref="member">unauthorized</ref>,<sp/></highlight><highlight class="comment">//Unauthorized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca350f9d68221a0db19024ee40cfc3c7f8" kindref="member">forbidden</ref>,<sp/></highlight><highlight class="comment">//Forbidden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7500611bf7030bc99d25c354e7b64714" kindref="member">not_found</ref>,<sp/></highlight><highlight class="comment">//Not<sp/>Found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cadd115df9e077388e1b70b344325094f3" kindref="member">method_not_allowed</ref>,<sp/></highlight><highlight class="comment">//Method<sp/>not<sp/>allowed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Server<sp/>Error<sp/>5xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3d9fd48f8a61d2ef1bcabffb3e2c2336" kindref="member">internal_error</ref>,<sp/></highlight><highlight class="comment">//Internal<sp/>Server<sp/>Error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca63877363c706f5095d05a54f8b57b0ae" kindref="member">not_implemented</ref>,<sp/></highlight><highlight class="comment">//Not<sp/>Implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca34b1f5a8577eed2180e10076d1aad14c" kindref="member">bad_gateway</ref>,<sp/></highlight><highlight class="comment">//Bad<sp/>Gateway</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca512d23352b911a1e9be84b5119e39095" kindref="member">service_unavailable</ref><sp/></highlight><highlight class="comment">//Service<sp/>Unavailable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classxtd_1_1network_1_1http_1_1Response" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">Response</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classxtd_1_1network_1_1http_1_1Response_1a77c534464429597bc4faa6bb556a8b53" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;string,<sp/>string&gt;<sp/><ref refid="classxtd_1_1network_1_1http_1_1Response_1a77c534464429597bc4faa6bb556a8b53" kindref="member">t_header_map</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">Response</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStatus(<ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kindref="member">code</ref><sp/>p_status);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addHeader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_data);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>appendData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_data);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setVersion(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_version);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCachable(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_status);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kindref="member">code</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getStatus(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getHeader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_header_map&amp;<sp/>getHeaders(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>getData(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>getVersion(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statusToMessage(<ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kindref="member">code</ref><sp/>p_status);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write(std::ostream&amp;<sp/>p_response)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>finalize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_version;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kindref="member">code</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_status;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>t_header_map<sp/>m_headers;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_data;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cachable;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_HTTP_RESPONSE_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Response.hh"/>
+  </compounddef>
+</doxygen>

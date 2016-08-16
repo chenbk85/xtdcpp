@@ -1,0 +1,141 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1XmlTemplate}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Xml\+Template Class Reference}
+\label{classxtd_1_1network_1_1http_1_1XmlTemplate}\index{xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}}
+
+
+{\ttfamily \#include $<$Template.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:Xml\+Template\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classxtd_1_1network_1_1http_1_1XmlTemplate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:Xml\+Template\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classxtd_1_1network_1_1http_1_1XmlTemplate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate_ab0eae39816b64d8e60218426d017624d}{Xml\+Template} (void)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate}{Xml\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate_a835c039a8bfa03a10e8ee007b9d28d95}{set\+Xslt} (const string \&p\+\_\+xslt\+Url)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate}{Xml\+Template} \& \hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate_ab235b22c0ec3663b2a1c75c049d463d3}{set\+Charset} (const string \&p\+\_\+charset)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1XmlTemplate_ab221547a643e3db5ba99640fe14b9f68}{resolve} (string \&p\+\_\+result)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 137 of file Template.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}!Xml\+Template@{Xml\+Template}}
+\index{Xml\+Template@{Xml\+Template}!xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}}
+\subsubsection[{\texorpdfstring{Xml\+Template(void)}{XmlTemplate(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::\+Xml\+Template\+::\+Xml\+Template (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1XmlTemplate_ab0eae39816b64d8e60218426d017624d}{}\label{classxtd_1_1network_1_1http_1_1XmlTemplate_ab0eae39816b64d8e60218426d017624d}
+
+
+Definition at line 263 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+263                          :
+264   \hyperlink{classxtd_1_1network_1_1http_1_1Template_a1887dcae44d24a8594bc41a349a7e6fe}{Template}(\textcolor{stringliteral}{"text/xml"}),
+265   m\_charset(\textcolor{stringliteral}{"UTF-8"}),
+266   m\_xsltUrl()
+267 \{
+268 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}!resolve@{resolve}}
+\index{resolve@{resolve}!xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}}
+\subsubsection[{\texorpdfstring{resolve(string \&p\+\_\+result)}{resolve(string &p_result)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Xml\+Template\+::resolve (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1XmlTemplate_ab221547a643e3db5ba99640fe14b9f68}{}\label{classxtd_1_1network_1_1http_1_1XmlTemplate_ab221547a643e3db5ba99640fe14b9f68}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1http_1_1Template_a476ce5e5b8465ea80ade07c003ab5cfd}{xtd\+::network\+::http\+::\+Template}.
+
+
+
+Definition at line 272 of file Template.\+cc.
+
+
+\begin{DoxyCode}
+273 \{
+274   \textcolor{keywordtype}{string}        l\_content;
+275   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a638d1d81c8fb63c0bbafd508d6a2a007}{cpptempl::data\_map} l\_data;
+276   \hyperlink{classxtd_1_1network_1_1http_1_1Template_a1887dcae44d24a8594bc41a349a7e6fe}{Template}           l\_template;
+277 
+278   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != \hyperlink{classxtd_1_1network_1_1http_1_1Template_a476ce5e5b8465ea80ade07c003ab5cfd}{Template::resolve}(l\_content))
+279   \{
+280     \textcolor{comment}{// log}
+281     \textcolor{keywordflow}{return} status::error;
+282   \}
+283 
+284   l\_data[\textcolor{stringliteral}{"\_\_charset"}] = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_charset, \textcolor{keyword}{true});
+285   l\_data[\textcolor{stringliteral}{"\_\_xsltUrl"}] = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(m\_xsltUrl, \textcolor{keyword}{true});
+286   l\_data[\textcolor{stringliteral}{"\_\_xmlData"}] = \hyperlink{classxtd_1_1network_1_1http_1_1Template_aab2224df74586a476877a36db8ea2473}{val}(l\_content);
+287 
+288 
+289   l\_template.setTemplate(mcs\_xmlTemplate);
+290   l\_template.setData(l\_data);
+291   \textcolor{keywordflow}{return} l\_template.resolve(p\_result);
+292 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1XmlTemplate_ab221547a643e3db5ba99640fe14b9f68_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}!set\+Charset@{set\+Charset}}
+\index{set\+Charset@{set\+Charset}!xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}}
+\subsubsection[{\texorpdfstring{set\+Charset(const string \&p\+\_\+charset)}{setCharset(const string &p_charset)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\+Template}\& xtd\+::network\+::http\+::\+Xml\+Template\+::set\+Charset (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+charset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1XmlTemplate_ab235b22c0ec3663b2a1c75c049d463d3}{}\label{classxtd_1_1network_1_1http_1_1XmlTemplate_ab235b22c0ec3663b2a1c75c049d463d3}
+\index{xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}!set\+Xslt@{set\+Xslt}}
+\index{set\+Xslt@{set\+Xslt}!xtd\+::network\+::http\+::\+Xml\+Template@{xtd\+::network\+::http\+::\+Xml\+Template}}
+\subsubsection[{\texorpdfstring{set\+Xslt(const string \&p\+\_\+xslt\+Url)}{setXslt(const string &p_xsltUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Xml\+Template}\& xtd\+::network\+::http\+::\+Xml\+Template\+::set\+Xslt (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+xslt\+Url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1http_1_1XmlTemplate_a835c039a8bfa03a10e8ee007b9d28d95}{}\label{classxtd_1_1network_1_1http_1_1XmlTemplate_a835c039a8bfa03a10e8ee007b9d28d95}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8hh}{Template.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Template_8cc}{Template.\+cc}\end{DoxyCompactItemize}

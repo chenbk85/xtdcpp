@@ -1,0 +1,134 @@
+\hypertarget{classxtd_1_1counters_1_1Atomic}{}\section{xtd\+:\+:counters\+:\+:Atomic Class Reference}
+\label{classxtd_1_1counters_1_1Atomic}\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+
+
+{\ttfamily \#include $<$Value.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Atomic_a54a3a8f1a29283e78a495fdd410fc3c4}{Atomic} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Atomic_a88c5f887b5d7b70f1da87b393f12bccc}{inc} (uint32\+\_\+t \&p\+\_\+val)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Atomic_adb613d1d33a70c6e17d1896058a110fe}{dec} (uint32\+\_\+t \&p\+\_\+val)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Atomic_a90c6aa9ad58612b867df2bbdc779ca3b}{write} (uint32\+\_\+t \&p\+\_\+val, const uint32\+\_\+t \&p\+\_\+src)
+\item 
+{\footnotesize template$<$typename T\+Type $>$ }\\void \hyperlink{classxtd_1_1counters_1_1Atomic_adf3283f7fc1cf51af28ea2aa5822f272}{inc} (T\+Type \&p\+\_\+val)
+\item 
+{\footnotesize template$<$typename T\+Type $>$ }\\void \hyperlink{classxtd_1_1counters_1_1Atomic_a2bf93bdc52005c846ac43bb2afcac8f5}{dec} (T\+Type \&p\+\_\+val)
+\item 
+{\footnotesize template$<$typename T\+Type $>$ }\\void \hyperlink{classxtd_1_1counters_1_1Atomic_a53755a00d69b11274593f62737d9a54a}{write} (T\+Type \&p\+\_\+val, const T\+Type \&p\+\_\+src)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Value.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!Atomic@{Atomic}}
+\index{Atomic@{Atomic}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{Atomic(void)}{Atomic(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Atomic\+::\+Atomic (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_a54a3a8f1a29283e78a495fdd410fc3c4}{}\label{classxtd_1_1counters_1_1Atomic_a54a3a8f1a29283e78a495fdd410fc3c4}
+
+
+Definition at line 9 of file Value.\+cc.
+
+
+\begin{DoxyCode}
+9                    :
+10   m\_mutex()
+11 \{
+12 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!dec@{dec}}
+\index{dec@{dec}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{dec(uint32\+\_\+t \&p\+\_\+val)}{dec(uint32_t &p_val)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Atomic\+::dec (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{p\+\_\+val}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_adb613d1d33a70c6e17d1896058a110fe}{}\label{classxtd_1_1counters_1_1Atomic_adb613d1d33a70c6e17d1896058a110fe}
+
+
+Definition at line 21 of file Value.\+cc.
+
+
+\begin{DoxyCode}
+22 \{
+23   atom::atomic\_dec32(&p\_val);
+24 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!dec@{dec}}
+\index{dec@{dec}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{dec(\+T\+Type \&p\+\_\+val)}{dec(TType &p_val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type $>$ void xtd\+::counters\+::\+Atomic\+::dec (
+\begin{DoxyParamCaption}
+\item[{T\+Type \&}]{p\+\_\+val}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_a2bf93bdc52005c846ac43bb2afcac8f5}{}\label{classxtd_1_1counters_1_1Atomic_a2bf93bdc52005c846ac43bb2afcac8f5}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!inc@{inc}}
+\index{inc@{inc}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{inc(uint32\+\_\+t \&p\+\_\+val)}{inc(uint32_t &p_val)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Atomic\+::inc (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{p\+\_\+val}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_a88c5f887b5d7b70f1da87b393f12bccc}{}\label{classxtd_1_1counters_1_1Atomic_a88c5f887b5d7b70f1da87b393f12bccc}
+
+
+Definition at line 15 of file Value.\+cc.
+
+
+\begin{DoxyCode}
+16 \{
+17   atom::atomic\_inc32(&p\_val);
+18 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!inc@{inc}}
+\index{inc@{inc}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{inc(\+T\+Type \&p\+\_\+val)}{inc(TType &p_val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type $>$ void xtd\+::counters\+::\+Atomic\+::inc (
+\begin{DoxyParamCaption}
+\item[{T\+Type \&}]{p\+\_\+val}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_adf3283f7fc1cf51af28ea2aa5822f272}{}\label{classxtd_1_1counters_1_1Atomic_adf3283f7fc1cf51af28ea2aa5822f272}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!write@{write}}
+\index{write@{write}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{write(uint32\+\_\+t \&p\+\_\+val, const uint32\+\_\+t \&p\+\_\+src)}{write(uint32_t &p_val, const uint32_t &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Atomic\+::write (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{p\+\_\+val, }
+\item[{const uint32\+\_\+t \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_a90c6aa9ad58612b867df2bbdc779ca3b}{}\label{classxtd_1_1counters_1_1Atomic_a90c6aa9ad58612b867df2bbdc779ca3b}
+
+
+Definition at line 27 of file Value.\+cc.
+
+
+\begin{DoxyCode}
+28 \{
+29   atom::atomic\_write32(&p\_val, p\_src);
+30 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}!write@{write}}
+\index{write@{write}!xtd\+::counters\+::\+Atomic@{xtd\+::counters\+::\+Atomic}}
+\subsubsection[{\texorpdfstring{write(\+T\+Type \&p\+\_\+val, const T\+Type \&p\+\_\+src)}{write(TType &p_val, const TType &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type $>$ void xtd\+::counters\+::\+Atomic\+::write (
+\begin{DoxyParamCaption}
+\item[{T\+Type \&}]{p\+\_\+val, }
+\item[{const T\+Type \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Atomic_a53755a00d69b11274593f62737d9a54a}{}\label{classxtd_1_1counters_1_1Atomic_a53755a00d69b11274593f62737d9a54a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Value_8hh}{Value.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Value_8cc}{Value.\+cc}\end{DoxyCompactItemize}

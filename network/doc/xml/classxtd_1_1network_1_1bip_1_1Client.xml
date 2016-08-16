@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1bip_1_1Client" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::bip::Client</compoundname>
+    <basecompoundref refid="classxtd_1_1network_1_1base_1_1Client" prot="public" virt="non-virtual">xtd::network::base::Client&lt; TDomain &gt;</basecompoundref>
+    <derivedcompoundref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" prot="protected" virt="non-virtual">xtd::network::bip::ClientPool&lt; TRequest, TResponse, TDomain &gt;::PersistentClient</derivedcompoundref>
+    <includes refid="bip_2Client_8hh" local="no">Client.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>class TRequest</type>
+      </param>
+      <param>
+        <type>class TResponse</type>
+      </param>
+      <param>
+        <type>typename TDomain</type>
+        <defval><ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">utils::af_inet</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdc" prot="private" static="no">
+        <name>cnxstatus</name>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb" prot="private">
+          <name>available</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pret à envoyer une nouvelle requête (nouveau send) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072" prot="private">
+          <name>reserved</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requête en cours d&apos;envoi sur le réseau </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca789183b7e98646c11d5f0544c8f3c4c9" prot="private">
+          <name>sent</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requête envoyé, en attente de réception réseau de la réponse </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498" prot="private">
+          <name>received</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>réponse réseau reçue, en attente de l&apos;appel à client à receive </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcacb5e100e5a9a3e7f6d1fd97512215282" prot="private">
+          <name>error</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>envoi ou reception réseau en timeout, en attente d&apos;un appel client à receive </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca90272dda245ae1fb3cf197e91a8689dc" prot="private">
+          <name>timeout</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>envoi ou reception réseau en erreur, en attente d&apos;un appel client à receive </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Code pour l&apos;état du client. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1a684e9805457e5e4cfda0b8bce4409d3c" prot="private" static="no">
+        <type><ref refid="classxtd_1_1network_1_1base_1_1Client" kindref="compound">base::Client</ref>&lt; TDomain &gt;</type>
+        <definition>typedef base::Client&lt;TDomain&gt; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::TBase</definition>
+        <argsstring></argsstring>
+        <name>TBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1aa7faac9a3c9a0f0eb53321c8c7df9d98" prot="private" static="no">
+        <type><ref refid="classxtd_1_1network_1_1base_1_1Client_1a3cef8310676dac754d630bcc1628ab56" kindref="member">TBase::cnx_sptr_t</ref></type>
+        <definition>typedef TBase::cnx_sptr_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::cnx_sptr_t</definition>
+        <argsstring></argsstring>
+        <name>cnx_sptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1a4fd207d42e4738c5aa2f6ca947067be4" prot="public" static="no">
+        <type>TRequest</type>
+        <definition>typedef TRequest xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::TReq</definition>
+        <argsstring></argsstring>
+        <name>TReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1a1fc57254a811008a795987c49c222e77" prot="public" static="no">
+        <type>TResponse</type>
+        <definition>typedef TResponse xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::TRes</definition>
+        <argsstring></argsstring>
+        <name>TRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1ad9d6da7482bd22a3e2eadbfaffe3e77c" prot="private" static="no" mutable="no">
+        <type>boost::interprocess::interprocess_semaphore</type>
+        <definition>boost::interprocess::interprocess_semaphore xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_userSemaphore</definition>
+        <argsstring></argsstring>
+        <name>m_userSemaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Semaphore uitilise pour bloquer l&apos;utilisateur soit dans le send (noget) soit dans le receive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="108" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a8be16f1921257fd8794321735e3e798d" prot="private" static="no" mutable="no">
+        <type>cnxstatus</type>
+        <definition>cnxstatus xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_status</definition>
+        <argsstring></argsstring>
+        <name>m_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="109" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a3b76131e7d3737efac6eeb14d8db164b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref></type>
+        <definition>utils::vectorBytes_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_response</definition>
+        <argsstring></argsstring>
+        <name>m_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="110" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a22b13e92b0a5b58a9a1ece1531a8dfeb" prot="private" static="no" mutable="no">
+        <type>boost::posix_time::ptime</type>
+        <definition>boost::posix_time::ptime xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_lastSend</definition>
+        <argsstring></argsstring>
+        <name>m_lastSend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="111" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a658bca55f210342896a0d271e4c4f683" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_sendTotal</definition>
+        <argsstring></argsstring>
+        <name>m_sendTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="112" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1ae6b4f7f763bd968b35843a9ed9affd88" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_sendError</definition>
+        <argsstring></argsstring>
+        <name>m_sendError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="113" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aae185aa3a352ec920b89ac4077576eb6" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_sendSuccess</definition>
+        <argsstring></argsstring>
+        <name>m_sendSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="114" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1abcbb7a2fb310294186a48ae769e4b59c" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_sendTimeout</definition>
+        <argsstring></argsstring>
+        <name>m_sendTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="115" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a9d9e6b29b6bd75efbff4b9c0e3d848d1" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_receiveTotal</definition>
+        <argsstring></argsstring>
+        <name>m_receiveTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="116" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aa6918b71230f0c46ffca33da3aa3de87" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_receiveError</definition>
+        <argsstring></argsstring>
+        <name>m_receiveError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="117" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a2fa9179430d947c2c848019dd877105e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_receiveTimeout</definition>
+        <argsstring></argsstring>
+        <name>m_receiveTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a5b95c294332b6f6ab397e1923a7b6202" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_receiveSuccess</definition>
+        <argsstring></argsstring>
+        <name>m_receiveSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aedf2347add535389919dd27f445f6275" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::m_lastRTTMs</definition>
+        <argsstring></argsstring>
+        <name>m_lastRTTMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="120" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a49c9e08bee4169c40c92d9870d882295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::Client</definition>
+        <argsstring>(const utils::Config &amp;p_conf)</argsstring>
+        <name>Client</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref> &amp;</type>
+          <declname>p_conf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ac16a5d30bae2e5ac5ae616034943d219" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::~Client</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Client</name>
+        <reimplements refid="classxtd_1_1network_1_1base_1_1Client_1a890cd6837ad0ccd2bf928f171e7696d0">~Client</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ad9097285a9937b9b16922ea3f5154cd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getSendTotal</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSendTotal</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ae0112d61b8a18823bffb8c7b3bde9b4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getSendSuccess</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSendSuccess</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ad7b29723945a80df67837c41b4570272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getSendTimeout</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSendTimeout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1afa332d8733f5a96b85546de8dc37dffc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getSendError</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSendError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1af8c4e73103c9e483f78c9b62496daf47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getReceiveTotal</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReceiveTotal</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a7fb2624e39723bae24d8286b98795e70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getReceiveSuccess</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReceiveSuccess</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1adfcc8fafdf138d104d78133ff5f419df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getReceiveTimeout</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReceiveTimeout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ab04f56d8e2cb6ac3d7fdaa2e1791c7cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getReceiveError</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getReceiveError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="70" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const uint32_t &amp;</type>
+        <definition>const uint32_t&amp; xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getLastRTTMs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="71" bodyend="71"/>
+        <references refid="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::send</references>
+        <references refid="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::receive</references>
+        <references refid="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::shouldReceive</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::send</definition>
+        <argsstring>(const TRequest &amp;p_request, bool p_debug)</argsstring>
+        <name>send</name>
+        <param>
+          <type>const TRequest &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <briefdescription>
+<para>envoi d&apos;une structure requête au server </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la requête </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>si vrai, envoyer aussi la partie débug de la structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status::ok si tout va bien, status::error sinon</para></simplesect>
+Non bloquant, status::ok ne veut pas dire que le message est bien arrivé, simplement que l&apos;objet étaient en étant d&apos;envoyer une requête (pas déjà en attente de réponse par exemple). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="84" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::receive</definition>
+        <argsstring>(TResponse &amp;p_response, bool &amp;p_debug)</argsstring>
+        <name>receive</name>
+        <param>
+          <type>TResponse &amp;</type>
+          <declname>p_response</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_debug</declname>
+        </param>
+        <briefdescription>
+<para>reception de la structure réponse </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure à remplir avec la réponse du server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sortira à la valeur true si le serveur a envoyé la partie débug de la structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status::ok si tout va bien, status::timeout en cas de timeout et staus::error en cas d&apos;erreur.</para></simplesect>
+Cette méthode est bloquante, elle attend la réception effective de la réponse du serveur ou la survenue d&apos;une erreur/timeout. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="95" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::shouldReceive</definition>
+        <argsstring>(const TRequest &amp;p_request, const bool p_requestDebug)</argsstring>
+        <name>shouldReceive</name>
+        <param>
+          <type>const TRequest &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>p_requestDebug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="97" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a3b7f0bbd177367b7c73841fab7131c7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>cnx_sptr_t</type>
+        <definition>cnx_sptr_t xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::createCnx</definition>
+        <argsstring>(string p_hostname, uint32_t p_port)</argsstring>
+        <name>createCnx</name>
+        <reimplements refid="classxtd_1_1network_1_1base_1_1Client_1ad7964979939106d0c496c4f78a834b0d">createCnx</reimplements>
+        <param>
+          <type>string</type>
+          <declname>p_hostname</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a234c7704dd00f42bfbb6c58c5ce8e546" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::do_receive</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_receive</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1afcc67044ebcd51cd48be9743ab69aec1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::onSent</definition>
+        <argsstring>(const boost::system::error_code p_error, bool p_shouldReceive)</argsstring>
+        <name>onSent</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_shouldReceive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1addf0b516315701576b9b2752d3a9c99f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::onReceived</definition>
+        <argsstring>(const boost::system::error_code p_error, utils::sharedBuf_t p_response)</argsstring>
+        <name>onReceived</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TDomain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: mode de connexion, <ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">utils::af_inet</ref> ou <ref refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kindref="member">utils::af_unix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure requète serialisable avec boost::serialization </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure réponse serialisable avec boost::serialization</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="classxtd_1_1network_1_1bip_1_1Client" kindref="compound">Client</ref> générique bip : gère l&apos;envoi de structure TRequest et la réception de structure TResponse vers un serveur bip de même type.</para><para>Selon la configuration transmise au constructeur, les données pourront etre compressées avant l&apos;envoi et décompressée à la réception.</para><para>La méthode send de cet objet est non bloquante et déclenche, en interne, la réception de la réponse du serveur. La méthode receive, elle, est bloquante jusqu&apos;à la réception effective de la réponse. Cette approche permet à un utilisateur, qui aurait plusieurs client connectés vers plusieurs serveurs, d&apos;envoyer ses requètes et de réceptionner en parallèle ses réponses pour au final aller au rythme du serveur le plus lent et pas subir la somme de tous les temps de réponse.</para><para>Thread safety :<itemizedlist>
+<listitem><para>même instance : non</para></listitem><listitem><para>instances différentes : oui </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="212">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="210">
+        <label>xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1Client"/>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>xtd::network::base::Client&lt; TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Client"/>
+        <childnode refid="212" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>xtd::network::bip::ClientPool&lt; TRequest, TResponse, TDomain &gt;::PersistentClient</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient"/>
+        <childnode refid="210" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="216">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="214">
+        <label>xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1Client"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>xtd::network::base::Client&lt; TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Client"/>
+        <childnode refid="216" relation="private-inheritance">
+        </childnode>
+        <childnode refid="217" relation="usage">
+          <edgelabel>m_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="217">
+        <label>xtd::network::utils::Config</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1Config"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="35" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1ac7427711e506f5958f80a89028f3f923" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>async_connect</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a49c9e08bee4169c40c92d9870d882295" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>Client</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a520d6aebfcf0e0892515bc0fec3a37c7" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>close</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1aa7faac9a3c9a0f0eb53321c8c7df9d98" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>cnx_sptr_t</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdc" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>cnxstatus</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1abf9740f4b9eed341858ad27018cc4469" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>connect</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a3b7f0bbd177367b7c73841fab7131c7c" prot="private" virt="virtual"><scope>xtd::network::bip::Client</scope><name>createCnx</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a234c7704dd00f42bfbb6c58c5ce8e546" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>do_receive</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a3023500754c12ccfdd200706d9995fd7" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getCnxError</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a1d72f9e19322a7c2d533422c4f9e9777" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getCnxSuccess</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1aa585da9396b4067ac2535cdc4c1acbbb" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getCnxTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1abff34ffec3663d843d97f42a7ce73d2f" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getCnxTotal</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getLastRTTMs</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ab04f56d8e2cb6ac3d7fdaa2e1791c7cd" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getReceiveError</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a7fb2624e39723bae24d8286b98795e70" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getReceiveSuccess</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1adfcc8fafdf138d104d78133ff5f419df" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getReceiveTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1af8c4e73103c9e483f78c9b62496daf47" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getReceiveTotal</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1afa332d8733f5a96b85546de8dc37dffc" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getSendError</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ae0112d61b8a18823bffb8c7b3bde9b4d" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getSendSuccess</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad7b29723945a80df67837c41b4570272" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getSendTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad9097285a9937b9b16922ea3f5154cd2" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>getSendTotal</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_conf</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_connection</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a99e6d675c7617cd6d8e94793d8af4871" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_connectStatus</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1ae3945e4771a207872ab45b73de2e040f" prot="protected" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1aedf2347add535389919dd27f445f6275" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_lastRTTMs</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a22b13e92b0a5b58a9a1ece1531a8dfeb" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_lastSend</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1aa6918b71230f0c46ffca33da3aa3de87" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_receiveError</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a5b95c294332b6f6ab397e1923a7b6202" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_receiveSuccess</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a2fa9179430d947c2c848019dd877105e" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_receiveTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a9d9e6b29b6bd75efbff4b9c0e3d848d1" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_receiveTotal</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a3b76131e7d3737efac6eeb14d8db164b" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_response</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ae6b4f7f763bd968b35843a9ed9affd88" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_sendError</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1aae185aa3a352ec920b89ac4077576eb6" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_sendSuccess</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1abcbb7a2fb310294186a48ae769e4b59c" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_sendTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a658bca55f210342896a0d271e4c4f683" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_sendTotal</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a8be16f1921257fd8794321735e3e798d" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_status</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad9d6da7482bd22a3e2eadbfaffe3e77c" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>m_userSemaphore</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a05ea029f4bfed5d9581ebc606e198336" prot="protected" virt="virtual"><scope>xtd::network::bip::Client</scope><name>onConnected</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1addf0b516315701576b9b2752d3a9c99f" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>onReceived</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1afcc67044ebcd51cd48be9743ab69aec1" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>onSent</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>receive</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1a268f40287ee277801cad202fa1380970" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>reconnect</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>send</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e" prot="public" virt="virtual"><scope>xtd::network::bip::Client</scope><name>shouldReceive</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a684e9805457e5e4cfda0b8bce4409d3c" prot="private" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>TBase</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a4fd207d42e4738c5aa2f6ca947067be4" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>TReq</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1a1fc57254a811008a795987c49c222e77" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>TRes</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Client_1ada6c4a1254620f7f5d83d3c890748300" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>wait_async_connect</name></member>
+      <member refid="classxtd_1_1network_1_1bip_1_1Client_1ac16a5d30bae2e5ac5ae616034943d219" prot="public" virt="virtual"><scope>xtd::network::bip::Client</scope><name>~Client</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classxtd_1_1servers_1_1app_1_1Action" kind="class"><name>xtd::servers::app::Action</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1a397748b5fd8412efcf779978ed4f4eef" kind="variable"><name>m_name</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1a78d15b580f1f537cc273f05500a823e8" kind="variable"><name>m_description</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1a8ac7e4975e2fde1bb9237454bd99faec" kind="variable"><name>m_log</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1a3baf29675a2f46cf5946816cf6c9b7b6" kind="variable"><name>m_timestamp</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1aea5ec95c3aa4f39ac164507a0684b6c2" kind="function"><name>Action</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Action_1a0859f1ac8244776126115daf388985af" kind="function"><name>~Action</name></member>
+  </compound>
+  <compound refid="structxtd_1_1servers_1_1app_1_1Address" kind="struct"><name>xtd::servers::app::Address</name>
+    <member refid="structxtd_1_1servers_1_1app_1_1Address_1a1768226cda5b8487c875fae8dc279ccf" kind="variable"><name>mcs_value</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1param_1_1Base" kind="class"><name>xtd::servers::param::Base</name>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aa4d2e5f8b9756071b34c6394f19670bc" kind="typedef"><name>t_listener</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1abe1caab834f5982dea8c19156d47cb23" kind="typedef"><name>t_constraint</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1c3a82c337c1a18862b0fbe5f7573849" kind="typedef"><name>t_listeners</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aa5176a35476f09c20a55c3d0c213c7bd" kind="typedef"><name>t_constraints</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1ad58be70e57e339d4843e31f889687174" kind="variable"><name>m_value</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a753bf2d46d27995061650d6502130351" kind="variable"><name>m_defaultValue</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeb13820f6d85f1324db11b179b6525e0" kind="variable"><name>m_constraints</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1077b1ee922bb447e0e9f9ce17bd0c72" kind="variable"><name>m_listeners</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a7b6c76ce6476e7e8bf0978c6d7999347" kind="variable"><name>m_name</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1ab8bddbc2f5e1c9d28908ffd56891714d" kind="variable"><name>m_sync</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a06c091a61de972bb9d5d285aade4a9e6" kind="variable"><name>m_actionPath</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a62bdaafbcb205c13635ed31f722e5b9c" kind="variable"><name>m_timestamp</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1abc9ee3116cde81616e34e6235eff5c10" kind="variable"><name>m_log</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a6769f7c5e389cfd805e71634e774c329" kind="function"><name>cast</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1ae7148147e419f2a3e5b27929e8b99b54" kind="function"><name>Base</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeadfa5af86a0dd70c6068a994f7ff567" kind="function"><name>Base</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" kind="function"><name>fromStr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" kind="function"><name>verify</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kind="function"><name>toStr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" kind="function"><name>accept</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a1e688aa518e874229d45a348c7596c82" kind="function"><name>getName</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1af0a668bb0360d7c2a8821527888d16d2" kind="function"><name>setName</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a3d83345a6e83bbe96cb7e13c81061c7d" kind="function"><name>getSync</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a912fb989f6ecb224596add4d0b388102" kind="function"><name>setSync</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a824470386f5a0f25824b6be50d15a38a" kind="function"><name>setActionPath</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a69c3c92644e04f22b9dba10095b0ed3b" kind="function"><name>getActionPath</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a74c2c5e1bac271ebbb80b93c1b976b47" kind="function"><name>sync</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a532c7d291a15c2d611af8ab9898239f2" kind="function"><name>date</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1aeafea08d04f6c7af78014a4991f38b57" kind="function"><name>constraint</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a819665d57d109485c4ba16352efc75e3" kind="function"><name>listen</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1afa9ec13039176f5e8da4c1ac6dfd4063" kind="function"><name>constraint</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1af34d052ef13b435479838c0372f1edb2" kind="function"><name>listen</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" kind="function"><name>isAccepted</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" kind="function"><name>set</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a47d5b5e494732932d25fa992e0a06190" kind="function"><name>setLog</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a48c6b4f36d84c640cc68b347090a6ec5" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Base_1a48e7dac1fe3c43d62057e7a92e4bece9" kind="function"><name>log</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context" kind="class"><name>xtd::servers::app::HtmlOArchive::context</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1a8a2869500d4acb16227aa6493952f30e" kind="variable"><name>m_depth</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1ace8fb68535aee691e60067c016553edb" kind="variable"><name>m_fieldName</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1a9dba6892de6cf0825d6cea257d97d83e" kind="variable"><name>m_classID</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1a95fc2e67cdddf4a06591cf2d3214bcea" kind="variable"><name>m_tracking</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1a48aaa6be8b90315bf292e4312607e394" kind="variable"><name>m_version</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1ae40e20c296899e09a51af3ee4f51de5b" kind="variable"><name>m_objectID</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1ad604f1c69bc549faa4eb5510ecd7d6cb" kind="variable"><name>m_type</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1aca15c4cb04a963f26d9bc2fa236a2164" kind="variable"><name>m_value</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1aab419b94ac0f4446bed3d1f10218f5c0" kind="variable"><name>m_itemVersion</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1context_1adec35632eb6caeb745a19e56244097ea" kind="function"><name>context</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1param_1_1Handler" kind="class"><name>xtd::servers::param::Handler</name>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2fe18c232ed8121487cdf19de6063f8" kind="typedef"><name>t_param_sptr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1af0bd361bc9b8ba7fe9d2b6986052aa43" kind="typedef"><name>t_params</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a9a169b893f5bc3bad90337cba4b131de" kind="variable"><name>m_actionPath</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ad58dbda62277937590e25f0efe476673" kind="variable"><name>m_params</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a93996915b562641b4673381c9abfae7b" kind="function"><name>Handler</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a53a10d8d422013e62363e0d28d4e9017" kind="function"><name>add</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a3bc858ae5bb7b6ce1f4d0a5eb327d17f" kind="function"><name>bind</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a72a575bef0683ae6197c9f34cdf31d8f" kind="function"><name>add</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" kind="function"><name>exists</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aba6e8d983f28617b3168b60cf6464926" kind="function"><name>accept</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" kind="function"><name>verify</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" kind="function"><name>fromStr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kind="function"><name>find</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a0f767078fd33fec21e1677d0a0195d8e" kind="function"><name>get</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1af8dbec0f2d639d39fb11605609462dee" kind="function"><name>set</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a3e71b80a00c962a862c1d3cc4d623c05" kind="function"><name>listen</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a20d689629d4748c14e4a516580a7c55a" kind="function"><name>constraint</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ae6760415c63b5162a9991516197e8211" kind="function"><name>sync</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kind="class"><name>xtd::servers::app::HtmlOArchive</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae69efb3db0a6ffc1d580ed5b272bc7a0" kind="typedef"><name>base</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" kind="typedef"><name>t_info</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" kind="typedef"><name>t_objects</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a725f48824bde766dcd0e8049b4df3df0" kind="friend"><name>boost::archive::detail::interface_oarchive&lt; HtmlOArchive &gt;</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a350c2afaed5c679f01f1b4e36a6ad91f" kind="friend"><name>boost::archive::basic_xml_oarchive&lt; HtmlOArchive &gt;</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aaca003bb8a4fc59424e4025130da4edd" kind="friend"><name>boost::archive::save_access</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" kind="variable"><name>m_info</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" kind="variable"><name>m_objects</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2a221009143b4b22152920d4665676d6" kind="variable"><name>m_pass</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab7b1a6aa4696b13f7e5298651b01c3cf" kind="variable"><name>m_depth</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a6892dbd6be47af4557599ca51be10b5c" kind="variable"><name>m_os</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a203be0218a9944ac1e09bd791164cecd" kind="variable"><name>m_isVector</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae016000cf5b06b408aa4bfd37c6b354c" kind="function"><name>operator*</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d77d1300bbdbd5e52fec866860bc817" kind="function"><name>operator/</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e5b0b22cf26a77dd62c328a9e51c06f" kind="function"><name>save_binary</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a8675544faff21c5a5acd0af123b48d6d" kind="function"><name>save_start</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac5013b8fe0cab7d5c9d7ce3aa4549285" kind="function"><name>save_end</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ace3d9830281bb02de4b775b1ec9891a4" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a05042a771dbeccf101cfa84f170f9f85" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1abde3d494192429180da751c92e31dc63" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ae389e1d1af8f9e39956617521cfefa5e" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a629a5c1bd96df5f295be173e4f62883e" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a25bc0aa46ecbc81d01e50e318d85136f" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab4a02b5763b656039665add3da76d56f" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac34aa74161df424b2a19e41b0c405c25" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ac86a79783a5ca046d5eda24a9e6fc558" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5d426b7d61941d71ca43730cdb055055" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a4082468458d3b4966bb75d4b92f0d476" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a146b049587fa8d292fb9f90f3e23f59b" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a70c1e6b78feb34413275e208fd043964" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7dd264fc7222a8689764f4d8ab5c033b" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1af94e2907eba4d436906dc61f57459cd3" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a2e99b889f990c3fa26b24b6ca1684265" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1addee578d18549c53b00e4c676a568c25" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a468a544e41a404c35321f89b1d4cb59c" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a5e14af7ab3311cf61fafe8b2742e22be" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1ab9f8811eb20eb372e6cabfa328d2ccf6" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a9029ddca116a4a843ec6668d1bc3fc90" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1afae32c6090882adc5a310a9ba9297c12" kind="function"><name>save</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0cd8f9056f209afd354f74073436b70e" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1add8049c6091432811543e5288706c3c9" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a1afeaad47abf3aff1f91b5faa94f869b" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1adbb73e26344036aa3c370bd1a133bf70" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aa2bce7ac03f460426a47e25463212908" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a10cb86717b8b49afd68e5b6120662ce9" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a3238b152ed11274e09c1b0c5995b62c6" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a62245e0fd68d61841e8e8f34922e5588" kind="function"><name>save_override</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" kind="function"><name>HtmlOArchive</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HttpServer" kind="class"><name>xtd::servers::app::HttpServer</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad879d72fb0151a3c383ccbe75bb642cc" kind="typedef"><name>http_app</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac5263de622bb17c3ec921a00266ea053" kind="typedef"><name>http_net</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" kind="typedef"><name>t_param_handler</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" kind="typedef"><name>t_prober</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" kind="typedef"><name>t_action</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" kind="typedef"><name>t_actions</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" kind="typedef"><name>t_counter</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9ca36e61f5c201a51a68b3919e0badb7" kind="variable"><name>mcs_defaultProbeDelay</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abdc02697ffc7fa9f8f88252101b5d1b9" kind="variable"><name>mcs_defaultTimeoutMs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad21741083478d35b92ba0b1da7499950" kind="variable"><name>mcs_defaultThresholdMs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a38433b4c2d0bba9f0bae81266b42bac1" kind="variable"><name>mcs_defaultListenInterface</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" kind="variable"><name>m_config</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" kind="variable"><name>m_configPath</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" kind="variable"><name>m_nbThread</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" kind="variable"><name>m_timeoutMs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" kind="variable"><name>m_isModeProbe</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" kind="variable"><name>m_isDebug</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" kind="variable"><name>m_snmpPath</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a87fc30b2e7e6ab2aabc2c46c884d7f17" kind="variable"><name>m_probeDelay</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" kind="variable"><name>m_prober</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" kind="variable"><name>m_ramCounter</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" kind="variable"><name>m_perfCounter</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad7f8a9a0475e17154850c3d575bf6f05" kind="variable"><name>m_thresholdMs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" kind="variable"><name>m_httpHost</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" kind="variable"><name>m_httpPort</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad5f2480d758b731b641e4858f556a3c3" kind="variable"><name>m_httpConfig</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" kind="variable"><name>m_httpConfigPath</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" kind="variable"><name>m_params</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" kind="variable"><name>m_adminDir</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" kind="variable"><name>m_actions</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" kind="function"><name>HttpServer</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1082944f193865fc303c2d4a5569eaf9" kind="function"><name>~HttpServer</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" kind="function"><name>getCommonConfKey</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" kind="function"><name>getSpecificConfKey</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" kind="function"><name>getSnmpPath</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" kind="function"><name>handleTERM</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" kind="function"><name>process</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" kind="function"><name>parseConfig</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" kind="function"><name>parseHttpPort</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" kind="function"><name>checkOptions</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" kind="function"><name>defineProbes</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" kind="function"><name>handleUSR2</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" kind="function"><name>modeProbeActivation</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9247cbc7930939b40df98a20167007c3" kind="function"><name>setLastAdminLog</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" kind="function"><name>bind_action</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" kind="function"><name>h_runAction</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" kind="function"><name>addProbe</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6126daf3a088048921d4e809231c3716" kind="function"><name>addProbe</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd" kind="function"><name>readConf</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abe54ee996274b1f6d4a89d29bba56ae8" kind="function"><name>readConf</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a433d23eb580dfc0a93b838d192c84f59" kind="function"><name>process_mem_usage</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a34edc125aba91eca5cd8483a6c3f9532" kind="function"><name>h_actionList</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a899871bd03f884d5cf2e639a614e3cbf" kind="function"><name>h_ident</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa24805a306ebd89203c5704cef2123d3" kind="function"><name>h_index</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa564d54e5f78c0dc6d16ec7dc4b6c8a7" kind="function"><name>h_counter</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa080d8e425c895bea7e989c214c18440" kind="function"><name>h_admin</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1450d81f9f62d9e10d2c360252b7a32c" kind="function"><name>h_conf</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abcb898bb9cc6817fba1dd0dc950b908b" kind="function"><name>h_log</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f4454e3d32ab7ab793a59987977f20b" kind="function"><name>h_probe</name></member>
+  </compound>
+  <compound refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator" kind="struct"><name>xtd::servers::app::HttpServer::id_translator</name>
+    <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ada54bdbb036f3498f8fe7c85d442acb7" kind="typedef"><name>internal_type</name></member>
+    <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1a0133f6618f0d37c33f3f8632e717c47d" kind="typedef"><name>external_type</name></member>
+    <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1ad6a117cca376678a8712a93fa3ad4d24" kind="function"><name>get_value</name></member>
+    <member refid="structxtd_1_1servers_1_1app_1_1HttpServer_1_1id__translator_1aeb2b49a0fb6af4bb86aa76c887064961" kind="function"><name>put_value</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1param_1_1JsonVisitor" kind="class"><name>xtd::servers::param::JsonVisitor</name>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a7b50a6b9f1cdd4aa64d86d4aa4aac65b" kind="variable"><name>m_tmpl</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a87e4c626ded6951d1ee930d25229e8b4" kind="function"><name>JsonVisitor</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1813b3c21a65b66ff441f29d0f51ccc3" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1f69e5ceb9d95168d4725d3949636682" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1af7d283dea375905cd4b93497123c4f80" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad69a8bfe2e181bb8eaacfb06d6d1a374" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad52e7b15a389386f93c9fa560edb94c7" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" kind="function"><name>writeExtraInfo</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a00138c5799a7133455733c35727f2b1b" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object" kind="class"><name>xtd::servers::app::HtmlOArchive::Object</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a81a9949f7f47673c3f32b58a1db6c546" kind="variable"><name>m_name</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1af1793f64bab4b65377bb60f58740b09e" kind="variable"><name>m_depth</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1ad8040c525693f5cccc6824f1370c3375" kind="function"><name>Object</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1aaf6fdbc8ac7d4e255a78012bab78db1e" kind="function"><name>~Object</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1aaa4b3a16af5c64510f5f443263093dc3" kind="function"><name>write</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a7c2153013fb6ea0a1c860e7327b281d9" kind="function"><name>display</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a3f293df2d5c3995a8d2d6c8d6ed18a3c" kind="function"><name>write_head</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a86c52b2b84e09f9c1c837ec6084b5a11" kind="function"><name>write_tail</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1param_1_1POD" kind="class"><name>xtd::servers::param::POD</name>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1a8f374c2b8622bdcec87a746b07bad388" kind="function"><name>POD</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1aec8808c77e41c5156828840c5764a0af" kind="function"><name>POD</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1ac6754089526df6eb0eef539be830c668" kind="function"><name>fromStr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1aded664a97a02450a9270dd04af042d0c" kind="function"><name>verify</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1a6b40b7e5cd208c4ab848edb753c612f7" kind="function"><name>toStr</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1a828a1fa2391bc087f396b87a1d7c793a" kind="function"><name>accept</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1a9d9dc9768753f56d7181112565f4f4c6" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1ab52f582b30a9cb8aace9443b51ccc774" kind="function"><name>to</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1a4a362a7f0e05c6b756e8427cc82357cd" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1POD_1af0e3cbb7d22393a8dcdccfb714c1ef8d" kind="function"><name>to</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject" kind="class"><name>xtd::servers::app::HtmlOArchive::PodObject</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a1457619391bf6ce47b989626d3c005f7" kind="variable"><name>m_type</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a4514e8d71a67ee1bf0ab909a9e430f92" kind="variable"><name>m_default</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a8f8ca4c37e72f9301adf832ab88d3735" kind="function"><name>PodObject</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a6c53751dfa676bdef2f45e1cc912537a" kind="function"><name>display</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1Server" kind="class"><name>xtd::servers::app::Server</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2e" kind="enum"><name>stopper_status</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea075ae3d2fc31640504f814f60e5ef713" kind="enumvalue"><name>disabled</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea8684b8d2826f255bfc5a07b107e7eec9" kind="enumvalue"><name>waitting</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2eaa10311459433adf322f2590a4987c423" kind="enumvalue"><name>enabled</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6159422bbffe0fd3d02eb21c4e61011e" kind="typedef"><name>bip_app</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a7254e9a899be59bbe8ea13ca127108dc" kind="typedef"><name>bip_net</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a72a3c0bea3f2fc2e87b98e09e54fc9ac" kind="typedef"><name>t_param_sptr</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" kind="variable"><name>mcs_defaultProbeDelay</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" kind="variable"><name>mcs_defaultTimeoutMs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" kind="variable"><name>mcs_httpNbThread</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" kind="variable"><name>mcs_defaultListenInterface</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1afae8d71c231f3e48ec8270217fddae10" kind="variable"><name>mcs_defaultStructGenDumpPath</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a08752041a6fc98289ad93c93c1d4fd75" kind="variable"><name>m_bipHost</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a849adda20d929ad1116564177986e146" kind="variable"><name>m_bipPort</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a4e7cb3d792a27b1572aa775f8f0018f3" kind="variable"><name>m_bipNbThread</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a62a3f48e47eba551b53d0bef859aa906" kind="variable"><name>m_bipConfig</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a143d0eeee15dd57ba4d03737a0128551" kind="variable"><name>m_useCompression</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae5180a630e0f23596a0909f845d00e69" kind="variable"><name>m_stopperStatus</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1afb80e8da001aafc8ffbf5b2dd8a9213e" kind="variable"><name>m_stopperResponse</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a3ad929be560e47d7193da946cd74e557" kind="variable"><name>m_structgenMutex</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a66a9242f7a55a296f1ca25cb18764eec" kind="variable"><name>m_structgenFilename</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae4f23d9c3abe0d511b7ff112c368e496" kind="variable"><name>m_perfCounter</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a82f99ede6c5e97ce4f9fba768bc6329e" kind="variable"><name>m_assertRTT</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ac30046979fc32ad42c2436c0f3854ea2" kind="function"><name>Server</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a1b30c4e9066d130569acb7d31c125e20" kind="function"><name>~Server</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ad3c9fd71ba0399f18c27b15cb1d28e65" kind="function"><name>processRequest</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a04ac2d5b3a0a229a3b54ef33b9b7056d" kind="function"><name>parseConfig</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1aeb01b34fd4e8564b8cd18c2041dc253f" kind="function"><name>parseBipPort</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6f5fff5c5058dc43aea7b27a046c985b" kind="function"><name>checkOptions</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1aabde8b6a3810b09f029821dddafe3b8c" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1afbe76a86e66e635907229d37b1267037" kind="function"><name>defineProbes</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a00c2f9aaa3c130299a4c77f86bf37d38" kind="function"><name>isResponseValid</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a37fe0eca660f81a9edde0c1ce6938f39" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a8e21bf6e7993a2e04fd70d0ce88ca487" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ad1161e88fb26561ffbef7254fb263d15" kind="function"><name>isStructgenMode</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ae4ad855e88777c7e5afe9d673037ca6b" kind="function"><name>h_query</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a10fc93bccaf973467b0df7de87b4ae79" kind="function"><name>h_ihm_query</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1ab6700b87291ddfa7de81f11ec4f866e6" kind="function"><name>setAssertRTT</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1aa9c2d3c2a645f77babb7d0fcbf79ebce" kind="function"><name>process</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a50045bee14d75be030142c485127fe22" kind="function"><name>dumpRequest</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1Server_1a6b4f59b5e52a6b21119577757405f7dd" kind="function"><name>processObjectRequest</name></member>
+  </compound>
+  <compound refid="structxtd_1_1servers_1_1param_1_1Handler_1_1setter" kind="struct"><name>xtd::servers::param::Handler::setter</name>
+    <member refid="structxtd_1_1servers_1_1param_1_1Handler_1_1setter_1a7770364fdda0d6e0f9c39f464782e857" kind="function"><name>apply</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject" kind="class"><name>xtd::servers::app::HtmlOArchive::StructObject</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1af146375f7b9209bb90913dba71a4467e" kind="variable"><name>m_classID</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a104cc922937897aa3fe2c626176c6e37" kind="variable"><name>m_objectID</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a57b1c183a392b031f3bf023640dea85e" kind="variable"><name>m_version</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a87c5edb5715a1fb0e04f4666bf8c62a1" kind="variable"><name>m_tracking</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a372666d73afd6f637b9a050dccf1c946" kind="variable"><name>m_childs</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a70e1c7cc50a5fd78552a4b20b2d600dd" kind="function"><name>StructObject</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a6fbd82c846616a6c28aa57c95d3c7ca5" kind="function"><name>~StructObject</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a7af14d9b518dc7ef6cf56f832a9e1afd" kind="function"><name>write</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1StructObject_1a2c6c45fa99a1310c2c7ac34b5c6f5daa" kind="function"><name>display</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1VectorObject" kind="class"><name>xtd::servers::app::HtmlOArchive::VectorObject</name>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1VectorObject_1a1779564c9c54cf4ccc1bd42ca698ff37" kind="variable"><name>m_itemVersion</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1VectorObject_1aecde1544fed8e053bdd9cd397cfb21bd" kind="function"><name>VectorObject</name></member>
+    <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1VectorObject_1abb900d36c28bde2d6aeb7efff6ea9118" kind="function"><name>display</name></member>
+  </compound>
+  <compound refid="classxtd_1_1servers_1_1param_1_1Visitor" kind="class"><name>xtd::servers::param::Visitor</name>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1a3f6a8a3af66864dd78e897146d6cecb5" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1a6c6f045ab7e39ae6361992e9c20b2902" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1a9f900cac80adc8d63d6146335eb79e61" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1af83042cfb38b409a8c60c6dd74148b55" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1a527ddbf5eb64338a2550beb51d3db759" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1servers_1_1param_1_1Visitor_1a4b67adf1da81ad8ab0a20069311f0e02" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespacenetwork" kind="namespace"><name>network</name>
+  </compound>
+  <compound refid="namespacextd" kind="namespace"><name>xtd</name>
+  </compound>
+  <compound refid="namespacextd_1_1servers" kind="namespace"><name>xtd::servers</name>
+  </compound>
+  <compound refid="namespacextd_1_1servers_1_1app" kind="namespace"><name>xtd::servers::app</name>
+    <member refid="namespacextd_1_1servers_1_1app_1afbe4f1864152231ae4e2be0b57509ab1" kind="function"><name>to_javascript</name></member>
+  </compound>
+  <compound refid="namespacextd_1_1servers_1_1param" kind="namespace"><name>xtd::servers::param</name>
+  </compound>
+  <compound refid="HtmlOArchive_8cc" kind="file"><name>HtmlOArchive.cc</name>
+  </compound>
+  <compound refid="HtmlOArchive_8hh" kind="file"><name>HtmlOArchive.hh</name>
+  </compound>
+  <compound refid="HttpServer_8cc" kind="file"><name>HttpServer.cc</name>
+  </compound>
+  <compound refid="HttpServer_8hh" kind="file"><name>HttpServer.hh</name>
+  </compound>
+  <compound refid="Server_8cc" kind="file"><name>Server.cc</name>
+  </compound>
+  <compound refid="Server_8hh" kind="file"><name>Server.hh</name>
+  </compound>
+  <compound refid="Base_8cc" kind="file"><name>Base.cc</name>
+  </compound>
+  <compound refid="Base_8hh" kind="file"><name>Base.hh</name>
+  </compound>
+  <compound refid="Handler_8cc" kind="file"><name>Handler.cc</name>
+  </compound>
+  <compound refid="Handler_8hh" kind="file"><name>Handler.hh</name>
+  </compound>
+  <compound refid="Visitor_8cc" kind="file"><name>Visitor.cc</name>
+  </compound>
+  <compound refid="Visitor_8hh" kind="file"><name>Visitor.hh</name>
+  </compound>
+  <compound refid="dir_43e2077f3568505ead35d72dc48d8938" kind="dir"><name>/home/psyco/dev/xtdcpp/servers/src/app</name>
+  </compound>
+  <compound refid="dir_54a745f691f1a55a4faf33cecaddf631" kind="dir"><name>/home/psyco/dev/xtdcpp/servers/src/param</name>
+  </compound>
+  <compound refid="dir_b4b28185343f1bd39ef36cc61036dc66" kind="dir"><name>/home/psyco/dev/xtdcpp/servers</name>
+  </compound>
+  <compound refid="dir_3d7484c35f6ad7eb96f597de21d63251" kind="dir"><name>/home/psyco/dev/xtdcpp/servers/src</name>
+  </compound>
+</doxygenindex>

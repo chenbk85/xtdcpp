@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1vectorbuf" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::vectorbuf</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_streambuf&lt; CharT, TraitsT &gt;</basecompoundref>
+    <includes refid="Utils_8hh" local="no">Utils.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename CharT</type>
+      </param>
+      <param>
+        <type>typename TraitsT</type>
+        <defval>std::char_traits&lt;CharT&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1vectorbuf_1ae3b43c306ce2bd0083c357f4425b0b11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::vectorbuf&lt; CharT, TraitsT &gt;::vectorbuf</definition>
+        <argsstring>(vector&lt; CharT &gt; &amp;vec)</argsstring>
+        <name>vectorbuf</name>
+        <param>
+          <type>vector&lt; CharT &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="66" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="389">
+        <label>std::basic_streambuf&lt; CharT, TraitsT &gt;</label>
+      </node>
+      <node id="388">
+        <label>xtd::network::utils::vectorbuf&lt; CharT, TraitsT &gt;</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1vectorbuf"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="391">
+        <label>std::basic_streambuf&lt; CharT, TraitsT &gt;</label>
+      </node>
+      <node id="390">
+        <label>xtd::network::utils::vectorbuf&lt; CharT, TraitsT &gt;</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1vectorbuf"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="63" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1vectorbuf_1ae3b43c306ce2bd0083c357f4425b0b11" prot="public" virt="non-virtual"><scope>xtd::network::utils::vectorbuf</scope><name>vectorbuf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

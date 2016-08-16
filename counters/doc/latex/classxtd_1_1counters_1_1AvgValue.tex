@@ -1,0 +1,278 @@
+\hypertarget{classxtd_1_1counters_1_1AvgValue}{}\section{xtd\+:\+:counters\+:\+:Avg\+Value$<$ T\+Type $>$ Class Template Reference}
+\label{classxtd_1_1counters_1_1AvgValue}\index{xtd\+::counters\+::\+Avg\+Value$<$ T\+Type $>$@{xtd\+::counters\+::\+Avg\+Value$<$ T\+Type $>$}}
+
+
+{\ttfamily \#include $<$Avg\+Value.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Avg\+Value$<$ T\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1AvgValue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Avg\+Value$<$ T\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1AvgValue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value}$<$ T\+Type $>$ $>$ \hyperlink{classxtd_1_1counters_1_1AvgValue_a2186c119cedc1cd9c3a7a7a39e0bdc55}{t\+\_\+sptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgValue_aa6f20ce5b30cc7a781669cd6e4f70a6b}{Avg\+Value} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+sampe\+Size=\hyperlink{classxtd_1_1counters_1_1AvgValue_aa65f0400547f2cb940ec9b79cbc3a662}{mcs\+\_\+default\+Sample\+Size})
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1AvgValue_ad9e1d371b0787698ebdf0350e58601c8}{$\sim$\+Avg\+Value} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value} \& \hyperlink{classxtd_1_1counters_1_1AvgValue_a9605750713e85b4bf2e09e54e46d4e1a}{operator=} (const T\+Type \&p\+\_\+value)
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value} \& \hyperlink{classxtd_1_1counters_1_1AvgValue_a52054872a2d938baf8c23e1208d7613a}{operator+} (const \hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value} \&p\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t \hyperlink{classxtd_1_1counters_1_1AvgValue_aa65f0400547f2cb940ec9b79cbc3a662}{mcs\+\_\+default\+Sample\+Size} = 1000
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ T\+Type $>$ \hyperlink{classxtd_1_1counters_1_1AvgValue_aa58af8a852f52342b087373414e61878}{t\+\_\+samples}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgValue_a3ad3008fc30f1936e8dd1eef1d62f324}{affect\+\_\+safe} (const T\+Type \&p\+\_\+value)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1AvgValue_ad0532ed35af8242fabd3a910cc88c543}{add\+\_\+safe} (const \hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value} \&p\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1AvgValue_aa58af8a852f52342b087373414e61878}{t\+\_\+samples} \hyperlink{classxtd_1_1counters_1_1AvgValue_a787afb6a601eb29f48a0fd247524cf84}{m\+\_\+samples}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value}$<$ T\+Type $>$ \hyperlink{classxtd_1_1counters_1_1AvgValue_afa1908ab38d3deef50e1169b1cc20f6c}{m\+\_\+mean}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value}$<$ T\+Type $>$ \hyperlink{classxtd_1_1counters_1_1AvgValue_a8e217891d937894812b5edfcf6a5ce0e}{m\+\_\+min}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Value}{Value}$<$ T\+Type $>$ \hyperlink{classxtd_1_1counters_1_1AvgValue_a9ee9567a0a95cf6b579c13329f21f0d5}{m\+\_\+max}
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1counters_1_1AvgValue_aba4c4022706bda9bfdedea3cb9c3647a}{m\+\_\+nb\+Event}
+\item 
+const uint32\+\_\+t \hyperlink{classxtd_1_1counters_1_1AvgValue_a85edafd4829b5aa5be6562cadd8e4764}{m\+\_\+sample\+Size}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1AvgValue_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Type$>$\\*
+class xtd\+::counters\+::\+Avg\+Value$<$ T\+Type $>$}
+
+
+
+Definition at line 14 of file Avg\+Value.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!t\+\_\+samples@{t\+\_\+samples}}
+\index{t\+\_\+samples@{t\+\_\+samples}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+samples}{t_samples}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ typedef std\+::deque$<$T\+Type$>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::{\bf t\+\_\+samples}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_aa58af8a852f52342b087373414e61878}{}\label{classxtd_1_1counters_1_1AvgValue_aa58af8a852f52342b087373414e61878}
+
+
+Definition at line 22 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!t\+\_\+sptr@{t\+\_\+sptr}}
+\index{t\+\_\+sptr@{t\+\_\+sptr}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{t\+\_\+sptr}{t_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ typedef boost\+::shared\+\_\+ptr$<${\bf Avg\+Value}$<$T\+Type$>$ $>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::{\bf t\+\_\+sptr}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a2186c119cedc1cd9c3a7a7a39e0bdc55}{}\label{classxtd_1_1counters_1_1AvgValue_a2186c119cedc1cd9c3a7a7a39e0bdc55}
+
+
+Definition at line 19 of file Avg\+Value.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!Avg\+Value@{Avg\+Value}}
+\index{Avg\+Value@{Avg\+Value}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{Avg\+Value(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+sampe\+Size=mcs\+\_\+default\+Sample\+Size)}{AvgValue(const string &p_name, uint32_t p_sampeSize=mcs_defaultSampleSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::{\bf Avg\+Value} (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+sampe\+Size = {\ttfamily {\bf mcs\+\_\+default\+Sample\+Size}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgValue_aa6f20ce5b30cc7a781669cd6e4f70a6b}{}\label{classxtd_1_1counters_1_1AvgValue_aa6f20ce5b30cc7a781669cd6e4f70a6b}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!````~Avg\+Value@{$\sim$\+Avg\+Value}}
+\index{````~Avg\+Value@{$\sim$\+Avg\+Value}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{$\sim$\+Avg\+Value(void)}{~AvgValue(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ virtual {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::$\sim${\bf Avg\+Value} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_ad9e1d371b0787698ebdf0350e58601c8}{}\label{classxtd_1_1counters_1_1AvgValue_ad9e1d371b0787698ebdf0350e58601c8}
+
+
+Definition at line 30 of file Avg\+Value.\+hh.
+
+
+\begin{DoxyCode}
+30 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!add\+\_\+safe@{add\+\_\+safe}}
+\index{add\+\_\+safe@{add\+\_\+safe}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{add\+\_\+safe(const Avg\+Value \&p\+\_\+value)}{add_safe(const AvgValue &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ void {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::add\+\_\+safe (
+\begin{DoxyParamCaption}
+\item[{const {\bf Avg\+Value}$<$ T\+Type $>$ \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_ad0532ed35af8242fabd3a910cc88c543}{}\label{classxtd_1_1counters_1_1AvgValue_ad0532ed35af8242fabd3a910cc88c543}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgValue_ad0532ed35af8242fabd3a910cc88c543_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!affect\+\_\+safe@{affect\+\_\+safe}}
+\index{affect\+\_\+safe@{affect\+\_\+safe}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{affect\+\_\+safe(const T\+Type \&p\+\_\+value)}{affect_safe(const TType &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ void {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::affect\+\_\+safe (
+\begin{DoxyParamCaption}
+\item[{const T\+Type \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a3ad3008fc30f1936e8dd1eef1d62f324}{}\label{classxtd_1_1counters_1_1AvgValue_a3ad3008fc30f1936e8dd1eef1d62f324}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgValue_a3ad3008fc30f1936e8dd1eef1d62f324_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!operator+@{operator+}}
+\index{operator+@{operator+}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{operator+(const Avg\+Value \&p\+\_\+value)}{operator+(const AvgValue &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Avg\+Value}\& {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Avg\+Value}$<$ T\+Type $>$ \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgValue_a52054872a2d938baf8c23e1208d7613a}{}\label{classxtd_1_1counters_1_1AvgValue_a52054872a2d938baf8c23e1208d7613a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgValue_a52054872a2d938baf8c23e1208d7613a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const T\+Type \&p\+\_\+value)}{operator=(const TType &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Avg\+Value}\& {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const T\+Type \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1AvgValue_a9605750713e85b4bf2e09e54e46d4e1a}{}\label{classxtd_1_1counters_1_1AvgValue_a9605750713e85b4bf2e09e54e46d4e1a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1AvgValue_a9605750713e85b4bf2e09e54e46d4e1a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1AvgValue_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 16 of file Avg\+Value.\+hh.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+max@{m\+\_\+max}}
+\index{m\+\_\+max@{m\+\_\+max}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+max}{m_max}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}$<$T\+Type$>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+max\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a9ee9567a0a95cf6b579c13329f21f0d5}{}\label{classxtd_1_1counters_1_1AvgValue_a9ee9567a0a95cf6b579c13329f21f0d5}
+
+
+Definition at line 44 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+mean@{m\+\_\+mean}}
+\index{m\+\_\+mean@{m\+\_\+mean}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+mean}{m_mean}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}$<$T\+Type$>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+mean\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_afa1908ab38d3deef50e1169b1cc20f6c}{}\label{classxtd_1_1counters_1_1AvgValue_afa1908ab38d3deef50e1169b1cc20f6c}
+
+
+Definition at line 42 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+min@{m\+\_\+min}}
+\index{m\+\_\+min@{m\+\_\+min}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+min}{m_min}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf Value}$<$T\+Type$>$ {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+min\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a8e217891d937894812b5edfcf6a5ce0e}{}\label{classxtd_1_1counters_1_1AvgValue_a8e217891d937894812b5edfcf6a5ce0e}
+
+
+Definition at line 43 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+nb\+Event@{m\+\_\+nb\+Event}}
+\index{m\+\_\+nb\+Event@{m\+\_\+nb\+Event}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+nb\+Event}{m_nbEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ uint32\+\_\+t {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+nb\+Event\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_aba4c4022706bda9bfdedea3cb9c3647a}{}\label{classxtd_1_1counters_1_1AvgValue_aba4c4022706bda9bfdedea3cb9c3647a}
+
+
+Definition at line 45 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+samples@{m\+\_\+samples}}
+\index{m\+\_\+samples@{m\+\_\+samples}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+samples}{m_samples}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ {\bf t\+\_\+samples} {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+samples\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a787afb6a601eb29f48a0fd247524cf84}{}\label{classxtd_1_1counters_1_1AvgValue_a787afb6a601eb29f48a0fd247524cf84}
+
+
+Definition at line 41 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!m\+\_\+sample\+Size@{m\+\_\+sample\+Size}}
+\index{m\+\_\+sample\+Size@{m\+\_\+sample\+Size}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{m\+\_\+sample\+Size}{m_sampleSize}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ const uint32\+\_\+t {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::m\+\_\+sample\+Size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_a85edafd4829b5aa5be6562cadd8e4764}{}\label{classxtd_1_1counters_1_1AvgValue_a85edafd4829b5aa5be6562cadd8e4764}
+
+
+Definition at line 47 of file Avg\+Value.\+hh.
+
+\index{xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}!mcs\+\_\+default\+Sample\+Size@{mcs\+\_\+default\+Sample\+Size}}
+\index{mcs\+\_\+default\+Sample\+Size@{mcs\+\_\+default\+Sample\+Size}!xtd\+::counters\+::\+Avg\+Value@{xtd\+::counters\+::\+Avg\+Value}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Sample\+Size}{mcs_defaultSampleSize}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Type$>$ const uint32\+\_\+t {\bf xtd\+::counters\+::\+Avg\+Value}$<$ T\+Type $>$\+::mcs\+\_\+default\+Sample\+Size = 1000\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1counters_1_1AvgValue_aa65f0400547f2cb940ec9b79cbc3a662}{}\label{classxtd_1_1counters_1_1AvgValue_aa65f0400547f2cb940ec9b79cbc3a662}
+
+
+Definition at line 25 of file Avg\+Value.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{AvgValue_8hh}{Avg\+Value.\+hh}\end{DoxyCompactItemize}

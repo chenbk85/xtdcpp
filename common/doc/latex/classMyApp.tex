@@ -1,0 +1,69 @@
+\hypertarget{classMyApp}{}\section{My\+App Class Reference}
+\label{classMyApp}\index{My\+App@{My\+App}}
+
+
+{\ttfamily \#include $<$Application.\+hh$>$}
+
+
+
+Inheritance diagram for My\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classMyApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classMyApp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMyApp_a9a9841f1e420ab6de44d3dc1fff55ec6}{My\+App} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file Application.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{My\+App@{My\+App}!My\+App@{My\+App}}
+\index{My\+App@{My\+App}!My\+App@{My\+App}}
+\subsubsection[{\texorpdfstring{My\+App(void)}{MyApp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}My\+App\+::\+My\+App (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMyApp_a9a9841f1e420ab6de44d3dc1fff55ec6}{}\label{classMyApp_a9a9841f1e420ab6de44d3dc1fff55ec6}
+
+
+Definition at line 4 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+4                :
+5      Application()
+6    \{
+7      addOption(\textcolor{charliteral}{'i'}, \textcolor{stringliteral}{"input-file"},
+8                argument::mandatory,
+9                requirement::mandatory,
+10                \textcolor{stringliteral}{"process given file"},
+11                Application::bindFile(m\_inputFile, \textcolor{keyword}{true}));
+12    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/doc/example/\hyperlink{doc_2example_2Application_8hh}{Application.\+hh}\end{DoxyCompactItemize}

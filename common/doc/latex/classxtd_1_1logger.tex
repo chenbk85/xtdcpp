@@ -1,0 +1,845 @@
+\hypertarget{classxtd_1_1logger}{}\section{xtd\+:\+:logger Class Reference}
+\label{classxtd_1_1logger}\index{xtd\+::logger@{xtd\+::logger}}
+
+
+{\ttfamily \#include $<$logger.\+hh$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} \+: int32\+\_\+t \{ \\*
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{level\+::emerg} = L\+O\+G\+\_\+\+E\+M\+E\+RG, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{level\+::alert} = L\+O\+G\+\_\+\+A\+L\+E\+RT, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level\+::crit} = L\+O\+G\+\_\+\+C\+R\+IT, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{level\+::err} = L\+O\+G\+\_\+\+E\+RR, 
+\\*
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{level\+::warning} = L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{level\+::notice} = L\+O\+G\+\_\+\+N\+O\+T\+I\+CE, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{level\+::info} = L\+O\+G\+\_\+\+I\+N\+FO, 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{level\+::debug} = L\+O\+G\+\_\+\+D\+E\+B\+UG
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1logger_a794da1cd7618a6796d639d11845f9006}{logger} (void)
+\item 
+void \hyperlink{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66}{initialize} (void)
+\item 
+void \hyperlink{classxtd_1_1logger_a8559c9744e68ecab37076d8744499c8f}{initialize} (const string \&p\+\_\+name, \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+void \hyperlink{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{set\+Level} (const string \&p\+\_\+module, \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+void \hyperlink{classxtd_1_1logger_af88d4c20247cb62433e660ab7f9f5a97}{update\+Levels} (const string \&p\+\_\+regex, \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+void \hyperlink{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26}{set\+All\+Levels} (\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+void \hyperlink{classxtd_1_1logger_a10ec7455d964067fc1ca79f3a7cc14b4}{set\+All\+Value\+Levels} (uint32\+\_\+t p\+\_\+level)
+\item 
+void \hyperlink{classxtd_1_1logger_a18cd978561fcaf48e2fc935331834fe9}{clear\+All} (\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+default)
+\item 
+void \hyperlink{classxtd_1_1logger_a314e15f9d6eeeafbcf93b2bb757e2143}{set\+Name} (const string \&p\+\_\+name)
+\item 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} \hyperlink{classxtd_1_1logger_afa70268de8cc055f4903a54fa61c52df}{level\+Of} (const uint32\+\_\+t \&p\+\_\+level)
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1logger_a615e10d21938ff8681a98894aa31490e}{value\+Of} (\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+string \hyperlink{classxtd_1_1logger_a791f6ccde4fa459cf05085d9b7a0f2d5}{string\+Of} (\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} p\+\_\+level)
+\item 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} \hyperlink{classxtd_1_1logger_a88420216bbafe0a36bbd25080ac14567}{from\+String} (string p\+\_\+level)
+\item 
+\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level} \hyperlink{classxtd_1_1logger_a4cb9dd27ead213c0a9f3d85d80e9a7b4}{get\+Level} (const string \&p\+\_\+module)
+\item 
+t\+\_\+levels \hyperlink{classxtd_1_1logger_a8b22d69269de5f4269fbbf43fe6f9b53}{get\+Levels} (void)
+\item 
+bool \hyperlink{classxtd_1_1logger_aaca2ec5d979b7f57c2060ecaac2715ec}{is\+Valid\+String\+Level} (string p\+\_\+level)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classxtd_1_1logger}{logger} \& \hyperlink{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{get} (void)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a07697b74619641014fb6e51130b5c837}{emerg} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_abea0d6d16f6138d94e9373457fa08513}{alert} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1}{crit} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a20f991c43e729cf84d5d5294b947091e}{err} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a7432d0a490aef6bfe2de6f5ff5b77c06}{warning} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_ac6cf4c5d929c844041ea9763cc3926be}{info} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a74886bf7a5d2bb1f2b2bf0265b13b38b}{notice} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static void \hyperlink{classxtd_1_1logger_a53a77a287f7a29d9585898dcff910254}{debug} (const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)
+\item 
+{\footnotesize template$<$typename... Arguments$>$ }\\static string \hyperlink{classxtd_1_1logger_a169ce6459fe906cb5f840bdf2669e8ce}{format\+\_\+vargs} (string const \&p\+\_\+fmt, Arguments \&\&...p\+\_\+args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file logger.\+hh.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{xtd\+::logger@{xtd\+::logger}!level@{level}}
+\index{level@{level}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{level}{level}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::logger\+::level} \+: int32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{emerg@{emerg}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!emerg@{emerg}}\item[{\em 
+emerg\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}
+}]\index{alert@{alert}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!alert@{alert}}\item[{\em 
+alert\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}
+}]\index{crit@{crit}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!crit@{crit}}\item[{\em 
+crit\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}
+}]\index{err@{err}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!err@{err}}\item[{\em 
+err\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}
+}]\index{warning@{warning}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!warning@{warning}}\item[{\em 
+warning\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}
+}]\index{notice@{notice}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!notice@{notice}}\item[{\em 
+notice\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}
+}]\index{info@{info}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!info@{info}}\item[{\em 
+info\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}
+}]\index{debug@{debug}!xtd\+::logger@{xtd\+::logger}}\index{xtd\+::logger@{xtd\+::logger}!debug@{debug}}\item[{\em 
+debug\hypertarget{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{}\label{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 17 of file logger.\+hh.
+
+
+\begin{DoxyCode}
+17                    : int32\_t \{
+18     \hyperlink{classxtd_1_1logger_a07697b74619641014fb6e51130b5c837}{emerg}   = LOG\_EMERG,
+19       \hyperlink{classxtd_1_1logger_abea0d6d16f6138d94e9373457fa08513}{alert}   = LOG\_ALERT,
+20       \hyperlink{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1}{crit}    = LOG\_CRIT,
+21       \hyperlink{classxtd_1_1logger_a20f991c43e729cf84d5d5294b947091e}{err}     = LOG\_ERR,
+22       \hyperlink{classxtd_1_1logger_a7432d0a490aef6bfe2de6f5ff5b77c06}{warning} = LOG\_WARNING,
+23       \hyperlink{classxtd_1_1logger_a74886bf7a5d2bb1f2b2bf0265b13b38b}{notice}  = LOG\_NOTICE,
+24       \hyperlink{classxtd_1_1logger_ac6cf4c5d929c844041ea9763cc3926be}{info}    = LOG\_INFO,
+25       \hyperlink{classxtd_1_1logger_a53a77a287f7a29d9585898dcff910254}{debug}   = LOG\_DEBUG
+26       \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::logger@{xtd\+::logger}!logger@{logger}}
+\index{logger@{logger}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{logger(void)}{logger(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::logger\+::logger (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a794da1cd7618a6796d639d11845f9006}{}\label{classxtd_1_1logger_a794da1cd7618a6796d639d11845f9006}
+
+
+Definition at line 11 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+11                    :
+12   m\_name(\textcolor{stringliteral}{"unknown"})
+13 \{
+14 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a794da1cd7618a6796d639d11845f9006_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::logger@{xtd\+::logger}!alert@{alert}}
+\index{alert@{alert}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{alert(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{alert(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::alert (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_abea0d6d16f6138d94e9373457fa08513}{}\label{classxtd_1_1logger_abea0d6d16f6138d94e9373457fa08513}
+\index{xtd\+::logger@{xtd\+::logger}!clear\+All@{clear\+All}}
+\index{clear\+All@{clear\+All}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{clear\+All(level p\+\_\+default)}{clearAll(level p_default)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::clear\+All (
+\begin{DoxyParamCaption}
+\item[{{\bf level}}]{p\+\_\+default}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a18cd978561fcaf48e2fc935331834fe9}{}\label{classxtd_1_1logger_a18cd978561fcaf48e2fc935331834fe9}
+
+
+Definition at line 55 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+56 \{
+57   m\_levels.clear();
+58   \hyperlink{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{setLevel}(\textcolor{stringliteral}{""}, p\_level);
+59 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classxtd_1_1logger_a18cd978561fcaf48e2fc935331834fe9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!crit@{crit}}
+\index{crit@{crit}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{crit(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{crit(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::crit (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1}{}\label{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!debug@{debug}}
+\index{debug@{debug}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{debug(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{debug(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::debug (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a53a77a287f7a29d9585898dcff910254}{}\label{classxtd_1_1logger_a53a77a287f7a29d9585898dcff910254}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a53a77a287f7a29d9585898dcff910254_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!emerg@{emerg}}
+\index{emerg@{emerg}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{emerg(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{emerg(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::emerg (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a07697b74619641014fb6e51130b5c837}{}\label{classxtd_1_1logger_a07697b74619641014fb6e51130b5c837}
+\index{xtd\+::logger@{xtd\+::logger}!err@{err}}
+\index{err@{err}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{err(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{err(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::err (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a20f991c43e729cf84d5d5294b947091e}{}\label{classxtd_1_1logger_a20f991c43e729cf84d5d5294b947091e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classxtd_1_1logger_a20f991c43e729cf84d5d5294b947091e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!format\+\_\+vargs@{format\+\_\+vargs}}
+\index{format\+\_\+vargs@{format\+\_\+vargs}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{format\+\_\+vargs(string const \&p\+\_\+fmt, Arguments \&\&...\+p\+\_\+args)}{format_vargs(string const &p_fmt, Arguments &&...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Arguments$>$ static string xtd\+::logger\+::format\+\_\+vargs (
+\begin{DoxyParamCaption}
+\item[{string const \&}]{p\+\_\+fmt, }
+\item[{Arguments \&\&...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a169ce6459fe906cb5f840bdf2669e8ce}{}\label{classxtd_1_1logger_a169ce6459fe906cb5f840bdf2669e8ce}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a169ce6459fe906cb5f840bdf2669e8ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!from\+String@{from\+String}}
+\index{from\+String@{from\+String}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{from\+String(string p\+\_\+level)}{fromString(string p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logger\+::level} xtd\+::logger\+::from\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a88420216bbafe0a36bbd25080ac14567}{}\label{classxtd_1_1logger_a88420216bbafe0a36bbd25080ac14567}
+
+
+Definition at line 222 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+223 \{
+224   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"emerg"})
+225     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{level::emerg};
+226   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"alert"})
+227     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{level::alert};
+228   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"crit"})
+229     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+230   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"err"})
+231     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{level::err};
+232   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"warning"})
+233     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{level::warning};
+234   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"notice"})
+235     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{level::notice};
+236   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"info"})
+237     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{level::info};
+238   \textcolor{keywordflow}{if} (p\_level == \textcolor{stringliteral}{"debug"})
+239     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{level::debug};
+240   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+241 \}
+\end{DoxyCode}
+\index{xtd\+::logger@{xtd\+::logger}!get@{get}}
+\index{get@{get}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{get(void)}{get(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logger} \& xtd\+::logger\+::get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{}\label{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}
+
+
+Definition at line 17 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+18 \{
+19   \textcolor{keywordflow}{if} (0 == ms\_pInstance)
+20     ms\_pInstance = \textcolor{keyword}{new} \hyperlink{classxtd_1_1logger_a794da1cd7618a6796d639d11845f9006}{logger}();
+21   \textcolor{keywordflow}{return} *ms\_pInstance;
+22 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{get\+Level(const string \&p\+\_\+module)}{getLevel(const string &p_module)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logger\+::level} xtd\+::logger\+::get\+Level (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a4cb9dd27ead213c0a9f3d85d80e9a7b4}{}\label{classxtd_1_1logger_a4cb9dd27ead213c0a9f3d85d80e9a7b4}
+
+
+Definition at line 103 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+104 \{
+105   \textcolor{keyword}{auto}                     c\_res = m\_levels.find(p\_module);
+106   \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1}{level}                    l\_result = \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+107   vector<string>           l\_parts;
+108   vector<string>::iterator c\_part;
+109 
+110   \textcolor{keywordflow}{if} (c\_res != m\_levels.end())
+111     \textcolor{keywordflow}{return} c\_res->second;
+112 
+113   boost::split(l\_parts, p\_module, boost::is\_any\_of(\textcolor{stringliteral}{"."}), boost::token\_compress\_on);
+114   c\_part = l\_parts.end();
+115 
+116   \textcolor{keywordflow}{while} (c\_res == m\_levels.end())
+117   \{
+118     c\_part--;
+119     vector<string> l\_tmp(l\_parts.begin(), c\_part);
+120     c\_res = m\_levels.find(boost::join(l\_tmp, \textcolor{stringliteral}{"."}));
+121   \}
+122 
+123   \textcolor{keywordflow}{if} (c\_res != m\_levels.end())
+124     l\_result = c\_res->second;
+125 
+126   \hyperlink{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{setLevel}(p\_module, l\_result);
+127   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+128 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classxtd_1_1logger_a4cb9dd27ead213c0a9f3d85d80e9a7b4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!get\+Levels@{get\+Levels}}
+\index{get\+Levels@{get\+Levels}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{get\+Levels(void)}{getLevels(void)}}]{\setlength{\rightskip}{0pt plus 5cm}logger\+::t\+\_\+levels xtd\+::logger\+::get\+Levels (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a8b22d69269de5f4269fbbf43fe6f9b53}{}\label{classxtd_1_1logger_a8b22d69269de5f4269fbbf43fe6f9b53}
+
+
+Definition at line 75 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+76 \{
+77   \textcolor{keywordflow}{return} m\_levels;
+78 \}
+\end{DoxyCode}
+\index{xtd\+::logger@{xtd\+::logger}!info@{info}}
+\index{info@{info}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{info(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{info(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::info (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_ac6cf4c5d929c844041ea9763cc3926be}{}\label{classxtd_1_1logger_ac6cf4c5d929c844041ea9763cc3926be}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classxtd_1_1logger_ac6cf4c5d929c844041ea9763cc3926be_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{initialize(void)}{initialize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66}{}\label{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66}
+
+
+Definition at line 34 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+35 \{
+36   \hyperlink{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66}{initialize}(m\_name, \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit});
+37 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{initialize(const string \&p\+\_\+name, level p\+\_\+level)}{initialize(const string &p_name, level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::initialize (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a8559c9744e68ecab37076d8744499c8f}{}\label{classxtd_1_1logger_a8559c9744e68ecab37076d8744499c8f}
+
+
+Definition at line 40 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+41 \{
+42   \hyperlink{classxtd_1_1logger_a314e15f9d6eeeafbcf93b2bb757e2143}{setName}(p\_name);
+43   \hyperlink{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{setLevel}(\textcolor{stringliteral}{""}, p\_level);
+44   openlog(m\_name.c\_str(), LOG\_PID | LOG\_PERROR, LOG\_LOCAL0);
+45   m\_initialized = \textcolor{keyword}{true};
+46 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classxtd_1_1logger_a8559c9744e68ecab37076d8744499c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!is\+Valid\+String\+Level@{is\+Valid\+String\+Level}}
+\index{is\+Valid\+String\+Level@{is\+Valid\+String\+Level}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{is\+Valid\+String\+Level(string p\+\_\+level)}{isValidStringLevel(string p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::logger\+::is\+Valid\+String\+Level (
+\begin{DoxyParamCaption}
+\item[{string}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_aaca2ec5d979b7f57c2060ecaac2715ec}{}\label{classxtd_1_1logger_aaca2ec5d979b7f57c2060ecaac2715ec}
+
+
+Definition at line 181 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+182 \{
+183   \textcolor{keywordflow}{return}
+184     ((p\_level == \textcolor{stringliteral}{"emerg"})   ||
+185      (p\_level == \textcolor{stringliteral}{"alert"})   ||
+186      (p\_level == \textcolor{stringliteral}{"crit"})    ||
+187      (p\_level == \textcolor{stringliteral}{"err"})     ||
+188      (p\_level == \textcolor{stringliteral}{"warning"}) ||
+189      (p\_level == \textcolor{stringliteral}{"notice"})  ||
+190      (p\_level == \textcolor{stringliteral}{"info"})    ||
+191      (p\_level == \textcolor{stringliteral}{"debug"}));
+192 \}
+\end{DoxyCode}
+\index{xtd\+::logger@{xtd\+::logger}!level\+Of@{level\+Of}}
+\index{level\+Of@{level\+Of}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{level\+Of(const uint32\+\_\+t \&p\+\_\+level)}{levelOf(const uint32_t &p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logger\+::level} xtd\+::logger\+::level\+Of (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t \&}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_afa70268de8cc055f4903a54fa61c52df}{}\label{classxtd_1_1logger_afa70268de8cc055f4903a54fa61c52df}
+
+
+Definition at line 133 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+134 \{
+135   \textcolor{keywordflow}{if} (p\_level == LOG\_EMERG)
+136     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{level::emerg};
+137   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_ALERT)
+138     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{level::alert};
+139   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_CRIT)
+140     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+141   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_ERR)
+142     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{level::err};
+143   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_WARNING)
+144     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{level::warning};
+145   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_NOTICE)
+146     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{level::notice};
+147   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_INFO)
+148     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{level::info};
+149   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p\_level == LOG\_DEBUG)
+150     \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{level::debug};
+151   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit};
+152 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classxtd_1_1logger_afa70268de8cc055f4903a54fa61c52df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!notice@{notice}}
+\index{notice@{notice}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{notice(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{notice(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::notice (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a74886bf7a5d2bb1f2b2bf0265b13b38b}{}\label{classxtd_1_1logger_a74886bf7a5d2bb1f2b2bf0265b13b38b}
+\index{xtd\+::logger@{xtd\+::logger}!set\+All\+Levels@{set\+All\+Levels}}
+\index{set\+All\+Levels@{set\+All\+Levels}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{set\+All\+Levels(level p\+\_\+level)}{setAllLevels(level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::set\+All\+Levels (
+\begin{DoxyParamCaption}
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26}{}\label{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26}
+
+
+Definition at line 81 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+82 \{
+83   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& c\_item : m\_levels)
+84     c\_item.second = p\_level;
+85 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!set\+All\+Value\+Levels@{set\+All\+Value\+Levels}}
+\index{set\+All\+Value\+Levels@{set\+All\+Value\+Levels}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{set\+All\+Value\+Levels(uint32\+\_\+t p\+\_\+level)}{setAllValueLevels(uint32_t p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::set\+All\+Value\+Levels (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a10ec7455d964067fc1ca79f3a7cc14b4}{}\label{classxtd_1_1logger_a10ec7455d964067fc1ca79f3a7cc14b4}
+
+
+Definition at line 88 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+89 \{
+90   \hyperlink{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26}{setAllLevels}(\hyperlink{classxtd_1_1logger_afa70268de8cc055f4903a54fa61c52df}{levelOf}(p\_level));
+91 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1logger_a10ec7455d964067fc1ca79f3a7cc14b4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{set\+Level(const string \&p\+\_\+module, level p\+\_\+level)}{setLevel(const string &p_module, level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::set\+Level (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{}\label{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}
+
+
+Definition at line 49 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+50 \{
+51   m\_levels[p\_module] = p\_level;
+52 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{set\+Name(const string \&p\+\_\+name)}{setName(const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a314e15f9d6eeeafbcf93b2bb757e2143}{}\label{classxtd_1_1logger_a314e15f9d6eeeafbcf93b2bb757e2143}
+
+
+Definition at line 96 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+97 \{
+98   m\_name = p\_name;
+99 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classxtd_1_1logger_a314e15f9d6eeeafbcf93b2bb757e2143_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!string\+Of@{string\+Of}}
+\index{string\+Of@{string\+Of}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{string\+Of(level p\+\_\+level)}{stringOf(level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::logger\+::string\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a791f6ccde4fa459cf05085d9b7a0f2d5}{}\label{classxtd_1_1logger_a791f6ccde4fa459cf05085d9b7a0f2d5}
+
+
+Definition at line 196 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+197 \{
+198   \textcolor{keywordflow}{switch} (p\_level)
+199   \{
+200   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{level::emerg}:
+201     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"emerg"};
+202   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{level::alert}:
+203     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"alert"};
+204   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit}:
+205     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"crit"};
+206   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{level::err}:
+207     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"err"};
+208   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{level::warning}:
+209     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"warning"};
+210   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{level::notice}:
+211     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"notice"};
+212   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{level::info}:
+213     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"info"};
+214   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{level::debug}:
+215     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"debug"};
+216   \}
+217   \textcolor{keywordflow}{return} \textcolor{stringliteral}{"crit"};
+218 \}
+\end{DoxyCode}
+\index{xtd\+::logger@{xtd\+::logger}!update\+Levels@{update\+Levels}}
+\index{update\+Levels@{update\+Levels}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{update\+Levels(const string \&p\+\_\+regex, level p\+\_\+level)}{updateLevels(const string &p_regex, level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::logger\+::update\+Levels (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+regex, }
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_af88d4c20247cb62433e660ab7f9f5a97}{}\label{classxtd_1_1logger_af88d4c20247cb62433e660ab7f9f5a97}
+
+
+Definition at line 62 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+63 \{
+64   std::regex l\_matcher(p\_module + \textcolor{stringliteral}{".*"});
+65 
+66   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& c\_item : m\_levels)
+67   \{
+68     \textcolor{keywordflow}{if} (\textcolor{keyword}{true} == std::regex\_match(c\_item.first, l\_matcher))
+69       c\_item.second = p\_level;
+70   \}
+71   \hyperlink{classxtd_1_1logger_a9002910ed99cdc1df062c39e385cd379}{setLevel}(p\_module, p\_level);
+72 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classxtd_1_1logger_af88d4c20247cb62433e660ab7f9f5a97_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::logger@{xtd\+::logger}!value\+Of@{value\+Of}}
+\index{value\+Of@{value\+Of}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{value\+Of(level p\+\_\+level)}{valueOf(level p_level)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::logger\+::value\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf level}}]{p\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1logger_a615e10d21938ff8681a98894aa31490e}{}\label{classxtd_1_1logger_a615e10d21938ff8681a98894aa31490e}
+
+
+Definition at line 155 of file logger.\+cc.
+
+
+\begin{DoxyCode}
+156 \{
+157   \textcolor{keywordflow}{switch} (p\_level)
+158   \{
+159   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc}{level::emerg}:
+160     \textcolor{keywordflow}{return} LOG\_EMERG;
+161   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f}{level::alert}:
+162     \textcolor{keywordflow}{return} LOG\_ALERT;
+163   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{level::crit}:
+164     \textcolor{keywordflow}{return} LOG\_CRIT;
+165   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6}{level::err}:
+166     \textcolor{keywordflow}{return} LOG\_ERR;
+167   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd}{level::warning}:
+168     \textcolor{keywordflow}{return} LOG\_WARNING;
+169   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65}{level::notice}:
+170     \textcolor{keywordflow}{return} LOG\_NOTICE;
+171   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c}{level::info}:
+172     \textcolor{keywordflow}{return} LOG\_INFO;
+173   \textcolor{keywordflow}{case} \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d}{level::debug}:
+174     \textcolor{keywordflow}{return} LOG\_DEBUG;
+175   \}
+176   \textcolor{keywordflow}{return} LOG\_CRIT;
+177 \}
+\end{DoxyCode}
+\index{xtd\+::logger@{xtd\+::logger}!warning@{warning}}
+\index{warning@{warning}!xtd\+::logger@{xtd\+::logger}}
+\subsubsection[{\texorpdfstring{warning(const string \&p\+\_\+module, const string \&p\+\_\+format, Args...\+p\+\_\+args)}{warning(const string &p_module, const string &p_format, Args...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static void xtd\+::logger\+::warning (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Args...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1logger_a7432d0a490aef6bfe2de6f5ff5b77c06}{}\label{classxtd_1_1logger_a7432d0a490aef6bfe2de6f5ff5b77c06}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{logger_8hh}{logger.\+hh}\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{logger_8cc}{logger.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1network_1_1utils" kind="namespace" language="C++">
+    <compoundname>xtd::network::utils</compoundname>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1CacheDns" prot="public">xtd::network::utils::CacheDns</innerclass>
+    <innerclass refid="structxtd_1_1network_1_1utils_1_1CacheEntry" prot="public">xtd::network::utils::CacheEntry</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1Config" prot="public">xtd::network::utils::Config</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1deque__id" prot="public">xtd::network::utils::deque_id</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1Resolver" prot="public">xtd::network::utils::Resolver</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4" prot="public">xtd::network::utils::Resolver&lt; af_inet &gt;</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4" prot="public">xtd::network::utils::Resolver&lt; af_unix &gt;</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1scoped__method" prot="public">xtd::network::utils::scoped_method</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1vectorbuf" prot="public">xtd::network::utils::vectorbuf</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4f" prot="public" static="no">
+        <name>option</name>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3" prot="public">
+          <name>nodelay</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2" prot="public">
+          <name>reuseaddr</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1" prot="public">
+          <name>keepalive</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a" prot="public">
+          <name>linger</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994" prot="public">
+          <name>compress</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" prot="public" static="no">
+        <name>codec</name>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23" prot="public">
+          <name>zlib</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c" prot="public">
+          <name>gzip</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b" prot="public">
+          <name>bzip2</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" prot="public" static="no">
+        <type>std::pair&lt; string, boost::shared_ptr&lt; <ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry" kindref="compound">CacheEntry</ref> &gt; &gt;</type>
+        <definition>typedef std::pair&lt; string, boost::shared_ptr&lt;CacheEntry&gt; &gt; xtd::network::utils::EntryPair</definition>
+        <argsstring></argsstring>
+        <name>EntryPair</name>
+        <briefdescription>
+<para>typedef for URL/Entry(IP address) pair </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a6eef494cdc6ca2b10bf4f36f6fa110ee" prot="public" static="no">
+        <type>std::list&lt; boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" kindref="member">EntryPair</ref> &gt; &gt;</type>
+        <definition>typedef std::list&lt; boost::shared_ptr&lt;EntryPair&gt; &gt; xtd::network::utils::CacheList</definition>
+        <argsstring></argsstring>
+        <name>CacheList</name>
+        <briefdescription>
+<para>typedef for Cache list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1aa648e4975dce81f2fd0a9999f684781d" prot="public" static="no">
+        <type>boost::unordered_map&lt; string, CacheList::iterator &gt;</type>
+        <definition>typedef boost::unordered_map&lt; string, CacheList::iterator &gt; xtd::network::utils::CacheMap</definition>
+        <argsstring></argsstring>
+        <name>CacheMap</name>
+        <briefdescription>
+<para>typedef for URL-indexed map (aka hash map) into the CacheList </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" prot="public" static="no">
+        <type>boost::asio::deadline_timer</type>
+        <definition>typedef boost::asio::deadline_timer xtd::network::utils::deadLineTimer_t</definition>
+        <argsstring></argsstring>
+        <name>deadLineTimer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" prot="public" static="no">
+        <type>boost::shared_ptr&lt; boost::asio::io_service &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;boost::asio::io_service&gt; xtd::network::utils::ioServicePtr_t</definition>
+        <argsstring></argsstring>
+        <name>ioServicePtr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" prot="public" static="no">
+        <type>boost::shared_ptr&lt; boost::asio::io_service::work &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;boost::asio::io_service::work&gt; xtd::network::utils::workPtr_t</definition>
+        <argsstring></argsstring>
+        <name>workPtr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1aaaf1b50be1864a40d85efd18979631e1" prot="public" static="no">
+        <type>boost::shared_ptr&lt; boost::asio::streambuf &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;boost::asio::streambuf&gt; xtd::network::utils::streambufPtr_t</definition>
+        <argsstring></argsstring>
+        <name>streambufPtr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="18" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a778bf7884b2296561ffc1fc5a5f14e38" prot="public" static="no">
+        <type>map&lt; boost::thread::id, size_t &gt;</type>
+        <definition>typedef map&lt;boost::thread::id, size_t&gt; xtd::network::utils::t_IdNumberMap</definition>
+        <argsstring></argsstring>
+        <name>t_IdNumberMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1aa6bd02256b6023347de116a773dd9500" prot="public" static="no">
+        <type>std::pair&lt; boost::thread::id, size_t &gt;</type>
+        <definition>typedef std::pair&lt;boost::thread::id, size_t&gt; xtd::network::utils::t_IdNumberPair</definition>
+        <argsstring></argsstring>
+        <name>t_IdNumberPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" prot="public" static="no">
+        <type>boost::asio::local::stream_protocol</type>
+        <definition>typedef boost::asio::local::stream_protocol xtd::network::utils::af_unix</definition>
+        <argsstring></argsstring>
+        <name>af_unix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" prot="public" static="no">
+        <type>boost::asio::ip::tcp</type>
+        <definition>typedef boost::asio::ip::tcp xtd::network::utils::af_inet</definition>
+        <argsstring></argsstring>
+        <name>af_inet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="24" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a0bdb4094852a77df867e219999175200" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t xtd::network::utils::requestId_t</definition>
+        <argsstring></argsstring>
+        <name>requestId_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="25" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" prot="public" static="no">
+        <type>vector&lt; char &gt;</type>
+        <definition>typedef vector&lt;char&gt; xtd::network::utils::vectorBytes_t</definition>
+        <argsstring></argsstring>
+        <name>vectorBytes_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" prot="public" static="no">
+        <type>vector&lt; uint32_t &gt;</type>
+        <definition>typedef vector&lt;uint32_t&gt; xtd::network::utils::vectorUint32_t</definition>
+        <argsstring></argsstring>
+        <name>vectorUint32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1ac3ca189267ad1167fa141608f8b3a2de" prot="public" static="no">
+        <type>std::deque&lt; <ref refid="namespacextd_1_1network_1_1utils_1a0bdb4094852a77df867e219999175200" kindref="member">requestId_t</ref> &gt;</type>
+        <definition>typedef std::deque&lt;requestId_t&gt; xtd::network::utils::dequeId_t</definition>
+        <argsstring></argsstring>
+        <name>dequeId_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">vectorBytes_t</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vectorBytes_t&gt; xtd::network::utils::sharedBuf_t</definition>
+        <argsstring></argsstring>
+        <name>sharedBuf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1af5b287652a0fd8fca54642f8d3ca07fa" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" kindref="member">vectorUint32_t</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;vectorUint32_t&gt; xtd::network::utils::sharedHeader_t</definition>
+        <argsstring></argsstring>
+        <name>sharedHeader_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" prot="public" static="no">
+        <type>boost::function&lt; void(const boost::system::error_code)&gt;</type>
+        <definition>typedef boost::function&lt;void(const boost::system::error_code)&gt; xtd::network::utils::handler_t</definition>
+        <argsstring></argsstring>
+        <name>handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::network::utils::CACHE_CAPACITY_MAX</definition>
+        <argsstring></argsstring>
+        <name>CACHE_CAPACITY_MAX</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a227d9b53586520412dde2ff93e373b65" compoundref="Resolver_8cc" startline="13" endline="17">xtd::network::utils::Resolver&lt; af_inet &gt;::Resolver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacextd_1_1network_1_1utils_1adb4767541db3a79016a24142db705161" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::network::utils::CACHE_TTL_MAX</definition>
+        <argsstring></argsstring>
+        <name>CACHE_TTL_MAX</name>
+        <initializer>= 1800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1_1network_1_1utils_1a181758eb475ef5f4aebfec6c0ebec0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::do_sem_wait</definition>
+        <argsstring>(boost::interprocess::interprocess_semaphore &amp;p_sem)</argsstring>
+        <name>do_sem_wait</name>
+        <param>
+          <type>boost::interprocess::interprocess_semaphore &amp;</type>
+          <declname>p_sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc" line="9" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc" bodystart="9" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1network_1_1utils_1aeee4bc5a0636807dd491f21938b7a1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::time_t</type>
+        <definition>std::time_t xtd::network::utils::ptime_to_time_t</definition>
+        <argsstring>(const boost::posix_time::ptime &amp;t)</argsstring>
+        <name>ptime_to_time_t</name>
+        <param>
+          <type>const boost::posix_time::ptime &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc" bodystart="26" bodyend="31"/>
+        <referencedby refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a1ac8401e5827dbfbc39a909c2cf7afdf" compoundref="CacheDns_8cc" startline="55" endline="76">xtd::network::utils::CacheDns::pushElem</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="11" column="1"/>
+  </compounddef>
+</doxygen>

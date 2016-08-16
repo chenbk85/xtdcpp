@@ -1,0 +1,388 @@
+\hypertarget{classxtd_1_1servers_1_1app_1_1Server}{}\section{xtd\+:\+:servers\+:\+:app\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$ Class Template Reference}
+\label{classxtd_1_1servers_1_1app_1_1Server}\index{xtd\+::servers\+::app\+::\+Server$<$ T\+Req, T\+Res, Domain $>$@{xtd\+::servers\+::app\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}}
+
+
+{\ttfamily \#include $<$Server.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:servers\+:\+:app\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1servers_1_1app_1_1Server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:servers\+:\+:app\+:\+:Server$<$ T\+Req, T\+Res, Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1servers_1_1app_1_1Server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1servers_1_1app_1_1Server_ac30046979fc32ad42c2436c0f3854ea2}{Server} (void)
+\item 
+\hyperlink{classxtd_1_1servers_1_1app_1_1Server_a1b30c4e9066d130569acb7d31c125e20}{$\sim$\+Server} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ae361d389bf6050e2565055e7e3800e82}{mcs\+\_\+default\+Probe\+Delay} = 30
+\item 
+static const uint32\+\_\+t \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a76f9b8224a5555f638527752e26d5457}{mcs\+\_\+default\+Timeout\+Ms} = 5000
+\item 
+static const uint32\+\_\+t \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ac9944d61cb7fd45d86c1128e1ac55670}{mcs\+\_\+http\+Nb\+Thread} = 5
+\item 
+static const char \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a9d3ac8218bf47d8ffa6d8b30a6195fa8}{mcs\+\_\+default\+Listen\+Interface} \mbox{[}$\,$\mbox{]}
+\item 
+static const string \hyperlink{classxtd_1_1servers_1_1app_1_1Server_afae8d71c231f3e48ec8270217fddae10}{mcs\+\_\+default\+Struct\+Gen\+Dump\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classxtd_1_1servers_1_1app_1_1Server}{Server}$<$ T\+Req, T\+Res, Domain $>$ \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a6159422bbffe0fd3d02eb21c4e61011e}{bip\+\_\+app}
+\item 
+typedef network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$ \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a7254e9a899be59bbe8ea13ca127108dc}{bip\+\_\+net}
+\item 
+typedef \hyperlink{classxtd_1_1servers_1_1param_1_1Base_aaf4d92eca642f61cb81524096926c6a1}{param\+::\+Base\+::t\+\_\+sptr} \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a72a3c0bea3f2fc2e87b98e09e54fc9ac}{t\+\_\+param\+\_\+sptr}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ad3c9fd71ba0399f18c27b15cb1d28e65}{process\+Request} (uint32\+\_\+t p\+\_\+request\+ID, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)=0
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a04ac2d5b3a0a229a3b54ef33b9b7056d}{parse\+Config} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_aeb01b34fd4e8564b8cd18c2041dc253f}{parse\+Bip\+Port} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a6f5fff5c5058dc43aea7b27a046c985b}{check\+Options} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_aabde8b6a3810b09f029821dddafe3b8c}{initialize} (void)
+\item 
+virtual status \hyperlink{classxtd_1_1servers_1_1app_1_1Server_afbe76a86e66e635907229d37b1267037}{define\+Probes} (void)
+\item 
+virtual bool \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a00c2f9aaa3c130299a4c77f86bf37d38}{is\+Response\+Valid} (const T\+Res \&p\+\_\+response)
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a37fe0eca660f81a9edde0c1ce6938f39}{stop} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a8e21bf6e7993a2e04fd70d0ce88ca487}{start} (void)
+\item 
+bool \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ad1161e88fb26561ffbef7254fb263d15}{is\+Structgen\+Mode} (void) const 
+\item 
+status \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ae4ad855e88777c7e5afe9d673037ca6b}{h\+\_\+query} (const uint32\+\_\+t p\+\_\+request\+Id, const network\+::http\+::\+Request \&p\+\_\+req, network\+::http\+::\+Response \&p\+\_\+res)
+\item 
+status \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a10fc93bccaf973467b0df7de87b4ae79}{h\+\_\+ihm\+\_\+query} (const uint32\+\_\+t p\+\_\+request\+Id, const network\+::http\+::\+Request \&p\+\_\+req, network\+::http\+::\+Response \&p\+\_\+res)
+\item 
+void \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ab6700b87291ddfa7de81f11ec4f866e6}{set\+Assert\+R\+TT} (bool p\+\_\+assert)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a08752041a6fc98289ad93c93c1d4fd75}{m\+\_\+bip\+Host}
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a849adda20d929ad1116564177986e146}{m\+\_\+bip\+Port}
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a4e7cb3d792a27b1572aa775f8f0018f3}{m\+\_\+bip\+Nb\+Thread}
+\item 
+network\+::utils\+::\+Config \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a62a3f48e47eba551b53d0bef859aa906}{m\+\_\+bip\+Config}
+\item 
+bool \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a143d0eeee15dd57ba4d03737a0128551}{m\+\_\+use\+Compression}
+\item 
+stopper\+\_\+status \hyperlink{classxtd_1_1servers_1_1app_1_1Server_ae5180a630e0f23596a0909f845d00e69}{m\+\_\+stopper\+Status}
+\item 
+T\+Res \hyperlink{classxtd_1_1servers_1_1app_1_1Server_afb80e8da001aafc8ffbf5b2dd8a9213e}{m\+\_\+stopper\+Response}
+\item 
+boost\+::mutex \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a3ad929be560e47d7193da946cd74e557}{m\+\_\+structgen\+Mutex}
+\item 
+string \hyperlink{classxtd_1_1servers_1_1app_1_1Server_a66a9242f7a55a296f1ca25cb18764eec}{m\+\_\+structgen\+Filename}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Req, typename T\+Res, typename Domain = network\+::utils\+::af\+\_\+inet$>$\\*
+class xtd\+::servers\+::app\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}
+
+
+
+Definition at line 24 of file Server.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!bip\+\_\+app@{bip\+\_\+app}}
+\index{bip\+\_\+app@{bip\+\_\+app}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{bip\+\_\+app}{bip_app}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ typedef {\bf Server}$<$T\+Req, T\+Res, Domain$>$ {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::{\bf bip\+\_\+app}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a6159422bbffe0fd3d02eb21c4e61011e}{}\label{classxtd_1_1servers_1_1app_1_1Server_a6159422bbffe0fd3d02eb21c4e61011e}
+
+
+Definition at line 29 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!bip\+\_\+net@{bip\+\_\+net}}
+\index{bip\+\_\+net@{bip\+\_\+net}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{bip\+\_\+net}{bip_net}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ typedef network\+::bip\+::\+Server$<$T\+Req, T\+Res, Domain$>$ {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::{\bf bip\+\_\+net}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a7254e9a899be59bbe8ea13ca127108dc}{}\label{classxtd_1_1servers_1_1app_1_1Server_a7254e9a899be59bbe8ea13ca127108dc}
+
+
+Definition at line 30 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!t\+\_\+param\+\_\+sptr@{t\+\_\+param\+\_\+sptr}}
+\index{t\+\_\+param\+\_\+sptr@{t\+\_\+param\+\_\+sptr}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{t\+\_\+param\+\_\+sptr}{t_param_sptr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ typedef {\bf param\+::\+Base\+::t\+\_\+sptr} {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::{\bf t\+\_\+param\+\_\+sptr}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a72a3c0bea3f2fc2e87b98e09e54fc9ac}{}\label{classxtd_1_1servers_1_1app_1_1Server_a72a3c0bea3f2fc2e87b98e09e54fc9ac}
+
+
+Definition at line 31 of file Server.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!Server@{Server}}
+\index{Server@{Server}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{Server(void)}{Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::{\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ac30046979fc32ad42c2436c0f3854ea2}{}\label{classxtd_1_1servers_1_1app_1_1Server_ac30046979fc32ad42c2436c0f3854ea2}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!````~Server@{$\sim$\+Server}}
+\index{````~Server@{$\sim$\+Server}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{$\sim$\+Server(void)}{~Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::$\sim${\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a1b30c4e9066d130569acb7d31c125e20}{}\label{classxtd_1_1servers_1_1app_1_1Server_a1b30c4e9066d130569acb7d31c125e20}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!check\+Options@{check\+Options}}
+\index{check\+Options@{check\+Options}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{check\+Options(void)}{checkOptions(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::check\+Options (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a6f5fff5c5058dc43aea7b27a046c985b}{}\label{classxtd_1_1servers_1_1app_1_1Server_a6f5fff5c5058dc43aea7b27a046c985b}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_a381e3736b9c8fa89891da50b29ad8ae9}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!define\+Probes@{define\+Probes}}
+\index{define\+Probes@{define\+Probes}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{define\+Probes(void)}{defineProbes(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual status {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::define\+Probes (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_afbe76a86e66e635907229d37b1267037}{}\label{classxtd_1_1servers_1_1app_1_1Server_afbe76a86e66e635907229d37b1267037}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_a66c2a3b5bca8390d96b35daebfccabf3}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!h\+\_\+ihm\+\_\+query@{h\+\_\+ihm\+\_\+query}}
+\index{h\+\_\+ihm\+\_\+query@{h\+\_\+ihm\+\_\+query}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+ihm\+\_\+query(const uint32\+\_\+t p\+\_\+request\+Id, const network\+::http\+::\+Request \&p\+\_\+req, network\+::http\+::\+Response \&p\+\_\+res)}{h_ihm_query(const uint32_t p_requestId, const network::http::Request &p_req, network::http::Response &p_res)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ status {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::h\+\_\+ihm\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const network\+::http\+::\+Request \&}]{p\+\_\+req, }
+\item[{network\+::http\+::\+Response \&}]{p\+\_\+res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a10fc93bccaf973467b0df7de87b4ae79}{}\label{classxtd_1_1servers_1_1app_1_1Server_a10fc93bccaf973467b0df7de87b4ae79}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!h\+\_\+query@{h\+\_\+query}}
+\index{h\+\_\+query@{h\+\_\+query}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+query(const uint32\+\_\+t p\+\_\+request\+Id, const network\+::http\+::\+Request \&p\+\_\+req, network\+::http\+::\+Response \&p\+\_\+res)}{h_query(const uint32_t p_requestId, const network::http::Request &p_req, network::http::Response &p_res)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ status {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::h\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const network\+::http\+::\+Request \&}]{p\+\_\+req, }
+\item[{network\+::http\+::\+Response \&}]{p\+\_\+res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ae4ad855e88777c7e5afe9d673037ca6b}{}\label{classxtd_1_1servers_1_1app_1_1Server_ae4ad855e88777c7e5afe9d673037ca6b}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{initialize(void)}{initialize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_aabde8b6a3810b09f029821dddafe3b8c}{}\label{classxtd_1_1servers_1_1app_1_1Server_aabde8b6a3810b09f029821dddafe3b8c}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_a0924e53b6bc9de7563c33690d619ce9d}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!is\+Response\+Valid@{is\+Response\+Valid}}
+\index{is\+Response\+Valid@{is\+Response\+Valid}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{is\+Response\+Valid(const T\+Res \&p\+\_\+response)}{isResponseValid(const TRes &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual bool {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::is\+Response\+Valid (
+\begin{DoxyParamCaption}
+\item[{const T\+Res \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a00c2f9aaa3c130299a4c77f86bf37d38}{}\label{classxtd_1_1servers_1_1app_1_1Server_a00c2f9aaa3c130299a4c77f86bf37d38}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!is\+Structgen\+Mode@{is\+Structgen\+Mode}}
+\index{is\+Structgen\+Mode@{is\+Structgen\+Mode}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{is\+Structgen\+Mode(void) const }{isStructgenMode(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::is\+Structgen\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ad1161e88fb26561ffbef7254fb263d15}{}\label{classxtd_1_1servers_1_1app_1_1Server_ad1161e88fb26561ffbef7254fb263d15}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!parse\+Bip\+Port@{parse\+Bip\+Port}}
+\index{parse\+Bip\+Port@{parse\+Bip\+Port}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{parse\+Bip\+Port(void)}{parseBipPort(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::parse\+Bip\+Port (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_aeb01b34fd4e8564b8cd18c2041dc253f}{}\label{classxtd_1_1servers_1_1app_1_1Server_aeb01b34fd4e8564b8cd18c2041dc253f}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!parse\+Config@{parse\+Config}}
+\index{parse\+Config@{parse\+Config}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{parse\+Config(void)}{parseConfig(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::parse\+Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a04ac2d5b3a0a229a3b54ef33b9b7056d}{}\label{classxtd_1_1servers_1_1app_1_1Server_a04ac2d5b3a0a229a3b54ef33b9b7056d}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_af4baf6c6e7397177a20122e1f1101f9f}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!process\+Request@{process\+Request}}
+\index{process\+Request@{process\+Request}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{process\+Request(uint32\+\_\+t p\+\_\+request\+I\+D, const T\+Req \&p\+\_\+request, const bool p\+\_\+request\+Debug, T\+Res \&p\+\_\+response, bool \&p\+\_\+response\+Debug)=0}{processRequest(uint32_t p_requestID, const TReq &p_request, const bool p_requestDebug, TRes &p_response, bool &p_responseDebug)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::process\+Request (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID, }
+\item[{const T\+Req \&}]{p\+\_\+request, }
+\item[{const bool}]{p\+\_\+request\+Debug, }
+\item[{T\+Res \&}]{p\+\_\+response, }
+\item[{bool \&}]{p\+\_\+response\+Debug}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ad3c9fd71ba0399f18c27b15cb1d28e65}{}\label{classxtd_1_1servers_1_1app_1_1Server_ad3c9fd71ba0399f18c27b15cb1d28e65}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!set\+Assert\+R\+TT@{set\+Assert\+R\+TT}}
+\index{set\+Assert\+R\+TT@{set\+Assert\+R\+TT}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{set\+Assert\+R\+T\+T(bool p\+\_\+assert)}{setAssertRTT(bool p_assert)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::set\+Assert\+R\+TT (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+assert}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ab6700b87291ddfa7de81f11ec4f866e6}{}\label{classxtd_1_1servers_1_1app_1_1Server_ab6700b87291ddfa7de81f11ec4f866e6}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!start@{start}}
+\index{start@{start}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{start(void)}{start(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a8e21bf6e7993a2e04fd70d0ce88ca487}{}\label{classxtd_1_1servers_1_1app_1_1Server_a8e21bf6e7993a2e04fd70d0ce88ca487}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_a6fac87218bf8d69ef6baeb56819411f9}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!stop@{stop}}
+\index{stop@{stop}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{stop(void)}{stop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a37fe0eca660f81a9edde0c1ce6938f39}{}\label{classxtd_1_1servers_1_1app_1_1Server_a37fe0eca660f81a9edde0c1ce6938f39}
+
+
+Reimplemented from \hyperlink{classxtd_1_1servers_1_1app_1_1HttpServer_a7fdba08e0fa4dc9bbec30a989ccf4049}{xtd\+::servers\+::app\+::\+Http\+Server}.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+bip\+Config@{m\+\_\+bip\+Config}}
+\index{m\+\_\+bip\+Config@{m\+\_\+bip\+Config}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+bip\+Config}{m_bipConfig}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ network\+::utils\+::\+Config {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+bip\+Config\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a62a3f48e47eba551b53d0bef859aa906}{}\label{classxtd_1_1servers_1_1app_1_1Server_a62a3f48e47eba551b53d0bef859aa906}
+
+
+Definition at line 94 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+bip\+Host@{m\+\_\+bip\+Host}}
+\index{m\+\_\+bip\+Host@{m\+\_\+bip\+Host}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+bip\+Host}{m_bipHost}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ string {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+bip\+Host\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a08752041a6fc98289ad93c93c1d4fd75}{}\label{classxtd_1_1servers_1_1app_1_1Server_a08752041a6fc98289ad93c93c1d4fd75}
+
+
+Definition at line 91 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+bip\+Nb\+Thread@{m\+\_\+bip\+Nb\+Thread}}
+\index{m\+\_\+bip\+Nb\+Thread@{m\+\_\+bip\+Nb\+Thread}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+bip\+Nb\+Thread}{m_bipNbThread}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ uint32\+\_\+t {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+bip\+Nb\+Thread\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a4e7cb3d792a27b1572aa775f8f0018f3}{}\label{classxtd_1_1servers_1_1app_1_1Server_a4e7cb3d792a27b1572aa775f8f0018f3}
+
+
+Definition at line 93 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+bip\+Port@{m\+\_\+bip\+Port}}
+\index{m\+\_\+bip\+Port@{m\+\_\+bip\+Port}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+bip\+Port}{m_bipPort}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ uint32\+\_\+t {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+bip\+Port\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a849adda20d929ad1116564177986e146}{}\label{classxtd_1_1servers_1_1app_1_1Server_a849adda20d929ad1116564177986e146}
+
+
+Definition at line 92 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+stopper\+Response@{m\+\_\+stopper\+Response}}
+\index{m\+\_\+stopper\+Response@{m\+\_\+stopper\+Response}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+stopper\+Response}{m_stopperResponse}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ T\+Res {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+stopper\+Response\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_afb80e8da001aafc8ffbf5b2dd8a9213e}{}\label{classxtd_1_1servers_1_1app_1_1Server_afb80e8da001aafc8ffbf5b2dd8a9213e}
+
+
+Definition at line 97 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+stopper\+Status@{m\+\_\+stopper\+Status}}
+\index{m\+\_\+stopper\+Status@{m\+\_\+stopper\+Status}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+stopper\+Status}{m_stopperStatus}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ stopper\+\_\+status {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+stopper\+Status\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ae5180a630e0f23596a0909f845d00e69}{}\label{classxtd_1_1servers_1_1app_1_1Server_ae5180a630e0f23596a0909f845d00e69}
+
+
+Definition at line 96 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+structgen\+Filename@{m\+\_\+structgen\+Filename}}
+\index{m\+\_\+structgen\+Filename@{m\+\_\+structgen\+Filename}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+structgen\+Filename}{m_structgenFilename}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ string {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+structgen\+Filename\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a66a9242f7a55a296f1ca25cb18764eec}{}\label{classxtd_1_1servers_1_1app_1_1Server_a66a9242f7a55a296f1ca25cb18764eec}
+
+
+Definition at line 99 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+structgen\+Mutex@{m\+\_\+structgen\+Mutex}}
+\index{m\+\_\+structgen\+Mutex@{m\+\_\+structgen\+Mutex}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+structgen\+Mutex}{m_structgenMutex}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ boost\+::mutex {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+structgen\+Mutex\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a3ad929be560e47d7193da946cd74e557}{}\label{classxtd_1_1servers_1_1app_1_1Server_a3ad929be560e47d7193da946cd74e557}
+
+
+Definition at line 98 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!m\+\_\+use\+Compression@{m\+\_\+use\+Compression}}
+\index{m\+\_\+use\+Compression@{m\+\_\+use\+Compression}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+use\+Compression}{m_useCompression}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::m\+\_\+use\+Compression\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a143d0eeee15dd57ba4d03737a0128551}{}\label{classxtd_1_1servers_1_1app_1_1Server_a143d0eeee15dd57ba4d03737a0128551}
+
+
+Definition at line 95 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!mcs\+\_\+default\+Listen\+Interface@{mcs\+\_\+default\+Listen\+Interface}}
+\index{mcs\+\_\+default\+Listen\+Interface@{mcs\+\_\+default\+Listen\+Interface}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Listen\+Interface}{mcs_defaultListenInterface}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ const char {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::mcs\+\_\+default\+Listen\+Interface\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a9d3ac8218bf47d8ffa6d8b30a6195fa8}{}\label{classxtd_1_1servers_1_1app_1_1Server_a9d3ac8218bf47d8ffa6d8b30a6195fa8}
+
+
+Definition at line 44 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!mcs\+\_\+default\+Probe\+Delay@{mcs\+\_\+default\+Probe\+Delay}}
+\index{mcs\+\_\+default\+Probe\+Delay@{mcs\+\_\+default\+Probe\+Delay}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Probe\+Delay}{mcs_defaultProbeDelay}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ const uint32\+\_\+t {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::mcs\+\_\+default\+Probe\+Delay = 30\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ae361d389bf6050e2565055e7e3800e82}{}\label{classxtd_1_1servers_1_1app_1_1Server_ae361d389bf6050e2565055e7e3800e82}
+
+
+Definition at line 41 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!mcs\+\_\+default\+Struct\+Gen\+Dump\+Path@{mcs\+\_\+default\+Struct\+Gen\+Dump\+Path}}
+\index{mcs\+\_\+default\+Struct\+Gen\+Dump\+Path@{mcs\+\_\+default\+Struct\+Gen\+Dump\+Path}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Struct\+Gen\+Dump\+Path}{mcs_defaultStructGenDumpPath}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ const string {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::mcs\+\_\+default\+Struct\+Gen\+Dump\+Path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_afae8d71c231f3e48ec8270217fddae10}{}\label{classxtd_1_1servers_1_1app_1_1Server_afae8d71c231f3e48ec8270217fddae10}
+
+
+Definition at line 45 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!mcs\+\_\+default\+Timeout\+Ms@{mcs\+\_\+default\+Timeout\+Ms}}
+\index{mcs\+\_\+default\+Timeout\+Ms@{mcs\+\_\+default\+Timeout\+Ms}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+default\+Timeout\+Ms}{mcs_defaultTimeoutMs}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ const uint32\+\_\+t {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::mcs\+\_\+default\+Timeout\+Ms = 5000\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_a76f9b8224a5555f638527752e26d5457}{}\label{classxtd_1_1servers_1_1app_1_1Server_a76f9b8224a5555f638527752e26d5457}
+
+
+Definition at line 42 of file Server.\+hh.
+
+\index{xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}!mcs\+\_\+http\+Nb\+Thread@{mcs\+\_\+http\+Nb\+Thread}}
+\index{mcs\+\_\+http\+Nb\+Thread@{mcs\+\_\+http\+Nb\+Thread}!xtd\+::servers\+::app\+::\+Server@{xtd\+::servers\+::app\+::\+Server}}
+\subsubsection[{\texorpdfstring{mcs\+\_\+http\+Nb\+Thread}{mcs_httpNbThread}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Req , typename T\+Res , typename Domain  = network\+::utils\+::af\+\_\+inet$>$ const uint32\+\_\+t {\bf xtd\+::servers\+::app\+::\+Server}$<$ T\+Req, T\+Res, Domain $>$\+::mcs\+\_\+http\+Nb\+Thread = 5\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1servers_1_1app_1_1Server_ac9944d61cb7fd45d86c1128e1ac55670}{}\label{classxtd_1_1servers_1_1app_1_1Server_ac9944d61cb7fd45d86c1128e1ac55670}
+
+
+Definition at line 43 of file Server.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/servers/src/app/\hyperlink{Server_8hh}{Server.\+hh}\end{DoxyCompactItemize}

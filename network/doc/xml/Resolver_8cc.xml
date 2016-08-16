@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Resolver_8cc" kind="file" language="C++">
+    <compoundname>Resolver.cc</compoundname>
+    <includes refid="Resolver_8hh" local="yes">utils/Resolver.hh</includes>
+    <includes local="no">logger.hh</includes>
+    <includes local="no">boost/make_shared.hpp</includes>
+    <incdepgraph>
+      <node id="1957">
+        <label>list</label>
+      </node>
+      <node id="1965">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1945">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1967">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1969">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1963">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1947" relation="include">
+        </childnode>
+        <childnode refid="1964" relation="include">
+        </childnode>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+        <childnode refid="1966" relation="include">
+        </childnode>
+        <childnode refid="1967" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1958" relation="include">
+        </childnode>
+        <childnode refid="1968" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1969" relation="include">
+        </childnode>
+      </node>
+      <node id="1949">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1958">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1953">
+        <label>string</label>
+      </node>
+      <node id="1955">
+        <label>map</label>
+      </node>
+      <node id="1943">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</label>
+        <link refid="Resolver.cc"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
+        </childnode>
+      </node>
+      <node id="1950">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1944">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+      </node>
+      <node id="1948">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1962">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1952">
+        <label>utils/CacheDns.hh</label>
+        <link refid="CacheDns_8hh"/>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1958" relation="include">
+        </childnode>
+        <childnode refid="1959" relation="include">
+        </childnode>
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1963" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>ctime</label>
+      </node>
+      <node id="1960">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1954">
+        <label>vector</label>
+      </node>
+      <node id="1964">
+        <label>streambuf</label>
+      </node>
+      <node id="1956">
+        <label>utility</label>
+      </node>
+      <node id="1966">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1947">
+        <label>deque</label>
+      </node>
+      <node id="1959">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="1961">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1946">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1947" relation="include">
+        </childnode>
+        <childnode refid="1948" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+      </node>
+      <node id="1970">
+        <label>logger.hh</label>
+      </node>
+      <node id="1951">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Resolver_8hh" kindref="compound">utils/Resolver.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/make_shared.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a227d9b53586520412dde2ff93e373b65" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_inet&gt;::Resolver</ref>(boost::asio::io_service&amp;<sp/>p_ioService,uint32_t<sp/>p_ttl)<sp/>:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>m_ioService(p_ioService)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>m_cacheDns_ptr<sp/>=<sp/>boost::make_shared&lt;CacheDns&gt;(<ref refid="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" kindref="member">CACHE_CAPACITY_MAX</ref>,p_ttl);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a52780e208a95d05c6eeacc4842851162" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_inet&gt;::~Resolver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">af_inet::endpoint</highlight></codeline>
+<codeline lineno="25" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a014b2c1347380dece13b309969ed25c3" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_inet&gt;::resolve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/>p_host,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/>p_port)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_ipAddress;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>l_isCached<sp/>=<sp/>m_cacheDns_ptr-&gt;popElem(p_host,<sp/>l_ipAddress);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_isCached)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>element<sp/>was<sp/>retrieved<sp/>from<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>build<sp/>af_inet::endpoint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>l_port<sp/>=<sp/>boost::lexical_cast&lt;uint32_t&gt;(p_port);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>l_addr<sp/>=<sp/>l_ipAddress;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>l_addr<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>l_addr<sp/>+=<sp/>p_port;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>af_inet::endpoint<sp/>l_endpoint(boost::asio::ip::address::from_string(l_ipAddress),<sp/>l_port);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_endpoint;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>perform<sp/>resolution<sp/>of<sp/>the<sp/>host</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>af_inet::resolver<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_resolver(m_ioService);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>af_inet::resolver::query<sp/>l_query(p_host,<sp/>p_port);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>af_inet::endpoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_endpoint;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_endpoint<sp/>=<sp/>*l_resolver.resolve(l_query);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insertion<sp/>in<sp/>the<sp/>cache;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_cacheDns_ptr-&gt;pushElem(p_host,l_endpoint.address().to_string());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::system_error&amp;<sp/>ex)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;network.utils&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Can&apos;t<sp/>resolve<sp/>hostname<sp/>%s:%s&quot;</highlight><highlight class="normal">,<sp/>p_host,<sp/>p_port,<sp/>HERE);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_endpoint;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">uint32_t</highlight></codeline>
+<codeline lineno="65" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1ac98e2d8aec992068faa974ccca220e4c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_inet&gt;::getPort</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>af_inet::endpoint&amp;<sp/>p_endpoint)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_endpoint.port();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a32b299d5a15042feea05622ee3df0d4c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_inet&gt;::getAddr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>af_inet::endpoint&amp;<sp/>p_endpoint)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_endpoint.address().to_string();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>remove<sp/>warning<sp/>p_dnsCacheTTL<sp/>unused</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a6c22d97efd1096a2b32c3b6b82707685" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_unix&gt;::Resolver</ref>(boost::asio::io_service&amp;<sp/>p_ioService,<sp/>uint32_t<sp/></highlight><highlight class="comment">/*<sp/>p_dnsCacheTTL<sp/>*/</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>m_ioService(p_ioService)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a4ef41796801ac9b2b223e907512c6937" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_unix&gt;::~Resolver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/>utilisation<sp/>d&apos;une<sp/>Linux<sp/>Abstract<sp/>Socket<sp/>Namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pour<sp/>éviter<sp/>d&apos;avoir<sp/>à<sp/>gérer<sp/>(côté<sp/>server)<sp/>la<sp/>création<sp/>d&apos;une<sp/>socket</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>physique<sp/>avec<sp/>un<sp/>path<sp/>...<sp/>son<sp/>effacement<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">af_unix::endpoint</highlight></codeline>
+<codeline lineno="93" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1acabb7ae9d31e60d034e46a7f172f3ffb" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_unix&gt;::resolve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_host,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_port)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>m_port<sp/>=<sp/>boost::lexical_cast&lt;uint32_t&gt;(p_port);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;\0&apos;<sp/>Permet<sp/>d&apos;eviter<sp/>la<sp/>creation<sp/>d&apos;un<sp/>fichier<sp/>sur<sp/>le<sp/>filesystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_addr<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>+<sp/>p_port<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>p_host;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>af_unix::endpoint<sp/>l_endpoint(l_addr);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_endpoint;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">uint32_t</highlight></codeline>
+<codeline lineno="104" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a75ade0a088898962a4ca8055885dd09d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_unix&gt;::getPort</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>af_unix::endpoint&amp;)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_port;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1ac684f093294b139e46a7e5b89857c7f1" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver&lt;af_unix&gt;::getAddr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>af_unix::endpoint&amp;<sp/>p_endpoint)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_endpoint.path();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc"/>
+  </compounddef>
+</doxygen>

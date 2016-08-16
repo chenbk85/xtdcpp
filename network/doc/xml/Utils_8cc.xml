@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Utils_8cc" kind="file" language="C++">
+    <compoundname>Utils.cc</compoundname>
+    <includes refid="Utils_8hh" local="yes">Utils.hh</includes>
+    <includes refid="Config_8hh" local="yes">utils/Config.hh</includes>
+    <incdepgraph>
+      <node id="2018">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="2027">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="2020">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="2032">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="2031">
+        <label>cstdint</label>
+      </node>
+      <node id="2033">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="2029">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="2026">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="2012">
+        <label>Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2016" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+        <childnode refid="2020" relation="include">
+        </childnode>
+        <childnode refid="2021" relation="include">
+        </childnode>
+        <childnode refid="2022" relation="include">
+        </childnode>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2024" relation="include">
+        </childnode>
+        <childnode refid="2029" relation="include">
+        </childnode>
+      </node>
+      <node id="2022">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="2016">
+        <label>string</label>
+      </node>
+      <node id="2011">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc</label>
+        <link refid="Utils.cc"/>
+        <childnode refid="2012" relation="include">
+        </childnode>
+        <childnode refid="2030" relation="include">
+        </childnode>
+      </node>
+      <node id="2021">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="2030">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="2016" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+        <childnode refid="2025" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2024" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+      </node>
+      <node id="2025">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="2017">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="2023">
+        <label>ctime</label>
+      </node>
+      <node id="2013">
+        <label>vector</label>
+      </node>
+      <node id="2015">
+        <label>streambuf</label>
+      </node>
+      <node id="2019">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="2014">
+        <label>deque</label>
+      </node>
+      <node id="2024">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2025" relation="include">
+        </childnode>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
+        </childnode>
+        <childnode refid="2021" relation="include">
+        </childnode>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2028">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utils_8hh" kindref="compound">Utils.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Config_8hh" kindref="compound">utils/Config.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacextd_1_1network_1_1utils_1a181758eb475ef5f4aebfec6c0ebec0c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a181758eb475ef5f4aebfec6c0ebec0c5" kindref="member">do_sem_wait</ref>(boost::interprocess::interprocess_semaphore&amp;<sp/>p_sem)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>p_sem.wait();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(boost::interprocess::interprocess_exception<sp/>e)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.get_native_error()<sp/>==<sp/>EINTR)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a181758eb475ef5f4aebfec6c0ebec0c5" kindref="member">do_sem_wait</ref>(p_sem);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespacextd_1_1network_1_1utils_1aeee4bc5a0636807dd491f21938b7a1ca" refkind="member"><highlight class="normal">std::time_t<sp/><ref refid="namespacextd_1_1network_1_1utils_1aeee4bc5a0636807dd491f21938b7a1ca" kindref="member">ptime_to_time_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>t)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime<sp/>epoch(boost::gregorian::date(1970,1,1)<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::time_duration::sec_type<sp/>ss((t<sp/>-<sp/>epoch).total_seconds()<sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ss;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc"/>
+  </compounddef>
+</doxygen>

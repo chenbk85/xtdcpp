@@ -1,0 +1,130 @@
+\hypertarget{classxtd_1_1network_1_1base_1_1ThreadManager}{}\section{xtd\+:\+:network\+:\+:base\+:\+:Thread\+Manager Class Reference}
+\label{classxtd_1_1network_1_1base_1_1ThreadManager}\index{xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}}
+
+
+{\ttfamily \#include $<$Client\+Thread\+Manager.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:base\+:\+:Thread\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classxtd_1_1network_1_1base_1_1ThreadManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:base\+:\+:Thread\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classxtd_1_1network_1_1base_1_1ThreadManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ size\+\_\+t, boost\+::shared\+\_\+ptr$<$ boost\+::thread $>$ $>$ \hyperlink{classxtd_1_1network_1_1base_1_1ThreadManager_a589ebd86682829a8dc09475c24d303c7}{thread\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1ThreadManager_a8401b77963df643d6ca29e5abd7da9ba}{create\+Thread} (const size\+\_\+t p\+\_\+thread\+Id)
+\item 
+boost\+::asio\+::io\+\_\+service \& \hyperlink{classxtd_1_1network_1_1base_1_1ThreadManager_afe3f6bc402d13a07cad5fc8d09473739}{get\+Io\+Service} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classxtd_1_1network_1_1base_1_1ThreadManager}{Thread\+Manager} \& \hyperlink{classxtd_1_1network_1_1base_1_1ThreadManager_a987b37b09ba82f07f870f4720561c958}{get\+Instance} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Client\+Thread\+Manager.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}!thread\+Map\+\_\+t@{thread\+Map\+\_\+t}}
+\index{thread\+Map\+\_\+t@{thread\+Map\+\_\+t}!xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}}
+\subsubsection[{\texorpdfstring{thread\+Map\+\_\+t}{threadMap_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$size\+\_\+t, boost\+::shared\+\_\+ptr$<$boost\+::thread$>$ $>$ {\bf xtd\+::network\+::base\+::\+Thread\+Manager\+::thread\+Map\+\_\+t}}\hypertarget{classxtd_1_1network_1_1base_1_1ThreadManager_a589ebd86682829a8dc09475c24d303c7}{}\label{classxtd_1_1network_1_1base_1_1ThreadManager_a589ebd86682829a8dc09475c24d303c7}
+
+
+Definition at line 19 of file Client\+Thread\+Manager.\+hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}!create\+Thread@{create\+Thread}}
+\index{create\+Thread@{create\+Thread}!xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}}
+\subsubsection[{\texorpdfstring{create\+Thread(const size\+\_\+t p\+\_\+thread\+Id)}{createThread(const size_t p_threadId)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::base\+::\+Thread\+Manager\+::create\+Thread (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{p\+\_\+thread\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1ThreadManager_a8401b77963df643d6ca29e5abd7da9ba}{}\label{classxtd_1_1network_1_1base_1_1ThreadManager_a8401b77963df643d6ca29e5abd7da9ba}
+
+
+Definition at line 33 of file Client\+Thread\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+34 \{
+35   threadMap\_t::iterator l\_threadMapIt = m\_threadMap.find(p\_threadId);
+36   \textcolor{keywordflow}{if} (l\_threadMapIt == m\_threadMap.end())
+37   \{
+38     m\_threadMap[p\_threadId] = boost::make\_shared<boost::thread>(boost::bind(&boost::asio::io\_service::run, 
+      m\_ioService));
+39   \}
+40 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Instance(void)}{getInstance(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Thread\+Manager} \& xtd\+::network\+::base\+::\+Thread\+Manager\+::get\+Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1network_1_1base_1_1ThreadManager_a987b37b09ba82f07f870f4720561c958}{}\label{classxtd_1_1network_1_1base_1_1ThreadManager_a987b37b09ba82f07f870f4720561c958}
+
+
+Definition at line 51 of file Client\+Thread\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+52 \{
+53   boost::mutex::scoped\_lock l\_lock(m\_mutex);
+54   \textcolor{keywordflow}{if} (!m\_threadManager)
+55   \{
+56     m\_threadManager = \textcolor{keyword}{new} ThreadManager();
+57   \}
+58   \textcolor{keywordflow}{return} *m\_threadManager;
+59 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}!get\+Io\+Service@{get\+Io\+Service}}
+\index{get\+Io\+Service@{get\+Io\+Service}!xtd\+::network\+::base\+::\+Thread\+Manager@{xtd\+::network\+::base\+::\+Thread\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Io\+Service(void)}{getIoService(void)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::asio\+::io\+\_\+service \& xtd\+::network\+::base\+::\+Thread\+Manager\+::get\+Io\+Service (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1ThreadManager_afe3f6bc402d13a07cad5fc8d09473739}{}\label{classxtd_1_1network_1_1base_1_1ThreadManager_afe3f6bc402d13a07cad5fc8d09473739}
+
+
+Definition at line 44 of file Client\+Thread\+Manager.\+cc.
+
+
+\begin{DoxyCode}
+45 \{
+46   \textcolor{keywordflow}{return} *m\_ioService;
+47 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/base/\hyperlink{ClientThreadManager_8hh}{Client\+Thread\+Manager.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/base/\hyperlink{ClientThreadManager_8cc}{Client\+Thread\+Manager.\+cc}\end{DoxyCompactItemize}

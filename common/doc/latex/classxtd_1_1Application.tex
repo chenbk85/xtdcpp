@@ -1,0 +1,1359 @@
+\hypertarget{classxtd_1_1Application}{}\section{xtd\+:\+:Application Class Reference}
+\label{classxtd_1_1Application}\index{xtd\+::\+Application@{xtd\+::\+Application}}
+
+
+Parses arguments from \hyperlink{doc_2example_2Application_8hh_a6b77b2233054447db17959182b5fb02b}{main(int,char$\ast$$\ast$)} function.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classxtd_1_1Application__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classxtd_1_1Application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633}{Application} (void)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classxtd_1_1Application_a3ae7e81534c6ca594339e3e098183df4}{$\sim$\+Application} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c}{execute} (int p\+\_\+argc, char $\ast$$\ast$p\+\_\+argv)
+\begin{DoxyCompactList}\small\item\em main entry point, usually called with \hyperlink{doc_2example_2Application_8hh_a6b77b2233054447db17959182b5fb02b}{main(int,char$\ast$$\ast$)}\textquotesingle{}s arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7}{argument} \+: uint32\+\_\+t \{ \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d}{argument\+::optional} = 0, 
+\hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95}{argument\+::mandatory} = 1, 
+\hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8}{argument\+::none} = 2
+ \}\begin{DoxyCompactList}\small\item\em Behavior switch for the argument of an option. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24}{requirement} \+: uint32\+\_\+t \{ \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d}{requirement\+::optional} = 0, 
+\hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95}{requirement\+::mandatory} = 1
+ \}\begin{DoxyCompactList}\small\item\em Behavior for the presence of the option itself. \end{DoxyCompactList}
+\item 
+typedef std\+::function$<$ void(void)$>$ \hyperlink{classxtd_1_1Application_a907b6fe8247636495890e668530863d6}{t\+\_\+sig\+\_\+handler}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classxtd_1_1Application_a8684d1d061027893f91580106a821d88}{parse\+Config} (void)
+\begin{DoxyCompactList}\small\item\em Parse application configuration, (default nothing) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1Application_a3c63f070ac7baaea43a32b3064d0030b}{check\+Options} (void)
+\begin{DoxyCompactList}\small\item\em Check read options, (default nothing) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a}{initialize} (void)
+\begin{DoxyCompactList}\small\item\em initialize application, (default nothing) \end{DoxyCompactList}\item 
+virtual int \hyperlink{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{process} (void)
+\begin{DoxyCompactList}\small\item\em Main application process function, (default nothing) \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1Application_afdb5173d0105fcf549ee6f61e6dcbe49}{add\+Signal\+Handler} (int p\+\_\+signal\+Number, \hyperlink{classxtd_1_1Application_a907b6fe8247636495890e668530863d6}{t\+\_\+sig\+\_\+handler} p\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em register a signal callback \end{DoxyCompactList}\item 
+const string \& \hyperlink{classxtd_1_1Application_ab7be8fa583daa66271562a83817b172c}{get\+Version} (void) const 
+\begin{DoxyCompactList}\small\item\em Get R\+C\+S\+ID identity informations. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}{add\+Option} (const char p\+\_\+short\+Opt, const string \&p\+\_\+long\+Opt, const \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7}{argument} p\+\_\+arg\+Type, const \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24}{requirement} p\+\_\+status, const string \&p\+\_\+description, t\+\_\+callback p\+\_\+callback)
+\item 
+bool \hyperlink{classxtd_1_1Application_a4aca412c4a0bcd761e28b0350bd71578}{is\+Option\+Given} (const string \&p\+\_\+option\+Name) const 
+\begin{DoxyCompactList}\small\item\em Tells if given option was given on command line. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1Application_abdfaafd220104a063c344a4f7e126ec0}{add\+Help\+Msg} (const string \&p\+\_\+help\+Message)
+\begin{DoxyCompactList}\small\item\em Add additional usage line to display on help or errors. \end{DoxyCompactList}\item 
+t\+\_\+callback \hyperlink{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60}{bind\+Dir} (string \&p\+\_\+target, bool p\+\_\+readable=true) const 
+\begin{DoxyCompactList}\small\item\em Bind option\textquotesingle{}s parameter to a directory. \end{DoxyCompactList}\item 
+t\+\_\+callback \hyperlink{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029}{bind\+File} (string \&p\+\_\+target, bool p\+\_\+readable=true) const 
+\begin{DoxyCompactList}\small\item\em Bind option\textquotesingle{}s parameter to a file name. \end{DoxyCompactList}\item 
+t\+\_\+callback \hyperlink{classxtd_1_1Application_a59b986c85c2e1d9473f73df10425dfcf}{bind\+Given} (bool \&p\+\_\+target) const 
+\begin{DoxyCompactList}\small\item\em Set targeted variable to true if option is given on command line. \end{DoxyCompactList}\item 
+t\+\_\+callback \hyperlink{classxtd_1_1Application_a36a351db3830e2e894a39fbd42842280}{bind\+String} (string \&p\+\_\+target) const 
+\begin{DoxyCompactList}\small\item\em Set targeted variable to option\textquotesingle{}s parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\t\+\_\+callback \hyperlink{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968}{bind\+Callback} (T p\+\_\+action) const 
+\begin{DoxyCompactList}\small\item\em Associate option to given generic callback. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\t\+\_\+callback \hyperlink{classxtd_1_1Application_a2415acb66badb368e726173fb884097c}{bind\+Value\+If\+Given} (T \&p\+\_\+target, const T \&p\+\_\+value) const 
+\begin{DoxyCompactList}\small\item\em Set given value to referenced variable if option is given. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\t\+\_\+callback \hyperlink{classxtd_1_1Application_ae5fd6c9b1d2ad5225f9d624f63df4173}{bind\+Number} (T \&p\+\_\+target, T p\+\_\+min=std\+::numeric\+\_\+limits$<$ T $>$\+::min(), T p\+\_\+max=std\+::numeric\+\_\+limits$<$ T $>$\+::max()) const 
+\begin{DoxyCompactList}\small\item\em Bind option\textquotesingle{}s paramter as number to referenced variable. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , class Iterable $>$ }\\t\+\_\+callback \hyperlink{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9}{bind\+Values} (T \&p\+\_\+target, const Iterable \&p\+\_\+values) const 
+\begin{DoxyCompactList}\small\item\em Bind option\textquotesingle{}s parameter to target variable and checks among authorized values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , template$<$ class $>$ class T\+Collection$>$ }\\t\+\_\+callback \hyperlink{classxtd_1_1Application_a846da30aaf55754027608ddf5c689366}{bind\+Accumulator} (T\+Collection$<$ T $>$ \&p\+\_\+target) const 
+\begin{DoxyCompactList}\small\item\em Append option\textquotesingle{}s parameter to target container for each command line hit. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Arguments$>$ }\\void \hyperlink{classxtd_1_1Application_a810c6c1924f762fd453555cb91cb35f9}{error\+\_\+nohelp} (int p\+\_\+code, const string \&p\+\_\+format, Arguments \&\&...p\+\_\+args) const 
+\begin{DoxyCompactList}\small\item\em Prints error on standard error and exit. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Arguments$>$ }\\void \hyperlink{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{error} (int p\+\_\+code, const string \&p\+\_\+format, Arguments \&\&...p\+\_\+args) const 
+\begin{DoxyCompactList}\small\item\em Prints error and usage on standard error and exit. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Arguments$>$ }\\void \hyperlink{classxtd_1_1Application_a931877468f6b948909d596d91d60b7a2}{warn} (const string \&p\+\_\+format, Arguments \&\&...p\+\_\+args) const 
+\begin{DoxyCompactList}\small\item\em Prints a warning on standard error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}{m\+\_\+bin\+Name}
+\begin{DoxyCompactList}\small\item\em binary name (argv\mbox{[}0\mbox{]}) \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}{m\+\_\+log\+Level}
+\begin{DoxyCompactList}\small\item\em log level read from command line \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classxtd_1_1Application_a7651fd3849530cdded556187a6b42c25}{m\+\_\+remaining\+Args}
+\begin{DoxyCompactList}\small\item\em positional command line arguments \end{DoxyCompactList}\item 
+string \hyperlink{classxtd_1_1Application_ad820953bc15b729ce010f422595d3a3f}{m\+\_\+rcsid}
+\begin{DoxyCompactList}\small\item\em binary identity information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parses arguments from \hyperlink{doc_2example_2Application_8hh_a6b77b2233054447db17959182b5fb02b}{main(int,char$\ast$$\ast$)} function. 
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classxtd_1_1Application_sec_intro}{Introcution}
+\item \hyperlink{classxtd_1_1Application_sec_howto}{How to use}
+\item \hyperlink{classxtd_1_1Application_sec_execution_flow}{Execution flow}
+\item \hyperlink{classxtd_1_1Application_sec_binding_options}{Bindind options}
+\end{DoxyItemize}\hypertarget{classxtd_1_1Application_sec_intro}{}\subsection{Introcution}\label{classxtd_1_1Application_sec_intro}
+This object provides a default application skeleton including \+:
+\begin{DoxyItemize}
+\item user-\/friendly wrapping of argument parsing (on top of C\textquotesingle{}s getopt\+\_\+long)
+\item usage generator for declared options
+\item default options \+: --help and --log-\/level
+\item default logging facility
+\item signal handling on a separate thread
+\item binary R\+CS identity tracking, usually generated by xtd compile-\/time dependency tracking system
+\end{DoxyItemize}\hypertarget{classxtd_1_1Application_sec_howto}{}\subsection{How to use}\label{classxtd_1_1Application_sec_howto}
+
+\begin{DoxyEnumerate}
+\item Inherit your class from \hyperlink{classxtd_1_1Application}{Application}
+\item Define the mandatory method \hyperlink{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{Application\+::process}
+\item Declare your program arguments in your constructor
+\item Optionaly parse your configuration, check your parameters and initialize your application in the dedicated methods
+\item Instantiate your class in \hyperlink{doc_2example_2Application_8hh_a6b77b2233054447db17959182b5fb02b}{main(int,char$\ast$$\ast$)} function and all \hyperlink{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c}{Application\+::execute} method
+\end{DoxyEnumerate}
+
+Typical example \+: 
+\begin{DoxyCodeInclude}
+\textcolor{keyword}{class }\hyperlink{classMyApp}{MyApp} : \textcolor{keyword}{public} \hyperlink{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633}{Application}
+ \{
+ \textcolor{keyword}{public}:
+   \hyperlink{classMyApp}{MyApp}(\textcolor{keywordtype}{void}) :
+     \hyperlink{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633}{Application}()
+   \{
+     \hyperlink{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}{addOption}(\textcolor{charliteral}{'i'}, \textcolor{stringliteral}{"input-file"},
+               \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95}{argument::mandatory},
+               \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95}{requirement::mandatory},
+               \textcolor{stringliteral}{"process given file"},
+               \hyperlink{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029}{Application::bindFile}(m\_inputFile, \textcolor{keyword}{true}));
+   \}
+
+ \textcolor{keyword}{private}:
+   \textcolor{keywordtype}{int} \hyperlink{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{process}(\textcolor{keywordtype}{void})
+   \{
+     std::cout << \textcolor{stringliteral}{"given readable file : "} << m\_inputFile << std::endl;
+
+     \textcolor{comment}{// do some stuff}
+     \textcolor{keywordflow}{return} (l\_success) ? 0 : 1;
+   \}
+
+ \textcolor{keyword}{private}:
+   std::string m\_inputFile;
+\};
+
+
+\textcolor{keywordtype}{int} \hyperlink{main_8cc_af847876e048f60529674b0f221f6edc1}{main}(\textcolor{keywordtype}{int} p\_argc, \textcolor{keywordtype}{char}** p\_argv)
+\{
+  \hyperlink{classMyApp}{MyApp} l\_app;
+  \textcolor{keywordflow}{return} l\_app.execute(p\_argc, p\_argv);
+\}
+\end{DoxyCodeInclude}
+\hypertarget{classxtd_1_1Application_sec_execution_flow}{}\subsection{Execution flow}\label{classxtd_1_1Application_sec_execution_flow}
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{Application}}
+\end{DoxyImageNoCaption}
+\hypertarget{classxtd_1_1Application_sec_binding_options}{}\subsection{Bindind options}\label{classxtd_1_1Application_sec_binding_options}
+
+\begin{DoxyItemize}
+\item \hyperlink{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60}{bind\+Dir} \+: Bind option\textquotesingle{}s parameter to a directory.
+\item \hyperlink{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029}{bind\+File} \+: Bind option\textquotesingle{}s parameter to a file name.
+\item \hyperlink{classxtd_1_1Application_a59b986c85c2e1d9473f73df10425dfcf}{bind\+Given} \+: Set targeted variable to true if option is given on command line.
+\item \hyperlink{classxtd_1_1Application_a36a351db3830e2e894a39fbd42842280}{bind\+String} \+: Set targeted variable to option\textquotesingle{}s parameter.
+\item \hyperlink{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968}{bind\+Callback} \+: Associate option to given generic callback.
+\item \hyperlink{classxtd_1_1Application_a2415acb66badb368e726173fb884097c}{bind\+Value\+If\+Given} \+: Set given value to referenced variable if option is given.
+\item \hyperlink{classxtd_1_1Application_ae5fd6c9b1d2ad5225f9d624f63df4173}{bind\+Number} \+: Bind option\textquotesingle{}s paramter as number to referenced variable.
+\item \hyperlink{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9}{bind\+Values} \+: Bind option\textquotesingle{}s parameter to target variable and checks among authorized values.
+\item \hyperlink{classxtd_1_1Application_a846da30aaf55754027608ddf5c689366}{bind\+Accumulator} \+: Append option\textquotesingle{}s parameter to target container for each command line hit. 
+\end{DoxyItemize}
+
+Definition at line 86 of file Application.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!t\+\_\+sig\+\_\+handler@{t\+\_\+sig\+\_\+handler}}
+\index{t\+\_\+sig\+\_\+handler@{t\+\_\+sig\+\_\+handler}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{t\+\_\+sig\+\_\+handler}{t_sig_handler}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::function$<$void(void)$>$ {\bf xtd\+::\+Application\+::t\+\_\+sig\+\_\+handler}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a907b6fe8247636495890e668530863d6}{}\label{classxtd_1_1Application_a907b6fe8247636495890e668530863d6}
+
+
+Definition at line 89 of file Application.\+hh.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!argument@{argument}}
+\index{argument@{argument}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{argument}{argument}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::\+Application\+::argument} \+: uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a672c075ed901e463609077d571a714c7}{}\label{classxtd_1_1Application_a672c075ed901e463609077d571a714c7}
+
+
+Behavior switch for the argument of an option. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{optional@{optional}!xtd\+::\+Application@{xtd\+::\+Application}}\index{xtd\+::\+Application@{xtd\+::\+Application}!optional@{optional}}\item[{\em 
+optional\hypertarget{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d}{}\label{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d}
+}]optional argument for option \index{mandatory@{mandatory}!xtd\+::\+Application@{xtd\+::\+Application}}\index{xtd\+::\+Application@{xtd\+::\+Application}!mandatory@{mandatory}}\item[{\em 
+mandatory\hypertarget{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95}{}\label{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95}
+}]mandatory argument for option \index{none@{none}!xtd\+::\+Application@{xtd\+::\+Application}}\index{xtd\+::\+Application@{xtd\+::\+Application}!none@{none}}\item[{\em 
+none\hypertarget{classxtd_1_1Application_a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8}{}\label{classxtd_1_1Application_a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8}
+}]forbidden argument for option \end{description}
+\end{Desc}
+
+
+Definition at line 95 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+95                       : uint32\_t
+96   \{
+97     optional  = 0, 
+98     mandatory = 1, 
+99     none      = 2  
+100   \};
+\end{DoxyCode}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!requirement@{requirement}}
+\index{requirement@{requirement}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{requirement}{requirement}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::\+Application\+::requirement} \+: uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24}{}\label{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24}
+
+
+Behavior for the presence of the option itself. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{optional@{optional}!xtd\+::\+Application@{xtd\+::\+Application}}\index{xtd\+::\+Application@{xtd\+::\+Application}!optional@{optional}}\item[{\em 
+optional\hypertarget{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d}{}\label{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d}
+}]option is optional on command line \index{mandatory@{mandatory}!xtd\+::\+Application@{xtd\+::\+Application}}\index{xtd\+::\+Application@{xtd\+::\+Application}!mandatory@{mandatory}}\item[{\em 
+mandatory\hypertarget{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95}{}\label{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95}
+}]option must be given on command line \end{description}
+\end{Desc}
+
+
+Definition at line 106 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+106                          : uint32\_t
+107   \{
+108     optional  = 0, 
+109     mandatory = 1  
+110   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!Application@{Application}}
+\index{Application@{Application}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{Application(void)}{Application(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::\+Application (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633}{}\label{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633}
+
+
+Constructor. 
+
+
+
+Definition at line 20 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+20                              :
+21   \hyperlink{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}{m\_binName}(),
+22   \hyperlink{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}{m\_logLevel}(\hyperlink{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{logger::get}().valueOf(\hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{logger::level::crit})),
+23   \hyperlink{classxtd_1_1Application_a7651fd3849530cdded556187a6b42c25}{m\_remainingArgs}(),
+24   \hyperlink{classxtd_1_1Application_ad820953bc15b729ce010f422595d3a3f}{m\_rcsid}(\hyperlink{Application_8cc_a69f59503b72db9ae6ac36f5f5deaeb80}{rcsid}),
+25   m\_optionList(),
+26   m\_helpText(),
+27   m\_runThread(),
+28   m\_work(m\_ioService),
+29   m\_signals(m\_ioService),
+30   m\_signalHandlerMap()
+31 \{
+32   \hyperlink{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}{addOption}(\textcolor{charliteral}{'h'}, \textcolor{stringliteral}{"help"},
+33             \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8}{argument::none},
+34             \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d}{requirement::optional},
+35             \textcolor{stringliteral}{"imprime ce message"},
+36             \hyperlink{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968}{bindCallback}(std::bind(&Application::usageWrapper, \textcolor{keyword}{this})));
+37 
+38   \hyperlink{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}{addOption}(\textcolor{charliteral}{'e'}, \textcolor{stringliteral}{"log-level"},
+39             \hyperlink{classxtd_1_1Application_a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95}{argument::mandatory},
+40             \hyperlink{classxtd_1_1Application_a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d}{requirement::optional},
+41             \textcolor{stringliteral}{"change le niveau de log à <arg> (defaut 2)"},
+42             \hyperlink{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9}{bindValues}(\hyperlink{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}{m\_logLevel}, vector<uint32\_t>(\{0u, 1u, 2u, 3u, 4u, 5u, 6u, 7u\})))
+      ;
+43 
+44   m\_signals.async\_wait(std::bind(&Application::handleSignal, \textcolor{keyword}{this}, std::placeholders::\_1, 
+      std::placeholders::\_2));
+45 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a2d911d40f42dc2928275538541b91633_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!````~Application@{$\sim$\+Application}}
+\index{````~Application@{$\sim$\+Application}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{$\sim$\+Application(void)}{~Application(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::$\sim$\+Application (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1Application_a3ae7e81534c6ca594339e3e098183df4}{}\label{classxtd_1_1Application_a3ae7e81534c6ca594339e3e098183df4}
+
+
+Destructor. 
+
+
+
+Definition at line 47 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+48 \{
+49 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!add\+Help\+Msg@{add\+Help\+Msg}}
+\index{add\+Help\+Msg@{add\+Help\+Msg}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{add\+Help\+Msg(const string \&p\+\_\+help\+Message)}{addHelpMsg(const string &p_helpMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Application\+::add\+Help\+Msg (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+help\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_abdfaafd220104a063c344a4f7e126ec0}{}\label{classxtd_1_1Application_abdfaafd220104a063c344a4f7e126ec0}
+
+
+Add additional usage line to display on help or errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+help\+Message} & Message line to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 363 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+364 \{
+365   \textcolor{keywordflow}{if} (m\_helpText.size())
+366     m\_helpText += \textcolor{stringliteral}{"\(\backslash\)n"};
+367   m\_helpText += \textcolor{stringliteral}{"  "} + p\_helpMessage;
+368 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_abdfaafd220104a063c344a4f7e126ec0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!add\+Option@{add\+Option}}
+\index{add\+Option@{add\+Option}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{add\+Option(const char p\+\_\+short\+Opt, const string \&p\+\_\+long\+Opt, const argument p\+\_\+arg\+Type, const requirement p\+\_\+status, const string \&p\+\_\+description, t\+\_\+callback p\+\_\+callback)}{addOption(const char p_shortOpt, const string &p_longOpt, const argument p_argType, const requirement p_status, const string &p_description, t_callback p_callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void Application\+::add\+Option (
+\begin{DoxyParamCaption}
+\item[{const char}]{p\+\_\+short\+Opt, }
+\item[{const string \&}]{p\+\_\+long\+Opt, }
+\item[{const {\bf argument}}]{p\+\_\+arg\+Type, }
+\item[{const {\bf requirement}}]{p\+\_\+status, }
+\item[{const string \&}]{p\+\_\+description, }
+\item[{t\+\_\+callback}]{p\+\_\+callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}{}\label{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54}
+
+
+Definition at line 172 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+178 \{
+179   t\_option                l\_opt;
+180 
+181   \textcolor{keyword}{auto} l\_checker =
+182     [\textcolor{keyword}{this}, p\_shortOpt, &p\_longOpt](\textcolor{keyword}{const} t\_option\_list::value\_type& c\_optItem) \{
+183     \textcolor{keywordflow}{if} ((c\_optItem.m\_shortOpt == p\_shortOpt)                       ||
+184         ((c\_optItem.m\_longOpt == p\_longOpt) && (p\_longOpt != \textcolor{stringliteral}{""})))
+185     \{
+186       \hyperlink{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{error}(1, \textcolor{stringliteral}{"short option '%c' already exists"}, p\_shortOpt);
+187     \}
+188   \};
+189 
+190   std::for\_each(m\_optionList.begin(), m\_optionList.end(), l\_checker);
+191 
+192   l\_opt.m\_given        = \textcolor{keyword}{false};
+193   l\_opt.m\_shortOpt     = p\_shortOpt;
+194   l\_opt.m\_longOpt      = p\_longOpt;
+195   l\_opt.m\_argumentType = p\_argType;
+196   l\_opt.m\_status       = p\_status;
+197   l\_opt.m\_description  = p\_description;
+198   l\_opt.m\_callback     = p\_callback;
+199   m\_optionList.push\_back(l\_opt);
+200 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a7cea42a03984ceed3bae129ff9e1ef54_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!add\+Signal\+Handler@{add\+Signal\+Handler}}
+\index{add\+Signal\+Handler@{add\+Signal\+Handler}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{add\+Signal\+Handler(int p\+\_\+signal\+Number, t\+\_\+sig\+\_\+handler p\+\_\+handler)}{addSignalHandler(int p_signalNumber, t_sig_handler p_handler)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Application\+::add\+Signal\+Handler (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+signal\+Number, }
+\item[{{\bf t\+\_\+sig\+\_\+handler}}]{p\+\_\+handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_afdb5173d0105fcf549ee6f61e6dcbe49}{}\label{classxtd_1_1Application_afdb5173d0105fcf549ee6f61e6dcbe49}
+
+
+register a signal callback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+signal\+Number} & signal ID (man signal 7) \\
+\hline
+{\em p\+\_\+handler} & handling callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if signal registered correctly, false if signal was already registered 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+156 \{
+157   \textcolor{keywordflow}{if} (m\_signalHandlerMap.find(p\_signalNumber) != m\_signalHandlerMap.end())
+158     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+159 
+160   m\_signals.add(p\_signalNumber);
+161   m\_signalHandlerMap[p\_signalNumber] = p\_handler;
+162   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+163 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_afdb5173d0105fcf549ee6f61e6dcbe49_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Accumulator@{bind\+Accumulator}}
+\index{bind\+Accumulator@{bind\+Accumulator}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Accumulator(\+T\+Collection$<$ T $>$ \&p\+\_\+target) const }{bindAccumulator(TCollection< T > &p_target) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , template$<$ class $>$ class T\+Collection$>$ t\+\_\+callback xtd\+::\+Application\+::bind\+Accumulator (
+\begin{DoxyParamCaption}
+\item[{T\+Collection$<$ T $>$ \&}]{p\+\_\+target}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a846da30aaf55754027608ddf5c689366}{}\label{classxtd_1_1Application_a846da30aaf55754027608ddf5c689366}
+
+
+Append option\textquotesingle{}s parameter to target container for each command line hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a846da30aaf55754027608ddf5c689366_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Callback@{bind\+Callback}}
+\index{bind\+Callback@{bind\+Callback}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Callback(\+T p\+\_\+action) const }{bindCallback(T p_action) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ t\+\_\+callback xtd\+::\+Application\+::bind\+Callback (
+\begin{DoxyParamCaption}
+\item[{T}]{p\+\_\+action}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968}{}\label{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968}
+
+
+Associate option to given generic callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+action} & function compatible with
+\begin{DoxyCode}
+std::function<void(void)> 
+\end{DoxyCode}
+ signature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a00f6aed6c376028a79492b04e8325968_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Dir@{bind\+Dir}}
+\index{bind\+Dir@{bind\+Dir}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Dir(string \&p\+\_\+target, bool p\+\_\+readable=true) const }{bindDir(string &p_target, bool p_readable=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::t\+\_\+callback Application\+::bind\+Dir (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+target, }
+\item[{bool}]{p\+\_\+readable = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60}{}\label{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60}
+
+
+Bind option\textquotesingle{}s parameter to a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable to store the option\textquotesingle{}s value \\
+\hline
+{\em p\+\_\+readable} & If true, check that given directory exists and is readable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+70 \{
+71   \textcolor{keywordflow}{return} [&p\_target, p\_readable, \textcolor{keyword}{this}](\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} t\_option& p\_opt) \{
+72     p\_target = p\_value;
+73     \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == boost::filesystem::is\_directory(p\_value))
+74       \hyperlink{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{error}(1, \textcolor{stringliteral}{"invalid option -%c=%s, must be a directory"}, p\_opt.m\_shortOpt, p\_value);
+75     \textcolor{keywordflow}{if} (p\_readable && (\textcolor{keyword}{false} == boost::filesystem::exists(p\_value)))
+76       \hyperlink{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{error}(1, \textcolor{stringliteral}{"invalid option -%c=%s, must be readable"}, p\_opt.m\_shortOpt, p\_value);
+77 
+78   \};
+79 
+80 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a2b491ba745bbd3b2d01d9e623c0aff60_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+File@{bind\+File}}
+\index{bind\+File@{bind\+File}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+File(string \&p\+\_\+target, bool p\+\_\+readable=true) const }{bindFile(string &p_target, bool p_readable=true) const }}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::t\+\_\+callback Application\+::bind\+File (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+target, }
+\item[{bool}]{p\+\_\+readable = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029}{}\label{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029}
+
+
+Bind option\textquotesingle{}s parameter to a file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable to store the option\textquotesingle{}s value \\
+\hline
+{\em p\+\_\+readable} & If true, check that given file name exists and is readable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+60 \{
+61   \textcolor{keywordflow}{return} [&p\_target, p\_readable, \textcolor{keyword}{this}](\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} t\_option& p\_opt) \{
+62     p\_target = p\_value;
+63     \textcolor{keywordflow}{if} (p\_readable && (\textcolor{keyword}{false} == boost::filesystem::exists(p\_value)))
+64       \hyperlink{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{error}(1, \textcolor{stringliteral}{"invalid option -%c=%s, must be readable file"}, p\_opt.m\_shortOpt, p\_value);
+65   \};
+66 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ab10f6dde0bf4034dff7eafe8a45c2029_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Given@{bind\+Given}}
+\index{bind\+Given@{bind\+Given}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Given(bool \&p\+\_\+target) const }{bindGiven(bool &p_target) const }}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::t\+\_\+callback Application\+::bind\+Given (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{p\+\_\+target}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a59b986c85c2e1d9473f73df10425dfcf}{}\label{classxtd_1_1Application_a59b986c85c2e1d9473f73df10425dfcf}
+
+
+Set targeted variable to true if option is given on command line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+94 \{
+95   p\_target = \textcolor{keyword}{false};
+96   \textcolor{keywordflow}{return} [&p\_target](\textcolor{keyword}{const} \textcolor{keywordtype}{string}&, \textcolor{keyword}{const} t\_option&) \{
+97     p\_target = \textcolor{keyword}{true};
+98   \};
+99 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a59b986c85c2e1d9473f73df10425dfcf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Number@{bind\+Number}}
+\index{bind\+Number@{bind\+Number}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Number(\+T \&p\+\_\+target, T p\+\_\+min=std\+::numeric\+\_\+limits$<$ T $>$\+::min(), T p\+\_\+max=std\+::numeric\+\_\+limits$<$ T $>$\+::max()) const }{bindNumber(T &p_target, T p_min=std::numeric_limits< T >::min(), T p_max=std::numeric_limits< T >::max()) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ t\+\_\+callback xtd\+::\+Application\+::bind\+Number (
+\begin{DoxyParamCaption}
+\item[{T \&}]{p\+\_\+target, }
+\item[{T}]{p\+\_\+min = {\ttfamily std\+:\+:numeric\+\_\+limits$<$~T~$>$\+:\+:min()}, }
+\item[{T}]{p\+\_\+max = {\ttfamily std\+:\+:numeric\+\_\+limits$<$~T~$>$\+:\+:max()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_ae5fd6c9b1d2ad5225f9d624f63df4173}{}\label{classxtd_1_1Application_ae5fd6c9b1d2ad5225f9d624f63df4173}
+
+
+Bind option\textquotesingle{}s paramter as number to referenced variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable \\
+\hline
+{\em p\+\_\+min} & Minimum parameter value \mbox{[}inclusive\mbox{]} \\
+\hline
+{\em p\+\_\+max} & Maximum parameter value \mbox{[}inclusive\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback
+\end{DoxyReturn}
+Will led to an error if input parameter \+:
+\begin{DoxyItemize}
+\item not lexically convertible to T
+\item is lower than p\+\_\+min
+\item is greater than p\+\_\+max 
+\end{DoxyItemize}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ae5fd6c9b1d2ad5225f9d624f63df4173_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+String@{bind\+String}}
+\index{bind\+String@{bind\+String}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+String(string \&p\+\_\+target) const }{bindString(string &p_target) const }}]{\setlength{\rightskip}{0pt plus 5cm}Application\+::t\+\_\+callback Application\+::bind\+String (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+target}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a36a351db3830e2e894a39fbd42842280}{}\label{classxtd_1_1Application_a36a351db3830e2e894a39fbd42842280}
+
+
+Set targeted variable to option\textquotesingle{}s parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+84 \{
+85   \textcolor{keywordflow}{return} [&p\_target](\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} t\_option&) \{
+86     p\_target = p\_value;
+87   \};
+88 
+89 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a36a351db3830e2e894a39fbd42842280_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Value\+If\+Given@{bind\+Value\+If\+Given}}
+\index{bind\+Value\+If\+Given@{bind\+Value\+If\+Given}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Value\+If\+Given(\+T \&p\+\_\+target, const T \&p\+\_\+value) const }{bindValueIfGiven(T &p_target, const T &p_value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ t\+\_\+callback xtd\+::\+Application\+::bind\+Value\+If\+Given (
+\begin{DoxyParamCaption}
+\item[{T \&}]{p\+\_\+target, }
+\item[{const T \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a2415acb66badb368e726173fb884097c}{}\label{classxtd_1_1Application_a2415acb66badb368e726173fb884097c}
+
+
+Set given value to referenced variable if option is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable \\
+\hline
+{\em p\+\_\+value} & Value to set to p\+\_\+target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a2415acb66badb368e726173fb884097c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!bind\+Values@{bind\+Values}}
+\index{bind\+Values@{bind\+Values}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{bind\+Values(\+T \&p\+\_\+target, const Iterable \&p\+\_\+values) const }{bindValues(T &p_target, const Iterable &p_values) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , class Iterable $>$ t\+\_\+callback xtd\+::\+Application\+::bind\+Values (
+\begin{DoxyParamCaption}
+\item[{T \&}]{p\+\_\+target, }
+\item[{const Iterable \&}]{p\+\_\+values}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9}{}\label{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9}
+
+
+Bind option\textquotesingle{}s parameter to target variable and checks among authorized values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+target} & Reference variable \\
+\hline
+{\em p\+\_\+values} & Iterable container of authorized option\textquotesingle{}s values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated option callback 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_aaa0388f1c96893a26cfe5522b0804dd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!check\+Options@{check\+Options}}
+\index{check\+Options@{check\+Options}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{check\+Options(void)}{checkOptions(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void xtd\+::\+Application\+::check\+Options (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1Application_a3c63f070ac7baaea43a32b3064d0030b}{}\label{classxtd_1_1Application_a3c63f070ac7baaea43a32b3064d0030b}
+
+
+Check read options, (default nothing) 
+
+
+
+Definition at line 162 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+162 \{\};
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a3c63f070ac7baaea43a32b3064d0030b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!error@{error}}
+\index{error@{error}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{error(int p\+\_\+code, const string \&p\+\_\+format, Arguments \&\&...\+p\+\_\+args) const }{error(int p_code, const string &p_format, Arguments &&...p_args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Arguments$>$ void xtd\+::\+Application\+::error (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+code, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Arguments \&\&...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}{}\label{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563}
+
+
+Prints error and usage on standard error and exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+code} & exit code \\
+\hline
+{\em p\+\_\+format} & error message format (boost\+::format compatible) \\
+\hline
+{\em p\+\_\+args} & Template variadic arguments to format \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_adf84f52f1388bef1336d0fb5f6345563_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!error\+\_\+nohelp@{error\+\_\+nohelp}}
+\index{error\+\_\+nohelp@{error\+\_\+nohelp}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{error\+\_\+nohelp(int p\+\_\+code, const string \&p\+\_\+format, Arguments \&\&...\+p\+\_\+args) const }{error_nohelp(int p_code, const string &p_format, Arguments &&...p_args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Arguments$>$ void xtd\+::\+Application\+::error\+\_\+nohelp (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+code, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Arguments \&\&...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a810c6c1924f762fd453555cb91cb35f9}{}\label{classxtd_1_1Application_a810c6c1924f762fd453555cb91cb35f9}
+
+
+Prints error on standard error and exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+code} & exit code \\
+\hline
+{\em p\+\_\+format} & error message format (boost\+::format compatible) \\
+\hline
+{\em p\+\_\+args} & Template variadic arguments to format \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a810c6c1924f762fd453555cb91cb35f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!execute@{execute}}
+\index{execute@{execute}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{execute(int p\+\_\+argc, char $\ast$$\ast$p\+\_\+argv)}{execute(int p_argc, char **p_argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int Application\+::execute (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+\_\+argc, }
+\item[{char $\ast$$\ast$}]{p\+\_\+argv}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c}{}\label{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c}
+
+
+main entry point, usually called with \hyperlink{doc_2example_2Application_8hh_a6b77b2233054447db17959182b5fb02b}{main(int,char$\ast$$\ast$)}\textquotesingle{}s arguments 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+argc} & argument count \\
+\hline
+{\em p\+\_\+argv} & argument list (first is binary name) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+depends on \hyperlink{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{Application\+::process} implementation, usually 0 if process succeed 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+104 \{
+105   \textcolor{keywordtype}{int} l\_status = 0;
+106 
+107   \textcolor{keywordflow}{try}
+108   \{
+109     \hyperlink{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}{m\_binName} = basename(p\_argv[0]);
+110 
+111     \hyperlink{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{logger::get}().\hyperlink{classxtd_1_1logger_a586ddfe34d0f2c1343385f8034ef9b66}{initialize}(\textcolor{keywordtype}{string}(\hyperlink{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}{m\_binName}), 
+      \hyperlink{classxtd_1_1logger_a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13}{logger::level::crit});
+112     readArgs(p\_argc, p\_argv);
+113     \hyperlink{classxtd_1_1Application_a8684d1d061027893f91580106a821d88}{parseConfig}();
+114     \hyperlink{classxtd_1_1Application_a3c63f070ac7baaea43a32b3064d0030b}{checkOptions}();
+115     \hyperlink{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{logger::get}().\hyperlink{classxtd_1_1logger_aeffebbe5b6a43f814c0a1251b6069f26}{setAllLevels}(\hyperlink{classxtd_1_1logger_a21511dfdad9ec1e88c3444637a000e9d}{logger::get}().levelOf(
+      \hyperlink{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}{m\_logLevel}));
+116     \hyperlink{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a}{initialize}();
+117 
+118     m\_runThread = boost::thread(boost::bind(&boost::asio::io\_service::run, &m\_ioService));
+119 
+120     l\_status = \hyperlink{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{process}();
+121 
+122     m\_ioService.stop();
+123     m\_runThread.join();
+124   \}
+125   \textcolor{keywordflow}{catch} (std::exception& l\_error) \{
+126     \hyperlink{classxtd_1_1Application_a810c6c1924f762fd453555cb91cb35f9}{error\_nohelp}(1, \textcolor{stringliteral}{"caught exception : %s"}, l\_error.what());
+127   \}
+128 
+129   \textcolor{keywordflow}{return} l\_status;
+130 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classxtd_1_1Application_ae9241351a9caefa4b96bc906d3db144c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{get\+Version(void) const }{getVersion(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& Application\+::get\+Version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_ab7be8fa583daa66271562a83817b172c}{}\label{classxtd_1_1Application_ab7be8fa583daa66271562a83817b172c}
+
+
+Get R\+C\+S\+ID identity informations. 
+
+
+
+Definition at line 52 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+53 \{
+54   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1Application_ad820953bc15b729ce010f422595d3a3f}{m\_rcsid};
+55 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ab7be8fa583daa66271562a83817b172c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{initialize(void)}{initialize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void xtd\+::\+Application\+::initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a}{}\label{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a}
+
+
+initialize application, (default nothing) 
+
+
+
+Definition at line 167 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+167 \{\};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_ab8e835ba678494c42e12c4613958d18a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!is\+Option\+Given@{is\+Option\+Given}}
+\index{is\+Option\+Given@{is\+Option\+Given}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{is\+Option\+Given(const string \&p\+\_\+option\+Name) const }{isOptionGiven(const string &p_optionName) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Application\+::is\+Option\+Given (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+option\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a4aca412c4a0bcd761e28b0350bd71578}{}\label{classxtd_1_1Application_a4aca412c4a0bcd761e28b0350bd71578}
+
+
+Tells if given option was given on command line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+option\+Name} & long-\/form or short-\/form of the option \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if option was given 
+\end{DoxyReturn}
+
+
+Definition at line 286 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+287 \{
+288   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} cc\_opt = m\_optionList.begin();
+289        cc\_opt != m\_optionList.end();
+290        cc\_opt++)
+291   \{
+292     \textcolor{keywordtype}{string} l\_shortOpt;
+293 
+294     l\_shortOpt += cc\_opt->m\_shortOpt;
+295 
+296     \textcolor{keywordflow}{if} ((cc\_opt->m\_given    == \textcolor{keyword}{true}) &&
+297         ((l\_shortOpt        == p\_optionName) ||
+298          (cc\_opt->m\_longOpt == p\_optionName)))
+299     \{
+300       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+301     \}
+302   \}
+303   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+304 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a4aca412c4a0bcd761e28b0350bd71578_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!parse\+Config@{parse\+Config}}
+\index{parse\+Config@{parse\+Config}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{parse\+Config(void)}{parseConfig(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void xtd\+::\+Application\+::parse\+Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1Application_a8684d1d061027893f91580106a821d88}{}\label{classxtd_1_1Application_a8684d1d061027893f91580106a821d88}
+
+
+Parse application configuration, (default nothing) 
+
+
+
+Definition at line 157 of file Application.\+hh.
+
+
+\begin{DoxyCode}
+157 \{\};
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a8684d1d061027893f91580106a821d88_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!process@{process}}
+\index{process@{process}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{process(void)}{process(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int Application\+::process (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}{}\label{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd}
+
+
+Main application process function, (default nothing) 
+
+\begin{DoxyReturn}{Returns}
+Up to the user, generally 0 in case of success 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Application.\+cc.
+
+
+\begin{DoxyCode}
+167 \{
+168   \textcolor{keywordflow}{return} 0;
+169 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_aef6043d47982bc1983a84e2c8a53f0cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!warn@{warn}}
+\index{warn@{warn}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{warn(const string \&p\+\_\+format, Arguments \&\&...\+p\+\_\+args) const }{warn(const string &p_format, Arguments &&...p_args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Arguments$>$ void xtd\+::\+Application\+::warn (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Arguments \&\&...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a931877468f6b948909d596d91d60b7a2}{}\label{classxtd_1_1Application_a931877468f6b948909d596d91d60b7a2}
+
+
+Prints a warning on standard error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+format} & error message format (boost\+::format compatible) \\
+\hline
+{\em p\+\_\+args} & Template variadic arguments to format \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1Application_a931877468f6b948909d596d91d60b7a2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::\+Application@{xtd\+::\+Application}!m\+\_\+bin\+Name@{m\+\_\+bin\+Name}}
+\index{m\+\_\+bin\+Name@{m\+\_\+bin\+Name}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{m\+\_\+bin\+Name}{m_binName}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::\+Application\+::m\+\_\+bin\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}{}\label{classxtd_1_1Application_abdf4c6f863c5a7a4ee842906f546c458}
+
+
+binary name (argv\mbox{[}0\mbox{]}) 
+
+
+
+Definition at line 339 of file Application.\+hh.
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!m\+\_\+log\+Level@{m\+\_\+log\+Level}}
+\index{m\+\_\+log\+Level@{m\+\_\+log\+Level}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{m\+\_\+log\+Level}{m_logLevel}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::\+Application\+::m\+\_\+log\+Level\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}{}\label{classxtd_1_1Application_a3f815061d81aa12974b2b6ee48b9f5e9}
+
+
+log level read from command line 
+
+
+
+Definition at line 340 of file Application.\+hh.
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!m\+\_\+rcsid@{m\+\_\+rcsid}}
+\index{m\+\_\+rcsid@{m\+\_\+rcsid}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{m\+\_\+rcsid}{m_rcsid}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::\+Application\+::m\+\_\+rcsid\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_ad820953bc15b729ce010f422595d3a3f}{}\label{classxtd_1_1Application_ad820953bc15b729ce010f422595d3a3f}
+
+
+binary identity information 
+
+
+
+Definition at line 342 of file Application.\+hh.
+
+\index{xtd\+::\+Application@{xtd\+::\+Application}!m\+\_\+remaining\+Args@{m\+\_\+remaining\+Args}}
+\index{m\+\_\+remaining\+Args@{m\+\_\+remaining\+Args}!xtd\+::\+Application@{xtd\+::\+Application}}
+\subsubsection[{\texorpdfstring{m\+\_\+remaining\+Args}{m_remainingArgs}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ xtd\+::\+Application\+::m\+\_\+remaining\+Args\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1Application_a7651fd3849530cdded556187a6b42c25}{}\label{classxtd_1_1Application_a7651fd3849530cdded556187a6b42c25}
+
+
+positional command line arguments 
+
+
+
+Definition at line 341 of file Application.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{src_2Application_8hh}{Application.\+hh}\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{Application_8cc}{Application.\+cc}\end{DoxyCompactItemize}

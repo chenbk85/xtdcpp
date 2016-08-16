@@ -1,0 +1,94 @@
+\hypertarget{classxtd_1_1text_1_1xml}{}\section{xtd\+:\+:text\+:\+:xml Class Reference}
+\label{classxtd_1_1text_1_1xml}\index{xtd\+::text\+::xml@{xtd\+::text\+::xml}}
+
+
+{\ttfamily \#include $<$text.\+hh$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classxtd_1_1text_1_1xml_ab53ec8f1cf407b142479fa90b4d41bdb}{encode} (string \&p\+\_\+str)
+\item 
+static string \hyperlink{classxtd_1_1text_1_1xml_a75c4caafbada294ca593a907b9ad1e00}{encode\+\_\+copy} (const string \&p\+\_\+str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file text.\+hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::text\+::xml@{xtd\+::text\+::xml}!encode@{encode}}
+\index{encode@{encode}!xtd\+::text\+::xml@{xtd\+::text\+::xml}}
+\subsubsection[{\texorpdfstring{encode(string \&p\+\_\+str)}{encode(string &p_str)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::text\+::xml\+::encode (
+\begin{DoxyParamCaption}
+\item[{string \&}]{p\+\_\+str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1text_1_1xml_ab53ec8f1cf407b142479fa90b4d41bdb}{}\label{classxtd_1_1text_1_1xml_ab53ec8f1cf407b142479fa90b4d41bdb}
+
+
+Definition at line 23 of file text.\+cc.
+
+
+\begin{DoxyCode}
+24 \{
+25   t\_data::const\_iterator c\_tuple;
+26 
+27   \textcolor{keywordflow}{for} (c\_tuple  = ms\_entityList.begin();
+28        c\_tuple != ms\_entityList.end();
+29        c\_tuple++)
+30     boost::replace\_all(p\_str, c\_tuple->get<0>(), c\_tuple->get<2>());
+31 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1text_1_1xml_ab53ec8f1cf407b142479fa90b4d41bdb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::text\+::xml@{xtd\+::text\+::xml}!encode\+\_\+copy@{encode\+\_\+copy}}
+\index{encode\+\_\+copy@{encode\+\_\+copy}!xtd\+::text\+::xml@{xtd\+::text\+::xml}}
+\subsubsection[{\texorpdfstring{encode\+\_\+copy(const string \&p\+\_\+str)}{encode_copy(const string &p_str)}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::text\+::xml\+::encode\+\_\+copy (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classxtd_1_1text_1_1xml_a75c4caafbada294ca593a907b9ad1e00}{}\label{classxtd_1_1text_1_1xml_a75c4caafbada294ca593a907b9ad1e00}
+
+
+Definition at line 34 of file text.\+cc.
+
+
+\begin{DoxyCode}
+35 \{
+36   \textcolor{keywordtype}{string} l\_value = p\_str;
+37   \hyperlink{classxtd_1_1text_1_1xml_ab53ec8f1cf407b142479fa90b4d41bdb}{encode}(l\_value);
+38   \textcolor{keywordflow}{return} l\_value;
+39 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1text_1_1xml_a75c4caafbada294ca593a907b9ad1e00_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{text_8hh}{text.\+hh}\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{text_8cc}{text.\+cc}\end{DoxyCompactItemize}

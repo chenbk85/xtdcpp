@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classxtd_1_1counters_1_1Atomic" kind="class"><name>xtd::counters::Atomic</name>
+    <member refid="classxtd_1_1counters_1_1Atomic_1aae671ea5da845f914fa554f781744772" kind="variable"><name>m_mutex</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1a54a3a8f1a29283e78a495fdd410fc3c4" kind="function"><name>Atomic</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1a88c5f887b5d7b70f1da87b393f12bccc" kind="function"><name>inc</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1adb613d1d33a70c6e17d1896058a110fe" kind="function"><name>dec</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1a90c6aa9ad58612b867df2bbdc779ca3b" kind="function"><name>write</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1adf3283f7fc1cf51af28ea2aa5822f272" kind="function"><name>inc</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1a2bf93bdc52005c846ac43bb2afcac8f5" kind="function"><name>dec</name></member>
+    <member refid="classxtd_1_1counters_1_1Atomic_1a53755a00d69b11274593f62737d9a54a" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1AvgExt" kind="class"><name>xtd::counters::AvgExt</name>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1AvgTimedValue" kind="class"><name>xtd::counters::AvgTimedValue</name>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kind="typedef"><name>t_elem</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a71d5e67cb282762c880dc4986e5a8d7c" kind="typedef"><name>t_samples</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a901afa3b937939c2132a593d4a801cad" kind="typedef"><name>t_timevect</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a68434add28044efc37c616ec7002d0f8" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kind="variable"><name>m_samples</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" kind="variable"><name>m_startTimes</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kind="variable"><name>m_reseted</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" kind="variable"><name>m_globalPerf</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" kind="variable"><name>m_instantPerf</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ab0eb52c60a1fe28c6ea148270ca8cc74" kind="variable"><name>m_mean</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aeed066e7062c73d577033308bc0344bf" kind="variable"><name>m_min</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a90ef2640c6d711a3eef2585aaef50afb" kind="variable"><name>m_max</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a7a91ad83dade8f67c4df8150ddb33060" kind="variable"><name>m_overThreshold</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2986c9cf3526f6f86d340dafd25ae04f" kind="variable"><name>m_timeDeltaMs</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a96ae1248a1019b22cf41bae4a47314c2" kind="variable"><name>m_thresholdMs</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a6e4edcfa3fcd639b23195119f2b28bd3" kind="variable"><name>m_assert</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" kind="function"><name>AvgTimedValue</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a08aa140f45a1160943a494e5eab59aa7" kind="function"><name>~AvgTimedValue</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1ab5b5b6e1b4dae4bb4172ebc11ffc7c91" kind="function"><name>startChrono</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" kind="function"><name>stopChrono</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" kind="function"><name>addResponseTime</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a789b1bdb5596f6cb332435892411dbb0" kind="function"><name>setAssert</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" kind="function"><name>update_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a2254daae3cb819bd1dcb0d7c101f1176" kind="function"><name>is_greater</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a92a01a2efcd4a035f3f3f7da9cccbd20" kind="function"><name>shrink_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1af86f12d40e7b166a91aaea2464042c10" kind="function"><name>compute_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1a02ee675dae38a14531be82b6b2b26169" kind="function"><name>thresdhold_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgTimedValue_1aaed8d9524b19100ab6b9d9b1a629fe7d" kind="function"><name>responsetime_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1AvgValue" kind="class"><name>xtd::counters::AvgValue</name>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a2186c119cedc1cd9c3a7a7a39e0bdc55" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1aa58af8a852f52342b087373414e61878" kind="typedef"><name>t_samples</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1aa65f0400547f2cb940ec9b79cbc3a662" kind="variable"><name>mcs_defaultSampleSize</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a787afb6a601eb29f48a0fd247524cf84" kind="variable"><name>m_samples</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1afa1908ab38d3deef50e1169b1cc20f6c" kind="variable"><name>m_mean</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a8e217891d937894812b5edfcf6a5ce0e" kind="variable"><name>m_min</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a9ee9567a0a95cf6b579c13329f21f0d5" kind="variable"><name>m_max</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1aba4c4022706bda9bfdedea3cb9c3647a" kind="variable"><name>m_nbEvent</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a85edafd4829b5aa5be6562cadd8e4764" kind="variable"><name>m_sampleSize</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1aa6f20ce5b30cc7a781669cd6e4f70a6b" kind="function"><name>AvgValue</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" kind="function"><name>~AvgValue</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a9605750713e85b4bf2e09e54e46d4e1a" kind="function"><name>operator=</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a52054872a2d938baf8c23e1208d7613a" kind="function"><name>operator+</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1a3ad3008fc30f1936e8dd1eef1d62f324" kind="function"><name>affect_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1AvgValue_1ad0532ed35af8242fabd3a910cc88c543" kind="function"><name>add_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Base" kind="class"><name>xtd::counters::Base</name>
+    <member refid="classxtd_1_1counters_1_1Base_1aa0ea634f1a5e3df87418566a3e8fcbd6" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" kind="typedef"><name>t_data</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" kind="variable"><name>m_name</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" kind="variable"><name>m_mutex</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" kind="function"><name>Base</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" kind="function"><name>~Base</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" kind="function"><name>visit</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" kind="function"><name>update</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" kind="function"><name>getName</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea" kind="function"><name>update_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1Base_1a0b8f3bdc6880dc03da750aa815dfdf0b" kind="function"><name>visit_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Cache" kind="class"><name>xtd::counters::Cache</name>
+    <member refid="classxtd_1_1counters_1_1Cache_1ad248c57507dbfd4b90332551fd0d5f1b" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1afabc462c0d1e71e233e7803cb2adf9c8" kind="variable"><name>m_nb</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1aac1aee24df6c1fdcdb142cd8f2396feb" kind="variable"><name>m_nbFiltered</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1ac944332de3cf38f92bc343a64b32ceb4" kind="variable"><name>m_nbAccepted</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a47cc4977056f91d0b2d4fbfaa453a89a" kind="variable"><name>m_nbAcceptedMiss</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a26729c3b20e84f4a8e99705ab4df01d0" kind="variable"><name>m_nbAcceptedHit</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a0e76a84e7f98009e8e0ce5e58daefa2d" kind="variable"><name>m_nbAcceptedHitInvalid</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a4993036b42ee17a874bf2d3e34c3a594" kind="variable"><name>m_nbAcceptedHitValid</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1ad6f9a46ee587713107231789d997fcf8" kind="variable"><name>m_freqHit</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a45ac1fefe9213cd5c8d4008a059dfc59" kind="variable"><name>m_freqMiss</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a494e6dbfbf08c06e56b0139df82a7bb8" kind="variable"><name>m_iFreqHit</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a24d95da411b61c6c987f61dfed9a9854" kind="variable"><name>m_iFreqMiss</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a73df8a43eff5fd364e41dccabc562d54" kind="function"><name>Cache</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" kind="function"><name>hit</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" kind="function"><name>miss</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a419b5620c93818158193cb6aca015c9b" kind="function"><name>invalid</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a42ea3f207a0399b1864f3ee918e8a0e4" kind="function"><name>valid</name></member>
+    <member refid="classxtd_1_1counters_1_1Cache_1a827a66e44b127d38c5f808fa38a2535a" kind="function"><name>filtered</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Composed" kind="class"><name>xtd::counters::Composed</name>
+    <member refid="classxtd_1_1counters_1_1Composed_1aba28121227a3356d6a42aca97c937c97" kind="variable"><name>m_items</name></member>
+    <member refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" kind="function"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" kind="function"><name>~Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kind="function"><name>addItem</name></member>
+    <member refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" kind="function"><name>update_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" kind="function"><name>visit_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1CounterManager" kind="class"><name>xtd::counters::CounterManager</name>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1ac136b7de8a55b55a2700d93901ba1e9a" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1ae675635fccfde42cc3831d07adacd2cb" kind="typedef"><name>t_counters</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a303a50fe1c1c45a0983769f33d0fe278" kind="variable"><name>m_refreshDelay</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1ae87b766f4f798b175cf1e8cdb915554b" kind="variable"><name>m_snmpPath</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1abd9630f70376e41f57a3a7b056f516fc" kind="variable"><name>m_counters</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1adc07a55864dece71c656f867636e656b" kind="variable"><name>m_isRunning</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1ac13bc7ddc8c008d484fdfb4477f058c6" kind="variable"><name>m_thread</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a0ec3e6493c979a46dc76b35ef7a3510a" kind="variable"><name>m_writeMutex</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" kind="function"><name>CounterManager</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1aff5438182c449dd719382d2d8ca2b1c8" kind="function"><name>~CounterManager</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a65755963d9293fa457c6562a38b2dff3" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a2b50e714f748fc2298bd3ca0c77c668d" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a1677a12619a23ba162a19ebc74fe41e9" kind="function"><name>toJson</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a01f164d28b794064ed5cba2ab94e3583" kind="function"><name>getSnmpPath</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a7e0f54fa25b0d8592362159604cc4310" kind="function"><name>add</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1afb314857888b269ca3ea0f2b4870b3e5" kind="function"><name>getCounters</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a6b9bb7cbdc06c137d04d7a944232b264" kind="function"><name>writeOnDisk</name></member>
+    <member refid="classxtd_1_1counters_1_1CounterManager_1a9ad276156607a3bda1217caff5aaa52c" kind="function"><name>refresh</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1ExtValue" kind="class"><name>xtd::counters::ExtValue</name>
+    <member refid="classxtd_1_1counters_1_1ExtValue_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1ExtValue_1ac47193f04ffa774186e4f60060d1c382" kind="variable"><name>m_value</name></member>
+    <member refid="classxtd_1_1counters_1_1ExtValue_1ac56f634edb50ac47aca158e479bebeae" kind="function"><name>ExtValue</name></member>
+    <member refid="classxtd_1_1counters_1_1ExtValue_1a33aa51f76d3abae665265f3cea64a293" kind="function"><name>~ExtValue</name></member>
+    <member refid="classxtd_1_1counters_1_1ExtValue_1af9ea755a42e20d03d325edfe27e05a75" kind="function"><name>visit_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1FileVisitor" kind="class"><name>xtd::counters::FileVisitor</name>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a31d107063997c9caf28dcf7f11be5595" kind="typedef"><name>t_path</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a6840aff0af0e9e443c065f01df4e47c7" kind="variable"><name>m_path</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a1cdf1a2d8abde62c1e4d340e4b68351d" kind="function"><name>FileVisitor</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1af6936e3e1e62880b0eb9fc76b0b0a120" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a69214d261c695bb48335c58ed2a76cae" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a687eff42ec19d5aed86689e0405fa181" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1ae5807c31711d611b93e435071855ce2f" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a9e5edd247355cc9c3387d1bd5cda0642" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1FileVisitor_1a95744f4b5c8e1a63cb50500db82ea037" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Freq" kind="class"><name>xtd::counters::Freq</name>
+    <member refid="classxtd_1_1counters_1_1Freq_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1aed8edfbc8e6cc2538b1ab4dfa3b8244d" kind="variable"><name>m_beginTime</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1a898fc1648d0073fadc6f96147beddbc7" kind="variable"><name>m_nbEvent</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" kind="function"><name>Freq</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" kind="function"><name>~Freq</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kind="function"><name>tick</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" kind="function"><name>operator=</name></member>
+    <member refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" kind="function"><name>update_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1InstantFreq" kind="class"><name>xtd::counters::InstantFreq</name>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a0e3b3a0e074989abd37a8a4571be1996" kind="typedef"><name>t_timevect</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a66bfd7b18219a99cd6b86a8d6c2233d3" kind="variable"><name>m_samples</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1af2e70a6bf9847764b7652b6e3582281e" kind="variable"><name>m_timeDeltaMs</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a428c013f73c1322ee3fc74cc08171c8c" kind="function"><name>InstantFreq</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" kind="function"><name>~InstantFreq</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kind="function"><name>tick</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a3ae7dc13ff6209a0628cdf481ab0a37c" kind="function"><name>operator=</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a2e4629f5a835d7b52425a72f25dcd4d2" kind="function"><name>update_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a67da1db1172c3f8a4bfb0eb6078df61d" kind="function"><name>expired_safe</name></member>
+    <member refid="classxtd_1_1counters_1_1InstantFreq_1a35bcef17323ff5861ef159b855a98fe1" kind="function"><name>shrink_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1JsonVisitor" kind="class"><name>xtd::counters::JsonVisitor</name>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a4651cb3ed7617b7063c046cf2c6b1b9f" kind="typedef"><name>t_path</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1ae2f08cedeaf21f6f0542241c2feffde2" kind="typedef"><name>t_elem</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1aca8b692bab41e6baac3ad64d71c692f6" kind="variable"><name>m_path</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a32cee373b39b4b3187769052c4edba58" kind="variable"><name>m_elem</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a2b3777d2d80ba2c7131afad6385f2433" kind="function"><name>JsonVisitor</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a903824cfba9c121a0441a774edc232a1" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a6d650a21f6ee33b1748ae7cb432c3de6" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1ad0e11fe1f362f071132d6828de269517" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1ae9dc018222ce25751d712783377b63a3" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a89f860915a12f1e99b629b5d385864cc" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1JsonVisitor_1a5ee17a7532fc5fa81e602fe84aaaf3d2" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Perf" kind="class"><name>xtd::counters::Perf</name>
+    <member refid="classxtd_1_1counters_1_1Perf_1a914e07e96a09b1a1a43ba68eafd96286" kind="typedef"><name>t_timevect</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1ac8a38786e790c65f8c021a6ef0dde4b4" kind="variable"><name>m_avgRTT</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a1b91f3586bf3b2bca5c64f0cc1ae169c" kind="variable"><name>m_globalPerf</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a8195ecbdeded6ea281b06f68e3cb2dc7" kind="variable"><name>m_instantPerf</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a18b9aa344c2b5f939895fb0856cf73f2" kind="variable"><name>m_startTimes</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a765416ba7ef076acdfc8100d2ea5c9a0" kind="function"><name>Perf</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a80692e9b90e8d15a57e2e581591063c0" kind="function"><name>startChrono</name></member>
+    <member refid="classxtd_1_1counters_1_1Perf_1a905d73c1604d74e28bb56ea2bb4867ef" kind="function"><name>stopChrono</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1SumExt" kind="class"><name>xtd::counters::SumExt</name>
+    <member refid="classxtd_1_1counters_1_1SumExt_1a45bd88cd35c9d86331d56feffca1df53" kind="typedef"><name>t_items</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1ae9c3d0eb4ccf8913cc6559abf264b709" kind="variable"><name>m_values</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1aeed4a5cca01073d91a3c24212618ab9e" kind="function"><name>SumExt</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1a304ba48e158f8f75120b9449300c688a" kind="function"><name>~SumExt</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1a05b01643f8724ccdfd98f8a3209dc99c" kind="function"><name>addItem</name></member>
+    <member refid="classxtd_1_1counters_1_1SumExt_1a1f3c5d348aa4b16104027fb2175acbe6" kind="function"><name>update_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Value" kind="class"><name>xtd::counters::Value</name>
+    <member refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" kind="typedef"><name>t_sptr</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a93e934ad70d5b32b14beed5572450abf" kind="friend"><name>Composed</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" kind="variable"><name>m_isNaN</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" kind="variable"><name>m_value</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" kind="variable"><name>m_atom</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a298f146ab57eaed8e6f783c26e78e0f4" kind="function"><name>Value</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" kind="function"><name>~Value</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" kind="function"><name>NaN</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a6fab70b05b6e99db492e0a3d8a0d9fb6" kind="function"><name>isNaN</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0" kind="function"><name>operator=</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a8e7e5f0ff7388f18deaddf51e016c905" kind="function"><name>operator++</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a4a8989a7f9585998eb4210dfdd1b099e" kind="function"><name>operator++</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1ac94ea7115378eb16dbef10d030b52a66" kind="function"><name>operator--</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a9036f1b2a2904960e67c1faef11f1835" kind="function"><name>operator--</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a459b2e9fc6974821968f5c05a62ec4ca" kind="function"><name>getValue</name></member>
+    <member refid="classxtd_1_1counters_1_1Value_1a7be35e9a5a52891c5946425152b4db30" kind="function"><name>visit_safe</name></member>
+  </compound>
+  <compound refid="classxtd_1_1counters_1_1Visitor" kind="class"><name>xtd::counters::Visitor</name>
+    <member refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1Visitor_1a1a5da2c523703b0c9132595f22e1700e" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1Visitor_1a6139d735b720a83e87f49932855f1ade" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1Visitor_1a0bc4c30e3df6ef796878b85ce1be17fb" kind="function"><name>operator()</name></member>
+    <member refid="classxtd_1_1counters_1_1Visitor_1aba895c10dd1a28fa7a8b64e61adee5ac" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="namespacextd" kind="namespace"><name>xtd</name>
+  </compound>
+  <compound refid="namespacextd_1_1counters" kind="namespace"><name>xtd::counters</name>
+    <member refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8" kind="enum"><name>exec_status</name></member>
+    <member refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a1ee85f6c60017a7f0646ba8dc5824de6" kind="enumvalue"><name>starting</name></member>
+    <member refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a75101dcdfc88455bcafc9e53e0b06689" kind="enumvalue"><name>running</name></member>
+    <member refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8acb5e100e5a9a3e7f6d1fd97512215282" kind="enumvalue"><name>error</name></member>
+    <member refid="namespacextd_1_1counters_1a408a8b2fd75b44228e1741ac4a32aff8a444bcb3a3fcf8389296c49467f27e1d6" kind="enumvalue"><name>ok</name></member>
+    <member refid="namespacextd_1_1counters_1a162dd5cde0e6fcc970c543f7420b4c14" kind="typedef"><name>AvgValue32</name></member>
+    <member refid="namespacextd_1_1counters_1aa43118623f65cdf1ba43bffd8f17ea0e" kind="typedef"><name>AvgValue64</name></member>
+    <member refid="namespacextd_1_1counters_1ae049cff0f00adb1728a511d333c2aa50" kind="typedef"><name>ExtValue32</name></member>
+    <member refid="namespacextd_1_1counters_1ad0d26d26ad71069f92a20b6d870e4872" kind="typedef"><name>ExtValue64</name></member>
+    <member refid="namespacextd_1_1counters_1a7e0abdd1fae0f70421c2e0ea3924db6f" kind="typedef"><name>SumExt32</name></member>
+    <member refid="namespacextd_1_1counters_1a268d063d4f32d16f65c388b8791602e3" kind="typedef"><name>SumExt64</name></member>
+    <member refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kind="typedef"><name>Value32</name></member>
+    <member refid="namespacextd_1_1counters_1a20cdfbbbf5aa96abb1c5d461497d1769" kind="typedef"><name>Value64</name></member>
+  </compound>
+  <compound refid="AvgTimedValue_8cc" kind="file"><name>AvgTimedValue.cc</name>
+  </compound>
+  <compound refid="AvgTimedValue_8hh" kind="file"><name>AvgTimedValue.hh</name>
+  </compound>
+  <compound refid="AvgValue_8cc" kind="file"><name>AvgValue.cc</name>
+  </compound>
+  <compound refid="AvgValue_8hh" kind="file"><name>AvgValue.hh</name>
+  </compound>
+  <compound refid="Base_8cc" kind="file"><name>Base.cc</name>
+  </compound>
+  <compound refid="Base_8hh" kind="file"><name>Base.hh</name>
+  </compound>
+  <compound refid="Cache_8cc" kind="file"><name>Cache.cc</name>
+  </compound>
+  <compound refid="Cache_8hh" kind="file"><name>Cache.hh</name>
+  </compound>
+  <compound refid="Composed_8cc" kind="file"><name>Composed.cc</name>
+  </compound>
+  <compound refid="Composed_8hh" kind="file"><name>Composed.hh</name>
+  </compound>
+  <compound refid="CounterManager_8cc" kind="file"><name>CounterManager.cc</name>
+  </compound>
+  <compound refid="CounterManager_8hh" kind="file"><name>CounterManager.hh</name>
+  </compound>
+  <compound refid="counters_8hh" kind="file"><name>counters.hh</name>
+  </compound>
+  <compound refid="counters__fwd_8hh" kind="file"><name>counters_fwd.hh</name>
+  </compound>
+  <compound refid="ExtValue_8cc" kind="file"><name>ExtValue.cc</name>
+  </compound>
+  <compound refid="ExtValue_8hh" kind="file"><name>ExtValue.hh</name>
+  </compound>
+  <compound refid="FileVisitor_8hh" kind="file"><name>FileVisitor.hh</name>
+  </compound>
+  <compound refid="Freq_8cc" kind="file"><name>Freq.cc</name>
+  </compound>
+  <compound refid="Freq_8hh" kind="file"><name>Freq.hh</name>
+  </compound>
+  <compound refid="InstantFreq_8cc" kind="file"><name>InstantFreq.cc</name>
+  </compound>
+  <compound refid="InstantFreq_8hh" kind="file"><name>InstantFreq.hh</name>
+  </compound>
+  <compound refid="JsonVisitor_8hh" kind="file"><name>JsonVisitor.hh</name>
+  </compound>
+  <compound refid="Perf_8cc" kind="file"><name>Perf.cc</name>
+  </compound>
+  <compound refid="Perf_8hh" kind="file"><name>Perf.hh</name>
+  </compound>
+  <compound refid="SumExt_8cc" kind="file"><name>SumExt.cc</name>
+  </compound>
+  <compound refid="SumExt_8hh" kind="file"><name>SumExt.hh</name>
+  </compound>
+  <compound refid="Value_8cc" kind="file"><name>Value.cc</name>
+  </compound>
+  <compound refid="Value_8hh" kind="file"><name>Value.hh</name>
+  </compound>
+  <compound refid="Visitor_8hh" kind="file"><name>Visitor.hh</name>
+  </compound>
+  <compound refid="dir_f63acb053c4dd116628bfd65987aa896" kind="dir"><name>/home/psyco/dev/xtdcpp/counters</name>
+  </compound>
+  <compound refid="dir_726aa94fe7fe254abfa9b41701e59a42" kind="dir"><name>/home/psyco/dev/xtdcpp/counters/src</name>
+  </compound>
+</doxygenindex>

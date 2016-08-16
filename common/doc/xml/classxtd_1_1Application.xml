@@ -1,0 +1,1350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1Application" kind="class" language="C++" prot="public">
+    <compoundname>xtd::Application</compoundname>
+    <derivedcompoundref refid="classApp" prot="private" virt="non-virtual">App</derivedcompoundref>
+    <includes refid="src_2Application_8hh" local="no">Application.hh</includes>
+    <innerclass refid="structxtd_1_1Application_1_1t__option" prot="private">xtd::Application::t_option</innerclass>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" prot="protected" static="no">
+        <name>argument</name>
+        <enumvalue id="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" prot="protected">
+          <name>optional</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>optional argument for option </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" prot="protected">
+          <name>mandatory</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>mandatory argument for option </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" prot="protected">
+          <name>none</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>forbidden argument for option </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Behavior switch for the argument of an option. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="enum" id="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" prot="protected" static="no">
+        <name>requirement</name>
+        <enumvalue id="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" prot="protected">
+          <name>optional</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>option is optional on command line </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95" prot="protected">
+          <name>mandatory</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>option must be given on command line </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Behavior for the presence of the option itself. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="107" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" prot="protected" static="no">
+        <type>std::function&lt; void(void)&gt;</type>
+        <definition>typedef std::function&lt;void(void)&gt; xtd::Application::t_sig_handler</definition>
+        <argsstring></argsstring>
+        <name>t_sig_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="89" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1Application_1a8a1a6cf1d4d2d29394e9ee260dce02fe" prot="private" static="no">
+        <type>std::function&lt; void(const string &amp;, const t_option &amp;)&gt;</type>
+        <definition>typedef std::function&lt;void(const string&amp;, const t_option&amp;)&gt; xtd::Application::t_callback</definition>
+        <argsstring></argsstring>
+        <name>t_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="116" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1Application_1a9f8c4bd162a47570ae60cf529e8d3447" prot="private" static="no">
+        <type>vector&lt; t_option &gt;</type>
+        <definition>typedef vector&lt;t_option&gt; xtd::Application::t_option_list</definition>
+        <argsstring></argsstring>
+        <name>t_option_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="128" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::Application::m_binName</definition>
+        <argsstring></argsstring>
+        <name>m_binName</name>
+        <briefdescription>
+<para>binary name (argv[0]) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="339" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="339" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+        <referencedby refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" compoundref="Application_8cc" startline="286" endline="304">isOptionGiven</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::Application::m_logLevel</definition>
+        <argsstring></argsstring>
+        <name>m_logLevel</name>
+        <briefdescription>
+<para>log level read from command line </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="340" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="340" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" compoundref="Application_8cc" startline="20" endline="45">Application</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" prot="protected" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; xtd::Application::m_remainingArgs</definition>
+        <argsstring></argsstring>
+        <name>m_remainingArgs</name>
+        <briefdescription>
+<para>positional command line arguments </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="341" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="341" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" compoundref="Application_8cc" startline="172" endline="200">addOption</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::Application::m_rcsid</definition>
+        <argsstring></argsstring>
+        <name>m_rcsid</name>
+        <briefdescription>
+<para>binary identity information </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="342" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="342" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" compoundref="Application_8cc" startline="52" endline="55">getVersion</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1Application_1a172e7346007a9c9c415676dc20448c05" prot="private" static="no" mutable="no">
+        <type>t_option_list</type>
+        <definition>t_option_list xtd::Application::m_optionList</definition>
+        <argsstring></argsstring>
+        <name>m_optionList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="345" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1af5fd841d5c408ada5da58fc02e41b0e1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::Application::m_helpText</definition>
+        <argsstring></argsstring>
+        <name>m_helpText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="346" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1aa26b372f33d11dcb19fce8b1893df5c5" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread xtd::Application::m_runThread</definition>
+        <argsstring></argsstring>
+        <name>m_runThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="347" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a653309319aa3e9fcc8dee7e5cade810f" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service</type>
+        <definition>boost::asio::io_service xtd::Application::m_ioService</definition>
+        <argsstring></argsstring>
+        <name>m_ioService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="348" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a6bd57141044477f115c88780084bfedd" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service::work</type>
+        <definition>boost::asio::io_service::work xtd::Application::m_work</definition>
+        <argsstring></argsstring>
+        <name>m_work</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="349" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a75a6b93ec5f607c08f3d337ccaf498cc" prot="private" static="no" mutable="no">
+        <type>boost::asio::signal_set</type>
+        <definition>boost::asio::signal_set xtd::Application::m_signals</definition>
+        <argsstring></argsstring>
+        <name>m_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="350" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1Application_1a096f6f3a0f526c0744fd59f096f743e8" prot="private" static="no" mutable="no">
+        <type>map&lt; int, <ref refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" kindref="member">t_sig_handler</ref> &gt;</type>
+        <definition>map&lt;int, t_sig_handler&gt; xtd::Application::m_signalHandlerMap</definition>
+        <argsstring></argsstring>
+        <name>m_signalHandlerMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="351" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::Application</definition>
+        <argsstring>(void)</argsstring>
+        <name>Application</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="134" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="20" bodyend="45"/>
+        <references refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" compoundref="Application_8cc" startline="172" endline="200">addOption</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8">none</references>
+        <references refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d">optional</references>
+        <references refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968">bindCallback</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95">mandatory</references>
+        <references refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9">bindValues</references>
+        <references refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" compoundref="src_2Application_8hh" startline="340">m_logLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Application::~Application</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Application</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="139" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Application::execute</definition>
+        <argsstring>(int p_argc, char **p_argv)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>int</type>
+          <declname>p_argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>p_argv</declname>
+        </param>
+        <briefdescription>
+<para>main entry point, usually called with <ref refid="doc_2example_2Application_8hh_1a6b77b2233054447db17959182b5fb02b" kindref="member">main(int,char**)</ref>&apos;s arguments </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument list (first is binary name) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>depends on <ref refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kindref="member">Application::process</ref> implementation, usually 0 if process succeed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="148" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="103" bodyend="130"/>
+        <references refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" compoundref="src_2Application_8hh" startline="339">m_binName</references>
+        <references refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" compoundref="logger_8cc" startline="17" endline="22">xtd::logger::get</references>
+        <references refid="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" compoundref="logger_8cc" startline="34" endline="37">xtd::logger::initialize</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">xtd::logger::crit</references>
+        <references refid="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" compoundref="src_2Application_8hh" startline="157" endline="157">parseConfig</references>
+        <references refid="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" compoundref="src_2Application_8hh" startline="162" endline="162">checkOptions</references>
+        <references refid="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" compoundref="logger_8cc" startline="81" endline="85">xtd::logger::setAllLevels</references>
+        <references refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" compoundref="src_2Application_8hh" startline="340">m_logLevel</references>
+        <references refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</references>
+        <references refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" compoundref="Application_8cc" startline="166" endline="169">process</references>
+        <references refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9">error_nohelp</references>
+        <references refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" compoundref="logger_8hh" startline="10">HERE</references>
+        <referencedby refid="main_8cc_1af847876e048f60529674b0f221f6edc1" compoundref="main_8cc" startline="38" endline="43">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::Application::parseConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>parseConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Parse application configuration, (default nothing) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="157" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="157" bodyend="157"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::Application::checkOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>checkOptions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check read options, (default nothing) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="162" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="162" bodyend="162"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void xtd::Application::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>initialize application, (default nothing) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="167" bodyend="167"/>
+        <references refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" compoundref="Application_8cc" startline="166" endline="169">process</references>
+        <references refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" compoundref="Application_8cc" startline="155" endline="163">addSignalHandler</references>
+        <references refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" compoundref="Application_8cc" startline="52" endline="55">getVersion</references>
+        <references refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" compoundref="Application_8cc" startline="172" endline="200">addOption</references>
+        <references refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" compoundref="Application_8cc" startline="286" endline="304">isOptionGiven</references>
+        <references refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" compoundref="Application_8cc" startline="363" endline="368">addHelpMsg</references>
+        <references refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" compoundref="Application_8cc" startline="69" endline="80">bindDir</references>
+        <references refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" compoundref="Application_8cc" startline="59" endline="66">bindFile</references>
+        <references refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" compoundref="Application_8cc" startline="93" endline="99">bindGiven</references>
+        <references refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" compoundref="Application_8cc" startline="83" endline="89">bindString</references>
+        <references refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968">bindCallback</references>
+        <references refid="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c">bindValueIfGiven</references>
+        <references refid="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173">bindNumber</references>
+        <references refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9">bindValues</references>
+        <references refid="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366">bindAccumulator</references>
+        <references refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9">error_nohelp</references>
+        <references refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563">error</references>
+        <references refid="classxtd_1_1Application_1a931877468f6b948909d596d91d60b7a2">warn</references>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Application::process</definition>
+        <argsstring>(void)</argsstring>
+        <name>process</name>
+        <reimplementedby refid="classApp_1a26165d5369ac1c7aa04442dbd89a773d">process</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Main application process function, (default nothing) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Up to the user, generally 0 in case of success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="173" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="166" bodyend="169"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::addSignalHandler</definition>
+        <argsstring>(int p_signalNumber, t_sig_handler p_handler)</argsstring>
+        <name>addSignalHandler</name>
+        <param>
+          <type>int</type>
+          <declname>p_signalNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" kindref="member">t_sig_handler</ref></type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+<para>register a signal callback </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_signalNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>signal ID (man signal 7) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handling callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if signal registered correctly, false if signal was already registered </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="185" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="155" bodyend="163"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; Application::getVersion</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get RCSID identity informations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="190" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="52" bodyend="55"/>
+        <references refid="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" compoundref="src_2Application_8hh" startline="342">m_rcsid</references>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::addOption</definition>
+        <argsstring>(const char p_shortOpt, const string &amp;p_longOpt, const argument p_argType, const requirement p_status, const string &amp;p_description, t_callback p_callback)</argsstring>
+        <name>addOption</name>
+        <param>
+          <type>const char</type>
+          <declname>p_shortOpt</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_longOpt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" kindref="member">argument</ref></type>
+          <declname>p_argType</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" kindref="member">requirement</ref></type>
+          <declname>p_status</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_description</declname>
+        </param>
+        <param>
+          <type>t_callback</type>
+          <declname>p_callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="195" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="172" bodyend="200"/>
+        <references refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563">error</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8">none</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95">mandatory</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d">optional</references>
+        <references refid="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" compoundref="src_2Application_8hh" startline="341">m_remainingArgs</references>
+        <referencedby refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" compoundref="Application_8cc" startline="20" endline="45">Application</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::isOptionGiven</definition>
+        <argsstring>(const string &amp;p_optionName) const </argsstring>
+        <name>isOptionGiven</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_optionName</declname>
+        </param>
+        <briefdescription>
+<para>Tells if given option was given on command line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_optionName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>long-form or short-form of the option </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if option was given </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="207" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="286" bodyend="304"/>
+        <references refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" compoundref="src_2Application_8hh" startline="339">m_binName</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8">none</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d">optional</references>
+        <references refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95">mandatory</references>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::addHelpMsg</definition>
+        <argsstring>(const string &amp;p_helpMessage)</argsstring>
+        <name>addHelpMsg</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_helpMessage</declname>
+        </param>
+        <briefdescription>
+<para>Add additional usage line to display on help or errors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_helpMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message line to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="213" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="363" bodyend="368"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>t_callback</type>
+        <definition>Application::t_callback Application::bindDir</definition>
+        <argsstring>(string &amp;p_target, bool p_readable=true) const </argsstring>
+        <name>bindDir</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_readable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Bind option&apos;s parameter to a directory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable to store the option&apos;s value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_readable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, check that given directory exists and is readable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="224" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="69" bodyend="80"/>
+        <references refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563">error</references>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>t_callback</type>
+        <definition>Application::t_callback Application::bindFile</definition>
+        <argsstring>(string &amp;p_target, bool p_readable=true) const </argsstring>
+        <name>bindFile</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_readable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Bind option&apos;s parameter to a file name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable to store the option&apos;s value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_readable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, check that given file name exists and is readable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="232" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="59" bodyend="66"/>
+        <references refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563">error</references>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>t_callback</type>
+        <definition>Application::t_callback Application::bindGiven</definition>
+        <argsstring>(bool &amp;p_target) const </argsstring>
+        <name>bindGiven</name>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <briefdescription>
+<para>Set targeted variable to true if option is given on command line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="239" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="93" bodyend="99"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>t_callback</type>
+        <definition>Application::t_callback Application::bindString</definition>
+        <argsstring>(string &amp;p_target) const </argsstring>
+        <name>bindString</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <briefdescription>
+<para>Set targeted variable to option&apos;s parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="246" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="83" bodyend="89"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::bindCallback</definition>
+        <argsstring>(T p_action) const </argsstring>
+        <name>bindCallback</name>
+        <param>
+          <type>T</type>
+          <declname>p_action</declname>
+        </param>
+        <briefdescription>
+<para>Associate option to given generic callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function compatible with<programlisting><codeline><highlight class="normal">std::function&lt;void(void)&gt;<sp/></highlight></codeline>
+</programlisting> signature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="254" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" compoundref="Application_8cc" startline="20" endline="45">Application</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::bindValueIfGiven</definition>
+        <argsstring>(T &amp;p_target, const T &amp;p_value) const </argsstring>
+        <name>bindValueIfGiven</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+<para>Set given value to referenced variable if option is given. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set to p_target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="263" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::bindNumber</definition>
+        <argsstring>(T &amp;p_target, T p_min=std::numeric_limits&lt; T &gt;::min(), T p_max=std::numeric_limits&lt; T &gt;::max()) const </argsstring>
+        <name>bindNumber</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>p_min</declname>
+          <defval>std::numeric_limits&lt; T &gt;::min()</defval>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>p_max</declname>
+          <defval>std::numeric_limits&lt; T &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Bind option&apos;s paramter as number to referenced variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum parameter value [inclusive] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum parameter value [inclusive] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback</para></simplesect>
+Will led to an error if input parameter :<itemizedlist>
+<listitem><para>not lexically convertible to T</para></listitem><listitem><para>is lower than p_min</para></listitem><listitem><para>is greater than p_max </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="278" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>class Iterable</type>
+          </param>
+        </templateparamlist>
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::bindValues</definition>
+        <argsstring>(T &amp;p_target, const Iterable &amp;p_values) const </argsstring>
+        <name>bindValues</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <param>
+          <type>const Iterable &amp;</type>
+          <declname>p_values</declname>
+        </param>
+        <briefdescription>
+<para>Bind option&apos;s parameter to target variable and checks among authorized values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterable container of authorized option&apos;s values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="290" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" compoundref="Application_8cc" startline="20" endline="45">Application</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>template&lt; class &gt; class</type>
+            <declname>TCollection</declname>
+            <defname>TCollection</defname>
+          </param>
+        </templateparamlist>
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::bindAccumulator</definition>
+        <argsstring>(TCollection&lt; T &gt; &amp;p_target) const </argsstring>
+        <name>bindAccumulator</name>
+        <param>
+          <type>TCollection&lt; T &gt; &amp;</type>
+          <declname>p_target</declname>
+        </param>
+        <briefdescription>
+<para>Append option&apos;s parameter to target container for each command line hit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference variable container </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>generated option callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="299" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Arguments</declname>
+            <defname>Arguments</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::Application::error_nohelp</definition>
+        <argsstring>(int p_code, const string &amp;p_format, Arguments &amp;&amp;...p_args) const </argsstring>
+        <name>error_nohelp</name>
+        <param>
+          <type>int</type>
+          <declname>p_code</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Arguments &amp;&amp;...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+<para>Prints error on standard error and exit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exit code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error message format (boost::format compatible) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template variadic arguments to format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="312" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">execute</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Arguments</declname>
+            <defname>Arguments</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::Application::error</definition>
+        <argsstring>(int p_code, const string &amp;p_format, Arguments &amp;&amp;...p_args) const </argsstring>
+        <name>error</name>
+        <param>
+          <type>int</type>
+          <declname>p_code</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Arguments &amp;&amp;...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+<para>Prints error and usage on standard error and exit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exit code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error message format (boost::format compatible) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template variadic arguments to format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="321" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" compoundref="Application_8cc" startline="59" endline="66">bindFile</referencedby>
+        <referencedby refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" compoundref="Application_8cc" startline="69" endline="80">bindDir</referencedby>
+        <referencedby refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" compoundref="Application_8cc" startline="172" endline="200">addOption</referencedby>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a931877468f6b948909d596d91d60b7a2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Arguments</declname>
+            <defname>Arguments</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::Application::warn</definition>
+        <argsstring>(const string &amp;p_format, Arguments &amp;&amp;...p_args) const </argsstring>
+        <name>warn</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Arguments &amp;&amp;...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+<para>Prints a warning on standard error. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error message format (boost::format compatible) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Template variadic arguments to format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="329" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" compoundref="src_2Application_8hh" startline="167" endline="167">initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1Application_1a076d6a7c18af2f332f5b4d5a740a8732" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::readArgs</definition>
+        <argsstring>(int p_argc, char **p_argv)</argsstring>
+        <name>readArgs</name>
+        <param>
+          <type>int</type>
+          <declname>p_argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>p_argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="333" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="203" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a124e8cb7e45ae07b2b59dbd6618f0c8b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::usageWrapper</definition>
+        <argsstring>(void) const </argsstring>
+        <name>usageWrapper</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="334" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a58b4fccc81a43c5a6ce4bfa5d925af3c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::usage</definition>
+        <argsstring>(void) const </argsstring>
+        <name>usage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="335" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="308" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1Application_1a45951e6f6bbdc44043dc296fadf2ffa8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::handleSignal</definition>
+        <argsstring>(const boost::system::error_code &amp;p_error, int p_signalNumber)</argsstring>
+        <name>handleSignal</name>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p_signalNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="336" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="133" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parses arguments from <ref refid="doc_2example_2Application_8hh_1a6b77b2233054447db17959182b5fb02b" kindref="member">main(int,char**)</ref> function. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para><ref refid="classxtd_1_1Application_1sec_intro" kindref="member">Introcution</ref></para></listitem><listitem><para><ref refid="classxtd_1_1Application_1sec_howto" kindref="member">How to use</ref></para></listitem><listitem><para><ref refid="classxtd_1_1Application_1sec_execution_flow" kindref="member">Execution flow</ref></para></listitem><listitem><para><ref refid="classxtd_1_1Application_1sec_binding_options" kindref="member">Bindind options</ref></para></listitem></itemizedlist>
+</para><sect1 id="classxtd_1_1Application_1sec_intro">
+<title>Introcution</title>
+<para>This object provides a default application skeleton including :<itemizedlist>
+<listitem><para>user-friendly wrapping of argument parsing (on top of C&apos;s getopt_long)</para></listitem><listitem><para>usage generator for declared options</para></listitem><listitem><para>default options : <ndash/>help and <ndash/>log-level</para></listitem><listitem><para>default logging facility</para></listitem><listitem><para>signal handling on a separate thread</para></listitem><listitem><para>binary RCS identity tracking, usually generated by xtd compile-time dependency tracking system</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="classxtd_1_1Application_1sec_howto">
+<title>How to use</title>
+<para><orderedlist>
+<listitem><para>Inherit your class from <ref refid="classxtd_1_1Application" kindref="compound">Application</ref></para></listitem><listitem><para>Define the mandatory method <ref refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kindref="member">Application::process</ref></para></listitem><listitem><para>Declare your program arguments in your constructor</para></listitem><listitem><para>Optionaly parse your configuration, check your parameters and initialize your application in the dedicated methods</para></listitem><listitem><para>Instantiate your class in <ref refid="doc_2example_2Application_8hh_1a6b77b2233054447db17959182b5fb02b" kindref="member">main(int,char**)</ref> function and all <ref refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" kindref="member">Application::execute</ref> method</para></listitem></orderedlist>
+</para><para>Typical example : <programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyApp" kindref="compound">MyApp</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" kindref="member">Application</ref></highlight></codeline>
+<codeline><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="classMyApp" kindref="compound">MyApp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" kindref="member">Application</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" kindref="member">addOption</ref>(</highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;input-file&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">argument::mandatory</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">requirement::mandatory</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;process<sp/>given<sp/>file&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" kindref="member">Application::bindFile</ref>(m_inputFile,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kindref="member">process</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;given<sp/>readable<sp/>file<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m_inputFile<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>some<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(l_success)<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>std::string<sp/>m_inputFile;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cc_1af847876e048f60529674b0f221f6edc1" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>p_argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classMyApp" kindref="compound">MyApp</ref><sp/>l_app;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_app.execute(p_argc,<sp/>p_argv);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="classxtd_1_1Application_1sec_execution_flow">
+<title>Execution flow</title>
+<para><plantuml>
+(*) --&gt; initialize default logging (level::crit)
+    --&gt; read arguments from argc &amp; argv
+    --&gt; parseConfig()
+        note right: User may redefine this function
+    --&gt; checkOptions()
+    --&gt; initialize logging with parsed level
+        note right: User may redefine this function
+    --&gt; initialize()
+        note right: User may redefine this function
+    --&gt; ===B1===
+        --&gt; start signal thread
+        --&gt; stop &amp; join signal thread
+        --&gt; ===B2===
+   ===B1=== --&gt; process()
+        note left: User &lt;b&gt;must&lt;/b&gt; re-define this function
+        --&gt; ===B2===
+    --&gt; (*)
+</plantuml>
+</para></sect1>
+<sect1 id="classxtd_1_1Application_1sec_binding_options">
+<title>Bindind options</title>
+<para><itemizedlist>
+<listitem><para><ref refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" kindref="member">bindDir</ref> : Bind option&apos;s parameter to a directory.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" kindref="member">bindFile</ref> : Bind option&apos;s parameter to a file name.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" kindref="member">bindGiven</ref> : Set targeted variable to true if option is given on command line.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" kindref="member">bindString</ref> : Set targeted variable to option&apos;s parameter.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" kindref="member">bindCallback</ref> : Associate option to given generic callback.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c" kindref="member">bindValueIfGiven</ref> : Set given value to referenced variable if option is given.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173" kindref="member">bindNumber</ref> : Bind option&apos;s paramter as number to referenced variable.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" kindref="member">bindValues</ref> : Bind option&apos;s parameter to target variable and checks among authorized values.</para></listitem><listitem><para><ref refid="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366" kindref="member">bindAccumulator</ref> : Append option&apos;s parameter to target container for each command line hit. </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="45">
+        <label>xtd::Application</label>
+        <link refid="classxtd_1_1Application"/>
+      </node>
+      <node id="46">
+        <label>App</label>
+        <link refid="classApp"/>
+        <childnode refid="45" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>vector&lt; string &gt;</label>
+      </node>
+      <node id="47">
+        <label>xtd::Application</label>
+        <link refid="classxtd_1_1Application"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>m_logLevel</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>m_remainingArgs</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>m_rcsid</edgelabel>
+          <edgelabel>m_binName</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>string</label>
+      </node>
+      <node id="48">
+        <label>uint32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="87" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="86" bodyend="352"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>addHelpMsg</name></member>
+      <member refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>addOption</name></member>
+      <member refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>addSignalHandler</name></member>
+      <member refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" prot="public" virt="non-virtual"><scope>xtd::Application</scope><name>Application</name></member>
+      <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>argument</name></member>
+      <member refid="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindAccumulator</name></member>
+      <member refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindCallback</name></member>
+      <member refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindDir</name></member>
+      <member refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindFile</name></member>
+      <member refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindGiven</name></member>
+      <member refid="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindNumber</name></member>
+      <member refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindString</name></member>
+      <member refid="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindValueIfGiven</name></member>
+      <member refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>bindValues</name></member>
+      <member refid="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" prot="protected" virt="virtual"><scope>xtd::Application</scope><name>checkOptions</name></member>
+      <member refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>error</name></member>
+      <member refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>error_nohelp</name></member>
+      <member refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" prot="public" virt="non-virtual"><scope>xtd::Application</scope><name>execute</name></member>
+      <member refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>getVersion</name></member>
+      <member refid="classxtd_1_1Application_1a45951e6f6bbdc44043dc296fadf2ffa8" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>handleSignal</name></member>
+      <member refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" prot="protected" virt="virtual"><scope>xtd::Application</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>isOptionGiven</name></member>
+      <member refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>m_binName</name></member>
+      <member refid="classxtd_1_1Application_1af5fd841d5c408ada5da58fc02e41b0e1" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_helpText</name></member>
+      <member refid="classxtd_1_1Application_1a653309319aa3e9fcc8dee7e5cade810f" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>m_logLevel</name></member>
+      <member refid="classxtd_1_1Application_1a172e7346007a9c9c415676dc20448c05" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_optionList</name></member>
+      <member refid="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>m_rcsid</name></member>
+      <member refid="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>m_remainingArgs</name></member>
+      <member refid="classxtd_1_1Application_1aa26b372f33d11dcb19fce8b1893df5c5" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_runThread</name></member>
+      <member refid="classxtd_1_1Application_1a096f6f3a0f526c0744fd59f096f743e8" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_signalHandlerMap</name></member>
+      <member refid="classxtd_1_1Application_1a75a6b93ec5f607c08f3d337ccaf498cc" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_signals</name></member>
+      <member refid="classxtd_1_1Application_1a6bd57141044477f115c88780084bfedd" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>m_work</name></member>
+      <member refid="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" prot="protected" virt="virtual"><scope>xtd::Application</scope><name>parseConfig</name></member>
+      <member refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" prot="protected" virt="virtual"><scope>xtd::Application</scope><name>process</name></member>
+      <member refid="classxtd_1_1Application_1a076d6a7c18af2f332f5b4d5a740a8732" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>readArgs</name></member>
+      <member refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>requirement</name></member>
+      <member refid="classxtd_1_1Application_1a8a1a6cf1d4d2d29394e9ee260dce02fe" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>t_callback</name></member>
+      <member refid="classxtd_1_1Application_1a9f8c4bd162a47570ae60cf529e8d3447" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>t_option_list</name></member>
+      <member refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>t_sig_handler</name></member>
+      <member refid="classxtd_1_1Application_1a58b4fccc81a43c5a6ce4bfa5d925af3c" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>usage</name></member>
+      <member refid="classxtd_1_1Application_1a124e8cb7e45ae07b2b59dbd6618f0c8b" prot="private" virt="non-virtual"><scope>xtd::Application</scope><name>usageWrapper</name></member>
+      <member refid="classxtd_1_1Application_1a931877468f6b948909d596d91d60b7a2" prot="protected" virt="non-virtual"><scope>xtd::Application</scope><name>warn</name></member>
+      <member refid="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" prot="public" virt="virtual"><scope>xtd::Application</scope><name>~Application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

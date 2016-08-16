@@ -1,0 +1,66 @@
+\hypertarget{CommTypeDefs_8hh}{}\section{/home/psyco/dev/xtdcpp/network/src/utils/\+Comm\+Type\+Defs.hh File Reference}
+\label{CommTypeDefs_8hh}\index{/home/psyco/dev/xtdcpp/network/src/utils/\+Comm\+Type\+Defs.\+hh@{/home/psyco/dev/xtdcpp/network/src/utils/\+Comm\+Type\+Defs.\+hh}}
+{\ttfamily \#include $<$deque$>$}\\*
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/thread/thread.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/shared\+\_\+ptr.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/function.\+hpp$>$}\\*
+{\ttfamily \#include $<$types.\+hh$>$}\\*
+Include dependency graph for Comm\+Type\+Defs.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CommTypeDefs_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CommTypeDefs_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacextd}{xtd}
+\item 
+ \hyperlink{namespacextd_1_1network}{xtd\+::network}
+\item 
+ \hyperlink{namespacextd_1_1network_1_1utils}{xtd\+::network\+::utils}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::asio\+::deadline\+\_\+timer \hyperlink{namespacextd_1_1network_1_1utils_af551b4a44731a154a57b9447dac595cd}{xtd\+::network\+::utils\+::dead\+Line\+Timer\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::io\+\_\+service $>$ \hyperlink{namespacextd_1_1network_1_1utils_a67dfba91438896976d636d5aea36c848}{xtd\+::network\+::utils\+::io\+Service\+Ptr\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::io\+\_\+service\+::work $>$ \hyperlink{namespacextd_1_1network_1_1utils_a9e0bae7b0da2b42ca8930a927f3a7c4d}{xtd\+::network\+::utils\+::work\+Ptr\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::streambuf $>$ \hyperlink{namespacextd_1_1network_1_1utils_aaaf1b50be1864a40d85efd18979631e1}{xtd\+::network\+::utils\+::streambuf\+Ptr\+\_\+t}
+\item 
+typedef map$<$ boost\+::thread\+::id, size\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_a778bf7884b2296561ffc1fc5a5f14e38}{xtd\+::network\+::utils\+::t\+\_\+\+Id\+Number\+Map}
+\item 
+typedef std\+::pair$<$ boost\+::thread\+::id, size\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_aa6bd02256b6023347de116a773dd9500}{xtd\+::network\+::utils\+::t\+\_\+\+Id\+Number\+Pair}
+\item 
+typedef boost\+::asio\+::local\+::stream\+\_\+protocol \hyperlink{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{xtd\+::network\+::utils\+::af\+\_\+unix}
+\item 
+typedef boost\+::asio\+::ip\+::tcp \hyperlink{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{xtd\+::network\+::utils\+::af\+\_\+inet}
+\item 
+typedef uint32\+\_\+t \hyperlink{namespacextd_1_1network_1_1utils_a0bdb4094852a77df867e219999175200}{xtd\+::network\+::utils\+::request\+Id\+\_\+t}
+\item 
+typedef vector$<$ char $>$ \hyperlink{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{xtd\+::network\+::utils\+::vector\+Bytes\+\_\+t}
+\item 
+typedef vector$<$ uint32\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_a2b135df55039cd8024b40ef3e1817681}{xtd\+::network\+::utils\+::vector\+Uint32\+\_\+t}
+\item 
+typedef std\+::deque$<$ request\+Id\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_ac3ca189267ad1167fa141608f8b3a2de}{xtd\+::network\+::utils\+::deque\+Id\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ vector\+Bytes\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{xtd\+::network\+::utils\+::shared\+Buf\+\_\+t}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ vector\+Uint32\+\_\+t $>$ \hyperlink{namespacextd_1_1network_1_1utils_af5b287652a0fd8fca54642f8d3ca07fa}{xtd\+::network\+::utils\+::shared\+Header\+\_\+t}
+\item 
+typedef boost\+::function$<$ void(const boost\+::system\+::error\+\_\+code)$>$ \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{xtd\+::network\+::utils\+::handler\+\_\+t}
+\end{DoxyCompactItemize}

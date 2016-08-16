@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Freq_8hh" kind="file" language="C++">
+    <compoundname>Freq.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="Value_8hh" local="yes">Value.hh</includes>
+    <includedby refid="AvgTimedValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
+    <includedby refid="Cache_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Cache.hh</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="Perf_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Perf.hh</includedby>
+    <includedby refid="Freq_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/Freq.cc</includedby>
+    <incdepgraph>
+      <node id="746">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="744">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="743">
+        <label>string</label>
+      </node>
+      <node id="749">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
+        <link refid="Freq.hh"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="757">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
+      </node>
+      <node id="756">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="755">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="754">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
+        <link refid="Freq.hh"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.cc</label>
+        <link refid="Freq_8cc"/>
+      </node>
+      <node id="752">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
+      </node>
+      <node id="751">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1Freq" prot="public">xtd::counters::Freq</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_FREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_FREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Value_8hh" kindref="compound">Value.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classxtd_1_1counters_1_1Freq" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt;uint32_t&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1counters_1_1Freq_1a93e934ad70d5b32b14beed5572450abf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" kindref="member">Freq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="17" refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" kindref="member">~Freq</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">tick</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref>&amp;<sp/><ref refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" kindref="member">update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>boost::posix_time::ptime<sp/>m_beginTime;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_nbEvent;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_FREQ_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh"/>
+  </compounddef>
+</doxygen>

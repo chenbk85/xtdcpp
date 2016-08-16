@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1Cache" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::Cache</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Composed" prot="public" virt="non-virtual">xtd::counters::Composed</basecompoundref>
+    <includes refid="Cache_8hh" local="no">Cache.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1Cache_1ad248c57507dbfd4b90332551fd0d5f1b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1counters_1_1Cache" kindref="compound">Cache</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;Cache&gt; xtd::counters::Cache::t_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1Cache_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="24" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1afabc462c0d1e71e233e7803cb2adf9c8" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nb</definition>
+        <argsstring></argsstring>
+        <name>m_nb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1aac1aee24df6c1fdcdb142cd8f2396feb" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbFiltered</definition>
+        <argsstring></argsstring>
+        <name>m_nbFiltered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1ac944332de3cf38f92bc343a64b32ceb4" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbAccepted</definition>
+        <argsstring></argsstring>
+        <name>m_nbAccepted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a47cc4977056f91d0b2d4fbfaa453a89a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbAcceptedMiss</definition>
+        <argsstring></argsstring>
+        <name>m_nbAcceptedMiss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a26729c3b20e84f4a8e99705ab4df01d0" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbAcceptedHit</definition>
+        <argsstring></argsstring>
+        <name>m_nbAcceptedHit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a0e76a84e7f98009e8e0ce5e58daefa2d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbAcceptedHitInvalid</definition>
+        <argsstring></argsstring>
+        <name>m_nbAcceptedHitInvalid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a4993036b42ee17a874bf2d3e34c3a594" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref></type>
+        <definition>Value32 xtd::counters::Cache::m_nbAcceptedHitValid</definition>
+        <argsstring></argsstring>
+        <name>m_nbAcceptedHitValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1ad6f9a46ee587713107231789d997fcf8" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref></type>
+        <definition>Freq xtd::counters::Cache::m_freqHit</definition>
+        <argsstring></argsstring>
+        <name>m_freqHit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="48" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a45ac1fefe9213cd5c8d4008a059dfc59" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref></type>
+        <definition>Freq xtd::counters::Cache::m_freqMiss</definition>
+        <argsstring></argsstring>
+        <name>m_freqMiss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a494e6dbfbf08c06e56b0139df82a7bb8" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref></type>
+        <definition>InstantFreq xtd::counters::Cache::m_iFreqHit</definition>
+        <argsstring></argsstring>
+        <name>m_iFreqHit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Cache_1a24d95da411b61c6c987f61dfed9a9854" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref></type>
+        <definition>InstantFreq xtd::counters::Cache::m_iFreqMiss</definition>
+        <argsstring></argsstring>
+        <name>m_iFreqMiss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a73df8a43eff5fd364e41dccabc562d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::Cache::Cache</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_deltaTimeMs=10000)</argsstring>
+        <name>Cache</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_deltaTimeMs</declname>
+          <defval>10000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="9" bodyend="48"/>
+        <references refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" compoundref="Composed_8cc" startline="15" endline="20">xtd::counters::Composed::addItem</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Cache::hit</definition>
+        <argsstring>(void)</argsstring>
+        <name>hit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="51" bodyend="58"/>
+        <references refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" compoundref="Freq_8cc" startline="29" endline="32">xtd::counters::Freq::tick</references>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" compoundref="InstantFreq_8cc" startline="24" endline="31">xtd::counters::InstantFreq::tick</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Cache::miss</definition>
+        <argsstring>(void)</argsstring>
+        <name>miss</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="61" bodyend="68"/>
+        <references refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" compoundref="Freq_8cc" startline="29" endline="32">xtd::counters::Freq::tick</references>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" compoundref="InstantFreq_8cc" startline="24" endline="31">xtd::counters::InstantFreq::tick</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a419b5620c93818158193cb6aca015c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Cache::invalid</definition>
+        <argsstring>(void)</argsstring>
+        <name>invalid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a42ea3f207a0399b1864f3ee918e8a0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Cache::valid</definition>
+        <argsstring>(void)</argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Cache_1a827a66e44b127d38c5f808fa38a2535a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Cache::filtered</definition>
+        <argsstring>(void)</argsstring>
+        <name>filtered</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.cc" bodystart="83" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>On choisi l&apos;heritage plutot que la composition pour garder une coherence sur la visibilite des methodes internes collect_safe update_safe (qu&apos;on serait onbligé de mettre en public ou en friend pour faire de la composition). </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="164">
+        <label>xtd::counters::Cache</label>
+        <link refid="classxtd_1_1counters_1_1Cache"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="166">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="167" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="168">
+        <label>xtd::counters::Cache</label>
+        <link refid="classxtd_1_1counters_1_1Cache"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="170">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="171" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Cache.hh" bodystart="22" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" prot="protected" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>addItem</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a73df8a43eff5fd364e41dccabc562d54" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>Cache</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" prot="public" virt="non-virtual" ambiguityscope="xtd::counters::Composed::"><scope>xtd::counters::Cache</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a827a66e44b127d38c5f808fa38a2535a" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>filtered</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>hit</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a419b5620c93818158193cb6aca015c9b" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>invalid</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1ad6f9a46ee587713107231789d997fcf8" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_freqHit</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a45ac1fefe9213cd5c8d4008a059dfc59" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_freqMiss</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a494e6dbfbf08c06e56b0139df82a7bb8" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_iFreqHit</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a24d95da411b61c6c987f61dfed9a9854" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_iFreqMiss</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1afabc462c0d1e71e233e7803cb2adf9c8" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nb</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1ac944332de3cf38f92bc343a64b32ceb4" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbAccepted</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a26729c3b20e84f4a8e99705ab4df01d0" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbAcceptedHit</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a0e76a84e7f98009e8e0ce5e58daefa2d" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbAcceptedHitInvalid</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a4993036b42ee17a874bf2d3e34c3a594" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbAcceptedHitValid</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a47cc4977056f91d0b2d4fbfaa453a89a" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbAcceptedMiss</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1aac1aee24df6c1fdcdb142cd8f2396feb" prot="private" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>m_nbFiltered</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>miss</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1ad248c57507dbfd4b90332551fd0d5f1b" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" prot="protected" virt="virtual"><scope>xtd::counters::Cache</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Cache_1a42ea3f207a0399b1864f3ee918e8a0e4" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>valid</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::Cache</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" prot="protected" virt="virtual"><scope>xtd::counters::Cache</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::Cache</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" prot="public" virt="virtual"><scope>xtd::counters::Cache</scope><name>~Composed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

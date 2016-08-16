@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1InstantFreq" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::InstantFreq</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Value" prot="public" virt="non-virtual">xtd::counters::Value&lt; uint32_t &gt;</basecompoundref>
+    <includes refid="InstantFreq_8hh" local="no">InstantFreq.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1InstantFreq_1a0e3b3a0e074989abd37a8a4571be1996" prot="private" static="no">
+        <type>std::deque&lt; boost::posix_time::ptime &gt;</type>
+        <definition>typedef std::deque&lt;boost::posix_time::ptime&gt; xtd::counters::InstantFreq::t_timevect</definition>
+        <argsstring></argsstring>
+        <name>t_timevect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="18" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1InstantFreq_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1InstantFreq_1a66bfd7b18219a99cd6b86a8d6c2233d3" prot="private" static="no" mutable="no">
+        <type>t_timevect</type>
+        <definition>t_timevect xtd::counters::InstantFreq::m_samples</definition>
+        <argsstring></argsstring>
+        <name>m_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1InstantFreq_1af2e70a6bf9847764b7652b6e3582281e" prot="private" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::counters::InstantFreq::m_timeDeltaMs</definition>
+        <argsstring></argsstring>
+        <name>m_timeDeltaMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a428c013f73c1322ee3fc74cc08171c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::InstantFreq::InstantFreq</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_timeDeltaMs=1000)</argsstring>
+        <name>InstantFreq</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_timeDeltaMs</declname>
+          <defval>1000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::InstantFreq::~InstantFreq</definition>
+        <argsstring>(void)</argsstring>
+        <name>~InstantFreq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="23" bodyend="23"/>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" compoundref="InstantFreq_8cc" startline="24" endline="31">tick</references>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a3ae7dc13ff6209a0628cdf481ab0a37c" compoundref="InstantFreq_8cc" startline="34" endline="38">operator=</references>
+        <references refid="classxtd_1_1counters_1_1InstantFreq_1a2e4629f5a835d7b52425a72f25dcd4d2" compoundref="InstantFreq_8cc" startline="58" endline="64">update_safe</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::InstantFreq::tick</definition>
+        <argsstring>(void)</argsstring>
+        <name>tick</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="24" bodyend="31"/>
+        <references refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" compoundref="Base_8hh" startline="36">xtd::counters::Base::m_mutex</references>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">xtd::counters::AvgTimedValue::addResponseTime</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" compoundref="Cache_8cc" startline="51" endline="58">xtd::counters::Cache::hit</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" compoundref="Cache_8cc" startline="61" endline="68">xtd::counters::Cache::miss</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" compoundref="InstantFreq_8hh" startline="23" endline="23">~InstantFreq</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Perf_1a905d73c1604d74e28bb56ea2bb4867ef" compoundref="Perf_8cc" startline="37" endline="45">xtd::counters::Perf::stopChrono</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a3ae7dc13ff6209a0628cdf481ab0a37c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref> &amp;</type>
+        <definition>InstantFreq &amp; xtd::counters::InstantFreq::operator=</definition>
+        <argsstring>(uint32_t p_value)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="34" bodyend="38"/>
+        <references refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0">xtd::counters::Value&lt; TType &gt;::operator=</references>
+        <referencedby refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" compoundref="InstantFreq_8hh" startline="23" endline="23">~InstantFreq</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a2e4629f5a835d7b52425a72f25dcd4d2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::InstantFreq::update_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_safe</name>
+        <reimplements refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea">update_safe</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="58" bodyend="64"/>
+        <references refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" compoundref="Value_8hh" startline="64">xtd::counters::Value&lt; uint32_t &gt;::m_value</references>
+        <referencedby refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" compoundref="InstantFreq_8hh" startline="23" endline="23">~InstantFreq</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a67da1db1172c3f8a4bfb0eb6078df61d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::counters::InstantFreq::expired_safe</definition>
+        <argsstring>(const boost::posix_time::ptime &amp;p_item, const boost::posix_time::ptime &amp;p_now) const </argsstring>
+        <name>expired_safe</name>
+        <param>
+          <type>const boost::posix_time::ptime &amp;</type>
+          <declname>p_item</declname>
+        </param>
+        <param>
+          <type>const boost::posix_time::ptime &amp;</type>
+          <declname>p_now</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1InstantFreq_1a35bcef17323ff5861ef159b855a98fe1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::InstantFreq::shrink_safe</definition>
+        <argsstring>(const boost::posix_time::ptime &amp;p_now)</argsstring>
+        <name>shrink_safe</name>
+        <param>
+          <type>const boost::posix_time::ptime &amp;</type>
+          <declname>p_now</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc" bodystart="41" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="205">
+        <label>xtd::counters::Value&lt; uint32_t &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="206">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="207" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>xtd::counters::InstantFreq</label>
+        <link refid="classxtd_1_1counters_1_1InstantFreq"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="209">
+        <label>xtd::counters::Value&lt; uint32_t &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>m_atom</edgelabel>
+        </childnode>
+      </node>
+      <node id="211">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="210">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="211" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>xtd::counters::InstantFreq</label>
+        <link refid="classxtd_1_1counters_1_1InstantFreq"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>xtd::counters::Atomic</label>
+        <link refid="classxtd_1_1counters_1_1Atomic"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh" bodystart="13" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a67da1db1172c3f8a4bfb0eb6078df61d" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>expired_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a459b2e9fc6974821968f5c05a62ec4ca" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>getValue</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a428c013f73c1322ee3fc74cc08171c8c" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>InstantFreq</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a6fab70b05b6e99db492e0a3d8a0d9fb6" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" prot="protected" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_atom</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" prot="protected" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a66bfd7b18219a99cd6b86a8d6c2233d3" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_samples</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1af2e70a6bf9847764b7652b6e3582281e" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_timeDeltaMs</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" prot="protected" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>m_value</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>NaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a8e7e5f0ff7388f18deaddf51e016c905" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a4a8989a7f9585998eb4210dfdd1b099e" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ac94ea7115378eb16dbef10d030b52a66" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a9036f1b2a2904960e67c1faef11f1835" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a3ae7dc13ff6209a0628cdf481ab0a37c" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>operator=</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0" prot="public" virt="non-virtual" ambiguityscope="Value&lt; uint32_t &gt;::"><scope>xtd::counters::InstantFreq</scope><name>operator=</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a35bcef17323ff5861ef159b855a98fe1" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>shrink_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a0e3b3a0e074989abd37a8a4571be1996" prot="private" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>t_timevect</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>tick</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a2e4629f5a835d7b52425a72f25dcd4d2" prot="protected" virt="virtual"><scope>xtd::counters::InstantFreq</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a298f146ab57eaed8e6f783c26e78e0f4" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>Value</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::InstantFreq</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a7be35e9a5a52891c5946425152b4db30" prot="protected" virt="virtual"><scope>xtd::counters::InstantFreq</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::InstantFreq</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1InstantFreq_1a1a002d74711692449aec178e09606193" prot="public" virt="virtual"><scope>xtd::counters::InstantFreq</scope><name>~InstantFreq</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" prot="public" virt="virtual"><scope>xtd::counters::InstantFreq</scope><name>~Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive}{}\section{xtd\+:\+:serializer\+:\+:Debug\+Text\+O\+Archive Class Reference}
+\label{classxtd_1_1serializer_1_1DebugTextOArchive}\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+
+
+{\ttfamily \#include $<$Debug\+Archive.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:serializer\+:\+:Debug\+Text\+O\+Archive\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classxtd_1_1serializer_1_1DebugTextOArchive__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:serializer\+:\+:Debug\+Text\+O\+Archive\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classxtd_1_1serializer_1_1DebugTextOArchive__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_ac8705c1c468911d8b0c74b29156a8b8e}{Debug\+Text\+O\+Archive} (std\+::ostream \&p\+\_\+os, bool p\+\_\+debug\+State=false, int p\+\_\+flags=0)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive}{Debug\+Text\+O\+Archive} \& \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_a03483bda8da712cbd5f789bcd3c20659}{operator$\ast$} (T \&p\+\_\+value)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive}{Debug\+Text\+O\+Archive} \& \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_ab5bd315f1a6d164814d0ae28fca9ab1d}{operator/} (T \&p\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_a162d16419084090d0d406eb1f23dfa6d}{boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_ac712c773113f2ae2a71ee1f638877ab2}{boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}
+\item 
+class \hyperlink{classxtd_1_1serializer_1_1DebugTextOArchive_aaca003bb8a4fc59424e4025130da4edd}{boost\+::archive\+::save\+\_\+access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 120 of file Debug\+Archive.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!Debug\+Text\+O\+Archive@{Debug\+Text\+O\+Archive}}
+\index{Debug\+Text\+O\+Archive@{Debug\+Text\+O\+Archive}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{Debug\+Text\+O\+Archive(std\+::ostream \&p\+\_\+os, bool p\+\_\+debug\+State=false, int p\+\_\+flags=0)}{DebugTextOArchive(std::ostream &p_os, bool p_debugState=false, int p_flags=0)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::serializer\+::\+Debug\+Text\+O\+Archive\+::\+Debug\+Text\+O\+Archive (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{p\+\_\+os, }
+\item[{bool}]{p\+\_\+debug\+State = {\ttfamily false}, }
+\item[{int}]{p\+\_\+flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_ac8705c1c468911d8b0c74b29156a8b8e}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_ac8705c1c468911d8b0c74b29156a8b8e}
+
+
+Definition at line 128 of file Debug\+Archive.\+hh.
+
+
+\begin{DoxyCode}
+128                                                                                   :
+129     base(p\_os, p\_flags),
+130     m\_debugMode(p\_debugState),
+131     m\_statusSaved(\textcolor{keyword}{false})
+132   \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{operator$\ast$(\+T \&p\+\_\+value)}{operator*(T &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Debug\+Text\+O\+Archive}\& xtd\+::serializer\+::\+Debug\+Text\+O\+Archive\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{T \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_a03483bda8da712cbd5f789bcd3c20659}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_a03483bda8da712cbd5f789bcd3c20659}
+
+
+Definition at line 136 of file Debug\+Archive.\+hh.
+
+
+\begin{DoxyCode}
+137   \{
+138     \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == m\_statusSaved)
+139     \{
+140       \textcolor{comment}{//std::cout << "saving debug status..." << std::endl;}
+141       base::operator&(boost::serialization::make\_nvp(\textcolor{stringliteral}{"debug"}, m\_debugMode));
+142       m\_statusSaved = \textcolor{keyword}{true};
+143     \}
+144     \textcolor{keywordflow}{return} base::operator&(p\_value);
+145   \}
+\end{DoxyCode}
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!operator/@{operator/}}
+\index{operator/@{operator/}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{operator/(\+T \&p\+\_\+value)}{operator/(T &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Debug\+Text\+O\+Archive}\& xtd\+::serializer\+::\+Debug\+Text\+O\+Archive\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{T \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_ab5bd315f1a6d164814d0ae28fca9ab1d}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_ab5bd315f1a6d164814d0ae28fca9ab1d}
+
+
+Definition at line 148 of file Debug\+Archive.\+hh.
+
+
+\begin{DoxyCode}
+149   \{
+150     \textcolor{comment}{//std::cout << "should save debug field ?" << std::endl;}
+151     \textcolor{keywordflow}{if} (m\_debugMode)
+152     \{
+153       \textcolor{comment}{//std::cout << "saving debug field..." << std::endl;}
+154       *\textcolor{keyword}{this} * p\_value;
+155     \}
+156     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+157   \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$@{boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}}
+\index{boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$@{boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}{boost::archive::basic_text_oarchive< DebugTextOArchive >}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::archive\+::basic\+\_\+text\+\_\+oarchive$<$ {\bf Debug\+Text\+O\+Archive} $>$\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_ac712c773113f2ae2a71ee1f638877ab2}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_ac712c773113f2ae2a71ee1f638877ab2}
+
+
+Definition at line 124 of file Debug\+Archive.\+hh.
+
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$@{boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}}
+\index{boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$@{boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ Debug\+Text\+O\+Archive $>$}{boost::archive::detail::interface_oarchive< DebugTextOArchive >}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::archive\+::detail\+::interface\+\_\+oarchive$<$ {\bf Debug\+Text\+O\+Archive} $>$\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_a162d16419084090d0d406eb1f23dfa6d}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_a162d16419084090d0d406eb1f23dfa6d}
+
+
+Definition at line 123 of file Debug\+Archive.\+hh.
+
+\index{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}!boost\+::archive\+::save\+\_\+access@{boost\+::archive\+::save\+\_\+access}}
+\index{boost\+::archive\+::save\+\_\+access@{boost\+::archive\+::save\+\_\+access}!xtd\+::serializer\+::\+Debug\+Text\+O\+Archive@{xtd\+::serializer\+::\+Debug\+Text\+O\+Archive}}
+\subsubsection[{\texorpdfstring{boost\+::archive\+::save\+\_\+access}{boost::archive::save_access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::archive\+::save\+\_\+access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1serializer_1_1DebugTextOArchive_aaca003bb8a4fc59424e4025130da4edd}{}\label{classxtd_1_1serializer_1_1DebugTextOArchive_aaca003bb8a4fc59424e4025130da4edd}
+
+
+Definition at line 125 of file Debug\+Archive.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/serializer/src/archives/\hyperlink{DebugArchive_8hh}{Debug\+Archive.\+hh}\end{DoxyCompactItemize}

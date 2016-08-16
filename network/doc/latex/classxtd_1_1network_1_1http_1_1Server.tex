@@ -1,0 +1,1088 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1Server}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Server$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1http_1_1Server}\index{xtd\+::network\+::http\+::\+Server$<$ Domain $>$@{xtd\+::network\+::http\+::\+Server$<$ Domain $>$}}
+
+
+~\newline
+~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:Server$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classxtd_1_1network_1_1http_1_1Server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:Server$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a15132ec2b08249a3dc54c9d228620ee5}{Server} (void)
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1http_1_1Server_a85da5acf9ddab934f5cddb330eae9f99}{$\sim$\+Server} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a8f2c0ce0dd0d150d74d3cfd89edb9332}{start} (void)
+\begin{DoxyCompactList}\small\item\em invoke base start method and print log \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a8683467193d33cef96950fad43b8f47c}{stop} (void)
+\begin{DoxyCompactList}\small\item\em invoke base stop method and print log \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{Handler\+::handler} \hyperlink{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}{h}
+\item 
+typedef \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{Handler\+::filter} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a90d357c7890d9ca17d5eeb38a33343f6}{f\+\_\+cgi\+\_\+exist} (const string \&p\+\_\+cgi\+Name, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\begin{DoxyCompactList}\small\item\em Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa66d761aaa278f3123aa11d565475281}{f\+\_\+one\+\_\+cgi\+\_\+exist} (const vector$<$ string $>$ \&p\+\_\+cgi\+Name, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+req)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a66975ce2c93998c5e5916ee93ac8bf99}{f\+\_\+cgi\+\_\+equal} (const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+value, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_ae8122d6287a52f0933af7ab687710768}{f\+\_\+cgi\+\_\+match} (const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+regex, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_adbd0e1d940294921e1d79b7e747d98fb}{f\+\_\+post\+\_\+exist} (const string \&p\+\_\+cgi\+Name, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\begin{DoxyCompactList}\small\item\em Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a9f45a8c3b4a6dfa05041cb7190317c4e}{f\+\_\+param\+\_\+exist} (const string \&p\+\_\+cgi\+Name, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\begin{DoxyCompactList}\small\item\em Vrai si la requête contient un paramètre P\+O\+ST ou G\+ET nommé p\+\_\+cgi\+Name. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a5ffcf38b185fc098c12969df414fe732}{f\+\_\+post\+\_\+equal} (const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+value, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_af5dbf38109b8345e6dcc7f29dfdd781a}{f\+\_\+post\+\_\+match} (const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+regex, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7f7478d5e4c12fed3743b42f7d118398}{f\+\_\+header\+\_\+exist} (const string \&p\+\_\+header\+Name, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\begin{DoxyCompactList}\small\item\em Vrai si p\+\_\+request contient le header p\+\_\+header\+Name. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a68192c550d0c9aa2d3341c3b7acbbb55}{f\+\_\+header\+\_\+equal} (const string \&p\+\_\+header\+Name, const string \&p\+\_\+value, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a015a4e5a2f93dc0df58e4c28af2e5e31}{f\+\_\+header\+\_\+match} (const string \&p\+\_\+header\+Name, const string \&p\+\_\+value, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a172fc1cfb74fb3ca9930b1285ba80f9d}{h\+\_\+redirect} (const string \&p\+\_\+dst, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de redirection. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a39fef0364300dcc2ff7391c821d5310d}{h\+\_\+raw} (const string \&p\+\_\+data, const string \&p\+\_\+content\+Type, const uint32\+\_\+t, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de contenu. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{h\+\_\+file} (const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de fichier. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{h\+\_\+dir} (const string \&p\+\_\+dir\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de répertoire. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a96229b97d8ee79a57d1ab66b7af5b32d}{h\+\_\+template\+\_\+file} (\hyperlink{classxtd_1_1network_1_1http_1_1Template}{Template} \&p\+\_\+tmpl, const string \&p\+\_\+file\+Path, const uint32\+\_\+t p\+\_\+request\+ID, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+req, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+res)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de texte templaté a partir d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a6c9d2c89310fc7aa9aba0a001dc28728}{h\+\_\+gen} (\hyperlink{classxtd_1_1network_1_1http_1_1Generator}{Generator} \&p\+\_\+gen, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de generation de texte. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{h\+\_\+error\+\_\+text} (const string \&p\+\_\+message, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en texte. \end{DoxyCompactList}\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Server_a0edee265d48418b258fb450426e10905}{h\+\_\+error\+\_\+html} (const string \&p\+\_\+message, const uint32\+\_\+t p\+\_\+request\+Id, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request, \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response} \&p\+\_\+response)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en html. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a08caadcbcc43f73a1f63364b5dfdbd6b}{bind\+\_\+redirect} (const string \&p\+\_\+src, const string \&p\+\_\+dst, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}))
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_ae8903860178fb48bd136fcb52a14de5b}{bind\+\_\+xml} (const string \&p\+\_\+url, const string \&p\+\_\+xml\+Path, const string \&p\+\_\+xslt\+Path, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}))
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad3788397b3bd576b156823267d377dcc}{bind\+\_\+file} (const string \&p\+\_\+path, const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}))
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a58cb8102e486dd24780b876561ae6c11}{bind\+\_\+dir} (const string \&p\+\_\+url, const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}))
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{bind} (const string \&p\+\_\+url, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler} p\+\_\+handler, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}), const string \&p\+\_\+descr=string())
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_ac6876f1c054c6ebbe802381692fe05e2}{bind\+\_\+public} (const string \&p\+\_\+url, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler} p\+\_\+handler, const string \&p\+\_\+descr)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a6e448be2d0ca71f808bec243cefc4000}{bind\+\_\+any} (\hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler} p\+\_\+handler, \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} p\+\_\+filter=\hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(\&\hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{Server\+::f\+\_\+none}))
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab132be70e91c14a18638f93d28078b7b}{bind\+\_\+default} (\hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler} p\+\_\+handler)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Server_a302af1d5323a8c300f0de7acc27ffade}{get\+Matching\+Handlers} (const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+req, typename \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a840883d08fcdd990dbe33b660ee6febb}{Handler\+::t\+\_\+listof} \&p\+\_\+res) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{f\+\_\+none} (const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&p\+\_\+request)
+\begin{DoxyCompactList}\small\item\em Toujours vrai. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain = utils\+::af\+\_\+inet$>$\\*
+class xtd\+::network\+::http\+::\+Server$<$ Domain $>$}
+
+~\newline
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Domain} & mode de connexion, \hyperlink{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{utils\+::af\+\_\+inet} ou \hyperlink{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{utils\+::af\+\_\+unix}\\
+\hline
+\end{DoxyParams}
+Serveur générique http. Gère la réception de requête H\+T\+TP, les transforme en objet \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request}, et envoie des réponses H\+T\+TP à partir d\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response}.
+
+En interne, cet objet gère une liste de \char`\"{}handlers\char`\"{}, capables de transformer un objet \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} en un objet \hyperlink{classxtd_1_1network_1_1http_1_1Response}{Response}. Il gère également un mécanisme d\textquotesingle{}enregistrement et de routage des requête ces différents handlers.
+
+~\newline
+ \subsubsection*{Le routage }
+
+Le routage est extrêmement simple. On pacourt la liste des handlers enregistrés, et on exécute le premier vérifiant toutes les conditions. Si aucun handler est trouvé, on exécute le handler par défaut.
+
+Pour être exécuté, un handler doit remplir deux critère \+:
+\begin{DoxyItemize}
+\item l\textquotesingle{}url sur laquelle il à été enregistré correspond a la ressource demandée dans la requête (ce qui suit le G\+ET ou le P\+O\+ST de la première ligne du header). On note le cas spécial où un handler peut être enregistré sur toutes les urls en même temps.
+\item si le handler a été enregistré avec un filtre, on vérifie la condition posée le filtre est vrai pour la requête.
+\end{DoxyItemize}
+
+~\newline
+ \subsubsection*{Les handlers }
+
+Un handler doit être vu comme un pointeur sur fonction dont le prototype serait \+: 
+\begin{DoxyCode}
+status myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\end{DoxyCode}
+
+
+En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est \char`\"{}h\char`\"{}. Exemple \+: 
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{bind}(\textcolor{stringliteral}{"/index"}, \hyperlink{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}{h}(&MyServer::myhandler, \textcolor{keyword}{this}));
+\end{DoxyCode}
+
+
+La raison pour laquelle ces handlers ont été wrappé dans un objet interne est d\textquotesingle{}une part de ne pas demander à l\textquotesingle{}utilisateur de systématiquement binder 3 placeholders \+\_\+1, \+\_\+2, \+\_\+3.
+
+~\newline
+ \subsubsection*{Les filtres }
+
+De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait \+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} filter(\textcolor{keyword}{const} Request&);
+\end{DoxyCode}
+
+
+Ils se contruisent à partir de l\textquotesingle{}objet interne du server dont le raccourcis est \char`\"{}f\char`\"{}. Exemple \+: 
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\textcolor{keywordtype}{bool}  MyServer::myfilter(\textcolor{keyword}{const} Request& p\_req);
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{bind}(\textcolor{stringliteral}{"/index"}, \hyperlink{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}{h}(&MyServer::myhandler, \textcolor{keyword}{this}), \hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(&MyServer::myfilter, \textcolor{keyword}{this}));
+\end{DoxyCode}
+
+
+Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens $\vert$$\vert$, \&\& et !. Exemple \+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// une fonction à moi que j'aime}
+status MyServer::myhandler(uint32\_t p\_requestID, \textcolor{keyword}{const} Request& p\_req, Response& p\_res);
+\textcolor{keywordtype}{bool}  MyServer::hasHeader(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} Request& p\_req)
+\{
+  \textcolor{keywordflow}{return} p\_req.existsHeader(p\_headerName);
+\}
+
+\textcolor{comment}{// enregistrement de ma fonction comme handler de la ressources /index}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{bind}(\textcolor{stringliteral}{"/index"},
+     \hyperlink{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}{h}(&MyServer::myhandler, \textcolor{keyword}{this}),
+     \hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(&MyServer::hasHeader, \textcolor{keyword}{this}, \textcolor{stringliteral}{"Content-type"}) &&
+     \hyperlink{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{f}(&MyServer::hasHeader, \textcolor{keyword}{this}, \textcolor{stringliteral}{"Content-Length"}));
+\end{DoxyCode}
+
+
+~\newline
+ \subsubsection*{L\textquotesingle{}enregistrement }
+
+Cet objet founi de nombreuses méthodes utilitaires pour faciliter l\textquotesingle{}enregistrement des handlers. Elles sont toutes préfixées par \char`\"{}bind\char`\"{}.
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{bind}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_url, handler p\_handler, [filter p\_filter]); 
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+url} & ressource à enregistrer \\
+\hline
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel \\
+\hline
+{\em p\+\_\+descr} & description du handler (optionnel)\\
+\hline
+\end{DoxyParams}
+Enregistrement générique de la ressource p\+\_\+url sous condition optionnelle p\+\_\+filter sur le handler p\+\_\+handler. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a6e448be2d0ca71f808bec243cefc4000}{bind\_any}(handler p\_handler, [filter p\_filter]); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{xtd\+::network\+::http\+::\+Server\+::bind} mais se déclenche quelque soit la ressource demandée. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab132be70e91c14a18638f93d28078b7b}{bind\_default}(handler p\_handler); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer\\
+\hline
+\end{DoxyParams}
+Enregistrement du handler à exécuter lorsqu\textquotesingle{}aucun handler valide n\textquotesingle{}a été trouvé. A la construction, le handler par défaut est Server\+::h\+\_\+error\+\_\+template. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a08caadcbcc43f73a1f63364b5dfdbd6b}{bind\_redirect}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_src, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dst, [filter p\_filter]); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+src} & ressource sur laquelle déclencher la redirection \\
+\hline
+{\em p\+\_\+dst} & destination de la redirection \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Enregistrement d\textquotesingle{}un handler de redirection. Créer une réponse http qui contient le header \char`\"{}\+Location \+: p\+\_\+dst\char`\"{} et le code H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302. ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad3788397b3bd576b156823267d377dcc}{bind\_file}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_path,
+               \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath,
+               \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType = \textcolor{stringliteral}{"text/plain"},
+               [filter            p\_filter]);
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a58cb8102e486dd24780b876561ae6c11}{bind\_dir}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_path,
+              \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath,
+              \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType = \textcolor{stringliteral}{"text/plain"},
+              [filter            p\_filter]);
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+dir} ~\newline
+~\newline
+
+\end{DoxyItemize}
+
+\subsubsection*{Les handlers prédéfinis }
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a172fc1cfb74fb3ca9930b1285ba80f9d}{h\_redirect}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dst, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, Response& 
+      p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de redirection. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dst} & destination de la redirection H\+T\+TP \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une redirection H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302 \char`\"{}code 302\char`\"{} redirigeant sur p\+\_\+dst
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a39fef0364300dcc2ff7391c821d5310d}{h\_raw}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_data, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& 
+      p\_request, Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de contenu. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & donnée à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME de la donnée \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP (Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 contenant la donnée p\+\_\+data et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{h\_file}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_filePath, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} 
+      Request& p\_request, Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de fichier. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+file\+Path} & chemin vers le fichier à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME du fichier \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 embarquant le contenu du fichier pointé par p\+\_\+file\+Path et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type. Si p\+\_\+file\+Path n\textquotesingle{}éxiste pas, la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}.
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{h\_dir}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_dirPath, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_contentType, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request&
+       p\_request, Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de répertoire. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dir\+Path} & chemin vers le répertoire à servir \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME des fichiers du répertoire \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} mais trouve automatiquement quel fichier de p\+\_\+dir\+Path à servir en fonction de la ressource demandé dans p\+\_\+request.
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a96229b97d8ee79a57d1ab66b7af5b32d}{h\_template\_file}(\textcolor{keyword}{const} Template& p\_tmpl, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& \textcolor{keyword}{const} uint32\_t p\_requestID, \textcolor{keyword}{const} 
+      Request& p\_request, Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de texte templaté a partir d\textquotesingle{}un fichier. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tmpl} & objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{template} \\
+\hline
+{\em p\+\_\+file\+Path} & fichier a partir duquel initialiser le template \\
+\hline
+{\em p\+\_\+request\+ID} & identifiant de requête \\
+\hline
+{\em p\+\_\+req} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+res} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP pré-\/formatée par l\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{Template} p\+\_\+tmpl Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200. Le header {\bfseries Content-\/\+Type} est également donné par p\+\_\+tmpl. Si la lecture du fichier p\+\_\+file\+Path ou si la résolution des variable du template échouent, alors la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}.
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{h\_error\_text}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_message, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, 
+      Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en texte. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP d\textquotesingle{}erreur Response\+::\+S\+T\+A\+T\+U\+S\+\_\+500 de type {\bfseries Content-\/\+Type} \char`\"{}text/plain\char`\"{} contenant le message p\+\_\+message.
+\item 
+\begin{DoxyCode}
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_a0edee265d48418b258fb450426e10905}{h\_error\_html}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_message, \textcolor{keyword}{const} uint32\_t p\_requestId, \textcolor{keyword}{const} Request& p\_request, 
+      Response& p\_response); 
+\end{DoxyCode}
+ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en html. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Même chose que \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text} mais le méssage généré est de type \char`\"{}text/html\char`\"{}.
+\end{DoxyItemize}
+
+\subsubsection*{Les filtres prédéfinis }
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{f\_none}(\textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Toujours vrai. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a90d357c7890d9ca17d5eeb38a33343f6}{f\_cgi\_exist}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa66d761aaa278f3123aa11d565475281}{f\_one\_cgi\_exist}(\textcolor{keyword}{const} vector <string > & p\_cgiName, \textcolor{keyword}{const} Request& p\_req); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET dont le nom correspond à l\textquotesingle{}un des éléments du tableau p\+\_\+cgi\+Name ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a66975ce2c93998c5e5916ee93ac8bf99}{f\_cgi\_equal}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_ae8122d6287a52f0933af7ab687710768}{f\_cgi\_match}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_regex, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_adbd0e1d940294921e1d79b7e747d98fb}{f\_post\_exist}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a5ffcf38b185fc098c12969df414fe732}{f\_post\_equal}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_af5dbf38109b8345e6dcc7f29dfdd781a}{f\_post\_match}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_cgiName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_regex, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7f7478d5e4c12fed3743b42f7d118398}{f\_header\_exist}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} Request& p\_request); 
+\end{DoxyCode}
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name. ~\newline
+~\newline
+ ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a68192c550d0c9aa2d3341c3b7acbbb55}{f\_header\_equal}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& 
+      p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur est egale a p\+\_\+value ~\newline
+~\newline
+
+\item 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{classxtd_1_1network_1_1http_1_1Server_a015a4e5a2f93dc0df58e4c28af2e5e31}{f\_header\_match}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_headerName, \textcolor{keyword}{const} \textcolor{keywordtype}{string}& p\_value, \textcolor{keyword}{const} Request& 
+      p\_request); 
+\end{DoxyCode}
+ ~\newline
+~\newline
+ Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur match la regexp p\+\_\+value ~\newline
+~\newline
+ 
+\end{DoxyItemize}
+
+Definition at line 10 of file fwd.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f@{f}}
+\index{f@{f}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f}{f}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ typedef {\bf Handler\+::filter} {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::{\bf f}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}{}\label{classxtd_1_1network_1_1http_1_1Server_a94d4867ec740265b62b7505584387240}
+
+
+Definition at line 321 of file Server.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h@{h}}
+\index{h@{h}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h}{h}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ typedef {\bf Handler\+::handler} {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::{\bf h}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}{}\label{classxtd_1_1network_1_1http_1_1Server_af55090adba952bd4ddcd6eb467974ac8}
+
+
+Definition at line 320 of file Server.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!Server@{Server}}
+\index{Server@{Server}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{Server(void)}{Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::{\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a15132ec2b08249a3dc54c9d228620ee5}{}\label{classxtd_1_1network_1_1http_1_1Server_a15132ec2b08249a3dc54c9d228620ee5}
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!````~Server@{$\sim$\+Server}}
+\index{````~Server@{$\sim$\+Server}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{$\sim$\+Server(void)}{~Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ virtual {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::$\sim${\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a85da5acf9ddab934f5cddb330eae9f99}{}\label{classxtd_1_1network_1_1http_1_1Server_a85da5acf9ddab934f5cddb330eae9f99}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_ab17ca2e2332664f4cb83e89d027976d9}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind@{bind}}
+\index{bind@{bind}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind(const string \&p\+\_\+url, handler p\+\_\+handler, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none), const string \&p\+\_\+descr=string())}{bind(const string &p_url, handler p_handler, filter p_filter=f(&Server::f_none), const string &p_descr=string())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{{\bf handler}}]{p\+\_\+handler, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}, }
+\item[{const string \&}]{p\+\_\+descr = {\ttfamily string()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{}\label{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+url} & ressource à enregistrer \\
+\hline
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel \\
+\hline
+{\em p\+\_\+descr} & description du handler (optionnel)\\
+\hline
+\end{DoxyParams}
+Enregistrement générique de la ressource p\+\_\+url sous condition optionnelle p\+\_\+filter sur le handler p\+\_\+handler. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+any@{bind\+\_\+any}}
+\index{bind\+\_\+any@{bind\+\_\+any}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+any(handler p\+\_\+handler, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none))}{bind_any(handler p_handler, filter p_filter=f(&Server::f_none))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+any (
+\begin{DoxyParamCaption}
+\item[{{\bf handler}}]{p\+\_\+handler, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a6e448be2d0ca71f808bec243cefc4000}{}\label{classxtd_1_1network_1_1http_1_1Server_a6e448be2d0ca71f808bec243cefc4000}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_aa964ab0b0c3ba29238cb2aae49181537}{xtd\+::network\+::http\+::\+Server\+::bind} mais se déclenche quelque soit la ressource demandée. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+default@{bind\+\_\+default}}
+\index{bind\+\_\+default@{bind\+\_\+default}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+default(handler p\+\_\+handler)}{bind_default(handler p_handler)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+default (
+\begin{DoxyParamCaption}
+\item[{{\bf handler}}]{p\+\_\+handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ab132be70e91c14a18638f93d28078b7b}{}\label{classxtd_1_1network_1_1http_1_1Server_ab132be70e91c14a18638f93d28078b7b}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+handler} & handler à enregistrer\\
+\hline
+\end{DoxyParams}
+Enregistrement du handler à exécuter lorsqu\textquotesingle{}aucun handler valide n\textquotesingle{}a été trouvé. A la construction, le handler par défaut est Server\+::h\+\_\+error\+\_\+template. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+dir@{bind\+\_\+dir}}
+\index{bind\+\_\+dir@{bind\+\_\+dir}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+dir(const string \&p\+\_\+url, const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none))}{bind_dir(const string &p_url, const string &p_filePath, const string &p_contentType, bool p_cachable, filter p_filter=f(&Server::f_none))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{const string \&}]{p\+\_\+file\+Path, }
+\item[{const string \&}]{p\+\_\+content\+Type, }
+\item[{bool}]{p\+\_\+cachable, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a58cb8102e486dd24780b876561ae6c11}{}\label{classxtd_1_1network_1_1http_1_1Server_a58cb8102e486dd24780b876561ae6c11}
+Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+dir} \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+file@{bind\+\_\+file}}
+\index{bind\+\_\+file@{bind\+\_\+file}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+file(const string \&p\+\_\+path, const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none))}{bind_file(const string &p_path, const string &p_filePath, const string &p_contentType, bool p_cachable, filter p_filter=f(&Server::f_none))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+path, }
+\item[{const string \&}]{p\+\_\+file\+Path, }
+\item[{const string \&}]{p\+\_\+content\+Type, }
+\item[{bool}]{p\+\_\+cachable, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ad3788397b3bd576b156823267d377dcc}{}\label{classxtd_1_1network_1_1http_1_1Server_ad3788397b3bd576b156823267d377dcc}
+Voir \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+public@{bind\+\_\+public}}
+\index{bind\+\_\+public@{bind\+\_\+public}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+public(const string \&p\+\_\+url, handler p\+\_\+handler, const string \&p\+\_\+descr)}{bind_public(const string &p_url, handler p_handler, const string &p_descr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+public (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{{\bf handler}}]{p\+\_\+handler, }
+\item[{const string \&}]{p\+\_\+descr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ac6876f1c054c6ebbe802381692fe05e2}{}\label{classxtd_1_1network_1_1http_1_1Server_ac6876f1c054c6ebbe802381692fe05e2}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+url} & ressource à enregistrer \\
+\hline
+{\em p\+\_\+handler} & handler à enregistrer \\
+\hline
+{\em p\+\_\+descr} & description du handler\\
+\hline
+\end{DoxyParams}
+Enregistrement générique de la ressource p\+\_\+url sur le handler p\+\_\+handler. Cette ressource sera automatique mise a disposition dans la création de l\textquotesingle{}index automatique. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+redirect@{bind\+\_\+redirect}}
+\index{bind\+\_\+redirect@{bind\+\_\+redirect}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+redirect(const string \&p\+\_\+src, const string \&p\+\_\+dst, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none))}{bind_redirect(const string &p_src, const string &p_dst, filter p_filter=f(&Server::f_none))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+redirect (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+src, }
+\item[{const string \&}]{p\+\_\+dst, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a08caadcbcc43f73a1f63364b5dfdbd6b}{}\label{classxtd_1_1network_1_1http_1_1Server_a08caadcbcc43f73a1f63364b5dfdbd6b}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+src} & ressource sur laquelle déclencher la redirection \\
+\hline
+{\em p\+\_\+dst} & destination de la redirection \\
+\hline
+{\em p\+\_\+filter} & filter \char`\"{}filtre\char`\"{} optionnel\\
+\hline
+\end{DoxyParams}
+Enregistrement d\textquotesingle{}un handler de redirection. Créer une réponse http qui contient le header \char`\"{}\+Location \+: p\+\_\+dst\char`\"{} et le code H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!bind\+\_\+xml@{bind\+\_\+xml}}
+\index{bind\+\_\+xml@{bind\+\_\+xml}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{bind\+\_\+xml(const string \&p\+\_\+url, const string \&p\+\_\+xml\+Path, const string \&p\+\_\+xslt\+Path, filter p\+\_\+filter=f(\&\+Server\+::f\+\_\+none))}{bind_xml(const string &p_url, const string &p_xmlPath, const string &p_xsltPath, filter p_filter=f(&Server::f_none))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::bind\+\_\+xml (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{const string \&}]{p\+\_\+xml\+Path, }
+\item[{const string \&}]{p\+\_\+xslt\+Path, }
+\item[{{\bf filter}}]{p\+\_\+filter = {\ttfamily {\bf f}(\&{\bf Server}$<$~Domain~$>$\+:\+:{\bf f\+\_\+none})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ae8903860178fb48bd136fcb52a14de5b}{}\label{classxtd_1_1network_1_1http_1_1Server_ae8903860178fb48bd136fcb52a14de5b}
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+cgi\+\_\+equal@{f\+\_\+cgi\+\_\+equal}}
+\index{f\+\_\+cgi\+\_\+equal@{f\+\_\+cgi\+\_\+equal}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+cgi\+\_\+equal(const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+value, const Request \&p\+\_\+request)}{f_cgi_equal(const string &p_cgiName, const string &p_value, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+cgi\+\_\+equal (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const string \&}]{p\+\_\+value, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a66975ce2c93998c5e5916ee93ac8bf99}{}\label{classxtd_1_1network_1_1http_1_1Server_a66975ce2c93998c5e5916ee93ac8bf99}
+Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+cgi\+\_\+exist@{f\+\_\+cgi\+\_\+exist}}
+\index{f\+\_\+cgi\+\_\+exist@{f\+\_\+cgi\+\_\+exist}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+cgi\+\_\+exist(const string \&p\+\_\+cgi\+Name, const Request \&p\+\_\+request)}{f_cgi_exist(const string &p_cgiName, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+cgi\+\_\+exist (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a90d357c7890d9ca17d5eeb38a33343f6}{}\label{classxtd_1_1network_1_1http_1_1Server_a90d357c7890d9ca17d5eeb38a33343f6}
+
+
+Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name. 
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+cgi\+\_\+match@{f\+\_\+cgi\+\_\+match}}
+\index{f\+\_\+cgi\+\_\+match@{f\+\_\+cgi\+\_\+match}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+cgi\+\_\+match(const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+regex, const Request \&p\+\_\+request)}{f_cgi_match(const string &p_cgiName, const string &p_regex, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+cgi\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const string \&}]{p\+\_\+regex, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ae8122d6287a52f0933af7ab687710768}{}\label{classxtd_1_1network_1_1http_1_1Server_ae8122d6287a52f0933af7ab687710768}
+Vrai si la requête contient un paramètre G\+ET nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+header\+\_\+equal@{f\+\_\+header\+\_\+equal}}
+\index{f\+\_\+header\+\_\+equal@{f\+\_\+header\+\_\+equal}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+header\+\_\+equal(const string \&p\+\_\+header\+Name, const string \&p\+\_\+value, const Request \&p\+\_\+request)}{f_header_equal(const string &p_headerName, const string &p_value, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+header\+\_\+equal (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+header\+Name, }
+\item[{const string \&}]{p\+\_\+value, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a68192c550d0c9aa2d3341c3b7acbbb55}{}\label{classxtd_1_1network_1_1http_1_1Server_a68192c550d0c9aa2d3341c3b7acbbb55}
+Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur est egale a p\+\_\+value \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+header\+\_\+exist@{f\+\_\+header\+\_\+exist}}
+\index{f\+\_\+header\+\_\+exist@{f\+\_\+header\+\_\+exist}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+header\+\_\+exist(const string \&p\+\_\+header\+Name, const Request \&p\+\_\+request)}{f_header_exist(const string &p_headerName, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+header\+\_\+exist (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+header\+Name, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a7f7478d5e4c12fed3743b42f7d118398}{}\label{classxtd_1_1network_1_1http_1_1Server_a7f7478d5e4c12fed3743b42f7d118398}
+
+
+Vrai si p\+\_\+request contient le header p\+\_\+header\+Name. 
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+header\+\_\+match@{f\+\_\+header\+\_\+match}}
+\index{f\+\_\+header\+\_\+match@{f\+\_\+header\+\_\+match}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+header\+\_\+match(const string \&p\+\_\+header\+Name, const string \&p\+\_\+value, const Request \&p\+\_\+request)}{f_header_match(const string &p_headerName, const string &p_value, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+header\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+header\+Name, }
+\item[{const string \&}]{p\+\_\+value, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a015a4e5a2f93dc0df58e4c28af2e5e31}{}\label{classxtd_1_1network_1_1http_1_1Server_a015a4e5a2f93dc0df58e4c28af2e5e31}
+Vrai si p\+\_\+request contient le header p\+\_\+header\+Name dont la valeur match la regexp p\+\_\+value \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+none@{f\+\_\+none}}
+\index{f\+\_\+none@{f\+\_\+none}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+none(const Request \&p\+\_\+request)}{f_none(const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ static bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+none (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}{}\label{classxtd_1_1network_1_1http_1_1Server_a862d3098ef04ad7c503ab4e6d04a93cf}
+
+
+Toujours vrai. 
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+one\+\_\+cgi\+\_\+exist@{f\+\_\+one\+\_\+cgi\+\_\+exist}}
+\index{f\+\_\+one\+\_\+cgi\+\_\+exist@{f\+\_\+one\+\_\+cgi\+\_\+exist}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+one\+\_\+cgi\+\_\+exist(const vector$<$ string $>$ \&p\+\_\+cgi\+Name, const Request \&p\+\_\+req)}{f_one_cgi_exist(const vector< string > &p_cgiName, const Request &p_req)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+one\+\_\+cgi\+\_\+exist (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ string $>$ \&}]{p\+\_\+cgi\+Name, }
+\item[{const {\bf Request} \&}]{p\+\_\+req}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_aa66d761aaa278f3123aa11d565475281}{}\label{classxtd_1_1network_1_1http_1_1Server_aa66d761aaa278f3123aa11d565475281}
+Vrai si la requête contient un paramètre G\+ET dont le nom correspond à l\textquotesingle{}un des éléments du tableau p\+\_\+cgi\+Name \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+param\+\_\+exist@{f\+\_\+param\+\_\+exist}}
+\index{f\+\_\+param\+\_\+exist@{f\+\_\+param\+\_\+exist}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+param\+\_\+exist(const string \&p\+\_\+cgi\+Name, const Request \&p\+\_\+request)}{f_param_exist(const string &p_cgiName, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+param\+\_\+exist (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a9f45a8c3b4a6dfa05041cb7190317c4e}{}\label{classxtd_1_1network_1_1http_1_1Server_a9f45a8c3b4a6dfa05041cb7190317c4e}
+
+
+Vrai si la requête contient un paramètre P\+O\+ST ou G\+ET nommé p\+\_\+cgi\+Name. 
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+post\+\_\+equal@{f\+\_\+post\+\_\+equal}}
+\index{f\+\_\+post\+\_\+equal@{f\+\_\+post\+\_\+equal}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+post\+\_\+equal(const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+value, const Request \&p\+\_\+request)}{f_post_equal(const string &p_cgiName, const string &p_value, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+post\+\_\+equal (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const string \&}]{p\+\_\+value, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a5ffcf38b185fc098c12969df414fe732}{}\label{classxtd_1_1network_1_1http_1_1Server_a5ffcf38b185fc098c12969df414fe732}
+Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur est égale à p\+\_\+value \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+post\+\_\+exist@{f\+\_\+post\+\_\+exist}}
+\index{f\+\_\+post\+\_\+exist@{f\+\_\+post\+\_\+exist}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+post\+\_\+exist(const string \&p\+\_\+cgi\+Name, const Request \&p\+\_\+request)}{f_post_exist(const string &p_cgiName, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+post\+\_\+exist (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_adbd0e1d940294921e1d79b7e747d98fb}{}\label{classxtd_1_1network_1_1http_1_1Server_adbd0e1d940294921e1d79b7e747d98fb}
+
+
+Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name. 
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!f\+\_\+post\+\_\+match@{f\+\_\+post\+\_\+match}}
+\index{f\+\_\+post\+\_\+match@{f\+\_\+post\+\_\+match}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{f\+\_\+post\+\_\+match(const string \&p\+\_\+cgi\+Name, const string \&p\+\_\+regex, const Request \&p\+\_\+request)}{f_post_match(const string &p_cgiName, const string &p_regex, const Request &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::f\+\_\+post\+\_\+match (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+cgi\+Name, }
+\item[{const string \&}]{p\+\_\+regex, }
+\item[{const {\bf Request} \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_af5dbf38109b8345e6dcc7f29dfdd781a}{}\label{classxtd_1_1network_1_1http_1_1Server_af5dbf38109b8345e6dcc7f29dfdd781a}
+Vrai si la requête contient un paramètre P\+O\+ST nommé p\+\_\+cgi\+Name et dont la valeur match la regexp p\+\_\+regex \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!get\+Matching\+Handlers@{get\+Matching\+Handlers}}
+\index{get\+Matching\+Handlers@{get\+Matching\+Handlers}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Matching\+Handlers(const Request \&p\+\_\+req, typename Handler\+::t\+\_\+listof \&p\+\_\+res) const }{getMatchingHandlers(const Request &p_req, typename Handler::t_listof &p_res) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::get\+Matching\+Handlers (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} \&}]{p\+\_\+req, }
+\item[{typename {\bf Handler\+::t\+\_\+listof} \&}]{p\+\_\+res}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a302af1d5323a8c300f0de7acc27ffade}{}\label{classxtd_1_1network_1_1http_1_1Server_a302af1d5323a8c300f0de7acc27ffade}
+Cree la liste des handler accessibles sans parametres \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+dir@{h\+\_\+dir}}
+\index{h\+\_\+dir@{h\+\_\+dir}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+dir(const string \&p\+\_\+dir\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_dir(const string &p_dirPath, const string &p_contentType, bool p_cachable, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+dir\+Path, }
+\item[{const string \&}]{p\+\_\+content\+Type, }
+\item[{bool}]{p\+\_\+cachable, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}{}\label{classxtd_1_1network_1_1http_1_1Server_a7b7fb002ef005e7dd7b502c95587f4f2}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de répertoire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dir\+Path} & chemin vers le répertoire à servir \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME des fichiers du répertoire \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Comme \hyperlink{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+file} mais trouve automatiquement quel fichier de p\+\_\+dir\+Path à servir en fonction de la ressource demandé dans p\+\_\+request. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+error\+\_\+html@{h\+\_\+error\+\_\+html}}
+\index{h\+\_\+error\+\_\+html@{h\+\_\+error\+\_\+html}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+error\+\_\+html(const string \&p\+\_\+message, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_error_html(const string &p_message, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+error\+\_\+html (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+message, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a0edee265d48418b258fb450426e10905}{}\label{classxtd_1_1network_1_1http_1_1Server_a0edee265d48418b258fb450426e10905}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en html. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Même chose que \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text} mais le méssage généré est de type \char`\"{}text/html\char`\"{}. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+error\+\_\+text@{h\+\_\+error\+\_\+text}}
+\index{h\+\_\+error\+\_\+text@{h\+\_\+error\+\_\+text}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+error\+\_\+text(const string \&p\+\_\+message, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_error_text(const string &p_message, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+error\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+message, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{}\label{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de génération de message d\textquotesingle{}erreur en texte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+message} & contenu du message d\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP d\textquotesingle{}erreur Response\+::\+S\+T\+A\+T\+U\+S\+\_\+500 de type {\bfseries Content-\/\+Type} \char`\"{}text/plain\char`\"{} contenant le message p\+\_\+message. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+file@{h\+\_\+file}}
+\index{h\+\_\+file@{h\+\_\+file}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+file(const string \&p\+\_\+file\+Path, const string \&p\+\_\+content\+Type, bool p\+\_\+cachable, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_file(const string &p_filePath, const string &p_contentType, bool p_cachable, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+file\+Path, }
+\item[{const string \&}]{p\+\_\+content\+Type, }
+\item[{bool}]{p\+\_\+cachable, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}{}\label{classxtd_1_1network_1_1http_1_1Server_ab3525557fb71fe7ffec9bf68b61db107}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+file\+Path} & chemin vers le fichier à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME du fichier \\
+\hline
+{\em p\+\_\+cachable} & La reponse peut elle mettre en mis en cache par le navigateur ? \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 embarquant le contenu du fichier pointé par p\+\_\+file\+Path et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type. Si p\+\_\+file\+Path n\textquotesingle{}éxiste pas, la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+gen@{h\+\_\+gen}}
+\index{h\+\_\+gen@{h\+\_\+gen}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+gen(\+Generator \&p\+\_\+gen, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_gen(Generator &p_gen, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+gen (
+\begin{DoxyParamCaption}
+\item[{{\bf Generator} \&}]{p\+\_\+gen, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a6c9d2c89310fc7aa9aba0a001dc28728}{}\label{classxtd_1_1network_1_1http_1_1Server_a6c9d2c89310fc7aa9aba0a001dc28728}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de generation de texte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+gen} & objet \hyperlink{classxtd_1_1network_1_1http_1_1Generator}{generateur} \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP pré-\/formatée par l\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{Template} p\+\_\+tmpl Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200. Le header {\bfseries Content-\/\+Type} est également donné par p\+\_\+tmpl. Si la résolution des variable du template échoue, alors la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+raw@{h\+\_\+raw}}
+\index{h\+\_\+raw@{h\+\_\+raw}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+raw(const string \&p\+\_\+data, const string \&p\+\_\+content\+Type, const uint32\+\_\+t, const Request \&, Response \&p\+\_\+response)}{h_raw(const string &p_data, const string &p_contentType, const uint32_t, const Request &, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+raw (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+data, }
+\item[{const string \&}]{p\+\_\+content\+Type, }
+\item[{const uint32\+\_\+t}]{, }
+\item[{const {\bf Request} \&}]{, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a39fef0364300dcc2ff7391c821d5310d}{}\label{classxtd_1_1network_1_1http_1_1Server_a39fef0364300dcc2ff7391c821d5310d}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de contenu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+data} & donnée à insérer dans la réponse \\
+\hline
+{\em p\+\_\+content\+Type} & type M\+I\+ME de la donnée \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une réponse H\+T\+TP (Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200 contenant la donnée p\+\_\+data et le header {\bfseries Content-\/\+Type} p\+\_\+content\+Type \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+redirect@{h\+\_\+redirect}}
+\index{h\+\_\+redirect@{h\+\_\+redirect}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+redirect(const string \&p\+\_\+dst, const uint32\+\_\+t p\+\_\+request\+Id, const Request \&p\+\_\+request, Response \&p\+\_\+response)}{h_redirect(const string &p_dst, const uint32_t p_requestId, const Request &p_request, Response &p_response)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+redirect (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+dst, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+Id, }
+\item[{const {\bf Request} \&}]{p\+\_\+request, }
+\item[{{\bf Response} \&}]{p\+\_\+response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a172fc1cfb74fb3ca9930b1285ba80f9d}{}\label{classxtd_1_1network_1_1http_1_1Server_a172fc1cfb74fb3ca9930b1285ba80f9d}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de redirection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dst} & destination de la redirection H\+T\+TP \\
+\hline
+{\em p\+\_\+request\+Id} & identifiant de requête \\
+\hline
+{\em p\+\_\+request} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+response} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Créer une redirection H\+T\+TP Response\+::\+S\+T\+A\+T\+U\+S\+\_\+302 \char`\"{}code 302\char`\"{} redirigeant sur p\+\_\+dst \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!h\+\_\+template\+\_\+file@{h\+\_\+template\+\_\+file}}
+\index{h\+\_\+template\+\_\+file@{h\+\_\+template\+\_\+file}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{h\+\_\+template\+\_\+file(\+Template \&p\+\_\+tmpl, const string \&p\+\_\+file\+Path, const uint32\+\_\+t p\+\_\+request\+I\+D, const Request \&p\+\_\+req, Response \&p\+\_\+res)}{h_template_file(Template &p_tmpl, const string &p_filePath, const uint32_t p_requestID, const Request &p_req, Response &p_res)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ status {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::h\+\_\+template\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{{\bf Template} \&}]{p\+\_\+tmpl, }
+\item[{const string \&}]{p\+\_\+file\+Path, }
+\item[{const uint32\+\_\+t}]{p\+\_\+request\+ID, }
+\item[{const {\bf Request} \&}]{p\+\_\+req, }
+\item[{{\bf Response} \&}]{p\+\_\+res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a96229b97d8ee79a57d1ab66b7af5b32d}{}\label{classxtd_1_1network_1_1http_1_1Server_a96229b97d8ee79a57d1ab66b7af5b32d}
+
+
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} de texte templaté a partir d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tmpl} & objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{template} \\
+\hline
+{\em p\+\_\+file\+Path} & fichier a partir duquel initialiser le template \\
+\hline
+{\em p\+\_\+request\+ID} & identifiant de requête \\
+\hline
+{\em p\+\_\+req} & \hyperlink{classxtd_1_1network_1_1http_1_1Request}{requête} \\
+\hline
+{\em p\+\_\+res} & \hyperlink{classxtd_1_1network_1_1http_1_1Response}{réponse}\\
+\hline
+\end{DoxyParams}
+Génère une réponse H\+T\+TP pré-\/formatée par l\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Template}{Template} p\+\_\+tmpl Response\+::\+S\+T\+A\+T\+U\+S\+\_\+200. Le header {\bfseries Content-\/\+Type} est également donné par p\+\_\+tmpl. Si la lecture du fichier p\+\_\+file\+Path ou si la résolution des variable du template échouent, alors la réponse sera générée par \hyperlink{classxtd_1_1network_1_1http_1_1Server_ad57a524ff44201af997e2d3557557623}{xtd\+::network\+::http\+::\+Server\+::h\+\_\+error\+\_\+text}. \index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!start@{start}}
+\index{start@{start}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{start(void)}{start(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a8f2c0ce0dd0d150d74d3cfd89edb9332}{}\label{classxtd_1_1network_1_1http_1_1Server_a8f2c0ce0dd0d150d74d3cfd89edb9332}
+
+
+invoke base start method and print log 
+
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_ae9d5a1070819996c244003adc92a35ee}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+\index{xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}!stop@{stop}}
+\index{stop@{stop}!xtd\+::network\+::http\+::\+Server@{xtd\+::network\+::http\+::\+Server}}
+\subsubsection[{\texorpdfstring{stop(void)}{stop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ virtual void {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_a8683467193d33cef96950fad43b8f47c}{}\label{classxtd_1_1network_1_1http_1_1Server_a8683467193d33cef96950fad43b8f47c}
+
+
+invoke base stop method and print log 
+
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Server_a0746f85458e7eff28cfe6e156ad99402}{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{fwd_8hh}{fwd.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{http_2Server_8hh}{Server.\+hh}\end{DoxyCompactItemize}

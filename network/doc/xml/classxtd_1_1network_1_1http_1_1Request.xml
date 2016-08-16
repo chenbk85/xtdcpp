@@ -1,0 +1,1553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1Request" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::http::Request</compoundname>
+    <includes refid="Request_8hh" local="no">Request.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" prot="public" static="no">
+        <name>t_method</name>
+        <enumvalue id="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" prot="public">
+          <name>METHOD_GET</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" prot="public">
+          <name>METHOD_POST</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414" prot="public">
+          <name>METHOD_HEAD</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" prot="public" static="no">
+        <name>t_version</name>
+        <enumvalue id="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f" prot="public">
+          <name>VERSION_1_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d" prot="public">
+          <name>VERSION_1_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" prot="public" static="no">
+        <type>std::multimap&lt; string, string &gt;</type>
+        <definition>typedef std::multimap&lt;string, string&gt; xtd::network::http::Request::t_param_map</definition>
+        <argsstring></argsstring>
+        <name>t_param_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" prot="public" static="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>typedef map&lt;string, string&gt; xtd::network::http::Request::t_header_map</definition>
+        <argsstring></argsstring>
+        <name>t_header_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1ad3010217380492ad7fbf48b0a9ec0a4e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::m_rawUrl</definition>
+        <argsstring></argsstring>
+        <name>m_rawUrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a836a7529655be96f9851d83109ba674f" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" kindref="member">t_method</ref></type>
+        <definition>t_method xtd::network::http::Request::m_method</definition>
+        <argsstring></argsstring>
+        <name>m_method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="123" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a2f91ea32734f9e9c594c2ecd56549f71" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::m_path</definition>
+        <argsstring></argsstring>
+        <name>m_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="124" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a02e9185da6cc13ec08cca6f314290636" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref></type>
+        <definition>t_param_map xtd::network::http::Request::m_cgi</definition>
+        <argsstring></argsstring>
+        <name>m_cgi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1aa72c6face7ffdeead20feb3535409c8e" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref></type>
+        <definition>t_param_map xtd::network::http::Request::m_post</definition>
+        <argsstring></argsstring>
+        <name>m_post</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="126" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1ae911edd0253fca7895db52748880564f" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" kindref="member">t_header_map</ref></type>
+        <definition>t_header_map xtd::network::http::Request::m_headers</definition>
+        <argsstring></argsstring>
+        <name>m_headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="127" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a6ba527b3ed79d9ab22a362a382f88500" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::m_versionStr</definition>
+        <argsstring></argsstring>
+        <name>m_versionStr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="128" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1ad8e9560629dd82aa4d1594542b12e229" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kindref="member">t_version</ref></type>
+        <definition>t_version xtd::network::http::Request::m_version</definition>
+        <argsstring></argsstring>
+        <name>m_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="129" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1adb444e2c24097247558291506306ec17" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::m_cgiToLower</definition>
+        <argsstring></argsstring>
+        <name>m_cgiToLower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="130" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a54dab25cd67b4eac643d807cebb87544" prot="private" static="no" mutable="no">
+        <type>boost::regex</type>
+        <definition>boost::regex xtd::network::http::Request::m_regex_tooManyStartingSlash</definition>
+        <argsstring></argsstring>
+        <name>m_regex_tooManyStartingSlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="131" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Request_1a011678721d80f16c11acbb8513f25074" prot="private" static="no" mutable="no">
+        <type>boost::regex</type>
+        <definition>boost::regex xtd::network::http::Request::m_regex_tooManyEndingSlash</definition>
+        <argsstring></argsstring>
+        <name>m_regex_tooManyEndingSlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="132" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1network_1_1http_1_1Request_1a4ef55dada327d66bc23474520e1ae32c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Request &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>p_buf</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref> &amp;</type>
+          <defname>p_obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a6255d0a163700ed3aec8b8e655573208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::Request::Request</definition>
+        <argsstring>(bool p_cgiToLower=true)</argsstring>
+        <name>Request</name>
+        <param>
+          <type>bool</type>
+          <declname>p_cgiToLower</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="31" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a3ee369c6c2b8888815f1347d9f7df3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::setMethod</definition>
+        <argsstring>(t_method p_method)</argsstring>
+        <name>setMethod</name>
+        <param>
+          <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" kindref="member">t_method</ref></type>
+          <declname>p_method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="53" bodyend="56"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a1f25a3becd01d0ee957ecd697f178956" compoundref="Request_8cc" startline="258" endline="273">readHead</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a42304776ec9355ab89c6e8e0391f4309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::addCgi</definition>
+        <argsstring>(const string &amp;p_key, const string &amp;p_value)</argsstring>
+        <name>addCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="77" bodyend="81"/>
+        <referencedby refid="structxtd_1_1network_1_1http_1_1hex__to__string_1a88d313368d68cfdddb20e4496b73af87" compoundref="Request_8cc" startline="344" endline="353">xtd::network::http::hex_to_string::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a463b8876852246bac863584f9dc3d0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::addPost</definition>
+        <argsstring>(const string &amp;p_key, const string &amp;p_value)</argsstring>
+        <name>addPost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="40" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="84" bodyend="88"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" compoundref="Request_8cc" startline="504" endline="525">getDataSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ac7f15d9f25ab85da1569e7718ea6544d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::addHeader</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_value)</argsstring>
+        <name>addHeader</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="92" bodyend="96"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" compoundref="Request_8cc" startline="445" endline="448">getRawUrl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a4fc25edc6c133d46f1780a3b8c5a3c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::setVersion</definition>
+        <argsstring>(const string &amp;p_version)</argsstring>
+        <name>setVersion</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="99" bodyend="102"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" compoundref="Request_8cc" startline="445" endline="448">getRawUrl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a3a56519771fa2e7af734152a12b56361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::setVersion</definition>
+        <argsstring>(t_version p_version)</argsstring>
+        <name>setVersion</name>
+        <param>
+          <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kindref="member">t_version</ref></type>
+          <declname>p_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a2e739ee31fca9fdddc4fa69432405b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::removeCgi</definition>
+        <argsstring>(const string &amp;p_key)</argsstring>
+        <name>removeCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="112" bodyend="115"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1adbbc4691784a7e7f49e31ffe54b733dd" compoundref="Request_8cc" startline="126" endline="130">removeData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a69b20f61fbdf1727be7b6eb4623e30d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::removePost</definition>
+        <argsstring>(const string &amp;p_key)</argsstring>
+        <name>removePost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="119" bodyend="122"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1adbbc4691784a7e7f49e31ffe54b733dd" compoundref="Request_8cc" startline="126" endline="130">removeData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1adbbc4691784a7e7f49e31ffe54b733dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::removeData</definition>
+        <argsstring>(const string &amp;p_key)</argsstring>
+        <name>removeData</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="126" bodyend="130"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a2e739ee31fca9fdddc4fa69432405b09" compoundref="Request_8cc" startline="112" endline="115">removeCgi</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a69b20f61fbdf1727be7b6eb4623e30d7" compoundref="Request_8cc" startline="119" endline="122">removePost</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1acd61448f2826e30001bf6d9ada90a2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readQS</definition>
+        <argsstring>(const string &amp;p_qs)</argsstring>
+        <name>readQS</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_qs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="48" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a1f25a3becd01d0ee957ecd697f178956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readHead</definition>
+        <argsstring>(std::istream &amp;p_request)</argsstring>
+        <name>readHead</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="258" bodyend="273"/>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a3ee369c6c2b8888815f1347d9f7df3f0" compoundref="Request_8cc" startline="53" endline="56">setMethod</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" compoundref="Request_8hh" startline="24">METHOD_GET</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" compoundref="Request_8hh" startline="25">METHOD_POST</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414" compoundref="Request_8hh" startline="26">METHOD_HEAD</references>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a050758a8848fb4190b305d955760fd79" compoundref="Request_8cc" startline="240" endline="255">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a050758a8848fb4190b305d955760fd79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::read</definition>
+        <argsstring>(std::istream &amp;p_request)</argsstring>
+        <name>read</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="240" bodyend="255"/>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a1f25a3becd01d0ee957ecd697f178956" compoundref="Request_8cc" startline="258" endline="273">readHead</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1af06004afe64f465edfb281407b7f3600" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" kindref="member">t_method</ref></type>
+        <definition>Request::t_method xtd::network::http::Request::getMethod</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getMethod</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="53" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="134" bodyend="137"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a0006f0a88dccabdafe9dfed3627730f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; xtd::network::http::Request::getPath</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="54" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="151" bodyend="154"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ac9aeee4365089901bd216350fdcbe3a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::getQS</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getQS</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="55" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="141" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::getRawUrl</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getRawUrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="56" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="445" bodyend="448"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a4fc25edc6c133d46f1780a3b8c5a3c4e" compoundref="Request_8cc" startline="99" endline="102">setVersion</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f" compoundref="Request_8hh" startline="30">VERSION_1_0</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d" compoundref="Request_8hh" startline="31">VERSION_1_1</references>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1ac7f15d9f25ab85da1569e7718ea6544d" compoundref="Request_8cc" startline="92" endline="96">addHeader</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+        <definition>const Request::t_param_map &amp; xtd::network::http::Request::getCgis</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getCgis</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="57" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="157" bodyend="160"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+        <definition>const Request::t_param_map &amp; xtd::network::http::Request::getPosts</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getPosts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="58" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="163" bodyend="166"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1aac37ae370c601f66b17e1ef071081957" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref></type>
+        <definition>Request::t_param_map xtd::network::http::Request::getParams</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getParams</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="169" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a21fc278ee56175b527ae58c909ad97a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::existsCgi</definition>
+        <argsstring>(const string &amp;p_key) const </argsstring>
+        <name>existsCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ae121fd7a302ea9bb1a3fe66f3cb7f696" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::existsPost</definition>
+        <argsstring>(const string &amp;p_key) const </argsstring>
+        <name>existsPost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="61" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a8bc12470bb1a04d71d84ed1053551df9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::existsParam</definition>
+        <argsstring>(const string &amp;p_key) const </argsstring>
+        <name>existsParam</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ad334cf225213389711b7524a2c637e38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::existsHeader</definition>
+        <argsstring>(const string &amp;p_name) const </argsstring>
+        <name>existsHeader</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a99a0c9599f0d2bdc51f8e488fb4f78f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::getHeader</definition>
+        <argsstring>(const string &amp;p_name, string &amp;p_value) const </argsstring>
+        <name>getHeader</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="210" bodyend="218"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" compoundref="Request_8cc" startline="504" endline="525">getDataSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" kindref="member">t_header_map</ref> &amp;</type>
+        <definition>const Request::t_header_map &amp; xtd::network::http::Request::getHeaders</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getHeaders</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="221" bodyend="224"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a609f7328025e89fd8325677212ab307b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; xtd::network::http::Request::getVersionStr</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getVersionStr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="228" bodyend="231"/>
+        <referencedby refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" compoundref="Request_8cc" startline="654" endline="693">xtd::network::http::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1acdf8a64d92f997aa7a0eaf7fc07cf897" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kindref="member">t_version</ref></type>
+        <definition>Request::t_version xtd::network::http::Request::getVersion</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::getDataSize</definition>
+        <argsstring>(size_t &amp;p_length) const </argsstring>
+        <name>getDataSize</name>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>p_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="504" bodyend="525"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a99a0c9599f0d2bdc51f8e488fb4f78f4" compoundref="Request_8cc" startline="210" endline="218">getHeader</references>
+        <references refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6">xtd::network::http::ok</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a463b8876852246bac863584f9dc3d0ae" compoundref="Request_8cc" startline="84" endline="88">addPost</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a7af5942f7505ac377c8017f51b24854e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::getCgi</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst) const </argsstring>
+        <name>getCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1adc71d7250d7064b513b619091b0a6961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getCgi</definition>
+        <argsstring>(const string &amp;p_key, vector&lt; T &gt; &amp;p_dst) const </argsstring>
+        <name>getCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ad1efea31852175056b036fdd2df71135" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getCgi</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst, const T &amp;p_default) const </argsstring>
+        <name>getCgi</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a052d76c6e9f2d8eede058c7d2fddd9ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::getPost</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst) const </argsstring>
+        <name>getPost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a073d8eef444c0d981e3bd5137e13de3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getPost</definition>
+        <argsstring>(const string &amp;p_key, vector&lt; T &gt; &amp;p_dst) const </argsstring>
+        <name>getPost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ab4b8f57135d2f6d1e622ae5fe81c1ca7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getPost</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst, const T &amp;p_default) const </argsstring>
+        <name>getPost</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a2d7c1f674b8935120f6f20cd6baccd63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::getParam</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst) const </argsstring>
+        <name>getParam</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a00b5483c07f655a7a2b40a4db8190a1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getParam</definition>
+        <argsstring>(const string &amp;p_key, vector&lt; T &gt; &amp;p_dst) const </argsstring>
+        <name>getParam</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a1c75bacd611d64713664efb796f33d25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getParam</definition>
+        <argsstring>(const string &amp;p_key, T &amp;p_dst, const T &amp;p_default) const </argsstring>
+        <name>getParam</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ac3b9fbaba2751dfaa8f028e31f53c0f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getParam</definition>
+        <argsstring>(const string &amp;p_key, vector&lt; T &gt; &amp;p_dst, const vector&lt; T &gt; &amp;p_default) const </argsstring>
+        <name>getParam</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const vector&lt; T &gt; &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a142b0862025dd1071284b8594b836e85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readData</definition>
+        <argsstring>(std::istream &amp;p_request)</argsstring>
+        <name>readData</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>on lit jusqu&apos;a eof et on append dans m_data chaque chunk </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="95" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="532" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1aa262622348a55b5a8f26dd296341b015" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readDataFormEncoded</definition>
+        <argsstring>(const string &amp;p_data)</argsstring>
+        <name>readDataFormEncoded</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="578" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1abf79a85792cf84d55007dc4b2af99120" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readHeaders</definition>
+        <argsstring>(std::istream &amp;p_request)</argsstring>
+        <name>readHeaders</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="97" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="479" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a5a533dc4ad5c338f06d0bad4f81fde96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readVersion</definition>
+        <argsstring>(const string &amp;p_version)</argsstring>
+        <name>readVersion</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="98" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="451" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a0187979d36b4866ee18c27de2b04ec27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readUrl</definition>
+        <argsstring>(const string &amp;p_url)</argsstring>
+        <name>readUrl</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="99" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="392" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a1b1d3cba62b31a8395c7f1ccc7b5bce7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readMethod</definition>
+        <argsstring>(const string &amp;p_method)</argsstring>
+        <name>readMethod</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="100" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="320" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1aba33a0bbe6e72243569f196128ecb5bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::http::Request::readInitial</definition>
+        <argsstring>(std::istream &amp;p_request)</argsstring>
+        <name>readInitial</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="101" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="276" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1aa6ca8641600d731dfeb14c4482a26ace" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::network::http::Request::paramValueDecode</definition>
+        <argsstring>(const string &amp;p_value)</argsstring>
+        <name>paramValueDecode</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="102" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="359" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ada9f2f5945e331dee411c3773749a68e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Request::normalizePath</definition>
+        <argsstring>(const string &amp;p_path)</argsstring>
+        <name>normalizePath</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>on effecture une etape de nornmalisation de la ressource demandee </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="103" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a029def0d99a2a83fdd210841df937bc8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::as</definition>
+        <argsstring>(const string &amp;p_src, string &amp;p_dst) const </argsstring>
+        <name>as</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="105" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="609" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1abd8e4d0c9bc8e458b2ecd3ba0b4e480f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::as</definition>
+        <argsstring>(const string &amp;p_src, bool &amp;p_dst) const </argsstring>
+        <name>as</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="106" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="616" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1af78f1b412da251b73cdcbfee47c35398" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::as</definition>
+        <argsstring>(const string &amp;p_src, uint8_t &amp;p_dst) const </argsstring>
+        <name>as</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="107" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="639" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a33a9a6a7d1d279eacc7a5bc6a3f98f25" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TDst</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::as</definition>
+        <argsstring>(const string &amp;p_src, TDst &amp;p_dst) const </argsstring>
+        <name>as</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>TDst &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a3176237a566f30e7651edd6ab786f8cc" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::existsData</definition>
+        <argsstring>(const t_param_map &amp;p_src, const string &amp;p_key) const </argsstring>
+        <name>existsData</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="111" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a36bfaced24d8b4df122c0f9ebfc8ad55" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::network::http::Request::getData</definition>
+        <argsstring>(const t_param_map &amp;p_src, const string &amp;p_key, T &amp;p_dst) const </argsstring>
+        <name>getData</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a47ca815c01123ec535a4a248731bef2f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getData</definition>
+        <argsstring>(const t_param_map &amp;p_src, const string &amp;p_key, vector&lt; T &gt; &amp;p_dst) const </argsstring>
+        <name>getData</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1ab1897af6a658229fbf55c3aeee42b960" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getData</definition>
+        <argsstring>(const t_param_map &amp;p_src, const string &amp;p_key, T &amp;p_dst, const T &amp;p_default) const </argsstring>
+        <name>getData</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Request_1a619e85042924f3e11bd9730bc870d72e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::http::Request::getData</definition>
+        <argsstring>(const t_param_map &amp;p_src, const string &amp;p_key, vector&lt; T &gt; &amp;p_dst, const vector&lt; T &gt; &amp;p_default) const </argsstring>
+        <name>getData</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref> &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <param>
+          <type>const vector&lt; T &gt; &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="119" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" bodystart="15" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a42304776ec9355ab89c6e8e0391f4309" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>addCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ac7f15d9f25ab85da1569e7718ea6544d" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>addHeader</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a463b8876852246bac863584f9dc3d0ae" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>addPost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a029def0d99a2a83fdd210841df937bc8" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>as</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1abd8e4d0c9bc8e458b2ecd3ba0b4e480f" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>as</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1af78f1b412da251b73cdcbfee47c35398" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>as</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a33a9a6a7d1d279eacc7a5bc6a3f98f25" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>as</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a21fc278ee56175b527ae58c909ad97a3" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>existsCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a3176237a566f30e7651edd6ab786f8cc" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>existsData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad334cf225213389711b7524a2c637e38" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>existsHeader</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a8bc12470bb1a04d71d84ed1053551df9" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>existsParam</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ae121fd7a302ea9bb1a3fe66f3cb7f696" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>existsPost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a7af5942f7505ac377c8017f51b24854e" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1adc71d7250d7064b513b619091b0a6961" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1efea31852175056b036fdd2df71135" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getCgis</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a36bfaced24d8b4df122c0f9ebfc8ad55" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a47ca815c01123ec535a4a248731bef2f" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ab1897af6a658229fbf55c3aeee42b960" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a619e85042924f3e11bd9730bc870d72e" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getDataSize</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a99a0c9599f0d2bdc51f8e488fb4f78f4" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getHeader</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getHeaders</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1af06004afe64f465edfb281407b7f3600" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getMethod</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a2d7c1f674b8935120f6f20cd6baccd63" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getParam</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a00b5483c07f655a7a2b40a4db8190a1e" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getParam</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a1c75bacd611d64713664efb796f33d25" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getParam</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ac3b9fbaba2751dfaa8f028e31f53c0f9" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getParam</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aac37ae370c601f66b17e1ef071081957" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getParams</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a0006f0a88dccabdafe9dfed3627730f6" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getPath</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a052d76c6e9f2d8eede058c7d2fddd9ef" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getPost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a073d8eef444c0d981e3bd5137e13de3b" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getPost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ab4b8f57135d2f6d1e622ae5fe81c1ca7" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getPost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getPosts</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ac9aeee4365089901bd216350fdcbe3a2" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getQS</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getRawUrl</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1acdf8a64d92f997aa7a0eaf7fc07cf897" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getVersion</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a609f7328025e89fd8325677212ab307b" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>getVersionStr</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a02e9185da6cc13ec08cca6f314290636" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_cgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1adb444e2c24097247558291506306ec17" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_cgiToLower</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ae911edd0253fca7895db52748880564f" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_headers</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a836a7529655be96f9851d83109ba674f" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_method</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a2f91ea32734f9e9c594c2ecd56549f71" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_path</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aa72c6face7ffdeead20feb3535409c8e" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_post</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad3010217380492ad7fbf48b0a9ec0a4e" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_rawUrl</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a011678721d80f16c11acbb8513f25074" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_regex_tooManyEndingSlash</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a54dab25cd67b4eac643d807cebb87544" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_regex_tooManyStartingSlash</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad8e9560629dd82aa4d1594542b12e229" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_version</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a6ba527b3ed79d9ab22a362a382f88500" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>m_versionStr</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>METHOD_GET</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>METHOD_HEAD</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>METHOD_POST</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ada9f2f5945e331dee411c3773749a68e" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>normalizePath</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a4ef55dada327d66bc23474520e1ae32c" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aa6ca8641600d731dfeb14c4482a26ace" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>paramValueDecode</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a050758a8848fb4190b305d955760fd79" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>read</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a142b0862025dd1071284b8594b836e85" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aa262622348a55b5a8f26dd296341b015" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readDataFormEncoded</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a1f25a3becd01d0ee957ecd697f178956" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readHead</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1abf79a85792cf84d55007dc4b2af99120" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readHeaders</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aba33a0bbe6e72243569f196128ecb5bd" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readInitial</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a1b1d3cba62b31a8395c7f1ccc7b5bce7" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readMethod</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1acd61448f2826e30001bf6d9ada90a2a6" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readQS</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a0187979d36b4866ee18c27de2b04ec27" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readUrl</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a5a533dc4ad5c338f06d0bad4f81fde96" prot="private" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>readVersion</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a2e739ee31fca9fdddc4fa69432405b09" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>removeCgi</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1adbbc4691784a7e7f49e31ffe54b733dd" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>removeData</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a69b20f61fbdf1727be7b6eb4623e30d7" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>removePost</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a6255d0a163700ed3aec8b8e655573208" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>Request</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a3ee369c6c2b8888815f1347d9f7df3f0" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>setMethod</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a4fc25edc6c133d46f1780a3b8c5a3c4e" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>setVersion</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a3a56519771fa2e7af734152a12b56361" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>setVersion</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>t_header_map</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>t_method</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>t_param_map</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>t_version</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>VERSION_1_0</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d" prot="public" virt="non-virtual"><scope>xtd::network::http::Request</scope><name>VERSION_1_1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

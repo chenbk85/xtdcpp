@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Perf_8cc" kind="file" language="C++">
+    <compoundname>Perf.cc</compoundname>
+    <includes refid="Perf_8hh" local="yes">Perf.hh</includes>
+    <incdepgraph>
+      <node id="814">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="805">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="811">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf.cc"/>
+        <childnode refid="801" relation="include">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>string</label>
+      </node>
+      <node id="806">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="803">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+      </node>
+      <node id="809">
+        <label>AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+      </node>
+      <node id="808">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="807" relation="include">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="802">
+        <label>vector</label>
+      </node>
+      <node id="810">
+        <label>deque</label>
+      </node>
+      <node id="807">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Perf_8hh" kindref="compound">Perf.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bpt<sp/>=<sp/>boost::posix_time;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1counters_1_1Perf_1a765416ba7ef076acdfc8100d2ea5c9a0" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Perf_1a765416ba7ef076acdfc8100d2ea5c9a0" kindref="member">Perf::Perf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>p_nbThread,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>p_sampeSize,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>p_deltaTimeMs)<sp/>:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>(p_name),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_avgRTT(</highlight><highlight class="stringliteral">&quot;RTT&quot;</highlight><highlight class="normal">,<sp/>p_sampeSize),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>m_globalPerf(</highlight><highlight class="stringliteral">&quot;perf&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>m_instantPerf(</highlight><highlight class="stringliteral">&quot;instant.perf&quot;</highlight><highlight class="normal">,<sp/>p_deltaTimeMs),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>m_startTimes(p_nbThread)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_avgRTT);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_globalPerf);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_instantPerf);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classxtd_1_1counters_1_1Perf_1a80692e9b90e8d15a57e2e581591063c0" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Perf_1a80692e9b90e8d15a57e2e581591063c0" kindref="member">Perf::startChrono</ref>(uint32_t<sp/>p_requestID)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_startTimes[p_requestID]<sp/>=<sp/>bpt::microsec_clock::local_time();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classxtd_1_1counters_1_1Perf_1a905d73c1604d74e28bb56ea2bb4867ef" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Perf_1a905d73c1604d74e28bb56ea2bb4867ef" kindref="member">Perf::stopChrono</ref>(uint32_t<sp/>p_requestID)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>bpt::time_duration<sp/>l_diffTime<sp/>=</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>bpt::microsec_clock::local_time()<sp/>-<sp/>m_startTimes[p_requestID];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>m_globalPerf.<ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>m_instantPerf.<ref refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>m_avgRTT<sp/>=<sp/>l_diffTime.total_milliseconds();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Perf.cc"/>
+  </compounddef>
+</doxygen>

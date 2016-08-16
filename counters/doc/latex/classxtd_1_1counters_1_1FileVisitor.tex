@@ -1,0 +1,177 @@
+\hypertarget{classxtd_1_1counters_1_1FileVisitor}{}\section{xtd\+:\+:counters\+:\+:File\+Visitor Class Reference}
+\label{classxtd_1_1counters_1_1FileVisitor}\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+
+
+{\ttfamily \#include $<$File\+Visitor.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:File\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classxtd_1_1counters_1_1FileVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:File\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classxtd_1_1counters_1_1FileVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1FileVisitor_a1cdf1a2d8abde62c1e4d340e4b68351d}{File\+Visitor} (const t\+\_\+path \&p\+\_\+path)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1FileVisitor_af6936e3e1e62880b0eb9fc76b0b0a120}{operator()} (const string \&p\+\_\+name, const string \&p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1FileVisitor_a69214d261c695bb48335c58ed2a76cae}{operator()} (const string \&p\+\_\+name, uint8\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1FileVisitor_a687eff42ec19d5aed86689e0405fa181}{operator()} (const string \&p\+\_\+name, uint16\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1FileVisitor_ae5807c31711d611b93e435071855ce2f}{operator()} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+data)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1FileVisitor_a9e5edd247355cc9c3387d1bd5cda0642}{operator()} (const string \&p\+\_\+name, uint64\+\_\+t p\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file File\+Visitor.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!File\+Visitor@{File\+Visitor}}
+\index{File\+Visitor@{File\+Visitor}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{File\+Visitor(const t\+\_\+path \&p\+\_\+path)}{FileVisitor(const t_path &p_path)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+File\+Visitor\+::\+File\+Visitor (
+\begin{DoxyParamCaption}
+\item[{const t\+\_\+path \&}]{p\+\_\+path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_a1cdf1a2d8abde62c1e4d340e4b68351d}{}\label{classxtd_1_1counters_1_1FileVisitor_a1cdf1a2d8abde62c1e4d340e4b68351d}
+
+
+Definition at line 20 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+20                                     :
+21     m\_path(p\_path)
+22   \{
+23   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, const string \&p\+\_\+data)}{operator()(const string &p_name, const string &p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+File\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const string \&}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_af6936e3e1e62880b0eb9fc76b0b0a120}{}\label{classxtd_1_1counters_1_1FileVisitor_af6936e3e1e62880b0eb9fc76b0b0a120}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a1341281b8c4cbf4de5a37e035f75e214}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 26 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+26 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint8\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint8_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+File\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint8\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_a69214d261c695bb48335c58ed2a76cae}{}\label{classxtd_1_1counters_1_1FileVisitor_a69214d261c695bb48335c58ed2a76cae}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a1a5da2c523703b0c9132595f22e1700e}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 27 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+27 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint16\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint16_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+File\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint16\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_a687eff42ec19d5aed86689e0405fa181}{}\label{classxtd_1_1counters_1_1FileVisitor_a687eff42ec19d5aed86689e0405fa181}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a6139d735b720a83e87f49932855f1ade}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 28 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+28 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint32_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+File\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_ae5807c31711d611b93e435071855ce2f}{}\label{classxtd_1_1counters_1_1FileVisitor_ae5807c31711d611b93e435071855ce2f}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_a0bc4c30e3df6ef796878b85ce1be17fb}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 29 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+29 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::counters\+::\+File\+Visitor@{xtd\+::counters\+::\+File\+Visitor}}
+\subsubsection[{\texorpdfstring{operator()(const string \&p\+\_\+name, uint64\+\_\+t p\+\_\+data)}{operator()(const string &p_name, uint64_t p_data)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+File\+Visitor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint64\+\_\+t}]{p\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1counters_1_1FileVisitor_a9e5edd247355cc9c3387d1bd5cda0642}{}\label{classxtd_1_1counters_1_1FileVisitor_a9e5edd247355cc9c3387d1bd5cda0642}
+
+
+Implements \hyperlink{classxtd_1_1counters_1_1Visitor_aba895c10dd1a28fa7a8b64e61adee5ac}{xtd\+::counters\+::\+Visitor}.
+
+
+
+Definition at line 30 of file File\+Visitor.\+hh.
+
+
+\begin{DoxyCode}
+30 \{ write(p\_name, p\_data); \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{FileVisitor_8hh}{File\+Visitor.\+hh}\end{DoxyCompactItemize}

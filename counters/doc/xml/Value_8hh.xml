@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Value_8hh" kind="file" language="C++">
+    <compoundname>Value.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="Base_8hh" local="yes">Base.hh</includes>
+    <includedby refid="AvgTimedValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
+    <includedby refid="Freq_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Freq.hh</includedby>
+    <includedby refid="InstantFreq_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh</includedby>
+    <includedby refid="AvgValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh</includedby>
+    <includedby refid="Cache_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Cache.hh</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="SumExt_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/SumExt.hh</includedby>
+    <includedby refid="Value_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/Value.cc</includedby>
+    <incdepgraph>
+      <node id="873">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="870">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Value.hh</label>
+        <link refid="Value.hh"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+      </node>
+      <node id="872">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="871">
+        <label>string</label>
+      </node>
+      <node id="876">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="875" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="887">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Value.hh</label>
+        <link refid="Value.hh"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
+      </node>
+      <node id="888">
+        <label>/home/psyco/dev/xtdcpp/counters/src/InstantFreq.cc</label>
+        <link refid="InstantFreq_8cc"/>
+      </node>
+      <node id="893">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Value.cc</label>
+        <link refid="Value_8cc"/>
+      </node>
+      <node id="884">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="889">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="882">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="890">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgValue.cc</label>
+        <link refid="AvgValue_8cc"/>
+      </node>
+      <node id="881">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>/home/psyco/dev/xtdcpp/counters/src/SumExt.hh</label>
+        <link refid="SumExt_8hh"/>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>/home/psyco/dev/xtdcpp/counters/src/SumExt.cc</label>
+        <link refid="SumExt_8cc"/>
+      </node>
+      <node id="886">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.cc</label>
+        <link refid="Freq_8cc"/>
+      </node>
+      <node id="879">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
+      </node>
+      <node id="878">
+        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <link refid="AvgTimedValue_8hh"/>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1counters_1_1Atomic" prot="public">xtd::counters::Atomic</innerclass>
+    <innerclass refid="classxtd_1_1counters_1_1Value" prot="public">xtd::counters::Value</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_VALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_VALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classxtd_1_1counters_1_1Atomic" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Atomic" kindref="compound">Atomic</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1a54a3a8f1a29283e78a495fdd410fc3c4" kindref="member">Atomic</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1a88c5f887b5d7b70f1da87b393f12bccc" kindref="member">inc</ref>(uint32_t&amp;<sp/>p_val);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1adb613d1d33a70c6e17d1896058a110fe" kindref="member">dec</ref>(uint32_t&amp;<sp/>p_val);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1a90c6aa9ad58612b867df2bbdc779ca3b" kindref="member">write</ref>(uint32_t&amp;<sp/>p_val,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1a88c5f887b5d7b70f1da87b393f12bccc" kindref="member">inc</ref>(TType&amp;<sp/>p_val);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1adb613d1d33a70c6e17d1896058a110fe" kindref="member">dec</ref>(TType&amp;<sp/>p_val);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Atomic_1a90c6aa9ad58612b867df2bbdc779ca3b" kindref="member">write</ref>(TType&amp;<sp/>p_val,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TType&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>boost::mutex<sp/>m_mutex;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38" refid="classxtd_1_1counters_1_1Value_1a93e934ad70d5b32b14beed5572450abf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;Value&lt;TType&gt;<sp/>&gt;<sp/><ref refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" kindref="member">t_sptr</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="45" refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" kindref="member">~Value</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>NaN(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/>isNaN(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TType&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>operator++(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>operator++(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>operator--(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&amp;<sp/>operator--(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TType&amp;<sp/>getValue(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visit_safe(<ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" kindref="member">m_isNaN</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" refkind="member"><highlight class="normal"><sp/><sp/>TType<sp/><sp/><ref refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" kindref="member">m_value</ref>;</highlight></codeline>
+<codeline lineno="65" refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Atomic" kindref="compound">Atomic</ref><sp/><ref refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" kindref="member">m_atom</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value&lt;uint32_t&gt;</ref><sp/><ref refid="namespacextd_1_1counters_1ad10dfbcb762ad7dfc7199ab5a268bc6e" kindref="member">Value32</ref>;</highlight></codeline>
+<codeline lineno="69" refid="namespacextd_1_1counters_1a20cdfbbbf5aa96abb1c5d461497d1769" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value&lt;uint64_t&gt;</ref><sp/><ref refid="namespacextd_1_1counters_1a20cdfbbbf5aa96abb1c5d461497d1769" kindref="member">Value64</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_VALUE_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh"/>
+  </compounddef>
+</doxygen>

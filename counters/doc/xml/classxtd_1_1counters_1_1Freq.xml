@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1Freq" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::Freq</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Value" prot="public" virt="non-virtual">xtd::counters::Value&lt; uint32_t &gt;</basecompoundref>
+    <includes refid="Freq_8hh" local="no">Freq.hh</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1Freq_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="13" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Freq_1aed8edfbc8e6cc2538b1ab4dfa3b8244d" prot="private" static="no" mutable="no">
+        <type>boost::posix_time::ptime</type>
+        <definition>boost::posix_time::ptime xtd::counters::Freq::m_beginTime</definition>
+        <argsstring></argsstring>
+        <name>m_beginTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Freq_1a898fc1648d0073fadc6f96147beddbc7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::counters::Freq::m_nbEvent</definition>
+        <argsstring></argsstring>
+        <name>m_nbEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::Freq::Freq</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>Freq</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.cc" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::Freq::~Freq</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Freq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" bodystart="17" bodyend="17"/>
+        <references refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" compoundref="Freq_8cc" startline="29" endline="32">tick</references>
+        <references refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" compoundref="Freq_8cc" startline="22" endline="26">operator=</references>
+        <references refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" compoundref="Freq_8cc" startline="36" endline="43">update_safe</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Freq::tick</definition>
+        <argsstring>(void)</argsstring>
+        <name>tick</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.cc" bodystart="29" bodyend="32"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">xtd::counters::AvgTimedValue::addResponseTime</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" compoundref="Cache_8cc" startline="51" endline="58">xtd::counters::Cache::hit</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" compoundref="Cache_8cc" startline="61" endline="68">xtd::counters::Cache::miss</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" compoundref="Freq_8hh" startline="17" endline="17">~Freq</referencedby>
+        <referencedby refid="classxtd_1_1counters_1_1Perf_1a905d73c1604d74e28bb56ea2bb4867ef" compoundref="Perf_8cc" startline="37" endline="45">xtd::counters::Perf::stopChrono</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref> &amp;</type>
+        <definition>Freq &amp; xtd::counters::Freq::operator=</definition>
+        <argsstring>(const uint32_t &amp;p_value)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.cc" bodystart="22" bodyend="26"/>
+        <references refid="classxtd_1_1counters_1_1Value_1a017667569f4177e0c44836ef4e9bc7b0">xtd::counters::Value&lt; TType &gt;::operator=</references>
+        <referencedby refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" compoundref="Freq_8hh" startline="17" endline="17">~Freq</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Freq::update_safe</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_safe</name>
+        <reimplements refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea">update_safe</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="24" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.cc" bodystart="36" bodyend="43"/>
+        <references refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" compoundref="Value_8hh" startline="64">xtd::counters::Value&lt; uint32_t &gt;::m_value</references>
+        <referencedby refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" compoundref="Freq_8hh" startline="17" endline="17">~Freq</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="196">
+        <label>xtd::counters::Value&lt; uint32_t &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="197">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="198" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>xtd::counters::Freq</label>
+        <link refid="classxtd_1_1counters_1_1Freq"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="200">
+        <label>xtd::counters::Value&lt; uint32_t &gt;</label>
+        <link refid="classxtd_1_1counters_1_1Value"/>
+        <childnode refid="201" relation="public-inheritance">
+        </childnode>
+        <childnode refid="203" relation="usage">
+          <edgelabel>m_atom</edgelabel>
+        </childnode>
+      </node>
+      <node id="202">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="201">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="202" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>xtd::counters::Atomic</label>
+        <link refid="classxtd_1_1counters_1_1Atomic"/>
+      </node>
+      <node id="199">
+        <label>xtd::counters::Freq</label>
+        <link refid="classxtd_1_1counters_1_1Freq"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" line="12" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Freq.hh" bodystart="11" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1ac48f859e66bef29a24a2cd9e2ad2aff6" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>Freq</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a459b2e9fc6974821968f5c05a62ec4ca" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>getValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a6fab70b05b6e99db492e0a3d8a0d9fb6" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a0cf45c8f82588321af127529ba4f214a" prot="protected" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_atom</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1aed8edfbc8e6cc2538b1ab4dfa3b8244d" prot="private" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_beginTime</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a28be66961121bb488351e2c2722fd18a" prot="protected" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_isNaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1a898fc1648d0073fadc6f96147beddbc7" prot="private" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_nbEvent</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1abe06c1cebededaf2f216707171f63c3c" prot="protected" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>m_value</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ab206db077ef38ac776a7e64774f56f2b" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>NaN</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a8e7e5f0ff7388f18deaddf51e016c905" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a4a8989a7f9585998eb4210dfdd1b099e" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>operator++</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1ac94ea7115378eb16dbef10d030b52a66" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a9036f1b2a2904960e67c1faef11f1835" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>operator--</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1a622e28502b8613bbac6fd40f324ddb8c" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>operator=</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a24669b6d950db6c5c20546ce12a467cf" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>tick</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1af4ee512e594def96c8bd907d2a369729" prot="protected" virt="virtual"><scope>xtd::counters::Freq</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a298f146ab57eaed8e6f783c26e78e0f4" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>Value</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::Freq</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a7be35e9a5a52891c5946425152b4db30" prot="protected" virt="virtual"><scope>xtd::counters::Freq</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::Freq</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Freq_1ac5d39dc4ea5211f48bf6f4834fe2558b" prot="public" virt="virtual"><scope>xtd::counters::Freq</scope><name>~Freq</name></member>
+      <member refid="classxtd_1_1counters_1_1Value_1a500d43a2cea3f654aa524959a7893e31" prot="public" virt="virtual"><scope>xtd::counters::Freq</scope><name>~Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

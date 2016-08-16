@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1servers_1_1app" kind="namespace" language="C++">
+    <compoundname>xtd::servers::app</compoundname>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1Action" prot="public">xtd::servers::app::Action</innerclass>
+    <innerclass refid="structxtd_1_1servers_1_1app_1_1Address" prot="public">xtd::servers::app::Address</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" prot="public">xtd::servers::app::HtmlOArchive</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1HttpServer" prot="public">xtd::servers::app::HttpServer</innerclass>
+    <innerclass refid="classxtd_1_1servers_1_1app_1_1Server" prot="public">xtd::servers::app::Server</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1_1servers_1_1app_1afbe4f1864152231ae4e2be0b57509ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; xtd::servers::app::to_javascript</definition>
+        <argsstring>(std::ostream &amp;p_stream)</argsstring>
+        <name>to_javascript</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>p_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="194" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" line="13" column="1"/>
+  </compounddef>
+</doxygen>

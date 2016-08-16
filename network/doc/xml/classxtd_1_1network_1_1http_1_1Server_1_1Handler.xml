@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kind="class" language="C++" prot="protected">
+    <compoundname>xtd::network::http::Server::Handler</compoundname>
+    <includes refid="http_2Server_8hh" local="no">Server.hh</includes>
+    <innerclass refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" prot="public">xtd::network::http::Server::Handler::filter</innerclass>
+    <innerclass refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" prot="public">xtd::network::http::Server::Handler::handler</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a840883d08fcdd990dbe33b660ee6febb" prot="public" static="no">
+        <type>vector&lt; <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> &gt;</type>
+        <definition>typedef vector&lt;Handler&gt; xtd::network::http::Server&lt; Domain &gt;::Handler::t_listof</definition>
+        <argsstring></argsstring>
+        <name>t_listof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="241" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aaea3487ea9687e61c40453d90841b223" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Server&lt; Domain &gt;::Handler::m_path</definition>
+        <argsstring></argsstring>
+        <name>m_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="313" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="313" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" compoundref="http_2Server_8hh" startline="303" endline="308">xtd::network::http::Server&lt; Domain &gt;::Handler::less</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a4dfed2def9b251595d4ee176c106882f" prot="public" static="no" mutable="no">
+        <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kindref="compound">handler</ref></type>
+        <definition>handler xtd::network::http::Server&lt; Domain &gt;::Handler::m_handler</definition>
+        <argsstring></argsstring>
+        <name>m_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="314" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a95854563aaa6e9c7fcced63d351e47a3" prot="public" static="no" mutable="no">
+        <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
+        <definition>filter xtd::network::http::Server&lt; Domain &gt;::Handler::m_filter</definition>
+        <argsstring></argsstring>
+        <name>m_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="315" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a7605921b1ffffb66376920cfa6ebcb08" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::network::http::Server&lt; Domain &gt;::Handler::m_matchAny</definition>
+        <argsstring></argsstring>
+        <name>m_matchAny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="316" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="316" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" compoundref="http_2Server_8hh" startline="303" endline="308">xtd::network::http::Server&lt; Domain &gt;::Handler::less</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aae46aaaf81c803b4ac6dd1a5b60feb36" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Server&lt; Domain &gt;::Handler::m_descr</definition>
+        <argsstring></argsstring>
+        <name>m_descr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="317" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool xtd::network::http::Server&lt; Domain &gt;::Handler::less</definition>
+        <argsstring>(const Handler &amp;p_obj1, const Handler &amp;p_obj2)</argsstring>
+        <name>less</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> &amp;</type>
+          <declname>p_obj1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> &amp;</type>
+          <declname>p_obj2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="303" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="303" bodyend="308"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a7605921b1ffffb66376920cfa6ebcb08" compoundref="http_2Server_8hh" startline="316">xtd::network::http::Server&lt; Domain &gt;::Handler::m_matchAny</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aaea3487ea9687e61c40453d90841b223" compoundref="http_2Server_8hh" startline="313">xtd::network::http::Server&lt; Domain &gt;::Handler::m_path</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a509777bdc769cabb23f04728e745b823">xtd::network::http::Server&lt; Domain &gt;::Handler::Handler</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a509777bdc769cabb23f04728e745b823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::Server&lt; Domain &gt;::Handler::Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="311" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" compoundref="http_2Server_8hh" startline="303" endline="308">xtd::network::http::Server&lt; Domain &gt;::Handler::less</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="283">
+        <label>boost::function&lt; status(const uint32_t p_requestId, const Request &amp;, Response &amp;)&gt;</label>
+      </node>
+      <node id="282">
+        <label>xtd::network::http::Server&lt; Domain &gt;::Handler::handler</label>
+        <link refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler"/>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>xtd::network::http::Server&lt; Domain &gt;::Handler</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler"/>
+        <childnode refid="280" relation="usage">
+          <edgelabel>m_filter</edgelabel>
+        </childnode>
+        <childnode refid="282" relation="usage">
+          <edgelabel>m_handler</edgelabel>
+        </childnode>
+      </node>
+      <node id="280">
+        <label>xtd::network::http::Server&lt; Domain &gt;::Handler::filter</label>
+        <link refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter"/>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>boost::function&lt; bool(const Request &amp;)&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="239" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="238" bodyend="318"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a509777bdc769cabb23f04728e745b823" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>Handler</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>less</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aae46aaaf81c803b4ac6dd1a5b60feb36" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>m_descr</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a95854563aaa6e9c7fcced63d351e47a3" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>m_filter</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a4dfed2def9b251595d4ee176c106882f" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>m_handler</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a7605921b1ffffb66376920cfa6ebcb08" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>m_matchAny</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aaea3487ea9687e61c40453d90841b223" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>m_path</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a840883d08fcdd990dbe33b660ee6febb" prot="public" virt="non-virtual"><scope>xtd::network::http::Server::Handler</scope><name>t_listof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

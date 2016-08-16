@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1Generator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xtd::network::http::Generator</compoundname>
+    <derivedcompoundref refid="classxtd_1_1network_1_1http_1_1Json" prot="public" virt="non-virtual">xtd::network::http::Json</derivedcompoundref>
+    <derivedcompoundref refid="classxtd_1_1network_1_1http_1_1Template" prot="public" virt="non-virtual">xtd::network::http::Template</derivedcompoundref>
+    <includes refid="Template_8hh" local="no">Template.hh</includes>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Generator_1aef564fc3152e7477bb429e45b19328fc" prot="protected" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string xtd::network::http::Generator::mcs_defaultContentType</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultContentType</name>
+        <initializer>= &quot;text/plain&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Generator_1a738f0f8cd19c78d54a2583a1cf579ffb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Generator::m_contentType</definition>
+        <argsstring></argsstring>
+        <name>m_contentType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Generator_1a9c59dd54d0027b739d490b227a74c6cc" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::Generator::m_error</definition>
+        <argsstring></argsstring>
+        <name>m_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1a5f8bfffa6c7fe8ae46158e976af3d666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::Generator::Generator</definition>
+        <argsstring>(const string &amp;p_contentType=mcs_defaultContentType)</argsstring>
+        <name>Generator</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_contentType</declname>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Generator_1aef564fc3152e7477bb429e45b19328fc" kindref="member">mcs_defaultContentType</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.cc" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>xtd::network::http::Generator::~Generator</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Generator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.cc" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1a4052d01b0d4849321b61688eac757b41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; xtd::network::http::Generator::getContentType</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getContentType</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1ac4fa462833bedc8bde7c7e81b1a29f37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; xtd::network::http::Generator::getError</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1a20ee788dc76ee76f4be5f44091b655ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>status</type>
+        <definition>virtual status xtd::network::http::Generator::resolve</definition>
+        <argsstring>(string &amp;p_result)=0</argsstring>
+        <name>resolve</name>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Json_1a7a9ed4f957c77813ecbb84e228936b5e">resolve</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd">resolve</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70">resolve</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab221547a643e3db5ba99640fe14b9f68">resolve</reimplementedby>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::http::Generator::addError</definition>
+        <argsstring>(const string &amp;p_error)</argsstring>
+        <name>addError</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="27" column="1"/>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Json_1a7a9ed4f957c77813ecbb84e228936b5e" compoundref="Template_8cc" startline="78" endline="91">xtd::network::http::Json::resolve</referencedby>
+        <referencedby refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" compoundref="Template_8cc" startline="111" endline="137">xtd::network::http::Template::resolve</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="272">
+        <label>xtd::network::http::Generator</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Generator"/>
+      </node>
+      <node id="275">
+        <label>xtd::network::http::HtmlTemplate</label>
+        <link refid="classxtd_1_1network_1_1http_1_1HtmlTemplate"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>xtd::network::http::XmlTemplate</label>
+        <link refid="classxtd_1_1network_1_1http_1_1XmlTemplate"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>xtd::network::http::Template</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Template"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>xtd::network::http::Json</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Json"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Template.hh" bodystart="13" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" prot="protected" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>addError</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a5f8bfffa6c7fe8ae46158e976af3d666" prot="public" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>Generator</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a4052d01b0d4849321b61688eac757b41" prot="public" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>getContentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1ac4fa462833bedc8bde7c7e81b1a29f37" prot="public" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>getError</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a738f0f8cd19c78d54a2583a1cf579ffb" prot="private" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>m_contentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a9c59dd54d0027b739d490b227a74c6cc" prot="private" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>m_error</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1aef564fc3152e7477bb429e45b19328fc" prot="protected" virt="non-virtual"><scope>xtd::network::http::Generator</scope><name>mcs_defaultContentType</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a20ee788dc76ee76f4be5f44091b655ca" prot="public" virt="pure-virtual"><scope>xtd::network::http::Generator</scope><name>resolve</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" prot="public" virt="virtual"><scope>xtd::network::http::Generator</scope><name>~Generator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

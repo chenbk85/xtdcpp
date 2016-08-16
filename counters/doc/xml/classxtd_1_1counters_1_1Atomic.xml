@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1Atomic" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::Atomic</compoundname>
+    <includes refid="Value_8hh" local="no">Value.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1Atomic_1aae671ea5da845f914fa554f781744772" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex xtd::counters::Atomic::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1a54a3a8f1a29283e78a495fdd410fc3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::Atomic::Atomic</definition>
+        <argsstring>(void)</argsstring>
+        <name>Atomic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.cc" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1a88c5f887b5d7b70f1da87b393f12bccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::inc</definition>
+        <argsstring>(uint32_t &amp;p_val)</argsstring>
+        <name>inc</name>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.cc" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1adb613d1d33a70c6e17d1896058a110fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::dec</definition>
+        <argsstring>(uint32_t &amp;p_val)</argsstring>
+        <name>dec</name>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.cc" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1a90c6aa9ad58612b867df2bbdc779ca3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::write</definition>
+        <argsstring>(uint32_t &amp;p_val, const uint32_t &amp;p_src)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="21" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.cc" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1adf3283f7fc1cf51af28ea2aa5822f272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::inc</definition>
+        <argsstring>(TType &amp;p_val)</argsstring>
+        <name>inc</name>
+        <param>
+          <type>TType &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1a2bf93bdc52005c846ac43bb2afcac8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::dec</definition>
+        <argsstring>(TType &amp;p_val)</argsstring>
+        <name>dec</name>
+        <param>
+          <type>TType &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1Atomic_1a53755a00d69b11274593f62737d9a54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::counters::Atomic::write</definition>
+        <argsstring>(TType &amp;p_val, const TType &amp;p_src)</argsstring>
+        <name>write</name>
+        <param>
+          <type>TType &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="28" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Value.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Value.hh" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1Atomic_1a54a3a8f1a29283e78a495fdd410fc3c4" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>Atomic</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1adb613d1d33a70c6e17d1896058a110fe" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>dec</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1a2bf93bdc52005c846ac43bb2afcac8f5" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>dec</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1a88c5f887b5d7b70f1da87b393f12bccc" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>inc</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1adf3283f7fc1cf51af28ea2aa5822f272" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>inc</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1aae671ea5da845f914fa554f781744772" prot="private" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1a90c6aa9ad58612b867df2bbdc779ca3b" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>write</name></member>
+      <member refid="classxtd_1_1counters_1_1Atomic_1a53755a00d69b11274593f62737d9a54a" prot="public" virt="non-virtual"><scope>xtd::counters::Atomic</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1param_1_1JsonVisitor" kind="class" language="C++" prot="public">
+    <compoundname>xtd::servers::param::JsonVisitor</compoundname>
+    <basecompoundref refid="classxtd_1_1servers_1_1param_1_1Visitor" prot="public" virt="non-virtual">xtd::servers::param::Visitor</basecompoundref>
+    <includes refid="Visitor_8hh" local="no">Visitor.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a7b50a6b9f1cdd4aa64d86d4aa4aac65b" prot="private" static="no" mutable="no">
+        <type>network::http::Json &amp;</type>
+        <definition>network::http::Json&amp; xtd::servers::param::JsonVisitor::m_tmpl</definition>
+        <argsstring></argsstring>
+        <name>m_tmpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="102" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a87e4c626ded6951d1ee930d25229e8b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::param::JsonVisitor::JsonVisitor</definition>
+        <argsstring>(network::http::Json &amp;p_tmpl)</argsstring>
+        <name>JsonVisitor</name>
+        <param>
+          <type>network::http::Json &amp;</type>
+          <declname>p_tmpl</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_tmpl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Json generator for the serialization </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; bool &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1a3f6a8a3af66864dd78e897146d6cecb5">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; bool &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1813b3c21a65b66ff441f29d0f51ccc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; int &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1a6c6f045ab7e39ae6361992e9c20b2902">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; int &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1f69e5ceb9d95168d4725d3949636682" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; uint8_t &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1a9f900cac80adc8d63d6146335eb79e61">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; uint8_t &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="75" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1af7d283dea375905cd4b93497123c4f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; uint32_t &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1af83042cfb38b409a8c60c6dd74148b55">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; uint32_t &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad69a8bfe2e181bb8eaacfb06d6d1a374" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; uint64_t &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1a527ddbf5eb64338a2550beb51d3db759">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; uint64_t &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="83" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad52e7b15a389386f93c9fa560edb94c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::operator()</definition>
+        <argsstring>(const POD&lt; string &gt; &amp;p_obj)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1servers_1_1param_1_1Visitor_1a4b67adf1da81ad8ab0a20069311f0e02">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; string &gt; &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+<para>Type specific serialization operator (will call write on the right type cf. <ref refid="Visitor_8cc" kindref="compound">Visitor.cc</ref>) operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="87" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::writeExtraInfo</definition>
+        <argsstring>(const string &amp;p_key, const string &amp;p_value)</argsstring>
+        <name>writeExtraInfo</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_key</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+<para>Add Extra information to the Json. </para>        </briefdescription>
+        <detaileddescription>
+<para>Little hack to be able to add some exotic information to the Json</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc" bodystart="22" bodyend="25"/>
+        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">xtd::servers::app::HttpServer::getSnmpPath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a00138c5799a7133455733c35727f2b1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::servers::param::JsonVisitor::write</definition>
+        <argsstring>(const POD&lt; T &gt; &amp;p_val)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>&lt; T &gt; &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="100" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" bodystart="107" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Json specific visitor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>xtd::servers::param::JsonVisitor</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1JsonVisitor"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>xtd::servers::param::Visitor</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1Visitor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="67">
+        <label>xtd::servers::param::JsonVisitor</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1JsonVisitor"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>xtd::servers::param::Visitor</label>
+        <link refid="classxtd_1_1servers_1_1param_1_1Visitor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh" bodystart="50" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a87e4c626ded6951d1ee930d25229e8b4" prot="public" virt="non-virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>JsonVisitor</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a7b50a6b9f1cdd4aa64d86d4aa4aac65b" prot="private" virt="non-virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>m_tmpl</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1813b3c21a65b66ff441f29d0f51ccc3" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1f69e5ceb9d95168d4725d3949636682" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1af7d283dea375905cd4b93497123c4f80" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad69a8bfe2e181bb8eaacfb06d6d1a374" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad52e7b15a389386f93c9fa560edb94c7" prot="public" virt="virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a00138c5799a7133455733c35727f2b1b" prot="private" virt="non-virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>write</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" prot="public" virt="non-virtual"><scope>xtd::servers::param::JsonVisitor</scope><name>writeExtraInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

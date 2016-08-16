@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceboost_1_1property__tree_1_1json__parser" kind="namespace" language="C++">
+    <compoundname>boost::property_tree::json_parser</compoundname>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator" prot="public">boost::property_tree::json_parser::translator</innerclass>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4" prot="public">boost::property_tree::json_parser::translator&lt; bool &gt;</innerclass>
+    <innerclass refid="structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4" prot="public">boost::property_tree::json_parser::translator&lt; std::string &gt;</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::read_json</definition>
+        <argsstring>(std::basic_istream&lt; typename Ptree::key_type::value_type &gt; &amp;stream, Ptree &amp;pt)</argsstring>
+        <name>read_json</name>
+        <param>
+          <type>std::basic_istream&lt; typename Ptree::key_type::value_type &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read JSON from a the given stream and translate it to a property tree. <simplesect kind="note"><para>Clears existing contents of property tree. In case of error the property tree unmodified. </para></simplesect>
+<simplesect kind="note"><para>Items of JSON arrays are translated into ptree keys with empty names. Members of objects are translated into named keys. </para></simplesect>
+<simplesect kind="note"><para>JSON data can be a string, a numeric value, or one of literals &quot;null&quot;, &quot;true&quot; and &quot;false&quot;. During parse, any of the above is copied verbatim into ptree data string. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>json_parser_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In case of error deserializing the property tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream from which to read in the property tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property tree to populate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="98" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="98" bodyend="104"/>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1a49f6a7c920e5ac943603a5f10ccf3a32" compoundref="json__parser_8hpp" startline="174" endline="186">write_json</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1aa8344dc0b7987cba89b0630195d7a34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::read_json</definition>
+        <argsstring>(const std::string &amp;filename, Ptree &amp;pt, const std::locale &amp;loc=std::locale())</argsstring>
+        <name>read_json</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+          <defval>std::locale()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read JSON from a the given file and translate it to a property tree. <simplesect kind="note"><para>Clears existing contents of property tree. In case of error the property tree unmodified. </para></simplesect>
+<simplesect kind="note"><para>Items of JSON arrays are translated into ptree keys with empty names. Members of objects are translated into named keys. </para></simplesect>
+<simplesect kind="note"><para>JSON data can be a string, a numeric value, or one of literals &quot;null&quot;, &quot;true&quot; and &quot;false&quot;. During parse, any of the above is copied verbatim into ptree data string. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>json_parser_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In case of error deserializing the property tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file from which to read in the property tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property tree to populate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The locale to use when reading in the file contents. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="122" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::write_json</definition>
+        <argsstring>(std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;stream, const Ptree &amp;pt, bool pretty=true)</argsstring>
+        <name>write_json</name>
+        <param>
+          <type>std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pretty</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Translates the property tree to JSON and writes it the given output stream. <simplesect kind="note"><para>Any property tree key containing only unnamed subkeys will be rendered as JSON arrays. </para></simplesect>
+<simplesect kind="pre"><para><emphasis>pt</emphasis> cannot contain keys that have both subkeys and non-empty data. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>json_parser_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In case of error translating the property tree to JSON or writing to the output stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream to which to write the JSON representation of the property tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property tree to tranlsate to JSON and output. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pretty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to pretty-print. Defaults to true for backward compatibility. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="150" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="150" bodyend="157"/>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" compoundref="json__parser__write_8hpp" startline="165" endline="176">write_json_internal</references>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1a49f6a7c920e5ac943603a5f10ccf3a32" compoundref="json__parser_8hpp" startline="174" endline="186">write_json</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1a49f6a7c920e5ac943603a5f10ccf3a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::write_json</definition>
+        <argsstring>(const std::string &amp;filename, const Ptree &amp;pt, const std::locale &amp;loc=std::locale(), bool pretty=true)</argsstring>
+        <name>write_json</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+          <defval>std::locale()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pretty</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Translates the property tree to JSON and writes it the given file. <simplesect kind="note"><para>Any property tree key containing only unnamed subkeys will be rendered as JSON arrays. </para></simplesect>
+<simplesect kind="pre"><para><emphasis>pt</emphasis> cannot contain keys that have both subkeys and non-empty data. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>json_parser_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In case of error translating the property tree to JSON or writing to the file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file to which to write the JSON representation of the property tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property tree to translate to JSON and output. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The locale to use when writing out to the output file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pretty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to pretty-print. Defaults to true and last place for backward compatibility. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="174" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="174" bodyend="186"/>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" compoundref="json__parser__write_8hpp" startline="165" endline="176">write_json_internal</references>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" compoundref="json__parser_8hpp" startline="98" endline="104">read_json</references>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" compoundref="json__parser_8hpp" startline="150" endline="157">write_json</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1a747e92e137769eb6b27edb76d613f37a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ch</type>
+          </param>
+        </templateparamlist>
+        <type>std::basic_string&lt; Ch &gt;</type>
+        <definition>std::basic_string&lt;Ch&gt; boost::property_tree::json_parser::create_escapes</definition>
+        <argsstring>(const std::basic_string&lt; Ch &gt; &amp;s)</argsstring>
+        <name>create_escapes</name>
+        <param>
+          <type>const std::basic_string&lt; Ch &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" line="25" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" bodystart="25" bodyend="73"/>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1a133973ddea67e6d77424312cd297b332" compoundref="json__parser__write_8hpp" startline="76" endline="134">write_json_helper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1a133973ddea67e6d77424312cd297b332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::write_json_helper</definition>
+        <argsstring>(std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;stream, const Ptree &amp;pt, int indent, bool pretty)</argsstring>
+        <name>write_json_helper</name>
+        <param>
+          <type>std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pretty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" line="76" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" bodystart="76" bodyend="134"/>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1a747e92e137769eb6b27edb76d613f37a" compoundref="json__parser__write_8hpp" startline="25" endline="73">create_escapes</references>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" compoundref="json__parser__write_8hpp" startline="165" endline="176">write_json_internal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1ad1f43753e8e91845fdb1177c1aa0c465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool boost::property_tree::json_parser::verify_json</definition>
+        <argsstring>(const Ptree &amp;pt, int depth)</argsstring>
+        <name>verify_json</name>
+        <param>
+          <type>const Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" line="138" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" bodystart="138" bodyend="161"/>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" compoundref="json__parser__write_8hpp" startline="165" endline="176">write_json_internal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1property__tree_1_1json__parser_1af1059520397d396ae91e776391a2f32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Ptree</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::property_tree::json_parser::write_json_internal</definition>
+        <argsstring>(std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;stream, const Ptree &amp;pt, const std::string &amp;filename, bool pretty)</argsstring>
+        <name>write_json_internal</name>
+        <param>
+          <type>std::basic_ostream&lt; typename Ptree::key_type::value_type &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const Ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pretty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" line="165" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp" bodystart="165" bodyend="176"/>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1ad1f43753e8e91845fdb1177c1aa0c465" compoundref="json__parser__write_8hpp" startline="138" endline="161">verify_json</references>
+        <references refid="namespaceboost_1_1property__tree_1_1json__parser_1a133973ddea67e6d77424312cd297b332" compoundref="json__parser__write_8hpp" startline="76" endline="134">write_json_helper</references>
+        <referencedby refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" compoundref="json__parser_8hpp" startline="150" endline="157">write_json</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="48" column="1"/>
+  </compounddef>
+</doxygen>

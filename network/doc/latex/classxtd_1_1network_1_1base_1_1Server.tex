@@ -1,0 +1,534 @@
+\hypertarget{classxtd_1_1network_1_1base_1_1Server}{}\section{xtd\+:\+:network\+:\+:base\+:\+:Server$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1base_1_1Server}\index{xtd\+::network\+::base\+::\+Server$<$ Domain $>$@{xtd\+::network\+::base\+::\+Server$<$ Domain $>$}}
+
+
+{\ttfamily \#include $<$Server.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:base\+:\+:Server$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classxtd_1_1network_1_1base_1_1Server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:base\+:\+:Server$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1base_1_1Server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1base_1_1Server_a3f29ba7011873a7048d944087279fd21}{Server} (void)
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1base_1_1Server_ab17ca2e2332664f4cb83e89d027976d9}{$\sim$\+Server} (void)
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a97d54b5ded7a8b02333347a5ffbbd347}{initialize} (const string \&p\+\_\+host, const uint32\+\_\+t p\+\_\+port, const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+configuration, const size\+\_\+t p\+\_\+nb\+Thread)
+\begin{DoxyCompactList}\small\item\em Initialize server with params. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a30e423831ba183c16425422f07f207c5}{run} (void)
+\begin{DoxyCompactList}\small\item\em Equivalent a start + join. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Server_aabee855541e60adeb2115856d123637b}{join} (void)
+\begin{DoxyCompactList}\small\item\em attendre jusqu\textquotesingle{}a la fin des threads \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_ae9d5a1070819996c244003adc92a35ee}{start} (void)
+\begin{DoxyCompactList}\small\item\em Demarrer les threads et l\textquotesingle{}ecoute de nouvelle connexions. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a0746f85458e7eff28cfe6e156ad99402}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Annule tout les operations en cours et coupe les threads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{Connection}$<$ Domain $>$ $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} \hyperlink{classxtd_1_1network_1_1base_1_1Server_a4ab9c2f5d30622f1ca4166c7126a16f5}{create\+Cnx} (string p\+\_\+hostname, uint32\+\_\+t p\+\_\+port)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a872b44334ff62df80a5a19502ca867b2}{after\+Accept} (\hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a64224be1bf7d053bfbbbaf5c6be00f31}{after\+Send} (\hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a29450e21c9aba7147eb26ac9563efd01}{after\+Receive} (\hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn, \hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{utils\+::shared\+Buf\+\_\+t} p\+\_\+in\+Buffer)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a5fb03fd67e85a6315c0b591f12feaaeb}{on\+Receive\+Error} (const boost\+::system\+::error\+\_\+code p\+\_\+error, \hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn)
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a2692cfb3f754e05b032564a289ea361c}{on\+Receive\+Timeout} (const boost\+::system\+::error\+\_\+code p\+\_\+error, \hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn)
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Server_a5852cbdc5fa348c25797962a69d6b115}{do\+\_\+receive} (\hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn)
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Server_aa633c11edb82dcfc0b3804f4d57cdc5c}{do\+\_\+send} (\hyperlink{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{cnx\+\_\+sptr\+\_\+t} p\+\_\+conn, const \hyperlink{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{utils\+::vector\+Bytes\+\_\+t} \&p\+\_\+out\+Data)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_afdbfe06eac7640eed92c86ea38c089d2}{get\+Nb\+Current\+Thread} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a2f1c82fa4d94a0868ab1a9b957b0e1ed}{get\+Receive\+Total} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a798d800b0cda41fb3d6bc9be0cb07036}{get\+Receive\+Error} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a897bb823741706c6f3f91aef601ab3d9}{get\+Receive\+Timeout} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_ae2e9b2858e9a7f142f98fcc4299b2a4a}{get\+Receive\+Success} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a48e49f13ebcc958cb05737af08c761fc}{get\+Received\+Last\+Time} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a4b5d9bb1401c63af63598ab987dc1ea1}{get\+Send\+Total} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_ad225f1e73ec0fc1ba2a54e3363881aa4}{get\+Send\+Success} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_adeb8afa131ea136a61297f6d6e7af96a}{get\+Send\+Error} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_af7fb5d4acd247d070d7330686d2d0717}{get\+Send\+Timeout} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_aaed2e2436b27ebb7609c66e1002a8c56}{get\+Cnx\+Total} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a3025e5dd8f30f36ebe52568d5c45966b}{get\+Cnx\+Accepted} (void)
+\item 
+uint32\+\_\+t \& \hyperlink{classxtd_1_1network_1_1base_1_1Server_a07a3891c57d59f642d491e1d30e3eaa1}{get\+Cnx\+Rejected} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \hyperlink{classxtd_1_1network_1_1base_1_1Server_a5465aab6a4cbdaa664eeaf9eef6da5ac}{m\+\_\+conf}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1deque__id}{utils\+::deque\+\_\+id}$<$ uint32\+\_\+t $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Server_a5092eab162e1e793aaeac42368c5c06f}{m\+\_\+deque\+Id}
+\item 
+\hyperlink{namespacextd_1_1network_1_1utils_a67dfba91438896976d636d5aea36c848}{utils\+::io\+Service\+Ptr\+\_\+t} \hyperlink{classxtd_1_1network_1_1base_1_1Server_a2b67486dfc934466300fa48295f94b46}{m\+\_\+io\+Service}
+\item 
+\hyperlink{namespacextd_1_1network_1_1utils_a9e0bae7b0da2b42ca8930a927f3a7c4d}{utils\+::work\+Ptr\+\_\+t} \hyperlink{classxtd_1_1network_1_1base_1_1Server_ad762843698e4e7b4e70974c2daab0932}{m\+\_\+work}
+\item 
+boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::basic\+\_\+socket\+\_\+acceptor$<$ Domain $>$ $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Server_a03e4c0a664c471e756217b20b2209980}{m\+\_\+acceptor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain$>$\\*
+class xtd\+::network\+::base\+::\+Server$<$ Domain $>$}
+
+
+\begin{DoxyEnumerate}
+\item S\textquotesingle{}occupe de maintenir un identifiant de traitement (process\+ID) croissant et contigue. Cet identifiant permettera au metier d\textquotesingle{}organiser ses ressources pour le travaille en parallele. Exemple \+: le metier instancier un tableau d\textquotesingle{}objet non thread-\/safe et utilise le process\+ID comme index d\textquotesingle{}acces a sa resource.
+\item Cette classe ne derive pas de enable\+\_\+shared\+\_\+from\+\_\+this car elle est destinee a etre utilisee avec une \char`\"{}xtd\+::\+Application\char`\"{} ce qui garantie la duree de vie de l\textquotesingle{}objet 
+\end{DoxyEnumerate}
+
+Definition at line 30 of file Server.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!cnx\+\_\+sptr\+\_\+t@{cnx\+\_\+sptr\+\_\+t}}
+\index{cnx\+\_\+sptr\+\_\+t@{cnx\+\_\+sptr\+\_\+t}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{cnx\+\_\+sptr\+\_\+t}{cnx_sptr_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ typedef boost\+::shared\+\_\+ptr$<${\bf Connection}$<$Domain$>$ $>$ {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::{\bf cnx\+\_\+sptr\+\_\+t}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}{}\label{classxtd_1_1network_1_1base_1_1Server_aea8c26b2edf1f6c8802db01b3c6b6036}
+
+
+Definition at line 33 of file Server.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!Server@{Server}}
+\index{Server@{Server}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{Server(void)}{Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::{\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a3f29ba7011873a7048d944087279fd21}{}\label{classxtd_1_1network_1_1base_1_1Server_a3f29ba7011873a7048d944087279fd21}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!````~Server@{$\sim$\+Server}}
+\index{````~Server@{$\sim$\+Server}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{$\sim$\+Server(void)}{~Server(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::$\sim${\bf Server} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_ab17ca2e2332664f4cb83e89d027976d9}{}\label{classxtd_1_1network_1_1base_1_1Server_ab17ca2e2332664f4cb83e89d027976d9}
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1http_1_1Server_a85da5acf9ddab934f5cddb330eae9f99}{xtd\+::network\+::http\+::\+Server$<$ Domain $>$}, and \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a9731cfd5eda9f51604b9b0195acfb208}{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!after\+Accept@{after\+Accept}}
+\index{after\+Accept@{after\+Accept}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{after\+Accept(cnx\+\_\+sptr\+\_\+t p\+\_\+conn)=0}{afterAccept(cnx_sptr_t p_conn)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::after\+Accept (
+\begin{DoxyParamCaption}
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a872b44334ff62df80a5a19502ca867b2}{}\label{classxtd_1_1network_1_1base_1_1Server_a872b44334ff62df80a5a19502ca867b2}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!after\+Receive@{after\+Receive}}
+\index{after\+Receive@{after\+Receive}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{after\+Receive(cnx\+\_\+sptr\+\_\+t p\+\_\+conn, utils\+::shared\+Buf\+\_\+t p\+\_\+in\+Buffer)=0}{afterReceive(cnx_sptr_t p_conn, utils::sharedBuf_t p_inBuffer)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::after\+Receive (
+\begin{DoxyParamCaption}
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn, }
+\item[{{\bf utils\+::shared\+Buf\+\_\+t}}]{p\+\_\+in\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a29450e21c9aba7147eb26ac9563efd01}{}\label{classxtd_1_1network_1_1base_1_1Server_a29450e21c9aba7147eb26ac9563efd01}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!after\+Send@{after\+Send}}
+\index{after\+Send@{after\+Send}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{after\+Send(cnx\+\_\+sptr\+\_\+t p\+\_\+conn)=0}{afterSend(cnx_sptr_t p_conn)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::after\+Send (
+\begin{DoxyParamCaption}
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a64224be1bf7d053bfbbbaf5c6be00f31}{}\label{classxtd_1_1network_1_1base_1_1Server_a64224be1bf7d053bfbbbaf5c6be00f31}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!create\+Cnx@{create\+Cnx}}
+\index{create\+Cnx@{create\+Cnx}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{create\+Cnx(string p\+\_\+hostname, uint32\+\_\+t p\+\_\+port)=0}{createCnx(string p_hostname, uint32_t p_port)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual {\bf cnx\+\_\+sptr\+\_\+t} {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::create\+Cnx (
+\begin{DoxyParamCaption}
+\item[{string}]{p\+\_\+hostname, }
+\item[{uint32\+\_\+t}]{p\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a4ab9c2f5d30622f1ca4166c7126a16f5}{}\label{classxtd_1_1network_1_1base_1_1Server_a4ab9c2f5d30622f1ca4166c7126a16f5}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!do\+\_\+receive@{do\+\_\+receive}}
+\index{do\+\_\+receive@{do\+\_\+receive}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{do\+\_\+receive(cnx\+\_\+sptr\+\_\+t p\+\_\+conn)}{do_receive(cnx_sptr_t p_conn)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::do\+\_\+receive (
+\begin{DoxyParamCaption}
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a5852cbdc5fa348c25797962a69d6b115}{}\label{classxtd_1_1network_1_1base_1_1Server_a5852cbdc5fa348c25797962a69d6b115}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!do\+\_\+send@{do\+\_\+send}}
+\index{do\+\_\+send@{do\+\_\+send}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{do\+\_\+send(cnx\+\_\+sptr\+\_\+t p\+\_\+conn, const utils\+::vector\+Bytes\+\_\+t \&p\+\_\+out\+Data)}{do_send(cnx_sptr_t p_conn, const utils::vectorBytes_t &p_outData)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::do\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn, }
+\item[{const {\bf utils\+::vector\+Bytes\+\_\+t} \&}]{p\+\_\+out\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_aa633c11edb82dcfc0b3804f4d57cdc5c}{}\label{classxtd_1_1network_1_1base_1_1Server_aa633c11edb82dcfc0b3804f4d57cdc5c}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Cnx\+Accepted@{get\+Cnx\+Accepted}}
+\index{get\+Cnx\+Accepted@{get\+Cnx\+Accepted}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Cnx\+Accepted(void)}{getCnxAccepted(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Cnx\+Accepted (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a3025e5dd8f30f36ebe52568d5c45966b}{}\label{classxtd_1_1network_1_1base_1_1Server_a3025e5dd8f30f36ebe52568d5c45966b}
+
+
+Definition at line 168 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+168 \{ \textcolor{keywordflow}{return} m\_cnxAccepted;      \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Cnx\+Rejected@{get\+Cnx\+Rejected}}
+\index{get\+Cnx\+Rejected@{get\+Cnx\+Rejected}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Cnx\+Rejected(void)}{getCnxRejected(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Cnx\+Rejected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a07a3891c57d59f642d491e1d30e3eaa1}{}\label{classxtd_1_1network_1_1base_1_1Server_a07a3891c57d59f642d491e1d30e3eaa1}
+
+
+Definition at line 169 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+169 \{ \textcolor{keywordflow}{return} m\_cnxRejected;      \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Cnx\+Total@{get\+Cnx\+Total}}
+\index{get\+Cnx\+Total@{get\+Cnx\+Total}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Cnx\+Total(void)}{getCnxTotal(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Cnx\+Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_aaed2e2436b27ebb7609c66e1002a8c56}{}\label{classxtd_1_1network_1_1base_1_1Server_aaed2e2436b27ebb7609c66e1002a8c56}
+
+
+Definition at line 167 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+167 \{ \textcolor{keywordflow}{return} m\_cnxTotal;         \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Nb\+Current\+Thread@{get\+Nb\+Current\+Thread}}
+\index{get\+Nb\+Current\+Thread@{get\+Nb\+Current\+Thread}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Nb\+Current\+Thread(void)}{getNbCurrentThread(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Nb\+Current\+Thread (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_afdbfe06eac7640eed92c86ea38c089d2}{}\label{classxtd_1_1network_1_1base_1_1Server_afdbfe06eac7640eed92c86ea38c089d2}
+
+
+Definition at line 157 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+157 \{ \textcolor{keywordflow}{return} m\_nbCurrentThread;  \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Received\+Last\+Time@{get\+Received\+Last\+Time}}
+\index{get\+Received\+Last\+Time@{get\+Received\+Last\+Time}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Received\+Last\+Time(void)}{getReceivedLastTime(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Received\+Last\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a48e49f13ebcc958cb05737af08c761fc}{}\label{classxtd_1_1network_1_1base_1_1Server_a48e49f13ebcc958cb05737af08c761fc}
+
+
+Definition at line 162 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+162 \{ \textcolor{keywordflow}{return} m\_receivedLastTime; \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Receive\+Error@{get\+Receive\+Error}}
+\index{get\+Receive\+Error@{get\+Receive\+Error}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Error(void)}{getReceiveError(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Receive\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a798d800b0cda41fb3d6bc9be0cb07036}{}\label{classxtd_1_1network_1_1base_1_1Server_a798d800b0cda41fb3d6bc9be0cb07036}
+
+
+Definition at line 159 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+159 \{ \textcolor{keywordflow}{return} m\_receiveError;     \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Receive\+Success@{get\+Receive\+Success}}
+\index{get\+Receive\+Success@{get\+Receive\+Success}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Success(void)}{getReceiveSuccess(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Receive\+Success (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_ae2e9b2858e9a7f142f98fcc4299b2a4a}{}\label{classxtd_1_1network_1_1base_1_1Server_ae2e9b2858e9a7f142f98fcc4299b2a4a}
+
+
+Definition at line 161 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+161 \{ \textcolor{keywordflow}{return} m\_receiveSuccess;   \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Receive\+Timeout@{get\+Receive\+Timeout}}
+\index{get\+Receive\+Timeout@{get\+Receive\+Timeout}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Timeout(void)}{getReceiveTimeout(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Receive\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a897bb823741706c6f3f91aef601ab3d9}{}\label{classxtd_1_1network_1_1base_1_1Server_a897bb823741706c6f3f91aef601ab3d9}
+
+
+Definition at line 160 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+160 \{ \textcolor{keywordflow}{return} m\_receiveTimeout;   \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Receive\+Total@{get\+Receive\+Total}}
+\index{get\+Receive\+Total@{get\+Receive\+Total}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Total(void)}{getReceiveTotal(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Receive\+Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a2f1c82fa4d94a0868ab1a9b957b0e1ed}{}\label{classxtd_1_1network_1_1base_1_1Server_a2f1c82fa4d94a0868ab1a9b957b0e1ed}
+
+
+Definition at line 158 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+158 \{ \textcolor{keywordflow}{return} m\_receiveTotal;     \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Send\+Error@{get\+Send\+Error}}
+\index{get\+Send\+Error@{get\+Send\+Error}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Send\+Error(void)}{getSendError(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Send\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_adeb8afa131ea136a61297f6d6e7af96a}{}\label{classxtd_1_1network_1_1base_1_1Server_adeb8afa131ea136a61297f6d6e7af96a}
+
+
+Definition at line 165 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+165 \{ \textcolor{keywordflow}{return} m\_sendError;        \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Send\+Success@{get\+Send\+Success}}
+\index{get\+Send\+Success@{get\+Send\+Success}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Send\+Success(void)}{getSendSuccess(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Send\+Success (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_ad225f1e73ec0fc1ba2a54e3363881aa4}{}\label{classxtd_1_1network_1_1base_1_1Server_ad225f1e73ec0fc1ba2a54e3363881aa4}
+
+
+Definition at line 164 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+164 \{ \textcolor{keywordflow}{return} m\_sendSuccess;      \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Send\+Timeout@{get\+Send\+Timeout}}
+\index{get\+Send\+Timeout@{get\+Send\+Timeout}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Send\+Timeout(void)}{getSendTimeout(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Send\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_af7fb5d4acd247d070d7330686d2d0717}{}\label{classxtd_1_1network_1_1base_1_1Server_af7fb5d4acd247d070d7330686d2d0717}
+
+
+Definition at line 166 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+166 \{ \textcolor{keywordflow}{return} m\_sendTimeout;      \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!get\+Send\+Total@{get\+Send\+Total}}
+\index{get\+Send\+Total@{get\+Send\+Total}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{get\+Send\+Total(void)}{getSendTotal(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t \& {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::get\+Send\+Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a4b5d9bb1401c63af63598ab987dc1ea1}{}\label{classxtd_1_1network_1_1base_1_1Server_a4b5d9bb1401c63af63598ab987dc1ea1}
+
+
+Definition at line 163 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+163 \{ \textcolor{keywordflow}{return} m\_sendTotal;        \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{initialize(const string \&p\+\_\+host, const uint32\+\_\+t p\+\_\+port, const utils\+::\+Config \&p\+\_\+configuration, const size\+\_\+t p\+\_\+nb\+Thread)}{initialize(const string &p_host, const uint32_t p_port, const utils::Config &p_configuration, const size_t p_nbThread)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+host, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port, }
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+configuration, }
+\item[{const size\+\_\+t}]{p\+\_\+nb\+Thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a97d54b5ded7a8b02333347a5ffbbd347}{}\label{classxtd_1_1network_1_1base_1_1Server_a97d54b5ded7a8b02333347a5ffbbd347}
+
+
+Initialize server with params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+host} & \+: string hostname \\
+\hline
+{\em p\+\_\+port} & \+: uint32\+\_\+t port \\
+\hline
+{\em p\+\_\+configuration} & \+: low level network configuration params \\
+\hline
+{\em p\+\_\+nb\+Thread} & \+: number of threads \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a3ba1e98abbe7516f5ec02b2ac9031e3c}{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!join@{join}}
+\index{join@{join}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{join(void)}{join(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::join (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Server_aabee855541e60adeb2115856d123637b}{}\label{classxtd_1_1network_1_1base_1_1Server_aabee855541e60adeb2115856d123637b}
+
+
+attendre jusqu\textquotesingle{}a la fin des threads 
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!on\+Receive\+Error@{on\+Receive\+Error}}
+\index{on\+Receive\+Error@{on\+Receive\+Error}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{on\+Receive\+Error(const boost\+::system\+::error\+\_\+code p\+\_\+error, cnx\+\_\+sptr\+\_\+t p\+\_\+conn)}{onReceiveError(const boost::system::error_code p_error, cnx_sptr_t p_conn)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::on\+Receive\+Error (
+\begin{DoxyParamCaption}
+\item[{const boost\+::system\+::error\+\_\+code}]{p\+\_\+error, }
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a5fb03fd67e85a6315c0b591f12feaaeb}{}\label{classxtd_1_1network_1_1base_1_1Server_a5fb03fd67e85a6315c0b591f12feaaeb}
+Est appelé lorsqu\textquotesingle{}une erreur de receive est détectée. Par défault, cela provoque un L\+O\+G\+\_\+\+E\+RR et l\textquotesingle{}incrément du compteur d\textquotesingle{}erreur. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les erreur à reporter. \index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!on\+Receive\+Timeout@{on\+Receive\+Timeout}}
+\index{on\+Receive\+Timeout@{on\+Receive\+Timeout}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{on\+Receive\+Timeout(const boost\+::system\+::error\+\_\+code p\+\_\+error, cnx\+\_\+sptr\+\_\+t p\+\_\+conn)}{onReceiveTimeout(const boost::system::error_code p_error, cnx_sptr_t p_conn)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::on\+Receive\+Timeout (
+\begin{DoxyParamCaption}
+\item[{const boost\+::system\+::error\+\_\+code}]{p\+\_\+error, }
+\item[{{\bf cnx\+\_\+sptr\+\_\+t}}]{p\+\_\+conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a2692cfb3f754e05b032564a289ea361c}{}\label{classxtd_1_1network_1_1base_1_1Server_a2692cfb3f754e05b032564a289ea361c}
+Est appelé lorsqu\textquotesingle{}un timeout de receive est détecté. Par défault, cela provoque un L\+O\+G\+\_\+\+E\+RR et l\textquotesingle{}incrément du compteur de timeout. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les timeout à reporter. \index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!run@{run}}
+\index{run@{run}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{run(void)}{run(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a30e423831ba183c16425422f07f207c5}{}\label{classxtd_1_1network_1_1base_1_1Server_a30e423831ba183c16425422f07f207c5}
+
+
+Equivalent a start + join. 
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!start@{start}}
+\index{start@{start}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{start(void)}{start(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_ae9d5a1070819996c244003adc92a35ee}{}\label{classxtd_1_1network_1_1base_1_1Server_ae9d5a1070819996c244003adc92a35ee}
+
+
+Demarrer les threads et l\textquotesingle{}ecoute de nouvelle connexions. 
+
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1http_1_1Server_a8f2c0ce0dd0d150d74d3cfd89edb9332}{xtd\+::network\+::http\+::\+Server$<$ Domain $>$}, and \hyperlink{classxtd_1_1network_1_1bip_1_1Server_aaa19f560d98c05518caa68bf94c36b91}{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!stop@{stop}}
+\index{stop@{stop}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{stop(void)}{stop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a0746f85458e7eff28cfe6e156ad99402}{}\label{classxtd_1_1network_1_1base_1_1Server_a0746f85458e7eff28cfe6e156ad99402}
+
+
+Annule tout les operations en cours et coupe les threads. 
+
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1http_1_1Server_a8683467193d33cef96950fad43b8f47c}{xtd\+::network\+::http\+::\+Server$<$ Domain $>$}, and \hyperlink{classxtd_1_1network_1_1bip_1_1Server_a12041b5218057930724c15e83c478c50}{xtd\+::network\+::bip\+::\+Server$<$ T\+Req, T\+Res, Domain $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!m\+\_\+acceptor@{m\+\_\+acceptor}}
+\index{m\+\_\+acceptor@{m\+\_\+acceptor}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+acceptor}{m_acceptor}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ boost\+::shared\+\_\+ptr$<$boost\+::asio\+::basic\+\_\+socket\+\_\+acceptor$<$Domain$>$ $>$ {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::m\+\_\+acceptor\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a03e4c0a664c471e756217b20b2209980}{}\label{classxtd_1_1network_1_1base_1_1Server_a03e4c0a664c471e756217b20b2209980}
+
+
+Definition at line 134 of file Server.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!m\+\_\+conf@{m\+\_\+conf}}
+\index{m\+\_\+conf@{m\+\_\+conf}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+conf}{m_conf}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf utils\+::\+Config} {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::m\+\_\+conf\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a5465aab6a4cbdaa664eeaf9eef6da5ac}{}\label{classxtd_1_1network_1_1base_1_1Server_a5465aab6a4cbdaa664eeaf9eef6da5ac}
+
+
+Definition at line 130 of file Server.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!m\+\_\+deque\+Id@{m\+\_\+deque\+Id}}
+\index{m\+\_\+deque\+Id@{m\+\_\+deque\+Id}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+deque\+Id}{m_dequeId}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf utils\+::deque\+\_\+id}$<$uint32\+\_\+t$>$ {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::m\+\_\+deque\+Id\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a5092eab162e1e793aaeac42368c5c06f}{}\label{classxtd_1_1network_1_1base_1_1Server_a5092eab162e1e793aaeac42368c5c06f}
+
+
+Definition at line 131 of file Server.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!m\+\_\+io\+Service@{m\+\_\+io\+Service}}
+\index{m\+\_\+io\+Service@{m\+\_\+io\+Service}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+io\+Service}{m_ioService}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf utils\+::io\+Service\+Ptr\+\_\+t} {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::m\+\_\+io\+Service\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_a2b67486dfc934466300fa48295f94b46}{}\label{classxtd_1_1network_1_1base_1_1Server_a2b67486dfc934466300fa48295f94b46}
+
+
+Definition at line 132 of file Server.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}!m\+\_\+work@{m\+\_\+work}}
+\index{m\+\_\+work@{m\+\_\+work}!xtd\+::network\+::base\+::\+Server@{xtd\+::network\+::base\+::\+Server}}
+\subsubsection[{\texorpdfstring{m\+\_\+work}{m_work}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf utils\+::work\+Ptr\+\_\+t} {\bf xtd\+::network\+::base\+::\+Server}$<$ Domain $>$\+::m\+\_\+work\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Server_ad762843698e4e7b4e70974c2daab0932}{}\label{classxtd_1_1network_1_1base_1_1Server_ad762843698e4e7b4e70974c2daab0932}
+
+
+Definition at line 133 of file Server.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/base/\hyperlink{base_2Server_8hh}{Server.\+hh}\end{DoxyCompactItemize}

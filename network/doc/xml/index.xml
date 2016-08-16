@@ -1,0 +1,921 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classxtd_1_1network_1_1utils_1_1CacheDns" kind="class"><name>xtd::network::utils::CacheDns</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a21980a7caa7a39c0074527a3fa51e419" kind="variable"><name>m_cacheList</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1af642be7c2608a8b356c15b8ed256bf40" kind="variable"><name>m_cacheMap</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a513ed6b8964ba3e897be41a9c90d236e" kind="variable"><name>m_entries</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a8bd61c0ab154a3dc75f07eec981bb414" kind="variable"><name>m_maxEntries</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a24d3cb15f7efc4cb64ad7c169876ef5b" kind="variable"><name>m_ttl</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1ac74635760f1d9fb738d940e3dc723476" kind="function"><name>CacheDns</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1ab409d08cb0159d6250db8d1d05c6617b" kind="function"><name>popElem</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a1ac8401e5827dbfbc39a909c2cf7afdf" kind="function"><name>pushElem</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a05377d5ccc35a6ba0f6e7124c891be37" kind="function"><name>size</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1aadc86657346b373e86a8884fdfc01c0f" kind="function"><name>createTimeStamp</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a3978b842159543fdfa4e5c3198ab36e4" kind="function"><name>checkUpdateStamp</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a884f358824d0c997563b3e81961af735" kind="function"><name>moveElementFrontLst</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a7c874bc023171af08c044ec8d28838a3" kind="function"><name>checkAndResize</name></member>
+  </compound>
+  <compound refid="structxtd_1_1network_1_1utils_1_1CacheEntry" kind="struct"><name>xtd::network::utils::CacheEntry</name>
+    <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" kind="variable"><name>m_value</name></member>
+    <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" kind="variable"><name>m_stamp</name></member>
+    <member refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1acaf6749bc9eb587ffe1181dd4d7306b5" kind="function"><name>CacheEntry</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1base_1_1Client" kind="class"><name>xtd::network::base::Client</name>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a3cef8310676dac754d630bcc1628ab56" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ae56a97da02a89fe6b886ab16d15ee569" kind="variable"><name>m_threadManager</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a4b84a532913d6e9892f8ddc68c3bc236" kind="variable"><name>m_resolver</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a5240ee7a1fcd8a0902eeabeab989f00f" kind="variable"><name>m_hostname</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a8c325f0c7c86b577ea8c7d99e2a00866" kind="variable"><name>m_port</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ac8c2c7fb5f5f59496f4c78b4efe76591" kind="variable"><name>m_semaphoreConnect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a5ef2f1606d54d1dc4d7571df2a7f7515" kind="variable"><name>m_cnxTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a9cdff5c81657f45c53764b21fe07950e" kind="variable"><name>m_cnxSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ae588ffd3e8ca89dc74baf3d7ada04ee6" kind="variable"><name>m_cnxTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a17862f747d4a05b290a807968c85d57c" kind="variable"><name>m_cnxError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" kind="variable"><name>m_conf</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ae3945e4771a207872ab45b73de2e040f" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" kind="variable"><name>m_connection</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a99e6d675c7617cd6d8e94793d8af4871" kind="variable"><name>m_connectStatus</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a7afc6ed48caf877014df0a3128d6ed05" kind="function"><name>Client</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ad7964979939106d0c496c4f78a834b0d" kind="function"><name>createCnx</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a05ea029f4bfed5d9581ebc606e198336" kind="function"><name>onConnected</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a890cd6837ad0ccd2bf928f171e7696d0" kind="function"><name>~Client</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1abf9740f4b9eed341858ad27018cc4469" kind="function"><name>connect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ac7427711e506f5958f80a89028f3f923" kind="function"><name>async_connect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1ada6c4a1254620f7f5d83d3c890748300" kind="function"><name>wait_async_connect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a268f40287ee277801cad202fa1380970" kind="function"><name>reconnect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a520d6aebfcf0e0892515bc0fec3a37c7" kind="function"><name>close</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1abff34ffec3663d843d97f42a7ce73d2f" kind="function"><name>getCnxTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a1d72f9e19322a7c2d533422c4f9e9777" kind="function"><name>getCnxSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1aa585da9396b4067ac2535cdc4c1acbbb" kind="function"><name>getCnxTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Client_1a3023500754c12ccfdd200706d9995fd7" kind="function"><name>getCnxError</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1bip_1_1Client" kind="class"><name>xtd::network::bip::Client</name>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdc" kind="enum"><name>cnxstatus</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb" kind="enumvalue"><name>available</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072" kind="enumvalue"><name>reserved</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca789183b7e98646c11d5f0544c8f3c4c9" kind="enumvalue"><name>sent</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498" kind="enumvalue"><name>received</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcacb5e100e5a9a3e7f6d1fd97512215282" kind="enumvalue"><name>error</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca90272dda245ae1fb3cf197e91a8689dc" kind="enumvalue"><name>timeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a684e9805457e5e4cfda0b8bce4409d3c" kind="typedef"><name>TBase</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1aa7faac9a3c9a0f0eb53321c8c7df9d98" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a4fd207d42e4738c5aa2f6ca947067be4" kind="typedef"><name>TReq</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a1fc57254a811008a795987c49c222e77" kind="typedef"><name>TRes</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad9d6da7482bd22a3e2eadbfaffe3e77c" kind="variable"><name>m_userSemaphore</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a8be16f1921257fd8794321735e3e798d" kind="variable"><name>m_status</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a3b76131e7d3737efac6eeb14d8db164b" kind="variable"><name>m_response</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a22b13e92b0a5b58a9a1ece1531a8dfeb" kind="variable"><name>m_lastSend</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a658bca55f210342896a0d271e4c4f683" kind="variable"><name>m_sendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ae6b4f7f763bd968b35843a9ed9affd88" kind="variable"><name>m_sendError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1aae185aa3a352ec920b89ac4077576eb6" kind="variable"><name>m_sendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1abcbb7a2fb310294186a48ae769e4b59c" kind="variable"><name>m_sendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a9d9e6b29b6bd75efbff4b9c0e3d848d1" kind="variable"><name>m_receiveTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1aa6918b71230f0c46ffca33da3aa3de87" kind="variable"><name>m_receiveError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a2fa9179430d947c2c848019dd877105e" kind="variable"><name>m_receiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a5b95c294332b6f6ab397e1923a7b6202" kind="variable"><name>m_receiveSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1aedf2347add535389919dd27f445f6275" kind="variable"><name>m_lastRTTMs</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a49c9e08bee4169c40c92d9870d882295" kind="function"><name>Client</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ac16a5d30bae2e5ac5ae616034943d219" kind="function"><name>~Client</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad9097285a9937b9b16922ea3f5154cd2" kind="function"><name>getSendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ae0112d61b8a18823bffb8c7b3bde9b4d" kind="function"><name>getSendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ad7b29723945a80df67837c41b4570272" kind="function"><name>getSendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1afa332d8733f5a96b85546de8dc37dffc" kind="function"><name>getSendError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1af8c4e73103c9e483f78c9b62496daf47" kind="function"><name>getReceiveTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a7fb2624e39723bae24d8286b98795e70" kind="function"><name>getReceiveSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1adfcc8fafdf138d104d78133ff5f419df" kind="function"><name>getReceiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1ab04f56d8e2cb6ac3d7fdaa2e1791c7cd" kind="function"><name>getReceiveError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" kind="function"><name>getLastRTTMs</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9" kind="function"><name>send</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237" kind="function"><name>receive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e" kind="function"><name>shouldReceive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a3b7f0bbd177367b7c73841fab7131c7c" kind="function"><name>createCnx</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1a234c7704dd00f42bfbb6c58c5ce8e546" kind="function"><name>do_receive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1afcc67044ebcd51cd48be9743ab69aec1" kind="function"><name>onSent</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Client_1addf0b516315701576b9b2752d3a9c99f" kind="function"><name>onReceived</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1bip_1_1ClientPool" kind="class"><name>xtd::network::bip::ClientPool</name>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kind="typedef"><name>t_client_sptr</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ab0b045804570a41e6e491a715d56a469" kind="typedef"><name>t_pool</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0a5f4e0106fc3f4a08b76ee90b6e4921" kind="variable"><name>m_mutex</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ad5d49dadd5f9d7fe268b3350668b954a" kind="variable"><name>m_available</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0209288ae757927f1664e295e93f9488" kind="variable"><name>m_hostname</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aed158e72b77621d58bee335fd80106f7" kind="variable"><name>m_port</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ad697c4ce54da471255a760f87c400c99" kind="variable"><name>m_ttlMs</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aaa0dedf08dc12bb24b2f8e0b0f93e646" kind="variable"><name>m_conf</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ae46e8bb41ced23f3780beb97422a8c98" kind="variable"><name>m_sendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aa927bfa83651902a272da2a6e24e0948" kind="variable"><name>m_sendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3fc967136290251a8c7c91d534231c1" kind="variable"><name>m_sendError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a6f49225ffa8d27a43eb1788efff7c170" kind="variable"><name>m_sendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0a42ae215b28a397723bd5ebddd19f6a" kind="variable"><name>m_rcvTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac1dc7af804b72a95abc033f633aa56eb" kind="variable"><name>m_rcvSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a66aeda64271dd61b469cc36712a82559" kind="variable"><name>m_rcvError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a78548ee34b770ab25b57ec7231b80708" kind="variable"><name>m_rcvTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a95348073118e94c17f63ecd1e956f6ec" kind="variable"><name>m_curNbClient</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ab199817dc9fa5584af213f94278ba086" kind="variable"><name>m_acquiredClients</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a4faaea147b704d16009ec2bf1a505270" kind="variable"><name>m_recycleHit</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a93fa4afad99f4346a932a9a63ef88cf0" kind="variable"><name>m_recycleMiss</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a19357fadc950be3b681e4c13b602b9ff" kind="function"><name>ClientPool</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac38bce359cae12634348f3baceb31668" kind="function"><name>getSendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ae744842f18c70979bf792d10fe799716" kind="function"><name>getSendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a48e713a842d7d5bf0c9142d4f65ab719" kind="function"><name>getSendError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a65c430ef8ee5a65ec6289ea554df9ccf" kind="function"><name>getSendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aae35b25fd8d491a7b4e42dcb3b00dbc8" kind="function"><name>getRcvTotal</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a118010103ded46a9d997765e74a9fddf" kind="function"><name>getRcvSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a44f712ba35d274fcb093c55f197539da" kind="function"><name>getRcvError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1abdb1cb0ea47af82189a3df7e074ba123" kind="function"><name>getRcvTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a70de85e8b181bd82214bff2aa27600f1" kind="function"><name>getCurNbClient</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a616b3398d55725cdf1cee89a9c7f1154" kind="function"><name>getRecycleHit</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0432fecefc0e16d58581e71d9796a423" kind="function"><name>getRecycleMiss</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a9d2d89926ce38e5fbb73ef297945c586" kind="function"><name>acquire</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a1cba2c44a7995319a0aa2bbb7f823ff4" kind="function"><name>send</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a5884f162a9ca3dee26768eb1f683b6ec" kind="function"><name>receive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a390ed6d8afa1812690fbe120bdea5059" kind="function"><name>release</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1Config" kind="class"><name>xtd::network::utils::Config</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a35ba52df60fc921cf37a27d867a89607" kind="variable"><name>m_noDelay</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a634bebf01fa1b0984aacfc50f3d5cccb" kind="variable"><name>m_reuseAddr</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1af9136ffd16a41bb71a73f5d6cb7a3baa" kind="variable"><name>m_linger</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a77d45dee3cbca7aa494b7a7879142b45" kind="variable"><name>m_lingerTime</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1aa298a34510c445da6a51dabf23bbb337" kind="variable"><name>m_compress</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5b73511b2f8e412a8a13ac7813e8eada" kind="variable"><name>m_compressionCodec</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a0403cd53779f72f5d72048b14f485929" kind="variable"><name>m_dnsCacheTTL</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1ae15617cf3f48a378898164d0e34de5d2" kind="variable"><name>m_connectTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a6a72c4d24f7074a1b3c78b836500fe58" kind="variable"><name>m_sendTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1af4ec1eebfe8633cbaa44ec0c5ff54b8d" kind="variable"><name>m_receiveTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" kind="function"><name>Config</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1abbf53027f45806e78cec4f50e4ea7def" kind="function"><name>Config</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1ab43d43856cea3b9bf159b38d2d13d82b" kind="function"><name>getLinger</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1aacb13cdd90746d5684feb00d7cdbefcc" kind="function"><name>getLingerTime</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a499712a4fd63e48be43ff24eb94e72ff" kind="function"><name>getNoDelay</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a3914a56737d69dd8879e03ed9b3dc855" kind="function"><name>getReuseAddr</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a89faeb4f4a949ae6fe18b907814987ee" kind="function"><name>getCompress</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a82a7b809f4d41f4124badef452b9698d" kind="function"><name>getCompressionCodec</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a2dfd5c85238ef930891d3696e6f6246c" kind="function"><name>getConnectTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a300d76106dcc338d662894dd04373d91" kind="function"><name>getSendTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a4484d8887f26682beb5aaa45f801dc57" kind="function"><name>getReceiveTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1ef6d7fcee95df86143dfbdd007f64f9" kind="function"><name>getDnsCacheTTL</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2" kind="function"><name>setLinger</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333" kind="function"><name>setNoDelay</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f" kind="function"><name>setReuseAddr</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009" kind="function"><name>setCompress</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a604e4ade1c49d83d204024f28a3d461d" kind="function"><name>setCompressionCodec</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a5ecd1cd77dd3bd937aa021d3bf0ad860" kind="function"><name>setConnectTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a583358bf6945cbddd657f6db8c31618e" kind="function"><name>setSendTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1ad633fb35c7202550d444e4bf5ae213df" kind="function"><name>setReceiveTimeoutMs</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Config_1a9a2d3e9de6f26708a4bddc4ba7c31428" kind="function"><name>setDnsCacheTTL</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1bip_1_1Connection" kind="class"><name>xtd::network::bip::Connection</name>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a5e395530dde4192ddd2b358e8f5af366" kind="typedef"><name>TBase</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a0b99dc924bede46b76d885828fcf5c2a" kind="variable"><name>mcs_headerSize</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1abc521841be594f2cb66681cf53f2807e" kind="variable"><name>mcs_maxDataCrcSize</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aaddebc65046e4ac9f05362510a6bc08f" kind="variable"><name>m_header</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aa58b7210faaf68e8437548438656cb01" kind="variable"><name>m_inboundData</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ab3ae3c9569e9995a3e64ca3aea377fb7" kind="variable"><name>m_counter</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a5c981bbe6f8f26ac8eb25f70b2427d5c" kind="function"><name>Connection</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1acac00964a4fc76de35cdb516e9d73051" kind="function"><name>incCounter</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a49b1fef4b8572748848044b27231281b" kind="function"><name>computeDataCrc</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ab1d6af26d05d28bec5d05e3e431a19a2" kind="function"><name>calcCRC</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aeb42aaeb07f9a3426b77d37ca97a743f" kind="function"><name>calcCRC8</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ad000841f4e3d649740ec64f1b10078a1" kind="function"><name>async_write</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1ad9891e66c48ddf2871a9f3c57e05ff5f" kind="function"><name>async_read</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aed4825983fc47fd6202647097e08e623" kind="function"><name>onSent</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aac9748b98ae47933c597d1df0202585e" kind="function"><name>onHeaderReceived</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a125f7efc55d98a45bc1f8943e3bcfa20" kind="function"><name>receive_data</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1a0f7aba57bb18982bc12a3ae488a419b4" kind="function"><name>do_receive_data</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Connection_1aa419d3171235eaab2aa9896a25ea493a" kind="function"><name>onDataReceived</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1base_1_1Connection" kind="class"><name>xtd::network::base::Connection</name>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" kind="variable"><name>m_conf</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" kind="variable"><name>m_strand</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" kind="variable"><name>m_socket</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aabc3a73e4fd42ac0344726884ec62e50" kind="variable"><name>m_hostname</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ae0105d69505b7fd433b6eb36b422ceeb" kind="variable"><name>m_port</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a0ed89ea746bdb2d0ec41a01179f9d0d4" kind="variable"><name>m_remoteAddr</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ab83ebe3af83b975f39742cd2d6438c65" kind="variable"><name>m_remotePort</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aaf86011ee7cd7a264d104c8d929bd739" kind="variable"><name>m_localAddr</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad2a86e29fcfccb8153f784a0f6c3dd07" kind="variable"><name>m_localPort</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a2b47a04461903061d7b8d297a52e0825" kind="variable"><name>m_processID</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac1a800bdc4cc78f2bfcdac79368238b7" kind="variable"><name>m_info</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac1ed59726de3423a3fc2e21e50d04542" kind="function"><name>Connection</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4" kind="function"><name>async_write</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6" kind="function"><name>async_read</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a51f309c311421eb6a378354914816fac" kind="function"><name>~Connection</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" kind="function"><name>setProcessID</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" kind="function"><name>getProcessID</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" kind="function"><name>accept</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" kind="function"><name>connect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" kind="function"><name>send</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" kind="function"><name>receive</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" kind="function"><name>close</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a0bde1ab3f89862d0680c820645b7244d" kind="function"><name>cancel</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a6f249c285df79485b06f9c7b6ed03237" kind="function"><name>info</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aed7c6ff204cc07bfecb0316552a3632d" kind="function"><name>do_accept</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac8116f09ad4d70cbc2411a39decea353" kind="function"><name>onAccepted</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad2654c3dac0bddc50c00649a833df0c9" kind="function"><name>do_connect</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a80636683b901728aef6f6fa22c17f019" kind="function"><name>connectTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a8495e01e6acacbc4e015286c88f966e4" kind="function"><name>onConnected</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aeaafdac519a2ad99d46aee2b77dbbd4f" kind="function"><name>do_send</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a4a58f3996751578b86b4d897c38c1a96" kind="function"><name>sendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a74dcb7837b6523b32592154b7d278fc0" kind="function"><name>onSent</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a516802aa130b466763159f7c025e074c" kind="function"><name>do_receive</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a6cd97c1773c9d64c10bd25458a38ac08" kind="function"><name>receiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a726f405f3d2cad06126cd8d3cfac6cf1" kind="function"><name>onReceived</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aa28f64b26113b90ff0fb74ee9ee23f0b" kind="function"><name>setSocketInfo</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a86dca85f56375ec6b3638cb263e7d291" kind="function"><name>setSocketOptions</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1a735a94844b920bcf2de13b1ce9d1b569" kind="function"><name>readEndpoint</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad71d5c5dc4b0bba31209ac40ed7793bd" kind="function"><name>setSocketOptions</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1aade1ebdd3a72d729151f7b1735f5c2c7" kind="function"><name>readEndpoint</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1af21a58c936e3d2573795c817ac7c2f14" kind="function"><name>setSocketOptions</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Connection_1adaf0ac918d2cbfab659d94381cf73a0c" kind="function"><name>readEndpoint</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Connection" kind="class"><name>xtd::network::http::Connection</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1aec6f410472a99afaab5c0e05d1b6cfb3" kind="variable"><name>mcs_maxReadLength</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1aab656ec7d48339c756663a146d0f3f5c" kind="variable"><name>m_isClosedByServer</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1ae327f3b673c40a8481aa7e39c1bc09a4" kind="function"><name>Connection</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a23b8ae18927be28e3c778b1a1b23eb60" kind="function"><name>~Connection</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a6bc2b4d2ca1c399b2cce22e14b52d9c4" kind="function"><name>clear</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a7ba68b95f6a467599c0daa93960f5821" kind="function"><name>setClosedByServer</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1abc2998698af66ef08e5750f43e45b00f" kind="function"><name>getClosedByServer</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a5b0842e5855bfe469c1861cff53b5a84" kind="function"><name>async_write</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a90703a55c3ea13999cb704e3d3f94fbc" kind="function"><name>async_read</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a467b3c32fca302f306ce340e7ea5663a" kind="function"><name>onSent</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1aecb4bac5bc0251be5b5bad8ba2f677e2" kind="function"><name>onHeaderReceived</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a769a03d13c7e3fa49509983136aa5db7" kind="function"><name>onDataReceived</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a0c7ceb4465e1ac669233159fbd5d7af9" kind="function"><name>receive_data</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Connection_1a82b419852ffff07064f0d148fed25091" kind="function"><name>do_receive_data</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data" kind="class"><name>xtd::network::http::cpptempl::Data</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a4bbb052aa314ffb321edee297cf393e1" kind="function"><name>~Data</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a3a64cba1d65950fababffac694561af1" kind="function"><name>empty</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a85999dd8f43177cabf072ddbc406e556" kind="function"><name>getvalue</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1abb82f257b867cd0da2469cc6c5ecdbae" kind="function"><name>getlist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a39713cc7cdc05a2375c1c5d4f00772db" kind="function"><name>getmap</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList" kind="class"><name>xtd::network::http::cpptempl::DataList</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1aa73519115bad419f4980325a5ef6ab5c" kind="variable"><name>m_items</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1a0d8d86420222cd53f4316ed8ac6dfee6" kind="function"><name>DataList</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1a104f3da36e9cc95c9ebb7439febe6eac" kind="function"><name>getlist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList_1ad495c709bd808f6864b9d4d4a3456cd8" kind="function"><name>empty</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap" kind="class"><name>xtd::network::http::cpptempl::DataMap</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9d5571df9286e36f370f96d5fbe381dc" kind="variable"><name>m_items</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9a5267694ba26050526a02407c69937f" kind="function"><name>DataMap</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1abfcc73cb22b66dd0be8ad9cd66a75117" kind="function"><name>getmap</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1aecf13229511725a1e352f8c25fd1a40e" kind="function"><name>empty</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue" kind="class"><name>xtd::network::http::cpptempl::DataValue</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1af2475656e556d32633831afc8d1f678c" kind="variable"><name>m_value</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1a51718755a978b1cb88039e3f192c61f2" kind="function"><name>DataValue</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1ad84465a538215444a2493150073941da" kind="function"><name>getvalue</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataValue_1a34a0c38c41dee41c241bd0b3141a051a" kind="function"><name>empty</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1deque__id" kind="class"><name>xtd::network::utils::deque_id</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a3f0ab7f9a5ff488eccdc7fd9b4892b8e" kind="variable"><name>m_mutex</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1af653666b7ec01b6b68b8a5bf48f06e9c" kind="variable"><name>m_deque</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ace5bd507db72397f457723944c21b575" kind="function"><name>push</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ae947d106bc8943450c1eab9df3880401" kind="function"><name>push_back</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a4d61e0412fbc4bb454141e8f760d191b" kind="function"><name>pop</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1ad18ee554089fe3016e1dd4c7b363c6a8" kind="function"><name>find</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1deque__id_1a6038f59387bc5dcffb339b0d8c9424fa" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kind="struct"><name>xtd::network::http::Server::Handler::filter</name>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a7a443c95291e03dff64632da70c3970e" kind="typedef"><name>t_func</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1aade4e97fe12a8e43c647ac1ca7cc21c7" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1af56d192d61507e75ff21f4f075df1bd3" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a47da45a50b8b22c1a141d1602ac9f9eb" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a4882bb6111bfa1007238091519723432" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a9caa6426ff014b29d856845e542ecc61" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1aa73bc46ea27365b04dabc4ad3883f6e3" kind="function"><name>filter</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a552b18f4f6e535a016d547ce0efc53c8" kind="function"><name>operator||</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a5da9bfbb2192792c99106f3969084395" kind="function"><name>operator&amp;&amp;</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter_1a86cabcb78e717225417801afb5ca0969" kind="function"><name>operator!</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Generator" kind="class"><name>xtd::network::http::Generator</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1aef564fc3152e7477bb429e45b19328fc" kind="variable"><name>mcs_defaultContentType</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a738f0f8cd19c78d54a2583a1cf579ffb" kind="variable"><name>m_contentType</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a9c59dd54d0027b739d490b227a74c6cc" kind="variable"><name>m_error</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a5f8bfffa6c7fe8ae46158e976af3d666" kind="function"><name>Generator</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a1d1e0656a6ffeecd718230613681c56d" kind="function"><name>~Generator</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a4052d01b0d4849321b61688eac757b41" kind="function"><name>getContentType</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1ac4fa462833bedc8bde7c7e81b1a29f37" kind="function"><name>getError</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a20ee788dc76ee76f4be5f44091b655ca" kind="function"><name>resolve</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Generator_1a289cfd48cc9c5646c8f06455df41f09d" kind="function"><name>addError</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kind="class"><name>xtd::network::http::Server::Handler</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a840883d08fcdd990dbe33b660ee6febb" kind="typedef"><name>t_listof</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aaea3487ea9687e61c40453d90841b223" kind="variable"><name>m_path</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a4dfed2def9b251595d4ee176c106882f" kind="variable"><name>m_handler</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a95854563aaa6e9c7fcced63d351e47a3" kind="variable"><name>m_filter</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a7605921b1ffffb66376920cfa6ebcb08" kind="variable"><name>m_matchAny</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1aae46aaaf81c803b4ac6dd1a5b60feb36" kind="variable"><name>m_descr</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a91c38afd6870731fe9f1b79d2cfda19f" kind="function"><name>less</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a509777bdc769cabb23f04728e745b823" kind="function"><name>Handler</name></member>
+  </compound>
+  <compound refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kind="struct"><name>xtd::network::http::Server::Handler::handler</name>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1acd37ef7fd8a395e1bfa372ad3c025253" kind="typedef"><name>t_func</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1a590cb56ee70081b73e98b47c0d50b3f1" kind="function"><name>handler</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1a8fe309868dbefb2fbbdda593782728f6" kind="function"><name>handler</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1ab6f310afe2dcb6c474906f42986bce4d" kind="function"><name>handler</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1a64993bf20fa797e2e174adeb0bcd520d" kind="function"><name>handler</name></member>
+    <member refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler_1af7e711a4e11ebc9fb1c5399f030ce778" kind="function"><name>handler</name></member>
+  </compound>
+  <compound refid="structxtd_1_1network_1_1http_1_1hex__to__string" kind="struct"><name>xtd::network::http::hex_to_string</name>
+    <member refid="structxtd_1_1network_1_1http_1_1hex__to__string_1a88d313368d68cfdddb20e4496b73af87" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" kind="class"><name>xtd::network::http::HtmlTemplate</name>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a15109206261d0bb4f8c2420e3aa122f6" kind="variable"><name>mcs_htmlTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a321e760f747abe09f82c27731c440c10" kind="variable"><name>m_title</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a3ad60768a68198dd5edadaddfa1ebdfb" kind="variable"><name>m_cssList</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af23a149c449857b27c53af5034f0c0fa" kind="variable"><name>m_jsList</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2dfcc5f94ac17a87febbd1e820396cf4" kind="variable"><name>m_metaDescription</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a832b23c37aa1ed4894404e62f906bf2e" kind="variable"><name>m_metaKeywords</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a354abbdb18aefb82751f3ddaaea07445" kind="variable"><name>m_mimeType</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a412ccde20815314b318f6b472d9031a2" kind="variable"><name>m_charset</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a94dd9ec9e758ff47ceac4f579dc19d46" kind="variable"><name>m_favico</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a2e40e5f2ad3b6b5cdb8b8f73656efe6d" kind="function"><name>HtmlTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a92496dd5d269160aeb2640908b1920a1" kind="function"><name>setFavico</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a360a57a8ca473b72fd76807d5cc7265a" kind="function"><name>setTitle</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a29763c3949d6906bdbe02e9b147deacc" kind="function"><name>addCss</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4a16bbd6749d71c5fe72d9e8bf3c1fa8" kind="function"><name>addJs</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a1a87439632dc4f30fb247602b1bbadba" kind="function"><name>setMetaKeywords</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a67b44ce076eac00c888eb24ec3b9675b" kind="function"><name>setCharset</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1a4ef586066cbae8ffc86e851dbb43782c" kind="function"><name>setMetaDescription</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1ad2b01a5058edcc704e2f0057e7cd7d06" kind="function"><name>setContentType</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1HtmlTemplate_1af621b5bf866fa828f0bd5eaf225d5f70" kind="function"><name>resolve</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Json" kind="class"><name>xtd::network::http::Json</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Json_1aa38c31a023b2b94626de23290674b3a1" kind="variable"><name>m_root</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Json_1ac94f0562a18b08ddedf5d63b432f9669" kind="function"><name>Json</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Json_1afcafba0e5e474b974c750652523dd402" kind="function"><name>~Json</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Json_1a7a9ed4f957c77813ecbb84e228936b5e" kind="function"><name>resolve</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Json_1ac78aa9492624b989e104a15be2185193" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" kind="class"><name>xtd::network::bip::ClientPool::PersistentClient</name>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a3f5a2172b09497d719da36e7bac0eaf4" kind="friend"><name>ClientPool&lt; TRequest, TResponse, TDomain &gt;</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1ad237daa25d2d8517eba7e803ba97ff9a" kind="variable"><name>m_hostname</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a6a17195106f399a0114390a38e5ea24c" kind="variable"><name>m_port</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a84869c8715d702bda16e782c1436766a" kind="variable"><name>m_isConnected</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a483d03cb3da03f7cea9092e1222bc31c" kind="variable"><name>m_lastUsed</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1ade4513087533d0807c995270804ffd86" kind="function"><name>PersistentClient</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1af44e5c23cf33c46e79709200845f8abb" kind="function"><name>~PersistentClient</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a25e1f7c9ddd68c6e4cc39ae65907977b" kind="function"><name>async_connect</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a7973926166620cc64d161c528cd5ae83" kind="function"><name>wait_async_connect</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a7ae8c9d6cd41d87b95d0d0733dbc475a" kind="function"><name>send</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a391a798c680b8083f57988914e431c64" kind="function"><name>receive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a1f7e534c4dda2f5517f4603d56e4911c" kind="function"><name>isObsolete</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a9d36532def37b83f4bfa59a37997142b" kind="function"><name>invalidate</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Request" kind="class"><name>xtd::network::http::Request</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" kind="enum"><name>t_method</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" kind="enumvalue"><name>METHOD_GET</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" kind="enumvalue"><name>METHOD_POST</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414" kind="enumvalue"><name>METHOD_HEAD</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kind="enum"><name>t_version</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f" kind="enumvalue"><name>VERSION_1_0</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d" kind="enumvalue"><name>VERSION_1_1</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kind="typedef"><name>t_param_map</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" kind="typedef"><name>t_header_map</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad3010217380492ad7fbf48b0a9ec0a4e" kind="variable"><name>m_rawUrl</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a836a7529655be96f9851d83109ba674f" kind="variable"><name>m_method</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a2f91ea32734f9e9c594c2ecd56549f71" kind="variable"><name>m_path</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a02e9185da6cc13ec08cca6f314290636" kind="variable"><name>m_cgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aa72c6face7ffdeead20feb3535409c8e" kind="variable"><name>m_post</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ae911edd0253fca7895db52748880564f" kind="variable"><name>m_headers</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a6ba527b3ed79d9ab22a362a382f88500" kind="variable"><name>m_versionStr</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad8e9560629dd82aa4d1594542b12e229" kind="variable"><name>m_version</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1adb444e2c24097247558291506306ec17" kind="variable"><name>m_cgiToLower</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a54dab25cd67b4eac643d807cebb87544" kind="variable"><name>m_regex_tooManyStartingSlash</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a011678721d80f16c11acbb8513f25074" kind="variable"><name>m_regex_tooManyEndingSlash</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a4ef55dada327d66bc23474520e1ae32c" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a6255d0a163700ed3aec8b8e655573208" kind="function"><name>Request</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a3ee369c6c2b8888815f1347d9f7df3f0" kind="function"><name>setMethod</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a42304776ec9355ab89c6e8e0391f4309" kind="function"><name>addCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a463b8876852246bac863584f9dc3d0ae" kind="function"><name>addPost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ac7f15d9f25ab85da1569e7718ea6544d" kind="function"><name>addHeader</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a4fc25edc6c133d46f1780a3b8c5a3c4e" kind="function"><name>setVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a3a56519771fa2e7af734152a12b56361" kind="function"><name>setVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a2e739ee31fca9fdddc4fa69432405b09" kind="function"><name>removeCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a69b20f61fbdf1727be7b6eb4623e30d7" kind="function"><name>removePost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1adbbc4691784a7e7f49e31ffe54b733dd" kind="function"><name>removeData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1acd61448f2826e30001bf6d9ada90a2a6" kind="function"><name>readQS</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a1f25a3becd01d0ee957ecd697f178956" kind="function"><name>readHead</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a050758a8848fb4190b305d955760fd79" kind="function"><name>read</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1af06004afe64f465edfb281407b7f3600" kind="function"><name>getMethod</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a0006f0a88dccabdafe9dfed3627730f6" kind="function"><name>getPath</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ac9aeee4365089901bd216350fdcbe3a2" kind="function"><name>getQS</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" kind="function"><name>getRawUrl</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" kind="function"><name>getCgis</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" kind="function"><name>getPosts</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aac37ae370c601f66b17e1ef071081957" kind="function"><name>getParams</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a21fc278ee56175b527ae58c909ad97a3" kind="function"><name>existsCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ae121fd7a302ea9bb1a3fe66f3cb7f696" kind="function"><name>existsPost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a8bc12470bb1a04d71d84ed1053551df9" kind="function"><name>existsParam</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad334cf225213389711b7524a2c637e38" kind="function"><name>existsHeader</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a99a0c9599f0d2bdc51f8e488fb4f78f4" kind="function"><name>getHeader</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" kind="function"><name>getHeaders</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a609f7328025e89fd8325677212ab307b" kind="function"><name>getVersionStr</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1acdf8a64d92f997aa7a0eaf7fc07cf897" kind="function"><name>getVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" kind="function"><name>getDataSize</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a7af5942f7505ac377c8017f51b24854e" kind="function"><name>getCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1adc71d7250d7064b513b619091b0a6961" kind="function"><name>getCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ad1efea31852175056b036fdd2df71135" kind="function"><name>getCgi</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a052d76c6e9f2d8eede058c7d2fddd9ef" kind="function"><name>getPost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a073d8eef444c0d981e3bd5137e13de3b" kind="function"><name>getPost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ab4b8f57135d2f6d1e622ae5fe81c1ca7" kind="function"><name>getPost</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a2d7c1f674b8935120f6f20cd6baccd63" kind="function"><name>getParam</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a00b5483c07f655a7a2b40a4db8190a1e" kind="function"><name>getParam</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a1c75bacd611d64713664efb796f33d25" kind="function"><name>getParam</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ac3b9fbaba2751dfaa8f028e31f53c0f9" kind="function"><name>getParam</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a142b0862025dd1071284b8594b836e85" kind="function"><name>readData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aa262622348a55b5a8f26dd296341b015" kind="function"><name>readDataFormEncoded</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1abf79a85792cf84d55007dc4b2af99120" kind="function"><name>readHeaders</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a5a533dc4ad5c338f06d0bad4f81fde96" kind="function"><name>readVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a0187979d36b4866ee18c27de2b04ec27" kind="function"><name>readUrl</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a1b1d3cba62b31a8395c7f1ccc7b5bce7" kind="function"><name>readMethod</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aba33a0bbe6e72243569f196128ecb5bd" kind="function"><name>readInitial</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1aa6ca8641600d731dfeb14c4482a26ace" kind="function"><name>paramValueDecode</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ada9f2f5945e331dee411c3773749a68e" kind="function"><name>normalizePath</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a029def0d99a2a83fdd210841df937bc8" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1abd8e4d0c9bc8e458b2ecd3ba0b4e480f" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1af78f1b412da251b73cdcbfee47c35398" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a33a9a6a7d1d279eacc7a5bc6a3f98f25" kind="function"><name>as</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a3176237a566f30e7651edd6ab786f8cc" kind="function"><name>existsData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a36bfaced24d8b4df122c0f9ebfc8ad55" kind="function"><name>getData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a47ca815c01123ec535a4a248731bef2f" kind="function"><name>getData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1ab1897af6a658229fbf55c3aeee42b960" kind="function"><name>getData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Request_1a619e85042924f3e11bd9730bc870d72e" kind="function"><name>getData</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1Resolver" kind="class"><name>xtd::network::utils::Resolver</name>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4" kind="class"><name>xtd::network::utils::Resolver&lt; af_inet &gt;</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a46ccd1501fa68e3c1523e7c846ba16a6" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a9be7300774ebdd878ef0944dd57dcdad" kind="variable"><name>m_cacheDns_ptr</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a227d9b53586520412dde2ff93e373b65" kind="function"><name>Resolver</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a52780e208a95d05c6eeacc4842851162" kind="function"><name>~Resolver</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a014b2c1347380dece13b309969ed25c3" kind="function"><name>resolve</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1ac98e2d8aec992068faa974ccca220e4c" kind="function"><name>getPort</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__inet_01_4_1a32b299d5a15042feea05622ee3df0d4c" kind="function"><name>getAddr</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4" kind="class"><name>xtd::network::utils::Resolver&lt; af_unix &gt;</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1af4ec1990136a9220f357a7533f01f863" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a718a54afe150ba5044a6b6796e740978" kind="variable"><name>m_port</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a6c22d97efd1096a2b32c3b6b82707685" kind="function"><name>Resolver</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a4ef41796801ac9b2b223e907512c6937" kind="function"><name>~Resolver</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1acabb7ae9d31e60d034e46a7f172f3ffb" kind="function"><name>resolve</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1a75ade0a088898962a4ca8055885dd09d" kind="function"><name>getPort</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_1ac684f093294b139e46a7e5b89857c7f1" kind="function"><name>getAddr</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Response" kind="class"><name>xtd::network::http::Response</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a77c534464429597bc4faa6bb556a8b53" kind="typedef"><name>t_header_map</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a26f53d3bb9b3910f91460eba4fcb98af" kind="variable"><name>m_version</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1ae29370ced6bd9dddbbabbb20538b4269" kind="variable"><name>m_status</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a4a5668d05cee4ba5d8e6ea80e329d8f6" kind="variable"><name>m_headers</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1ac4c395246134d223a3cfc1f2978320ce" kind="variable"><name>m_data</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a4a96a6059d81045729568ba02e149625" kind="variable"><name>m_cachable</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1af4135d35d1d5c7e15b8ec11b0fee4510" kind="function"><name>Response</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1ae2a9c98f18509685efbd3b1c2dc40eee" kind="function"><name>setStatus</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a053c5cac11eae3d2280bd37e7b4c5777" kind="function"><name>addHeader</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1abac2c9458d9552f9e615954a8d79c666" kind="function"><name>setData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a5c1dd78f683d9660cdb6f28a8ed4fd7c" kind="function"><name>appendData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a9f4e8bb7eff6b869f87d59fe2ffbb224" kind="function"><name>setVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a0d6c9e21cc552494caae85314a723ae9" kind="function"><name>setCachable</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a88aaaeda4df83751a5462746610033a1" kind="function"><name>getStatus</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a7d8bdc82b82ed044802f1730552f1f07" kind="function"><name>getHeader</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a46b741dc86559dd3207172056aca2565" kind="function"><name>getHeaders</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a20be1955a089359fce4696150824698e" kind="function"><name>getData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1ab80064478837b568a09f6dbcaebb1307" kind="function"><name>getVersion</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a9d561a52d0f3c852872532de31be7785" kind="function"><name>write</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1ae492d91828580c9421cf18a4efa92bba" kind="function"><name>finalize</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Response_1a506c65d70d06920833faa26e7656407b" kind="function"><name>statusToMessage</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1scoped__method" kind="class"><name>xtd::network::utils::scoped_method</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1aac38d16f3fadf784f6fa07a91333d3e5" kind="typedef"><name>handler_t</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1a1241abddc38e71a4529f71dc632e02e2" kind="variable"><name>m_handler</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1acea6a84200c8c1a3f409e489932bfa51" kind="function"><name>scoped_method</name></member>
+    <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1afc1c61ebfc0712725ce4c1887a624dd8" kind="function"><name>~scoped_method</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1base_1_1Server" kind="class"><name>xtd::network::base::Server</name>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a5465aab6a4cbdaa664eeaf9eef6da5ac" kind="variable"><name>m_conf</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a5092eab162e1e793aaeac42368c5c06f" kind="variable"><name>m_dequeId</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a2b67486dfc934466300fa48295f94b46" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ad762843698e4e7b4e70974c2daab0932" kind="variable"><name>m_work</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a03e4c0a664c471e756217b20b2209980" kind="variable"><name>m_acceptor</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a16b1946e51fd503a5d620001fe83b548" kind="variable"><name>m_resolver</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a3ce79f479d41ffd4e9f3f743e49025e5" kind="variable"><name>m_threadNb</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a63c8a13ef560a52c296265cbfe2579cc" kind="variable"><name>m_threadGroup</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aaeae7aed0a64f2d0d8512729411f0d9f" kind="variable"><name>m_nbCurrentThread</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ac4d53505a5ff9cc386eb17dd59f0fa39" kind="variable"><name>m_cnxTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aec9999ba9e323c9d2c2c513fbfa68acd" kind="variable"><name>m_cnxAccepted</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a3af4804a9af2e71c3dadfe70ba25a121" kind="variable"><name>m_cnxRejected</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a07932b7815dde6a739eb58ee76a854b0" kind="variable"><name>m_receiveTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aeda025ea258c6ba4fcea23ad0085c7ab" kind="variable"><name>m_receiveError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ab5832995a54e862cb1c3cdb5e87dfade" kind="variable"><name>m_receiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ade7493305209a5cf8e514361d9a25bb9" kind="variable"><name>m_receiveSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1afb2c98dc048e2a5f2b9750b6ecddd4f8" kind="variable"><name>m_receivedLastTime</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ae03e6e43c227deb9a09492753b9349ca" kind="variable"><name>m_sendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a4eb65a9447a35d1a9a978731ed838bc9" kind="variable"><name>m_sendError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a9fa2307f16252ff84d98bc58cabd627a" kind="variable"><name>m_sendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a5a0f2c8ad46a998fb95f33cd20907060" kind="variable"><name>m_sendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a3f29ba7011873a7048d944087279fd21" kind="function"><name>Server</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ab17ca2e2332664f4cb83e89d027976d9" kind="function"><name>~Server</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a97d54b5ded7a8b02333347a5ffbbd347" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a30e423831ba183c16425422f07f207c5" kind="function"><name>run</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aabee855541e60adeb2115856d123637b" kind="function"><name>join</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ae9d5a1070819996c244003adc92a35ee" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a0746f85458e7eff28cfe6e156ad99402" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a4ab9c2f5d30622f1ca4166c7126a16f5" kind="function"><name>createCnx</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a872b44334ff62df80a5a19502ca867b2" kind="function"><name>afterAccept</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a64224be1bf7d053bfbbbaf5c6be00f31" kind="function"><name>afterSend</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a29450e21c9aba7147eb26ac9563efd01" kind="function"><name>afterReceive</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a5fb03fd67e85a6315c0b591f12feaaeb" kind="function"><name>onReceiveError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a2692cfb3f754e05b032564a289ea361c" kind="function"><name>onReceiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a5852cbdc5fa348c25797962a69d6b115" kind="function"><name>do_receive</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aa633c11edb82dcfc0b3804f4d57cdc5c" kind="function"><name>do_send</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1afdbfe06eac7640eed92c86ea38c089d2" kind="function"><name>getNbCurrentThread</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a2f1c82fa4d94a0868ab1a9b957b0e1ed" kind="function"><name>getReceiveTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a798d800b0cda41fb3d6bc9be0cb07036" kind="function"><name>getReceiveError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a897bb823741706c6f3f91aef601ab3d9" kind="function"><name>getReceiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ae2e9b2858e9a7f142f98fcc4299b2a4a" kind="function"><name>getReceiveSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a48e49f13ebcc958cb05737af08c761fc" kind="function"><name>getReceivedLastTime</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a4b5d9bb1401c63af63598ab987dc1ea1" kind="function"><name>getSendTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ad225f1e73ec0fc1ba2a54e3363881aa4" kind="function"><name>getSendSuccess</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1adeb8afa131ea136a61297f6d6e7af96a" kind="function"><name>getSendError</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1af7fb5d4acd247d070d7330686d2d0717" kind="function"><name>getSendTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1aaed2e2436b27ebb7609c66e1002a8c56" kind="function"><name>getCnxTotal</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a3025e5dd8f30f36ebe52568d5c45966b" kind="function"><name>getCnxAccepted</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a07a3891c57d59f642d491e1d30e3eaa1" kind="function"><name>getCnxRejected</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1ae700d5273fcd7217d28cb3ac5f59e232" kind="function"><name>accept</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a64b62b462fee3a0a044d999bcdbb38a8" kind="function"><name>onAccepted</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a1ae58685b7c49fde41ad8fbe6a807904" kind="function"><name>onReceived</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1Server_1a1d7498477f41cfaf735b07bdae527d0c" kind="function"><name>onSent</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Server" kind="class"><name>xtd::network::http::Server</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a81fa6d7d3e4dff53a34b190e5790cdb5" kind="typedef"><name>TBase</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a79c236355d2dc1bf274cecd6aa7be336" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a0bb8fb6aae3f16cb051c064d26e7d666" kind="typedef"><name>handler</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ad02807b9fde8d63ebf7c256834c0a6d2" kind="typedef"><name>filter</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1af55090adba952bd4ddcd6eb467974ac8" kind="typedef"><name>h</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kind="typedef"><name>f</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a455755a4dcb1d2331a49c2667369254b" kind="variable"><name>m_defaultHandler</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a31fbc2589302e054ffcf88be6becb0f2" kind="variable"><name>m_handlerList</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a15132ec2b08249a3dc54c9d228620ee5" kind="function"><name>Server</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a85da5acf9ddab934f5cddb330eae9f99" kind="function"><name>~Server</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a8f2c0ce0dd0d150d74d3cfd89edb9332" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a8683467193d33cef96950fad43b8f47c" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ab6f6b7177c80b0dd9de8aadb096f5305" kind="function"><name>createCnx</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a5015d684d23b282b09913827daf3c641" kind="function"><name>afterAccept</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a2a4360dc57ca76ab49892af974fe4a05" kind="function"><name>afterSend</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a27f646179758bf4269a43675a8932201" kind="function"><name>afterReceive</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a9cf39271bfddeaaee6415ece8b686ab5" kind="function"><name>processRequest</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a549144050ca07087e7f90ce32e604574" kind="function"><name>onReceiveError</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a9955a1f35bb950e610aac7c9129ebe23" kind="function"><name>onReceiveTimeout</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a9b2c8bfa6de7b72742422814fbebed2f" kind="function"><name>isUrlBinded</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a1d2baa33d7fb89d6d73258e2cb030b3a" kind="function"><name>findHandler</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kind="function"><name>f_none</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a90d357c7890d9ca17d5eeb38a33343f6" kind="function"><name>f_cgi_exist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1aa66d761aaa278f3123aa11d565475281" kind="function"><name>f_one_cgi_exist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a66975ce2c93998c5e5916ee93ac8bf99" kind="function"><name>f_cgi_equal</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ae8122d6287a52f0933af7ab687710768" kind="function"><name>f_cgi_match</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1adbd0e1d940294921e1d79b7e747d98fb" kind="function"><name>f_post_exist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a9f45a8c3b4a6dfa05041cb7190317c4e" kind="function"><name>f_param_exist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a5ffcf38b185fc098c12969df414fe732" kind="function"><name>f_post_equal</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1af5dbf38109b8345e6dcc7f29dfdd781a" kind="function"><name>f_post_match</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a7f7478d5e4c12fed3743b42f7d118398" kind="function"><name>f_header_exist</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a68192c550d0c9aa2d3341c3b7acbbb55" kind="function"><name>f_header_equal</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a015a4e5a2f93dc0df58e4c28af2e5e31" kind="function"><name>f_header_match</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a172fc1cfb74fb3ca9930b1285ba80f9d" kind="function"><name>h_redirect</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a39fef0364300dcc2ff7391c821d5310d" kind="function"><name>h_raw</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kind="function"><name>h_file</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" kind="function"><name>h_dir</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a96229b97d8ee79a57d1ab66b7af5b32d" kind="function"><name>h_template_file</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a6c9d2c89310fc7aa9aba0a001dc28728" kind="function"><name>h_gen</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kind="function"><name>h_error_text</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a0edee265d48418b258fb450426e10905" kind="function"><name>h_error_html</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a08caadcbcc43f73a1f63364b5dfdbd6b" kind="function"><name>bind_redirect</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ae8903860178fb48bd136fcb52a14de5b" kind="function"><name>bind_xml</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ad3788397b3bd576b156823267d377dcc" kind="function"><name>bind_file</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a58cb8102e486dd24780b876561ae6c11" kind="function"><name>bind_dir</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" kind="function"><name>bind</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ac6876f1c054c6ebbe802381692fe05e2" kind="function"><name>bind_public</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a6e448be2d0ca71f808bec243cefc4000" kind="function"><name>bind_any</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1ab132be70e91c14a18638f93d28078b7b" kind="function"><name>bind_default</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Server_1a302af1d5323a8c300f0de7acc27ffade" kind="function"><name>getMatchingHandlers</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1bip_1_1Server" kind="class"><name>xtd::network::bip::Server</name>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1ae873c82154d30ea1cd2bbcb88745a13e" kind="typedef"><name>TBase</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a0a3be865b6d72a94363975f437e6673c" kind="typedef"><name>cnx_sptr_t</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1ae9efbc2f358222636d3134bf8973f906" kind="variable"><name>m_isPersistent</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1aa4dd402e180d8f70174c755e0cdcc818" kind="variable"><name>m_receiveEof</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1ab4c6f8f28b5d56b69c575a6dc1be30b4" kind="function"><name>Server</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a9731cfd5eda9f51604b9b0195acfb208" kind="function"><name>~Server</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1aaa19f560d98c05518caa68bf94c36b91" kind="function"><name>start</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a12041b5218057930724c15e83c478c50" kind="function"><name>stop</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a3ba1e98abbe7516f5ec02b2ac9031e3c" kind="function"><name>initialize</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1ab50170b42e25b207fb0af9f4d47a3430" kind="function"><name>processObjectRequest</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a81b22d0e5ce1b5f8f6cfbe8618f09cad" kind="function"><name>shouldReply</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1aaeacc82ce89563b36e863ba4bbab2470" kind="function"><name>getReceiveEof</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a06d5795d318f97108b94f2999243e84a" kind="function"><name>createCnx</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1af575a90e9a26255da6b45ea2a7f7a1ce" kind="function"><name>afterAccept</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a0839a381be68528566b5e1f34b2afe82" kind="function"><name>afterSend</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a7678b6614804e0241c0e49b000a81abe" kind="function"><name>afterReceive</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a6765d1465e88e97a5c782301b026497b" kind="function"><name>onReceiveError</name></member>
+    <member refid="classxtd_1_1network_1_1bip_1_1Server_1a632d903fa3e329a9d67f32b2b7745fbf" kind="function"><name>onReceiveTimeout</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1Template" kind="class"><name>xtd::network::http::Template</name>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a0593ea520f0e2cfa6279b01b0aeee5fd" kind="typedef"><name>t_map</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a8ff314b3439353e666efc48a8443ea17" kind="typedef"><name>t_list</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a3834dff3cec2cc0fbc66efed74f29459" kind="typedef"><name>t_val</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aa85dd39b22e62bb89cb224a50e07191c" kind="variable"><name>m_template</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aae9c80f340a64ce9902bfb8fc83cb6d3" kind="variable"><name>m_data</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aa972cbba8308443707f938da7d862f08" kind="variable"><name>m_content</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aab2224df74586a476877a36db8ea2473" kind="function"><name>val</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a3a96743542ae1a063e90ec3ec2e774f8" kind="function"><name>val</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a1887dcae44d24a8594bc41a349a7e6fe" kind="function"><name>Template</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aa31bb4b8ade7e47fb564004bbf92c542" kind="function"><name>~Template</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a9f7dca8396a9e5092b1e293076a7ec86" kind="function"><name>setTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1ad6ba5fa3f5e0a2256cc356d1c6fd21f8" kind="function"><name>setData</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a0c28c6cc5e8cc71bcb026ff73551c4be" kind="function"><name>setContent</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a476ce5e5b8465ea80ade07c003ab5cfd" kind="function"><name>resolve</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a1250db96f0300bf4f56aae5929e5dbb2" kind="function"><name>loadTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1aade6209a71f79db50f37ac18c0afd5a1" kind="function"><name>add</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1Template_1a543a79fedf08f519912e9ad42a3d3f64" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException" kind="class"><name>xtd::network::http::cpptempl::TemplateException</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException_1a7ca5b8a18830862c7d01e62696d486f8" kind="variable"><name>m_message</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException_1ae57e99ad2ea51db97b64afc70adf4da0" kind="function"><name>TemplateException</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException_1a80542926c425afced9b3baf8098eb41b" kind="function"><name>~TemplateException</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException_1ae7f1bb4b84c8689b502cdbaa0954ed41" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1base_1_1ThreadManager" kind="class"><name>xtd::network::base::ThreadManager</name>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a589ebd86682829a8dc09475c24d303c7" kind="typedef"><name>threadMap_t</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a3308670f0c7a76fd2ab48382a83b5cf9" kind="variable"><name>m_ioService</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1ac15e38254f31bebd7b1de0dea691fbd7" kind="variable"><name>m_mutex</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a9b76ef125f9c74b33eef82b2f04cd48b" kind="variable"><name>m_threadManager</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1aac94906a9f79fcf6e4703ec757659013" kind="variable"><name>m_workPtr</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1ad13715176aa2f9fe658154556bd7d1aa" kind="variable"><name>m_threadMap</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a81471107647877ca255b642a39a47bd6" kind="variable"><name>m_threadPtr</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a1770382d93f88c0466284b29b9802e06" kind="function"><name>ThreadManager</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a92f0cafe7ae5fa07036e894b81a3efeb" kind="function"><name>~ThreadManager</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a987b37b09ba82f07f870f4720561c958" kind="function"><name>getInstance</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a8401b77963df643d6ca29e5abd7da9ba" kind="function"><name>createThread</name></member>
+    <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1afe3f6bc402d13a07cad5fc8d09473739" kind="function"><name>getIoService</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token" kind="class"><name>xtd::network::http::cpptempl::Token</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adb3394a369282f65e448c5433d0c175a" kind="function"><name>~Token</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1afd7dd97138bbac2734e414a406a8e4fe" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a5aeb3ae0fe7478101eaaa90898709a1b" kind="function"><name>gettext</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adc8822088b8b9a148b755bc25cd1df6e" kind="function"><name>set_children</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a2611c2d4d0dc383142fb1628df09f381" kind="function"><name>get_children</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd" kind="class"><name>xtd::network::http::cpptempl::TokenEnd</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a77b9f4cbe7a266f7d2abe6b9aee51c4f" kind="variable"><name>m_type</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a964e3944dcd348d5a8205ac310fabd4a" kind="function"><name>TokenEnd</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a77abd2ae16d92f64368a24bcb273977e" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenEnd_1a678edd353d6767db6d7a4d3c7c253135" kind="function"><name>gettext</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor" kind="class"><name>xtd::network::http::cpptempl::TokenFor</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a30879f48f3ad6e5e61f6191a702743e4" kind="variable"><name>m_key</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a262fbad437a0b5aeed05a73c315f865b" kind="variable"><name>m_val</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a2ee55240eafb3c90b7a0c96c0ad253a5" kind="variable"><name>m_children</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a536e770283d1ce5e433ad069febdd592" kind="function"><name>TokenFor</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a6901a6f0d625a48ae1ca6abc5b5b4d9e" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a27dde182755e5a44c3d11f1a1ed9aa65" kind="function"><name>gettext</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1a8256ae71e4f40e1e84426e837b4090ef" kind="function"><name>set_children</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_1ab742d87d8aea8968ebb3403333ec021e" kind="function"><name>get_children</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf" kind="class"><name>xtd::network::http::cpptempl::TokenIf</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a1d1181e1717358dd9e1a37387dfd5454" kind="variable"><name>m_expr</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1afeb13fbde7fb87c9f6321c0c8042e25b" kind="variable"><name>m_children</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a85507707011ac1fadff757c738600fa8" kind="function"><name>TokenIf</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a8f79f4e2ee4ea4eca0ff1730679a28d3" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1a326aa566357136e9c331be938442176d" kind="function"><name>gettext</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1aa803ceac00459d9ceae20b64e4e366e7" kind="function"><name>is_true</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ab88a2991518e79ec41c90372c4153210" kind="function"><name>set_children</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenIf_1ad289850734bbb131bfef741a80664e31" kind="function"><name>get_children</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText" kind="class"><name>xtd::network::http::cpptempl::TokenText</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1ada19bc9abdac9a24395ffdfe637dede0" kind="variable"><name>m_text</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1a34c54a41343a7869b451fdb8cae29784" kind="function"><name>TokenText</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1a20f746142036d4dd0025838be6f2139d" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenText_1ab29bbfde766c78614ef64cbef8cbf4bf" kind="function"><name>gettext</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar" kind="class"><name>xtd::network::http::cpptempl::TokenVar</name>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1ab9f1b7c2836d8ebdcc11b3bce4430bac" kind="variable"><name>m_key</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a11cda0dc135ade3f27be7331beb42541" kind="function"><name>TokenVar</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a8e536c216ab9bc23bf74662d47191d7f" kind="function"><name>gettype</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1afc42a67378efaef5e04552634ac369a8" kind="function"><name>gettext</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1utils_1_1vectorbuf" kind="class"><name>xtd::network::utils::vectorbuf</name>
+    <member refid="classxtd_1_1network_1_1utils_1_1vectorbuf_1ae3b43c306ce2bd0083c357f4425b0b11" kind="function"><name>vectorbuf</name></member>
+  </compound>
+  <compound refid="classxtd_1_1network_1_1http_1_1XmlTemplate" kind="class"><name>xtd::network::http::XmlTemplate</name>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1a724b4e6a3f89433f0ad27524be081508" kind="variable"><name>mcs_xmlTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1a532998a0e08a3505123450bc4b91a356" kind="variable"><name>m_charset</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1a3dd17c172ea34ab4fc467c0bd7ca2150" kind="variable"><name>m_xsltUrl</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab0eae39816b64d8e60218426d017624d" kind="function"><name>XmlTemplate</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1a835c039a8bfa03a10e8ee007b9d28d95" kind="function"><name>setXslt</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab235b22c0ec3663b2a1c75c049d463d3" kind="function"><name>setCharset</name></member>
+    <member refid="classxtd_1_1network_1_1http_1_1XmlTemplate_1ab221547a643e3db5ba99640fe14b9f68" kind="function"><name>resolve</name></member>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespaceboost_1_1assign" kind="namespace"><name>boost::assign</name>
+  </compound>
+  <compound refid="namespacextd" kind="namespace"><name>xtd</name>
+  </compound>
+  <compound refid="namespacextd_1_1network" kind="namespace"><name>xtd::network</name>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1base" kind="namespace"><name>xtd::network::base</name>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1bip" kind="namespace"><name>xtd::network::bip</name>
+    <member refid="namespacextd_1_1network_1_1bip_1a48193a997dc7b1e8f5515c86ec50405c" kind="function"><name>loadCompress</name></member>
+    <member refid="namespacextd_1_1network_1_1bip_1a86bf6b3f22dd9b8c49cc138e4cd44921" kind="function"><name>saveCompress</name></member>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1configuration" kind="namespace"><name>xtd::network::configuration</name>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1http" kind="namespace"><name>xtd::network::http</name>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" kind="enum"><name>code</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cab41e384919d3fded84fe2803c82af70f" kind="enumvalue"><name>proceeed</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca95e78c491edb90cfdcd3ff95e4700d46" kind="enumvalue"><name>switch_protocol</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" kind="enumvalue"><name>ok</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae2fa538867c3830a859a5b17ab24644b" kind="enumvalue"><name>created</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3e4d891a5df3d6d0d7dd9432a1bc6470" kind="enumvalue"><name>accepted</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7d1e27253ac06e307e599edb2b0558bd" kind="enumvalue"><name>no_content</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae5e1e80aaecf3acf426c699f9e298164" kind="enumvalue"><name>partial_content</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca9aeba7eb915334acd922761566c2ac86" kind="enumvalue"><name>multiple_choices</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca522c7a01a5f0022064cc90149c179fa7" kind="enumvalue"><name>moved_permanently</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca14e3761228bfc71752251125a5f11087" kind="enumvalue"><name>moved_temporarily</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca72d9cf8a74038672b394991359756c35" kind="enumvalue"><name>not_modified</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca373d9e6e1aaf30e691dadb57eb22d7b1" kind="enumvalue"><name>bad_request</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca36fd540552b3b1b34e8f0bd8897cbf1e" kind="enumvalue"><name>unauthorized</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca350f9d68221a0db19024ee40cfc3c7f8" kind="enumvalue"><name>forbidden</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7500611bf7030bc99d25c354e7b64714" kind="enumvalue"><name>not_found</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cadd115df9e077388e1b70b344325094f3" kind="enumvalue"><name>method_not_allowed</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3d9fd48f8a61d2ef1bcabffb3e2c2336" kind="enumvalue"><name>internal_error</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca63877363c706f5095d05a54f8b57b0ae" kind="enumvalue"><name>not_implemented</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca34b1f5a8577eed2180e10076d1aad14c" kind="enumvalue"><name>bad_gateway</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca512d23352b911a1e9be84b5119e39095" kind="enumvalue"><name>service_unavailable</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1a48e500be5ba75ae2ce3d8bdb549f9211" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1http_1_1cpptempl" kind="namespace"><name>xtd::network::http::cpptempl</name>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kind="enum"><name>TokenType</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eeac2aec7f1ab8338419889ff04b8eb0f44" kind="enumvalue"><name>TOKEN_TYPE_NONE</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eeaa3056860c42c00806c737551b598885c" kind="enumvalue"><name>TOKEN_TYPE_TEXT</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea0e5df4476507663b07b952aefc096a86" kind="enumvalue"><name>TOKEN_TYPE_VAR</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea63ca41e19f481129f654b675913cc557" kind="enumvalue"><name>TOKEN_TYPE_IF</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea77914f6881c1bc9ec1910ca843bb6965" kind="enumvalue"><name>TOKEN_TYPE_FOR</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea20879254cae890cea9ab4fbdb6223165" kind="enumvalue"><name>TOKEN_TYPE_ENDIF</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea7a23df3b1f7078c58e56a3c51c24948c" kind="enumvalue"><name>TOKEN_TYPE_ENDFOR</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ad2f49991f1902699a98cf62bf0ae7ce6" kind="typedef"><name>data_ptr</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aff1b51bcf8064f69c85dd4833c1853b4" kind="typedef"><name>data_list</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kind="typedef"><name>data_map</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a09d1bd238d03342e60f0c20c679c0c88" kind="typedef"><name>token_ptr</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a38606cfbbfe81ed46ea9b0cf064de956" kind="typedef"><name>token_vector</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" kind="function"><name>parse_val</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a27515db5dde2876849fa316963a67e63" kind="function"><name>parse_tree</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1ab8c502f7e8347124c43f3dab3a583b34" kind="function"><name>tokenize</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a10e259ee95bf5effff9095cdd140a058" kind="function"><name>parse</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a32fe5ec0914372b09492647a168dbbcb" kind="function"><name>make_data</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1aae0780ff5e5b2afd5996fb6d27ff8ca0" kind="function"><name>make_data</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a4574c7173346efa3cfa420e5c657b58d" kind="function"><name>make_data</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a290ac1d88dd4e0bcc65f955fb26e47c8" kind="function"><name>make_data</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af97e4f705fc7cb54a179fe88293b2bd7" kind="function"><name>make_data</name></member>
+    <member refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a9cfccbb6229825a04791ed3001f6500e" kind="function"><name>make_data</name></member>
+  </compound>
+  <compound refid="namespacextd_1_1network_1_1utils" kind="namespace"><name>xtd::network::utils</name>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4f" kind="enum"><name>option</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3" kind="enumvalue"><name>nodelay</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2" kind="enumvalue"><name>reuseaddr</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa797919b5a9c95dfae9b06cf3086e40c1" kind="enumvalue"><name>keepalive</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a" kind="enumvalue"><name>linger</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994" kind="enumvalue"><name>compress</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kind="enum"><name>codec</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23" kind="enumvalue"><name>zlib</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c" kind="enumvalue"><name>gzip</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161a03ce1ba314f367fdd09887fc8f60578b" kind="enumvalue"><name>bzip2</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" kind="typedef"><name>EntryPair</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a6eef494cdc6ca2b10bf4f36f6fa110ee" kind="typedef"><name>CacheList</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1aa648e4975dce81f2fd0a9999f684781d" kind="typedef"><name>CacheMap</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" kind="typedef"><name>deadLineTimer_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" kind="typedef"><name>ioServicePtr_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" kind="typedef"><name>workPtr_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1aaaf1b50be1864a40d85efd18979631e1" kind="typedef"><name>streambufPtr_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a778bf7884b2296561ffc1fc5a5f14e38" kind="typedef"><name>t_IdNumberMap</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1aa6bd02256b6023347de116a773dd9500" kind="typedef"><name>t_IdNumberPair</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kind="typedef"><name>af_unix</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kind="typedef"><name>af_inet</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a0bdb4094852a77df867e219999175200" kind="typedef"><name>requestId_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kind="typedef"><name>vectorBytes_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" kind="typedef"><name>vectorUint32_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1ac3ca189267ad1167fa141608f8b3a2de" kind="typedef"><name>dequeId_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kind="typedef"><name>sharedBuf_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1af5b287652a0fd8fca54642f8d3ca07fa" kind="typedef"><name>sharedHeader_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kind="typedef"><name>handler_t</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" kind="variable"><name>CACHE_CAPACITY_MAX</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1adb4767541db3a79016a24142db705161" kind="variable"><name>CACHE_TTL_MAX</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1a181758eb475ef5f4aebfec6c0ebec0c5" kind="function"><name>do_sem_wait</name></member>
+    <member refid="namespacextd_1_1network_1_1utils_1aeee4bc5a0636807dd491f21938b7a1ca" kind="function"><name>ptime_to_time_t</name></member>
+  </compound>
+  <compound refid="main_8hh" kind="file"><name>main.hh</name>
+  </compound>
+  <compound refid="base_2Client_8cc" kind="file"><name>Client.cc</name>
+  </compound>
+  <compound refid="bip_2Client_8cc" kind="file"><name>Client.cc</name>
+  </compound>
+  <compound refid="base_2Client_8hh" kind="file"><name>Client.hh</name>
+  </compound>
+  <compound refid="bip_2Client_8hh" kind="file"><name>Client.hh</name>
+  </compound>
+  <compound refid="ClientThreadManager_8cc" kind="file"><name>ClientThreadManager.cc</name>
+  </compound>
+  <compound refid="ClientThreadManager_8hh" kind="file"><name>ClientThreadManager.hh</name>
+  </compound>
+  <compound refid="base_2Connection_8cc" kind="file"><name>Connection.cc</name>
+  </compound>
+  <compound refid="bip_2Connection_8cc" kind="file"><name>Connection.cc</name>
+  </compound>
+  <compound refid="http_2Connection_8cc" kind="file"><name>Connection.cc</name>
+  </compound>
+  <compound refid="base_2Connection_8hh" kind="file"><name>Connection.hh</name>
+  </compound>
+  <compound refid="bip_2Connection_8hh" kind="file"><name>Connection.hh</name>
+  </compound>
+  <compound refid="http_2Connection_8hh" kind="file"><name>Connection.hh</name>
+  </compound>
+  <compound refid="base_2Server_8cc" kind="file"><name>Server.cc</name>
+  </compound>
+  <compound refid="bip_2Server_8cc" kind="file"><name>Server.cc</name>
+  </compound>
+  <compound refid="http_2Server_8cc" kind="file"><name>Server.cc</name>
+  </compound>
+  <compound refid="base_2Server_8hh" kind="file"><name>Server.hh</name>
+  </compound>
+  <compound refid="bip_2Server_8hh" kind="file"><name>Server.hh</name>
+  </compound>
+  <compound refid="http_2Server_8hh" kind="file"><name>Server.hh</name>
+  </compound>
+  <compound refid="ClientPool_8hh" kind="file"><name>ClientPool.hh</name>
+  </compound>
+  <compound refid="tools_8hh" kind="file"><name>tools.hh</name>
+  </compound>
+  <compound refid="cpptempl_8cc" kind="file"><name>cpptempl.cc</name>
+  </compound>
+  <compound refid="cpptempl_8hh" kind="file"><name>cpptempl.hh</name>
+  </compound>
+  <compound refid="fwd_8hh" kind="file"><name>fwd.hh</name>
+  </compound>
+  <compound refid="Request_8cc" kind="file"><name>Request.cc</name>
+  </compound>
+  <compound refid="Request_8hh" kind="file"><name>Request.hh</name>
+  </compound>
+  <compound refid="Response_8cc" kind="file"><name>Response.cc</name>
+  </compound>
+  <compound refid="Response_8hh" kind="file"><name>Response.hh</name>
+  </compound>
+  <compound refid="Template_8cc" kind="file"><name>Template.cc</name>
+  </compound>
+  <compound refid="Template_8hh" kind="file"><name>Template.hh</name>
+  </compound>
+  <compound refid="network_8hh" kind="file"><name>network.hh</name>
+  </compound>
+  <compound refid="network__fwd_8hh" kind="file"><name>network_fwd.hh</name>
+  </compound>
+  <compound refid="CacheDns_8cc" kind="file"><name>CacheDns.cc</name>
+  </compound>
+  <compound refid="CacheDns_8hh" kind="file"><name>CacheDns.hh</name>
+  </compound>
+  <compound refid="CommTypeDefs_8hh" kind="file"><name>CommTypeDefs.hh</name>
+  </compound>
+  <compound refid="Config_8cc" kind="file"><name>Config.cc</name>
+  </compound>
+  <compound refid="Config_8hh" kind="file"><name>Config.hh</name>
+  </compound>
+  <compound refid="Resolver_8cc" kind="file"><name>Resolver.cc</name>
+  </compound>
+  <compound refid="Resolver_8hh" kind="file"><name>Resolver.hh</name>
+  </compound>
+  <compound refid="Utils_8cc" kind="file"><name>Utils.cc</name>
+  </compound>
+  <compound refid="Utils_8hh" kind="file"><name>Utils.hh</name>
+  </compound>
+  <compound refid="dir_c1452de13b1d7327b7634bdeac113742" kind="dir"><name>/home/psyco/dev/xtdcpp/network/src/base</name>
+  </compound>
+  <compound refid="dir_a72d967444d3edbf89c8cf7052a548c0" kind="dir"><name>/home/psyco/dev/xtdcpp/network/src/bip</name>
+  </compound>
+  <compound refid="dir_af6d4bf1f822fbee04dd187398f365aa" kind="dir"><name>/home/psyco/dev/xtdcpp/network/doc</name>
+  </compound>
+  <compound refid="dir_db8d478fdcc69b2fd4aed6164cd7e0d3" kind="dir"><name>/home/psyco/dev/xtdcpp/network/src/http</name>
+  </compound>
+  <compound refid="dir_c901c14b65aa229498a52b725b3d4a2c" kind="dir"><name>/home/psyco/dev/xtdcpp/network</name>
+  </compound>
+  <compound refid="dir_2351834354bc8905119ebfe596a90f94" kind="dir"><name>/home/psyco/dev/xtdcpp/network/src</name>
+  </compound>
+  <compound refid="dir_e557d9f9d8c5459c27d6a9599638cd98" kind="dir"><name>/home/psyco/dev/xtdcpp/network/src/utils</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structxtd_1_1Application_1_1t__option" kind="struct" language="C++" prot="private">
+    <compoundname>xtd::Application::t_option</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a74f46755b278edcf6d3b07531bb1d9f0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char xtd::Application::t_option::m_shortOpt</definition>
+        <argsstring></argsstring>
+        <name>m_shortOpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a028a65ae9ae83b5302726f70dfd4893b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::Application::t_option::m_longOpt</definition>
+        <argsstring></argsstring>
+        <name>m_longOpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="120" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a53cc01265ab04897008c7dcb27e89d4b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::Application::t_option::m_description</definition>
+        <argsstring></argsstring>
+        <name>m_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="121" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a592a9fca5f2d9634259ba1f5aa831f28" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" kindref="member">argument</ref></type>
+        <definition>argument xtd::Application::t_option::m_argumentType</definition>
+        <argsstring></argsstring>
+        <name>m_argumentType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1af55ca16ca4cc96c6a0e2f30467712090" prot="public" static="no" mutable="no">
+        <type>t_callback</type>
+        <definition>t_callback xtd::Application::t_option::m_callback</definition>
+        <argsstring></argsstring>
+        <name>m_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="123" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a2abcf020edd37389ef7fbe75ecbc43e1" prot="public" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" kindref="member">requirement</ref></type>
+        <definition>requirement xtd::Application::t_option::m_status</definition>
+        <argsstring></argsstring>
+        <name>m_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="124" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxtd_1_1Application_1_1t__option_1a2726359acde22afbbbb1a8fbf11267bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::Application::t_option::m_given</definition>
+        <argsstring></argsstring>
+        <name>m_given</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>xtd::Application::t_option</label>
+        <childnode refid="70" relation="usage">
+          <edgelabel>m_description</edgelabel>
+          <edgelabel>m_longOpt</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.hh" bodystart="117" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structxtd_1_1Application_1_1t__option_1a592a9fca5f2d9634259ba1f5aa831f28" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_argumentType</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1af55ca16ca4cc96c6a0e2f30467712090" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_callback</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1a53cc01265ab04897008c7dcb27e89d4b" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_description</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1a2726359acde22afbbbb1a8fbf11267bb" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_given</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1a028a65ae9ae83b5302726f70dfd4893b" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_longOpt</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1a74f46755b278edcf6d3b07531bb1d9f0" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_shortOpt</name></member>
+      <member refid="structxtd_1_1Application_1_1t__option_1a2abcf020edd37389ef7fbe75ecbc43e1" prot="public" virt="non-virtual"><scope>xtd::Application::t_option</scope><name>m_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

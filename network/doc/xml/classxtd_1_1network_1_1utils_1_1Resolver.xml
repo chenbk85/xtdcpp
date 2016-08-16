@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1Resolver" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::Resolver</compoundname>
+    <includes refid="base_2Server_8hh" local="no">Server.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename D</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Resolution des noms de domaines. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type de connexion <ref refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kindref="member">af_unix</ref> ou <ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">af_inet</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Cet objet a pour objectif de fournir une interface homogene pour la création des endpoints pour les différents types de connexions. Les mécanismes étant radicalement différents en <ref refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kindref="member">af_unix</ref> (socket unix) et <ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">af_inet</ref> (socket tcp ipv4), il est intégralement spécialisé. Dans le cas de <ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">af_inet</ref>, on vent de résoudre un nom de domaine en IP en interrogeant les serveurs DNS. Pour ne pas les surcharger on embarque un cache, <ref refid="classxtd_1_1network_1_1utils_1_1CacheDns" kindref="compound">CacheDns</ref>, qui garde en local les résolutions effectuée. </para>    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="11" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

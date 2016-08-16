@@ -1,0 +1,62 @@
+\hypertarget{json__parser_8hpp}{}\section{/home/psyco/dev/xtdcpp/common/src/json\+\_\+parser.hpp File Reference}
+\label{json__parser_8hpp}\index{/home/psyco/dev/xtdcpp/common/src/json\+\_\+parser.\+hpp@{/home/psyco/dev/xtdcpp/common/src/json\+\_\+parser.\+hpp}}
+{\ttfamily \#include $<$boost/property\+\_\+tree/ptree.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/property\+\_\+tree/detail/json\+\_\+parser\+\_\+read.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}json\+\_\+parser\+\_\+write.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$boost/property\+\_\+tree/detail/json\+\_\+parser\+\_\+error.\+hpp$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$locale$>$}\\*
+{\ttfamily \#include $<$boost/lexical\+\_\+cast.\+hpp$>$}\\*
+Include dependency graph for json\+\_\+parser.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{json__parser_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ T $>$}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ std\+::string $>$}
+\item 
+struct \hyperlink{structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::translator$<$ bool $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceboost}{boost}
+\item 
+ \hyperlink{namespaceboost_1_1property__tree}{boost\+::property\+\_\+tree}
+\item 
+ \hyperlink{namespaceboost_1_1property__tree_1_1json__parser}{boost\+::property\+\_\+tree\+::json\+\_\+parser}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{json__parser_8hpp_a021df3c720c2c295aa44478b28940a42}{B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a7aed126d35d2893e51c49399ba33c51e}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::read\+\_\+json} (std\+::basic\+\_\+istream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, Ptree \&pt)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_aa8344dc0b7987cba89b0630195d7a34d}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::read\+\_\+json} (const std\+::string \&filename, Ptree \&pt, const std\+::locale \&loc=std\+::locale())
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_ad290247428581132003df8706e3ef9d0}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json} (std\+::basic\+\_\+ostream$<$ typename Ptree\+::key\+\_\+type\+::value\+\_\+type $>$ \&stream, const Ptree \&pt, bool pretty=true)
+\item 
+{\footnotesize template$<$class Ptree $>$ }\\void \hyperlink{namespaceboost_1_1property__tree_1_1json__parser_a49f6a7c920e5ac943603a5f10ccf3a32}{boost\+::property\+\_\+tree\+::json\+\_\+parser\+::write\+\_\+json} (const std\+::string \&filename, const Ptree \&pt, const std\+::locale \&loc=std\+::locale(), bool pretty=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{json\+\_\+parser.\+hpp@{json\+\_\+parser.\+hpp}!B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED@{B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED@{B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}!json\+\_\+parser.\+hpp@{json\+\_\+parser.\+hpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}{BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}\hypertarget{json__parser_8hpp_a021df3c720c2c295aa44478b28940a42}{}\label{json__parser_8hpp_a021df3c720c2c295aa44478b28940a42}
+On a copier le header de boost pour palier a une limitation du writer json qui ne gere que des strings ptree.\+put$<$int$>$(\char`\"{}key\char`\"{}, 5) ptree.\+put$<$string$>$(\char`\"{}key1\char`\"{}, \char`\"{}salut\char`\"{}) write\+\_\+json(cout, ptree) -\/$>$ \{ \char`\"{}key\char`\"{} \+: \char`\"{}5\char`\"{}, \char`\"{}key1\char`\"{} \+: \char`\"{}salut\char`\"{} \} on coudrait avoir \+: -\/$>$ \{ \char`\"{}key\char`\"{} \+: 5, \char`\"{}key1\char`\"{} \+: \char`\"{}salut\char`\"{} \} 
+
+Definition at line 27 of file json\+\_\+parser.\+hpp.
+

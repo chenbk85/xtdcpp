@@ -1,0 +1,171 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Server$<$ Domain $>$\+:\+:Handler Class Reference}
+\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler}\index{xtd\+::network\+::http\+::\+Server$<$ Domain $>$\+::\+Handler@{xtd\+::network\+::http\+::\+Server$<$ Domain $>$\+::\+Handler}}
+
+
+{\ttfamily \#include $<$Server.\+hh$>$}
+
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:Server$<$ Domain $>$\+:\+:Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Server_1_1Handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter}
+\item 
+struct \hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} $>$ \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a840883d08fcdd990dbe33b660ee6febb}{t\+\_\+listof}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a509777bdc769cabb23f04728e745b823}{Handler} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a91c38afd6870731fe9f1b79d2cfda19f}{less} (const \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} \&p\+\_\+obj1, const \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler}{Handler} \&p\+\_\+obj2)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aaea3487ea9687e61c40453d90841b223}{m\+\_\+path}
+\item 
+\hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler}{handler} \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a4dfed2def9b251595d4ee176c106882f}{m\+\_\+handler}
+\item 
+\hyperlink{structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter}{filter} \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a95854563aaa6e9c7fcced63d351e47a3}{m\+\_\+filter}
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a7605921b1ffffb66376920cfa6ebcb08}{m\+\_\+match\+Any}
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aae46aaaf81c803b4ac6dd1a5b60feb36}{m\+\_\+descr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain = utils\+::af\+\_\+inet$>$\\*
+class xtd\+::network\+::http\+::\+Server$<$ Domain $>$\+::\+Handler}
+
+
+
+Definition at line 238 of file Server.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!t\+\_\+listof@{t\+\_\+listof}}
+\index{t\+\_\+listof@{t\+\_\+listof}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{t\+\_\+listof}{t_listof}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ typedef vector$<${\bf Handler}$>$ {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::{\bf Handler\+::t\+\_\+listof}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a840883d08fcdd990dbe33b660ee6febb}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a840883d08fcdd990dbe33b660ee6febb}
+
+
+Definition at line 241 of file Server.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!Handler@{Handler}}
+\index{Handler@{Handler}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{Handler(void)}{Handler(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::\+Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a509777bdc769cabb23f04728e745b823}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a509777bdc769cabb23f04728e745b823}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a509777bdc769cabb23f04728e745b823_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!less@{less}}
+\index{less@{less}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{less(const Handler \&p\+\_\+obj1, const Handler \&p\+\_\+obj2)}{less(const Handler &p_obj1, const Handler &p_obj2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ static bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::less (
+\begin{DoxyParamCaption}
+\item[{const {\bf Handler} \&}]{p\+\_\+obj1, }
+\item[{const {\bf Handler} \&}]{p\+\_\+obj2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a91c38afd6870731fe9f1b79d2cfda19f}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a91c38afd6870731fe9f1b79d2cfda19f}
+
+
+Definition at line 303 of file Server.\+hh.
+
+
+\begin{DoxyCode}
+304     \{
+305       \textcolor{keywordflow}{if} (p\_obj1.m\_matchAny == p\_obj2.m\_matchAny)
+306         \textcolor{keywordflow}{return} std::less<string>()(p\_obj2.m\_path, p\_obj1.m\_path);
+307       \textcolor{keywordflow}{return} std::less<bool>()(p\_obj1.m\_matchAny, p\_obj2.m\_matchAny);
+308     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a91c38afd6870731fe9f1b79d2cfda19f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!m\+\_\+descr@{m\+\_\+descr}}
+\index{m\+\_\+descr@{m\+\_\+descr}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{m\+\_\+descr}{m_descr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ string {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::m\+\_\+descr}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aae46aaaf81c803b4ac6dd1a5b60feb36}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aae46aaaf81c803b4ac6dd1a5b60feb36}
+
+
+Definition at line 317 of file Server.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!m\+\_\+filter@{m\+\_\+filter}}
+\index{m\+\_\+filter@{m\+\_\+filter}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{m\+\_\+filter}{m_filter}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ {\bf filter} {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::m\+\_\+filter}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a95854563aaa6e9c7fcced63d351e47a3}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a95854563aaa6e9c7fcced63d351e47a3}
+
+
+Definition at line 315 of file Server.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!m\+\_\+handler@{m\+\_\+handler}}
+\index{m\+\_\+handler@{m\+\_\+handler}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{m\+\_\+handler}{m_handler}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ {\bf handler} {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::m\+\_\+handler}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a4dfed2def9b251595d4ee176c106882f}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a4dfed2def9b251595d4ee176c106882f}
+
+
+Definition at line 314 of file Server.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!m\+\_\+match\+Any@{m\+\_\+match\+Any}}
+\index{m\+\_\+match\+Any@{m\+\_\+match\+Any}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{m\+\_\+match\+Any}{m_matchAny}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ bool {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::m\+\_\+match\+Any}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a7605921b1ffffb66376920cfa6ebcb08}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_a7605921b1ffffb66376920cfa6ebcb08}
+
+
+Definition at line 316 of file Server.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!xtd\+::network\+::http\+::\+Server\+::\+Handler@{xtd\+::network\+::http\+::\+Server\+::\+Handler}}
+\subsubsection[{\texorpdfstring{m\+\_\+path}{m_path}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain  = utils\+::af\+\_\+inet$>$ string {\bf xtd\+::network\+::http\+::\+Server}$<$ Domain $>$\+::Handler\+::m\+\_\+path}\hypertarget{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aaea3487ea9687e61c40453d90841b223}{}\label{classxtd_1_1network_1_1http_1_1Server_1_1Handler_aaea3487ea9687e61c40453d90841b223}
+
+
+Definition at line 313 of file Server.\+hh.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{http_2Server_8hh}{Server.\+hh}\end{DoxyCompactItemize}

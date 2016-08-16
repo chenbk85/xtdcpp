@@ -1,0 +1,225 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor}{}\section{xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+For Class Reference}
+\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor}\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+
+
+{\ttfamily \#include $<$cpptempl.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+For\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:cpptempl\+:\+:Token\+For\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a536e770283d1ce5e433ad069febdd592}{Token\+For} (string expr)
+\item 
+\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a39833083d228a5b5ef9f6bb7896479ee}{Token\+Type} \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a6901a6f0d625a48ae1ca6abc5b5b4d9e}{gettype} ()
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a27dde182755e5a44c3d11f1a1ed9aa65}{gettext} (\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a638d1d81c8fb63c0bbafd508d6a2a007}{data\+\_\+map} \&data)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a8256ae71e4f40e1e84426e837b4090ef}{set\+\_\+children} (\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a38606cfbbfe81ed46ea9b0cf064de956}{token\+\_\+vector} \&children)
+\item 
+\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a38606cfbbfe81ed46ea9b0cf064de956}{token\+\_\+vector} \& \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_ab742d87d8aea8968ebb3403333ec021e}{get\+\_\+children} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a30879f48f3ad6e5e61f6191a702743e4}{m\+\_\+key}
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a262fbad437a0b5aeed05a73c315f865b}{m\+\_\+val}
+\item 
+\hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a38606cfbbfe81ed46ea9b0cf064de956}{token\+\_\+vector} \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\+\_\+children}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 218 of file cpptempl.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!Token\+For@{Token\+For}}
+\index{Token\+For@{Token\+For}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{Token\+For(string expr)}{TokenFor(string expr)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::\+Token\+For (
+\begin{DoxyParamCaption}
+\item[{string}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a536e770283d1ce5e433ad069febdd592}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a536e770283d1ce5e433ad069febdd592}
+
+
+Definition at line 114 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+115 \{
+116   vector<string> elements;
+117   boost::split(elements, expr, boost::is\_space(), boost::token\_compress\_on);
+118   \textcolor{keywordflow}{if} (elements.size() != 4u)
+119   \{
+120     \textcolor{keywordflow}{throw} TemplateException(\textcolor{stringliteral}{"Invalid syntax in for statement"});
+121   \}
+122   \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a262fbad437a0b5aeed05a73c315f865b}{m\_val} = elements[1];
+123   \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a30879f48f3ad6e5e61f6191a702743e4}{m\_key} = elements[3];
+124 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!get\+\_\+children@{get\+\_\+children}}
+\index{get\+\_\+children@{get\+\_\+children}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{get\+\_\+children()}{get_children()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf token\+\_\+vector} \& xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::get\+\_\+children (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_ab742d87d8aea8968ebb3403333ec021e}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_ab742d87d8aea8968ebb3403333ec021e}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_a2611c2d4d0dc383142fb1628df09f381}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 155 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+156 \{
+157   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\_children};
+158 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!gettext@{gettext}}
+\index{gettext@{gettext}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{gettext(data\+\_\+map \&data)}{gettext(data_map &data)}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::gettext (
+\begin{DoxyParamCaption}
+\item[{{\bf data\+\_\+map} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a27dde182755e5a44c3d11f1a1ed9aa65}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a27dde182755e5a44c3d11f1a1ed9aa65}
+
+
+Implements \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_a5aeb3ae0fe7478101eaaa90898709a1b}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 131 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+132 \{
+133   vector<string> elements;
+134   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_ad2f49991f1902699a98cf62bf0ae7ce6}{data\_ptr} value = \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_af79d10d06cd5bc9ce629bb2d21fbcfd6}{parse\_val}(\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a30879f48f3ad6e5e61f6191a702743e4}{m\_key}, data);
+135   \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_aff1b51bcf8064f69c85dd4833c1853b4}{data\_list} &items = value->getlist();
+136   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < items.size(); ++i)
+137   \{
+138     data[\textcolor{stringliteral}{"loop"}] = \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a32fe5ec0914372b09492647a168dbbcb}{make\_data}(boost::lexical\_cast<string>(i+1));
+139     data[\textcolor{stringliteral}{"loop0"}] = \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a32fe5ec0914372b09492647a168dbbcb}{make\_data}(boost::lexical\_cast<string>(i));
+140     data[\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a262fbad437a0b5aeed05a73c315f865b}{m\_val}] = items[i];
+141     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\_children}.size(); ++j)
+142     \{
+143       elements.push\_back(\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\_children}[j]->\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a27dde182755e5a44c3d11f1a1ed9aa65}{gettext}(data));
+144     \}
+145   \}
+146   \textcolor{keywordflow}{return} boost::join(elements, \textcolor{stringliteral}{""});
+147 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a27dde182755e5a44c3d11f1a1ed9aa65_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!gettype@{gettype}}
+\index{gettype@{gettype}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{gettype()}{gettype()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token\+Type} xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::gettype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a6901a6f0d625a48ae1ca6abc5b5b4d9e}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a6901a6f0d625a48ae1ca6abc5b5b4d9e}
+
+
+Implements \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_afd7dd97138bbac2734e414a406a8e4fe}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 126 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+127 \{
+128   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_1_1cpptempl_a39833083d228a5b5ef9f6bb7896479eea77914f6881c1bc9ec1910ca843bb6965}{TOKEN\_TYPE\_FOR};
+129 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!set\+\_\+children@{set\+\_\+children}}
+\index{set\+\_\+children@{set\+\_\+children}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{set\+\_\+children(token\+\_\+vector \&children)}{set_children(token_vector &children)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::set\+\_\+children (
+\begin{DoxyParamCaption}
+\item[{{\bf token\+\_\+vector} \&}]{children}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a8256ae71e4f40e1e84426e837b4090ef}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a8256ae71e4f40e1e84426e837b4090ef}
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_adc8822088b8b9a148b755bc25cd1df6e}{xtd\+::network\+::http\+::cpptempl\+::\+Token}.
+
+
+
+Definition at line 149 of file cpptempl.\+cc.
+
+
+\begin{DoxyCode}
+150 \{
+151   \hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\_children}.clear();
+152   std::copy(children.begin(), children.end(), std::back\_inserter(\hyperlink{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{m\_children}));
+153 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!m\+\_\+children@{m\+\_\+children}}
+\index{m\+\_\+children@{m\+\_\+children}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{m\+\_\+children}{m_children}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf token\+\_\+vector} xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::m\+\_\+children}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a2ee55240eafb3c90b7a0c96c0ad253a5}
+
+
+Definition at line 223 of file cpptempl.\+hh.
+
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!m\+\_\+key@{m\+\_\+key}}
+\index{m\+\_\+key@{m\+\_\+key}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{m\+\_\+key}{m_key}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::m\+\_\+key}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a30879f48f3ad6e5e61f6191a702743e4}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a30879f48f3ad6e5e61f6191a702743e4}
+
+
+Definition at line 221 of file cpptempl.\+hh.
+
+\index{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}!m\+\_\+val@{m\+\_\+val}}
+\index{m\+\_\+val@{m\+\_\+val}!xtd\+::network\+::http\+::cpptempl\+::\+Token\+For@{xtd\+::network\+::http\+::cpptempl\+::\+Token\+For}}
+\subsubsection[{\texorpdfstring{m\+\_\+val}{m_val}}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::cpptempl\+::\+Token\+For\+::m\+\_\+val}\hypertarget{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a262fbad437a0b5aeed05a73c315f865b}{}\label{classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenFor_a262fbad437a0b5aeed05a73c315f865b}
+
+
+Definition at line 222 of file cpptempl.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{cpptempl_8hh}{cpptempl.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{cpptempl_8cc}{cpptempl.\+cc}\end{DoxyCompactItemize}

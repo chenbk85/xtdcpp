@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1logger" kind="class" language="C++" prot="public">
+    <compoundname>xtd::logger</compoundname>
+    <includes refid="logger_8hh" local="no">logger.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" prot="public" static="no">
+        <name>level</name>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc" prot="public">
+          <name>emerg</name>
+          <initializer>= LOG_EMERG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f" prot="public">
+          <name>alert</name>
+          <initializer>= LOG_ALERT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" prot="public">
+          <name>crit</name>
+          <initializer>= LOG_CRIT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6" prot="public">
+          <name>err</name>
+          <initializer>= LOG_ERR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd" prot="public">
+          <name>warning</name>
+          <initializer>= LOG_WARNING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65" prot="public">
+          <name>notice</name>
+          <initializer>= LOG_NOTICE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c" prot="public">
+          <name>info</name>
+          <initializer>= LOG_INFO</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d" prot="public">
+          <name>debug</name>
+          <initializer>= LOG_DEBUG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="17" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1logger_1a0c98b63f525ea62151a12e8c2520f461" prot="private" static="no">
+        <type>map&lt; string, <ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref> &gt;</type>
+        <definition>typedef map&lt;string, level&gt; xtd::logger::t_levels</definition>
+        <argsstring></argsstring>
+        <name>t_levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1logger_1a8c79a770ef82ac7e591d4fa3c12687eb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::logger::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1logger_1a7936d6543c09ea5841a7624b24213db3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::logger::m_initialized</definition>
+        <argsstring></argsstring>
+        <name>m_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="80" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1logger_1ac2c294938116042039672af172abcb13" prot="private" static="no" mutable="no">
+        <type>t_levels</type>
+        <definition>t_levels xtd::logger::m_levels</definition>
+        <argsstring></argsstring>
+        <name>m_levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="81" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1logger_1a921177349f5374d008d6cc55af0bf75e" prot="private" static="yes" mutable="no">
+        <type><ref refid="classxtd_1_1logger" kindref="compound">logger</ref> *</type>
+        <definition>logger * xtd::logger::ms_pInstance</definition>
+        <argsstring></argsstring>
+        <name>ms_pInstance</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="82" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1logger_1a794da1cd7618a6796d639d11845f9006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::logger::logger</definition>
+        <argsstring>(void)</argsstring>
+        <name>logger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="11" bodyend="14"/>
+        <referencedby refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" compoundref="logger_8cc" startline="17" endline="22">get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="34" bodyend="37"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a8559c9744e68ecab37076d8744499c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::initialize</definition>
+        <argsstring>(const string &amp;p_name, level p_level)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="40" bodyend="46"/>
+        <references refid="classxtd_1_1logger_1a314e15f9d6eeeafbcf93b2bb757e2143" compoundref="logger_8cc" startline="96" endline="99">setName</references>
+        <references refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" compoundref="logger_8cc" startline="49" endline="52">setLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::setLevel</definition>
+        <argsstring>(const string &amp;p_module, level p_level)</argsstring>
+        <name>setLevel</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="49" bodyend="52"/>
+        <referencedby refid="classxtd_1_1logger_1a8559c9744e68ecab37076d8744499c8f" compoundref="logger_8cc" startline="40" endline="46">initialize</referencedby>
+        <referencedby refid="classxtd_1_1logger_1a18cd978561fcaf48e2fc935331834fe9" compoundref="logger_8cc" startline="55" endline="59">clearAll</referencedby>
+        <referencedby refid="classxtd_1_1logger_1af88d4c20247cb62433e660ab7f9f5a97" compoundref="logger_8cc" startline="62" endline="72">updateLevels</referencedby>
+        <referencedby refid="classxtd_1_1logger_1a4cb9dd27ead213c0a9f3d85d80e9a7b4" compoundref="logger_8cc" startline="103" endline="128">getLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1af88d4c20247cb62433e660ab7f9f5a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::updateLevels</definition>
+        <argsstring>(const string &amp;p_regex, level p_level)</argsstring>
+        <name>updateLevels</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_regex</declname>
+        </param>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="62" bodyend="72"/>
+        <references refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" compoundref="logger_8cc" startline="49" endline="52">setLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::setAllLevels</definition>
+        <argsstring>(level p_level)</argsstring>
+        <name>setAllLevels</name>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="81" bodyend="85"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</referencedby>
+        <referencedby refid="classxtd_1_1logger_1a10ec7455d964067fc1ca79f3a7cc14b4" compoundref="logger_8cc" startline="88" endline="91">setAllValueLevels</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a10ec7455d964067fc1ca79f3a7cc14b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::setAllValueLevels</definition>
+        <argsstring>(uint32_t p_level)</argsstring>
+        <name>setAllValueLevels</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="40" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="88" bodyend="91"/>
+        <references refid="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" compoundref="logger_8cc" startline="81" endline="85">setAllLevels</references>
+        <references refid="classxtd_1_1logger_1afa70268de8cc055f4903a54fa61c52df" compoundref="logger_8cc" startline="133" endline="152">levelOf</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a18cd978561fcaf48e2fc935331834fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::clearAll</definition>
+        <argsstring>(level p_default)</argsstring>
+        <name>clearAll</name>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="55" bodyend="59"/>
+        <references refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" compoundref="logger_8cc" startline="49" endline="52">setLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a314e15f9d6eeeafbcf93b2bb757e2143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::setName</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="96" bodyend="99"/>
+        <referencedby refid="classxtd_1_1logger_1a8559c9744e68ecab37076d8744499c8f" compoundref="logger_8cc" startline="40" endline="46">initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1afa70268de8cc055f4903a54fa61c52df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+        <definition>logger::level xtd::logger::levelOf</definition>
+        <argsstring>(const uint32_t &amp;p_level)</argsstring>
+        <name>levelOf</name>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="133" bodyend="152"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc">emerg</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f">alert</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6">err</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd">warning</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65">notice</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c">info</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d">debug</references>
+        <referencedby refid="classxtd_1_1logger_1a10ec7455d964067fc1ca79f3a7cc14b4" compoundref="logger_8cc" startline="88" endline="91">setAllValueLevels</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a615e10d21938ff8681a98894aa31490e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::logger::valueOf</definition>
+        <argsstring>(level p_level)</argsstring>
+        <name>valueOf</name>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="155" bodyend="177"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc">emerg</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f">alert</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6">err</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd">warning</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65">notice</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c">info</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d">debug</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a791f6ccde4fa459cf05085d9b7a0f2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string xtd::logger::stringOf</definition>
+        <argsstring>(level p_level)</argsstring>
+        <name>stringOf</name>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="196" bodyend="218"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc">emerg</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f">alert</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6">err</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd">warning</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65">notice</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c">info</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d">debug</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a88420216bbafe0a36bbd25080ac14567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+        <definition>logger::level xtd::logger::fromString</definition>
+        <argsstring>(string p_level)</argsstring>
+        <name>fromString</name>
+        <param>
+          <type>string</type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="222" bodyend="241"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc">emerg</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f">alert</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6">err</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd">warning</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65">notice</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c">info</references>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d">debug</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a4cb9dd27ead213c0a9f3d85d80e9a7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+        <definition>logger::level xtd::logger::getLevel</definition>
+        <argsstring>(const string &amp;p_module)</argsstring>
+        <name>getLevel</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="103" bodyend="128"/>
+        <references refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13">crit</references>
+        <references refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" compoundref="logger_8cc" startline="49" endline="52">setLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a8b22d69269de5f4269fbbf43fe6f9b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>t_levels</type>
+        <definition>logger::t_levels xtd::logger::getLevels</definition>
+        <argsstring>(void)</argsstring>
+        <name>getLevels</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1aaca2ec5d979b7f57c2060ecaac2715ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::logger::isValidStringLevel</definition>
+        <argsstring>(string p_level)</argsstring>
+        <name>isValidStringLevel</name>
+        <param>
+          <type>string</type>
+          <declname>p_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="51" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="181" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1logger" kindref="compound">logger</ref> &amp;</type>
+        <definition>logger &amp; xtd::logger::get</definition>
+        <argsstring>(void)</argsstring>
+        <name>get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="53" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="17" bodyend="22"/>
+        <references refid="classxtd_1_1logger_1a794da1cd7618a6796d639d11845f9006" compoundref="logger_8cc" startline="11" endline="14">logger</references>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a07697b74619641014fb6e51130b5c837" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::emerg</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>emerg</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1abea0d6d16f6138d94e9373457fa08513" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::alert</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>alert</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::crit</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>crit</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="59" column="1"/>
+        <referencedby refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</referencedby>
+        <referencedby refid="classxtd_1_1ConfParser_1a460c904cfe815a6141feb088022c9564" compoundref="ConfParser_8cc" startline="23" endline="30">xtd::ConfParser::ConfParser</referencedby>
+        <referencedby refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" compoundref="error_8hh" startline="12" endline="16">xtd::error::do_throw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::err</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>err</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="61" column="1"/>
+        <referencedby refid="classxtd_1_1ConfParser_1a460c904cfe815a6141feb088022c9564" compoundref="ConfParser_8cc" startline="23" endline="30">xtd::ConfParser::ConfParser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a7432d0a490aef6bfe2de6f5ff5b77c06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::warning</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>warning</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::info</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>info</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="65" column="1"/>
+        <referencedby refid="classxtd_1_1ConfParser_1ac8f46e56cdd5d015719c682707b12bc2" compoundref="ConfParser_8cc" startline="389" endline="401">xtd::ConfParser::get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a74886bf7a5d2bb1f2b2bf0265b13b38b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::notice</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>notice</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::logger::debug</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="69" column="1"/>
+        <referencedby refid="classxtd_1_1ConfParser_1a460c904cfe815a6141feb088022c9564" compoundref="ConfParser_8cc" startline="23" endline="30">xtd::ConfParser::ConfParser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Arguments</declname>
+            <defname>Arguments</defname>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>static string xtd::logger::format_vargs</definition>
+        <argsstring>(string const &amp;p_fmt, Arguments &amp;&amp;...p_args)</argsstring>
+        <name>format_vargs</name>
+        <param>
+          <type>string const &amp;</type>
+          <declname>p_fmt</declname>
+        </param>
+        <param>
+          <type>Arguments &amp;&amp;...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="71" column="1"/>
+        <referencedby refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" compoundref="error_8hh" startline="12" endline="16">xtd::error::do_throw</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1logger_1a8b4b9ba2c423f547f9c96022fe05b545" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::logger::wrap_syslog</definition>
+        <argsstring>(int __pri, const char *__fmt,...)</argsstring>
+        <name>wrap_syslog</name>
+        <param>
+          <type>int</type>
+          <declname>__pri</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>__fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="74" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.cc" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1logger_1ae5dda6abccc897f3ea0fd60125290263" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::logger::log</definition>
+        <argsstring>(level p_level, const string &amp;p_module, const string &amp;p_format, Args...p_args)</argsstring>
+        <name>log</name>
+        <param>
+          <type><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" kindref="member">level</ref></type>
+          <declname>p_level</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="14" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1logger_1abea0d6d16f6138d94e9373457fa08513" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>alert</name></member>
+      <member refid="classxtd_1_1logger_1a18cd978561fcaf48e2fc935331834fe9" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>clearAll</name></member>
+      <member refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>crit</name></member>
+      <member refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>debug</name></member>
+      <member refid="classxtd_1_1logger_1a07697b74619641014fb6e51130b5c837" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>emerg</name></member>
+      <member refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>err</name></member>
+      <member refid="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>format_vargs</name></member>
+      <member refid="classxtd_1_1logger_1a88420216bbafe0a36bbd25080ac14567" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>fromString</name></member>
+      <member refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>get</name></member>
+      <member refid="classxtd_1_1logger_1a4cb9dd27ead213c0a9f3d85d80e9a7b4" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>getLevel</name></member>
+      <member refid="classxtd_1_1logger_1a8b22d69269de5f4269fbbf43fe6f9b53" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>getLevels</name></member>
+      <member refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>info</name></member>
+      <member refid="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1logger_1a8559c9744e68ecab37076d8744499c8f" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1logger_1aaca2ec5d979b7f57c2060ecaac2715ec" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>isValidStringLevel</name></member>
+      <member refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>level</name></member>
+      <member refid="classxtd_1_1logger_1afa70268de8cc055f4903a54fa61c52df" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>levelOf</name></member>
+      <member refid="classxtd_1_1logger_1ae5dda6abccc897f3ea0fd60125290263" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>log</name></member>
+      <member refid="classxtd_1_1logger_1a794da1cd7618a6796d639d11845f9006" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>logger</name></member>
+      <member refid="classxtd_1_1logger_1a7936d6543c09ea5841a7624b24213db3" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>m_initialized</name></member>
+      <member refid="classxtd_1_1logger_1ac2c294938116042039672af172abcb13" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>m_levels</name></member>
+      <member refid="classxtd_1_1logger_1a8c79a770ef82ac7e591d4fa3c12687eb" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1logger_1a921177349f5374d008d6cc55af0bf75e" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>ms_pInstance</name></member>
+      <member refid="classxtd_1_1logger_1a74886bf7a5d2bb1f2b2bf0265b13b38b" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>notice</name></member>
+      <member refid="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>setAllLevels</name></member>
+      <member refid="classxtd_1_1logger_1a10ec7455d964067fc1ca79f3a7cc14b4" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>setAllValueLevels</name></member>
+      <member refid="classxtd_1_1logger_1a9002910ed99cdc1df062c39e385cd379" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>setLevel</name></member>
+      <member refid="classxtd_1_1logger_1a314e15f9d6eeeafbcf93b2bb757e2143" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>setName</name></member>
+      <member refid="classxtd_1_1logger_1a791f6ccde4fa459cf05085d9b7a0f2d5" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>stringOf</name></member>
+      <member refid="classxtd_1_1logger_1a0c98b63f525ea62151a12e8c2520f461" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>t_levels</name></member>
+      <member refid="classxtd_1_1logger_1af88d4c20247cb62433e660ab7f9f5a97" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>updateLevels</name></member>
+      <member refid="classxtd_1_1logger_1a615e10d21938ff8681a98894aa31490e" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>valueOf</name></member>
+      <member refid="classxtd_1_1logger_1a7432d0a490aef6bfe2de6f5ff5b77c06" prot="public" virt="non-virtual"><scope>xtd::logger</scope><name>warning</name></member>
+      <member refid="classxtd_1_1logger_1a8b4b9ba2c423f547f9c96022fe05b545" prot="private" virt="non-virtual"><scope>xtd::logger</scope><name>wrap_syslog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

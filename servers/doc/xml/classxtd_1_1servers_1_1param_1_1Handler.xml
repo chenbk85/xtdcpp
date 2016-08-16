@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1param_1_1Handler" kind="class" language="C++" prot="public">
+    <compoundname>xtd::servers::param::Handler</compoundname>
+    <includes refid="Handler_8hh" local="no">Handler.hh</includes>
+    <innerclass refid="structxtd_1_1servers_1_1param_1_1Handler_1_1setter" prot="private">xtd::servers::param::Handler::setter</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Handler_1aa2fe18c232ed8121487cdf19de6063f8" prot="private" static="no">
+        <type><ref refid="classxtd_1_1servers_1_1param_1_1Base_1aaf4d92eca642f61cb81524096926c6a1" kindref="member">Base::t_sptr</ref></type>
+        <definition>typedef Base::t_sptr xtd::servers::param::Handler::t_param_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_param_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1servers_1_1param_1_1Handler_1af0bd361bc9b8ba7fe9d2b6986052aa43" prot="private" static="no">
+        <type>map&lt; string, t_param_sptr &gt;</type>
+        <definition>typedef map&lt;string, t_param_sptr&gt; xtd::servers::param::Handler::t_params</definition>
+        <argsstring></argsstring>
+        <name>t_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Handler_1a9a169b893f5bc3bad90337cba4b131de" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::param::Handler::m_actionPath</definition>
+        <argsstring></argsstring>
+        <name>m_actionPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="177" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1param_1_1Handler_1ad58dbda62277937590e25f0efe476673" prot="private" static="no" mutable="no">
+        <type>t_params</type>
+        <definition>t_params xtd::servers::param::Handler::m_params</definition>
+        <argsstring></argsstring>
+        <name>m_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="178" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a93996915b562641b4673381c9abfae7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::param::Handler::Handler</definition>
+        <argsstring>(const string &amp;p_actionPath)</argsstring>
+        <name>Handler</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_actionPath</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_actionPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the action path where to store persistent parameters (i.e. files containing values) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a53a10d8d422013e62363e0d28d4e9017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>t_param_sptr</type>
+        <definition>Handler::t_param_sptr xtd::servers::param::Handler::add</definition>
+        <argsstring>(const string &amp;p_name, const T &amp;p_val, bool p_syncDisk=true)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_syncDisk</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Add a new parameter to the <ref refid="classxtd_1_1servers_1_1param_1_1Handler" kindref="compound">Handler</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key name for the parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the the variable to register </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_syncDisk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the persistence parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a shared ptr to the base param object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="59" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="184" bodyend="188"/>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a3bc858ae5bb7b6ce1f4d0a5eb327d17f" compoundref="Handler_8hh" startline="194" endline="202">bind</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a3bc858ae5bb7b6ce1f4d0a5eb327d17f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>t_param_sptr</type>
+        <definition>Handler::t_param_sptr xtd::servers::param::Handler::bind</definition>
+        <argsstring>(const string &amp;p_name, T &amp;p_val, bool p_syncDisk=true)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_val</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_syncDisk</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="194" bodyend="202"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a53a10d8d422013e62363e0d28d4e9017" compoundref="Handler_8hh" startline="184" endline="188">add</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a72a575bef0683ae6197c9f34cdf31d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>t_param_sptr</type>
+        <definition>Handler::t_param_sptr xtd::servers::param::Handler::add</definition>
+        <argsstring>(const string &amp;p_name, t_param_sptr p_param, bool p_syncDisk=true)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>t_param_sptr</type>
+          <declname>p_param</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_syncDisk</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Add a new parameter to the <ref refid="classxtd_1_1servers_1_1param_1_1Handler" kindref="compound">Handler</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key name for the parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a shared ptr to an already existing parameter to register </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_syncDisk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the persistence parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a shared ptr to the base param object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="73" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="126" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::exists</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+<para>Existency checking. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter to check </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if already declared </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="82" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="89" bodyend="92"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Handler::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialization. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="88" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="47" bodyend="74"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1aba6e8d983f28617b3168b60cf6464926" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Handler::accept</definition>
+        <argsstring>(Visitor &amp;p_visitor) const </argsstring>
+        <name>accept</name>
+        <param>
+          <type><ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref> &amp;</type>
+          <declname>p_visitor</declname>
+        </param>
+        <briefdescription>
+<para>Add parameters to the Json visitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>call accept on each parameter</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the right visitor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::verify</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_src)</argsstring>
+        <name>verify</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+<para>Function to verify if given string value can be setted on parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if value can be setted</para></simplesect>
+N/A </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="105" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="95" bodyend="101"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::fromStr</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_src, const string &amp;p_log)</argsstring>
+        <name>fromStr</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_log</declname>
+        </param>
+        <briefdescription>
+<para>Retreive parameter value from a string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>logging message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it succeeds</para></simplesect>
+N/A </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="115" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="104" bodyend="116"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>t_params::iterator</type>
+        <definition>Handler::t_params::iterator xtd::servers::param::Handler::find</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>find</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+<para>return an iterator on a find call on map </para>        </briefdescription>
+        <detaileddescription>
+<para>make a find with lowercase on given name</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name to find in map</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>iterator result of map search </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="143" bodyend="148"/>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" compoundref="Handler_8cc" startline="47" endline="74">initialize</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" compoundref="Handler_8cc" startline="89" endline="92">exists</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" compoundref="Handler_8cc" startline="95" endline="101">verify</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" compoundref="Handler_8cc" startline="104" endline="116">fromStr</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a0f767078fd33fec21e1677d0a0195d8e" compoundref="Handler_8hh" startline="207" endline="214">get</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1af8dbec0f2d639d39fb11605609462dee" compoundref="Handler_8hh" startline="219" endline="226">set</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a3e71b80a00c962a862c1d3cc4d623c05" compoundref="Handler_8hh" startline="231" endline="240">listen</referencedby>
+        <referencedby refid="classxtd_1_1servers_1_1param_1_1Handler_1a20d689629d4748c14e4a516580a7c55a" compoundref="Handler_8hh" startline="245" endline="254">constraint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a0f767078fd33fec21e1677d0a0195d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::get</definition>
+        <argsstring>(const string &amp;p_name, T &amp;p_dst)</argsstring>
+        <name>get</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_dst</declname>
+        </param>
+        <briefdescription>
+<para>Get the current value of a parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the variable to store the content of the current value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it succeeds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="136" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="207" bodyend="214"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1af8dbec0f2d639d39fb11605609462dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::set</definition>
+        <argsstring>(const string &amp;p_name, const T &amp;p_src)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_src</declname>
+        </param>
+        <briefdescription>
+<para>Set a parameter value. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it succeeds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="147" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="219" bodyend="226"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a3e71b80a00c962a862c1d3cc4d623c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::listen</definition>
+        <argsstring>(const string &amp;p_name, T p_handler)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+<para>Specify the setter to modify the parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>N/A</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the modification handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it succeeds (i.e. parameter exists) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="158" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="231" bodyend="240"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1a20d689629d4748c14e4a516580a7c55a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool xtd::servers::param::Handler::constraint</definition>
+        <argsstring>(const string &amp;p_name, T p_handler)</argsstring>
+        <name>constraint</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+<para>Add a specific constraint to match while trying to modify a parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each time a modification is requested, the constraint will be checked Many constraints can be added, they will be checked in declaration order Opposite constraints must be avoided</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specific constraint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if add succeeds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="171" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="245" bodyend="254"/>
+        <references refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" compoundref="Handler_8cc" startline="143" endline="148">find</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1param_1_1Handler_1ae6760415c63b5162a9991516197e8211" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::param::Handler::sync</definition>
+        <argsstring>(const string &amp;p_name)</argsstring>
+        <name>sync</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="174" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc" bodystart="78" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Param handler class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Store declared parameter in an internal map throw add method Provide get and set methods to modify already declared parameters </para>    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh" bodystart="25" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aba6e8d983f28617b3168b60cf6464926" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>accept</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a53a10d8d422013e62363e0d28d4e9017" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>add</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a72a575bef0683ae6197c9f34cdf31d8f" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>add</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a3bc858ae5bb7b6ce1f4d0a5eb327d17f" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>bind</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a20d689629d4748c14e4a516580a7c55a" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>constraint</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>exists</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>find</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>fromStr</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a0f767078fd33fec21e1677d0a0195d8e" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>get</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a93996915b562641b4673381c9abfae7b" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>Handler</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a3e71b80a00c962a862c1d3cc4d623c05" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>listen</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1a9a169b893f5bc3bad90337cba4b131de" prot="private" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>m_actionPath</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ad58dbda62277937590e25f0efe476673" prot="private" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>m_params</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1af8dbec0f2d639d39fb11605609462dee" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>set</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1ae6760415c63b5162a9991516197e8211" prot="private" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>sync</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2fe18c232ed8121487cdf19de6063f8" prot="private" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>t_param_sptr</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1af0bd361bc9b8ba7fe9d2b6986052aa43" prot="private" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>t_params</name></member>
+      <member refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" prot="public" virt="non-virtual"><scope>xtd::servers::param::Handler</scope><name>verify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

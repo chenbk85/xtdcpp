@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="CacheDns_8hh" kind="file" language="C++">
+    <compoundname>CacheDns.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">list</includes>
+    <includes local="no">boost/thread/thread.hpp</includes>
+    <includes local="no">boost/function.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">boost/noncopyable.hpp</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includes local="no">boost/make_shared.hpp</includes>
+    <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
+    <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
+    <includes refid="Utils_8hh" local="yes">utils/Utils.hh</includes>
+    <includedby refid="CacheDns_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc</includedby>
+    <includedby refid="Resolver_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</includedby>
+    <incdepgraph>
+      <node id="1826">
+        <label>list</label>
+      </node>
+      <node id="1841">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1829">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1843">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1845">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1839">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+      </node>
+      <node id="1827">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1830">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1822">
+        <label>string</label>
+      </node>
+      <node id="1824">
+        <label>map</label>
+      </node>
+      <node id="1828">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1837">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1834">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1821">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh</label>
+        <link refid="CacheDns.hh"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+      </node>
+      <node id="1844">
+        <label>ctime</label>
+      </node>
+      <node id="1832">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1823">
+        <label>vector</label>
+      </node>
+      <node id="1840">
+        <label>streambuf</label>
+      </node>
+      <node id="1825">
+        <label>utility</label>
+      </node>
+      <node id="1842">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1836">
+        <label>deque</label>
+      </node>
+      <node id="1831">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="1833">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1835">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1838">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1856">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1857">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
+      </node>
+      <node id="1858">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http_2Connection_8hh"/>
+        <childnode refid="1859" relation="include">
+        </childnode>
+      </node>
+      <node id="1859">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
+      </node>
+      <node id="1849">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1860">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</label>
+        <link refid="Resolver_8cc"/>
+      </node>
+      <node id="1850">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.cc</label>
+        <link refid="base_2Client_8cc"/>
+      </node>
+      <node id="1847">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc</label>
+        <link refid="CacheDns_8cc"/>
+      </node>
+      <node id="1848">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
+        <link refid="bip_2Client_8hh"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh</label>
+        <link refid="CacheDns.hh"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
+      </node>
+      <node id="1853">
+        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1854">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
+        <link refid="base_2Connection_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structxtd_1_1network_1_1utils_1_1CacheEntry" prot="public">xtd::network::utils::CacheEntry</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1utils_1_1CacheDns" prot="public">xtd::network::utils::CacheDns</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_CACHEDNS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_CACHEDNS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/function.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/noncopyable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wsequence-point&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/unordered_map.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/make_shared.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/date_time/posix_time/posix_time.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Utils_8hh" kindref="compound">utils/Utils.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="namespacextd_1_1network_1_1utils_1a8939e806c4a6bc08b78a32941db7a130" kindref="member">CACHE_CAPACITY_MAX</ref><sp/>=<sp/>200;</highlight></codeline>
+<codeline lineno="30" refid="namespacextd_1_1network_1_1utils_1adb4767541db3a79016a24142db705161" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="namespacextd_1_1network_1_1utils_1adb4767541db3a79016a24142db705161" kindref="member">CACHE_TTL_MAX</ref><sp/>=<sp/>1800;<sp/></highlight><highlight class="comment">//<sp/>30<sp/>minutes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structxtd_1_1network_1_1utils_1_1CacheEntry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry" kindref="compound">CacheEntry</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1acaf6749bc9eb587ffe1181dd4d7306b5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1acaf6749bc9eb587ffe1181dd4d7306b5" kindref="member">CacheEntry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_ipAddress,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_timeStamp)<sp/>:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" kindref="member">m_value</ref>(p_ipAddress),</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" kindref="member">m_stamp</ref>(p_timeStamp)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1abbe786f1da8194495f1e36d8de8ba0b3" kindref="member">m_value</ref>;<sp/></highlight><highlight class="comment">//IP<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" refkind="member"><highlight class="normal"><sp/><sp/>std::time_t<sp/><ref refid="structxtd_1_1network_1_1utils_1_1CacheEntry_1a277e95a1f5e0485e98568b7a583b0184" kindref="member">m_stamp</ref>;<sp/></highlight><highlight class="comment">//time<sp/>stamp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;<sp/>string,<sp/>boost::shared_ptr&lt;CacheEntry&gt;<sp/>&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" kindref="member">EntryPair</ref>;</highlight></codeline>
+<codeline lineno="47" refid="namespacextd_1_1network_1_1utils_1a6eef494cdc6ca2b10bf4f36f6fa110ee" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::list&lt;<sp/>boost::shared_ptr&lt;EntryPair&gt;<sp/>&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1a6eef494cdc6ca2b10bf4f36f6fa110ee" kindref="member">CacheList</ref>;</highlight></codeline>
+<codeline lineno="49" refid="namespacextd_1_1network_1_1utils_1aa648e4975dce81f2fd0a9999f684781d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::unordered_map&lt;<sp/>string,<sp/>CacheList::iterator<sp/>&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1aa648e4975dce81f2fd0a9999f684781d" kindref="member">CacheMap</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classxtd_1_1network_1_1utils_1_1CacheDns" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1CacheDns" kindref="compound">CacheDns</ref><sp/>:<sp/>boost::noncopyable</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1CacheDns" kindref="compound">CacheDns</ref>(uint32_t<sp/>p_capacity,<sp/>uint32_t<sp/>p_ttl);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>popElem(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_ipAddr);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pushElem(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_url,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_ipAddr);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a05377d5ccc35a6ba0f6e7124c891be37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a05377d5ccc35a6ba0f6e7124c891be37" kindref="member">size</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_entries;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createTimeStamp(std::time_t&amp;<sp/>p_time);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checkUpdateStamp(std::time_t&amp;<sp/>p_stamp,<sp/>uint32_t<sp/>p_dnsTimeoutSeconds);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>moveElementFrontLst(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;EntryPair&gt;<sp/>p_elem);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>checkAndResize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>CacheList<sp/>m_cacheList;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>CacheMap<sp/>m_cacheMap;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_entries;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_maxEntries;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_ttl;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_CACHEDNS_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh"/>
+  </compounddef>
+</doxygen>

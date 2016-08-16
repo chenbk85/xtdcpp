@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::http::cpptempl::DataMap</compoundname>
+    <basecompoundref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data" prot="public" virt="non-virtual">xtd::network::http::cpptempl::Data</basecompoundref>
+    <includes refid="cpptempl_8hh" local="no">cpptempl.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9d5571df9286e36f370f96d5fbe381dc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref></type>
+        <definition>data_map xtd::network::http::cpptempl::DataMap::m_items</definition>
+        <argsstring></argsstring>
+        <name>m_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9a5267694ba26050526a02407c69937f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::cpptempl::DataMap::DataMap</definition>
+        <argsstring>(data_map &amp;items)</argsstring>
+        <name>DataMap</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref> &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="121" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1abfcc73cb22b66dd0be8ad9cd66a75117" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref> &amp;</type>
+        <definition>data_map &amp; xtd::network::http::cpptempl::DataMap::getmap</definition>
+        <argsstring>()</argsstring>
+        <name>getmap</name>
+        <reimplements refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a39713cc7cdc05a2375c1c5d4f00772db">getmap</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1aecf13229511725a1e352f8c25fd1a40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::http::cpptempl::DataMap::empty</definition>
+        <argsstring>()</argsstring>
+        <name>empty</name>
+        <reimplements refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a3a64cba1d65950fababffac694561af1">empty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="123" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="259">
+        <label>xtd::network::http::cpptempl::Data</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data"/>
+      </node>
+      <node id="258">
+        <label>xtd::network::http::cpptempl::DataMap</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap"/>
+        <childnode refid="259" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="261">
+        <label>xtd::network::http::cpptempl::Data</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data"/>
+      </node>
+      <node id="260">
+        <label>xtd::network::http::cpptempl::DataMap</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="117" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9a5267694ba26050526a02407c69937f" prot="public" virt="non-virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>DataMap</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1aecf13229511725a1e352f8c25fd1a40e" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>empty</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1abb82f257b867cd0da2469cc6c5ecdbae" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>getlist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1abfcc73cb22b66dd0be8ad9cd66a75117" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>getmap</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a85999dd8f43177cabf072ddbc406e556" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>getvalue</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap_1a9d5571df9286e36f370f96d5fbe381dc" prot="private" virt="non-virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>m_items</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Data_1a4bbb052aa314ffb321edee297cf393e1" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::DataMap</scope><name>~Data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1096 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1Request}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Request Class Reference}
+\label{classxtd_1_1network_1_1http_1_1Request}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+
+
+{\ttfamily \#include $<$Request.\+hh$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627}{t\+\_\+method} \{ \hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6}{M\+E\+T\+H\+O\+D\+\_\+\+G\+ET} = 0, 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb}{M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST} = 1, 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414}{M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD} = 2
+ \}
+\item 
+enum \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536}{t\+\_\+version} \{ \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f}{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0} = 0, 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d}{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1} = 1
+ \}
+\item 
+typedef std\+::multimap$<$ string, string $>$ \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{t\+\_\+param\+\_\+map}
+\item 
+typedef map$<$ string, string $>$ \hyperlink{classxtd_1_1network_1_1http_1_1Request_aeaf2a69c884e81983aebaf36518c310e}{t\+\_\+header\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_a6255d0a163700ed3aec8b8e655573208}{Request} (bool p\+\_\+cgi\+To\+Lower=true)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3ee369c6c2b8888815f1347d9f7df3f0}{set\+Method} (\hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627}{t\+\_\+method} p\+\_\+method)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a42304776ec9355ab89c6e8e0391f4309}{add\+Cgi} (const string \&p\+\_\+key, const string \&p\+\_\+value)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a463b8876852246bac863584f9dc3d0ae}{add\+Post} (const string \&p\+\_\+key, const string \&p\+\_\+value)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_ac7f15d9f25ab85da1569e7718ea6544d}{add\+Header} (const string \&p\+\_\+name, const string \&p\+\_\+value)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a4fc25edc6c133d46f1780a3b8c5a3c4e}{set\+Version} (const string \&p\+\_\+version)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3a56519771fa2e7af734152a12b56361}{set\+Version} (\hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536}{t\+\_\+version} p\+\_\+version)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a2e739ee31fca9fdddc4fa69432405b09}{remove\+Cgi} (const string \&p\+\_\+key)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a69b20f61fbdf1727be7b6eb4623e30d7}{remove\+Post} (const string \&p\+\_\+key)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Request_adbbc4691784a7e7f49e31ffe54b733dd}{remove\+Data} (const string \&p\+\_\+key)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Request_acd61448f2826e30001bf6d9ada90a2a6}{read\+QS} (const string \&p\+\_\+qs)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956}{read\+Head} (std\+::istream \&p\+\_\+request)
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Request_a050758a8848fb4190b305d955760fd79}{read} (std\+::istream \&p\+\_\+request)
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627}{t\+\_\+method} \hyperlink{classxtd_1_1network_1_1http_1_1Request_af06004afe64f465edfb281407b7f3600}{get\+Method} (void) const 
+\item 
+const string \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_a0006f0a88dccabdafe9dfed3627730f6}{get\+Path} (void) const 
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1Request_ac9aeee4365089901bd216350fdcbe3a2}{get\+QS} (void) const 
+\item 
+string \hyperlink{classxtd_1_1network_1_1http_1_1Request_a00428c206d17d2557d5ed3a46a2f139b}{get\+Raw\+Url} (void) const 
+\item 
+const \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{t\+\_\+param\+\_\+map} \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_a48687de33ff80c714d6bc0112aa23c56}{get\+Cgis} (void) const 
+\item 
+const \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{t\+\_\+param\+\_\+map} \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_a1a849dbe8e258e208325056ac46438c9}{get\+Posts} (void) const 
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{t\+\_\+param\+\_\+map} \hyperlink{classxtd_1_1network_1_1http_1_1Request_aac37ae370c601f66b17e1ef071081957}{get\+Params} (void) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a21fc278ee56175b527ae58c909ad97a3}{exists\+Cgi} (const string \&p\+\_\+key) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_ae121fd7a302ea9bb1a3fe66f3cb7f696}{exists\+Post} (const string \&p\+\_\+key) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a8bc12470bb1a04d71d84ed1053551df9}{exists\+Param} (const string \&p\+\_\+key) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad334cf225213389711b7524a2c637e38}{exists\+Header} (const string \&p\+\_\+name) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a99a0c9599f0d2bdc51f8e488fb4f78f4}{get\+Header} (const string \&p\+\_\+name, string \&p\+\_\+value) const 
+\item 
+const \hyperlink{classxtd_1_1network_1_1http_1_1Request_aeaf2a69c884e81983aebaf36518c310e}{t\+\_\+header\+\_\+map} \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_abbe34833ea46c5a794c7c49796a192c3}{get\+Headers} (void) const 
+\item 
+const string \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_a609f7328025e89fd8325677212ab307b}{get\+Version\+Str} (void) const 
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536}{t\+\_\+version} \hyperlink{classxtd_1_1network_1_1http_1_1Request_acdf8a64d92f997aa7a0eaf7fc07cf897}{get\+Version} (void) const 
+\item 
+status \hyperlink{classxtd_1_1network_1_1http_1_1Request_a90a878fc6498d5594617329da39d1ac5}{get\+Data\+Size} (size\+\_\+t \&p\+\_\+length) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a7af5942f7505ac377c8017f51b24854e}{get\+Cgi} (const string \&p\+\_\+key, T \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_adc71d7250d7064b513b619091b0a6961}{get\+Cgi} (const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1efea31852175056b036fdd2df71135}{get\+Cgi} (const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a052d76c6e9f2d8eede058c7d2fddd9ef}{get\+Post} (const string \&p\+\_\+key, T \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a073d8eef444c0d981e3bd5137e13de3b}{get\+Post} (const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_ab4b8f57135d2f6d1e622ae5fe81c1ca7}{get\+Post} (const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1network_1_1http_1_1Request_a2d7c1f674b8935120f6f20cd6baccd63}{get\+Param} (const string \&p\+\_\+key, T \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a00b5483c07f655a7a2b40a4db8190a1e}{get\+Param} (const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_a1c75bacd611d64713664efb796f33d25}{get\+Param} (const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classxtd_1_1network_1_1http_1_1Request_ac3b9fbaba2751dfaa8f028e31f53c0f9}{get\+Param} (const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst, const vector$<$ T $>$ \&p\+\_\+default) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classxtd_1_1network_1_1http_1_1Request_a4ef55dada327d66bc23474520e1ae32c}{operator$<$$<$} (std\+::ostream \&, const \hyperlink{classxtd_1_1network_1_1http_1_1Request}{Request} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Request.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!t\+\_\+header\+\_\+map@{t\+\_\+header\+\_\+map}}
+\index{t\+\_\+header\+\_\+map@{t\+\_\+header\+\_\+map}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{t\+\_\+header\+\_\+map}{t_header_map}}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$string, string$>$ {\bf xtd\+::network\+::http\+::\+Request\+::t\+\_\+header\+\_\+map}}\hypertarget{classxtd_1_1network_1_1http_1_1Request_aeaf2a69c884e81983aebaf36518c310e}{}\label{classxtd_1_1network_1_1http_1_1Request_aeaf2a69c884e81983aebaf36518c310e}
+
+
+Definition at line 21 of file Request.\+hh.
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!t\+\_\+param\+\_\+map@{t\+\_\+param\+\_\+map}}
+\index{t\+\_\+param\+\_\+map@{t\+\_\+param\+\_\+map}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{t\+\_\+param\+\_\+map}{t_param_map}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::multimap$<$string, string$>$ {\bf xtd\+::network\+::http\+::\+Request\+::t\+\_\+param\+\_\+map}}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{}\label{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}
+
+
+Definition at line 20 of file Request.\+hh.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!t\+\_\+method@{t\+\_\+method}}
+\index{t\+\_\+method@{t\+\_\+method}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{t\+\_\+method}{t_method}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::network\+::http\+::\+Request\+::t\+\_\+method}}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627}{}\label{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+E\+T\+H\+O\+D\+\_\+\+G\+ET@{M\+E\+T\+H\+O\+D\+\_\+\+G\+ET}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!M\+E\+T\+H\+O\+D\+\_\+\+G\+ET@{M\+E\+T\+H\+O\+D\+\_\+\+G\+ET}}\item[{\em 
+M\+E\+T\+H\+O\+D\+\_\+\+G\+ET\hypertarget{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6}{}\label{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6}
+}]\index{M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST@{M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST@{M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST}}\item[{\em 
+M\+E\+T\+H\+O\+D\+\_\+\+P\+O\+ST\hypertarget{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb}{}\label{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb}
+}]\index{M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD@{M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD@{M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD}}\item[{\em 
+M\+E\+T\+H\+O\+D\+\_\+\+H\+E\+AD\hypertarget{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414}{}\label{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 23 of file Request.\+hh.
+
+
+\begin{DoxyCode}
+23                 \{
+24     \hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6}{METHOD\_GET}  = 0,
+25     \hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb}{METHOD\_POST} = 1,
+26     \hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414}{METHOD\_HEAD} = 2
+27   \};
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!t\+\_\+version@{t\+\_\+version}}
+\index{t\+\_\+version@{t\+\_\+version}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{t\+\_\+version}{t_version}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf xtd\+::network\+::http\+::\+Request\+::t\+\_\+version}}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536}{}\label{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0@{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0@{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0}}\item[{\em 
+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0\hypertarget{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f}{}\label{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f}
+}]\index{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1@{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1@{V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}}\item[{\em 
+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1\hypertarget{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d}{}\label{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 29 of file Request.\+hh.
+
+
+\begin{DoxyCode}
+29                  \{
+30     \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f}{VERSION\_1\_0} = 0,
+31     \hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536a78aeac842cfaa7d2ffe8ad53a630476d}{VERSION\_1\_1} = 1
+32   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!Request@{Request}}
+\index{Request@{Request}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{Request(bool p\+\_\+cgi\+To\+Lower=true)}{Request(bool p_cgiToLower=true)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::http\+::\+Request\+::\+Request (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+cgi\+To\+Lower = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a6255d0a163700ed3aec8b8e655573208}{}\label{classxtd_1_1network_1_1http_1_1Request_a6255d0a163700ed3aec8b8e655573208}
+
+
+Definition at line 31 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+31                                   :
+32   m\_rawUrl(),
+33   m\_method(\hyperlink{classxtd_1_1network_1_1http_1_1Request_a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6}{METHOD\_GET}),
+34   m\_path(),
+35   m\_cgi(),
+36   m\_post(),
+37   m\_headers(),
+38   m\_versionStr(\textcolor{stringliteral}{"1.0"}),
+39   m\_version(\hyperlink{classxtd_1_1network_1_1http_1_1Request_ad1842a3667ff0a96222bb69262cda536ab4d3cfdefe25102548725517f983894f}{Request::VERSION\_1\_0}),
+40   m\_cgiToLower(p\_cgiToLower),
+41   m\_regex\_tooManyStartingSlash(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)/\{2,\}"}),
+42   m\_regex\_tooManyEndingSlash(\textcolor{stringliteral}{"[^\(\backslash\)\(\backslash\)/](\(\backslash\)\(\backslash\)/+)$"})
+43 \{
+44 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!add\+Cgi@{add\+Cgi}}
+\index{add\+Cgi@{add\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{add\+Cgi(const string \&p\+\_\+key, const string \&p\+\_\+value)}{addCgi(const string &p_key, const string &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::add\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{const string \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a42304776ec9355ab89c6e8e0391f4309}{}\label{classxtd_1_1network_1_1http_1_1Request_a42304776ec9355ab89c6e8e0391f4309}
+
+
+Definition at line 77 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+79 \{
+80   m\_cgi.insert(make\_pair(p\_key, p\_value));
+81 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classxtd_1_1network_1_1http_1_1Request_a42304776ec9355ab89c6e8e0391f4309_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!add\+Header@{add\+Header}}
+\index{add\+Header@{add\+Header}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{add\+Header(const string \&p\+\_\+name, const string \&p\+\_\+value)}{addHeader(const string &p_name, const string &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::add\+Header (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const string \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ac7f15d9f25ab85da1569e7718ea6544d}{}\label{classxtd_1_1network_1_1http_1_1Request_ac7f15d9f25ab85da1569e7718ea6544d}
+
+
+Definition at line 92 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+94 \{
+95   m\_headers[p\_name] = p\_value;
+96 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classxtd_1_1network_1_1http_1_1Request_ac7f15d9f25ab85da1569e7718ea6544d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!add\+Post@{add\+Post}}
+\index{add\+Post@{add\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{add\+Post(const string \&p\+\_\+key, const string \&p\+\_\+value)}{addPost(const string &p_key, const string &p_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::add\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{const string \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a463b8876852246bac863584f9dc3d0ae}{}\label{classxtd_1_1network_1_1http_1_1Request_a463b8876852246bac863584f9dc3d0ae}
+
+
+Definition at line 84 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+86 \{
+87   m\_post.insert(make\_pair(p\_key, p\_value));
+88 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classxtd_1_1network_1_1http_1_1Request_a463b8876852246bac863584f9dc3d0ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!exists\+Cgi@{exists\+Cgi}}
+\index{exists\+Cgi@{exists\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{exists\+Cgi(const string \&p\+\_\+key) const }{existsCgi(const string &p_key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::http\+::\+Request\+::exists\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a21fc278ee56175b527ae58c909ad97a3}{}\label{classxtd_1_1network_1_1http_1_1Request_a21fc278ee56175b527ae58c909ad97a3}
+
+
+Definition at line 185 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+186 \{
+187   \textcolor{keywordflow}{return} existsData(m\_cgi, p\_key);
+188 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!exists\+Header@{exists\+Header}}
+\index{exists\+Header@{exists\+Header}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{exists\+Header(const string \&p\+\_\+name) const }{existsHeader(const string &p_name) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::http\+::\+Request\+::exists\+Header (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ad334cf225213389711b7524a2c637e38}{}\label{classxtd_1_1network_1_1http_1_1Request_ad334cf225213389711b7524a2c637e38}
+
+
+Definition at line 203 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+204 \{
+205   \textcolor{keywordflow}{return} m\_headers.count(p\_name) != 0;
+206 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!exists\+Param@{exists\+Param}}
+\index{exists\+Param@{exists\+Param}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{exists\+Param(const string \&p\+\_\+key) const }{existsParam(const string &p_key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::http\+::\+Request\+::exists\+Param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a8bc12470bb1a04d71d84ed1053551df9}{}\label{classxtd_1_1network_1_1http_1_1Request_a8bc12470bb1a04d71d84ed1053551df9}
+
+
+Definition at line 197 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+198 \{
+199   \textcolor{keywordflow}{return} existsData(m\_cgi, p\_key) || existsData(m\_post, p\_key);
+200 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!exists\+Post@{exists\+Post}}
+\index{exists\+Post@{exists\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{exists\+Post(const string \&p\+\_\+key) const }{existsPost(const string &p_key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::http\+::\+Request\+::exists\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ae121fd7a302ea9bb1a3fe66f3cb7f696}{}\label{classxtd_1_1network_1_1http_1_1Request_ae121fd7a302ea9bb1a3fe66f3cb7f696}
+
+
+Definition at line 191 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+192 \{
+193   \textcolor{keywordflow}{return} existsData(m\_post, p\_key);
+194 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Cgi@{get\+Cgi}}
+\index{get\+Cgi@{get\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Cgi(const string \&p\+\_\+key, T \&p\+\_\+dst) const }{getCgi(const string &p_key, T &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::network\+::http\+::\+Request\+::get\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a7af5942f7505ac377c8017f51b24854e}{}\label{classxtd_1_1network_1_1http_1_1Request_a7af5942f7505ac377c8017f51b24854e}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Cgi@{get\+Cgi}}
+\index{get\+Cgi@{get\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Cgi(const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const }{getCgi(const string &p_key, vector< T > &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{vector$<$ T $>$ \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_adc71d7250d7064b513b619091b0a6961}{}\label{classxtd_1_1network_1_1http_1_1Request_adc71d7250d7064b513b619091b0a6961}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Cgi@{get\+Cgi}}
+\index{get\+Cgi@{get\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Cgi(const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const }{getCgi(const string &p_key, T &p_dst, const T &p_default) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst, }
+\item[{const T \&}]{p\+\_\+default}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ad1efea31852175056b036fdd2df71135}{}\label{classxtd_1_1network_1_1http_1_1Request_ad1efea31852175056b036fdd2df71135}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Cgis@{get\+Cgis}}
+\index{get\+Cgis@{get\+Cgis}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Cgis(void) const }{getCgis(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Request\+::t\+\_\+param\+\_\+map} \& xtd\+::network\+::http\+::\+Request\+::get\+Cgis (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a48687de33ff80c714d6bc0112aa23c56}{}\label{classxtd_1_1network_1_1http_1_1Request_a48687de33ff80c714d6bc0112aa23c56}
+
+
+Definition at line 157 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+158 \{
+159   \textcolor{keywordflow}{return} m\_cgi;
+160 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classxtd_1_1network_1_1http_1_1Request_a48687de33ff80c714d6bc0112aa23c56_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Data\+Size@{get\+Data\+Size}}
+\index{get\+Data\+Size@{get\+Data\+Size}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Data\+Size(size\+\_\+t \&p\+\_\+length) const }{getDataSize(size_t &p_length) const }}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Request\+::get\+Data\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t \&}]{p\+\_\+length}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a90a878fc6498d5594617329da39d1ac5}{}\label{classxtd_1_1network_1_1http_1_1Request_a90a878fc6498d5594617329da39d1ac5}
+
+
+Definition at line 504 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+505 \{
+506   \textcolor{keywordtype}{string} l\_strVal;
+507 
+508   \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == \hyperlink{classxtd_1_1network_1_1http_1_1Request_a99a0c9599f0d2bdc51f8e488fb4f78f4}{getHeader}(\textcolor{stringliteral}{"Content-Length"}, l\_strVal))
+509   \{
+510     p\_length = 0;
+511     \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+512   \}
+513 
+514   \textcolor{keywordflow}{try} \{
+515     p\_length = boost::lexical\_cast<\textcolor{keywordtype}{size\_t}>(l\_strVal);
+516   \}
+517   \textcolor{keywordflow}{catch} (boost::bad\_lexical\_cast)
+518   \{
+519 
+520     logger::err(\textcolor{stringliteral}{"network.http.request"}, \textcolor{stringliteral}{"read data : unable to interpret content-length '%s' as int"}, 
+      l\_strVal, HERE);
+521     \textcolor{keywordflow}{return} status::error;
+522   \}
+523 
+524   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+525 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classxtd_1_1network_1_1http_1_1Request_a90a878fc6498d5594617329da39d1ac5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Header(const string \&p\+\_\+name, string \&p\+\_\+value) const }{getHeader(const string &p_name, string &p_value) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::http\+::\+Request\+::get\+Header (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{string \&}]{p\+\_\+value}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a99a0c9599f0d2bdc51f8e488fb4f78f4}{}\label{classxtd_1_1network_1_1http_1_1Request_a99a0c9599f0d2bdc51f8e488fb4f78f4}
+
+
+Definition at line 210 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+211 \{
+212   t\_header\_map::const\_iterator c\_header = m\_headers.find(p\_name);
+213 
+214   \textcolor{keywordflow}{if} (c\_header == m\_headers.end())
+215     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+216   p\_value = c\_header->second;
+217   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+218 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classxtd_1_1network_1_1http_1_1Request_a99a0c9599f0d2bdc51f8e488fb4f78f4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Headers@{get\+Headers}}
+\index{get\+Headers@{get\+Headers}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Headers(void) const }{getHeaders(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Request\+::t\+\_\+header\+\_\+map} \& xtd\+::network\+::http\+::\+Request\+::get\+Headers (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_abbe34833ea46c5a794c7c49796a192c3}{}\label{classxtd_1_1network_1_1http_1_1Request_abbe34833ea46c5a794c7c49796a192c3}
+
+
+Definition at line 221 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+222 \{
+223   \textcolor{keywordflow}{return} m\_headers;
+224 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classxtd_1_1network_1_1http_1_1Request_abbe34833ea46c5a794c7c49796a192c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Method@{get\+Method}}
+\index{get\+Method@{get\+Method}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Method(void) const }{getMethod(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+::t\+\_\+method} xtd\+::network\+::http\+::\+Request\+::get\+Method (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_af06004afe64f465edfb281407b7f3600}{}\label{classxtd_1_1network_1_1http_1_1Request_af06004afe64f465edfb281407b7f3600}
+
+
+Definition at line 134 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+135 \{
+136   \textcolor{keywordflow}{return} m\_method;
+137 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classxtd_1_1network_1_1http_1_1Request_af06004afe64f465edfb281407b7f3600_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Param@{get\+Param}}
+\index{get\+Param@{get\+Param}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Param(const string \&p\+\_\+key, T \&p\+\_\+dst) const }{getParam(const string &p_key, T &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::network\+::http\+::\+Request\+::get\+Param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a2d7c1f674b8935120f6f20cd6baccd63}{}\label{classxtd_1_1network_1_1http_1_1Request_a2d7c1f674b8935120f6f20cd6baccd63}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Param@{get\+Param}}
+\index{get\+Param@{get\+Param}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Param(const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const }{getParam(const string &p_key, vector< T > &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{vector$<$ T $>$ \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a00b5483c07f655a7a2b40a4db8190a1e}{}\label{classxtd_1_1network_1_1http_1_1Request_a00b5483c07f655a7a2b40a4db8190a1e}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Param@{get\+Param}}
+\index{get\+Param@{get\+Param}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Param(const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const }{getParam(const string &p_key, T &p_dst, const T &p_default) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst, }
+\item[{const T \&}]{p\+\_\+default}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a1c75bacd611d64713664efb796f33d25}{}\label{classxtd_1_1network_1_1http_1_1Request_a1c75bacd611d64713664efb796f33d25}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Param@{get\+Param}}
+\index{get\+Param@{get\+Param}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Param(const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst, const vector$<$ T $>$ \&p\+\_\+default) const }{getParam(const string &p_key, vector< T > &p_dst, const vector< T > &p_default) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{vector$<$ T $>$ \&}]{p\+\_\+dst, }
+\item[{const vector$<$ T $>$ \&}]{p\+\_\+default}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ac3b9fbaba2751dfaa8f028e31f53c0f9}{}\label{classxtd_1_1network_1_1http_1_1Request_ac3b9fbaba2751dfaa8f028e31f53c0f9}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Params@{get\+Params}}
+\index{get\+Params@{get\+Params}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Params(void) const }{getParams(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+::t\+\_\+param\+\_\+map} xtd\+::network\+::http\+::\+Request\+::get\+Params (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_aac37ae370c601f66b17e1ef071081957}{}\label{classxtd_1_1network_1_1http_1_1Request_aac37ae370c601f66b17e1ef071081957}
+
+
+Definition at line 169 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+170 \{
+171   \hyperlink{classxtd_1_1network_1_1http_1_1Request_a3cd6e9ac7c35897002582c4a3b84b17d}{t\_param\_map} l\_map;
+172 
+173   l\_map.insert(m\_cgi.begin(), m\_cgi.end());
+174   l\_map.insert(m\_post.begin(), m\_post.end());
+175   \textcolor{keywordflow}{return} l\_map;
+176 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Path(void) const }{getPath(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& xtd\+::network\+::http\+::\+Request\+::get\+Path (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a0006f0a88dccabdafe9dfed3627730f6}{}\label{classxtd_1_1network_1_1http_1_1Request_a0006f0a88dccabdafe9dfed3627730f6}
+
+
+Definition at line 151 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+152 \{
+153   \textcolor{keywordflow}{return} m\_path;
+154 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classxtd_1_1network_1_1http_1_1Request_a0006f0a88dccabdafe9dfed3627730f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Post@{get\+Post}}
+\index{get\+Post@{get\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Post(const string \&p\+\_\+key, T \&p\+\_\+dst) const }{getPost(const string &p_key, T &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::network\+::http\+::\+Request\+::get\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a052d76c6e9f2d8eede058c7d2fddd9ef}{}\label{classxtd_1_1network_1_1http_1_1Request_a052d76c6e9f2d8eede058c7d2fddd9ef}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Post@{get\+Post}}
+\index{get\+Post@{get\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Post(const string \&p\+\_\+key, vector$<$ T $>$ \&p\+\_\+dst) const }{getPost(const string &p_key, vector< T > &p_dst) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{vector$<$ T $>$ \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a073d8eef444c0d981e3bd5137e13de3b}{}\label{classxtd_1_1network_1_1http_1_1Request_a073d8eef444c0d981e3bd5137e13de3b}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Post@{get\+Post}}
+\index{get\+Post@{get\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Post(const string \&p\+\_\+key, T \&p\+\_\+dst, const T \&p\+\_\+default) const }{getPost(const string &p_key, T &p_dst, const T &p_default) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void xtd\+::network\+::http\+::\+Request\+::get\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key, }
+\item[{T \&}]{p\+\_\+dst, }
+\item[{const T \&}]{p\+\_\+default}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ab4b8f57135d2f6d1e622ae5fe81c1ca7}{}\label{classxtd_1_1network_1_1http_1_1Request_ab4b8f57135d2f6d1e622ae5fe81c1ca7}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Posts@{get\+Posts}}
+\index{get\+Posts@{get\+Posts}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Posts(void) const }{getPosts(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Request\+::t\+\_\+param\+\_\+map} \& xtd\+::network\+::http\+::\+Request\+::get\+Posts (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a1a849dbe8e258e208325056ac46438c9}{}\label{classxtd_1_1network_1_1http_1_1Request_a1a849dbe8e258e208325056ac46438c9}
+
+
+Definition at line 163 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+164 \{
+165   \textcolor{keywordflow}{return} m\_post;
+166 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classxtd_1_1network_1_1http_1_1Request_a1a849dbe8e258e208325056ac46438c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+QS@{get\+QS}}
+\index{get\+QS@{get\+QS}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Q\+S(void) const }{getQS(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::\+Request\+::get\+QS (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_ac9aeee4365089901bd216350fdcbe3a2}{}\label{classxtd_1_1network_1_1http_1_1Request_ac9aeee4365089901bd216350fdcbe3a2}
+
+
+Definition at line 141 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+142 \{
+143   vector<string> l\_parts;
+144 
+145   BOOST\_FOREACH(\textcolor{keyword}{const} t\_param\_map::value\_type& c\_param, m\_cgi)
+146     l\_parts += c\_param.first + "=" + c\_param.second;
+147   return \hyperlink{namespaceboost}{boost}::join(l\_parts, "&");
+148 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Raw\+Url@{get\+Raw\+Url}}
+\index{get\+Raw\+Url@{get\+Raw\+Url}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Raw\+Url(void) const }{getRawUrl(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}string xtd\+::network\+::http\+::\+Request\+::get\+Raw\+Url (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a00428c206d17d2557d5ed3a46a2f139b}{}\label{classxtd_1_1network_1_1http_1_1Request_a00428c206d17d2557d5ed3a46a2f139b}
+
+
+Definition at line 445 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+446 \{
+447   \textcolor{keywordflow}{return} m\_rawUrl;
+448 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classxtd_1_1network_1_1http_1_1Request_a00428c206d17d2557d5ed3a46a2f139b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Version(void) const }{getVersion(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request\+::t\+\_\+version} xtd\+::network\+::http\+::\+Request\+::get\+Version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_acdf8a64d92f997aa7a0eaf7fc07cf897}{}\label{classxtd_1_1network_1_1http_1_1Request_acdf8a64d92f997aa7a0eaf7fc07cf897}
+
+
+Definition at line 234 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+235 \{
+236   \textcolor{keywordflow}{return} m\_version;
+237 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!get\+Version\+Str@{get\+Version\+Str}}
+\index{get\+Version\+Str@{get\+Version\+Str}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{get\+Version\+Str(void) const }{getVersionStr(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& xtd\+::network\+::http\+::\+Request\+::get\+Version\+Str (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a609f7328025e89fd8325677212ab307b}{}\label{classxtd_1_1network_1_1http_1_1Request_a609f7328025e89fd8325677212ab307b}
+
+
+Definition at line 228 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+229 \{
+230   \textcolor{keywordflow}{return} m\_versionStr;
+231 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classxtd_1_1network_1_1http_1_1Request_a609f7328025e89fd8325677212ab307b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!read@{read}}
+\index{read@{read}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{read(std\+::istream \&p\+\_\+request)}{read(std::istream &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Request\+::read (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a050758a8848fb4190b305d955760fd79}{}\label{classxtd_1_1network_1_1http_1_1Request_a050758a8848fb4190b305d955760fd79}
+
+
+Definition at line 240 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+241 \{
+242   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != \hyperlink{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956}{readHead}(p\_request))
+243   \{
+244     logger::err(\textcolor{stringliteral}{"network.http.request"}, \textcolor{stringliteral}{"protocol error : bad initial line"}, HERE);
+245     \textcolor{keywordflow}{return} status::error;
+246   \}
+247 
+248   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != readData(p\_request))
+249   \{
+250     logger::err(\textcolor{stringliteral}{"network.http.request"}, \textcolor{stringliteral}{"protocol error : invalid data"}, HERE);
+251     \textcolor{keywordflow}{return} status::error;
+252   \}
+253 
+254   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+255 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Request_a050758a8848fb4190b305d955760fd79_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!read\+Head@{read\+Head}}
+\index{read\+Head@{read\+Head}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{read\+Head(std\+::istream \&p\+\_\+request)}{readHead(std::istream &p_request)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Request\+::read\+Head (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{p\+\_\+request}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956}{}\label{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956}
+
+
+Definition at line 258 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+259 \{
+260   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != readInitial(p\_request))
+261   \{
+262     logger::err(\textcolor{stringliteral}{"network.http.request"}, \textcolor{stringliteral}{"protocol error : bad initial line"}, HERE);
+263     \textcolor{keywordflow}{return} status::error;
+264   \}
+265 
+266   \textcolor{keywordflow}{if} (\hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok} != readHeaders(p\_request))
+267   \{
+268     logger::err(\textcolor{stringliteral}{"network.http.request"}, \textcolor{stringliteral}{"protocol error : bad headers lines"}, HERE);
+269     \textcolor{keywordflow}{return} status::error;
+270   \}
+271 
+272   \textcolor{keywordflow}{return} \hyperlink{namespacextd_1_1network_1_1http_a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6}{status::ok};
+273 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classxtd_1_1network_1_1http_1_1Request_a1f25a3becd01d0ee957ecd697f178956_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!read\+QS@{read\+QS}}
+\index{read\+QS@{read\+QS}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{read\+Q\+S(const string \&p\+\_\+qs)}{readQS(const string &p_qs)}}]{\setlength{\rightskip}{0pt plus 5cm}status xtd\+::network\+::http\+::\+Request\+::read\+QS (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+qs}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_acd61448f2826e30001bf6d9ada90a2a6}{}\label{classxtd_1_1network_1_1http_1_1Request_acd61448f2826e30001bf6d9ada90a2a6}
+
+
+Definition at line 47 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+48 \{
+49   \textcolor{keywordflow}{return} readUrl(p\_qs);
+50 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!remove\+Cgi@{remove\+Cgi}}
+\index{remove\+Cgi@{remove\+Cgi}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{remove\+Cgi(const string \&p\+\_\+key)}{removeCgi(const string &p_key)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::remove\+Cgi (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a2e739ee31fca9fdddc4fa69432405b09}{}\label{classxtd_1_1network_1_1http_1_1Request_a2e739ee31fca9fdddc4fa69432405b09}
+
+
+Definition at line 112 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+113 \{
+114   m\_cgi.erase(p\_key);
+115 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classxtd_1_1network_1_1http_1_1Request_a2e739ee31fca9fdddc4fa69432405b09_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!remove\+Data@{remove\+Data}}
+\index{remove\+Data@{remove\+Data}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{remove\+Data(const string \&p\+\_\+key)}{removeData(const string &p_key)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::remove\+Data (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_adbbc4691784a7e7f49e31ffe54b733dd}{}\label{classxtd_1_1network_1_1http_1_1Request_adbbc4691784a7e7f49e31ffe54b733dd}
+
+
+Definition at line 126 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+127 \{
+128   \hyperlink{classxtd_1_1network_1_1http_1_1Request_a2e739ee31fca9fdddc4fa69432405b09}{removeCgi}(p\_key);
+129   \hyperlink{classxtd_1_1network_1_1http_1_1Request_a69b20f61fbdf1727be7b6eb4623e30d7}{removePost}(p\_key);
+130 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Request_adbbc4691784a7e7f49e31ffe54b733dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!remove\+Post@{remove\+Post}}
+\index{remove\+Post@{remove\+Post}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{remove\+Post(const string \&p\+\_\+key)}{removePost(const string &p_key)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::remove\+Post (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+key}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a69b20f61fbdf1727be7b6eb4623e30d7}{}\label{classxtd_1_1network_1_1http_1_1Request_a69b20f61fbdf1727be7b6eb4623e30d7}
+
+
+Definition at line 119 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+120 \{
+121   m\_post.erase(p\_key);
+122 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Request_a69b20f61fbdf1727be7b6eb4623e30d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!set\+Method@{set\+Method}}
+\index{set\+Method@{set\+Method}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{set\+Method(t\+\_\+method p\+\_\+method)}{setMethod(t_method p_method)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::set\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+method}}]{p\+\_\+method}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a3ee369c6c2b8888815f1347d9f7df3f0}{}\label{classxtd_1_1network_1_1http_1_1Request_a3ee369c6c2b8888815f1347d9f7df3f0}
+
+
+Definition at line 53 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+54 \{
+55   m\_method = p\_method;
+56 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Request_a3ee369c6c2b8888815f1347d9f7df3f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!set\+Version@{set\+Version}}
+\index{set\+Version@{set\+Version}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{set\+Version(const string \&p\+\_\+version)}{setVersion(const string &p_version)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::set\+Version (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+version}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a4fc25edc6c133d46f1780a3b8c5a3c4e}{}\label{classxtd_1_1network_1_1http_1_1Request_a4fc25edc6c133d46f1780a3b8c5a3c4e}
+
+
+Definition at line 99 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+100 \{
+101   m\_versionStr = p\_version;
+102 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classxtd_1_1network_1_1http_1_1Request_a4fc25edc6c133d46f1780a3b8c5a3c4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!set\+Version@{set\+Version}}
+\index{set\+Version@{set\+Version}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{set\+Version(t\+\_\+version p\+\_\+version)}{setVersion(t_version p_version)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::http\+::\+Request\+::set\+Version (
+\begin{DoxyParamCaption}
+\item[{{\bf t\+\_\+version}}]{p\+\_\+version}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a3a56519771fa2e7af734152a12b56361}{}\label{classxtd_1_1network_1_1http_1_1Request_a3a56519771fa2e7af734152a12b56361}
+
+
+Definition at line 105 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+106 \{
+107   m\_version = p\_version;
+108 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!xtd\+::network\+::http\+::\+Request@{xtd\+::network\+::http\+::\+Request}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{, }
+\item[{const {\bf Request} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1network_1_1http_1_1Request_a4ef55dada327d66bc23474520e1ae32c}{}\label{classxtd_1_1network_1_1http_1_1Request_a4ef55dada327d66bc23474520e1ae32c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Request_8hh}{Request.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Request_8cc}{Request.\+cc}\end{DoxyCompactItemize}

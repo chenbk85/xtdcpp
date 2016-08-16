@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1base_1_1Connection" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xtd::network::base::Connection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">boost::enable_shared_from_this&lt; Connection&lt; Domain &gt; &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">noncopyable</basecompoundref>
+    <derivedcompoundref refid="classxtd_1_1network_1_1bip_1_1Connection" prot="public" virt="non-virtual">xtd::network::bip::Connection&lt; Domain &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classxtd_1_1network_1_1http_1_1Connection" prot="public" virt="non-virtual">xtd::network::http::Connection&lt; Domain &gt;</derivedcompoundref>
+    <includes refid="base_2Client_8hh" local="no">Client.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Domain</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1network_1_1base_1_1Connection" kindref="compound">Connection</ref>&lt; Domain &gt; &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;Connection&lt;Domain&gt; &gt; xtd::network::base::Connection&lt; Domain &gt;::cnx_sptr_t</definition>
+        <argsstring></argsstring>
+        <name>cnx_sptr_t</name>
+        <briefdescription>
+<para>shared_ptr sur this </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="62" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref></type>
+        <definition>utils::Config xtd::network::base::Connection&lt; Domain &gt;::m_conf</definition>
+        <argsstring></argsstring>
+        <name>m_conf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="200" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" prot="protected" static="no" mutable="no">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service&amp; xtd::network::base::Connection&lt; Domain &gt;::m_ioService</definition>
+        <argsstring></argsstring>
+        <name>m_ioService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="201" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" prot="protected" static="no" mutable="no">
+        <type>boost::asio::strand</type>
+        <definition>boost::asio::strand xtd::network::base::Connection&lt; Domain &gt;::m_strand</definition>
+        <argsstring></argsstring>
+        <name>m_strand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="202" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" prot="protected" static="no" mutable="no">
+        <type>boost::asio::basic_stream_socket&lt; Domain &gt;</type>
+        <definition>boost::asio::basic_stream_socket&lt;Domain&gt; xtd::network::base::Connection&lt; Domain &gt;::m_socket</definition>
+        <argsstring></argsstring>
+        <name>m_socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="203" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1aabc3a73e4fd42ac0344726884ec62e50" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::base::Connection&lt; Domain &gt;::m_hostname</definition>
+        <argsstring></argsstring>
+        <name>m_hostname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="206" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1ae0105d69505b7fd433b6eb36b422ceeb" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::base::Connection&lt; Domain &gt;::m_port</definition>
+        <argsstring></argsstring>
+        <name>m_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="207" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1a0ed89ea746bdb2d0ec41a01179f9d0d4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::base::Connection&lt; Domain &gt;::m_remoteAddr</definition>
+        <argsstring></argsstring>
+        <name>m_remoteAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="208" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1ab83ebe3af83b975f39742cd2d6438c65" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::base::Connection&lt; Domain &gt;::m_remotePort</definition>
+        <argsstring></argsstring>
+        <name>m_remotePort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="209" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1aaf86011ee7cd7a264d104c8d929bd739" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::base::Connection&lt; Domain &gt;::m_localAddr</definition>
+        <argsstring></argsstring>
+        <name>m_localAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="210" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1ad2a86e29fcfccb8153f784a0f6c3dd07" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::base::Connection&lt; Domain &gt;::m_localPort</definition>
+        <argsstring></argsstring>
+        <name>m_localPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="211" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1a2b47a04461903061d7b8d297a52e0825" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::base::Connection&lt; Domain &gt;::m_processID</definition>
+        <argsstring></argsstring>
+        <name>m_processID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="212" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Connection_1ac1a800bdc4cc78f2bfcdac79368238b7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::base::Connection&lt; Domain &gt;::m_info</definition>
+        <argsstring></argsstring>
+        <name>m_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="213" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ac1ed59726de3423a3fc2e21e50d04542" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::base::Connection&lt; Domain &gt;::Connection</definition>
+        <argsstring>(const utils::Config &amp;p_configuration, boost::asio::io_service &amp;p_ioService, const string p_hostname, const uint32_t p_port)</argsstring>
+        <name>Connection</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref> &amp;</type>
+          <declname>p_configuration</declname>
+        </param>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>p_ioService</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>p_hostname</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::network::base::Connection&lt; Domain &gt;::async_write</definition>
+        <argsstring>(utils::sharedBuf_t p_outData, utils::handler_t p_onSent)=0</argsstring>
+        <name>async_write</name>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Connection_1a5b0842e5855bfe469c1861cff53b5a84">async_write</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Connection_1ad000841f4e3d649740ec64f1b10078a1">async_write</reimplementedby>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void xtd::network::base::Connection&lt; Domain &gt;::async_read</definition>
+        <argsstring>(utils::sharedBuf_t p_inDataData, utils::handler_t p_onReceived)=0</argsstring>
+        <name>async_read</name>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Connection_1a90703a55c3ea13999cb704e3d3f94fbc">async_read</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Connection_1ad9891e66c48ddf2871a9f3c57e05ff5f">async_read</reimplementedby>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inDataData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a51f309c311421eb6a378354914816fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::network::base::Connection&lt; Domain &gt;::~Connection</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Connection</name>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Connection_1a23b8ae18927be28e3c778b1a1b23eb60">~Connection</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>descruteur </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::setProcessID</definition>
+        <argsstring>(uint32_t p_procesID)</argsstring>
+        <name>setProcessID</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_procesID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="76" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::base::Connection&lt; Domain &gt;::getProcessID</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getProcessID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="77" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::accept</definition>
+        <argsstring>(boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt; p_acceptor, utils::handler_t p_onAccepted)</argsstring>
+        <name>accept</name>
+        <param>
+          <type>boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt;</type>
+          <declname>p_acceptor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onAccepted</declname>
+        </param>
+        <briefdescription>
+<para>ouverture aynchrone de socket (server only) </para>        </briefdescription>
+        <detaileddescription>
+<para>Appel a p_onAccepted lorsque l&apos;appel aura ete execute (qu&apos;il y ait erreur ou non)</para><para>L&apos;acceptor est passe en parametre car c&apos;est chez lui qu&apos;il faut enregistré l&apos;évenement. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::connect</definition>
+        <argsstring>(boost::shared_ptr&lt; utils::Resolver&lt; Domain &gt; &gt; p_resolver, utils::handler_t p_onConnected)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">utils::Resolver</ref>&lt; Domain &gt; &gt;</type>
+          <declname>p_resolver</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onConnected</declname>
+        </param>
+        <briefdescription>
+<para>connexion aynchrone de socket (client only) </para>        </briefdescription>
+        <detaileddescription>
+<para>Appel a p_onConnected lorsque l&apos;appel aura ete execute (qu&apos;il y ait erreur ou non) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::send</definition>
+        <argsstring>(const utils::vectorBytes_t &amp;p_outData, utils::handler_t p_onSent)</argsstring>
+        <name>send</name>
+        <param>
+          <type>const <ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref> &amp;</type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+<para>envoi asynchrone d&apos;un message sur la socket </para>        </briefdescription>
+        <detaileddescription>
+<para>Appel a p_onSent lorsque l&apos;appel aura ete execute (qu&apos;il y ait erreur ou non) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::receive</definition>
+        <argsstring>(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>receive</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+<para>reception asynchrone d&apos;un message de la socket </para>        </briefdescription>
+        <detaileddescription>
+<para>Appel a p_onReceived lorsque l&apos;appel aura ete execute (qu&apos;il y ait erreur ou non) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::close</definition>
+        <argsstring>(void)</argsstring>
+        <name>close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>fermeture de la socket et annule ses operations de lecture ecriture </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a0bde1ab3f89862d0680c820645b7244d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::cancel</definition>
+        <argsstring>(void)</argsstring>
+        <name>cancel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>annule toutes les operations asynchrones en cours de la socket </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a6f249c285df79485b06f9c7b6ed03237" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; xtd::network::base::Connection&lt; Domain &gt;::info</definition>
+        <argsstring>(void) const </argsstring>
+        <name>info</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>information de connexion (pour les logs) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1aed7c6ff204cc07bfecb0316552a3632d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::do_accept</definition>
+        <argsstring>(boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt; p_acceptor, utils::handler_t p_onAccepted)</argsstring>
+        <name>do_accept</name>
+        <param>
+          <type>boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt;</type>
+          <declname>p_acceptor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onAccepted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ac8116f09ad4d70cbc2411a39decea353" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::onAccepted</definition>
+        <argsstring>(boost::system::error_code p_error, boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt; p_acceptor, utils::handler_t p_onAccepted)</argsstring>
+        <name>onAccepted</name>
+        <param>
+          <type>boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt;</type>
+          <declname>p_acceptor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onAccepted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L&apos;acceptor est gardé jusqu&apos;à l&apos;exécution de la callback pour garantir sa durée de vie dans le cas où un utilisateur peu clairvoyant ait décidé d&apos;instancier un acceptor pour chaque connection...) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ad2654c3dac0bddc50c00649a833df0c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::do_connect</definition>
+        <argsstring>(boost::shared_ptr&lt; utils::Resolver&lt; Domain &gt; &gt; p_resolver, utils::handler_t p_onConnected)</argsstring>
+        <name>do_connect</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">utils::Resolver</ref>&lt; Domain &gt; &gt;</type>
+          <declname>p_resolver</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onConnected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>parametres p_host et p_port en copie pour garantir la duree de vie des donnees et eviter les dangling references </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a80636683b901728aef6f6fa22c17f019" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::connectTimeout</definition>
+        <argsstring>(const boost::system::error_code p_error)</argsstring>
+        <name>connectTimeout</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a8495e01e6acacbc4e015286c88f966e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::onConnected</definition>
+        <argsstring>(const boost::system::error_code p_error, boost::shared_ptr&lt; utils::deadLineTimer_t &gt; p_timer, utils::handler_t p_onConnected)</argsstring>
+        <name>onConnected</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" kindref="member">utils::deadLineTimer_t</ref> &gt;</type>
+          <declname>p_timer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onConnected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1aeaafdac519a2ad99d46aee2b77dbbd4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::do_send</definition>
+        <argsstring>(utils::sharedBuf_t p_outData, utils::handler_t p_onSent)</argsstring>
+        <name>do_send</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a4a58f3996751578b86b4d897c38c1a96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::sendTimeout</definition>
+        <argsstring>(const boost::system::error_code p_error)</argsstring>
+        <name>sendTimeout</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a74dcb7837b6523b32592154b7d278fc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::onSent</definition>
+        <argsstring>(const boost::system::error_code p_error, utils::sharedBuf_t p_outData, boost::shared_ptr&lt; utils::deadLineTimer_t &gt; p_timer, utils::handler_t p_onSent)</argsstring>
+        <name>onSent</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_outData</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" kindref="member">utils::deadLineTimer_t</ref> &gt;</type>
+          <declname>p_timer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a516802aa130b466763159f7c025e074c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::do_receive</definition>
+        <argsstring>(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)</argsstring>
+        <name>do_receive</name>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref></type>
+          <declname>p_inData</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a6cd97c1773c9d64c10bd25458a38ac08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::receiveTimeout</definition>
+        <argsstring>(const boost::system::error_code p_error)</argsstring>
+        <name>receiveTimeout</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a726f405f3d2cad06126cd8d3cfac6cf1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::onReceived</definition>
+        <argsstring>(const boost::system::error_code p_error, boost::shared_ptr&lt; utils::deadLineTimer_t &gt; p_timer, utils::handler_t p_onReceived)</argsstring>
+        <name>onReceived</name>
+        <param>
+          <type>const boost::system::error_code</type>
+          <declname>p_error</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" kindref="member">utils::deadLineTimer_t</ref> &gt;</type>
+          <declname>p_timer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">utils::handler_t</ref></type>
+          <declname>p_onReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1aa28f64b26113b90ff0fb74ee9ee23f0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status xtd::network::base::Connection&lt; Domain &gt;::setSocketInfo</definition>
+        <argsstring>(void)</argsstring>
+        <name>setSocketInfo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mets à jour les options de la socket (keepalive, linger.. etc) et extrait les informations sur la point de connexion distant (host/port).</para><para>Cette routine doit être appelée APRES s&apos;être connecté à la machine distante, c&apos;est à dire lorsque la socket à été ouverte. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a86dca85f56375ec6b3638cb263e7d291" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::setSocketOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>setSocketOptions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1a735a94844b920bcf2de13b1ce9d1b569" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; Domain &gt;::readEndpoint</definition>
+        <argsstring>(void)</argsstring>
+        <name>readEndpoint</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.hh" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1ad71d5c5dc4b0bba31209ac40ed7793bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; utils::af_inet &gt;::setSocketOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>setSocketOptions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1aade1ebdd3a72d729151f7b1735f5c2c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; utils::af_inet &gt;::readEndpoint</definition>
+        <argsstring>(void)</argsstring>
+        <name>readEndpoint</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1af21a58c936e3d2573795c817ac7c2f14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; utils::af_unix &gt;::setSocketOptions</definition>
+        <argsstring>(void)</argsstring>
+        <name>setSocketOptions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Connection_1adaf0ac918d2cbfab659d94381cf73a0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::network::base::Connection&lt; utils::af_unix &gt;::readEndpoint</definition>
+        <argsstring>(void)</argsstring>
+        <name>readEndpoint</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On strip le &apos;\0&apos; (cf <ref refid="Resolver_8cc" kindref="compound">Resolver.cc</ref>:af_unix) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc" bodystart="43" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class from which all connections should derive. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type de connexion <ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">utils::af_inet</ref> ou <ref refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kindref="member">utils::af_unix</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Le premier rôle de cet objet est de mutualiser le pilotage de la socket par le client et le serveur.</para><para>Est à la charge de cet objet :<itemizedlist>
+<listitem><para>définir les primitives asynchrones de base connect, accept, send, receive et close</para></listitem><listitem><para>gérer tous les contrôles d&apos;erreur</para></listitem><listitem><para>gérer les timeouts</para></listitem></itemizedlist>
+</para><para>La gestion des d&apos;erreur et des timeouts se fait en cascadant une callback locale entre le déclanchement de la callback asynchrone par le boost::asio::io_service et la callback du client/server</para><para>Pour permettre l&apos;implementation de tout types de prototole, cet objet n&apos;écrit, ni ne lit directement sur la socket. Il délègue cettte tâche aux méthodes virtuelles pures <ref refid="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4" kindref="member">async_write</ref> et <ref refid="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6" kindref="member">async_read</ref>.</para><para>Ces méthodes qui implémentées dans une classe fille pour chacun des protocoles. C&apos;est typiquement là que l&apos;on codera la création d&apos;un header de taille fixe (ou à délimiteur fixe) qui contiendra la taille du message à lire (partie data)</para><para><itemizedlist>
+<listitem><para>Thread safety :<itemizedlist>
+<listitem><para>plusieurs instances : oui</para></listitem><listitem><para>meme instance : non</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Constructeur protegé, n&apos;a pas de sens d&apos;utiliser cette classe telle quelle à cause des virtuelles pures</para></listitem><listitem><para>Bien que les primitives accept et connect ne soient pas utilisée à la fois dans le client et le server, leur implémentation a été déportée dans cet objet pour deux raisons :<itemizedlist>
+<listitem><para>pour garantir la mise sur le strand</para></listitem><listitem><para>garantir l&apos;initialisation correct des informations de socket (appel à setSocketInfo qu&apos;il faut effectuer seulement après ouverture effective de la socket) </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="231">
+        <label>xtd::network::base::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Connection"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+        <childnode refid="233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>xtd::network::bip::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1bip_1_1Connection"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>noncopyable</label>
+      </node>
+      <node id="232">
+        <label>boost::enable_shared_from_this&lt; Connection&lt; Domain &gt; &gt;</label>
+      </node>
+      <node id="235">
+        <label>xtd::network::http::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Connection"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="236">
+        <label>xtd::network::base::Connection&lt; Domain &gt;</label>
+        <link refid="classxtd_1_1network_1_1base_1_1Connection"/>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>m_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="238">
+        <label>noncopyable</label>
+      </node>
+      <node id="239">
+        <label>xtd::network::utils::Config</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1Config"/>
+      </node>
+      <node id="237">
+        <label>boost::enable_shared_from_this&lt; Connection&lt; Domain &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/base/Client.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Client.hh" bodystart="26" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1af8da803db4caa1f125548508cf3db134" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>accept</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ab468f8470260b0ce42b5accf29c352e6" prot="protected" virt="pure-virtual"><scope>xtd::network::base::Connection</scope><name>async_read</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a650bc7e13969ff9195c95307e0abb2e4" prot="protected" virt="pure-virtual"><scope>xtd::network::base::Connection</scope><name>async_write</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a0bde1ab3f89862d0680c820645b7244d" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>cancel</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a73097d339a3716c05fee7ee19753ee4a" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>close</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a10f05cd689d67b012768c79486c6df47" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>cnx_sptr_t</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a408b83f0e43d18e32f31d6c13d6dcdf3" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>connect</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac1ed59726de3423a3fc2e21e50d04542" prot="protected" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>Connection</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a80636683b901728aef6f6fa22c17f019" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>connectTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aed7c6ff204cc07bfecb0316552a3632d" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>do_accept</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad2654c3dac0bddc50c00649a833df0c9" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>do_connect</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a516802aa130b466763159f7c025e074c" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>do_receive</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aeaafdac519a2ad99d46aee2b77dbbd4f" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>do_send</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a5cc120a87112e3923ffc01b341ace70b" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>getProcessID</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a6f249c285df79485b06f9c7b6ed03237" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>info</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a84f0cc65067a6d89a087754ad658f00b" prot="protected" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_conf</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aabc3a73e4fd42ac0344726884ec62e50" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_hostname</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac1a800bdc4cc78f2bfcdac79368238b7" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_info</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aee549e0f84206cc897371ec3ba2cba49" prot="protected" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_ioService</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aaf86011ee7cd7a264d104c8d929bd739" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_localAddr</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad2a86e29fcfccb8153f784a0f6c3dd07" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_localPort</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ae0105d69505b7fd433b6eb36b422ceeb" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_port</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a2b47a04461903061d7b8d297a52e0825" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_processID</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a0ed89ea746bdb2d0ec41a01179f9d0d4" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_remoteAddr</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ab83ebe3af83b975f39742cd2d6438c65" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_remotePort</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1af054fe7efb3d4f8a1a0f40c0e74e8c70" prot="protected" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_socket</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1afdbd7eaed6dc0b71b05a6ef3be2f417d" prot="protected" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>m_strand</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ac8116f09ad4d70cbc2411a39decea353" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>onAccepted</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a8495e01e6acacbc4e015286c88f966e4" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>onConnected</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a726f405f3d2cad06126cd8d3cfac6cf1" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>onReceived</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a74dcb7837b6523b32592154b7d278fc0" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>onSent</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a735a94844b920bcf2de13b1ce9d1b569" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>readEndpoint</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aade1ebdd3a72d729151f7b1735f5c2c7" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>readEndpoint</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1adaf0ac918d2cbfab659d94381cf73a0c" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>readEndpoint</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a09146c9c2dbf1ad85867fd0afab15c0c" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>receive</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a6cd97c1773c9d64c10bd25458a38ac08" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>receiveTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a8ebc5958cf7d27a902bd75a55c4648bf" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>send</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a4a58f3996751578b86b4d897c38c1a96" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>sendTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad5e705dc3bc5dd4e020c8caf450aab80" prot="public" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>setProcessID</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1aa28f64b26113b90ff0fb74ee9ee23f0b" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>setSocketInfo</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a86dca85f56375ec6b3638cb263e7d291" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>setSocketOptions</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1ad71d5c5dc4b0bba31209ac40ed7793bd" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>setSocketOptions</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1af21a58c936e3d2573795c817ac7c2f14" prot="private" virt="non-virtual"><scope>xtd::network::base::Connection</scope><name>setSocketOptions</name></member>
+      <member refid="classxtd_1_1network_1_1base_1_1Connection_1a51f309c311421eb6a378354914816fac" prot="public" virt="virtual"><scope>xtd::network::base::Connection</scope><name>~Connection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

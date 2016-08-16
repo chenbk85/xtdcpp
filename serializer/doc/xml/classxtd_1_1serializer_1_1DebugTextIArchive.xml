@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1serializer_1_1DebugTextIArchive" kind="class" language="C++" prot="public">
+    <compoundname>xtd::serializer::DebugTextIArchive</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">boost::archive::text_iarchive_impl&lt; DebugTextIArchive &gt;</basecompoundref>
+    <includes refid="DebugArchive_8hh" local="no">DebugArchive.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1serializer_1_1DebugTextIArchive_1ab56b684627bf38888035f2c9ea499694" prot="private" static="no">
+        <type>boost::archive::text_iarchive_impl&lt; <ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref> &gt;</type>
+        <definition>typedef boost::archive::text_iarchive_impl&lt;DebugTextIArchive&gt; xtd::serializer::DebugTextIArchive::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1serializer_1_1DebugTextIArchive_1af9e30d7c11da39f8fdf5fd8c21e4e831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::detail::interface_iarchive&lt; DebugTextIArchive &gt;</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::detail::interface_iarchive&lt; DebugTextIArchive &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a6fe2ce7d54600795abdea507c1270a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::basic_text_iarchive&lt; DebugTextIArchive &gt;</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::basic_text_iarchive&lt; DebugTextIArchive &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classxtd_1_1serializer_1_1DebugTextIArchive_1aaca003bb8a4fc59424e4025130da4edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::archive::save_access</definition>
+        <argsstring></argsstring>
+        <name>boost::archive::save_access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="170" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a4268e8f87d1e60a52cc1ccab8634beff" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::serializer::DebugTextIArchive::m_debugMode</definition>
+        <argsstring></argsstring>
+        <name>m_debugMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="209" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1serializer_1_1DebugTextIArchive_1abd4817e643d2d2fc8bc98b51a694c0c6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool xtd::serializer::DebugTextIArchive::m_statusLoaded</definition>
+        <argsstring></argsstring>
+        <name>m_statusLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="210" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a97b036aced6a2612a505bca126b8e4da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::serializer::DebugTextIArchive::DebugTextIArchive</definition>
+        <argsstring>(std::istream &amp;p_os, int p_flags=0)</argsstring>
+        <name>DebugTextIArchive</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>p_os</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p_flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="173" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a7fb53e65348749bad9e2b945b03c1e9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref> &amp;</type>
+        <definition>DebugTextIArchive&amp; xtd::serializer::DebugTextIArchive::operator*</definition>
+        <argsstring>(T &amp;p_value)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="180" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a8c9fb4b382705609a5cd1570c63818f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref> &amp;</type>
+        <definition>DebugTextIArchive&amp; xtd::serializer::DebugTextIArchive::operator/</definition>
+        <argsstring>(T &amp;p_value)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="192" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="192" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1serializer_1_1DebugTextIArchive_1a3ad42e3b468f60546bc76b21247ee0ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::serializer::DebugTextIArchive::getDebugState</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getDebugState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="203" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="203" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>xtd::serializer::DebugTextIArchive</label>
+        <link refid="classxtd_1_1serializer_1_1DebugTextIArchive"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>boost::archive::text_iarchive_impl&lt; DebugTextIArchive &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>xtd::serializer::DebugTextIArchive</label>
+        <link refid="classxtd_1_1serializer_1_1DebugTextIArchive"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>boost::archive::text_iarchive_impl&lt; DebugTextIArchive &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="166" column="1" bodyfile="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" bodystart="165" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1ab56b684627bf38888035f2c9ea499694" prot="private" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>base</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a6fe2ce7d54600795abdea507c1270a7a" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>boost::archive::basic_text_iarchive&lt; DebugTextIArchive &gt;</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1af9e30d7c11da39f8fdf5fd8c21e4e831" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>boost::archive::detail::interface_iarchive&lt; DebugTextIArchive &gt;</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1aaca003bb8a4fc59424e4025130da4edd" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>boost::archive::save_access</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a97b036aced6a2612a505bca126b8e4da" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>DebugTextIArchive</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a3ad42e3b468f60546bc76b21247ee0ca" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>getDebugState</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a4268e8f87d1e60a52cc1ccab8634beff" prot="private" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>m_debugMode</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1abd4817e643d2d2fc8bc98b51a694c0c6" prot="private" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>m_statusLoaded</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a7fb53e65348749bad9e2b945b03c1e9a" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>operator*</name></member>
+      <member refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a8c9fb4b382705609a5cd1570c63818f1" prot="public" virt="non-virtual"><scope>xtd::serializer::DebugTextIArchive</scope><name>operator/</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1AvgValue" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::AvgValue</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Composed" prot="public" virt="non-virtual">xtd::counters::Composed</basecompoundref>
+    <includes refid="AvgValue_8hh" local="no">AvgValue.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TType</declname>
+        <defname>TType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgValue_1a2186c119cedc1cd9c3a7a7a39e0bdc55" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref>&lt; TType &gt; &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;AvgValue&lt;TType&gt; &gt; xtd::counters::AvgValue&lt; TType &gt;::t_sptr</definition>
+        <argsstring></argsstring>
+        <name>t_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1AvgValue_1aa58af8a852f52342b087373414e61878" prot="protected" static="no">
+        <type>std::deque&lt; TType &gt;</type>
+        <definition>typedef std::deque&lt;TType&gt; xtd::counters::AvgValue&lt; TType &gt;::t_samples</definition>
+        <argsstring></argsstring>
+        <name>t_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classxtd_1_1counters_1_1AvgValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1aa65f0400547f2cb940ec9b79cbc3a662" prot="public" static="yes" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::counters::AvgValue&lt; TType &gt;::mcs_defaultSampleSize</definition>
+        <argsstring></argsstring>
+        <name>mcs_defaultSampleSize</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="25" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1a787afb6a601eb29f48a0fd247524cf84" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1AvgValue_1aa58af8a852f52342b087373414e61878" kindref="member">t_samples</ref></type>
+        <definition>t_samples xtd::counters::AvgValue&lt; TType &gt;::m_samples</definition>
+        <argsstring></argsstring>
+        <name>m_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="41" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1afa1908ab38d3deef50e1169b1cc20f6c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt; TType &gt;</type>
+        <definition>Value&lt;TType&gt; xtd::counters::AvgValue&lt; TType &gt;::m_mean</definition>
+        <argsstring></argsstring>
+        <name>m_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1a8e217891d937894812b5edfcf6a5ce0e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt; TType &gt;</type>
+        <definition>Value&lt;TType&gt; xtd::counters::AvgValue&lt; TType &gt;::m_min</definition>
+        <argsstring></argsstring>
+        <name>m_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1a9ee9567a0a95cf6b579c13329f21f0d5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt; TType &gt;</type>
+        <definition>Value&lt;TType&gt; xtd::counters::AvgValue&lt; TType &gt;::m_max</definition>
+        <argsstring></argsstring>
+        <name>m_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="44" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1aba4c4022706bda9bfdedea3cb9c3647a" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::counters::AvgValue&lt; TType &gt;::m_nbEvent</definition>
+        <argsstring></argsstring>
+        <name>m_nbEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="45" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1AvgValue_1a85edafd4829b5aa5be6562cadd8e4764" prot="protected" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t xtd::counters::AvgValue&lt; TType &gt;::m_sampleSize</definition>
+        <argsstring></argsstring>
+        <name>m_sampleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="47" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1aa6f20ce5b30cc7a781669cd6e4f70a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::AvgValue&lt; TType &gt;::AvgValue</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_sampeSize=mcs_defaultSampleSize)</argsstring>
+        <name>AvgValue</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_sampeSize</declname>
+          <defval><ref refid="classxtd_1_1counters_1_1AvgValue_1aa65f0400547f2cb940ec9b79cbc3a662" kindref="member">mcs_defaultSampleSize</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::counters::AvgValue&lt; TType &gt;::~AvgValue</definition>
+        <argsstring>(void)</argsstring>
+        <name>~AvgValue</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1a9605750713e85b4bf2e09e54e46d4e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref> &amp;</type>
+        <definition>AvgValue&amp; xtd::counters::AvgValue&lt; TType &gt;::operator=</definition>
+        <argsstring>(const TType &amp;p_value)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="33" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" compoundref="AvgValue_8hh" startline="30" endline="30">xtd::counters::AvgValue&lt; uint32_t &gt;::~AvgValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1a52054872a2d938baf8c23e1208d7613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref> &amp;</type>
+        <definition>AvgValue&amp; xtd::counters::AvgValue&lt; TType &gt;::operator+</definition>
+        <argsstring>(const AvgValue &amp;p_value)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref> &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="34" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" compoundref="AvgValue_8hh" startline="30" endline="30">xtd::counters::AvgValue&lt; uint32_t &gt;::~AvgValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1a3ad3008fc30f1936e8dd1eef1d62f324" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgValue&lt; TType &gt;::affect_safe</definition>
+        <argsstring>(const TType &amp;p_value)</argsstring>
+        <name>affect_safe</name>
+        <param>
+          <type>const TType &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="37" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" compoundref="AvgValue_8hh" startline="30" endline="30">xtd::counters::AvgValue&lt; uint32_t &gt;::~AvgValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1AvgValue_1ad0532ed35af8242fabd3a910cc88c543" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::counters::AvgValue&lt; TType &gt;::add_safe</definition>
+        <argsstring>(const AvgValue &amp;p_value)</argsstring>
+        <name>add_safe</name>
+        <param>
+          <type>const <ref refid="classxtd_1_1counters_1_1AvgValue" kindref="compound">AvgValue</ref> &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="38" column="1"/>
+        <referencedby refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" compoundref="AvgValue_8hh" startline="30" endline="30">xtd::counters::AvgValue&lt; uint32_t &gt;::~AvgValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="143">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="142">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="143" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>xtd::counters::AvgValue&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1AvgValue"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="146">
+        <label>xtd::counters::Base</label>
+        <link refid="classxtd_1_1counters_1_1Base"/>
+        <childnode refid="147" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>xtd::counters::AvgValue&lt; TType &gt;</label>
+        <link refid="classxtd_1_1counters_1_1AvgValue"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>xtd::counters::Composed</label>
+        <link refid="classxtd_1_1counters_1_1Composed"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/AvgValue.hh" bodystart="14" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1ad0532ed35af8242fabd3a910cc88c543" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>add_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>addItem</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a3ad3008fc30f1936e8dd1eef1d62f324" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>affect_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1aa6f20ce5b30cc7a781669cd6e4f70a6b" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>AvgValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>Base</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ad604f1fcd711f6df3c0bca1f07956fe8" prot="public" virt="non-virtual" ambiguityscope="xtd::counters::Composed::"><scope>xtd::counters::AvgValue</scope><name>Composed</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>getName</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a9ee9567a0a95cf6b579c13329f21f0d5" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_max</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1afa1908ab38d3deef50e1169b1cc20f6c" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_mean</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a8e217891d937894812b5edfcf6a5ce0e" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_min</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_mutex</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1aba4c4022706bda9bfdedea3cb9c3647a" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_nbEvent</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a787afb6a601eb29f48a0fd247524cf84" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_samples</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a85edafd4829b5aa5be6562cadd8e4764" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>m_sampleSize</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1aa65f0400547f2cb940ec9b79cbc3a662" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>mcs_defaultSampleSize</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a52054872a2d938baf8c23e1208d7613a" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>operator+</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a9605750713e85b4bf2e09e54e46d4e1a" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>operator=</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>t_data</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1aa58af8a852f52342b087373414e61878" prot="protected" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>t_samples</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1a2186c119cedc1cd9c3a7a7a39e0bdc55" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>t_sptr</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>update</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" prot="protected" virt="virtual"><scope>xtd::counters::AvgValue</scope><name>update_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" virt="non-virtual"><scope>xtd::counters::AvgValue</scope><name>visit</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" prot="protected" virt="virtual"><scope>xtd::counters::AvgValue</scope><name>visit_safe</name></member>
+      <member refid="classxtd_1_1counters_1_1AvgValue_1ad9e1d371b0787698ebdf0350e58601c8" prot="public" virt="virtual"><scope>xtd::counters::AvgValue</scope><name>~AvgValue</name></member>
+      <member refid="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" virt="virtual"><scope>xtd::counters::AvgValue</scope><name>~Base</name></member>
+      <member refid="classxtd_1_1counters_1_1Composed_1a28b2cf984f727ae3278464e06b03fad7" prot="public" virt="virtual"><scope>xtd::counters::AvgValue</scope><name>~Composed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

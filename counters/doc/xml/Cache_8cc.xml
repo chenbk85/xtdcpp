@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Cache_8cc" kind="file" language="C++">
+    <compoundname>Cache.cc</compoundname>
+    <includes refid="Cache_8hh" local="yes">Cache.hh</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <incdepgraph>
+      <node id="583">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="580">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+      </node>
+      <node id="575">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="581">
+        <label>string</label>
+      </node>
+      <node id="577">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="574">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache.cc"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>vector</label>
+      </node>
+      <node id="584">
+        <label>deque</label>
+      </node>
+      <node id="578">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Cache_8hh" kindref="compound">Cache.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classxtd_1_1counters_1_1Cache_1a73df8a43eff5fd364e41dccabc562d54" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a73df8a43eff5fd364e41dccabc562d54" kindref="member">Cache::Cache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/>p_name,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_deltaTimeMs)<sp/>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed" kindref="compound">Composed</ref>(p_name),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>m_nb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>m_nbFiltered<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests.filtered&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>m_nbAccepted<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests.accepted&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>m_nbAcceptedMiss<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests.accepted.miss&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>m_nbAcceptedHit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests.accepted.hit&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitInvalid<sp/>(</highlight><highlight class="stringliteral">&quot;requests.accepted.hit.invalid&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitValid<sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;requests.accepted.hit.valid&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>m_freqHit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;perf.hit&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>m_freqMiss<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;perf.miss&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>m_iFreqHit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;perf.instant.hit&quot;</highlight><highlight class="normal">,<sp/>p_deltaTimeMs),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>m_iFreqMiss<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;perf.instant.miss&quot;</highlight><highlight class="normal">,<sp/>p_deltaTimeMs)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_nb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_nbFiltered<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_nbAccepted<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>m_nbAcceptedMiss<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>m_nbAcceptedHit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitInvalid<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitValid<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_freqMiss<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>m_freqHit<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>m_iFreqMiss<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>m_iFreqHit<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nb);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbFiltered);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbAccepted);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbAcceptedMiss);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbAcceptedHit);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbAcceptedHitInvalid);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_nbAcceptedHitValid);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_freqMiss);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_freqHit);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_iFreqMiss);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" kindref="member">addItem</ref>(m_iFreqHit);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a57101c273f95f2cf4d5a71627f0b23de" kindref="member">Cache::hit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>m_nb++;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>m_nbAccepted++;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>m_nbAcceptedHit++;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>m_freqHit.<ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>m_iFreqHit.<ref refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a71c25293724fa534633e6d5c9f2cc36d" kindref="member">Cache::miss</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>m_nb++;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>m_nbAccepted++;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>m_nbAcceptedMiss++;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>m_freqMiss.<ref refid="classxtd_1_1counters_1_1Freq_1a9e91ea45fc5e9874dc81ca4bd723efc6" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>m_iFreqMiss.<ref refid="classxtd_1_1counters_1_1InstantFreq_1a1760f09b25b97545169be189bf99d250" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classxtd_1_1counters_1_1Cache_1a419b5620c93818158193cb6aca015c9b" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a419b5620c93818158193cb6aca015c9b" kindref="member">Cache::invalid</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitInvalid++;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classxtd_1_1counters_1_1Cache_1a42ea3f207a0399b1864f3ee918e8a0e4" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a42ea3f207a0399b1864f3ee918e8a0e4" kindref="member">Cache::valid</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>m_nbAcceptedHitValid++;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classxtd_1_1counters_1_1Cache_1a827a66e44b127d38c5f808fa38a2535a" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Cache_1a827a66e44b127d38c5f808fa38a2535a" kindref="member">Cache::filtered</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>m_nb++;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>m_nbFiltered++;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.cc"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1counters_1_1JsonVisitor" kind="class" language="C++" prot="public">
+    <compoundname>xtd::counters::JsonVisitor</compoundname>
+    <basecompoundref refid="classxtd_1_1counters_1_1Visitor" prot="public" virt="non-virtual">xtd::counters::Visitor</basecompoundref>
+    <includes refid="JsonVisitor_8hh" local="no">JsonVisitor.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1JsonVisitor_1a4651cb3ed7617b7063c046cf2c6b1b9f" prot="private" static="no">
+        <type>boost::property_tree::ptree::path_type</type>
+        <definition>typedef boost::property_tree::ptree::path_type xtd::counters::JsonVisitor::t_path</definition>
+        <argsstring></argsstring>
+        <name>t_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="16" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classxtd_1_1counters_1_1JsonVisitor_1ae2f08cedeaf21f6f0542241c2feffde2" prot="private" static="no">
+        <type>boost::property_tree::ptree</type>
+        <definition>typedef boost::property_tree::ptree xtd::counters::JsonVisitor::t_elem</definition>
+        <argsstring></argsstring>
+        <name>t_elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1JsonVisitor_1aca8b692bab41e6baac3ad64d71c692f6" prot="private" static="no" mutable="no">
+        <type>const t_path &amp;</type>
+        <definition>const t_path&amp; xtd::counters::JsonVisitor::m_path</definition>
+        <argsstring></argsstring>
+        <name>m_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1counters_1_1JsonVisitor_1a32cee373b39b4b3187769052c4edba58" prot="private" static="no" mutable="no">
+        <type>t_elem &amp;</type>
+        <definition>t_elem&amp; xtd::counters::JsonVisitor::m_elem</definition>
+        <argsstring></argsstring>
+        <name>m_elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1a2b3777d2d80ba2c7131afad6385f2433" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::counters::JsonVisitor::JsonVisitor</definition>
+        <argsstring>(const t_path &amp;p_path, t_elem &amp;p_elem)</argsstring>
+        <name>JsonVisitor</name>
+        <param>
+          <type>const t_path &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <param>
+          <type>t_elem &amp;</type>
+          <declname>p_elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="20" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1a903824cfba9c121a0441a774edc232a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, const string &amp;p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a1341281b8c4cbf4de5a37e035f75e214">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1a6d650a21f6ee33b1748ae7cb432c3de6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint8_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a1a5da2c523703b0c9132595f22e1700e">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1ad0e11fe1f362f071132d6828de269517" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint16_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a6139d735b720a83e87f49932855f1ade">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1ae9dc018222ce25751d712783377b63a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint32_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1a0bc4c30e3df6ef796878b85ce1be17fb">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="30" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1a89f860915a12f1e99b629b5d385864cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::operator()</definition>
+        <argsstring>(const string &amp;p_name, uint64_t p_data)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="classxtd_1_1counters_1_1Visitor_1aba895c10dd1a28fa7a8b64e61adee5ac">operator()</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1counters_1_1JsonVisitor_1a5ee17a7532fc5fa81e602fe84aaaf3d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::counters::JsonVisitor::write</definition>
+        <argsstring>(const string &amp;p_name, TType p_data)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>TType</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="214">
+        <label>xtd::counters::Visitor</label>
+        <link refid="classxtd_1_1counters_1_1Visitor"/>
+      </node>
+      <node id="213">
+        <label>xtd::counters::JsonVisitor</label>
+        <link refid="classxtd_1_1counters_1_1JsonVisitor"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="216">
+        <label>xtd::counters::Visitor</label>
+        <link refid="classxtd_1_1counters_1_1Visitor"/>
+      </node>
+      <node id="215">
+        <label>xtd::counters::JsonVisitor</label>
+        <link refid="classxtd_1_1counters_1_1JsonVisitor"/>
+        <childnode refid="216" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/JsonVisitor.hh" bodystart="13" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a2b3777d2d80ba2c7131afad6385f2433" prot="public" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>JsonVisitor</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a32cee373b39b4b3187769052c4edba58" prot="private" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>m_elem</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1aca8b692bab41e6baac3ad64d71c692f6" prot="private" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>m_path</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a903824cfba9c121a0441a774edc232a1" prot="public" virt="virtual"><scope>xtd::counters::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a6d650a21f6ee33b1748ae7cb432c3de6" prot="public" virt="virtual"><scope>xtd::counters::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1ad0e11fe1f362f071132d6828de269517" prot="public" virt="virtual"><scope>xtd::counters::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1ae9dc018222ce25751d712783377b63a3" prot="public" virt="virtual"><scope>xtd::counters::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a89f860915a12f1e99b629b5d385864cc" prot="public" virt="virtual"><scope>xtd::counters::JsonVisitor</scope><name>operator()</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1ae2f08cedeaf21f6f0542241c2feffde2" prot="private" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>t_elem</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a4651cb3ed7617b7063c046cf2c6b1b9f" prot="private" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>t_path</name></member>
+      <member refid="classxtd_1_1counters_1_1JsonVisitor_1a5ee17a7532fc5fa81e602fe84aaaf3d2" prot="private" virt="non-virtual"><scope>xtd::counters::JsonVisitor</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

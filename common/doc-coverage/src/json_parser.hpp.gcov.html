@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - doc-coverage.info - src/json_parser.hpp</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - json_parser.hpp</td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">doc-coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntry">22</td>
+            <td class="headerCovTableEntryLo">27.3 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-08-16 22:16:52</td>
+            <td></td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<span class="lineNum">       1 </span>            : // ----------------------------------------------------------------------------
+<span class="lineNum">       2 </span>            : // Copyright (C) 2002-2006 Marcin Kalicinski
+<span class="lineNum">       3 </span>            : //
+<span class="lineNum">       4 </span>            : // Distributed under the Boost Software License, Version 1.0.
+<span class="lineNum">       5 </span>            : // (See accompanying file LICENSE_1_0.txt or copy at
+<span class="lineNum">       6 </span>            : // http://www.boost.org/LICENSE_1_0.txt)
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : // For more information, see www.boost.org
+<span class="lineNum">       9 </span>            : // ----------------------------------------------------------------------------
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : /**
+<span class="lineNum">      12 </span>            :  ** @details
+<span class="lineNum">      13 </span>            :  ** On a copier le header de boost pour palier a une limitation du
+<span class="lineNum">      14 </span>            :  ** writer json qui ne gere que des strings
+<span class="lineNum">      15 </span>            :  **   ptree.put&lt;int&gt;(&quot;key&quot;, 5)
+<span class="lineNum">      16 </span>            :  **   ptree.put&lt;string&gt;(&quot;key1&quot;, &quot;salut&quot;)
+<span class="lineNum">      17 </span>            :  **   write_json(cout, ptree)
+<span class="lineNum">      18 </span>            :  **   -&gt; { &quot;key&quot; : &quot;5&quot;, &quot;key1&quot; : &quot;salut&quot; }
+<span class="lineNum">      19 </span>            :  **   on coudrait avoir :
+<span class="lineNum">      20 </span>            :  **   -&gt; { &quot;key&quot; : 5, &quot;key1&quot; : &quot;salut&quot; }
+<span class="lineNum">      21 </span>            :  */
+<span class="lineNum">      22 </span>            : 
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span>            : #ifndef BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED
+<span class="lineNum">      25 </span>            : # define BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED
+<span class="lineNum">      26 </span>            : // on empeche l'inclusion du header de boost
+<span class="lineNum">      27 </span><span class="lineCov">          1 : # define BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</span>
+<span class="lineNum">      28 </span>            : 
+<span class="lineNum">      29 </span>            : # include &lt;boost/property_tree/ptree.hpp&gt;
+<span class="lineNum">      30 </span>            : # include &lt;boost/property_tree/detail/json_parser_read.hpp&gt;
+<span class="lineNum">      31 </span>            : 
+<span class="lineNum">      32 </span>            : /**
+<span class="lineNum">      33 </span>            :  ** warning: comparison is always true due to limited range of data
+<span class="lineNum">      34 </span>            :  ** type [-Wtype-limits]
+<span class="lineNum">      35 </span>            :  */
+<span class="lineNum">      36 </span>            : # pragma GCC diagnostic push
+<span class="lineNum">      37 </span>            : #  pragma GCC diagnostic ignored &quot;-Wtype-limits&quot;
+<span class="lineNum">      38 </span>            : #   include &quot;json_parser_write.hpp&quot; // libcommon
+<span class="lineNum">      39 </span>            : # pragma GCC diagnostic pop
+<span class="lineNum">      40 </span>            : # include &lt;boost/property_tree/detail/json_parser_error.hpp&gt;
+<span class="lineNum">      41 </span>            : 
+<span class="lineNum">      42 </span>            : # include &lt;fstream&gt;
+<span class="lineNum">      43 </span>            : # include &lt;string&gt;
+<span class="lineNum">      44 </span>            : # include &lt;locale&gt;
+<span class="lineNum">      45 </span>            : # include &lt;boost/lexical_cast.hpp&gt;
+<span class="lineNum">      46 </span>            : 
+<span class="lineNum">      47 </span><span class="lineCov">          1 : namespace boost { namespace property_tree { namespace json_parser</span>
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 : {</span>
+<span class="lineNum">      49 </span>            : 
+<span class="lineNum">      50 </span>            : 
+<span class="lineNum">      51 </span>            : template &lt;typename T&gt;
+<span class="lineNum">      52 </span>            : struct translator
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 : {</span>
+<span class="lineNum">      54 </span><span class="lineNoCov">          0 :   typedef std::string internal_type;</span>
+<span class="lineNum">      55 </span><span class="lineNoCov">          0 :   typedef T           external_type;</span>
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :   boost::optional&lt;T&gt;           get_value(const std::string&amp;v) { return boost::lexical_cast&lt;T&gt;(v); }</span>
+<span class="lineNum">      58 </span><span class="lineNoCov">          0 :   boost::optional&lt;std::string&gt; put_value(const T&amp;v)           { return boost::lexical_cast&lt;std::string&gt;(v); }</span>
+<span class="lineNum">      59 </span>            : };
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            : template &lt;&gt;
+<span class="lineNum">      62 </span>            : struct translator&lt;std::string&gt;
+<span class="lineNum">      63 </span><span class="lineNoCov">          0 : {</span>
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :   typedef std::string internal_type;</span>
+<span class="lineNum">      65 </span><span class="lineNoCov">          0 :   typedef std::string external_type;</span>
+<span class="lineNum">      66 </span>            : 
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :   boost::optional&lt;std::string&gt; get_value(const std::string&amp; v) { return v.substr(1, v.size() - 2); }</span>
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :   boost::optional&lt;std::string&gt; put_value(const std::string&amp; v) { return &quot;\&quot;&quot; + v + &quot;\&quot;&quot;;           }</span>
+<span class="lineNum">      69 </span>            : };
+<span class="lineNum">      70 </span>            : 
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : template &lt;&gt;
+<span class="lineNum">      73 </span>            : struct translator&lt;bool&gt;
+<span class="lineNum">      74 </span><span class="lineNoCov">          0 : {</span>
+<span class="lineNum">      75 </span><span class="lineNoCov">          0 :   typedef std::string internal_type;</span>
+<span class="lineNum">      76 </span><span class="lineNoCov">          0 :   typedef bool        external_type;</span>
+<span class="lineNum">      77 </span>            : 
+<span class="lineNum">      78 </span><span class="lineNoCov">          0 :   boost::optional&lt;bool&gt;        get_value(const std::string&amp; v) { return (v == &quot;true&quot;);        }</span>
+<span class="lineNum">      79 </span><span class="lineNoCov">          0 :   boost::optional&lt;std::string&gt; put_value(const bool&amp; v)        { if (v) return std::string(&quot;true&quot;); return std::string(&quot;false&quot;); }</span>
+<span class="lineNum">      80 </span>            : };
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            : 
+<span class="lineNum">      83 </span>            : /**
+<span class="lineNum">      84 </span>            :  * Read JSON from a the given stream and translate it to a property tree.
+<span class="lineNum">      85 </span>            :  * @note Clears existing contents of property tree.  In case of error the
+<span class="lineNum">      86 </span>            :  *       property tree unmodified.
+<span class="lineNum">      87 </span>            :  * @note Items of JSON arrays are translated into ptree keys with empty
+<span class="lineNum">      88 </span>            :  *       names. Members of objects are translated into named keys.
+<span class="lineNum">      89 </span>            :  * @note JSON data can be a string, a numeric value, or one of literals
+<span class="lineNum">      90 </span>            :  *       &quot;null&quot;, &quot;true&quot; and &quot;false&quot;. During parse, any of the above is
+<span class="lineNum">      91 </span>            :  *       copied verbatim into ptree data string.
+<span class="lineNum">      92 </span>            :  * @throw json_parser_error In case of error deserializing the property
+<span class="lineNum">      93 </span>            :  *                          tree.
+<span class="lineNum">      94 </span>            :  * @param stream Stream from which to read in the property tree.
+<span class="lineNum">      95 </span>            :  * @param[out] pt The property tree to populate.
+<span class="lineNum">      96 </span>            :  */
+<span class="lineNum">      97 </span>            : template&lt;class Ptree&gt;
+<span class="lineNum">      98 </span><span class="lineCov">          1 : void read_json(std::basic_istream&lt;</span>
+<span class="lineNum">      99 </span>            :                typename Ptree::key_type::value_type
+<span class="lineNum">     100 </span>            :                &gt; &amp;stream,
+<span class="lineNum">     101 </span>            :                Ptree &amp;pt)
+<span class="lineNum">     102 </span>            : {
+<span class="lineNum">     103 </span>            :   read_json_internal(stream, pt, std::string());
+<span class="lineNum">     104 </span>            : }
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span>            : /**
+<span class="lineNum">     107 </span>            :  * Read JSON from a the given file and translate it to a property tree.
+<span class="lineNum">     108 </span>            :  * @note Clears existing contents of property tree.  In case of error the
+<span class="lineNum">     109 </span>            :  *       property tree unmodified.
+<span class="lineNum">     110 </span>            :  * @note Items of JSON arrays are translated into ptree keys with empty
+<span class="lineNum">     111 </span>            :  *       names. Members of objects are translated into named keys.
+<span class="lineNum">     112 </span>            :  * @note JSON data can be a string, a numeric value, or one of literals
+<span class="lineNum">     113 </span>            :  *       &quot;null&quot;, &quot;true&quot; and &quot;false&quot;. During parse, any of the above is
+<span class="lineNum">     114 </span>            :  *       copied verbatim into ptree data string.
+<span class="lineNum">     115 </span>            :  * @throw json_parser_error In case of error deserializing the property
+<span class="lineNum">     116 </span>            :  *                          tree.
+<span class="lineNum">     117 </span>            :  * @param filename Name of file from which to read in the property tree.
+<span class="lineNum">     118 </span>            :  * @param[out] pt The property tree to populate.
+<span class="lineNum">     119 </span>            :  * @param loc The locale to use when reading in the file contents.
+<span class="lineNum">     120 </span>            :  */
+<span class="lineNum">     121 </span>            : template&lt;class Ptree&gt;
+<span class="lineNum">     122 </span><span class="lineCov">          1 : void read_json(const std::string &amp;filename,</span>
+<span class="lineNum">     123 </span>            :                Ptree &amp;pt,
+<span class="lineNum">     124 </span>            :                const std::locale &amp;loc = std::locale())
+<span class="lineNum">     125 </span>            : {
+<span class="lineNum">     126 </span>            :   std::basic_ifstream&lt;typename Ptree::key_type::value_type&gt;
+<span class="lineNum">     127 </span>            :     stream(filename.c_str());
+<span class="lineNum">     128 </span>            :   if (!stream)
+<span class="lineNum">     129 </span>            :     BOOST_PROPERTY_TREE_THROW(json_parser_error(
+<span class="lineNum">     130 </span>            :                                                 &quot;cannot open file&quot;, filename, 0));
+<span class="lineNum">     131 </span>            :   stream.imbue(loc);
+<span class="lineNum">     132 </span>            :   read_json_internal(stream, pt, filename);
+<span class="lineNum">     133 </span>            : }
+<span class="lineNum">     134 </span>            : 
+<span class="lineNum">     135 </span>            : /**
+<span class="lineNum">     136 </span>            :  * Translates the property tree to JSON and writes it the given output
+<span class="lineNum">     137 </span>            :  * stream.
+<span class="lineNum">     138 </span>            :  * @note Any property tree key containing only unnamed subkeys will be
+<span class="lineNum">     139 </span>            :  *       rendered as JSON arrays.
+<span class="lineNum">     140 </span>            :  * @pre @e pt cannot contain keys that have both subkeys and non-empty data.
+<span class="lineNum">     141 </span>            :  * @throw json_parser_error In case of error translating the property tree
+<span class="lineNum">     142 </span>            :  *                          to JSON or writing to the output stream.
+<span class="lineNum">     143 </span>            :  * @param stream The stream to which to write the JSON representation of the
+<span class="lineNum">     144 </span>            :  *               property tree.
+<span class="lineNum">     145 </span>            :  * @param pt The property tree to tranlsate to JSON and output.
+<span class="lineNum">     146 </span>            :  * @param pretty Whether to pretty-print. Defaults to true for backward
+<span class="lineNum">     147 </span>            :  *               compatibility.
+<span class="lineNum">     148 </span>            :  */
+<span class="lineNum">     149 </span>            : template&lt;class Ptree&gt;
+<span class="lineNum">     150 </span><span class="lineCov">          1 : void write_json(std::basic_ostream&lt;</span>
+<span class="lineNum">     151 </span>            :                 typename Ptree::key_type::value_type
+<span class="lineNum">     152 </span>            :                 &gt; &amp;stream,
+<span class="lineNum">     153 </span>            :                 const Ptree &amp;pt,
+<span class="lineNum">     154 </span>            :                 bool pretty = true)
+<span class="lineNum">     155 </span>            : {
+<span class="lineNum">     156 </span>            :   write_json_internal(stream, pt, std::string(), pretty);
+<span class="lineNum">     157 </span>            : }
+<span class="lineNum">     158 </span>            : 
+<span class="lineNum">     159 </span>            : /**
+<span class="lineNum">     160 </span>            :  * Translates the property tree to JSON and writes it the given file.
+<span class="lineNum">     161 </span>            :  * @note Any property tree key containing only unnamed subkeys will be
+<span class="lineNum">     162 </span>            :  *       rendered as JSON arrays.
+<span class="lineNum">     163 </span>            :  * @pre @e pt cannot contain keys that have both subkeys and non-empty data.
+<span class="lineNum">     164 </span>            :  * @throw json_parser_error In case of error translating the property tree
+<span class="lineNum">     165 </span>            :  *                          to JSON or writing to the file.
+<span class="lineNum">     166 </span>            :  * @param filename The name of the file to which to write the JSON
+<span class="lineNum">     167 </span>            :  *                 representation of the property tree.
+<span class="lineNum">     168 </span>            :  * @param pt The property tree to translate to JSON and output.
+<span class="lineNum">     169 </span>            :  * @param loc The locale to use when writing out to the output file.
+<span class="lineNum">     170 </span>            :  * @param pretty Whether to pretty-print. Defaults to true and last place
+<span class="lineNum">     171 </span>            :  *               for backward compatibility.
+<span class="lineNum">     172 </span>            :  */
+<span class="lineNum">     173 </span>            : template&lt;class Ptree&gt;
+<span class="lineNum">     174 </span><span class="lineCov">          1 : void write_json(const std::string &amp;filename,</span>
+<span class="lineNum">     175 </span>            :                 const Ptree &amp;pt,
+<span class="lineNum">     176 </span>            :                 const std::locale &amp;loc = std::locale(),
+<span class="lineNum">     177 </span>            :                 bool pretty = true)
+<span class="lineNum">     178 </span>            : {
+<span class="lineNum">     179 </span>            :   std::basic_ofstream&lt;typename Ptree::key_type::value_type&gt;
+<span class="lineNum">     180 </span>            :     stream(filename.c_str());
+<span class="lineNum">     181 </span>            :   if (!stream)
+<span class="lineNum">     182 </span>            :     BOOST_PROPERTY_TREE_THROW(json_parser_error(
+<span class="lineNum">     183 </span>            :                                                 &quot;cannot open file&quot;, filename, 0));
+<span class="lineNum">     184 </span>            :   stream.imbue(loc);
+<span class="lineNum">     185 </span>            :   write_json_internal(stream, pt, filename, pretty);
+<span class="lineNum">     186 </span>            : }
+<span class="lineNum">     187 </span>            : 
+<span class="lineNum">     188 </span>            : } } }
+<span class="lineNum">     189 </span>            : 
+<span class="lineNum">     190 </span>            : namespace boost { namespace property_tree
+<span class="lineNum">     191 </span>            : {
+<span class="lineNum">     192 </span>            : using json_parser::read_json;
+<span class="lineNum">     193 </span>            : using json_parser::write_json;
+<span class="lineNum">     194 </span>            : using json_parser::json_parser_error;
+<span class="lineNum">     195 </span>            : } }
+<span class="lineNum">     196 </span>            : 
+<span class="lineNum">     197 </span>            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

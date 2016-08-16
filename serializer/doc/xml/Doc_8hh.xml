@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Doc_8hh" kind="file" language="C++">
+    <compoundname>Doc.hh</compoundname>
+    <includes local="no">types.hh</includes>
+    <includes refid="serializer_8hh" local="yes">serializer.hh</includes>
+    <includes local="yes">objects/Doc.hxx</includes>
+    <includedby refid="Doc_8cc" local="yes">/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.cc</includedby>
+    <incdepgraph>
+      <node id="274">
+        <label>boost/serialization/map.hpp</label>
+      </node>
+      <node id="271">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="261">
+        <label>serializer.hh</label>
+        <link refid="serializer_8hh"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>boost/archive/text_iarchive.hpp</label>
+      </node>
+      <node id="259">
+        <label>/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.hh</label>
+        <link refid="Doc.hh"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>boost/archive/binary_iarchive.hpp</label>
+      </node>
+      <node id="282">
+        <label>serializer.hxx</label>
+      </node>
+      <node id="273">
+        <label>boost/serialization/utility.hpp</label>
+      </node>
+      <node id="275">
+        <label>boost/archive/xml_oarchive.hpp</label>
+      </node>
+      <node id="263">
+        <label>serializer_fwd.hh</label>
+        <link refid="serializer__fwd_8hh"/>
+      </node>
+      <node id="267">
+        <label>boost/serialization/base_object.hpp</label>
+      </node>
+      <node id="277">
+        <label>boost/archive/binary_oarchive.hpp</label>
+      </node>
+      <node id="270">
+        <label>boost/serialization/string.hpp</label>
+      </node>
+      <node id="276">
+        <label>boost/archive/text_oarchive.hpp</label>
+      </node>
+      <node id="278">
+        <label>boost/archive/xml_iarchive.hpp</label>
+      </node>
+      <node id="266">
+        <label>boost/serialization/version.hpp</label>
+      </node>
+      <node id="283">
+        <label>objects/Doc.hxx</label>
+      </node>
+      <node id="262">
+        <label>iostream</label>
+      </node>
+      <node id="269">
+        <label>boost/serialization/list.hpp</label>
+      </node>
+      <node id="268">
+        <label>boost/serialization/nvp.hpp</label>
+      </node>
+      <node id="272">
+        <label>boost/serialization/deque.hpp</label>
+      </node>
+      <node id="281">
+        <label>objects/unorderedmap.hh</label>
+      </node>
+      <node id="264">
+        <label>archives/DebugArchive.hh</label>
+        <link refid="DebugArchive_8hh"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>boost/serialization/serialization.hpp</label>
+      </node>
+      <node id="260">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="284">
+        <label>/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.hh</label>
+        <link refid="Doc.hh"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.cc</label>
+        <link refid="Doc_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxtd_1_1serializer_1_1Doc" prot="public">xtd::serializer::Doc</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1serializer">xtd::serializer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERIALIZER_OBJECTS_DOC_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERIALIZER_OBJECTS_DOC_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="serializer_8hh" kindref="compound">serializer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">serializer<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classxtd_1_1serializer_1_1Doc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1Doc" kindref="compound">Doc</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classxtd_1_1serializer_1_1Doc_1ac98d07dd8f7b70e16ccb9a01abf56b9c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1Doc_1ac98d07dd8f7b70e16ccb9a01abf56b9c" kindref="member">boost::serialization::access</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classxtd_1_1serializer_1_1Doc_1a993fd17fc627ae6d1af0aad1a11e9975" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;Doc&gt;<sp/><ref refid="classxtd_1_1serializer_1_1Doc_1a993fd17fc627ae6d1af0aad1a11e9975" kindref="member">t_listof</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1Doc_1ab1d69c51eaac6754260114a91186061f" kindref="member">Doc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TArchive&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(TArchive&amp;<sp/>p_archive,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_version);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classxtd_1_1serializer_1_1Doc_1ac6e0a47819dac6373483fb0dd5ad91d0" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><ref refid="classxtd_1_1serializer_1_1Doc_1ac6e0a47819dac6373483fb0dd5ad91d0" kindref="member">m_score</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classxtd_1_1serializer_1_1Doc_1ae35b707444a257c668b6cc8dfb2d63e4" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><sp/><ref refid="classxtd_1_1serializer_1_1Doc_1ae35b707444a257c668b6cc8dfb2d63e4" kindref="member">m_debugScore</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">BOOST_CLASS_VERSION(<ref refid="classxtd_1_1serializer_1_1Doc" kindref="compound">xtd::serializer::Doc</ref>,<sp/>0)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;objects/Doc.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERIALIZER_OBJECTS_DOC_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.hh"/>
+  </compounddef>
+</doxygen>

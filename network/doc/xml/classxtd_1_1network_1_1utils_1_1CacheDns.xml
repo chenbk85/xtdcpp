@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1CacheDns" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::CacheDns</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">noncopyable</basecompoundref>
+    <includes refid="CacheDns_8hh" local="no">CacheDns.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a21980a7caa7a39c0074527a3fa51e419" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1a6eef494cdc6ca2b10bf4f36f6fa110ee" kindref="member">CacheList</ref></type>
+        <definition>CacheList xtd::network::utils::CacheDns::m_cacheList</definition>
+        <argsstring></argsstring>
+        <name>m_cacheList</name>
+        <briefdescription>
+<para>Cache LRU list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1CacheDns_1af642be7c2608a8b356c15b8ed256bf40" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacextd_1_1network_1_1utils_1aa648e4975dce81f2fd0a9999f684781d" kindref="member">CacheMap</ref></type>
+        <definition>CacheMap xtd::network::utils::CacheDns::m_cacheMap</definition>
+        <argsstring></argsstring>
+        <name>m_cacheMap</name>
+        <briefdescription>
+<para>Cache map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="121" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a513ed6b8964ba3e897be41a9c90d236e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::CacheDns::m_entries</definition>
+        <argsstring></argsstring>
+        <name>m_entries</name>
+        <briefdescription>
+<para>Number of entries in the cache list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="123" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a8bd61c0ab154a3dc75f07eec981bb414" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::CacheDns::m_maxEntries</definition>
+        <argsstring></argsstring>
+        <name>m_maxEntries</name>
+        <briefdescription>
+<para>Number maximum of entries in the cache list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a24d3cb15f7efc4cb64ad7c169876ef5b" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t xtd::network::utils::CacheDns::m_ttl</definition>
+        <argsstring></argsstring>
+        <name>m_ttl</name>
+        <briefdescription>
+<para>Time to live of the elements/entries in the cache list - in seconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="127" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1ac74635760f1d9fb738d940e3dc723476" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::CacheDns::CacheDns</definition>
+        <argsstring>(uint32_t p_capacity, uint32_t p_ttl)</argsstring>
+        <name>CacheDns</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_capacity</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_ttl</declname>
+        </param>
+        <briefdescription>
+<para>Cache DNS Constructor specifying capacity and entry timetolive. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: max number of entries in the cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_ttl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: maximum time to live of an entry in the cache in seconds </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1ab409d08cb0159d6250db8d1d05c6617b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::CacheDns::popElem</definition>
+        <argsstring>(const string &amp;p_url, string &amp;p_ipAddr)</argsstring>
+        <name>popElem</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_url</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>p_ipAddr</declname>
+        </param>
+        <briefdescription>
+<para>pop the element from the pool </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>url of the web site for each we want to retrieve the ip address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_ipAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ip address corresponding to the url </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if url found in cache and ip address is retrieved </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="75" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="18" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a1ac8401e5827dbfbc39a909c2cf7afdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::CacheDns::pushElem</definition>
+        <argsstring>(const string &amp;p_url, const string &amp;p_ipAddr)</argsstring>
+        <name>pushElem</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_url</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_ipAddr</declname>
+        </param>
+        <briefdescription>
+<para>push the element in the pool </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>url of the web site for each we want to add the corresponding the ip address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_ipAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ip address corresponding to the url that we want to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="82" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="55" bodyend="76"/>
+        <references refid="namespacextd_1_1network_1_1utils_1aeee4bc5a0636807dd491f21938b7a1ca" compoundref="Utils_8cc" startline="26" endline="31">xtd::network::utils::ptime_to_time_t</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a05377d5ccc35a6ba0f6e7124c891be37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t xtd::network::utils::CacheDns::size</definition>
+        <argsstring>(void) const </argsstring>
+        <name>size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the number of elements present in the cache dns. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="85" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1aadc86657346b373e86a8884fdfc01c0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::CacheDns::createTimeStamp</definition>
+        <argsstring>(std::time_t &amp;p_time)</argsstring>
+        <name>createTimeStamp</name>
+        <param>
+          <type>std::time_t &amp;</type>
+          <declname>p_time</declname>
+        </param>
+        <briefdescription>
+<para>create a timestamp for an element in the pool </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestamp created </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="95" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a3978b842159543fdfa4e5c3198ab36e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool xtd::network::utils::CacheDns::checkUpdateStamp</definition>
+        <argsstring>(std::time_t &amp;p_stamp, uint32_t p_dnsTimeoutSeconds)</argsstring>
+        <name>checkUpdateStamp</name>
+        <param>
+          <type>std::time_t &amp;</type>
+          <declname>p_stamp</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_dnsTimeoutSeconds</declname>
+        </param>
+        <briefdescription>
+<para>checks if timestamp is good and updates if necessary </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">p_stamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestamp checked/updated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">p_dnsTimeoutSeconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>durée de vite de l&apos;entrée </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if timestamp is valid and updated </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="103" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="87" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a884f358824d0c997563b3e81961af735" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::CacheDns::moveElementFrontLst</definition>
+        <argsstring>(const boost::shared_ptr&lt; EntryPair &gt; p_elem)</argsstring>
+        <name>moveElementFrontLst</name>
+        <param>
+          <type>const boost::shared_ptr&lt; <ref refid="namespacextd_1_1network_1_1utils_1a1118a93e3ee4c3aba74b90600794145b" kindref="member">EntryPair</ref> &gt;</type>
+          <declname>p_elem</declname>
+        </param>
+        <briefdescription>
+<para>moves element to the front of the cache (most recent) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cache entry to move to the front of the cache </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="109" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="105" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1CacheDns_1a7c874bc023171af08c044ec8d28838a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::network::utils::CacheDns::checkAndResize</definition>
+        <argsstring>(void)</argsstring>
+        <name>checkAndResize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>checks if the cache is full(maximum capacity reached) and evicts the oldest element from the cache </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="114" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc" bodystart="118" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cache local de resolution de dns. </para>    </briefdescription>
+    <detaileddescription>
+<para>Cet objet sert de cache local aux entrees resolues par le <ref refid="classxtd_1_1network_1_1utils_1_1Resolver" kindref="compound">Resolver</ref> Rien de compliqué, une paire de &lt;data, timestamp&gt; et un paramètre de TTL </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="200">
+        <label>noncopyable</label>
+      </node>
+      <node id="199">
+        <label>xtd::network::utils::CacheDns</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1CacheDns"/>
+        <childnode refid="200" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="202">
+        <label>noncopyable</label>
+      </node>
+      <node id="201">
+        <label>xtd::network::utils::CacheDns</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1CacheDns"/>
+        <childnode refid="202" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" line="60" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh" bodystart="59" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1ac74635760f1d9fb738d940e3dc723476" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>CacheDns</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a7c874bc023171af08c044ec8d28838a3" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>checkAndResize</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a3978b842159543fdfa4e5c3198ab36e4" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>checkUpdateStamp</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1aadc86657346b373e86a8884fdfc01c0f" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>createTimeStamp</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a21980a7caa7a39c0074527a3fa51e419" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>m_cacheList</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1af642be7c2608a8b356c15b8ed256bf40" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>m_cacheMap</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a513ed6b8964ba3e897be41a9c90d236e" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>m_entries</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a8bd61c0ab154a3dc75f07eec981bb414" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>m_maxEntries</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a24d3cb15f7efc4cb64ad7c169876ef5b" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>m_ttl</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a884f358824d0c997563b3e81961af735" prot="private" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>moveElementFrontLst</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1ab409d08cb0159d6250db8d1d05c6617b" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>popElem</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a1ac8401e5827dbfbc39a909c2cf7afdf" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>pushElem</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1CacheDns_1a05377d5ccc35a6ba0f6e7124c891be37" prot="public" virt="non-virtual"><scope>xtd::network::utils::CacheDns</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

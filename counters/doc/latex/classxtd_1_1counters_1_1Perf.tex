@@ -1,0 +1,161 @@
+\hypertarget{classxtd_1_1counters_1_1Perf}{}\section{xtd\+:\+:counters\+:\+:Perf Class Reference}
+\label{classxtd_1_1counters_1_1Perf}\index{xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}}
+
+
+{\ttfamily \#include $<$Perf.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:counters\+:\+:Perf\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1Perf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:counters\+:\+:Perf\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classxtd_1_1counters_1_1Perf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1Perf_a765416ba7ef076acdfc8100d2ea5c9a0}{Perf} (const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+nb\+Thread, uint32\+\_\+t p\+\_\+sampe\+Size=\hyperlink{classxtd_1_1counters_1_1AvgValue}{Avg\+Value}$<$ uint32\+\_\+t $>$\+::mcs\+\_\+default\+Sample\+Size, uint32\+\_\+t p\+\_\+delta\+Time\+Ms=1000)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Perf_a80692e9b90e8d15a57e2e581591063c0}{start\+Chrono} (uint32\+\_\+t p\+\_\+request\+ID)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1Perf_a905d73c1604d74e28bb56ea2bb4867ef}{stop\+Chrono} (uint32\+\_\+t p\+\_\+request\+ID)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1Perf_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+On choisi l\textquotesingle{}heritage plutot que la composition pour garder une coherence sur la visibilite des methodes internes collect\+\_\+safe update\+\_\+safe (qu\textquotesingle{}on serait onbligé de mettre en public ou en friend pour faire de la composition). 
+
+Definition at line 23 of file Perf.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}!Perf@{Perf}}
+\index{Perf@{Perf}!xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}}
+\subsubsection[{\texorpdfstring{Perf(const string \&p\+\_\+name, uint32\+\_\+t p\+\_\+nb\+Thread, uint32\+\_\+t p\+\_\+sampe\+Size=\+Avg\+Value$<$ uint32\+\_\+t $>$\+::mcs\+\_\+default\+Sample\+Size, uint32\+\_\+t p\+\_\+delta\+Time\+Ms=1000)}{Perf(const string &p_name, uint32_t p_nbThread, uint32_t p_sampeSize=AvgValue< uint32_t >::mcs_defaultSampleSize, uint32_t p_deltaTimeMs=1000)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::counters\+::\+Perf\+::\+Perf (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{uint32\+\_\+t}]{p\+\_\+nb\+Thread, }
+\item[{uint32\+\_\+t}]{p\+\_\+sampe\+Size = {\ttfamily {\bf Avg\+Value}$<$uint32\+\_\+t$>$\+:\+:mcs\+\_\+defaultSampleSize}, }
+\item[{uint32\+\_\+t}]{p\+\_\+delta\+Time\+Ms = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Perf_a765416ba7ef076acdfc8100d2ea5c9a0}{}\label{classxtd_1_1counters_1_1Perf_a765416ba7ef076acdfc8100d2ea5c9a0}
+
+
+Definition at line 13 of file Perf.\+cc.
+
+
+\begin{DoxyCode}
+16                                         :
+17   \hyperlink{classxtd_1_1counters_1_1Perf_a93e934ad70d5b32b14beed5572450abf}{Composed}(p\_name),
+18   m\_avgRTT(\textcolor{stringliteral}{"RTT"}, p\_sampeSize),
+19   m\_globalPerf(\textcolor{stringliteral}{"perf"}),
+20   m\_instantPerf(\textcolor{stringliteral}{"instant.perf"}, p\_deltaTimeMs),
+21   m\_startTimes(p\_nbThread)
+22 \{
+23   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_avgRTT);
+24   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_globalPerf);
+25   \hyperlink{classxtd_1_1counters_1_1Composed_ac2efbce59510b352a2d47b3118e0d02a}{addItem}(m\_instantPerf);
+26 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classxtd_1_1counters_1_1Perf_a765416ba7ef076acdfc8100d2ea5c9a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}!start\+Chrono@{start\+Chrono}}
+\index{start\+Chrono@{start\+Chrono}!xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}}
+\subsubsection[{\texorpdfstring{start\+Chrono(uint32\+\_\+t p\+\_\+request\+I\+D)}{startChrono(uint32_t p_requestID)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Perf\+::start\+Chrono (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Perf_a80692e9b90e8d15a57e2e581591063c0}{}\label{classxtd_1_1counters_1_1Perf_a80692e9b90e8d15a57e2e581591063c0}
+
+
+Definition at line 30 of file Perf.\+cc.
+
+
+\begin{DoxyCode}
+31 \{
+32   m\_startTimes[p\_requestID] = bpt::microsec\_clock::local\_time();
+33 \}
+\end{DoxyCode}
+\index{xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}!stop\+Chrono@{stop\+Chrono}}
+\index{stop\+Chrono@{stop\+Chrono}!xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}}
+\subsubsection[{\texorpdfstring{stop\+Chrono(uint32\+\_\+t p\+\_\+request\+I\+D)}{stopChrono(uint32_t p_requestID)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::counters\+::\+Perf\+::stop\+Chrono (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+request\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1counters_1_1Perf_a905d73c1604d74e28bb56ea2bb4867ef}{}\label{classxtd_1_1counters_1_1Perf_a905d73c1604d74e28bb56ea2bb4867ef}
+
+
+Definition at line 37 of file Perf.\+cc.
+
+
+\begin{DoxyCode}
+38 \{
+39   bpt::time\_duration l\_diffTime =
+40     bpt::microsec\_clock::local\_time() - m\_startTimes[p\_requestID];
+41 
+42   m\_globalPerf.\hyperlink{classxtd_1_1counters_1_1Freq_a9e91ea45fc5e9874dc81ca4bd723efc6}{tick}();
+43   m\_instantPerf.\hyperlink{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}{tick}();
+44   m\_avgRTT = l\_diffTime.total\_milliseconds();
+45 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classxtd_1_1counters_1_1Perf_a905d73c1604d74e28bb56ea2bb4867ef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd\+::counters\+::\+Perf@{xtd\+::counters\+::\+Perf}}
+\subsubsection[{\texorpdfstring{Composed}{Composed}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classxtd_1_1counters_1_1Perf_a93e934ad70d5b32b14beed5572450abf}{}\label{classxtd_1_1counters_1_1Perf_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 25 of file Perf.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Perf_8hh}{Perf.\+hh}\item 
+/home/psyco/dev/xtdcpp/counters/src/\hyperlink{Perf_8cc}{Perf.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="bip_2Server_8cc" kind="file" language="C++">
+    <compoundname>Server.cc</compoundname>
+    <includes refid="bip_2Server_8hh" local="yes">bip/Server.hh</includes>
+    <includes local="yes">bip/Server.hxx</includes>
+    <includes local="no">objects/Doc.hh</includes>
+    <incdepgraph>
+      <node id="1462">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1454">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1464">
+        <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
+      </node>
+      <node id="1444">
+        <label>base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1445" relation="include">
+        </childnode>
+        <childnode refid="1446" relation="include">
+        </childnode>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1458" relation="include">
+        </childnode>
+      </node>
+      <node id="1450">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1448">
+        <label>cstdint</label>
+      </node>
+      <node id="1457">
+        <label>utils/Config.hxx</label>
+      </node>
+      <node id="1466">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1458">
+        <label>utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1447" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1445" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1466" relation="include">
+        </childnode>
+      </node>
+      <node id="1453">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1442">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</label>
+        <link refid="bip/Server.cc"/>
+        <childnode refid="1443" relation="include">
+        </childnode>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1447">
+        <label>string</label>
+      </node>
+      <node id="1445">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1443">
+        <label>bip/Server.hh</label>
+        <link refid="bip_2Server_8hh"/>
+        <childnode refid="1444" relation="include">
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>bip/Server.hxx</label>
+      </node>
+      <node id="1455">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1446">
+        <label>utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1447" relation="include">
+        </childnode>
+        <childnode refid="1448" relation="include">
+        </childnode>
+        <childnode refid="1449" relation="include">
+        </childnode>
+        <childnode refid="1450" relation="include">
+        </childnode>
+        <childnode refid="1451" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+      </node>
+      <node id="1449">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1461">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1465">
+        <label>ctime</label>
+      </node>
+      <node id="1459">
+        <label>vector</label>
+      </node>
+      <node id="1460">
+        <label>streambuf</label>
+      </node>
+      <node id="1468">
+        <label>objects/Doc.hh</label>
+      </node>
+      <node id="1463">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1452">
+        <label>deque</label>
+      </node>
+      <node id="1451">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1449" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1456">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1bip">xtd::network::bip</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bip_2Server_8hh" kindref="compound">bip/Server.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;bip/Server.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;objects/Doc.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>lib<sp/>serializer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Server&lt;serializer::Doc,<sp/>serializer::Doc,<sp/>utils::af_inet&gt;;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Server&lt;serializer::Doc,<sp/>serializer::Doc,<sp/>utils::af_unix&gt;;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Server.cc"/>
+  </compounddef>
+</doxygen>

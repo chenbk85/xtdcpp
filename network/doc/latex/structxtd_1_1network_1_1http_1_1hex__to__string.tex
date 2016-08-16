@@ -1,0 +1,57 @@
+\hypertarget{structxtd_1_1network_1_1http_1_1hex__to__string}{}\section{xtd\+:\+:network\+:\+:http\+:\+:hex\+\_\+to\+\_\+string Struct Reference}
+\label{structxtd_1_1network_1_1http_1_1hex__to__string}\index{xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string@{xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\string \hyperlink{structxtd_1_1network_1_1http_1_1hex__to__string_a88d313368d68cfdddb20e4496b73af87}{operator()} (const T \&p\+\_\+match) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 341 of file Request.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string@{xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string}!operator()@{operator()}}
+\index{operator()@{operator()}!xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string@{xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string}}
+\subsubsection[{\texorpdfstring{operator()(const T \&p\+\_\+match) const }{operator()(const T &p_match) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ string xtd\+::network\+::http\+::hex\+\_\+to\+\_\+string\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\+\_\+match}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structxtd_1_1network_1_1http_1_1hex__to__string_a88d313368d68cfdddb20e4496b73af87}{}\label{structxtd_1_1network_1_1http_1_1hex__to__string_a88d313368d68cfdddb20e4496b73af87}
+
+
+Definition at line 344 of file Request.\+cc.
+
+
+\begin{DoxyCode}
+345   \{
+346     stringstream  l\_value;
+347     \textcolor{keywordtype}{int}           l\_intVal;
+348     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} l\_result;
+349     l\_value << std::hex << p\_match.match\_results().str(1);
+350     l\_value >> l\_intVal;
+351     l\_result = l\_intVal;
+352     \textcolor{keywordflow}{return} boost::str(boost::format(\textcolor{stringliteral}{"%c"}) % l\_result);
+353   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{structxtd_1_1network_1_1http_1_1hex__to__string_a88d313368d68cfdddb20e4496b73af87_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{Request_8cc}{Request.\+cc}\end{DoxyCompactItemize}

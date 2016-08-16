@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classApp" kind="class" language="C++" prot="public">
+    <compoundname>App</compoundname>
+    <basecompoundref refid="classxtd_1_1Application" prot="private" virt="non-virtual">xtd::Application</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classApp_1a26165d5369ac1c7aa04442dbd89a773d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int App::process</definition>
+        <argsstring>(void)</argsstring>
+        <name>process</name>
+        <reimplements refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd">process</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Main application process function, (default nothing) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Up to the user, generally 0 in case of success </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/main.cc" line="9" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/main.cc" bodystart="9" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>xtd::Application</label>
+        <link refid="classxtd_1_1Application"/>
+      </node>
+      <node id="38">
+        <label>App</label>
+        <link refid="classApp"/>
+        <childnode refid="39" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>vector&lt; string &gt;</label>
+      </node>
+      <node id="41">
+        <label>xtd::Application</label>
+        <link refid="classxtd_1_1Application"/>
+        <childnode refid="42" relation="usage">
+          <edgelabel>m_logLevel</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>m_remainingArgs</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>m_rcsid</edgelabel>
+          <edgelabel>m_binName</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>App</label>
+        <link refid="classApp"/>
+        <childnode refid="41" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>uint32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/common/src/main.cc" line="8" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/main.cc" bodystart="7" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" prot="private" virt="non-virtual"><scope>App</scope><name>addHelpMsg</name></member>
+      <member refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" prot="private" virt="non-virtual"><scope>App</scope><name>addOption</name></member>
+      <member refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" prot="private" virt="non-virtual"><scope>App</scope><name>addSignalHandler</name></member>
+      <member refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" prot="private" virt="non-virtual"><scope>App</scope><name>Application</name></member>
+      <member refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" prot="private" virt="non-virtual"><scope>App</scope><name>argument</name></member>
+      <member refid="classxtd_1_1Application_1a846da30aaf55754027608ddf5c689366" prot="private" virt="non-virtual"><scope>App</scope><name>bindAccumulator</name></member>
+      <member refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" prot="private" virt="non-virtual"><scope>App</scope><name>bindCallback</name></member>
+      <member refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" prot="private" virt="non-virtual"><scope>App</scope><name>bindDir</name></member>
+      <member refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" prot="private" virt="non-virtual"><scope>App</scope><name>bindFile</name></member>
+      <member refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" prot="private" virt="non-virtual"><scope>App</scope><name>bindGiven</name></member>
+      <member refid="classxtd_1_1Application_1ae5fd6c9b1d2ad5225f9d624f63df4173" prot="private" virt="non-virtual"><scope>App</scope><name>bindNumber</name></member>
+      <member refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" prot="private" virt="non-virtual"><scope>App</scope><name>bindString</name></member>
+      <member refid="classxtd_1_1Application_1a2415acb66badb368e726173fb884097c" prot="private" virt="non-virtual"><scope>App</scope><name>bindValueIfGiven</name></member>
+      <member refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" prot="private" virt="non-virtual"><scope>App</scope><name>bindValues</name></member>
+      <member refid="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" prot="private" virt="virtual"><scope>App</scope><name>checkOptions</name></member>
+      <member refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" prot="private" virt="non-virtual"><scope>App</scope><name>error</name></member>
+      <member refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9" prot="private" virt="non-virtual"><scope>App</scope><name>error_nohelp</name></member>
+      <member refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" prot="private" virt="non-virtual"><scope>App</scope><name>execute</name></member>
+      <member refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" prot="private" virt="non-virtual"><scope>App</scope><name>getVersion</name></member>
+      <member refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" prot="private" virt="virtual"><scope>App</scope><name>initialize</name></member>
+      <member refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" prot="private" virt="non-virtual"><scope>App</scope><name>isOptionGiven</name></member>
+      <member refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" prot="private" virt="non-virtual"><scope>App</scope><name>m_binName</name></member>
+      <member refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" prot="private" virt="non-virtual"><scope>App</scope><name>m_logLevel</name></member>
+      <member refid="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" prot="private" virt="non-virtual"><scope>App</scope><name>m_rcsid</name></member>
+      <member refid="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" prot="private" virt="non-virtual"><scope>App</scope><name>m_remainingArgs</name></member>
+      <member refid="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" prot="private" virt="virtual"><scope>App</scope><name>parseConfig</name></member>
+      <member refid="classApp_1a26165d5369ac1c7aa04442dbd89a773d" prot="private" virt="virtual"><scope>App</scope><name>process</name></member>
+      <member refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" prot="private" virt="non-virtual"><scope>App</scope><name>requirement</name></member>
+      <member refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" prot="private" virt="non-virtual"><scope>App</scope><name>t_sig_handler</name></member>
+      <member refid="classxtd_1_1Application_1a931877468f6b948909d596d91d60b7a2" prot="private" virt="non-virtual"><scope>App</scope><name>warn</name></member>
+      <member refid="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" prot="private" virt="virtual"><scope>App</scope><name>~Application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

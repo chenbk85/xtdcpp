@@ -1,0 +1,66 @@
+\hypertarget{classxtd_1_1network_1_1utils_1_1vectorbuf}{}\section{xtd\+:\+:network\+:\+:utils\+:\+:vectorbuf$<$ CharT, TraitsT $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1utils_1_1vectorbuf}\index{xtd\+::network\+::utils\+::vectorbuf$<$ Char\+T, Traits\+T $>$@{xtd\+::network\+::utils\+::vectorbuf$<$ Char\+T, Traits\+T $>$}}
+
+
+{\ttfamily \#include $<$Utils.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:utils\+:\+:vectorbuf$<$ CharT, TraitsT $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classxtd_1_1network_1_1utils_1_1vectorbuf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:utils\+:\+:vectorbuf$<$ CharT, TraitsT $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classxtd_1_1network_1_1utils_1_1vectorbuf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1vectorbuf_ae3b43c306ce2bd0083c357f4425b0b11}{vectorbuf} (vector$<$ CharT $>$ \&vec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename CharT, typename TraitsT = std\+::char\+\_\+traits$<$\+Char\+T$>$$>$\\*
+class xtd\+::network\+::utils\+::vectorbuf$<$ Char\+T, Traits\+T $>$}
+
+
+
+Definition at line 63 of file Utils.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::utils\+::vectorbuf@{xtd\+::network\+::utils\+::vectorbuf}!vectorbuf@{vectorbuf}}
+\index{vectorbuf@{vectorbuf}!xtd\+::network\+::utils\+::vectorbuf@{xtd\+::network\+::utils\+::vectorbuf}}
+\subsubsection[{\texorpdfstring{vectorbuf(vector$<$ Char\+T $>$ \&vec)}{vectorbuf(vector< CharT > &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename TraitsT  = std\+::char\+\_\+traits$<$\+Char\+T$>$$>$ {\bf xtd\+::network\+::utils\+::vectorbuf}$<$ CharT, TraitsT $>$\+::{\bf vectorbuf} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ CharT $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1vectorbuf_ae3b43c306ce2bd0083c357f4425b0b11}{}\label{classxtd_1_1network_1_1utils_1_1vectorbuf_ae3b43c306ce2bd0083c357f4425b0b11}
+
+
+Definition at line 66 of file Utils.\+hh.
+
+
+\begin{DoxyCode}
+67   \{
+68     setg(&*vec.begin(), &*vec.begin(), &*vec.begin() + vec.size());
+69   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{Utils_8hh}{Utils.\+hh}\end{DoxyCompactItemize}

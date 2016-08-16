@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1utils_1_1scoped__method" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::utils::scoped_method</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">noncopyable</basecompoundref>
+    <includes refid="Utils_8hh" local="no">Utils.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1utils_1_1scoped__method_1aac38d16f3fadf784f6fa07a91333d3e5" prot="private" static="no">
+        <type>boost::function&lt; void(void)&gt;</type>
+        <definition>typedef boost::function&lt;void(void)&gt; xtd::network::utils::scoped_method::handler_t</definition>
+        <argsstring></argsstring>
+        <name>handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="29" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1utils_1_1scoped__method_1a1241abddc38e71a4529f71dc632e02e2" prot="private" static="no" mutable="no">
+        <type>handler_t</type>
+        <definition>handler_t xtd::network::utils::scoped_method::m_handler</definition>
+        <argsstring></argsstring>
+        <name>m_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1scoped__method_1acea6a84200c8c1a3f409e489932bfa51" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::scoped_method::scoped_method</definition>
+        <argsstring>(handler_t p_handler)</argsstring>
+        <name>scoped_method</name>
+        <param>
+          <type>handler_t</type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1utils_1_1scoped__method_1afc1c61ebfc0712725ce4c1887a624dd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::utils::scoped_method::~scoped_method</definition>
+        <argsstring>(void)</argsstring>
+        <name>~scoped_method</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="320">
+        <label>noncopyable</label>
+      </node>
+      <node id="319">
+        <label>xtd::network::utils::scoped_method</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1scoped__method"/>
+        <childnode refid="320" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="322">
+        <label>noncopyable</label>
+      </node>
+      <node id="321">
+        <label>xtd::network::utils::scoped_method</label>
+        <link refid="classxtd_1_1network_1_1utils_1_1scoped__method"/>
+        <childnode refid="322" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh" bodystart="26" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1aac38d16f3fadf784f6fa07a91333d3e5" prot="private" virt="non-virtual"><scope>xtd::network::utils::scoped_method</scope><name>handler_t</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1a1241abddc38e71a4529f71dc632e02e2" prot="private" virt="non-virtual"><scope>xtd::network::utils::scoped_method</scope><name>m_handler</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1acea6a84200c8c1a3f409e489932bfa51" prot="public" virt="non-virtual"><scope>xtd::network::utils::scoped_method</scope><name>scoped_method</name></member>
+      <member refid="classxtd_1_1network_1_1utils_1_1scoped__method_1afc1c61ebfc0712725ce4c1887a624dd8" prot="public" virt="non-virtual"><scope>xtd::network::utils::scoped_method</scope><name>~scoped_method</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

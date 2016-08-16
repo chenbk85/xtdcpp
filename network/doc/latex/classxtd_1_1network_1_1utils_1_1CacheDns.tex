@@ -1,0 +1,236 @@
+\hypertarget{classxtd_1_1network_1_1utils_1_1CacheDns}{}\section{xtd\+:\+:network\+:\+:utils\+:\+:Cache\+Dns Class Reference}
+\label{classxtd_1_1network_1_1utils_1_1CacheDns}\index{xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}}
+
+
+Cache local de resolution de dns.  
+
+
+
+
+{\ttfamily \#include $<$Cache\+Dns.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:utils\+:\+:Cache\+Dns\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classxtd_1_1network_1_1utils_1_1CacheDns__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:utils\+:\+:Cache\+Dns\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classxtd_1_1network_1_1utils_1_1CacheDns__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns_ac74635760f1d9fb738d940e3dc723476}{Cache\+Dns} (uint32\+\_\+t p\+\_\+capacity, uint32\+\_\+t p\+\_\+ttl)
+\begin{DoxyCompactList}\small\item\em Cache D\+NS Constructor specifying capacity and entry timetolive. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns_ab409d08cb0159d6250db8d1d05c6617b}{pop\+Elem} (const string \&p\+\_\+url, string \&p\+\_\+ip\+Addr)
+\begin{DoxyCompactList}\small\item\em pop the element from the pool \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns_a1ac8401e5827dbfbc39a909c2cf7afdf}{push\+Elem} (const string \&p\+\_\+url, const string \&p\+\_\+ip\+Addr)
+\begin{DoxyCompactList}\small\item\em push the element in the pool \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1CacheDns_a05377d5ccc35a6ba0f6e7124c891be37}{size} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of elements present in the cache dns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cache local de resolution de dns. 
+
+Cet objet sert de cache local aux entrees resolues par le \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver}{Resolver} Rien de compliqué, une paire de $<$data, timestamp$>$ et un paramètre de T\+TL 
+
+Definition at line 59 of file Cache\+Dns.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}!Cache\+Dns@{Cache\+Dns}}
+\index{Cache\+Dns@{Cache\+Dns}!xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}}
+\subsubsection[{\texorpdfstring{Cache\+Dns(uint32\+\_\+t p\+\_\+capacity, uint32\+\_\+t p\+\_\+ttl)}{CacheDns(uint32_t p_capacity, uint32_t p_ttl)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::utils\+::\+Cache\+Dns\+::\+Cache\+Dns (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+capacity, }
+\item[{uint32\+\_\+t}]{p\+\_\+ttl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classxtd_1_1network_1_1utils_1_1CacheDns_ac74635760f1d9fb738d940e3dc723476}{}\label{classxtd_1_1network_1_1utils_1_1CacheDns_ac74635760f1d9fb738d940e3dc723476}
+
+
+Cache D\+NS Constructor specifying capacity and entry timetolive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+capacity} & \+: max number of entries in the cache \\
+\hline
+{\em p\+\_\+ttl} & \+: maximum time to live of an entry in the cache in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Cache\+Dns.\+cc.
+
+
+\begin{DoxyCode}
+10                                                       :
+11   m\_entries(0),
+12   m\_maxEntries(p\_capacity),
+13   m\_ttl(p\_ttl)
+14 \{
+15 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}!pop\+Elem@{pop\+Elem}}
+\index{pop\+Elem@{pop\+Elem}!xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}}
+\subsubsection[{\texorpdfstring{pop\+Elem(const string \&p\+\_\+url, string \&p\+\_\+ip\+Addr)}{popElem(const string &p_url, string &p_ipAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::utils\+::\+Cache\+Dns\+::pop\+Elem (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{string \&}]{p\+\_\+ip\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1CacheDns_ab409d08cb0159d6250db8d1d05c6617b}{}\label{classxtd_1_1network_1_1utils_1_1CacheDns_ab409d08cb0159d6250db8d1d05c6617b}
+
+
+pop the element from the pool 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em p\+\_\+url} & url of the web site for each we want to retrieve the ip address \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+ip\+Addr} & ip address corresponding to the url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if url found in cache and ip address is retrieved 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file Cache\+Dns.\+cc.
+
+
+\begin{DoxyCode}
+20 \{
+21   \textcolor{keywordtype}{bool} ret = \textcolor{keyword}{false};
+22   p\_ipAddr = \textcolor{stringliteral}{""}; \textcolor{comment}{// the string should be empty}
+23   \textcolor{comment}{//look-up map}
+24   CacheMap::iterator it = m\_cacheMap.find(p\_url);
+25   \textcolor{keywordflow}{if} (it != m\_cacheMap.end())
+26   \{
+27     \textcolor{comment}{//found it}
+28     boost::shared\_ptr<EntryPair> ep (*(*it).second);
+29     \textcolor{keywordflow}{if} (ep)
+30     \{
+31       boost::shared\_ptr<CacheEntry> cacheEntry(ep->second);
+32       \textcolor{keywordflow}{if} (cacheEntry)
+33       \{
+34         \textcolor{comment}{//check and update stamp before returning value}
+35         \textcolor{keywordflow}{if} (checkUpdateStamp(cacheEntry->m\_stamp, m\_ttl))
+36         \{
+37           moveElementFrontLst(ep);
+38           p\_ipAddr = cacheEntry->m\_value;
+39           ret = \textcolor{keyword}{true};
+40         \}
+41         \textcolor{keywordflow}{else}
+42         \{
+43           \textcolor{comment}{//simply remove from the map and list}
+44           m\_cacheList.erase((*it).second);
+45           m\_cacheMap.erase(p\_url);
+46           m\_entries--;
+47         \}
+48       \}
+49     \}
+50   \}
+51   \textcolor{keywordflow}{return} ret;
+52 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}!push\+Elem@{push\+Elem}}
+\index{push\+Elem@{push\+Elem}!xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}}
+\subsubsection[{\texorpdfstring{push\+Elem(const string \&p\+\_\+url, const string \&p\+\_\+ip\+Addr)}{pushElem(const string &p_url, const string &p_ipAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Cache\+Dns\+::push\+Elem (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+url, }
+\item[{const string \&}]{p\+\_\+ip\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1CacheDns_a1ac8401e5827dbfbc39a909c2cf7afdf}{}\label{classxtd_1_1network_1_1utils_1_1CacheDns_a1ac8401e5827dbfbc39a909c2cf7afdf}
+
+
+push the element in the pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+url} & url of the web site for each we want to add the corresponding the ip address \\
+\hline
+{\em p\+\_\+ip\+Addr} & ip address corresponding to the url that we want to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Cache\+Dns.\+cc.
+
+
+\begin{DoxyCode}
+57 \{
+58   \textcolor{comment}{// create new entry}
+59   \textcolor{comment}{//timestamp the element}
+60   std::time\_t l\_timestamp;
+61   createTimeStamp(l\_timestamp);
+62 
+63   boost::shared\_ptr<CacheEntry> l\_entry = boost::make\_shared<CacheEntry>(p\_ipAddr, l\_timestamp);
+64 
+65   boost::shared\_ptr<EntryPair> l\_ep =
+66     boost::make\_shared<EntryPair>(std::make\_pair(p\_url, l\_entry));
+67 
+68   \textcolor{comment}{// push it to the front;}
+69   m\_cacheList.push\_front(l\_ep);
+70   \textcolor{comment}{// add it to the cache map}
+71   m\_cacheMap[p\_url] = m\_cacheList.begin();
+72   \textcolor{comment}{// increase count of entries}
+73   m\_entries++;
+74   \textcolor{comment}{//if needed resize list and erase element from map}
+75   checkAndResize();
+76 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classxtd_1_1network_1_1utils_1_1CacheDns_a1ac8401e5827dbfbc39a909c2cf7afdf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}!size@{size}}
+\index{size@{size}!xtd\+::network\+::utils\+::\+Cache\+Dns@{xtd\+::network\+::utils\+::\+Cache\+Dns}}
+\subsubsection[{\texorpdfstring{size(void) const }{size(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t xtd\+::network\+::utils\+::\+Cache\+Dns\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1CacheDns_a05377d5ccc35a6ba0f6e7124c891be37}{}\label{classxtd_1_1network_1_1utils_1_1CacheDns_a05377d5ccc35a6ba0f6e7124c891be37}
+
+
+Returns the number of elements present in the cache dns. 
+
+
+
+Definition at line 85 of file Cache\+Dns.\+hh.
+
+
+\begin{DoxyCode}
+86   \{
+87     \textcolor{keywordflow}{return} m\_entries;
+88   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{CacheDns_8hh}{Cache\+Dns.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{CacheDns_8cc}{Cache\+Dns.\+cc}\end{DoxyCompactItemize}

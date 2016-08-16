@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Application_8cc" kind="file" language="C++">
+    <compoundname>Application.cc</compoundname>
+    <includes refid="src_2Application_8hh" local="yes">Application.hh</includes>
+    <includes local="no">boost/lexical_cast.hpp</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">boost/filesystem.hpp</includes>
+    <incdepgraph>
+      <node id="256">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>stdarg.h</label>
+      </node>
+      <node id="248">
+        <label>functional</label>
+      </node>
+      <node id="245">
+        <label>iomanip</label>
+      </node>
+      <node id="246">
+        <label>limits</label>
+      </node>
+      <node id="255">
+        <label>boost/asio/signal_set.hpp</label>
+      </node>
+      <node id="267">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="242">
+        <label>/home/psyco/dev/xtdcpp/common/src/Application.cc</label>
+        <link refid="Application.cc"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>stdlib.h</label>
+      </node>
+      <node id="262">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="261">
+        <label>logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>Application.hh</label>
+        <link refid="src_2Application_8hh"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>string</label>
+      </node>
+      <node id="247">
+        <label>map</label>
+      </node>
+      <node id="253">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="260">
+        <label>fstream</label>
+      </node>
+      <node id="263">
+        <label>syslog.h</label>
+      </node>
+      <node id="254">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="266">
+        <label>Application.hxx</label>
+      </node>
+      <node id="250">
+        <label>libgen.h</label>
+      </node>
+      <node id="269">
+        <label>string.h</label>
+      </node>
+      <node id="252">
+        <label>boost/system/error_code.hpp</label>
+      </node>
+      <node id="258">
+        <label>vector</label>
+      </node>
+      <node id="271">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="270">
+        <label>utility</label>
+      </node>
+      <node id="259">
+        <label>sstream</label>
+      </node>
+      <node id="268">
+        <label>cstdlib</label>
+      </node>
+      <node id="244">
+        <label>iostream</label>
+      </node>
+      <node id="249">
+        <label>getopt.h</label>
+      </node>
+      <node id="265">
+        <label>logger.hxx</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char rcsid[]</definition>
+        <argsstring>[]</argsstring>
+        <name>rcsid</name>
+        <initializer>= &quot;$rscid: include &apos;xtdmake/tracking/module.cmake&apos; to enable binary tracking system $&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/Application.cc" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2Application_8hh" kindref="compound">Application.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/filesystem.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_DEPENDENCY_TRACKING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;$rscid:<sp/>include<sp/>&apos;xtdmake/tracking/module.cmake&apos;<sp/>to<sp/>enable<sp/>binary<sp/>tracking<sp/>system<sp/>$&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" kindref="member">Application::Application</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>m_binName(),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>m_logLevel(<ref refid="classxtd_1_1logger" kindref="compound">logger</ref>::get().valueOf(<ref refid="classxtd_1_1logger" kindref="compound">logger</ref>::level::crit)),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_remainingArgs(),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_rcsid(<ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_optionList(),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_helpText(),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>m_runThread(),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>m_work(m_ioService),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>m_signals(m_ioService),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>m_signalHandlerMap()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" kindref="member">addOption</ref>(</highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">argument::none</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">requirement::optional</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;imprime<sp/>ce<sp/>message&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a00f6aed6c376028a79492b04e8325968" kindref="member">bindCallback</ref>(std::bind(&amp;Application::usageWrapper,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" kindref="member">addOption</ref>(</highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;log-level&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">argument::mandatory</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">requirement::optional</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;change<sp/>le<sp/>niveau<sp/>de<sp/>log<sp/>à<sp/>&lt;arg&gt;<sp/>(defaut<sp/>2)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1aaa0388f1c96893a26cfe5522b0804dd9" kindref="member">bindValues</ref>(<ref refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" kindref="member">m_logLevel</ref>,<sp/>vector&lt;uint32_t&gt;({0u,<sp/>1u,<sp/>2u,<sp/>3u,<sp/>4u,<sp/>5u,<sp/>6u,<sp/>7u})));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>m_signals.async_wait(std::bind(&amp;Application::handleSignal,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a3ae7e81534c6ca594339e3e098183df4" kindref="member">Application::~Application</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;</highlight></codeline>
+<codeline lineno="52" refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" kindref="member">Application::getVersion</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1ad820953bc15b729ce010f422595d3a3f" kindref="member">m_rcsid</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">Application::t_callback</highlight></codeline>
+<codeline lineno="59" refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1ab10f6dde0bf4034dff7eafe8a45c2029" kindref="member">Application::bindFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_target,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_readable)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[&amp;p_target,<sp/>p_readable,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_option&amp;<sp/>p_opt)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>p_target<sp/>=<sp/>p_value;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_readable<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>boost::filesystem::exists(p_value)))</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kindref="member">error</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>option<sp/>-%c=%s,<sp/>must<sp/>be<sp/>readable<sp/>file&quot;</highlight><highlight class="normal">,<sp/>p_opt.m_shortOpt,<sp/>p_value);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">Application::t_callback</highlight></codeline>
+<codeline lineno="69" refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a2b491ba745bbd3b2d01d9e623c0aff60" kindref="member">Application::bindDir</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_target,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_readable)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="70"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[&amp;p_target,<sp/>p_readable,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_option&amp;<sp/>p_opt)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>p_target<sp/>=<sp/>p_value;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>boost::filesystem::is_directory(p_value))</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kindref="member">error</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>option<sp/>-%c=%s,<sp/>must<sp/>be<sp/>a<sp/>directory&quot;</highlight><highlight class="normal">,<sp/>p_opt.m_shortOpt,<sp/>p_value);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_readable<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>boost::filesystem::exists(p_value)))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kindref="member">error</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>option<sp/>-%c=%s,<sp/>must<sp/>be<sp/>readable&quot;</highlight><highlight class="normal">,<sp/>p_opt.m_shortOpt,<sp/>p_value);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">Application::t_callback</highlight></codeline>
+<codeline lineno="83" refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a36a351db3830e2e894a39fbd42842280" kindref="member">Application::bindString</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_target)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="84"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[&amp;p_target](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_option&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>p_target<sp/>=<sp/>p_value;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">Application::t_callback</highlight></codeline>
+<codeline lineno="93" refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a59b986c85c2e1d9473f73df10425dfcf" kindref="member">Application::bindGiven</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_target)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="94"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>p_target<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[&amp;p_target](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_option&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>p_target<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" kindref="member">Application::execute</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>p_argv)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l_status<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" kindref="member">m_binName</ref><sp/>=<sp/>basename(p_argv[0]);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1a586ddfe34d0f2c1343385f8034ef9b66" kindref="member">initialize</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(<ref refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" kindref="member">m_binName</ref>),<sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" kindref="member">logger::level::crit</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>readArgs(p_argc,<sp/>p_argv);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a8684d1d061027893f91580106a821d88" kindref="member">parseConfig</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a3c63f070ac7baaea43a32b3064d0030b" kindref="member">checkOptions</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().<ref refid="classxtd_1_1logger_1aeffebbe5b6a43f814c0a1251b6069f26" kindref="member">setAllLevels</ref>(<ref refid="classxtd_1_1logger_1a21511dfdad9ec1e88c3444637a000e9d" kindref="member">logger::get</ref>().levelOf(<ref refid="classxtd_1_1Application_1a3f815061d81aa12974b2b6ee48b9f5e9" kindref="member">m_logLevel</ref>));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1ab8e835ba678494c42e12c4613958d18a" kindref="member">initialize</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>m_runThread<sp/>=<sp/>boost::thread(boost::bind(&amp;boost::asio::io_service::run,<sp/>&amp;m_ioService));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>l_status<sp/>=<sp/><ref refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kindref="member">process</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>m_ioService.stop();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>m_runThread.join();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>l_error)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a810c6c1924f762fd453555cb91cb35f9" kindref="member">error_nohelp</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;caught<sp/>exception<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>l_error.what());</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_status;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">Application::handleSignal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code&amp;<sp/></highlight><highlight class="comment">/*<sp/>p_error<sp/>*/</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_signalNumber)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l_signal;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_signalNumber<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>l_signal<sp/>=<sp/>15;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>l_signal<sp/>=<sp/>p_signalNumber;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>l_it<sp/>=<sp/>m_signalHandlerMap.find(l_signal);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_it<sp/>==<sp/>m_signalHandlerMap.end())</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" kindref="member">logger::crit</ref>(</highlight><highlight class="stringliteral">&quot;common.application&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>signal<sp/>corresponding<sp/>to<sp/>%i<sp/>found&quot;</highlight><highlight class="normal">,<sp/>p_signalNumber,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>m_signals.async_wait(std::bind(&amp;Application::handleSignal,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>(*l_it).second();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>m_signals.async_wait(std::bind(&amp;Application::handleSignal,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" kindref="member">Application::addSignalHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_signalNumber,<sp/><ref refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" kindref="member">t_sig_handler</ref><sp/>p_handler)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_signalHandlerMap.find(p_signalNumber)<sp/>!=<sp/>m_signalHandlerMap.end())</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>m_signals.add(p_signalNumber);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>m_signalHandlerMap[p_signalNumber]<sp/>=<sp/>p_handler;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1aef6043d47982bc1983a84e2c8a53f0cd" kindref="member">Application::process</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a7cea42a03984ceed3bae129ff9e1ef54" kindref="member">Application::addOption</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_shortOpt,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/>p_longOpt,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7" kindref="member">argument</ref><sp/><sp/><sp/><sp/>p_argType,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" kindref="member">requirement</ref><sp/>p_status,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/>p_description,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_callback<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_callback)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>t_option<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_opt;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>l_checker<sp/>=</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>p_shortOpt,<sp/>&amp;p_longOpt](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_option_list::value_type&amp;<sp/>c_optItem)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((c_optItem.m_shortOpt<sp/>==<sp/>p_shortOpt)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((c_optItem.m_longOpt<sp/>==<sp/>p_longOpt)<sp/>&amp;&amp;<sp/>(p_longOpt<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kindref="member">error</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;short<sp/>option<sp/>&apos;%c&apos;<sp/>already<sp/>exists&quot;</highlight><highlight class="normal">,<sp/>p_shortOpt);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>std::for_each(m_optionList.begin(),<sp/>m_optionList.end(),<sp/>l_checker);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>l_opt.m_given<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>l_opt.m_shortOpt<sp/><sp/><sp/><sp/><sp/>=<sp/>p_shortOpt;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>l_opt.m_longOpt<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>p_longOpt;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>l_opt.m_argumentType<sp/>=<sp/>p_argType;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>l_opt.m_status<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>p_status;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>l_opt.m_description<sp/><sp/>=<sp/>p_description;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>l_opt.m_callback<sp/><sp/><sp/><sp/><sp/>=<sp/>p_callback;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>m_optionList.push_back(l_opt);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">Application::readArgs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>p_argv)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_option_name<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_option_index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_shortOptString;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">option<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_options[100];</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c_optIdx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>t_option_list::iterator<sp/>c_opt;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(c_optIdx<sp/>=<sp/>0;<sp/>c_optIdx<sp/>&lt;<sp/>m_optionList.size();<sp/>c_optIdx++)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_optionList[c_optIdx].m_longOpt<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_options[c_optIdx].name<sp/>=<sp/>m_optionList[c_optIdx].m_longOpt.c_str();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_options[c_optIdx].flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_options[c_optIdx].val<sp/>=<sp/>m_optionList[c_optIdx].m_shortOpt;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m_optionList[c_optIdx].m_argumentType)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">argument::none</ref>:<sp/><sp/><sp/><sp/><sp/><sp/>l_options[c_optIdx].has_arg<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">argument::mandatory</ref>:<sp/>l_options[c_optIdx].has_arg<sp/>=<sp/>1;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">argument::optional</ref>:<sp/><sp/>l_options[c_optIdx].has_arg<sp/>=<sp/>2;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>l_shortOptString<sp/>+=<sp/>m_optionList[c_optIdx].m_shortOpt;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m_optionList[c_optIdx].m_argumentType)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">argument::none</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">argument::mandatory</ref>:<sp/>l_shortOptString<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">argument::optional</ref>:<sp/><sp/>l_shortOptString<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>l_option_name<sp/>=<sp/>getopt_long(p_argc,<sp/>p_argv,<sp/>l_shortOptString.c_str(),<sp/>l_options,<sp/>&amp;l_option_index);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_option_name<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l_option_name<sp/>==<sp/></highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::exit(1);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(c_opt<sp/>=<sp/>m_optionList.begin();<sp/>c_opt<sp/>!=<sp/>m_optionList.end();<sp/>c_opt++)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c_opt-&gt;m_shortOpt<sp/>==<sp/>l_option_name)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c_opt-&gt;m_given<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_argValue;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(optarg)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_argValue<sp/>=<sp/>optarg;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c_opt-&gt;m_callback(l_argValue,<sp/>*c_opt);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(c_opt<sp/>=<sp/>m_optionList.begin();<sp/>c_opt<sp/>!=<sp/>m_optionList.end();<sp/>c_opt++)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(c_opt-&gt;m_status)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">requirement::optional</ref>:<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">requirement::mandatory</ref>:</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c_opt-&gt;m_given<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1adf84f52f1388bef1336d0fb5f6345563" kindref="member">error</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;option<sp/>&apos;%c&apos;<sp/>is<sp/>mandatory&quot;</highlight><highlight class="normal">,<sp/>c_opt-&gt;m_shortOpt);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(optind<sp/>&lt;<sp/>p_argc)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a7651fd3849530cdded556187a6b42c25" kindref="member">m_remainingArgs</ref>.push_back(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(p_argv[optind]));</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>optind++;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">Application::usageWrapper(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="280"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>usage();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a4aca412c4a0bcd761e28b0350bd71578" kindref="member">Application::isOptionGiven</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_optionName)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="287"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cc_opt<sp/>=<sp/>m_optionList.begin();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc_opt<sp/>!=<sp/>m_optionList.end();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc_opt++)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_shortOpt;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>l_shortOpt<sp/>+=<sp/>cc_opt-&gt;m_shortOpt;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cc_opt-&gt;m_given<sp/><sp/><sp/><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((l_shortOpt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>p_optionName)<sp/>||</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(cc_opt-&gt;m_longOpt<sp/>==<sp/>p_optionName)))</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal">Application::usage(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="309"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>t_option_list::const_iterator<sp/>cc_optItem;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;usage<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classxtd_1_1Application_1abdf4c6f863c5a7a4ee842906f546c458" kindref="member">m_binName</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[options]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_maxOptStrSize<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>vector&lt;std::pair&lt;string,<sp/>string&gt;<sp/>&gt;<sp/>l_data;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(cc_optItem<sp/>=<sp/>m_optionList.begin();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc_optItem<sp/>!=<sp/>m_optionList.end();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc_optItem++)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_shortForm<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_longForm<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>l_format;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>l_shortForm<sp/>+=<sp/>cc_optItem-&gt;m_shortOpt;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cc_optItem-&gt;m_longOpt.size())</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_longForm<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;--&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>l_longForm<sp/>+=<sp/>cc_optItem-&gt;m_longOpt;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cc_optItem-&gt;m_argumentType)</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">argument::none</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">argument::optional</ref>:<sp/><sp/>l_longForm<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[&lt;arg&gt;]&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">argument::mandatory</ref>:<sp/>l_longForm<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;arg&gt;&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>l_format<sp/>&lt;&lt;<sp/>std::right<sp/>&lt;&lt;<sp/>std::setw(5)<sp/>&lt;&lt;<sp/>l_shortForm<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>|<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>l_longForm;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>l_maxOptStrSize<sp/>=<sp/>std::max(l_maxOptStrSize,<sp/>l_format.str().size());</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>l_data.push_back(std::make_pair(l_format.str(),<sp/>cc_optItem-&gt;m_description));</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c_idx<sp/>=<sp/>0;<sp/>c_idx<sp/>&lt;<sp/>l_data.size();<sp/>c_idx++)</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>std::left<sp/>&lt;&lt;<sp/>std::setw(l_maxOptStrSize)<sp/>&lt;&lt;<sp/>l_data[c_idx].first</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>l_data[c_idx].second<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_helpText.size()<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>m_helpText</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/>std::exit(1);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1abdfaafd220104a063c344a4f7e126ec0" kindref="member">Application::addHelpMsg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_helpMessage)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_helpText.size())</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>m_helpText<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>m_helpText<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>p_helpMessage;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/common/src/Application.cc"/>
+  </compounddef>
+</doxygen>

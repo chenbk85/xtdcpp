@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ClientPool_8hh" kind="file" language="C++">
+    <compoundname>ClientPool.hh</compoundname>
+    <includes local="no">deque</includes>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">boost/thread/mutex.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">boost/make_shared.hpp</includes>
+    <includes local="yes">protocol/bip/Client.hh</includes>
+    <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
+    <includes local="yes">ClientPool.hxx</includes>
+    <includes local="no">boost/range/algorithm/find_if.hpp</includes>
+    <includes local="no">boost/interprocess/detail/atomic.hpp</includes>
+    <incdepgraph>
+      <node id="1597">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1598">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1593">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh</label>
+        <link refid="ClientPool.hh"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1606">
+        <label>ClientPool.hxx</label>
+      </node>
+      <node id="1603">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1596">
+        <label>string</label>
+      </node>
+      <node id="1600">
+        <label>protocol/bip/Client.hh</label>
+      </node>
+      <node id="1604">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1602">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1608">
+        <label>boost/interprocess/detail/atomic.hpp</label>
+      </node>
+      <node id="1594">
+        <label>deque</label>
+      </node>
+      <node id="1599">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1601">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>set</label>
+      </node>
+      <node id="1605">
+        <label>types.hh</label>
+      </node>
+      <node id="1607">
+        <label>boost/range/algorithm/find_if.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1ClientPool" prot="public">xtd::network::bip::ClientPool</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" prot="public">xtd::network::bip::ClientPool::PersistentClient</innerclass>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1bip">xtd::network::bip</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/mutex.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/make_shared.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;protocol/bip/Client.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TRequest,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TResponse,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TDomain<sp/>=<sp/>utils::af_inet&gt;</highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1network_1_1bip_1_1ClientPool" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool" kindref="compound">ClientPool</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" kindref="compound">PersistentClient</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client" kindref="compound">bip::Client</ref>&lt;TRequest,<sp/>TResponse,<sp/>TDomain&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1a3f5a2172b09497d719da36e7bac0eaf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool" kindref="compound">ClientPool</ref>&lt;TRequest,<sp/>TResponse,<sp/>TDomain&gt;;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1ade4513087533d0807c995270804ffd86" kindref="member">PersistentClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_hostname,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_port,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_conf);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient_1af44e5c23cf33c46e79709200845f8abb" kindref="member">~PersistentClient</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>async_connect(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/><sp/>wait_async_connect(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/><sp/>send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRequest&amp;<sp/>p_request,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>p_debug);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/><sp/>receive(TResponse&amp;<sp/>p_response,<sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_debug);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>isObsolete(uint32_t<sp/>p_ttlMs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>invalidate(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_hostname;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_port;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_isConnected;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::posix_time::ptime<sp/>m_lastUsed;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;PersistentClient&gt;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kindref="member">t_client_sptr</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ab0b045804570a41e6e491a715d56a469" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::deque&lt;t_client_sptr&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ab0b045804570a41e6e491a715d56a469" kindref="member">t_pool</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a19357fadc950be3b681e4c13b602b9ff" kindref="member">ClientPool</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_hostname,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_port,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_conf,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_ttlMs<sp/>=<sp/>20000);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac38bce359cae12634348f3baceb31668" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac38bce359cae12634348f3baceb31668" kindref="member">getSendTotal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendTotal;<sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ae744842f18c70979bf792d10fe799716" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ae744842f18c70979bf792d10fe799716" kindref="member">getSendSuccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendSuccess;<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a48e713a842d7d5bf0c9142d4f65ab719" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a48e713a842d7d5bf0c9142d4f65ab719" kindref="member">getSendError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendError;<sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a65c430ef8ee5a65ec6289ea554df9ccf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a65c430ef8ee5a65ec6289ea554df9ccf" kindref="member">getSendTimeout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sendTimeout;<sp/>}</highlight></codeline>
+<codeline lineno="70" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aae35b25fd8d491a7b4e42dcb3b00dbc8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1aae35b25fd8d491a7b4e42dcb3b00dbc8" kindref="member">getRcvTotal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_rcvTotal;<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a118010103ded46a9d997765e74a9fddf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a118010103ded46a9d997765e74a9fddf" kindref="member">getRcvSuccess</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_rcvSuccess;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="72" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a44f712ba35d274fcb093c55f197539da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a44f712ba35d274fcb093c55f197539da" kindref="member">getRcvError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_rcvError;<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1abdb1cb0ea47af82189a3df7e074ba123" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1abdb1cb0ea47af82189a3df7e074ba123" kindref="member">getRcvTimeout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_rcvTimeout;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a70de85e8b181bd82214bff2aa27600f1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a70de85e8b181bd82214bff2aa27600f1" kindref="member">getCurNbClient</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_curNbClient;<sp/>}</highlight></codeline>
+<codeline lineno="75" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a616b3398d55725cdf1cee89a9c7f1154" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a616b3398d55725cdf1cee89a9c7f1154" kindref="member">getRecycleHit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_recycleHit;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="76" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0432fecefc0e16d58581e71d9796a423" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0432fecefc0e16d58581e71d9796a423" kindref="member">getRecycleMiss</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_recycleMiss;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>t_client_sptr<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a9d2d89926ce38e5fbb73ef297945c586" kindref="member">acquire</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>status<sp/>send(t_client_sptr&amp;<sp/>p_client,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRequest&amp;<sp/>p_request,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>p_debug);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>status<sp/>receive(t_client_sptr&amp;<sp/>p_client,<sp/>TResponse&amp;<sp/>p_response,<sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_debug);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a390ed6d8afa1812690fbe120bdea5059" kindref="member">release</ref>(t_client_sptr&amp;<sp/>p_client);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>boost::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mutex;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>t_pool<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_available;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>m_hostname;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>m_port;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>m_ttlMs;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" kindref="member">m_conf</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendTotal;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendSuccess;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendError;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendTimeout;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_rcvTotal;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_rcvSuccess;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_rcvError;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_rcvTimeout;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_curNbClient;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_acquiredClients;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_recycleHit;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_recycleMiss;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}}}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ClientPool.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BIP_CLIENTPOOL_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh"/>
+  </compounddef>
+</doxygen>

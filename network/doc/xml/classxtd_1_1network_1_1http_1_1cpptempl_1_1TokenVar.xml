@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar" kind="class" language="C++" prot="public">
+    <compoundname>xtd::network::http::cpptempl::TokenVar</compoundname>
+    <basecompoundref refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token" prot="public" virt="non-virtual">xtd::network::http::cpptempl::Token</basecompoundref>
+    <includes refid="cpptempl_8hh" local="no">cpptempl.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1ab9f1b7c2836d8ebdcc11b3bce4430bac" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::network::http::cpptempl::TokenVar::m_key</definition>
+        <argsstring></argsstring>
+        <name>m_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="211" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a11cda0dc135ade3f27be7331beb42541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::network::http::cpptempl::TokenVar::TokenVar</definition>
+        <argsstring>(string key)</argsstring>
+        <name>TokenVar</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="213" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a8e536c216ab9bc23bf74662d47191d7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479ee" kindref="member">TokenType</ref></type>
+        <definition>TokenType xtd::network::http::cpptempl::TokenVar::gettype</definition>
+        <argsstring>()</argsstring>
+        <name>gettype</name>
+        <reimplements refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1afd7dd97138bbac2734e414a406a8e4fe">gettype</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="214" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc" bodystart="105" bodyend="108"/>
+        <references refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a39833083d228a5b5ef9f6bb7896479eea0e5df4476507663b07b952aefc096a86" compoundref="cpptempl_8hh" startline="180">xtd::network::http::cpptempl::TOKEN_TYPE_VAR</references>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1afc42a67378efaef5e04552634ac369a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string xtd::network::http::cpptempl::TokenVar::gettext</definition>
+        <argsstring>(data_map &amp;data)</argsstring>
+        <name>gettext</name>
+        <reimplements refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a5aeb3ae0fe7478101eaaa90898709a1b">gettext</reimplements>
+        <param>
+          <type><ref refid="namespacextd_1_1network_1_1http_1_1cpptempl_1a638d1d81c8fb63c0bbafd508d6a2a007" kindref="member">data_map</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="215" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.cc" bodystart="109" bodyend="112"/>
+        <references refid="namespacextd_1_1network_1_1http_1_1cpptempl_1af79d10d06cd5bc9ce629bb2d21fbcfd6" compoundref="cpptempl_8cc" startline="56" endline="79">xtd::network::http::cpptempl::parse_val</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="384">
+        <label>xtd::network::http::cpptempl::TokenVar</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar"/>
+        <childnode refid="385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>xtd::network::http::cpptempl::Token</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="386">
+        <label>xtd::network::http::cpptempl::TokenVar</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar"/>
+        <childnode refid="387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>xtd::network::http::cpptempl::Token</label>
+        <link refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" line="210" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/cpptempl.hh" bodystart="209" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1a2611c2d4d0dc383142fb1628df09f381" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>get_children</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1afc42a67378efaef5e04552634ac369a8" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>gettext</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a8e536c216ab9bc23bf74662d47191d7f" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>gettype</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1ab9f1b7c2836d8ebdcc11b3bce4430bac" prot="private" virt="non-virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>m_key</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adc8822088b8b9a148b755bc25cd1df6e" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>set_children</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1TokenVar_1a11cda0dc135ade3f27be7331beb42541" prot="public" virt="non-virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>TokenVar</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1cpptempl_1_1Token_1adb3394a369282f65e448c5433d0c175a" prot="public" virt="virtual"><scope>xtd::network::http::cpptempl::TokenVar</scope><name>~Token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

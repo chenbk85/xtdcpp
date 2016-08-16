@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1serializer" kind="namespace" language="C++">
+    <compoundname>xtd::serializer</compoundname>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugBinIArchive" prot="public">xtd::serializer::DebugBinIArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugBinOArchive" prot="public">xtd::serializer::DebugBinOArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugTextIArchive" prot="public">xtd::serializer::DebugTextIArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugTextOArchive" prot="public">xtd::serializer::DebugTextOArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugXmlIArchive" prot="public">xtd::serializer::DebugXmlIArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1DebugXmlOArchive" prot="public">xtd::serializer::DebugXmlOArchive</innerclass>
+    <innerclass refid="classxtd_1_1serializer_1_1Doc" prot="public">xtd::serializer::Doc</innerclass>
+    <innerclass refid="structxtd_1_1serializer_1_1mode" prot="public">xtd::serializer::mode</innerclass>
+    <innerclass refid="structxtd_1_1serializer_1_1option" prot="public">xtd::serializer::option</innerclass>
+    <innerclass refid="structxtd_1_1serializer_1_1serializer" prot="public">xtd::serializer::serializer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1_1serializer_1aff0b24f230c8b5083104eccb94242a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string xtd::serializer::as_xml</definition>
+        <argsstring>(const T &amp;p_obj, bool p_debug, option p_opt=option())</argsstring>
+        <name>as_xml</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a0088e6d509f6652e58c7c0eea9102884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; xtd::serializer::as_bin</definition>
+        <argsstring>(const T &amp;p_obj, bool p_debug, option p_opt=option())</argsstring>
+        <name>as_bin</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a1c43eba643505bba5858d6d5431201fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::serializer::as_bin</definition>
+        <argsstring>(const T &amp;p_obj, std::vector&lt; char &gt; &amp;p_data, bool p_debug, option p_opt=option())</argsstring>
+        <name>as_bin</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a5ac463bb961b98f1b8b7c2655d2772db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; xtd::serializer::as_text</definition>
+        <argsstring>(const T &amp;p_obj, bool p_debug, option p_opt=option())</argsstring>
+        <name>as_text</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a601beccda10ec2760c371d39045bec0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::serializer::from_bin</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;p_data, T &amp;p_obj, option p_opt=option())</argsstring>
+        <name>from_bin</name>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a76ec6ed068121fc7ff0f6514132c5683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::serializer::from_bin</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;p_data, T &amp;p_obj, bool &amp;p_debug, option p_opt=option())</argsstring>
+        <name>from_bin</name>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1serializer_1a27ea640a20bff130274562ddd8762c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void xtd::serializer::from_text</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;p_data, T &amp;p_obj, bool &amp;p_debug, option p_opt=option())</argsstring>
+        <name>from_text</name>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>p_debug</declname>
+        </param>
+        <param>
+          <type><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref></type>
+          <declname>p_opt</declname>
+          <defval><ref refid="structxtd_1_1serializer_1_1option" kindref="compound">option</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/serializer/src/serializer.hh" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh" line="23" column="1"/>
+  </compounddef>
+</doxygen>

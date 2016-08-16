@@ -1,0 +1,338 @@
+\hypertarget{classxtd_1_1network_1_1utils_1_1Config}{}\section{xtd\+:\+:network\+:\+:utils\+:\+:Config Class Reference}
+\label{classxtd_1_1network_1_1utils_1_1Config}\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+
+
+{\ttfamily \#include $<$Config.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Config_a38494ac8cb1f19047196843e3b911f8a}{Config} (void)
+\begin{DoxyCompactList}\small\item\em default constructor set nothing \end{DoxyCompactList}\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Config_abbf53027f45806e78cec4f50e4ea7def}{Config} (uint32\+\_\+t p\+\_\+flags, uint32\+\_\+t p\+\_\+linger\+Interval=0)
+\begin{DoxyCompactList}\small\item\em Constructor make the socket setting. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1network_1_1utils_1_1Config_ab43d43856cea3b9bf159b38d2d13d82b}{get\+Linger} (void) const 
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Config_aacb13cdd90746d5684feb00d7cdbefcc}{get\+Linger\+Time} (void) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a499712a4fd63e48be43ff24eb94e72ff}{get\+No\+Delay} (void) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a3914a56737d69dd8879e03ed9b3dc855}{get\+Reuse\+Addr} (void) const 
+\item 
+bool \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a89faeb4f4a949ae6fe18b907814987ee}{get\+Compress} (void) const 
+\item 
+\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161}{codec} \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a82a7b809f4d41f4124badef452b9698d}{get\+Compression\+Codec} (void) const 
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a2dfd5c85238ef930891d3696e6f6246c}{get\+Connect\+Timeout\+Ms} (void) const 
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a300d76106dcc338d662894dd04373d91}{get\+Send\+Timeout\+Ms} (void) const 
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a4484d8887f26682beb5aaa45f801dc57}{get\+Receive\+Timeout\+Ms} (void) const 
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a1ef6d7fcee95df86143dfbdd007f64f9}{get\+Dns\+Cache\+T\+TL} (void) const 
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a1a0e52354981c89c5aaf2b31d4490de2}{set\+Linger} (bool p\+\_\+linger, uint32\+\_\+t p\+\_\+linger\+Time)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a1dbcee3c0f2631269ea3e716a62ce333}{set\+No\+Delay} (bool p\+\_\+no\+Delay)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a5e78cf9920484c88da5f42bae16b7a1f}{set\+Reuse\+Addr} (bool p\+\_\+reuse\+Addr)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_aab76e2174465ead19cc97fa3f5a7f009}{set\+Compress} (bool p\+\_\+compress)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a604e4ade1c49d83d204024f28a3d461d}{set\+Compression\+Codec} (\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161}{codec} p\+\_\+compression\+Codec)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a5ecd1cd77dd3bd937aa021d3bf0ad860}{set\+Connect\+Timeout\+Ms} (uint32\+\_\+t p\+\_\+ms)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a583358bf6945cbddd657f6db8c31618e}{set\+Send\+Timeout\+Ms} (uint32\+\_\+t p\+\_\+ms)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_ad633fb35c7202550d444e4bf5ae213df}{set\+Receive\+Timeout\+Ms} (uint32\+\_\+t p\+\_\+ms)
+\item 
+void \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a9a2d3e9de6f26708a4bddc4ba7c31428}{set\+Dns\+Cache\+T\+TL} (uint32\+\_\+t p\+\_\+ms)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Config.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!Config@{Config}}
+\index{Config@{Config}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{Config(void)}{Config(void)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::utils\+::\+Config\+::\+Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a38494ac8cb1f19047196843e3b911f8a}{}\label{classxtd_1_1network_1_1utils_1_1Config_a38494ac8cb1f19047196843e3b911f8a}
+
+
+default constructor set nothing 
+
+
+
+Definition at line 8 of file Config.\+cc.
+
+
+\begin{DoxyCode}
+8                    :
+9   m\_noDelay(\textcolor{keyword}{false}),
+10   m\_reuseAddr(\textcolor{keyword}{false}),
+11   m\_linger(\textcolor{keyword}{false}),
+12   m\_lingerTime(0),
+13   m\_compress(\textcolor{keyword}{false}),
+14   m\_compressionCodec(\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}{codec::zlib}),
+15   m\_dnsCacheTTL(1800),
+16   m\_connectTimeoutMs(1800),
+17   m\_sendTimeoutMs(1800),
+18   m\_receiveTimeoutMs(1800)
+19 \{
+20 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!Config@{Config}}
+\index{Config@{Config}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{Config(uint32\+\_\+t p\+\_\+flags, uint32\+\_\+t p\+\_\+linger\+Interval=0)}{Config(uint32_t p_flags, uint32_t p_lingerInterval=0)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::network\+::utils\+::\+Config\+::\+Config (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+flags, }
+\item[{uint32\+\_\+t}]{p\+\_\+linger\+Interval = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_abbf53027f45806e78cec4f50e4ea7def}{}\label{classxtd_1_1network_1_1utils_1_1Config_abbf53027f45806e78cec4f50e4ea7def}
+
+
+Constructor make the socket setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+flags} & configuration flags \\
+\hline
+{\em p\+\_\+linger\+Interval} & linger interval \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Config.\+cc.
+
+
+\begin{DoxyCode}
+22                                                          :
+23   m\_noDelay(\textcolor{keyword}{false}),
+24   m\_reuseAddr(\textcolor{keyword}{false}),
+25   m\_linger(\textcolor{keyword}{false}),
+26   m\_lingerTime(0),
+27   m\_compress(\textcolor{keyword}{false}),
+28   m\_compressionCodec(\hyperlink{namespacextd_1_1network_1_1utils_a3ac1216ad2037b366cc1f9051a978161a7a990d405d2c6fb93aa8fbb0ec1a3b23}{codec::zlib}),
+29   m\_dnsCacheTTL(1800),
+30   m\_connectTimeoutMs(1800),
+31   m\_sendTimeoutMs(1800),
+32   m\_receiveTimeoutMs(1800)
+33 \{
+34   \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a1dbcee3c0f2631269ea3e716a62ce333}{setNoDelay}   (p\_flags & valueof(\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4faf0f888198330ff09558650aace4343e3}{option::nodelay}));
+35   \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a5e78cf9920484c88da5f42bae16b7a1f}{setReuseAddr} (p\_flags & valueof(\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2}{option::reuseaddr}));
+36   \hyperlink{classxtd_1_1network_1_1utils_1_1Config_a1a0e52354981c89c5aaf2b31d4490de2}{setLinger}    (p\_flags & valueof(\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fafa1711bb276806d1f1808dbb0e31018a}{option::linger}), p\_lingerInterval);
+37   \hyperlink{classxtd_1_1network_1_1utils_1_1Config_aab76e2174465ead19cc97fa3f5a7f009}{setCompress}  (p\_flags & valueof(\hyperlink{namespacextd_1_1network_1_1utils_a0acc888a3cdabdadb91fe832ea196a4fa390626c545194d0f20a704589b190994}{option::compress}));
+38 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classxtd_1_1network_1_1utils_1_1Config_abbf53027f45806e78cec4f50e4ea7def_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Compress@{get\+Compress}}
+\index{get\+Compress@{get\+Compress}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Compress(void) const }{getCompress(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::utils\+::\+Config\+::get\+Compress (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a89faeb4f4a949ae6fe18b907814987ee}{}\label{classxtd_1_1network_1_1utils_1_1Config_a89faeb4f4a949ae6fe18b907814987ee}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Compression\+Codec@{get\+Compression\+Codec}}
+\index{get\+Compression\+Codec@{get\+Compression\+Codec}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Compression\+Codec(void) const }{getCompressionCodec(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf codec} xtd\+::network\+::utils\+::\+Config\+::get\+Compression\+Codec (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a82a7b809f4d41f4124badef452b9698d}{}\label{classxtd_1_1network_1_1utils_1_1Config_a82a7b809f4d41f4124badef452b9698d}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Connect\+Timeout\+Ms@{get\+Connect\+Timeout\+Ms}}
+\index{get\+Connect\+Timeout\+Ms@{get\+Connect\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Connect\+Timeout\+Ms(void) const }{getConnectTimeoutMs(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::network\+::utils\+::\+Config\+::get\+Connect\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a2dfd5c85238ef930891d3696e6f6246c}{}\label{classxtd_1_1network_1_1utils_1_1Config_a2dfd5c85238ef930891d3696e6f6246c}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Dns\+Cache\+T\+TL@{get\+Dns\+Cache\+T\+TL}}
+\index{get\+Dns\+Cache\+T\+TL@{get\+Dns\+Cache\+T\+TL}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Dns\+Cache\+T\+T\+L(void) const }{getDnsCacheTTL(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::network\+::utils\+::\+Config\+::get\+Dns\+Cache\+T\+TL (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a1ef6d7fcee95df86143dfbdd007f64f9}{}\label{classxtd_1_1network_1_1utils_1_1Config_a1ef6d7fcee95df86143dfbdd007f64f9}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Linger@{get\+Linger}}
+\index{get\+Linger@{get\+Linger}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Linger(void) const }{getLinger(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::utils\+::\+Config\+::get\+Linger (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_ab43d43856cea3b9bf159b38d2d13d82b}{}\label{classxtd_1_1network_1_1utils_1_1Config_ab43d43856cea3b9bf159b38d2d13d82b}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Linger\+Time@{get\+Linger\+Time}}
+\index{get\+Linger\+Time@{get\+Linger\+Time}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Linger\+Time(void) const }{getLingerTime(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::network\+::utils\+::\+Config\+::get\+Linger\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_aacb13cdd90746d5684feb00d7cdbefcc}{}\label{classxtd_1_1network_1_1utils_1_1Config_aacb13cdd90746d5684feb00d7cdbefcc}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+No\+Delay@{get\+No\+Delay}}
+\index{get\+No\+Delay@{get\+No\+Delay}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+No\+Delay(void) const }{getNoDelay(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::utils\+::\+Config\+::get\+No\+Delay (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a499712a4fd63e48be43ff24eb94e72ff}{}\label{classxtd_1_1network_1_1utils_1_1Config_a499712a4fd63e48be43ff24eb94e72ff}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Receive\+Timeout\+Ms@{get\+Receive\+Timeout\+Ms}}
+\index{get\+Receive\+Timeout\+Ms@{get\+Receive\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Receive\+Timeout\+Ms(void) const }{getReceiveTimeoutMs(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::network\+::utils\+::\+Config\+::get\+Receive\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a4484d8887f26682beb5aaa45f801dc57}{}\label{classxtd_1_1network_1_1utils_1_1Config_a4484d8887f26682beb5aaa45f801dc57}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Reuse\+Addr@{get\+Reuse\+Addr}}
+\index{get\+Reuse\+Addr@{get\+Reuse\+Addr}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Reuse\+Addr(void) const }{getReuseAddr(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::network\+::utils\+::\+Config\+::get\+Reuse\+Addr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a3914a56737d69dd8879e03ed9b3dc855}{}\label{classxtd_1_1network_1_1utils_1_1Config_a3914a56737d69dd8879e03ed9b3dc855}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!get\+Send\+Timeout\+Ms@{get\+Send\+Timeout\+Ms}}
+\index{get\+Send\+Timeout\+Ms@{get\+Send\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{get\+Send\+Timeout\+Ms(void) const }{getSendTimeoutMs(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t xtd\+::network\+::utils\+::\+Config\+::get\+Send\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a300d76106dcc338d662894dd04373d91}{}\label{classxtd_1_1network_1_1utils_1_1Config_a300d76106dcc338d662894dd04373d91}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Compress@{set\+Compress}}
+\index{set\+Compress@{set\+Compress}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Compress(bool p\+\_\+compress)}{setCompress(bool p_compress)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Compress (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+compress}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_aab76e2174465ead19cc97fa3f5a7f009}{}\label{classxtd_1_1network_1_1utils_1_1Config_aab76e2174465ead19cc97fa3f5a7f009}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classxtd_1_1network_1_1utils_1_1Config_aab76e2174465ead19cc97fa3f5a7f009_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Compression\+Codec@{set\+Compression\+Codec}}
+\index{set\+Compression\+Codec@{set\+Compression\+Codec}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Compression\+Codec(codec p\+\_\+compression\+Codec)}{setCompressionCodec(codec p_compressionCodec)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Compression\+Codec (
+\begin{DoxyParamCaption}
+\item[{{\bf codec}}]{p\+\_\+compression\+Codec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a604e4ade1c49d83d204024f28a3d461d}{}\label{classxtd_1_1network_1_1utils_1_1Config_a604e4ade1c49d83d204024f28a3d461d}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Connect\+Timeout\+Ms@{set\+Connect\+Timeout\+Ms}}
+\index{set\+Connect\+Timeout\+Ms@{set\+Connect\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Connect\+Timeout\+Ms(uint32\+\_\+t p\+\_\+ms)}{setConnectTimeoutMs(uint32_t p_ms)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Connect\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+ms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a5ecd1cd77dd3bd937aa021d3bf0ad860}{}\label{classxtd_1_1network_1_1utils_1_1Config_a5ecd1cd77dd3bd937aa021d3bf0ad860}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Dns\+Cache\+T\+TL@{set\+Dns\+Cache\+T\+TL}}
+\index{set\+Dns\+Cache\+T\+TL@{set\+Dns\+Cache\+T\+TL}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Dns\+Cache\+T\+T\+L(uint32\+\_\+t p\+\_\+ms)}{setDnsCacheTTL(uint32_t p_ms)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Dns\+Cache\+T\+TL (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+ms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a9a2d3e9de6f26708a4bddc4ba7c31428}{}\label{classxtd_1_1network_1_1utils_1_1Config_a9a2d3e9de6f26708a4bddc4ba7c31428}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Linger@{set\+Linger}}
+\index{set\+Linger@{set\+Linger}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Linger(bool p\+\_\+linger, uint32\+\_\+t p\+\_\+linger\+Time)}{setLinger(bool p_linger, uint32_t p_lingerTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Linger (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+linger, }
+\item[{uint32\+\_\+t}]{p\+\_\+linger\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a1a0e52354981c89c5aaf2b31d4490de2}{}\label{classxtd_1_1network_1_1utils_1_1Config_a1a0e52354981c89c5aaf2b31d4490de2}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classxtd_1_1network_1_1utils_1_1Config_a1a0e52354981c89c5aaf2b31d4490de2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+No\+Delay@{set\+No\+Delay}}
+\index{set\+No\+Delay@{set\+No\+Delay}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+No\+Delay(bool p\+\_\+no\+Delay)}{setNoDelay(bool p_noDelay)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+No\+Delay (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+no\+Delay}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a1dbcee3c0f2631269ea3e716a62ce333}{}\label{classxtd_1_1network_1_1utils_1_1Config_a1dbcee3c0f2631269ea3e716a62ce333}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classxtd_1_1network_1_1utils_1_1Config_a1dbcee3c0f2631269ea3e716a62ce333_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Receive\+Timeout\+Ms@{set\+Receive\+Timeout\+Ms}}
+\index{set\+Receive\+Timeout\+Ms@{set\+Receive\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Receive\+Timeout\+Ms(uint32\+\_\+t p\+\_\+ms)}{setReceiveTimeoutMs(uint32_t p_ms)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Receive\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+ms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_ad633fb35c7202550d444e4bf5ae213df}{}\label{classxtd_1_1network_1_1utils_1_1Config_ad633fb35c7202550d444e4bf5ae213df}
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Reuse\+Addr@{set\+Reuse\+Addr}}
+\index{set\+Reuse\+Addr@{set\+Reuse\+Addr}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Reuse\+Addr(bool p\+\_\+reuse\+Addr)}{setReuseAddr(bool p_reuseAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Reuse\+Addr (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+reuse\+Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a5e78cf9920484c88da5f42bae16b7a1f}{}\label{classxtd_1_1network_1_1utils_1_1Config_a5e78cf9920484c88da5f42bae16b7a1f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classxtd_1_1network_1_1utils_1_1Config_a5e78cf9920484c88da5f42bae16b7a1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}!set\+Send\+Timeout\+Ms@{set\+Send\+Timeout\+Ms}}
+\index{set\+Send\+Timeout\+Ms@{set\+Send\+Timeout\+Ms}!xtd\+::network\+::utils\+::\+Config@{xtd\+::network\+::utils\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+Send\+Timeout\+Ms(uint32\+\_\+t p\+\_\+ms)}{setSendTimeoutMs(uint32_t p_ms)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::network\+::utils\+::\+Config\+::set\+Send\+Timeout\+Ms (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+ms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1utils_1_1Config_a583358bf6945cbddd657f6db8c31618e}{}\label{classxtd_1_1network_1_1utils_1_1Config_a583358bf6945cbddd657f6db8c31618e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{Config_8hh}{Config.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{Config_8cc}{Config.\+cc}\end{DoxyCompactItemize}

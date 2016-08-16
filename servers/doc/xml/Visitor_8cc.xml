@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Visitor_8cc" kind="file" language="C++">
+    <compoundname>Visitor.cc</compoundname>
+    <includes refid="Visitor_8hh" local="yes">param/Visitor.hh</includes>
+    <incdepgraph>
+      <node id="493">
+        <label>json_parser.hpp</label>
+      </node>
+      <node id="500">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="499">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="492">
+        <label>string</label>
+      </node>
+      <node id="498">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="497">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="501">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="495">
+        <label>param/Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>ctime</label>
+      </node>
+      <node id="496">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="504">
+        <label>logger.hh</label>
+      </node>
+      <node id="490">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc</label>
+        <link refid="Visitor.cc"/>
+        <childnode refid="491" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>types.hh</label>
+      </node>
+      <node id="491">
+        <label>param/Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>http/Template.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers">xtd::servers</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers_1_1param">xtd::servers::param</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Visitor_8hh" kindref="compound">param/Visitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a87e4c626ded6951d1ee930d25229e8b4" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a87e4c626ded6951d1ee930d25229e8b4" kindref="member">JsonVisitor::JsonVisitor</ref>(network::http::Json&amp;<sp/>p_tmpl)<sp/>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>(),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>m_tmpl(p_tmpl)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;bool&gt;</ref>&amp;<sp/><sp/><sp/><sp/><sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="15" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1813b3c21a65b66ff441f29d0f51ccc3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;int&gt;</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="16" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a1f69e5ceb9d95168d4725d3949636682" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;uint8_t&gt;</ref>&amp;<sp/><sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="17" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1af7d283dea375905cd4b93497123c4f80" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;uint32_t&gt;</ref>&amp;<sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="18" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad69a8bfe2e181bb8eaacfb06d6d1a374" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;uint64_t&gt;</ref>&amp;<sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="19" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1ad52e7b15a389386f93c9fa560edb94c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a95fa5ae6b560745f24200cec3b4c899a" kindref="member">JsonVisitor::operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD&lt;string&gt;</ref>&amp;<sp/><sp/><sp/>p_obj)<sp/>{<sp/>write(p_obj);<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" kindref="member">JsonVisitor::writeExtraInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_tmpl.add(p_key,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>p_value);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc"/>
+  </compounddef>
+</doxygen>

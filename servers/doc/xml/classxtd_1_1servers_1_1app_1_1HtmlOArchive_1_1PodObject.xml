@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject" kind="class" language="C++" prot="private">
+    <compoundname>xtd::servers::app::HtmlOArchive::PodObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">xtd::servers::app::HtmlOArchive::Object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a1457619391bf6ce47b989626d3c005f7" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HtmlOArchive::PodObject::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="55" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a4514e8d71a67ee1bf0ab909a9e430f92" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::servers::app::HtmlOArchive::PodObject::m_default</definition>
+        <argsstring></argsstring>
+        <name>m_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="56" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a8f8ca4c37e72f9301adf832ab88d3735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xtd::servers::app::HtmlOArchive::PodObject::PodObject</definition>
+        <argsstring>(const string &amp;p_name, size_t p_depth, const string &amp;p_type, const string &amp;p_default)</argsstring>
+        <name>PodObject</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_name</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>p_depth</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_type</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="48" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a6c53751dfa676bdef2f45e1cc912537a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xtd::servers::app::HtmlOArchive::PodObject::display</definition>
+        <argsstring>(std::ostream &amp;p_buf)</argsstring>
+        <name>display</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>p_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="53" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc" bodystart="61" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="76">
+        <label>xtd::servers::app::HtmlOArchive::Object</label>
+      </node>
+      <node id="75">
+        <label>xtd::servers::app::HtmlOArchive::PodObject</label>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="78">
+        <label>xtd::servers::app::HtmlOArchive::Object</label>
+      </node>
+      <node id="77">
+        <label>xtd::servers::app::HtmlOArchive::PodObject</label>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" line="46" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh" bodystart="45" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a6c53751dfa676bdef2f45e1cc912537a" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>display</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a4514e8d71a67ee1bf0ab909a9e430f92" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>m_default</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1af1793f64bab4b65377bb60f58740b09e" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>m_depth</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a81a9949f7f47673c3f32b58a1db6c546" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>m_name</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a1457619391bf6ce47b989626d3c005f7" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>m_type</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1ad8040c525693f5cccc6824f1370c3375" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>Object</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1PodObject_1a8f8ca4c37e72f9301adf832ab88d3735" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>PodObject</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1aaa4b3a16af5c64510f5f443263093dc3" prot="public" virt="virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>write</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a3f293df2d5c3995a8d2d6c8d6ed18a3c" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>write_head</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1a86c52b2b84e09f9c1c837ec6084b5a11" prot="public" virt="non-virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>write_tail</name></member>
+      <member refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1_1Object_1aaf6fdbc8ac7d4e255a78012bab78db1e" prot="public" virt="virtual"><scope>xtd::servers::app::HtmlOArchive::PodObject</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

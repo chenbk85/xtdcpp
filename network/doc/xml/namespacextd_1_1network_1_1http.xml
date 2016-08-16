@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacextd_1_1network_1_1http" kind="namespace" language="C++">
+    <compoundname>xtd::network::http</compoundname>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Connection" prot="public">xtd::network::http::Connection</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Generator" prot="public">xtd::network::http::Generator</innerclass>
+    <innerclass refid="structxtd_1_1network_1_1http_1_1hex__to__string" prot="public">xtd::network::http::hex_to_string</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" prot="public">xtd::network::http::HtmlTemplate</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Json" prot="public">xtd::network::http::Json</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Request" prot="public">xtd::network::http::Request</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Response" prot="public">xtd::network::http::Response</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Server" prot="public">xtd::network::http::Server</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Template" prot="public">xtd::network::http::Template</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1XmlTemplate" prot="public">xtd::network::http::XmlTemplate</innerclass>
+    <innernamespace refid="namespacextd_1_1network_1_1http_1_1cpptempl">xtd::network::http::cpptempl</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89c" prot="public" static="no">
+        <name>code</name>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cab41e384919d3fded84fe2803c82af70f" prot="public">
+          <name>proceeed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca95e78c491edb90cfdcd3ff95e4700d46" prot="public">
+          <name>switch_protocol</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca444bcb3a3fcf8389296c49467f27e1d6" prot="public">
+          <name>ok</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae2fa538867c3830a859a5b17ab24644b" prot="public">
+          <name>created</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3e4d891a5df3d6d0d7dd9432a1bc6470" prot="public">
+          <name>accepted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7d1e27253ac06e307e599edb2b0558bd" prot="public">
+          <name>no_content</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cae5e1e80aaecf3acf426c699f9e298164" prot="public">
+          <name>partial_content</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca9aeba7eb915334acd922761566c2ac86" prot="public">
+          <name>multiple_choices</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca522c7a01a5f0022064cc90149c179fa7" prot="public">
+          <name>moved_permanently</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca14e3761228bfc71752251125a5f11087" prot="public">
+          <name>moved_temporarily</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca72d9cf8a74038672b394991359756c35" prot="public">
+          <name>not_modified</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca373d9e6e1aaf30e691dadb57eb22d7b1" prot="public">
+          <name>bad_request</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca36fd540552b3b1b34e8f0bd8897cbf1e" prot="public">
+          <name>unauthorized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca350f9d68221a0db19024ee40cfc3c7f8" prot="public">
+          <name>forbidden</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca7500611bf7030bc99d25c354e7b64714" prot="public">
+          <name>not_found</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89cadd115df9e077388e1b70b344325094f3" prot="public">
+          <name>method_not_allowed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca3d9fd48f8a61d2ef1bcabffb3e2c2336" prot="public">
+          <name>internal_error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca63877363c706f5095d05a54f8b57b0ae" prot="public">
+          <name>not_implemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca34b1f5a8577eed2180e10076d1aad14c" prot="public">
+          <name>bad_gateway</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacextd_1_1network_1_1http_1a55148922a7d13fe756e53e2ccad4b89ca512d23352b911a1e9be84b5119e39095" prot="public">
+          <name>service_unavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Response.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Response.hh" bodystart="10" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; xtd::network::http::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;p_buf, const Request &amp;p_obj)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>p_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref> &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" line="654" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="654" bodyend="693"/>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1af06004afe64f465edfb281407b7f3600" compoundref="Request_8cc" startline="134" endline="137">xtd::network::http::Request::getMethod</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" compoundref="Request_8hh" startline="24">xtd::network::http::Request::METHOD_GET</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" compoundref="Request_8hh" startline="25">xtd::network::http::Request::METHOD_POST</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a71ee8e01b676b10c098c9a9ccf53b414" compoundref="Request_8hh" startline="26">xtd::network::http::Request::METHOD_HEAD</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a0006f0a88dccabdafe9dfed3627730f6" compoundref="Request_8cc" startline="151" endline="154">xtd::network::http::Request::getPath</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a609f7328025e89fd8325677212ab307b" compoundref="Request_8cc" startline="228" endline="231">xtd::network::http::Request::getVersionStr</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" compoundref="Request_8cc" startline="221" endline="224">xtd::network::http::Request::getHeaders</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" compoundref="Request_8cc" startline="157" endline="160">xtd::network::http::Request::getCgis</references>
+        <references refid="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" compoundref="Request_8cc" startline="163" endline="166">xtd::network::http::Request::getPosts</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacextd_1_1network_1_1http_1a48e500be5ba75ae2ce3d8bdb549f9211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; xtd::network::http::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;p_buf, const Request &amp;p_obj)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>p_buf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref> &amp;</type>
+          <declname>p_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/psyco/dev/xtdcpp/network/src/http/Connection.cc" line="8" column="1"/>
+  </compounddef>
+</doxygen>

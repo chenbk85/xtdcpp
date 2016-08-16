@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="CommTypeDefs_8hh" kind="file" language="C++">
+    <compoundname>CommTypeDefs.hh</compoundname>
+    <includes local="no">deque</includes>
+    <includes local="no">boost/asio.hpp</includes>
+    <includes local="no">boost/thread/thread.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">boost/function.hpp</includes>
+    <includes local="no">types.hh</includes>
+    <includedby refid="base_2Client_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Client.cc</includedby>
+    <includedby refid="base_2Client_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Client.hh</includedby>
+    <includedby refid="base_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</includedby>
+    <includedby refid="base_2Server_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Server.cc</includedby>
+    <includedby refid="base_2Server_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Server.hh</includedby>
+    <includedby refid="ClientPool_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh</includedby>
+    <includedby refid="bip_2Connection_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</includedby>
+    <includedby refid="bip_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</includedby>
+    <includedby refid="http_2Connection_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</includedby>
+    <includedby refid="http_2Server_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Server.cc</includedby>
+    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
+    <includedby refid="Config_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Config.hh</includedby>
+    <includedby refid="CacheDns_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh</includedby>
+    <includedby refid="Resolver_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</includedby>
+    <includedby refid="Utils_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh</includedby>
+    <incdepgraph>
+      <node id="1865">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1864">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1866">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1863">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1862">
+        <label>deque</label>
+      </node>
+      <node id="1861">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs.hh"/>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1885">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.cc</label>
+        <link refid="http_2Server_8cc"/>
+      </node>
+      <node id="1881">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+      </node>
+      <node id="1886">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh</label>
+        <link refid="ClientPool_8hh"/>
+      </node>
+      <node id="1876">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
+      </node>
+      <node id="1895">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Utils.hh</label>
+        <link refid="Utils_8hh"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+      </node>
+      <node id="1883">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</label>
+        <link refid="bip_2Server_8cc"/>
+      </node>
+      <node id="1878">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http_2Connection_8hh"/>
+        <childnode refid="1879" relation="include">
+        </childnode>
+      </node>
+      <node id="1890">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc</label>
+        <link refid="Utils_8cc"/>
+      </node>
+      <node id="1879">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
+      </node>
+      <node id="1870">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1871" relation="include">
+        </childnode>
+      </node>
+      <node id="1882">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</label>
+        <link refid="bip_2Server_8hh"/>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1889">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.cc</label>
+        <link refid="Config_8cc"/>
+      </node>
+      <node id="1894">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</label>
+        <link refid="Resolver_8cc"/>
+      </node>
+      <node id="1869">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.cc</label>
+        <link refid="base_2Client_8cc"/>
+      </node>
+      <node id="1892">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.cc</label>
+        <link refid="CacheDns_8cc"/>
+      </node>
+      <node id="1893">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
+      <node id="1887">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.hh</label>
+        <link refid="Config_8hh"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+      </node>
+      <node id="1871">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
+        <link refid="bip_2Client_8hh"/>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CacheDns.hh</label>
+        <link refid="CacheDns_8hh"/>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1872">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
+      </node>
+      <node id="1873">
+        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1868">
+        <label>/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs.hh"/>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+      </node>
+      <node id="1874">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+      </node>
+      <node id="1875">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
+        <link refid="base_2Connection_8cc"/>
+      </node>
+      <node id="1884">
+        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.hh</label>
+        <link refid="http_2Server_8hh"/>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.cc</label>
+        <link refid="base_2Server_8cc"/>
+      </node>
+      <node id="1888">
+        <label>/home/psyco/dev/xtdcpp/network/src/bip/tools.hh</label>
+        <link refid="tools_8hh"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
+    <innernamespace refid="namespacextd_1_1network_1_1utils">xtd::network::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_COMMTYPEDEFS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_COMMTYPEDEFS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/function.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::asio::deadline_timer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1af551b4a44731a154a57b9447dac595cd" kindref="member">deadLineTimer_t</ref>;</highlight></codeline>
+<codeline lineno="16" refid="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;boost::asio::io_service&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" kindref="member">ioServicePtr_t</ref>;</highlight></codeline>
+<codeline lineno="17" refid="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;boost::asio::io_service::work&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" kindref="member">workPtr_t</ref>;</highlight></codeline>
+<codeline lineno="18" refid="namespacextd_1_1network_1_1utils_1aaaf1b50be1864a40d85efd18979631e1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;boost::asio::streambuf&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1aaaf1b50be1864a40d85efd18979631e1" kindref="member">streambufPtr_t</ref>;</highlight></codeline>
+<codeline lineno="19" refid="namespacextd_1_1network_1_1utils_1a778bf7884b2296561ffc1fc5a5f14e38" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;boost::thread::id,<sp/>size_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a778bf7884b2296561ffc1fc5a5f14e38" kindref="member">t_IdNumberMap</ref>;</highlight></codeline>
+<codeline lineno="20" refid="namespacextd_1_1network_1_1utils_1aa6bd02256b6023347de116a773dd9500" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;boost::thread::id,<sp/>size_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1aa6bd02256b6023347de116a773dd9500" kindref="member">t_IdNumberPair</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>definition<sp/>of<sp/>socket<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::asio::local::stream_protocol<sp/><ref refid="namespacextd_1_1network_1_1utils_1a60e83921a2d026f07b49fa094988acdf" kindref="member">af_unix</ref>;</highlight></codeline>
+<codeline lineno="24" refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::asio::ip::tcp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">af_inet</ref>;</highlight></codeline>
+<codeline lineno="25" refid="namespacextd_1_1network_1_1utils_1a0bdb4094852a77df867e219999175200" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a0bdb4094852a77df867e219999175200" kindref="member">requestId_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>containers<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;char&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">vectorBytes_t</ref>;</highlight></codeline>
+<codeline lineno="29" refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;uint32_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a2b135df55039cd8024b40ef3e1817681" kindref="member">vectorUint32_t</ref>;</highlight></codeline>
+<codeline lineno="30" refid="namespacextd_1_1network_1_1utils_1ac3ca189267ad1167fa141608f8b3a2de" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::deque&lt;requestId_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1ac3ca189267ad1167fa141608f8b3a2de" kindref="member">dequeId_t</ref>;</highlight></codeline>
+<codeline lineno="31" refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;vectorBytes_t&gt;<sp/><sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">sharedBuf_t</ref>;</highlight></codeline>
+<codeline lineno="32" refid="namespacextd_1_1network_1_1utils_1af5b287652a0fd8fca54642f8d3ca07fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;vectorUint32_t&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1af5b287652a0fd8fca54642f8d3ca07fa" kindref="member">sharedHeader_t</ref>;</highlight></codeline>
+<codeline lineno="33" refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void(const<sp/>boost::system::error_code)&gt;<sp/><ref refid="namespacextd_1_1network_1_1utils_1ac8a6f796cd645f83cde023d163665bb5" kindref="member">handler_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_COMMTYPEDEFS_HH_</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/network/src/utils/CommTypeDefs.hh"/>
+  </compounddef>
+</doxygen>

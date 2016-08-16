@@ -1,0 +1,339 @@
+\hypertarget{classxtd_1_1network_1_1base_1_1Connection}{}\section{xtd\+:\+:network\+:\+:base\+:\+:Connection$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1base_1_1Connection}\index{xtd\+::network\+::base\+::\+Connection$<$ Domain $>$@{xtd\+::network\+::base\+::\+Connection$<$ Domain $>$}}
+
+
+Base class from which all connections should derive.  
+
+
+
+
+{\ttfamily \#include $<$Client.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:base\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classxtd_1_1network_1_1base_1_1Connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:base\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1base_1_1Connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{Connection}$<$ Domain $>$ $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a10f05cd689d67b012768c79486c6df47}{cnx\+\_\+sptr\+\_\+t}
+\begin{DoxyCompactList}\small\item\em shared\+\_\+ptr sur this \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a51f309c311421eb6a378354914816fac}{$\sim$\+Connection} (void)
+\begin{DoxyCompactList}\small\item\em descruteur \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_ad5e705dc3bc5dd4e020c8caf450aab80}{set\+Process\+ID} (uint32\+\_\+t p\+\_\+proces\+ID)
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a5cc120a87112e3923ffc01b341ace70b}{get\+Process\+ID} (void) const 
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_af8da803db4caa1f125548508cf3db134}{accept} (boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::basic\+\_\+socket\+\_\+acceptor$<$ Domain $>$ $>$ p\+\_\+acceptor, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Accepted)
+\begin{DoxyCompactList}\small\item\em ouverture aynchrone de socket (server only) \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a408b83f0e43d18e32f31d6c13d6dcdf3}{connect} (boost\+::shared\+\_\+ptr$<$ \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver}{utils\+::\+Resolver}$<$ Domain $>$ $>$ p\+\_\+resolver, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Connected)
+\begin{DoxyCompactList}\small\item\em connexion aynchrone de socket (client only) \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a8ebc5958cf7d27a902bd75a55c4648bf}{send} (const \hyperlink{namespacextd_1_1network_1_1utils_a9fedf0d18549b8034e9ae347955e9a9a}{utils\+::vector\+Bytes\+\_\+t} \&p\+\_\+out\+Data, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Sent)
+\begin{DoxyCompactList}\small\item\em envoi asynchrone d\textquotesingle{}un message sur la socket \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a09146c9c2dbf1ad85867fd0afab15c0c}{receive} (\hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{utils\+::shared\+Buf\+\_\+t} p\+\_\+in\+Data, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Received)
+\begin{DoxyCompactList}\small\item\em reception asynchrone d\textquotesingle{}un message de la socket \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a73097d339a3716c05fee7ee19753ee4a}{close} (void)
+\begin{DoxyCompactList}\small\item\em fermeture de la socket et annule ses operations de lecture ecriture \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a0bde1ab3f89862d0680c820645b7244d}{cancel} (void)
+\begin{DoxyCompactList}\small\item\em annule toutes les operations asynchrones en cours de la socket \end{DoxyCompactList}\item 
+const string \& \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a6f249c285df79485b06f9c7b6ed03237}{info} (void) const 
+\begin{DoxyCompactList}\small\item\em information de connexion (pour les logs) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1base_1_1Connection_ac1ed59726de3423a3fc2e21e50d04542}{Connection} (const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a650bc7e13969ff9195c95307e0abb2e4}{async\+\_\+write} (\hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{utils\+::shared\+Buf\+\_\+t} p\+\_\+out\+Data, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Sent)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Connection_ab468f8470260b0ce42b5accf29c352e6}{async\+\_\+read} (\hyperlink{namespacextd_1_1network_1_1utils_a92b366b7e2a1ab09ac4f4a0401f8fb84}{utils\+::shared\+Buf\+\_\+t} p\+\_\+in\+Data\+Data, \hyperlink{namespacextd_1_1network_1_1utils_ac8a6f796cd645f83cde023d163665bb5}{utils\+::handler\+\_\+t} p\+\_\+on\+Received)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a84f0cc65067a6d89a087754ad658f00b}{m\+\_\+conf}
+\item 
+boost\+::asio\+::io\+\_\+service \& \hyperlink{classxtd_1_1network_1_1base_1_1Connection_aee549e0f84206cc897371ec3ba2cba49}{m\+\_\+io\+Service}
+\item 
+boost\+::asio\+::strand \hyperlink{classxtd_1_1network_1_1base_1_1Connection_afdbd7eaed6dc0b71b05a6ef3be2f417d}{m\+\_\+strand}
+\item 
+boost\+::asio\+::basic\+\_\+stream\+\_\+socket$<$ Domain $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Connection_af054fe7efb3d4f8a1a0f40c0e74e8c70}{m\+\_\+socket}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain$>$\\*
+class xtd\+::network\+::base\+::\+Connection$<$ Domain $>$}
+
+Base class from which all connections should derive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Domain} & type de connexion \hyperlink{namespacextd_1_1network_1_1utils_a6238bab7a616eda8c9424721444a18d1}{utils\+::af\+\_\+inet} ou \hyperlink{namespacextd_1_1network_1_1utils_a60e83921a2d026f07b49fa094988acdf}{utils\+::af\+\_\+unix}\\
+\hline
+\end{DoxyParams}
+Le premier rôle de cet objet est de mutualiser le pilotage de la socket par le client et le serveur.
+
+Est à la charge de cet objet \+:
+\begin{DoxyItemize}
+\item définir les primitives asynchrones de base connect, accept, send, receive et close
+\item gérer tous les contrôles d\textquotesingle{}erreur
+\item gérer les timeouts
+\end{DoxyItemize}
+
+La gestion des d\textquotesingle{}erreur et des timeouts se fait en cascadant une callback locale entre le déclanchement de la callback asynchrone par le boost\+::asio\+::io\+\_\+service et la callback du client/server
+
+Pour permettre l\textquotesingle{}implementation de tout types de prototole, cet objet n\textquotesingle{}écrit, ni ne lit directement sur la socket. Il délègue cettte tâche aux méthodes virtuelles pures \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a650bc7e13969ff9195c95307e0abb2e4}{async\+\_\+write} et \hyperlink{classxtd_1_1network_1_1base_1_1Connection_ab468f8470260b0ce42b5accf29c352e6}{async\+\_\+read}.
+
+Ces méthodes qui implémentées dans une classe fille pour chacun des protocoles. C\textquotesingle{}est typiquement là que l\textquotesingle{}on codera la création d\textquotesingle{}un header de taille fixe (ou à délimiteur fixe) qui contiendra la taille du message à lire (partie data)
+
+
+\begin{DoxyItemize}
+\item Thread safety \+:
+\begin{DoxyItemize}
+\item plusieurs instances \+: oui
+\item meme instance \+: non
+\end{DoxyItemize}
+\item Constructeur protegé, n\textquotesingle{}a pas de sens d\textquotesingle{}utiliser cette classe telle quelle à cause des virtuelles pures
+\item Bien que les primitives accept et connect ne soient pas utilisée à la fois dans le client et le server, leur implémentation a été déportée dans cet objet pour deux raisons \+:
+\begin{DoxyItemize}
+\item pour garantir la mise sur le strand
+\item garantir l\textquotesingle{}initialisation correct des informations de socket (appel à set\+Socket\+Info qu\textquotesingle{}il faut effectuer seulement après ouverture effective de la socket) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line 26 of file Client.\+hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!cnx\+\_\+sptr\+\_\+t@{cnx\+\_\+sptr\+\_\+t}}
+\index{cnx\+\_\+sptr\+\_\+t@{cnx\+\_\+sptr\+\_\+t}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{cnx\+\_\+sptr\+\_\+t}{cnx_sptr_t}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ typedef boost\+::shared\+\_\+ptr$<${\bf Connection}$<$Domain$>$ $>$ {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::{\bf cnx\+\_\+sptr\+\_\+t}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a10f05cd689d67b012768c79486c6df47}{}\label{classxtd_1_1network_1_1base_1_1Connection_a10f05cd689d67b012768c79486c6df47}
+
+
+shared\+\_\+ptr sur this 
+
+
+
+Definition at line 62 of file Connection.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{Connection(const utils\+::\+Config \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)}{Connection(const utils::Config &p_configuration, boost::asio::io_service &p_ioService, const string p_hostname, const uint32_t p_port)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::{\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+configuration, }
+\item[{boost\+::asio\+::io\+\_\+service \&}]{p\+\_\+io\+Service, }
+\item[{const string}]{p\+\_\+hostname, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_ac1ed59726de3423a3fc2e21e50d04542}{}\label{classxtd_1_1network_1_1base_1_1Connection_ac1ed59726de3423a3fc2e21e50d04542}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!````~Connection@{$\sim$\+Connection}}
+\index{````~Connection@{$\sim$\+Connection}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{$\sim$\+Connection(void)}{~Connection(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::$\sim${\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a51f309c311421eb6a378354914816fac}{}\label{classxtd_1_1network_1_1base_1_1Connection_a51f309c311421eb6a378354914816fac}
+
+
+descruteur 
+
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1http_1_1Connection_a23b8ae18927be28e3c778b1a1b23eb60}{xtd\+::network\+::http\+::\+Connection$<$ Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!accept@{accept}}
+\index{accept@{accept}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{accept(boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::basic\+\_\+socket\+\_\+acceptor$<$ Domain $>$ $>$ p\+\_\+acceptor, utils\+::handler\+\_\+t p\+\_\+on\+Accepted)}{accept(boost::shared_ptr< boost::asio::basic_socket_acceptor< Domain > > p_acceptor, utils::handler_t p_onAccepted)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::accept (
+\begin{DoxyParamCaption}
+\item[{boost\+::shared\+\_\+ptr$<$ boost\+::asio\+::basic\+\_\+socket\+\_\+acceptor$<$ Domain $>$ $>$}]{p\+\_\+acceptor, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Accepted}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_af8da803db4caa1f125548508cf3db134}{}\label{classxtd_1_1network_1_1base_1_1Connection_af8da803db4caa1f125548508cf3db134}
+
+
+ouverture aynchrone de socket (server only) 
+
+Appel a p\+\_\+on\+Accepted lorsque l\textquotesingle{}appel aura ete execute (qu\textquotesingle{}il y ait erreur ou non)
+
+L\textquotesingle{}acceptor est passe en parametre car c\textquotesingle{}est chez lui qu\textquotesingle{}il faut enregistré l\textquotesingle{}évenement. \index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!async\+\_\+read@{async\+\_\+read}}
+\index{async\+\_\+read@{async\+\_\+read}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{async\+\_\+read(utils\+::shared\+Buf\+\_\+t p\+\_\+in\+Data\+Data, utils\+::handler\+\_\+t p\+\_\+on\+Received)=0}{async_read(utils::sharedBuf_t p_inDataData, utils::handler_t p_onReceived)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::async\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\+::shared\+Buf\+\_\+t}}]{p\+\_\+in\+Data\+Data, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Received}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_ab468f8470260b0ce42b5accf29c352e6}{}\label{classxtd_1_1network_1_1base_1_1Connection_ab468f8470260b0ce42b5accf29c352e6}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!async\+\_\+write@{async\+\_\+write}}
+\index{async\+\_\+write@{async\+\_\+write}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{async\+\_\+write(utils\+::shared\+Buf\+\_\+t p\+\_\+out\+Data, utils\+::handler\+\_\+t p\+\_\+on\+Sent)=0}{async_write(utils::sharedBuf_t p_outData, utils::handler_t p_onSent)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::async\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\+::shared\+Buf\+\_\+t}}]{p\+\_\+out\+Data, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Sent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a650bc7e13969ff9195c95307e0abb2e4}{}\label{classxtd_1_1network_1_1base_1_1Connection_a650bc7e13969ff9195c95307e0abb2e4}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!cancel@{cancel}}
+\index{cancel@{cancel}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{cancel(void)}{cancel(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::cancel (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a0bde1ab3f89862d0680c820645b7244d}{}\label{classxtd_1_1network_1_1base_1_1Connection_a0bde1ab3f89862d0680c820645b7244d}
+
+
+annule toutes les operations asynchrones en cours de la socket 
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!close@{close}}
+\index{close@{close}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{close(void)}{close(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a73097d339a3716c05fee7ee19753ee4a}{}\label{classxtd_1_1network_1_1base_1_1Connection_a73097d339a3716c05fee7ee19753ee4a}
+
+
+fermeture de la socket et annule ses operations de lecture ecriture 
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!connect@{connect}}
+\index{connect@{connect}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{connect(boost\+::shared\+\_\+ptr$<$ utils\+::\+Resolver$<$ Domain $>$ $>$ p\+\_\+resolver, utils\+::handler\+\_\+t p\+\_\+on\+Connected)}{connect(boost::shared_ptr< utils::Resolver< Domain > > p_resolver, utils::handler_t p_onConnected)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::connect (
+\begin{DoxyParamCaption}
+\item[{boost\+::shared\+\_\+ptr$<$ {\bf utils\+::\+Resolver}$<$ Domain $>$ $>$}]{p\+\_\+resolver, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Connected}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a408b83f0e43d18e32f31d6c13d6dcdf3}{}\label{classxtd_1_1network_1_1base_1_1Connection_a408b83f0e43d18e32f31d6c13d6dcdf3}
+
+
+connexion aynchrone de socket (client only) 
+
+Appel a p\+\_\+on\+Connected lorsque l\textquotesingle{}appel aura ete execute (qu\textquotesingle{}il y ait erreur ou non) \index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!get\+Process\+ID@{get\+Process\+ID}}
+\index{get\+Process\+ID@{get\+Process\+ID}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{get\+Process\+I\+D(void) const }{getProcessID(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ uint32\+\_\+t {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::get\+Process\+ID (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a5cc120a87112e3923ffc01b341ace70b}{}\label{classxtd_1_1network_1_1base_1_1Connection_a5cc120a87112e3923ffc01b341ace70b}
+
+
+Definition at line 226 of file Connection.\+hh.
+
+
+\begin{DoxyCode}
+227 \{
+228   \textcolor{keywordflow}{return} m\_processID;
+229 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!info@{info}}
+\index{info@{info}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{info(void) const }{info(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ const string\& {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::info (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a6f249c285df79485b06f9c7b6ed03237}{}\label{classxtd_1_1network_1_1base_1_1Connection_a6f249c285df79485b06f9c7b6ed03237}
+
+
+information de connexion (pour les logs) 
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!receive@{receive}}
+\index{receive@{receive}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{receive(utils\+::shared\+Buf\+\_\+t p\+\_\+in\+Data, utils\+::handler\+\_\+t p\+\_\+on\+Received)}{receive(utils::sharedBuf_t p_inData, utils::handler_t p_onReceived)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\+::shared\+Buf\+\_\+t}}]{p\+\_\+in\+Data, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Received}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a09146c9c2dbf1ad85867fd0afab15c0c}{}\label{classxtd_1_1network_1_1base_1_1Connection_a09146c9c2dbf1ad85867fd0afab15c0c}
+
+
+reception asynchrone d\textquotesingle{}un message de la socket 
+
+Appel a p\+\_\+on\+Received lorsque l\textquotesingle{}appel aura ete execute (qu\textquotesingle{}il y ait erreur ou non) \index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!send@{send}}
+\index{send@{send}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{send(const utils\+::vector\+Bytes\+\_\+t \&p\+\_\+out\+Data, utils\+::handler\+\_\+t p\+\_\+on\+Sent)}{send(const utils::vectorBytes_t &p_outData, utils::handler_t p_onSent)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::send (
+\begin{DoxyParamCaption}
+\item[{const {\bf utils\+::vector\+Bytes\+\_\+t} \&}]{p\+\_\+out\+Data, }
+\item[{{\bf utils\+::handler\+\_\+t}}]{p\+\_\+on\+Sent}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a8ebc5958cf7d27a902bd75a55c4648bf}{}\label{classxtd_1_1network_1_1base_1_1Connection_a8ebc5958cf7d27a902bd75a55c4648bf}
+
+
+envoi asynchrone d\textquotesingle{}un message sur la socket 
+
+Appel a p\+\_\+on\+Sent lorsque l\textquotesingle{}appel aura ete execute (qu\textquotesingle{}il y ait erreur ou non) \index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!set\+Process\+ID@{set\+Process\+ID}}
+\index{set\+Process\+ID@{set\+Process\+ID}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{set\+Process\+I\+D(uint32\+\_\+t p\+\_\+proces\+I\+D)}{setProcessID(uint32_t p_procesID)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::set\+Process\+ID (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{p\+\_\+proces\+ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_ad5e705dc3bc5dd4e020c8caf450aab80}{}\label{classxtd_1_1network_1_1base_1_1Connection_ad5e705dc3bc5dd4e020c8caf450aab80}
+
+
+Definition at line 219 of file Connection.\+hh.
+
+
+\begin{DoxyCode}
+220 \{
+221   m\_processID = p\_processID;
+222 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!m\+\_\+conf@{m\+\_\+conf}}
+\index{m\+\_\+conf@{m\+\_\+conf}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{m\+\_\+conf}{m_conf}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf utils\+::\+Config} {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::m\+\_\+conf\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_a84f0cc65067a6d89a087754ad658f00b}{}\label{classxtd_1_1network_1_1base_1_1Connection_a84f0cc65067a6d89a087754ad658f00b}
+
+
+Definition at line 200 of file Connection.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!m\+\_\+io\+Service@{m\+\_\+io\+Service}}
+\index{m\+\_\+io\+Service@{m\+\_\+io\+Service}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{m\+\_\+io\+Service}{m_ioService}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ boost\+::asio\+::io\+\_\+service\& {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::m\+\_\+io\+Service\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_aee549e0f84206cc897371ec3ba2cba49}{}\label{classxtd_1_1network_1_1base_1_1Connection_aee549e0f84206cc897371ec3ba2cba49}
+
+
+Definition at line 201 of file Connection.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!m\+\_\+socket@{m\+\_\+socket}}
+\index{m\+\_\+socket@{m\+\_\+socket}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{m\+\_\+socket}{m_socket}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ boost\+::asio\+::basic\+\_\+stream\+\_\+socket$<$Domain$>$ {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::m\+\_\+socket\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_af054fe7efb3d4f8a1a0f40c0e74e8c70}{}\label{classxtd_1_1network_1_1base_1_1Connection_af054fe7efb3d4f8a1a0f40c0e74e8c70}
+
+
+Definition at line 203 of file Connection.\+hh.
+
+\index{xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}!m\+\_\+strand@{m\+\_\+strand}}
+\index{m\+\_\+strand@{m\+\_\+strand}!xtd\+::network\+::base\+::\+Connection@{xtd\+::network\+::base\+::\+Connection}}
+\subsubsection[{\texorpdfstring{m\+\_\+strand}{m_strand}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ boost\+::asio\+::strand {\bf xtd\+::network\+::base\+::\+Connection}$<$ Domain $>$\+::m\+\_\+strand\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classxtd_1_1network_1_1base_1_1Connection_afdbd7eaed6dc0b71b05a6ef3be2f417d}{}\label{classxtd_1_1network_1_1base_1_1Connection_afdbd7eaed6dc0b71b05a6ef3be2f417d}
+
+
+Definition at line 202 of file Connection.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/base/\hyperlink{base_2Client_8hh}{Client.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/base/\hyperlink{base_2Connection_8hh}{Connection.\+hh}\end{DoxyCompactItemize}

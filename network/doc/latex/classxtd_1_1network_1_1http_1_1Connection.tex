@@ -1,0 +1,123 @@
+\hypertarget{classxtd_1_1network_1_1http_1_1Connection}{}\section{xtd\+:\+:network\+:\+:http\+:\+:Connection$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1http_1_1Connection}\index{xtd\+::network\+::http\+::\+Connection$<$ Domain $>$@{xtd\+::network\+::http\+::\+Connection$<$ Domain $>$}}
+
+
+{\ttfamily \#include $<$Connection.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:network\+:\+:http\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classxtd_1_1network_1_1http_1_1Connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:network\+:\+:http\+:\+:Connection$<$ Domain $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1network_1_1http_1_1Connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1http_1_1Connection_ae327f3b673c40a8481aa7e39c1bc09a4}{Connection} (const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\+::\+Config} \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1http_1_1Connection_a23b8ae18927be28e3c778b1a1b23eb60}{$\sim$\+Connection} (void)
+\begin{DoxyCompactList}\small\item\em descruteur \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Connection_a6bc2b4d2ca1c399b2cce22e14b52d9c4}{clear} (void)
+\item 
+void \hyperlink{classxtd_1_1network_1_1http_1_1Connection_a7ba68b95f6a467599c0daa93960f5821}{set\+Closed\+By\+Server} (bool p\+\_\+status)
+\item 
+bool \hyperlink{classxtd_1_1network_1_1http_1_1Connection_abc2998698af66ef08e5750f43e45b00f}{get\+Closed\+By\+Server} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain$>$\\*
+class xtd\+::network\+::http\+::\+Connection$<$ Domain $>$}
+
+Le protocol http implémenté ici gère les version 1.\+0 et une sous-\/partie de la version 1.\+1 des spécifications données par le W3C. \subsubsection*{Format}
+
+Un message H\+T\+TP est composé de deux parties \+:
+\begin{DoxyItemize}
+\item un header \+: une suite de caractère ascii de taille variable terminant par une ligne vide (donc identifiable par la séquence d\textquotesingle{}octets \char`\"{}\+C\+R-\/\+L\+F-\/\+C\+R-\/\+L\+R\char`\"{})
+\item une data \+: une suite de caractère ascii de taille variable, optionnelle et potentiellement encodée dans différents formats
+\end{DoxyItemize}
+
+Sans rentrer dans le détail du format du header, ce qui nous intéresse ici c\textquotesingle{}est que, lorsqu\textquotesingle{}une data est envoyée, il contient une directive {\bfseries Content-\/\+Length} qui renseigne sur la taille en octet de la data.
+
+A la réception, on lit des données par petits bouts jusqu\textquotesingle{}à trouver la fin du header (ligne vide), on extrait ensuite la taille de la donnée et, si elle présente et est non-\/nulle, on se met à lire jusqu\textquotesingle{}à avoir suffisamment d\textquotesingle{}octets.
+
+Pour des raisons pratique, le parsing du header et la récupération de la taille de la data est déléguée à l\textquotesingle{}objet \hyperlink{classxtd_1_1network_1_1http_1_1Request}{xtd\+::network\+::http\+::\+Request}
+
+\subsubsection*{Séquence de dialogue }
+
+ 
+
+Definition at line 38 of file Connection.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}}
+\subsubsection[{\texorpdfstring{Connection(const utils\+::\+Config \&p\+\_\+configuration, boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, const string p\+\_\+hostname, const uint32\+\_\+t p\+\_\+port)}{Connection(const utils::Config &p_configuration, boost::asio::io_service &p_ioService, const string p_hostname, const uint32_t p_port)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ {\bf xtd\+::network\+::http\+::\+Connection}$<$ Domain $>$\+::{\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{const {\bf utils\+::\+Config} \&}]{p\+\_\+configuration, }
+\item[{boost\+::asio\+::io\+\_\+service \&}]{p\+\_\+io\+Service, }
+\item[{const string}]{p\+\_\+hostname, }
+\item[{const uint32\+\_\+t}]{p\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classxtd_1_1network_1_1http_1_1Connection_ae327f3b673c40a8481aa7e39c1bc09a4}{}\label{classxtd_1_1network_1_1http_1_1Connection_ae327f3b673c40a8481aa7e39c1bc09a4}
+\index{xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}!````~Connection@{$\sim$\+Connection}}
+\index{````~Connection@{$\sim$\+Connection}!xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}}
+\subsubsection[{\texorpdfstring{$\sim$\+Connection(void)}{~Connection(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ virtual {\bf xtd\+::network\+::http\+::\+Connection}$<$ Domain $>$\+::$\sim${\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classxtd_1_1network_1_1http_1_1Connection_a23b8ae18927be28e3c778b1a1b23eb60}{}\label{classxtd_1_1network_1_1http_1_1Connection_a23b8ae18927be28e3c778b1a1b23eb60}
+
+
+descruteur 
+
+
+
+Reimplemented from \hyperlink{classxtd_1_1network_1_1base_1_1Connection_a51f309c311421eb6a378354914816fac}{xtd\+::network\+::base\+::\+Connection$<$ Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}!clear@{clear}}
+\index{clear@{clear}!xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}}
+\subsubsection[{\texorpdfstring{clear(void)}{clear(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::http\+::\+Connection}$<$ Domain $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Connection_a6bc2b4d2ca1c399b2cce22e14b52d9c4}{}\label{classxtd_1_1network_1_1http_1_1Connection_a6bc2b4d2ca1c399b2cce22e14b52d9c4}
+\index{xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}!get\+Closed\+By\+Server@{get\+Closed\+By\+Server}}
+\index{get\+Closed\+By\+Server@{get\+Closed\+By\+Server}!xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}}
+\subsubsection[{\texorpdfstring{get\+Closed\+By\+Server(void) const }{getClosedByServer(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ bool {\bf xtd\+::network\+::http\+::\+Connection}$<$ Domain $>$\+::get\+Closed\+By\+Server (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1network_1_1http_1_1Connection_abc2998698af66ef08e5750f43e45b00f}{}\label{classxtd_1_1network_1_1http_1_1Connection_abc2998698af66ef08e5750f43e45b00f}
+\index{xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}!set\+Closed\+By\+Server@{set\+Closed\+By\+Server}}
+\index{set\+Closed\+By\+Server@{set\+Closed\+By\+Server}!xtd\+::network\+::http\+::\+Connection@{xtd\+::network\+::http\+::\+Connection}}
+\subsubsection[{\texorpdfstring{set\+Closed\+By\+Server(bool p\+\_\+status)}{setClosedByServer(bool p_status)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain $>$ void {\bf xtd\+::network\+::http\+::\+Connection}$<$ Domain $>$\+::set\+Closed\+By\+Server (
+\begin{DoxyParamCaption}
+\item[{bool}]{p\+\_\+status}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1http_1_1Connection_a7ba68b95f6a467599c0daa93960f5821}{}\label{classxtd_1_1network_1_1http_1_1Connection_a7ba68b95f6a467599c0daa93960f5821}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/http/\hyperlink{http_2Connection_8hh}{Connection.\+hh}\end{DoxyCompactItemize}

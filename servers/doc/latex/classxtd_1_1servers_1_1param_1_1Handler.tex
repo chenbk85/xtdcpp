@@ -1,0 +1,725 @@
+\hypertarget{classxtd_1_1servers_1_1param_1_1Handler}{}\section{xtd\+:\+:servers\+:\+:param\+:\+:Handler Class Reference}
+\label{classxtd_1_1servers_1_1param_1_1Handler}\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+
+
+Param handler class.  
+
+
+
+
+{\ttfamily \#include $<$Handler.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a93996915b562641b4673381c9abfae7b}{Handler} (const string \&p\+\_\+action\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\t\+\_\+param\+\_\+sptr \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017}{add} (const string \&p\+\_\+name, const T \&p\+\_\+val, bool p\+\_\+sync\+Disk=true)
+\begin{DoxyCompactList}\small\item\em Add a new parameter to the \hyperlink{classxtd_1_1servers_1_1param_1_1Handler}{Handler}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\t\+\_\+param\+\_\+sptr \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a3bc858ae5bb7b6ce1f4d0a5eb327d17f}{bind} (const string \&p\+\_\+name, T \&p\+\_\+val, bool p\+\_\+sync\+Disk=true)
+\item 
+t\+\_\+param\+\_\+sptr \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a72a575bef0683ae6197c9f34cdf31d8f}{add} (const string \&p\+\_\+name, t\+\_\+param\+\_\+sptr p\+\_\+param, bool p\+\_\+sync\+Disk=true)
+\begin{DoxyCompactList}\small\item\em Add a new parameter to the \hyperlink{classxtd_1_1servers_1_1param_1_1Handler}{Handler}. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a0fcbef276a961d96584354588fc3bfcf}{exists} (const string \&p\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Existency checking. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a9533d788448e6bfdaf1c0f439a9f7b05}{initialize} (void)
+\begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
+void \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_aba6e8d983f28617b3168b60cf6464926}{accept} (\hyperlink{classxtd_1_1servers_1_1param_1_1Visitor}{Visitor} \&p\+\_\+visitor) const 
+\begin{DoxyCompactList}\small\item\em Add parameters to the Json visitor. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_aa2b60f898a67bd55c4289686591a2f3b}{verify} (const string \&p\+\_\+name, const string \&p\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Function to verify if given string value can be setted on parameter. \end{DoxyCompactList}\item 
+bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_ab3a53b8db70cf25c3e1de6425d876c37}{from\+Str} (const string \&p\+\_\+name, const string \&p\+\_\+src, const string \&p\+\_\+log)
+\begin{DoxyCompactList}\small\item\em Retreive parameter value from a string. \end{DoxyCompactList}\item 
+t\+\_\+params\+::iterator \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find} (const string \&p\+\_\+name)
+\begin{DoxyCompactList}\small\item\em return an iterator on a find call on map \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a0f767078fd33fec21e1677d0a0195d8e}{get} (const string \&p\+\_\+name, T \&p\+\_\+dst)
+\begin{DoxyCompactList}\small\item\em Get the current value of a parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_af8dbec0f2d639d39fb11605609462dee}{set} (const string \&p\+\_\+name, const T \&p\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Set a parameter value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a3e71b80a00c962a862c1d3cc4d623c05}{listen} (const string \&p\+\_\+name, T p\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em Specify the setter to modify the parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a20d689629d4748c14e4a516580a7c55a}{constraint} (const string \&p\+\_\+name, T p\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em Add a specific constraint to match while trying to modify a parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Param handler class. 
+
+Store declared parameter in an internal map throw add method Provide get and set methods to modify already declared parameters 
+
+Definition at line 25 of file Handler.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!Handler@{Handler}}
+\index{Handler@{Handler}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{Handler(const string \&p\+\_\+action\+Path)}{Handler(const string &p_actionPath)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::servers\+::param\+::\+Handler\+::\+Handler (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+action\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a93996915b562641b4673381c9abfae7b}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a93996915b562641b4673381c9abfae7b}
+
+
+Constructor. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+action\+Path} & the action path where to store persistent parameters (i.\+e. files containing values) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+26                                            :
+27   m\_actionPath(p\_actionPath),
+28   m\_params()
+29 \{
+30   \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == is\_directory(m\_actionPath))
+31   \{
+32     logger::info(\textcolor{stringliteral}{"servers.param.handler"}, \textcolor{stringliteral}{"action directory '%s' does not exist, trying to create it"}, 
+      m\_actionPath, HERE);
+33     \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == create\_directories(m\_actionPath))
+34     \{
+35       \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == is\_directory(m\_actionPath))
+36         error::do\_throw(\textcolor{stringliteral}{"servers.param.handler"}, \textcolor{stringliteral}{"failed to create action directory '%s', exit now!"}, 
+      m\_actionPath, HERE);
+37     \}
+38     \textcolor{keywordflow}{else}
+39     \{
+40       logger::info(\textcolor{stringliteral}{"servers.param.handler"}, \textcolor{stringliteral}{"action directory '%s' created"}, m\_actionPath, HERE);
+41     \}
+42   \}
+43 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!accept@{accept}}
+\index{accept@{accept}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{accept(\+Visitor \&p\+\_\+visitor) const }{accept(Visitor &p_visitor) const }}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::servers\+::param\+::\+Handler\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{p\+\_\+visitor}
+\end{DoxyParamCaption}
+) const}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_aba6e8d983f28617b3168b60cf6464926}{}\label{classxtd_1_1servers_1_1param_1_1Handler_aba6e8d983f28617b3168b60cf6464926}
+
+
+Add parameters to the Json visitor. 
+
+call accept on each parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+visitor} & the right visitor \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+120 \{
+121   BOOST\_FOREACH(\textcolor{keyword}{const} t\_params::value\_type& c\_param, m\_params)
+122     c\_param.second->\hyperlink{classxtd_1_1servers_1_1param_1_1Handler_aba6e8d983f28617b3168b60cf6464926}{accept}(p\_visitor);
+123 \}
+\end{DoxyCode}
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!add@{add}}
+\index{add@{add}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{add(const string \&p\+\_\+name, const T \&p\+\_\+val, bool p\+\_\+sync\+Disk=true)}{add(const string &p_name, const T &p_val, bool p_syncDisk=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Handler\+::t\+\_\+param\+\_\+sptr xtd\+::servers\+::param\+::\+Handler\+::add (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const T \&}]{p\+\_\+val, }
+\item[{bool}]{p\+\_\+sync\+Disk = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017}
+
+
+Add a new parameter to the \hyperlink{classxtd_1_1servers_1_1param_1_1Handler}{Handler}. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the key name for the parameter \\
+\hline
+{\em p\+\_\+val} & the the variable to register \\
+\hline
+{\em p\+\_\+sync\+Disk} & the persistence parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared ptr to the base param object 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+185 \{
+186   t\_param\_sptr l\_param(\textcolor{keyword}{new} POD<T>(p\_val, p\_name));
+187   \textcolor{keywordflow}{return} \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017}{add}(p\_name, l\_param, p\_syncDisk);
+188 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!add@{add}}
+\index{add@{add}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{add(const string \&p\+\_\+name, t\+\_\+param\+\_\+sptr p\+\_\+param, bool p\+\_\+sync\+Disk=true)}{add(const string &p_name, t_param_sptr p_param, bool p_syncDisk=true)}}]{\setlength{\rightskip}{0pt plus 5cm}Handler\+::t\+\_\+param\+\_\+sptr xtd\+::servers\+::param\+::\+Handler\+::add (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{t\+\_\+param\+\_\+sptr}]{p\+\_\+param, }
+\item[{bool}]{p\+\_\+sync\+Disk = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a72a575bef0683ae6197c9f34cdf31d8f}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a72a575bef0683ae6197c9f34cdf31d8f}
+
+
+Add a new parameter to the \hyperlink{classxtd_1_1servers_1_1param_1_1Handler}{Handler}. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the key name for the parameter \\
+\hline
+{\em p\+\_\+param} & a shared ptr to an already existing parameter to register \\
+\hline
+{\em p\+\_\+sync\+Disk} & the persistence parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared ptr to the base param object 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+127 \{
+128   \textcolor{keywordtype}{string} l\_lowerName = p\_name;
+129   boost::algorithm::to\_lower(l\_lowerName);
+130 
+131   p\_param->setName(p\_name);
+132   p\_param->setSync(p\_syncDisk);
+133   p\_param->setActionPath(m\_actionPath);
+134   m\_params.insert(make\_pair(l\_lowerName, p\_param));
+135 
+136   \textcolor{keywordflow}{if} (p\_syncDisk)
+137     p\_param->listen(boost::bind(&Handler::sync, \textcolor{keyword}{this}, p\_name));
+138 
+139   \textcolor{keywordflow}{return} p\_param;
+140 \}
+\end{DoxyCode}
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!bind@{bind}}
+\index{bind@{bind}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{bind(const string \&p\+\_\+name, T \&p\+\_\+val, bool p\+\_\+sync\+Disk=true)}{bind(const string &p_name, T &p_val, bool p_syncDisk=true)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Handler\+::t\+\_\+param\+\_\+sptr xtd\+::servers\+::param\+::\+Handler\+::bind (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{T \&}]{p\+\_\+val, }
+\item[{bool}]{p\+\_\+sync\+Disk = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a3bc858ae5bb7b6ce1f4d0a5eb327d17f}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a3bc858ae5bb7b6ce1f4d0a5eb327d17f}
+
+
+Definition at line 194 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+195 \{
+196   Handler::t\_param\_sptr l\_param;
+197 
+198   l\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a53a10d8d422013e62363e0d28d4e9017}{add}(p\_name, p\_val, p\_syncDisk);
+199   l\_param->listen<T>(boost::bind(&Handler::setter<T>::apply, boost::ref(p\_val), \_2));
+200 
+201   \textcolor{keywordflow}{return} l\_param;
+202 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a3bc858ae5bb7b6ce1f4d0a5eb327d17f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!constraint@{constraint}}
+\index{constraint@{constraint}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{constraint(const string \&p\+\_\+name, T p\+\_\+handler)}{constraint(const string &p_name, T p_handler)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::servers\+::param\+::\+Handler\+::constraint (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{T}]{p\+\_\+handler}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a20d689629d4748c14e4a516580a7c55a}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a20d689629d4748c14e4a516580a7c55a}
+
+
+Add a specific constraint to match while trying to modify a parameter. 
+
+Each time a modification is requested, the constraint will be checked Many constraints can be added, they will be checked in declaration order Opposite constraints must be avoided
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name \\
+\hline
+{\em p\+\_\+handler} & the specific constraint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if add succeeds 
+\end{DoxyReturn}
+
+
+Definition at line 245 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+246 \{
+247   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+248 
+249   \textcolor{keywordflow}{if} (c\_param == m\_params.end())
+250     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+251 
+252   c\_param->second->constraint(p\_handler);
+253   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+254 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classxtd_1_1servers_1_1param_1_1Handler_a20d689629d4748c14e4a516580a7c55a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!exists@{exists}}
+\index{exists@{exists}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{exists(const string \&p\+\_\+name)}{exists(const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::servers\+::param\+::\+Handler\+::exists (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a0fcbef276a961d96584354588fc3bfcf}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a0fcbef276a961d96584354588fc3bfcf}
+
+
+Existency checking. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if already declared 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+90 \{
+91   \textcolor{keywordflow}{return} (\hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name) != m\_params.end());
+92 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a0fcbef276a961d96584354588fc3bfcf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!find@{find}}
+\index{find@{find}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{find(const string \&p\+\_\+name)}{find(const string &p_name)}}]{\setlength{\rightskip}{0pt plus 5cm}Handler\+::t\+\_\+params\+::iterator xtd\+::servers\+::param\+::\+Handler\+::find (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}
+
+
+return an iterator on a find call on map 
+
+make a find with lowercase on given name
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name to find in map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterator result of map search 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+144 \{
+145   \textcolor{keywordtype}{string} l\_lowerName = p\_name;
+146   boost::algorithm::to\_lower(l\_lowerName);
+147   \textcolor{keywordflow}{return} m\_params.find(l\_lowerName);
+148 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!from\+Str@{from\+Str}}
+\index{from\+Str@{from\+Str}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{from\+Str(const string \&p\+\_\+name, const string \&p\+\_\+src, const string \&p\+\_\+log)}{fromStr(const string &p_name, const string &p_src, const string &p_log)}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::servers\+::param\+::\+Handler\+::from\+Str (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const string \&}]{p\+\_\+src, }
+\item[{const string \&}]{p\+\_\+log}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_ab3a53b8db70cf25c3e1de6425d876c37}{}\label{classxtd_1_1servers_1_1param_1_1Handler_ab3a53b8db70cf25c3e1de6425d876c37}
+
+
+Retreive parameter value from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name \\
+\hline
+{\em p\+\_\+src} & the string value \\
+\hline
+{\em p\+\_\+log} & logging message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds
+\end{DoxyReturn}
+N/A 
+
+Definition at line 104 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+105 \{
+106   \textcolor{keywordtype}{bool} l\_ret = \textcolor{keyword}{false};
+107   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+108   \textcolor{keywordflow}{if} (c\_param != m\_params.end())
+109   \{
+110     \textcolor{keywordflow}{if}((l\_ret = c\_param->second->fromStr(p\_src)))
+111     \{
+112       c\_param->second->setLog(p\_log);
+113     \}
+114   \}
+115   \textcolor{keywordflow}{return} l\_ret;
+116 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_ab3a53b8db70cf25c3e1de6425d876c37_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!get@{get}}
+\index{get@{get}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{get(const string \&p\+\_\+name, T \&p\+\_\+dst)}{get(const string &p_name, T &p_dst)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::servers\+::param\+::\+Handler\+::get (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{T \&}]{p\+\_\+dst}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a0f767078fd33fec21e1677d0a0195d8e}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a0f767078fd33fec21e1677d0a0195d8e}
+
+
+Get the current value of a parameter. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name \\
+\hline
+{\em p\+\_\+dst} & the variable to store the content of the current value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+208 \{
+209   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+210 
+211   \textcolor{keywordflow}{if} (c\_param == m\_params.end())
+212     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+213   \textcolor{keywordflow}{return} c\_param->second->get(p\_dst);
+214 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a0f767078fd33fec21e1677d0a0195d8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!initialize@{initialize}}
+\index{initialize@{initialize}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{initialize(void)}{initialize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\+::servers\+::param\+::\+Handler\+::initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a9533d788448e6bfdaf1c0f439a9f7b05}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a9533d788448e6bfdaf1c0f439a9f7b05}
+
+
+Initialization. 
+
+N/A 
+
+Definition at line 47 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+48 \{
+49   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& c\_param : m\_params)
+50   \{
+51     \textcolor{comment}{// Only if parameter is synchronized}
+52     \textcolor{keywordflow}{if}(c\_param.second->getSync())
+53     \{
+54       bfs::path l\_path(m\_actionPath + \textcolor{stringliteral}{"/"} + c\_param.second->getName());
+55 
+56       \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == is\_regular\_file(l\_path))
+57       \{
+58         logger::info(\textcolor{stringliteral}{"servers.param.handler"}, \textcolor{stringliteral}{"can't find persistent file to initalize parameter '%s', path
+       = %s"}, c\_param.first, l\_path, HERE);
+59         c\_param.second->sync();
+60       \}
+61       \textcolor{keywordflow}{else}
+62       \{
+63         \textcolor{comment}{// Persistent file found, read value and initialize parameter}
+64         ifstream l\_file(l\_path.c\_str());
+65         \textcolor{keywordtype}{string}   l\_content;
+66 
+67         l\_content.assign(std::istreambuf\_iterator<char>(l\_file), std::istreambuf\_iterator<char>());
+68         l\_file.close();
+69         \textcolor{keywordflow}{if} (\textcolor{keyword}{false} == c\_param.second->fromStr(l\_content))
+70           logger::crit(\textcolor{stringliteral}{"servers.param.handler"}, \textcolor{stringliteral}{"unable to initialize param '%s' from value '%s'"}, c\_param.
+      first, l\_content, HERE);
+71       \}
+72     \}
+73   \}
+74 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a9533d788448e6bfdaf1c0f439a9f7b05_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!listen@{listen}}
+\index{listen@{listen}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{listen(const string \&p\+\_\+name, T p\+\_\+handler)}{listen(const string &p_name, T p_handler)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::servers\+::param\+::\+Handler\+::listen (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{T}]{p\+\_\+handler}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_a3e71b80a00c962a862c1d3cc4d623c05}{}\label{classxtd_1_1servers_1_1param_1_1Handler_a3e71b80a00c962a862c1d3cc4d623c05}
+
+
+Specify the setter to modify the parameter. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name \\
+\hline
+{\em p\+\_\+handler} & the modification handler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds (i.\+e. parameter exists) 
+\end{DoxyReturn}
+
+
+Definition at line 231 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+232 \{
+233   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+234 
+235   \textcolor{keywordflow}{if} (c\_param == m\_params.end())
+236     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+237 
+238   c\_param->second->listen(p\_handler);
+239   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+240 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_a3e71b80a00c962a862c1d3cc4d623c05_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!set@{set}}
+\index{set@{set}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{set(const string \&p\+\_\+name, const T \&p\+\_\+src)}{set(const string &p_name, const T &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool xtd\+::servers\+::param\+::\+Handler\+::set (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const T \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_af8dbec0f2d639d39fb11605609462dee}{}\label{classxtd_1_1servers_1_1param_1_1Handler_af8dbec0f2d639d39fb11605609462dee}
+
+
+Set a parameter value. 
+
+N/A
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & the parameter name \\
+\hline
+{\em p\+\_\+src} & the new value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds 
+\end{DoxyReturn}
+
+
+Definition at line 219 of file Handler.\+hh.
+
+
+\begin{DoxyCode}
+220 \{
+221   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+222 
+223   \textcolor{keywordflow}{if} (c\_param == m\_params.end())
+224     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+225   \textcolor{keywordflow}{return} c\_param->second->set(p\_src);
+226 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_af8dbec0f2d639d39fb11605609462dee_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}!verify@{verify}}
+\index{verify@{verify}!xtd\+::servers\+::param\+::\+Handler@{xtd\+::servers\+::param\+::\+Handler}}
+\subsubsection[{\texorpdfstring{verify(const string \&p\+\_\+name, const string \&p\+\_\+src)}{verify(const string &p_name, const string &p_src)}}]{\setlength{\rightskip}{0pt plus 5cm}bool xtd\+::servers\+::param\+::\+Handler\+::verify (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+name, }
+\item[{const string \&}]{p\+\_\+src}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1servers_1_1param_1_1Handler_aa2b60f898a67bd55c4289686591a2f3b}{}\label{classxtd_1_1servers_1_1param_1_1Handler_aa2b60f898a67bd55c4289686591a2f3b}
+
+
+Function to verify if given string value can be setted on parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+name} & parameter value \\
+\hline
+{\em p\+\_\+src} & the new value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value can be setted
+\end{DoxyReturn}
+N/A 
+
+Definition at line 95 of file Handler.\+cc.
+
+
+\begin{DoxyCode}
+96 \{
+97   t\_params::iterator c\_param = \hyperlink{classxtd_1_1servers_1_1param_1_1Handler_a66465c7a1ee0978f7558d55bfd8bd583}{find}(p\_name);
+98   \textcolor{keywordflow}{if} (c\_param == m\_params.end())
+99     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+100   \textcolor{keywordflow}{return} c\_param->second->verify(p\_src);
+101 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classxtd_1_1servers_1_1param_1_1Handler_aa2b60f898a67bd55c4289686591a2f3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/servers/src/param/\hyperlink{Handler_8hh}{Handler.\+hh}\item 
+/home/psyco/dev/xtdcpp/servers/src/param/\hyperlink{Handler_8cc}{Handler.\+cc}\end{DoxyCompactItemize}

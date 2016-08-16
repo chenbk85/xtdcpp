@@ -1,0 +1,163 @@
+\hypertarget{classxtd_1_1error}{}\section{xtd\+:\+:error Class Reference}
+\label{classxtd_1_1error}\index{xtd\+::error@{xtd\+::error}}
+
+
+{\ttfamily \#include $<$error.\+hh$>$}
+
+
+
+Inheritance diagram for xtd\+:\+:error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classxtd_1_1error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\+:\+:error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classxtd_1_1error__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1error_a4663571e50d7bcf512b353660b897a55}{error} (const string \&p\+\_\+message)
+\item 
+virtual \hyperlink{classxtd_1_1error_abeceaf42dfbad136014dc3921696e26f}{$\sim$error} (void)
+\item 
+virtual const char $\ast$ \hyperlink{classxtd_1_1error_a463ff8177561abd418c1f00aa2bcd154}{what} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Arguments$>$ }\\static void \hyperlink{classxtd_1_1error_a34fcbd60f169444fa6b9b410db6ddaaf}{do\+\_\+throw} (const string \&p\+\_\+module, const string \&p\+\_\+format, Arguments \&\&...p\+\_\+args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file error.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::error@{xtd\+::error}!error@{error}}
+\index{error@{error}!xtd\+::error@{xtd\+::error}}
+\subsubsection[{\texorpdfstring{error(const string \&p\+\_\+message)}{error(const string &p_message)}}]{\setlength{\rightskip}{0pt plus 5cm}xtd\+::error\+::error (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classxtd_1_1error_a4663571e50d7bcf512b353660b897a55}{}\label{classxtd_1_1error_a4663571e50d7bcf512b353660b897a55}
+
+
+Definition at line 19 of file error.\+hh.
+
+
+\begin{DoxyCode}
+19                                  :
+20     m\_message(p\_message)
+21   \{ \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1error_a4663571e50d7bcf512b353660b897a55_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::error@{xtd\+::error}!````~error@{$\sim$error}}
+\index{````~error@{$\sim$error}!xtd\+::error@{xtd\+::error}}
+\subsubsection[{\texorpdfstring{$\sim$error(void)}{~error(void)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual xtd\+::error\+::$\sim$error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1error_abeceaf42dfbad136014dc3921696e26f}{}\label{classxtd_1_1error_abeceaf42dfbad136014dc3921696e26f}
+
+
+Definition at line 22 of file error.\+hh.
+
+
+\begin{DoxyCode}
+23   \{ \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::error@{xtd\+::error}!do\+\_\+throw@{do\+\_\+throw}}
+\index{do\+\_\+throw@{do\+\_\+throw}!xtd\+::error@{xtd\+::error}}
+\subsubsection[{\texorpdfstring{do\+\_\+throw(const string \&p\+\_\+module, const string \&p\+\_\+format, Arguments \&\&...\+p\+\_\+args)}{do_throw(const string &p_module, const string &p_format, Arguments &&...p_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Arguments$>$ static void xtd\+::error\+::do\+\_\+throw (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+module, }
+\item[{const string \&}]{p\+\_\+format, }
+\item[{Arguments \&\&...}]{p\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classxtd_1_1error_a34fcbd60f169444fa6b9b410db6ddaaf}{}\label{classxtd_1_1error_a34fcbd60f169444fa6b9b410db6ddaaf}
+
+
+Definition at line 12 of file error.\+hh.
+
+
+\begin{DoxyCode}
+13   \{
+14     \hyperlink{classxtd_1_1logger_a1725596996a6060db5055c499c9ec9d1}{logger::crit}(p\_module, p\_format, p\_args...);
+15     \textcolor{keywordflow}{throw} \hyperlink{classxtd_1_1error_a4663571e50d7bcf512b353660b897a55}{error}(\hyperlink{classxtd_1_1logger_a169ce6459fe906cb5f840bdf2669e8ce}{logger::format\_vargs}(p\_format + \textcolor{stringliteral}{" in %s:%s:%d "}, p\_args...));
+16   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classxtd_1_1error_a34fcbd60f169444fa6b9b410db6ddaaf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1error_a34fcbd60f169444fa6b9b410db6ddaaf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{xtd\+::error@{xtd\+::error}!what@{what}}
+\index{what@{what}!xtd\+::error@{xtd\+::error}}
+\subsubsection[{\texorpdfstring{what() const }{what() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ xtd\+::error\+::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classxtd_1_1error_a463ff8177561abd418c1f00aa2bcd154}{}\label{classxtd_1_1error_a463ff8177561abd418c1f00aa2bcd154}
+
+
+Definition at line 26 of file error.\+hh.
+
+
+\begin{DoxyCode}
+27   \{
+28     \textcolor{keywordflow}{return} m\_message.c\_str();
+29   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/common/src/\hyperlink{error_8hh}{error.\+hh}\end{DoxyCompactItemize}

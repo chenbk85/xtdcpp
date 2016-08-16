@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classxtd_1_1error" kind="class" language="C++" prot="public">
+    <compoundname>xtd::error</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">exception</basecompoundref>
+    <includes refid="error_8hh" local="no">error.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxtd_1_1error_1aa5469e78c700426f0bf56e3f04b72c44" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string xtd::error::m_message</definition>
+        <argsstring></argsstring>
+        <name>m_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="32" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Arguments</declname>
+            <defname>Arguments</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void xtd::error::do_throw</definition>
+        <argsstring>(const string &amp;p_module, const string &amp;p_format, Arguments &amp;&amp;...p_args)</argsstring>
+        <name>do_throw</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_module</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>Arguments &amp;&amp;...</type>
+          <declname>p_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="12" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="12" bodyend="16"/>
+        <references refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1">xtd::logger::crit</references>
+        <references refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" compoundref="error_8hh" startline="19" endline="21">error</references>
+        <references refid="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce">xtd::logger::format_vargs</references>
+        <referencedby refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" compoundref="ConfParser_8cc" startline="16" endline="21">xtd::ConfParser::ConfParser</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xtd::error::error</definition>
+        <argsstring>(const string &amp;p_message)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>p_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="19" bodyend="21"/>
+        <referencedby refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" compoundref="error_8hh" startline="12" endline="16">do_throw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1error_1abeceaf42dfbad136014dc3921696e26f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual xtd::error::~error</definition>
+        <argsstring>(void)</argsstring>
+        <name>~error</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="22" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classxtd_1_1error_1a463ff8177561abd418c1f00aa2bcd154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* xtd::error::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="58">
+        <label>xtd::error</label>
+        <link refid="classxtd_1_1error"/>
+        <childnode refid="59" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>xtd::error</label>
+        <link refid="classxtd_1_1error"/>
+        <childnode refid="61" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/psyco/dev/xtdcpp/common/src/error.hh" line="9" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/error.hh" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" prot="public" virt="non-virtual"><scope>xtd::error</scope><name>do_throw</name></member>
+      <member refid="classxtd_1_1error_1a4663571e50d7bcf512b353660b897a55" prot="public" virt="non-virtual"><scope>xtd::error</scope><name>error</name></member>
+      <member refid="classxtd_1_1error_1aa5469e78c700426f0bf56e3f04b72c44" prot="private" virt="non-virtual"><scope>xtd::error</scope><name>m_message</name></member>
+      <member refid="classxtd_1_1error_1a463ff8177561abd418c1f00aa2bcd154" prot="public" virt="virtual"><scope>xtd::error</scope><name>what</name></member>
+      <member refid="classxtd_1_1error_1abeceaf42dfbad136014dc3921696e26f" prot="public" virt="virtual"><scope>xtd::error</scope><name>~error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

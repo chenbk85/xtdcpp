@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="Handler_8cc" kind="file" language="C++">
+    <compoundname>Handler.cc</compoundname>
+    <includes refid="Handler_8hh" local="yes">param/Handler.hh</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">boost/algorithm/string.hpp</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/filesystem.hpp</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <includes local="no">error.hh</includes>
+    <includes refid="Base_8hh" local="yes">param/Base.hh</includes>
+    <includes refid="Visitor_8hh" local="yes">param/Visitor.hh</includes>
+    <incdepgraph>
+      <node id="466">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="470">
+        <label>json_parser.hpp</label>
+      </node>
+      <node id="454">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="461">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="460">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="452">
+        <label>string</label>
+      </node>
+      <node id="453">
+        <label>map</label>
+      </node>
+      <node id="465">
+        <label>fstream</label>
+      </node>
+      <node id="459">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="455">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="462">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="457">
+        <label>param/Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>ctime</label>
+      </node>
+      <node id="451">
+        <label>param/Handler.hh</label>
+        <link refid="Handler_8hh"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</label>
+        <link refid="Handler.cc"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="468">
+        <label>error.hh</label>
+      </node>
+      <node id="458">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="464">
+        <label>logger.hh</label>
+      </node>
+      <node id="456">
+        <label>types.hh</label>
+      </node>
+      <node id="469">
+        <label>param/Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>http/Template.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers">xtd::servers</innernamespace>
+    <innernamespace refid="namespacextd_1_1servers_1_1param">xtd::servers::param</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Handler_8hh" kindref="compound">param/Handler.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/algorithm/string.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/filesystem.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/filesystem.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;error.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">param/Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Visitor_8hh" kindref="compound">param/Visitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::filesystem::create_directories;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::filesystem::is_directory;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bfs<sp/>=<sp/>boost::filesystem;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classxtd_1_1servers_1_1param_1_1Handler_1a93996915b562641b4673381c9abfae7b" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a93996915b562641b4673381c9abfae7b" kindref="member">Handler::Handler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_actionPath)<sp/>:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>m_actionPath(p_actionPath),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>m_params()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>is_directory(m_actionPath))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>logger::info(</highlight><highlight class="stringliteral">&quot;servers.param.handler&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;action<sp/>directory<sp/>&apos;%s&apos;<sp/>does<sp/>not<sp/>exist,<sp/>trying<sp/>to<sp/>create<sp/>it&quot;</highlight><highlight class="normal">,<sp/>m_actionPath,<sp/>HERE);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>create_directories(m_actionPath))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>is_directory(m_actionPath))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error::do_throw(</highlight><highlight class="stringliteral">&quot;servers.param.handler&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>create<sp/>action<sp/>directory<sp/>&apos;%s&apos;,<sp/>exit<sp/>now!&quot;</highlight><highlight class="normal">,<sp/>m_actionPath,<sp/>HERE);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logger::info(</highlight><highlight class="stringliteral">&quot;servers.param.handler&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;action<sp/>directory<sp/>&apos;%s&apos;<sp/>created&quot;</highlight><highlight class="normal">,<sp/>m_actionPath,<sp/>HERE);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a9533d788448e6bfdaf1c0f439a9f7b05" kindref="member">Handler::initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c_param<sp/>:<sp/>m_params)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>if<sp/>parameter<sp/>is<sp/>synchronized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(c_param.second-&gt;getSync())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>bfs::path<sp/>l_path(m_actionPath<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>c_param.second-&gt;getName());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>is_regular_file(l_path))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger::info(</highlight><highlight class="stringliteral">&quot;servers.param.handler&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;can&apos;t<sp/>find<sp/>persistent<sp/>file<sp/>to<sp/>initalize<sp/>parameter<sp/>&apos;%s&apos;,<sp/>path<sp/>=<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>c_param.first,<sp/>l_path,<sp/>HERE);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c_param.second-&gt;sync();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Persistent<sp/>file<sp/>found,<sp/>read<sp/>value<sp/>and<sp/>initialize<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>l_file(l_path.c_str());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/>l_content;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_content.assign(std::istreambuf_iterator&lt;char&gt;(l_file),<sp/>std::istreambuf_iterator&lt;char&gt;());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_file.close();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>==<sp/>c_param.second-&gt;fromStr(l_content))</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger::crit(</highlight><highlight class="stringliteral">&quot;servers.param.handler&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;unable<sp/>to<sp/>initialize<sp/>param<sp/>&apos;%s&apos;<sp/>from<sp/>value<sp/>&apos;%s&apos;&quot;</highlight><highlight class="normal">,<sp/>c_param.first,<sp/>l_content,<sp/>HERE);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">Handler::sync(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>t_params::iterator<sp/>c_param<sp/>=<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kindref="member">find</ref>(p_name);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c_param<sp/>!=<sp/>m_params.end())</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>c_param-&gt;second-&gt;sync();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a0fcbef276a961d96584354588fc3bfcf" kindref="member">Handler::exists</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kindref="member">find</ref>(p_name)<sp/>!=<sp/>m_params.end());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1aa2b60f898a67bd55c4289686591a2f3b" kindref="member">Handler::verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>t_params::iterator<sp/>c_param<sp/>=<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kindref="member">find</ref>(p_name);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c_param<sp/>==<sp/>m_params.end())</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_param-&gt;second-&gt;verify(p_src);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1ab3a53b8db70cf25c3e1de6425d876c37" kindref="member">Handler::fromStr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_log)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>l_ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>t_params::iterator<sp/>c_param<sp/>=<sp/><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kindref="member">find</ref>(p_name);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c_param<sp/>!=<sp/>m_params.end())</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((l_ret<sp/>=<sp/>c_param-&gt;second-&gt;fromStr(p_src)))</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c_param-&gt;second-&gt;setLog(p_log);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l_ret;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classxtd_1_1servers_1_1param_1_1Handler_1aba6e8d983f28617b3168b60cf6464926" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1aba6e8d983f28617b3168b60cf6464926" kindref="member">Handler::accept</ref>(<ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="120"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>BOOST_FOREACH(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_params::value_type&amp;<sp/>c_param,<sp/>m_params)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>c_param.second-&gt;accept(p_visitor);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">Handler::t_param_sptr</highlight></codeline>
+<codeline lineno="126" refid="classxtd_1_1servers_1_1param_1_1Handler_1a72a575bef0683ae6197c9f34cdf31d8f" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a53a10d8d422013e62363e0d28d4e9017" kindref="member">Handler::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/>t_param_sptr<sp/>p_param,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_syncDisk)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_lowerName<sp/>=<sp/>p_name;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>boost::algorithm::to_lower(l_lowerName);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>p_param-&gt;setName(p_name);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>p_param-&gt;setSync(p_syncDisk);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>p_param-&gt;setActionPath(m_actionPath);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>m_params.insert(make_pair(l_lowerName,<sp/>p_param));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_syncDisk)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>p_param-&gt;listen(boost::bind(&amp;Handler::sync,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>p_name));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_param;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">Handler::t_params::iterator</highlight></codeline>
+<codeline lineno="143" refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a66465c7a1ee0978f7558d55bfd8bd583" kindref="member">Handler::find</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>l_lowerName<sp/>=<sp/>p_name;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>boost::algorithm::to_lower(l_lowerName);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_params.find(l_lowerName);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc"/>
+  </compounddef>
+</doxygen>

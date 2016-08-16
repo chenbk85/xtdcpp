@@ -1,0 +1,132 @@
+\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4}{}\section{xtd\+:\+:network\+:\+:utils\+:\+:Resolver$<$ af\+\_\+unix $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4}\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+
+
+{\ttfamily \#include $<$Resolver.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a6c22d97efd1096a2b32c3b6b82707685}{Resolver} (boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, uint32\+\_\+t)
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a4ef41796801ac9b2b223e907512c6937}{$\sim$\+Resolver} (void)
+\item 
+af\+\_\+unix\+::endpoint \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_acabb7ae9d31e60d034e46a7f172f3ffb}{resolve} (const string \&p\+\_\+host, const string \&p\+\_\+port)
+\item 
+uint32\+\_\+t \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a75ade0a088898962a4ca8055885dd09d}{get\+Port} (const af\+\_\+unix\+::endpoint \&p\+\_\+endpoint)
+\item 
+string \hyperlink{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_ac684f093294b139e46a7e5b89857c7f1}{get\+Addr} (const af\+\_\+unix\+::endpoint \&p\+\_\+endpoint)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$$>$\\*
+class xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}
+
+
+
+Definition at line 68 of file Resolver.\+hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}!Resolver@{Resolver}}
+\index{Resolver@{Resolver}!xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+\subsubsection[{\texorpdfstring{Resolver(boost\+::asio\+::io\+\_\+service \&p\+\_\+io\+Service, uint32\+\_\+t)}{Resolver(boost::asio::io_service &p_ioService, uint32_t)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xtd\+::network\+::utils\+::\+Resolver}$<$ {\bf af\+\_\+unix} $>$\+::{\bf Resolver} (
+\begin{DoxyParamCaption}
+\item[{boost\+::asio\+::io\+\_\+service \&}]{p\+\_\+io\+Service, }
+\item[{uint32\+\_\+t}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a6c22d97efd1096a2b32c3b6b82707685}{}\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a6c22d97efd1096a2b32c3b6b82707685}
+
+
+Definition at line 79 of file Resolver.\+cc.
+
+
+\begin{DoxyCode}
+79                                                                         :
+80   m\_ioService(p\_ioService)
+81 \{
+82 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}!````~Resolver@{$\sim$\+Resolver}}
+\index{````~Resolver@{$\sim$\+Resolver}!xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+\subsubsection[{\texorpdfstring{$\sim$\+Resolver(void)}{~Resolver(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xtd\+::network\+::utils\+::\+Resolver}$<$ {\bf af\+\_\+unix} $>$\+::$\sim${\bf Resolver} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a4ef41796801ac9b2b223e907512c6937}{}\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a4ef41796801ac9b2b223e907512c6937}
+
+
+Definition at line 85 of file Resolver.\+cc.
+
+
+\begin{DoxyCode}
+86 \{
+87 \};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}!get\+Addr@{get\+Addr}}
+\index{get\+Addr@{get\+Addr}!xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+\subsubsection[{\texorpdfstring{get\+Addr(const af\+\_\+unix\+::endpoint \&p\+\_\+endpoint)}{getAddr(const af_unix::endpoint &p_endpoint)}}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf xtd\+::network\+::utils\+::\+Resolver}$<$ {\bf af\+\_\+unix} $>$\+::get\+Addr (
+\begin{DoxyParamCaption}
+\item[{const af\+\_\+unix\+::endpoint \&}]{p\+\_\+endpoint}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_ac684f093294b139e46a7e5b89857c7f1}{}\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_ac684f093294b139e46a7e5b89857c7f1}
+
+
+Definition at line 111 of file Resolver.\+cc.
+
+
+\begin{DoxyCode}
+112 \{
+113   \textcolor{keywordflow}{return} p\_endpoint.path();
+114 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+\subsubsection[{\texorpdfstring{get\+Port(const af\+\_\+unix\+::endpoint \&p\+\_\+endpoint)}{getPort(const af_unix::endpoint &p_endpoint)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t {\bf xtd\+::network\+::utils\+::\+Resolver}$<$ {\bf af\+\_\+unix} $>$\+::get\+Port (
+\begin{DoxyParamCaption}
+\item[{const af\+\_\+unix\+::endpoint \&}]{p\+\_\+endpoint}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a75ade0a088898962a4ca8055885dd09d}{}\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_a75ade0a088898962a4ca8055885dd09d}
+
+
+Definition at line 104 of file Resolver.\+cc.
+
+
+\begin{DoxyCode}
+105 \{
+106   \textcolor{keywordflow}{return} m\_port;
+107 \}
+\end{DoxyCode}
+\index{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}!resolve@{resolve}}
+\index{resolve@{resolve}!xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$@{xtd\+::network\+::utils\+::\+Resolver$<$ af\+\_\+unix $>$}}
+\subsubsection[{\texorpdfstring{resolve(const string \&p\+\_\+host, const string \&p\+\_\+port)}{resolve(const string &p_host, const string &p_port)}}]{\setlength{\rightskip}{0pt plus 5cm}af\+\_\+unix\+::endpoint {\bf xtd\+::network\+::utils\+::\+Resolver}$<$ {\bf af\+\_\+unix} $>$\+::resolve (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\+\_\+host, }
+\item[{const string \&}]{p\+\_\+port}
+\end{DoxyParamCaption}
+)}\hypertarget{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_acabb7ae9d31e60d034e46a7f172f3ffb}{}\label{classxtd_1_1network_1_1utils_1_1Resolver_3_01af__unix_01_4_acabb7ae9d31e60d034e46a7f172f3ffb}
+
+
+Definition at line 93 of file Resolver.\+cc.
+
+
+\begin{DoxyCode}
+95 \{
+96   m\_port = boost::lexical\_cast<uint32\_t>(p\_port);
+97   \textcolor{comment}{// '\(\backslash\)0' Permet d'eviter la creation d'un fichier sur le filesystem}
+98   \textcolor{keywordtype}{string} l\_addr = \textcolor{charliteral}{'\(\backslash\)0'} + p\_port + \textcolor{stringliteral}{"\_"} + p\_host;
+99   af\_unix::endpoint l\_endpoint(l\_addr);
+100   \textcolor{keywordflow}{return} l\_endpoint;
+101 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{Resolver_8hh}{Resolver.\+hh}\item 
+/home/psyco/dev/xtdcpp/network/src/utils/\hyperlink{Resolver_8cc}{Resolver.\+cc}\end{DoxyCompactItemize}
