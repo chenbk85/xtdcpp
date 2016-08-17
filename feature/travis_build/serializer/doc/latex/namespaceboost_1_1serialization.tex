@@ -1,0 +1,84 @@
+\hypertarget{namespaceboost_1_1serialization}{\section{boost\-:\-:serialization Namespace Reference}
+\label{namespaceboost_1_1serialization}\index{boost\-::serialization@{boost\-::serialization}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ }\\void \hyperlink{namespaceboost_1_1serialization_a04a81556a5eda4b2ee2aea89fa8bacab}{save} (Archive \&ar, const boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&t, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ }\\void \hyperlink{namespaceboost_1_1serialization_a8d4be56406f8947db1a1accf28c7e046}{load} (Archive \&ar, boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&t, const unsigned int)
+\item 
+{\footnotesize template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ }\\void \hyperlink{namespaceboost_1_1serialization_a38423d04b011754810c08d6e599f4789}{serialize} (Archive \&ar, boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&t, const unsigned int file\-\_\-version)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceboost_1_1serialization_a8d4be56406f8947db1a1accf28c7e046}{\index{boost\-::serialization@{boost\-::serialization}!load@{load}}
+\index{load@{load}!boost::serialization@{boost\-::serialization}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ void boost\-::serialization\-::load (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&}]{t, }
+\item[{const unsigned}]{int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceboost_1_1serialization_a8d4be56406f8947db1a1accf28c7e046}
+
+
+Definition at line 40 of file unorderedmap.\-hh.
+
+
+\begin{DoxyCode}
+44                   \{
+45   boost::serialization::stl::load\_collection<
+46     Archive,
+47     boost::unordered\_map<Key, Type, Hash, Compare, Allocator>,
+48     boost::serialization::stl::archive\_input\_map<
+49       Archive, boost::unordered\_map<Key, Type, Hash, Compare, Allocator> >,
+50     boost::serialization::stl::no\_reserve\_imp<boost::unordered\_map<
+51       Key, Type, Hash, Compare, Allocator
+52                                                 >
+53                                               >
+54     >(ar, t);
+55 \}
+\end{DoxyCode}
+\hypertarget{namespaceboost_1_1serialization_a04a81556a5eda4b2ee2aea89fa8bacab}{\index{boost\-::serialization@{boost\-::serialization}!save@{save}}
+\index{save@{save}!boost::serialization@{boost\-::serialization}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ void boost\-::serialization\-::save (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&}]{t, }
+\item[{const unsigned}]{int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceboost_1_1serialization_a04a81556a5eda4b2ee2aea89fa8bacab}
+
+
+Definition at line 28 of file unorderedmap.\-hh.
+
+
+\begin{DoxyCode}
+32                   \{
+33   boost::serialization::stl::save\_collection<
+34     Archive,
+35     boost::unordered\_map<Key, Type, Hash, Compare, Allocator>
+36     >(ar, t);
+37 \}
+\end{DoxyCode}
+\hypertarget{namespaceboost_1_1serialization_a38423d04b011754810c08d6e599f4789}{\index{boost\-::serialization@{boost\-::serialization}!serialize@{serialize}}
+\index{serialize@{serialize}!boost::serialization@{boost\-::serialization}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive , class Type , class Key , class Hash , class Compare , class Allocator $>$ void boost\-::serialization\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{boost\-::unordered\-\_\-map$<$ Key, Type, Hash, Compare, Allocator $>$ \&}]{t, }
+\item[{const unsigned int}]{file\-\_\-version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceboost_1_1serialization_a38423d04b011754810c08d6e599f4789}
+
+
+Definition at line 60 of file unorderedmap.\-hh.
+
+
+\begin{DoxyCode}
+64                        \{
+65   boost::serialization::split\_free(ar, t, file\_version);
+66 \}
+\end{DoxyCode}

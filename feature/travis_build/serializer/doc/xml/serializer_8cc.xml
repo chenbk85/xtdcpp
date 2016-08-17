@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="serializer_8cc" kind="file">
+    <compoundname>serializer.cc</compoundname>
+    <includes refid="serializer_8hh" local="yes">serializer.hh</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">boost/range/iterator_range_core.hpp</includes>
+    <includes local="no">boost/iostreams/filtering_stream.hpp</includes>
+    <includes local="no">boost/iostreams/device/back_inserter.hpp</includes>
+    <incdepgraph>
+      <node id="379">
+        <label>boost/serialization/map.hpp</label>
+      </node>
+      <node id="376">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="384">
+        <label>boost/archive/text_iarchive.hpp</label>
+      </node>
+      <node id="396">
+        <label>boost/iostreams/device/back_inserter.hpp</label>
+      </node>
+      <node id="368">
+        <label>serializer_fwd.hh</label>
+        <link refid="serializer__fwd_8hh"/>
+      </node>
+      <node id="390">
+        <label>boost/serialization/collections_load_imp.hpp</label>
+      </node>
+      <node id="385">
+        <label>boost/archive/binary_iarchive.hpp</label>
+      </node>
+      <node id="392">
+        <label>serializer.hxx</label>
+      </node>
+      <node id="378">
+        <label>boost/serialization/utility.hpp</label>
+      </node>
+      <node id="380">
+        <label>boost/archive/xml_oarchive.hpp</label>
+      </node>
+      <node id="391">
+        <label>boost/serialization/split_free.hpp</label>
+      </node>
+      <node id="389">
+        <label>boost/serialization/collections_save_imp.hpp</label>
+      </node>
+      <node id="372">
+        <label>boost/serialization/base_object.hpp</label>
+      </node>
+      <node id="382">
+        <label>boost/archive/binary_oarchive.hpp</label>
+      </node>
+      <node id="375">
+        <label>boost/serialization/string.hpp</label>
+      </node>
+      <node id="381">
+        <label>boost/archive/text_oarchive.hpp</label>
+      </node>
+      <node id="383">
+        <label>boost/archive/xml_iarchive.hpp</label>
+      </node>
+      <node id="371">
+        <label>boost/serialization/version.hpp</label>
+      </node>
+      <node id="364">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/serializer.cc</label>
+        <link refid="serializer.cc"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>serializer.hh</label>
+        <link refid="serializer_8hh"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>objects/unorderedmap.hh</label>
+        <link refid="unorderedmap_8hh"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="393">
+        <label>sstream</label>
+      </node>
+      <node id="394">
+        <label>boost/range/iterator_range_core.hpp</label>
+      </node>
+      <node id="366">
+        <label>iostream</label>
+      </node>
+      <node id="374">
+        <label>boost/serialization/list.hpp</label>
+      </node>
+      <node id="373">
+        <label>boost/serialization/nvp.hpp</label>
+      </node>
+      <node id="388">
+        <label>boost/config.hpp</label>
+      </node>
+      <node id="377">
+        <label>boost/serialization/deque.hpp</label>
+      </node>
+      <node id="369">
+        <label>archives/DebugArchive.hh</label>
+        <link refid="DebugArchive_8hh"/>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>boost/serialization/serialization.hpp</label>
+      </node>
+      <node id="395">
+        <label>boost/iostreams/filtering_stream.hpp</label>
+      </node>
+      <node id="367">
+        <label>types.hh</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacextd">xtd</innernamespace>
+    <innernamespace refid="namespacextd_1_1serializer">xtd::serializer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="serializer_8hh" kindref="compound">serializer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">serializer<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>namespace<sp/>serializer</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/serializer.cc"/>
+  </compounddef>
+</doxygen>

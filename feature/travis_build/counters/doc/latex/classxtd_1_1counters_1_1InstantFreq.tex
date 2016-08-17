@@ -1,0 +1,201 @@
+\hypertarget{classxtd_1_1counters_1_1InstantFreq}{\section{xtd\-:\-:counters\-:\-:Instant\-Freq Class Reference}
+\label{classxtd_1_1counters_1_1InstantFreq}\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}}
+}
+
+
+{\ttfamily \#include $<$Instant\-Freq.\-hh$>$}
+
+
+
+Inheritance diagram for xtd\-:\-:counters\-:\-:Instant\-Freq\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classxtd_1_1counters_1_1InstantFreq__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\-:\-:counters\-:\-:Instant\-Freq\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classxtd_1_1counters_1_1InstantFreq__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1counters_1_1InstantFreq_a428c013f73c1322ee3fc74cc08171c8c}{Instant\-Freq} (const string \&p\-\_\-name, uint32\-\_\-t p\-\_\-time\-Delta\-Ms=1000)
+\item 
+virtual \hyperlink{classxtd_1_1counters_1_1InstantFreq_a1a002d74711692449aec178e09606193}{$\sim$\-Instant\-Freq} (void)
+\item 
+void \hyperlink{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}{tick} (void)
+\item 
+\hyperlink{classxtd_1_1counters_1_1InstantFreq}{Instant\-Freq} \& \hyperlink{classxtd_1_1counters_1_1InstantFreq_a3ae7dc13ff6209a0628cdf481ab0a37c}{operator=} (uint32\-\_\-t p\-\_\-value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classxtd_1_1counters_1_1InstantFreq_a2e4629f5a835d7b52425a72f25dcd4d2}{update\-\_\-safe} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxtd_1_1counters_1_1InstantFreq_a93e934ad70d5b32b14beed5572450abf}{Composed}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Instant\-Freq.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a428c013f73c1322ee3fc74cc08171c8c}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!Instant\-Freq@{Instant\-Freq}}
+\index{Instant\-Freq@{Instant\-Freq}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{Instant\-Freq}]{\setlength{\rightskip}{0pt plus 5cm}xtd\-::counters\-::\-Instant\-Freq\-::\-Instant\-Freq (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\-\_\-name, }
+\item[{uint32\-\_\-t}]{p\-\_\-time\-Delta\-Ms = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1counters_1_1InstantFreq_a428c013f73c1322ee3fc74cc08171c8c}
+
+
+Definition at line 15 of file Instant\-Freq.\-cc.
+
+
+\begin{DoxyCode}
+16                                                   :
+17   \hyperlink{classxtd_1_1counters_1_1Value_a298f146ab57eaed8e6f783c26e78e0f4}{Value}(p\_name),
+18   m\_samples(),
+19   m\_timeDeltaMs(p\_timeDeltaMs)
+20 \{
+21 \}
+\end{DoxyCode}
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a1a002d74711692449aec178e09606193}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!$\sim$\-Instant\-Freq@{$\sim$\-Instant\-Freq}}
+\index{$\sim$\-Instant\-Freq@{$\sim$\-Instant\-Freq}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{$\sim$\-Instant\-Freq}]{\setlength{\rightskip}{0pt plus 5cm}virtual xtd\-::counters\-::\-Instant\-Freq\-::$\sim$\-Instant\-Freq (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classxtd_1_1counters_1_1InstantFreq_a1a002d74711692449aec178e09606193}
+
+
+Definition at line 23 of file Instant\-Freq.\-hh.
+
+
+\begin{DoxyCode}
+23 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a3ae7dc13ff6209a0628cdf481ab0a37c}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!operator=@{operator=}}
+\index{operator=@{operator=}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instant\-Freq} \& xtd\-::counters\-::\-Instant\-Freq\-::operator= (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{p\-\_\-value}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1counters_1_1InstantFreq_a3ae7dc13ff6209a0628cdf481ab0a37c}
+
+
+Definition at line 34 of file Instant\-Freq.\-cc.
+
+
+\begin{DoxyCode}
+35 \{
+36   \hyperlink{classxtd_1_1counters_1_1Value_a017667569f4177e0c44836ef4e9bc7b0}{Value<uint32\_t>::operator=}(p\_value);
+37   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+38 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1InstantFreq_a3ae7dc13ff6209a0628cdf481ab0a37c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!tick@{tick}}
+\index{tick@{tick}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\-::counters\-::\-Instant\-Freq\-::tick (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250}
+
+
+Definition at line 24 of file Instant\-Freq.\-cc.
+
+
+\begin{DoxyCode}
+25 \{
+26   boost::mutex::scoped\_lock l\_lock(\hyperlink{classxtd_1_1counters_1_1Base_aeeac2ffcae02eb6341418d708188a353}{m\_mutex});
+27   bpt::ptime                l\_now = bpt::microsec\_clock::local\_time();
+28 
+29   m\_samples.push\_front(l\_now);
+30   shrink\_safe(l\_now);
+31 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classxtd_1_1counters_1_1InstantFreq_a1760f09b25b97545169be189bf99d250_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a2e4629f5a835d7b52425a72f25dcd4d2}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!update\-\_\-safe@{update\-\_\-safe}}
+\index{update\-\_\-safe@{update\-\_\-safe}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{update\-\_\-safe}]{\setlength{\rightskip}{0pt plus 5cm}void xtd\-::counters\-::\-Instant\-Freq\-::update\-\_\-safe (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classxtd_1_1counters_1_1InstantFreq_a2e4629f5a835d7b52425a72f25dcd4d2}
+
+
+Reimplemented from \hyperlink{classxtd_1_1counters_1_1Base_a8b3d10c9fb2bea1d240f887bbe4008ea}{xtd\-::counters\-::\-Base}.
+
+
+
+Definition at line 58 of file Instant\-Freq.\-cc.
+
+
+\begin{DoxyCode}
+59 \{
+60   bpt::ptime l\_now = bpt::microsec\_clock::local\_time();
+61 
+62   shrink\_safe(l\_now);
+63   \hyperlink{classxtd_1_1counters_1_1Value_abe06c1cebededaf2f216707171f63c3c}{m\_value} = (m\_samples.size() * 1000) / m\_timeDeltaMs;
+64 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classxtd_1_1counters_1_1InstantFreq_a93e934ad70d5b32b14beed5572450abf}{\index{xtd\-::counters\-::\-Instant\-Freq@{xtd\-::counters\-::\-Instant\-Freq}!Composed@{Composed}}
+\index{Composed@{Composed}!xtd::counters::InstantFreq@{xtd\-::counters\-::\-Instant\-Freq}}
+\subsubsection[{Composed}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Composed}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classxtd_1_1counters_1_1InstantFreq_a93e934ad70d5b32b14beed5572450abf}
+
+
+Definition at line 15 of file Instant\-Freq.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/psycofdj/xtdcpp/counters/src/\hyperlink{InstantFreq_8hh}{Instant\-Freq.\-hh}\item 
+/home/travis/build/psycofdj/xtdcpp/counters/src/\hyperlink{InstantFreq_8cc}{Instant\-Freq.\-cc}\end{DoxyCompactItemize}

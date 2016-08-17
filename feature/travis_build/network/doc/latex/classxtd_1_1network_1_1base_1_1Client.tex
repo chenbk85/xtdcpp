@@ -1,0 +1,267 @@
+\hypertarget{classxtd_1_1network_1_1base_1_1Client}{\section{xtd\-:\-:network\-:\-:base\-:\-:Client$<$ Domain $>$ Class Template Reference}
+\label{classxtd_1_1network_1_1base_1_1Client}\index{xtd\-::network\-::base\-::\-Client$<$ Domain $>$@{xtd\-::network\-::base\-::\-Client$<$ Domain $>$}}
+}
+
+
+{\ttfamily \#include $<$Client.\-hh$>$}
+
+
+
+Inheritance diagram for xtd\-:\-:network\-:\-:base\-:\-:Client$<$ Domain $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classxtd_1_1network_1_1base_1_1Client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for xtd\-:\-:network\-:\-:base\-:\-:Client$<$ Domain $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classxtd_1_1network_1_1base_1_1Client__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1base_1_1Client_a890cd6837ad0ccd2bf928f171e7696d0}{$\sim$\-Client} (void)
+\item 
+status \hyperlink{classxtd_1_1network_1_1base_1_1Client_abf9740f4b9eed341858ad27018cc4469}{connect} (const string \&p\-\_\-hostname, const uint32\-\_\-t p\-\_\-port)
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Client_ac7427711e506f5958f80a89028f3f923}{async\-\_\-connect} (const string \&p\-\_\-hostname, const uint32\-\_\-t p\-\_\-port)
+\item 
+status \hyperlink{classxtd_1_1network_1_1base_1_1Client_ada6c4a1254620f7f5d83d3c890748300}{wait\-\_\-async\-\_\-connect} ()
+\item 
+status \hyperlink{classxtd_1_1network_1_1base_1_1Client_a268f40287ee277801cad202fa1380970}{reconnect} (void)
+\item 
+void \hyperlink{classxtd_1_1network_1_1base_1_1Client_a520d6aebfcf0e0892515bc0fec3a37c7}{close} (void)
+\item 
+const uint32\-\_\-t \& \hyperlink{classxtd_1_1network_1_1base_1_1Client_abff34ffec3663d843d97f42a7ce73d2f}{get\-Cnx\-Total} (void) const 
+\item 
+const uint32\-\_\-t \& \hyperlink{classxtd_1_1network_1_1base_1_1Client_a1d72f9e19322a7c2d533422c4f9e9777}{get\-Cnx\-Success} (void) const 
+\item 
+const uint32\-\_\-t \& \hyperlink{classxtd_1_1network_1_1base_1_1Client_aa585da9396b4067ac2535cdc4c1acbbb}{get\-Cnx\-Timeout} (void) const 
+\item 
+const uint32\-\_\-t \& \hyperlink{classxtd_1_1network_1_1base_1_1Client_a3023500754c12ccfdd200706d9995fd7}{get\-Cnx\-Error} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\-::shared\-\_\-ptr\\*
+$<$ \hyperlink{classxtd_1_1network_1_1base_1_1Connection}{Connection}$<$ Domain $>$ $>$ \hyperlink{classxtd_1_1network_1_1base_1_1Client_a3cef8310676dac754d630bcc1628ab56}{cnx\-\_\-sptr\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1base_1_1Client_a7afc6ed48caf877014df0a3128d6ed05}{Client} (const \hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\-::\-Config} \&p\-\_\-conf)
+\item 
+virtual \hyperlink{classxtd_1_1network_1_1base_1_1Client_a3cef8310676dac754d630bcc1628ab56}{cnx\-\_\-sptr\-\_\-t} \hyperlink{classxtd_1_1network_1_1base_1_1Client_ad7964979939106d0c496c4f78a834b0d}{create\-Cnx} (string p\-\_\-hostname, uint32\-\_\-t p\-\_\-port)=0
+\item 
+virtual void \hyperlink{classxtd_1_1network_1_1base_1_1Client_a05ea029f4bfed5d9581ebc606e198336}{on\-Connected} (const boost\-::system\-::error\-\_\-code p\-\_\-error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxtd_1_1network_1_1utils_1_1Config}{utils\-::\-Config} \hyperlink{classxtd_1_1network_1_1base_1_1Client_addb0f7fb40585d3db038b16f11e466cd}{m\-\_\-conf}
+\item 
+boost\-::asio\-::io\-\_\-service \& \hyperlink{classxtd_1_1network_1_1base_1_1Client_ae3945e4771a207872ab45b73de2e040f}{m\-\_\-io\-Service}
+\item 
+\hyperlink{classxtd_1_1network_1_1base_1_1Client_a3cef8310676dac754d630bcc1628ab56}{cnx\-\_\-sptr\-\_\-t} \hyperlink{classxtd_1_1network_1_1base_1_1Client_a9293a756af76e066790a1f389dbedb77}{m\-\_\-connection}
+\item 
+status \hyperlink{classxtd_1_1network_1_1base_1_1Client_a99e6d675c7617cd6d8e94793d8af4871}{m\-\_\-connect\-Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Domain$>$class xtd\-::network\-::base\-::\-Client$<$ Domain $>$}
+
+T\-O\-D\-O explain private + shared\-\_\-ptr 
+
+Definition at line 32 of file Client.\-hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a3cef8310676dac754d630bcc1628ab56}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!cnx\-\_\-sptr\-\_\-t@{cnx\-\_\-sptr\-\_\-t}}
+\index{cnx\-\_\-sptr\-\_\-t@{cnx\-\_\-sptr\-\_\-t}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{cnx\-\_\-sptr\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ typedef boost\-::shared\-\_\-ptr$<${\bf Connection}$<$Domain$>$ $>$ {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::{\bf cnx\-\_\-sptr\-\_\-t}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_a3cef8310676dac754d630bcc1628ab56}
+
+
+Definition at line 35 of file Client.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a7afc6ed48caf877014df0a3128d6ed05}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!Client@{Client}}
+\index{Client@{Client}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::{\bf Client} (
+\begin{DoxyParamCaption}
+\item[{const {\bf utils\-::\-Config} \&}]{p\-\_\-conf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_a7afc6ed48caf877014df0a3128d6ed05}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a890cd6837ad0ccd2bf928f171e7696d0}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!$\sim$\-Client@{$\sim$\-Client}}
+\index{$\sim$\-Client@{$\sim$\-Client}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{$\sim$\-Client}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ virtual {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::$\sim${\bf Client} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classxtd_1_1network_1_1base_1_1Client_a890cd6837ad0ccd2bf928f171e7696d0}
+
+
+Reimplemented in \hyperlink{classxtd_1_1network_1_1bip_1_1Client_ac16a5d30bae2e5ac5ae616034943d219}{xtd\-::network\-::bip\-::\-Client$<$ T\-Request, T\-Response, T\-Domain $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_ac7427711e506f5958f80a89028f3f923}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!async\-\_\-connect@{async\-\_\-connect}}
+\index{async\-\_\-connect@{async\-\_\-connect}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{async\-\_\-connect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ void {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::async\-\_\-connect (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\-\_\-hostname, }
+\item[{const uint32\-\_\-t}]{p\-\_\-port}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1network_1_1base_1_1Client_ac7427711e506f5958f80a89028f3f923}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a520d6aebfcf0e0892515bc0fec3a37c7}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!close@{close}}
+\index{close@{close}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ void {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1network_1_1base_1_1Client_a520d6aebfcf0e0892515bc0fec3a37c7}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_abf9740f4b9eed341858ad27018cc4469}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!connect@{connect}}
+\index{connect@{connect}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ status {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::connect (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p\-\_\-hostname, }
+\item[{const uint32\-\_\-t}]{p\-\_\-port}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1network_1_1base_1_1Client_abf9740f4b9eed341858ad27018cc4469}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_ad7964979939106d0c496c4f78a834b0d}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!create\-Cnx@{create\-Cnx}}
+\index{create\-Cnx@{create\-Cnx}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{create\-Cnx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ virtual {\bf cnx\-\_\-sptr\-\_\-t} {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::create\-Cnx (
+\begin{DoxyParamCaption}
+\item[{string}]{p\-\_\-hostname, }
+\item[{uint32\-\_\-t}]{p\-\_\-port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classxtd_1_1network_1_1base_1_1Client_ad7964979939106d0c496c4f78a834b0d}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a3023500754c12ccfdd200706d9995fd7}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!get\-Cnx\-Error@{get\-Cnx\-Error}}
+\index{get\-Cnx\-Error@{get\-Cnx\-Error}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{get\-Cnx\-Error}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ const uint32\-\_\-t\& {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::get\-Cnx\-Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxtd_1_1network_1_1base_1_1Client_a3023500754c12ccfdd200706d9995fd7}
+
+
+Definition at line 56 of file Client.\-hh.
+
+
+\begin{DoxyCode}
+56 \{ \textcolor{keywordflow}{return} m\_cnxError; \}
+\end{DoxyCode}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a1d72f9e19322a7c2d533422c4f9e9777}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!get\-Cnx\-Success@{get\-Cnx\-Success}}
+\index{get\-Cnx\-Success@{get\-Cnx\-Success}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{get\-Cnx\-Success}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ const uint32\-\_\-t\& {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::get\-Cnx\-Success (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxtd_1_1network_1_1base_1_1Client_a1d72f9e19322a7c2d533422c4f9e9777}
+
+
+Definition at line 54 of file Client.\-hh.
+
+
+\begin{DoxyCode}
+54 \{ \textcolor{keywordflow}{return} m\_cnxSuccess; \}
+\end{DoxyCode}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_aa585da9396b4067ac2535cdc4c1acbbb}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!get\-Cnx\-Timeout@{get\-Cnx\-Timeout}}
+\index{get\-Cnx\-Timeout@{get\-Cnx\-Timeout}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{get\-Cnx\-Timeout}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ const uint32\-\_\-t\& {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::get\-Cnx\-Timeout (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxtd_1_1network_1_1base_1_1Client_aa585da9396b4067ac2535cdc4c1acbbb}
+
+
+Definition at line 55 of file Client.\-hh.
+
+
+\begin{DoxyCode}
+55 \{ \textcolor{keywordflow}{return} m\_cnxTimeout; \}
+\end{DoxyCode}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_abff34ffec3663d843d97f42a7ce73d2f}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!get\-Cnx\-Total@{get\-Cnx\-Total}}
+\index{get\-Cnx\-Total@{get\-Cnx\-Total}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{get\-Cnx\-Total}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ const uint32\-\_\-t\& {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::get\-Cnx\-Total (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxtd_1_1network_1_1base_1_1Client_abff34ffec3663d843d97f42a7ce73d2f}
+
+
+Definition at line 53 of file Client.\-hh.
+
+
+\begin{DoxyCode}
+53 \{ \textcolor{keywordflow}{return} m\_cnxTotal; \}
+\end{DoxyCode}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a05ea029f4bfed5d9581ebc606e198336}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!on\-Connected@{on\-Connected}}
+\index{on\-Connected@{on\-Connected}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{on\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ virtual void {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::on\-Connected (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code}]{p\-\_\-error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classxtd_1_1network_1_1base_1_1Client_a05ea029f4bfed5d9581ebc606e198336}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a268f40287ee277801cad202fa1380970}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{reconnect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ status {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::reconnect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1network_1_1base_1_1Client_a268f40287ee277801cad202fa1380970}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_ada6c4a1254620f7f5d83d3c890748300}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!wait\-\_\-async\-\_\-connect@{wait\-\_\-async\-\_\-connect}}
+\index{wait\-\_\-async\-\_\-connect@{wait\-\_\-async\-\_\-connect}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{wait\-\_\-async\-\_\-connect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ status {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::wait\-\_\-async\-\_\-connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classxtd_1_1network_1_1base_1_1Client_ada6c4a1254620f7f5d83d3c890748300}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_addb0f7fb40585d3db038b16f11e466cd}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!m\-\_\-conf@{m\-\_\-conf}}
+\index{m\-\_\-conf@{m\-\_\-conf}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{m\-\_\-conf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ {\bf utils\-::\-Config} {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::m\-\_\-conf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_addb0f7fb40585d3db038b16f11e466cd}
+
+
+Definition at line 70 of file Client.\-hh.
+
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a9293a756af76e066790a1f389dbedb77}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!m\-\_\-connection@{m\-\_\-connection}}
+\index{m\-\_\-connection@{m\-\_\-connection}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{m\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ {\bf cnx\-\_\-sptr\-\_\-t} {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::m\-\_\-connection\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_a9293a756af76e066790a1f389dbedb77}
+
+
+Definition at line 72 of file Client.\-hh.
+
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_a99e6d675c7617cd6d8e94793d8af4871}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!m\-\_\-connect\-Status@{m\-\_\-connect\-Status}}
+\index{m\-\_\-connect\-Status@{m\-\_\-connect\-Status}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{m\-\_\-connect\-Status}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ status {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::m\-\_\-connect\-Status\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_a99e6d675c7617cd6d8e94793d8af4871}
+
+
+Definition at line 73 of file Client.\-hh.
+
+\hypertarget{classxtd_1_1network_1_1base_1_1Client_ae3945e4771a207872ab45b73de2e040f}{\index{xtd\-::network\-::base\-::\-Client@{xtd\-::network\-::base\-::\-Client}!m\-\_\-io\-Service@{m\-\_\-io\-Service}}
+\index{m\-\_\-io\-Service@{m\-\_\-io\-Service}!xtd::network::base::Client@{xtd\-::network\-::base\-::\-Client}}
+\subsubsection[{m\-\_\-io\-Service}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Domain$>$ boost\-::asio\-::io\-\_\-service\& {\bf xtd\-::network\-::base\-::\-Client}$<$ Domain $>$\-::m\-\_\-io\-Service\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxtd_1_1network_1_1base_1_1Client_ae3945e4771a207872ab45b73de2e040f}
+
+
+Definition at line 71 of file Client.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/psycofdj/xtdcpp/network/src/base/\hyperlink{base_2Client_8hh}{Client.\-hh}\end{DoxyCompactItemize}
