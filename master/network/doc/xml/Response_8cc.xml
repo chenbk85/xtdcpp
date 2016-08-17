@@ -1,32 +1,29 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Response_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Response_8cc" kind="file">
     <compoundname>Response.cc</compoundname>
     <includes refid="Response_8hh" local="yes">Response.hh</includes>
     <includes local="no">boost/format.hpp</includes>
     <includes local="no">boost/lexical_cast.hpp</includes>
     <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
     <incdepgraph>
-      <node id="1695">
-        <label>Response.hh</label>
-        <link refid="Response_8hh"/>
-        <childnode refid="1696" relation="include">
-        </childnode>
-      </node>
       <node id="1698">
         <label>boost/lexical_cast.hpp</label>
       </node>
       <node id="1697">
         <label>boost/format.hpp</label>
       </node>
+      <node id="1695">
+        <label>Response.hh</label>
+        <link refid="Response_8hh"/>
+        <childnode refid="1696" relation="include">
+        </childnode>
+      </node>
       <node id="1699">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
-      <node id="1696">
-        <label>types.hh</label>
-      </node>
       <node id="1694">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Response.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Response.cc</label>
         <link refid="Response.cc"/>
         <childnode refid="1695" relation="include">
         </childnode>
@@ -36,6 +33,9 @@
         </childnode>
         <childnode refid="1699" relation="include">
         </childnode>
+      </node>
+      <node id="1696">
+        <label>types.hh</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -55,7 +55,7 @@
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
@@ -225,6 +225,6 @@
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="178"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/Response.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Response.cc"/>
   </compounddef>
 </doxygen>

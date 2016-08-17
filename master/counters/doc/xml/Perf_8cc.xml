@@ -1,33 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Perf_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Perf_8cc" kind="file">
     <compoundname>Perf.cc</compoundname>
     <includes refid="Perf_8hh" local="yes">Perf.hh</includes>
     <incdepgraph>
-      <node id="814">
-        <label>InstantFreq.hh</label>
-        <link refid="InstantFreq_8hh"/>
-        <childnode refid="810" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
-        </childnode>
-      </node>
       <node id="805">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="811">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="812" relation="include">
-        </childnode>
-        <childnode refid="804" relation="include">
-        </childnode>
-      </node>
-      <node id="800">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
-        <link refid="Perf.cc"/>
-        <childnode refid="801" relation="include">
-        </childnode>
       </node>
       <node id="804">
         <label>Base.hh</label>
@@ -39,6 +17,71 @@
         <childnode refid="807" relation="include">
         </childnode>
         <childnode refid="808" relation="include">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>string</label>
+      </node>
+      <node id="806">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="814">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="811">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+      </node>
+      <node id="802">
+        <label>vector</label>
+      </node>
+      <node id="810">
+        <label>deque</label>
+      </node>
+      <node id="803">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+      </node>
+      <node id="807">
+        <label>types.hh</label>
+      </node>
+      <node id="800">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf.cc"/>
+        <childnode refid="801" relation="include">
+        </childnode>
+      </node>
+      <node id="809">
+        <label>AvgValue.hh</label>
+        <link refid="AvgValue_8hh"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
         </childnode>
       </node>
       <node id="801">
@@ -55,54 +98,11 @@
         <childnode refid="814" relation="include">
         </childnode>
       </node>
-      <node id="812">
-        <label>string</label>
-      </node>
-      <node id="806">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="803">
-        <label>Composed.hh</label>
-        <link refid="Composed_8hh"/>
-        <childnode refid="802" relation="include">
-        </childnode>
-        <childnode refid="804" relation="include">
-        </childnode>
-      </node>
-      <node id="809">
-        <label>AvgValue.hh</label>
-        <link refid="AvgValue_8hh"/>
-        <childnode refid="810" relation="include">
-        </childnode>
-        <childnode refid="807" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
-        </childnode>
-        <childnode refid="803" relation="include">
-        </childnode>
-      </node>
       <node id="808">
         <label>Visitor.hh</label>
         <link refid="Visitor_8hh"/>
         <childnode refid="807" relation="include">
         </childnode>
-      </node>
-      <node id="813">
-        <label>Freq.hh</label>
-        <link refid="Freq_8hh"/>
-        <childnode refid="812" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
-        </childnode>
-      </node>
-      <node id="802">
-        <label>vector</label>
-      </node>
-      <node id="810">
-        <label>deque</label>
-      </node>
-      <node id="807">
-        <label>types.hh</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -120,7 +120,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
@@ -160,6 +160,6 @@
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/Perf.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Perf.cc"/>
   </compounddef>
 </doxygen>

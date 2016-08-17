@@ -1,0 +1,1226 @@
+[
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/main.cc": [
+      {
+        "symbol": "int App::process",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/main.cc",
+        "line": 9,
+        "documented": true
+      },
+      {
+        "symbol": "classApp",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/main.cc",
+        "line": 8,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh": [
+      {
+        "symbol": "argument",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 96,
+        "documented": true
+      },
+      {
+        "symbol": "requirement",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 107,
+        "documented": true
+      },
+      {
+        "symbol": "typedef std::function<void(void)> xtd::Application::t_sig_handler",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 89,
+        "documented": false
+      },
+      {
+        "symbol": "typedef std::function<void(const string&, const t_option&)> xtd::Application::t_callback",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 116,
+        "documented": false
+      },
+      {
+        "symbol": "typedef vector<t_option> xtd::Application::t_option_list",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 128,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::Application::m_binName",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 339,
+        "documented": true
+      },
+      {
+        "symbol": "uint32_t xtd::Application::m_logLevel",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 340,
+        "documented": true
+      },
+      {
+        "symbol": "vector<string> xtd::Application::m_remainingArgs",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 341,
+        "documented": true
+      },
+      {
+        "symbol": "string xtd::Application::m_rcsid",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 342,
+        "documented": true
+      },
+      {
+        "symbol": "t_option_list xtd::Application::m_optionList",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 345,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::Application::m_helpText",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 346,
+        "documented": false
+      },
+      {
+        "symbol": "boost::thread xtd::Application::m_runThread",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 347,
+        "documented": false
+      },
+      {
+        "symbol": "boost::asio::io_service xtd::Application::m_ioService",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 348,
+        "documented": false
+      },
+      {
+        "symbol": "boost::asio::io_service::work xtd::Application::m_work",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 349,
+        "documented": false
+      },
+      {
+        "symbol": "boost::asio::signal_set xtd::Application::m_signals",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 350,
+        "documented": false
+      },
+      {
+        "symbol": "map<int, t_sig_handler> xtd::Application::m_signalHandlerMap",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 351,
+        "documented": false
+      },
+      {
+        "symbol": "Application::Application",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 134,
+        "documented": true
+      },
+      {
+        "symbol": "Application::~Application",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 139,
+        "documented": true
+      },
+      {
+        "symbol": "int Application::execute",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 148,
+        "documented": true
+      },
+      {
+        "symbol": "virtual void xtd::Application::parseConfig",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 157,
+        "documented": true
+      },
+      {
+        "symbol": "virtual void xtd::Application::checkOptions",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 162,
+        "documented": true
+      },
+      {
+        "symbol": "virtual void xtd::Application::initialize",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 167,
+        "documented": true
+      },
+      {
+        "symbol": "int Application::process",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 173,
+        "documented": true
+      },
+      {
+        "symbol": "bool Application::addSignalHandler",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 185,
+        "documented": true
+      },
+      {
+        "symbol": "const string & Application::getVersion",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 190,
+        "documented": true
+      },
+      {
+        "symbol": "void Application::addOption",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 195,
+        "documented": false
+      },
+      {
+        "symbol": "bool Application::isOptionGiven",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 207,
+        "documented": true
+      },
+      {
+        "symbol": "void Application::addHelpMsg",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 213,
+        "documented": true
+      },
+      {
+        "symbol": "Application::t_callback Application::bindDir",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 224,
+        "documented": true
+      },
+      {
+        "symbol": "Application::t_callback Application::bindFile",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 232,
+        "documented": true
+      },
+      {
+        "symbol": "Application::t_callback Application::bindGiven",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 239,
+        "documented": true
+      },
+      {
+        "symbol": "Application::t_callback Application::bindString",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 246,
+        "documented": true
+      },
+      {
+        "symbol": "t_callback xtd::Application::bindCallback",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 254,
+        "documented": true
+      },
+      {
+        "symbol": "t_callback xtd::Application::bindValueIfGiven",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 263,
+        "documented": true
+      },
+      {
+        "symbol": "t_callback xtd::Application::bindNumber",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 278,
+        "documented": true
+      },
+      {
+        "symbol": "t_callback xtd::Application::bindValues",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 290,
+        "documented": true
+      },
+      {
+        "symbol": "t_callback xtd::Application::bindAccumulator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 299,
+        "documented": true
+      },
+      {
+        "symbol": "void xtd::Application::error_nohelp",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 312,
+        "documented": true
+      },
+      {
+        "symbol": "void xtd::Application::error",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 321,
+        "documented": true
+      },
+      {
+        "symbol": "void xtd::Application::warn",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 329,
+        "documented": true
+      },
+      {
+        "symbol": "void Application::readArgs",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 333,
+        "documented": false
+      },
+      {
+        "symbol": "void Application::usageWrapper",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 334,
+        "documented": false
+      },
+      {
+        "symbol": "void Application::usage",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 335,
+        "documented": false
+      },
+      {
+        "symbol": "void Application::handleSignal",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 336,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1Application",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 87,
+        "documented": true
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh": [
+      {
+        "symbol": "typedef map<string, string> xtd::ConfParser::t_value_map",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 26,
+        "documented": false
+      },
+      {
+        "symbol": "typedef std::pair<string, string> xtd::ConfParser::t_section_data",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 27,
+        "documented": false
+      },
+      {
+        "symbol": "typedef vector<t_section_data > xtd::ConfParser::t_section_list",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 28,
+        "documented": false
+      },
+      {
+        "symbol": "typedef map<string, string> xtd::ConfParser::t_param_map",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 31,
+        "documented": false
+      },
+      {
+        "symbol": "typedef boost::shared_ptr<ConfParser> xtd::ConfParser::t_sptr",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 32,
+        "documented": false
+      },
+      {
+        "symbol": "t_value_map xtd::ConfParser::m_values",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 124,
+        "documented": false
+      },
+      {
+        "symbol": "t_section_list xtd::ConfParser::m_sections",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 125,
+        "documented": false
+      },
+      {
+        "symbol": "int xtd::ConfParser::m_nblines",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 126,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::ConfParser::m_filename",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 127,
+        "documented": false
+      },
+      {
+        "symbol": "t_param_map xtd::ConfParser::m_paramMap",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 128,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::ConfParser::ConfParser",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 57,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::ConfParser::ConfParser",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 58,
+        "documented": false
+      },
+      {
+        "symbol": "const string & xtd::ConfParser::getFilePath",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 61,
+        "documented": false
+      },
+      {
+        "symbol": "ConfParser::const_iterator xtd::ConfParser::find",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 62,
+        "documented": false
+      },
+      {
+        "symbol": "ConfParser::const_iterator xtd::ConfParser::find",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 63,
+        "documented": false
+      },
+      {
+        "symbol": "ConfParser::const_iterator xtd::ConfParser::end",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 64,
+        "documented": false
+      },
+      {
+        "symbol": "ConfParser::const_iterator xtd::ConfParser::begin",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 65,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 68,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 69,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 70,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 71,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 72,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 73,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 74,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 75,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 76,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 77,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 78,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 79,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 80,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::get_default",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 83,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::ConfParser::exists",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 98,
+        "documented": true
+      },
+      {
+        "symbol": "void xtd::ConfParser::dumpKeys",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 104,
+        "documented": true
+      },
+      {
+        "symbol": "const ConfParser::t_param_map & xtd::ConfParser::getParamMap",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 106,
+        "documented": false
+      },
+      {
+        "symbol": "const ConfParser::t_value_map & xtd::ConfParser::getValueMap",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 121,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::initialize",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 109,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::parseSection",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 110,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::parseFile",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 113,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::loadFile",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 114,
+        "documented": false
+      },
+      {
+        "symbol": "status xtd::ConfParser::evaluateVal",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 115,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1ConfParser",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 24,
+        "documented": true
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh": [
+      {
+        "symbol": "typedef std::pair<const char*, const char*> xtd::ConfParser::const_iterator::t_result",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 37,
+        "documented": false
+      },
+      {
+        "symbol": "t_section_list::const_iterator xtd::ConfParser::const_iterator::m_iter",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 53,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::ConfParser::const_iterator::const_iterator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 40,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::ConfParser::const_iterator::const_iterator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 41,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::ConfParser::const_iterator::const_iterator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 42,
+        "documented": false
+      },
+      {
+        "symbol": "ConfParser::const_iterator & xtd::ConfParser::const_iterator::operator=",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 43,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::ConfParser::const_iterator::operator++",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 46,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::ConfParser::const_iterator::operator++",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 47,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::ConfParser::const_iterator::operator==",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 48,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::ConfParser::const_iterator::operator!=",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 49,
+        "documented": false
+      },
+      {
+        "symbol": "const ConfParser::const_iterator::t_result xtd::ConfParser::const_iterator::operator*",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 50,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1ConfParser_1_1const__iterator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh",
+        "line": 35,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh": [
+      {
+        "symbol": "string xtd::error::m_message",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 32,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::error::do_throw",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 12,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::error::error",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 19,
+        "documented": false
+      },
+      {
+        "symbol": "virtual xtd::error::~error",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 22,
+        "documented": false
+      },
+      {
+        "symbol": "virtual const char* xtd::error::what",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 26,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1error",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/error.hh",
+        "line": 9,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh": [
+      {
+        "symbol": "level",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 17,
+        "documented": false
+      },
+      {
+        "symbol": "typedef map<string, level> xtd::logger::t_levels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 29,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::logger::m_name",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 79,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::logger::m_initialized",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 80,
+        "documented": false
+      },
+      {
+        "symbol": "t_levels xtd::logger::m_levels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 81,
+        "documented": false
+      },
+      {
+        "symbol": "logger * xtd::logger::ms_pInstance",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 82,
+        "documented": false
+      },
+      {
+        "symbol": "xtd::logger::logger",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 32,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::initialize",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 35,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::initialize",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 36,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::setLevel",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 37,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::updateLevels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 38,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::setAllLevels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 39,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::setAllValueLevels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 40,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::clearAll",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 41,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::setName",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 42,
+        "documented": false
+      },
+      {
+        "symbol": "logger::level xtd::logger::levelOf",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 44,
+        "documented": false
+      },
+      {
+        "symbol": "uint32_t xtd::logger::valueOf",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 45,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::logger::stringOf",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 46,
+        "documented": false
+      },
+      {
+        "symbol": "logger::level xtd::logger::fromString",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 47,
+        "documented": false
+      },
+      {
+        "symbol": "logger::level xtd::logger::getLevel",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 49,
+        "documented": false
+      },
+      {
+        "symbol": "logger::t_levels xtd::logger::getLevels",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 50,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::logger::isValidStringLevel",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 51,
+        "documented": false
+      },
+      {
+        "symbol": "logger & xtd::logger::get",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 53,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::emerg",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 55,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::alert",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 57,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::crit",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 59,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::err",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 61,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::warning",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 63,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::info",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 65,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::notice",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 67,
+        "documented": false
+      },
+      {
+        "symbol": "static void xtd::logger::debug",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 69,
+        "documented": false
+      },
+      {
+        "symbol": "static string xtd::logger::format_vargs",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 71,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::wrap_syslog",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 74,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::logger::log",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 76,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1logger",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 15,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh": [
+      {
+        "symbol": "char xtd::Application::t_option::m_shortOpt",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 119,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::Application::t_option::m_longOpt",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 120,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::Application::t_option::m_description",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 121,
+        "documented": false
+      },
+      {
+        "symbol": "argument xtd::Application::t_option::m_argumentType",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 122,
+        "documented": false
+      },
+      {
+        "symbol": "t_callback xtd::Application::t_option::m_callback",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 123,
+        "documented": false
+      },
+      {
+        "symbol": "requirement xtd::Application::t_option::m_status",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 124,
+        "documented": false
+      },
+      {
+        "symbol": "bool xtd::Application::t_option::m_given",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 125,
+        "documented": false
+      },
+      {
+        "symbol": "structxtd_1_1Application_1_1t__option",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh",
+        "line": 118,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "typedef std::string boost::property_tree::json_parser::translator< T >::internal_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 54,
+        "documented": false
+      },
+      {
+        "symbol": "typedef T boost::property_tree::json_parser::translator< T >::external_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 55,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<T> boost::property_tree::json_parser::translator< T >::get_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 57,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<std::string> boost::property_tree::json_parser::translator< T >::put_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 58,
+        "documented": false
+      },
+      {
+        "symbol": "structboost_1_1property__tree_1_1json__parser_1_1translator",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 53,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "typedef std::string boost::property_tree::json_parser::translator< bool >::internal_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 75,
+        "documented": false
+      },
+      {
+        "symbol": "typedef bool boost::property_tree::json_parser::translator< bool >::external_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 76,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<bool> boost::property_tree::json_parser::translator< bool >::get_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 78,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<std::string> boost::property_tree::json_parser::translator< bool >::put_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 79,
+        "documented": false
+      },
+      {
+        "symbol": "structboost_1_1property__tree_1_1json__parser_1_1translator_3_01bool_01_4",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 74,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "typedef std::string boost::property_tree::json_parser::translator< std::string >::internal_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 64,
+        "documented": false
+      },
+      {
+        "symbol": "typedef std::string boost::property_tree::json_parser::translator< std::string >::external_type",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 65,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<std::string> boost::property_tree::json_parser::translator< std::string >::get_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 67,
+        "documented": false
+      },
+      {
+        "symbol": "boost::optional<std::string> boost::property_tree::json_parser::translator< std::string >::put_value",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 68,
+        "documented": false
+      },
+      {
+        "symbol": "structboost_1_1property__tree_1_1json__parser_1_1translator_3_01std_1_1string_01_4",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 63,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh": [
+      {
+        "symbol": "typedef boost::tuple<string, string, string> xtd::text::xml::t_entity",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 12,
+        "documented": false
+      },
+      {
+        "symbol": "typedef vector<t_entity> xtd::text::xml::t_data",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 13,
+        "documented": false
+      },
+      {
+        "symbol": "xml::t_data xtd::text::xml::ms_entityList",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 23,
+        "documented": false
+      },
+      {
+        "symbol": "void xtd::text::xml::encode",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 16,
+        "documented": false
+      },
+      {
+        "symbol": "string xtd::text::xml::encode_copy",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 17,
+        "documented": false
+      },
+      {
+        "symbol": "xml::t_data xtd::text::xml::initialize",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 20,
+        "documented": false
+      },
+      {
+        "symbol": "classxtd_1_1text_1_1xml",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.hh",
+        "line": 10,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "namespaceboost",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 47,
+        "documented": true
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "namespaceboost_1_1property__tree",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 47,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp": [
+      {
+        "symbol": "std::basic_string<Ch> boost::property_tree::json_parser::create_escapes",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp",
+        "line": 25,
+        "documented": false
+      },
+      {
+        "symbol": "void boost::property_tree::json_parser::write_json_helper",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp",
+        "line": 76,
+        "documented": false
+      },
+      {
+        "symbol": "bool boost::property_tree::json_parser::verify_json",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp",
+        "line": 138,
+        "documented": false
+      },
+      {
+        "symbol": "void boost::property_tree::json_parser::write_json_internal",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp",
+        "line": 165,
+        "documented": false
+      }
+    ],
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "void boost::property_tree::json_parser::read_json",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 98,
+        "documented": true
+      },
+      {
+        "symbol": "void boost::property_tree::json_parser::read_json",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 122,
+        "documented": true
+      },
+      {
+        "symbol": "void boost::property_tree::json_parser::write_json",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 150,
+        "documented": true
+      },
+      {
+        "symbol": "void boost::property_tree::json_parser::write_json",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 174,
+        "documented": true
+      },
+      {
+        "symbol": "namespaceboost_1_1property__tree_1_1json__parser",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 48,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc": [
+      {
+        "symbol": "namespacextd",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc",
+        "line": 18,
+        "documented": false
+      }
+    ],
+    "/home/travis/build/psycofdj/xtdcpp/common/src/types.hh": [
+      {
+        "symbol": "status",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/types.hh",
+        "line": 37,
+        "documented": false
+      },
+      {
+        "symbol": "std::underlying_type<T>::type xtd::valueof",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/types.hh",
+        "line": 32,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/text.cc": [
+      {
+        "symbol": "namespacextd_1_1text",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/text.cc",
+        "line": 6,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc": [
+      {
+        "symbol": "const char rcsid[]",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc",
+        "line": 14,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp": [
+      {
+        "symbol": "BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp",
+        "line": 27,
+        "documented": true
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh": [
+      {
+        "symbol": "HERE",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh",
+        "line": 10,
+        "documented": false
+      }
+    ]
+  },
+  {
+    "/home/travis/build/psycofdj/xtdcpp/common/src/main.cc": [
+      {
+        "symbol": "int main",
+        "file": "/home/travis/build/psycofdj/xtdcpp/common/src/main.cc",
+        "line": 38,
+        "documented": false
+      }
+    ]
+  }
+]

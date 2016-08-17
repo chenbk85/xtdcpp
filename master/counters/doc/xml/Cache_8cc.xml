@@ -1,28 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Cache_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Cache_8cc" kind="file">
     <compoundname>Cache.cc</compoundname>
     <includes refid="Cache_8hh" local="yes">Cache.hh</includes>
     <includes local="no">boost/foreach.hpp</includes>
     <incdepgraph>
-      <node id="583">
-        <label>InstantFreq.hh</label>
-        <link refid="InstantFreq_8hh"/>
-        <childnode refid="584" relation="include">
-        </childnode>
-        <childnode refid="580" relation="include">
-        </childnode>
-      </node>
       <node id="576">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="580">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="581" relation="include">
-        </childnode>
-        <childnode refid="575" relation="include">
-        </childnode>
       </node>
       <node id="575">
         <label>Base.hh</label>
@@ -39,32 +23,45 @@
       <node id="585">
         <label>boost/foreach.hpp</label>
       </node>
+      <node id="582">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
       <node id="581">
         <label>string</label>
       </node>
       <node id="577">
         <label>boost/noncopyable.hpp</label>
       </node>
-      <node id="574">
-        <label>Composed.hh</label>
-        <link refid="Composed_8hh"/>
-        <childnode refid="573" relation="include">
+      <node id="583">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="581" relation="include">
         </childnode>
         <childnode refid="575" relation="include">
         </childnode>
       </node>
+      <node id="573">
+        <label>vector</label>
+      </node>
       <node id="571">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Cache.cc</label>
         <link refid="Cache.cc"/>
         <childnode refid="572" relation="include">
         </childnode>
         <childnode refid="585" relation="include">
-        </childnode>
-      </node>
-      <node id="579">
-        <label>Visitor.hh</label>
-        <link refid="Visitor_8hh"/>
-        <childnode refid="578" relation="include">
         </childnode>
       </node>
       <node id="572">
@@ -81,22 +78,25 @@
         <childnode refid="583" relation="include">
         </childnode>
       </node>
-      <node id="582">
-        <label>Freq.hh</label>
-        <link refid="Freq_8hh"/>
-        <childnode refid="581" relation="include">
-        </childnode>
-        <childnode refid="580" relation="include">
-        </childnode>
-      </node>
-      <node id="573">
-        <label>vector</label>
-      </node>
       <node id="584">
         <label>deque</label>
       </node>
+      <node id="574">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+      </node>
       <node id="578">
         <label>types.hh</label>
+      </node>
+      <node id="579">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="578" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -110,7 +110,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -197,6 +197,6 @@
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/Cache.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Cache.cc"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="json__parser__write_8hpp" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="json__parser__write_8hpp" kind="file">
     <compoundname>json_parser_write.hpp</compoundname>
     <includes local="no">boost/property_tree/ptree.hpp</includes>
     <includes local="no">boost/next_prior.hpp</includes>
@@ -8,7 +8,7 @@
     <includes local="no">string</includes>
     <includes local="no">ostream</includes>
     <includes local="no">iomanip</includes>
-    <includedby refid="json__parser_8hpp" local="yes">/home/psyco/dev/xtdcpp/common/src/json_parser.hpp</includedby>
+    <includedby refid="json__parser_8hpp" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp</includedby>
     <incdepgraph>
       <node id="377">
         <label>iomanip</label>
@@ -22,14 +22,8 @@
       <node id="376">
         <label>ostream</label>
       </node>
-      <node id="374">
-        <label>boost/type_traits/make_unsigned.hpp</label>
-      </node>
-      <node id="372">
-        <label>boost/property_tree/ptree.hpp</label>
-      </node>
       <node id="371">
-        <label>/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp</label>
         <link refid="json_parser_write.hpp"/>
         <childnode refid="372" relation="include">
         </childnode>
@@ -44,16 +38,22 @@
         <childnode refid="377" relation="include">
         </childnode>
       </node>
+      <node id="374">
+        <label>boost/type_traits/make_unsigned.hpp</label>
+      </node>
+      <node id="372">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="378">
-        <label>/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp</label>
         <link refid="json_parser_write.hpp"/>
         <childnode refid="379" relation="include">
         </childnode>
       </node>
       <node id="379">
-        <label>/home/psyco/dev/xtdcpp/common/src/json_parser.hpp</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp</label>
         <link refid="json__parser_8hpp"/>
       </node>
     </invincdepgraph>
@@ -74,9 +74,9 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>more<sp/>information,<sp/>see<sp/>www.boost.org</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/property_tree/ptree.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/next_prior.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/type_traits/make_unsigned.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -84,7 +84,7 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref><sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">json_parser</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">boost<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">json_parser</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>necessary<sp/>escape<sp/>sequences<sp/>from<sp/>illegal<sp/>characters</highlight><highlight class="normal"></highlight></codeline>
@@ -246,6 +246,6 @@
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/json_parser_write.hpp"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/json_parser_write.hpp"/>
   </compounddef>
 </doxygen>

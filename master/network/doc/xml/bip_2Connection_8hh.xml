@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="bip_2Connection_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bip_2Connection_8hh" kind="file">
     <compoundname>Connection.hh</compoundname>
     <includes local="no">boost/crc.hpp</includes>
     <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
     <includes refid="base_2Connection_8hh" local="yes">base/Connection.hh</includes>
-    <includedby refid="bip_2Connection_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</includedby>
+    <includedby refid="bip_2Connection_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc</includedby>
     <incdepgraph>
       <node id="1367">
         <label>list</label>
@@ -19,6 +19,20 @@
       <node id="1377">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
       </node>
+      <node id="1356">
+        <label>base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1351" relation="include">
+        </childnode>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
       <node id="1360">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -28,18 +42,33 @@
       <node id="1361">
         <label>utils/Config.hxx</label>
       </node>
-      <node id="1347">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
-        <link refid="bip/Connection.hh"/>
-        <childnode refid="1348" relation="include">
+      <node id="1379">
+        <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1352">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1368">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1358">
+        <label>string</label>
+      </node>
+      <node id="1362">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1353" relation="include">
         </childnode>
         <childnode refid="1349" relation="include">
         </childnode>
-        <childnode refid="1356" relation="include">
+        <childnode refid="1363" relation="include">
         </childnode>
       </node>
-      <node id="1379">
-        <label>utils/Utils.hxx</label>
+      <node id="1365">
+        <label>map</label>
+      </node>
+      <node id="1354">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1373">
         <label>utils/Utils.hh</label>
@@ -71,31 +100,6 @@
         <childnode refid="1379" relation="include">
         </childnode>
       </node>
-      <node id="1352">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1368">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1358">
-        <label>string</label>
-      </node>
-      <node id="1365">
-        <label>map</label>
-      </node>
-      <node id="1354">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1362">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1353" relation="include">
-        </childnode>
-        <childnode refid="1349" relation="include">
-        </childnode>
-        <childnode refid="1363" relation="include">
-        </childnode>
-      </node>
       <node id="1357">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -117,6 +121,49 @@
       </node>
       <node id="1372">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1348">
+        <label>boost/crc.hpp</label>
+      </node>
+      <node id="1378">
+        <label>ctime</label>
+      </node>
+      <node id="1370">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1364">
+        <label>vector</label>
+      </node>
+      <node id="1349">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1350" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+        <childnode refid="1352" relation="include">
+        </childnode>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1355" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>streambuf</label>
+      </node>
+      <node id="1366">
+        <label>utility</label>
+      </node>
+      <node id="1376">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1350">
+        <label>deque</label>
+      </node>
+      <node id="1369">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1363">
         <label>utils/CacheDns.hh</label>
@@ -152,80 +199,33 @@
         <childnode refid="1373" relation="include">
         </childnode>
       </node>
-      <node id="1348">
-        <label>boost/crc.hpp</label>
-      </node>
-      <node id="1378">
-        <label>ctime</label>
-      </node>
-      <node id="1370">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1364">
-        <label>vector</label>
-      </node>
-      <node id="1374">
-        <label>streambuf</label>
-      </node>
-      <node id="1366">
-        <label>utility</label>
-      </node>
-      <node id="1376">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1350">
-        <label>deque</label>
-      </node>
-      <node id="1369">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1371">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1349">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1350" relation="include">
-        </childnode>
-        <childnode refid="1351" relation="include">
-        </childnode>
-        <childnode refid="1352" relation="include">
-        </childnode>
-        <childnode refid="1353" relation="include">
-        </childnode>
-        <childnode refid="1354" relation="include">
-        </childnode>
-        <childnode refid="1355" relation="include">
-        </childnode>
-      </node>
-      <node id="1356">
-        <label>base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="1351" relation="include">
-        </childnode>
-        <childnode refid="1355" relation="include">
-        </childnode>
-        <childnode refid="1357" relation="include">
-        </childnode>
-        <childnode refid="1349" relation="include">
-        </childnode>
-        <childnode refid="1362" relation="include">
-        </childnode>
       </node>
       <node id="1355">
         <label>types.hh</label>
       </node>
+      <node id="1347">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip/Connection.hh"/>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1381">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
+      </node>
       <node id="1380">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.hh</label>
         <link refid="bip/Connection.hh"/>
         <childnode refid="1381" relation="include">
         </childnode>
-      </node>
-      <node id="1381">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
-        <link refid="bip_2Connection_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1bip_1_1Connection" prot="public">xtd::network::bip::Connection</innerclass>
@@ -238,14 +238,14 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CONNECTION_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CONNECTION_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/crc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="base_2Connection_8hh" kindref="compound">base/Connection.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Config;<sp/>}</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
@@ -261,14 +261,14 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mcs_maxDataCrcSize<sp/>=<sp/>5;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Connection" kindref="compound">Connection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_configuration,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Connection_1a5c981bbe6f8f26ac8eb25f70b2427d5c" kindref="member">Connection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref>&amp;<sp/>p_configuration,</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::asio::io_service&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_ioService,</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_hostname,</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_port);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>incCounter(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Connection_1acac00964a4fc76de35cdb516e9d73051" kindref="member">incCounter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/>uint8_t<sp/>computeDataCrc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref>&amp;<sp/>p_data);</highlight></codeline>
@@ -330,7 +330,7 @@
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Domain&gt;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal">uint8_t</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><ref refid="classxtd_1_1network_1_1bip_1_1Connection" kindref="compound">Connection&lt;Domain&gt;::calcCRC8</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>p_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>p_byteCount)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">Connection&lt;Domain&gt;::calcCRC8(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>p_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>p_byteCount)</highlight></codeline>
 <codeline lineno="135"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/>boost::crc_optimal&lt;8,<sp/>0x9B,<sp/>0,<sp/>0,<sp/>false,<sp/>false&gt;<sp/>crc_8;</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/>crc_8.process_bytes(p_buffer,<sp/>p_byteCount);</highlight></codeline>
@@ -343,6 +343,6 @@
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BIP_CONNECTION_HXX_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.hh"/>
   </compounddef>
 </doxygen>

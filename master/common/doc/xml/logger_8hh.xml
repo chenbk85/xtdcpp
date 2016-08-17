@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="logger_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="logger_8hh" kind="file">
     <compoundname>logger.hh</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">vector</includes>
@@ -10,33 +10,16 @@
     <includes local="no">stdarg.h</includes>
     <includes refid="types_8hh" local="yes">types.hh</includes>
     <includes local="yes">logger.hxx</includes>
-    <includedby refid="src_2Application_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/Application.hh</includedby>
-    <includedby refid="error_8hh" local="yes">/home/psyco/dev/xtdcpp/common/src/error.hh</includedby>
-    <includedby refid="logger_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/logger.cc</includedby>
-    <includedby refid="main_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/main.cc</includedby>
+    <includedby refid="src_2Application_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh</includedby>
+    <includedby refid="error_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/error.hh</includedby>
+    <includedby refid="logger_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/logger.cc</includedby>
+    <includedby refid="main_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/main.cc</includedby>
     <incdepgraph>
-      <node id="403">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="404" relation="include">
-        </childnode>
-        <childnode refid="399" relation="include">
-        </childnode>
-        <childnode refid="398" relation="include">
-        </childnode>
-        <childnode refid="405" relation="include">
-        </childnode>
-        <childnode refid="406" relation="include">
-        </childnode>
-      </node>
       <node id="402">
         <label>stdarg.h</label>
       </node>
-      <node id="400">
-        <label>boost/format.hpp</label>
-      </node>
       <node id="396">
-        <label>/home/psyco/dev/xtdcpp/common/src/logger.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh</label>
         <link refid="logger.hh"/>
         <childnode refid="397" relation="include">
         </childnode>
@@ -55,11 +38,28 @@
         <childnode refid="407" relation="include">
         </childnode>
       </node>
+      <node id="400">
+        <label>boost/format.hpp</label>
+      </node>
       <node id="404">
         <label>string</label>
       </node>
       <node id="399">
         <label>map</label>
+      </node>
+      <node id="403">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
       </node>
       <node id="406">
         <label>fstream</label>
@@ -81,20 +81,14 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="410">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.cc</label>
-        <link refid="Application_8cc"/>
-      </node>
-      <node id="409">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.hh</label>
-        <link refid="src_2Application_8hh"/>
-        <childnode refid="410" relation="include">
-        </childnode>
-        <childnode refid="411" relation="include">
+      <node id="412">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/error.hh</label>
+        <link refid="error_8hh"/>
+        <childnode refid="413" relation="include">
         </childnode>
       </node>
       <node id="408">
-        <label>/home/psyco/dev/xtdcpp/common/src/logger.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh</label>
         <link refid="logger.hh"/>
         <childnode refid="409" relation="include">
         </childnode>
@@ -106,22 +100,28 @@
         </childnode>
       </node>
       <node id="414">
-        <label>/home/psyco/dev/xtdcpp/common/src/logger.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/logger.cc</label>
         <link refid="logger_8cc"/>
       </node>
       <node id="411">
-        <label>/home/psyco/dev/xtdcpp/common/src/main.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/main.cc</label>
         <link refid="main_8cc"/>
       </node>
-      <node id="413">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
-        <link refid="ConfParser_8cc"/>
-      </node>
-      <node id="412">
-        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
-        <link refid="error_8hh"/>
-        <childnode refid="413" relation="include">
+      <node id="409">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh</label>
+        <link refid="src_2Application_8hh"/>
+        <childnode refid="410" relation="include">
         </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc</label>
+        <link refid="Application_8cc"/>
+      </node>
+      <node id="413">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</label>
+        <link refid="ConfParser_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1logger" prot="public">xtd::logger</innerclass>
@@ -136,7 +136,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh" line="10" column="33" bodyfile="/home/psyco/dev/xtdcpp/common/src/logger.hh" bodystart="10" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh" line="10" column="33" bodyfile="/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" compoundref="ConfParser_8cc" startline="16" endline="21">xtd::ConfParser::ConfParser</referencedby>
+        <referencedby refid="classxtd_1_1ConfParser_1ac8f46e56cdd5d015719c682707b12bc2" compoundref="ConfParser_8cc" startline="389" endline="401">xtd::ConfParser::get</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,18 +146,18 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_LOG_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_LOG_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_LOG_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_LOG_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;syslog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>HERE<sp/>__PRETTY_FUNCTION__,__FILE__,__LINE__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>HERE<sp/>__PRETTY_FUNCTION__,__FILE__,__LINE__</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14" refid="classxtd_1_1logger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1logger" kindref="compound">logger</ref></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
@@ -198,21 +200,21 @@
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger" kindref="compound">logger</ref>&amp;<sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(void);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1ae6cb8d153a4c27be572a177366bd7abc" kindref="member">emerg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a07697b74619641014fb6e51130b5c837" kindref="member">emerg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7ed21143076d0cca420653d4345baa2f" kindref="member">alert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1abea0d6d16f6138d94e9373457fa08513" kindref="member">alert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a5888c6a8bb862595985926d16c7dcf13" kindref="member">crit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a1725596996a6060db5055c499c9ec9d1" kindref="member">crit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a56bd7107802ebe56c6918992f0608ec6" kindref="member">err</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a20f991c43e729cf84d5d5294b947091e" kindref="member">err</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1a7b83d3f08fa392b79e3f553b585971cd" kindref="member">warning</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a7432d0a490aef6bfe2de6f5ff5b77c06" kindref="member">warning</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1acaf9b6b99962bf5c2264824231d7a40c" kindref="member">info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1ac6cf4c5d929c844041ea9763cc3926be" kindref="member">info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aefd2af60c8501931cb9c736b5ad74f65" kindref="member">notice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a74886bf7a5d2bb1f2b2bf0265b13b38b" kindref="member">notice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a250ce2f143da181d7149a1556da2a6f1aad42f6697b035b7580e4fef93be20b4d" kindref="member">debug</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a53a77a287f7a29d9585898dcff910254" kindref="member">debug</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_format,<sp/>Args...<sp/>p_args);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Arguments&gt;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1logger_1a169ce6459fe906cb5f840bdf2669e8ce" kindref="member">format_vargs</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>p_fmt,<sp/>Arguments&amp;&amp;...<sp/>p_args);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
@@ -234,6 +236,6 @@
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_LOG_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/logger.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/logger.hh"/>
   </compounddef>
 </doxygen>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="http_2Connection_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="http_2Connection_8hh" kind="file">
     <compoundname>Connection.hh</compoundname>
     <includes refid="base_2Connection_8hh" local="yes">base/Connection.hh</includes>
-    <includedby refid="http_2Connection_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</includedby>
+    <includedby refid="http_2Connection_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.cc</includedby>
     <incdepgraph>
       <node id="1401">
         <label>list</label>
@@ -17,6 +17,20 @@
       <node id="1411">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
       </node>
+      <node id="1383">
+        <label>base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
       <node id="1389">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -28,6 +42,31 @@
       </node>
       <node id="1413">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1392">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1402">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1387">
+        <label>string</label>
+      </node>
+      <node id="1396">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>map</label>
+      </node>
+      <node id="1394">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1407">
         <label>utils/Utils.hh</label>
@@ -59,37 +98,6 @@
         <childnode refid="1413" relation="include">
         </childnode>
       </node>
-      <node id="1392">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1382">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
-        <link refid="http/Connection.hh"/>
-        <childnode refid="1383" relation="include">
-        </childnode>
-      </node>
-      <node id="1402">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1387">
-        <label>string</label>
-      </node>
-      <node id="1399">
-        <label>map</label>
-      </node>
-      <node id="1394">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1396">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1393" relation="include">
-        </childnode>
-        <childnode refid="1390" relation="include">
-        </childnode>
-        <childnode refid="1397" relation="include">
-        </childnode>
-      </node>
       <node id="1386">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -111,6 +119,52 @@
       </node>
       <node id="1406">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1412">
+        <label>ctime</label>
+      </node>
+      <node id="1404">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1398">
+        <label>vector</label>
+      </node>
+      <node id="1390">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>streambuf</label>
+      </node>
+      <node id="1400">
+        <label>utility</label>
+      </node>
+      <node id="1410">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1382">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http/Connection.hh"/>
+        <childnode refid="1383" relation="include">
+        </childnode>
+      </node>
+      <node id="1391">
+        <label>deque</label>
+      </node>
+      <node id="1403">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1397">
         <label>utils/CacheDns.hh</label>
@@ -146,77 +200,23 @@
         <childnode refid="1407" relation="include">
         </childnode>
       </node>
-      <node id="1412">
-        <label>ctime</label>
-      </node>
-      <node id="1404">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1398">
-        <label>vector</label>
-      </node>
-      <node id="1408">
-        <label>streambuf</label>
-      </node>
-      <node id="1400">
-        <label>utility</label>
-      </node>
-      <node id="1410">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1391">
-        <label>deque</label>
-      </node>
-      <node id="1403">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1405">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1390">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1391" relation="include">
-        </childnode>
-        <childnode refid="1384" relation="include">
-        </childnode>
-        <childnode refid="1392" relation="include">
-        </childnode>
-        <childnode refid="1393" relation="include">
-        </childnode>
-        <childnode refid="1394" relation="include">
-        </childnode>
-        <childnode refid="1385" relation="include">
-        </childnode>
-      </node>
-      <node id="1383">
-        <label>base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="1384" relation="include">
-        </childnode>
-        <childnode refid="1385" relation="include">
-        </childnode>
-        <childnode refid="1386" relation="include">
-        </childnode>
-        <childnode refid="1390" relation="include">
-        </childnode>
-        <childnode refid="1396" relation="include">
-        </childnode>
       </node>
       <node id="1385">
         <label>types.hh</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1415">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
+      </node>
       <node id="1414">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.hh</label>
         <link refid="http/Connection.hh"/>
         <childnode refid="1415" relation="include">
         </childnode>
-      </node>
-      <node id="1415">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
-        <link refid="http_2Connection_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Connection" prot="public">xtd::network::http::Connection</innerclass>
@@ -228,12 +228,12 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HTTP_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HTTP_CONNECTION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HTTP_CONNECTION_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HTTP_CONNECTION_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="base_2Connection_8hh" kindref="compound">base/Connection.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
@@ -293,6 +293,6 @@
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_HTTP_CONNECTION_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/Connection.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.hh"/>
   </compounddef>
 </doxygen>

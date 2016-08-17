@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Server_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Server_8hh" kind="file">
     <compoundname>Server.hh</compoundname>
     <includes local="no">unistd.h</includes>
     <includes local="no">map</includes>
@@ -9,13 +9,35 @@
     <includes local="no">counters.hh</includes>
     <includes refid="HttpServer_8hh" local="yes">app/HttpServer.hh</includes>
     <includes refid="Base_8hh" local="yes">param/Base.hh</includes>
-    <includedby refid="Server_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/Server.cc</includedby>
+    <includedby refid="Server_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.cc</includedby>
     <incdepgraph>
       <node id="404">
         <label>http/Server.hh</label>
       </node>
       <node id="399">
         <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="407">
+        <label>param/Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
       </node>
       <node id="400">
         <label>boost/lexical_cast.hpp</label>
@@ -50,8 +72,23 @@
       <node id="412">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
+      <node id="405">
+        <label>utils/Config.hh</label>
+      </node>
+      <node id="398">
+        <label>ctime</label>
+      </node>
+      <node id="390">
+        <label>unistd.h</label>
+      </node>
+      <node id="396">
+        <label>vector</label>
+      </node>
+      <node id="403">
+        <label>network_fwd.hh</label>
+      </node>
       <node id="389">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.hh</label>
         <link refid="Server.hh"/>
         <childnode refid="390" relation="include">
         </childnode>
@@ -68,42 +105,8 @@
         <childnode refid="407" relation="include">
         </childnode>
       </node>
-      <node id="405">
-        <label>utils/Config.hh</label>
-      </node>
-      <node id="407">
-        <label>param/Base.hh</label>
-        <link refid="Base_8hh"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="409" relation="include">
-        </childnode>
-        <childnode refid="410" relation="include">
-        </childnode>
-        <childnode refid="411" relation="include">
-        </childnode>
-        <childnode refid="400" relation="include">
-        </childnode>
-        <childnode refid="412" relation="include">
-        </childnode>
-        <childnode refid="398" relation="include">
-        </childnode>
-        <childnode refid="413" relation="include">
-        </childnode>
-        <childnode refid="414" relation="include">
-        </childnode>
-      </node>
-      <node id="398">
-        <label>ctime</label>
-      </node>
-      <node id="390">
-        <label>unistd.h</label>
-      </node>
-      <node id="396">
-        <label>vector</label>
-      </node>
-      <node id="403">
-        <label>network_fwd.hh</label>
+      <node id="397">
+        <label>iostream</label>
       </node>
       <node id="395">
         <label>app/HttpServer.hh</label>
@@ -137,9 +140,6 @@
         <childnode refid="406" relation="include">
         </childnode>
       </node>
-      <node id="397">
-        <label>iostream</label>
-      </node>
       <node id="408">
         <label>boost/bind.hpp</label>
       </node>
@@ -154,15 +154,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="416">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.cc</label>
-        <link refid="Server_8cc"/>
-      </node>
       <node id="415">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.hh</label>
         <link refid="Server.hh"/>
         <childnode refid="416" relation="include">
         </childnode>
+      </node>
+      <node id="416">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.cc</label>
+        <link refid="Server_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structxtd_1_1servers_1_1app_1_1Address" prot="public">xtd::servers::app::Address</innerclass>
@@ -175,9 +175,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_APP_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_APP_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_APP_SERVER_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_APP_SERVER_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;zlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -186,7 +186,7 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="HttpServer_8hh" kindref="compound">app/HttpServer.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">param/Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">app<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
@@ -209,48 +209,48 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>stopper_status<sp/>:<sp/>uint32_t<sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>disabled<sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>waitting<sp/>=<sp/>2,</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>enabled<sp/><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea075ae3d2fc31640504f814f60e5ef713" kindref="member">disabled</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2ea8684b8d2826f255bfc5a07b107e7eec9" kindref="member">waitting</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ace8b75d28256ef7b2143ae02468dbe2eaa10311459433adf322f2590a4987c423" kindref="member">enabled</ref><sp/><sp/>=<sp/>3</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="41" refid="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mcs_defaultProbeDelay<sp/>=<sp/>30;</highlight></codeline>
-<codeline lineno="42" refid="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mcs_defaultTimeoutMs<sp/><sp/>=<sp/>5000;</highlight></codeline>
-<codeline lineno="43" refid="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mcs_httpNbThread<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5;</highlight></codeline>
-<codeline lineno="44" refid="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mcs_defaultListenInterface[];</highlight></codeline>
+<codeline lineno="41" refid="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ae361d389bf6050e2565055e7e3800e82" kindref="member">mcs_defaultProbeDelay</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="42" refid="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a76f9b8224a5555f638527752e26d5457" kindref="member">mcs_defaultTimeoutMs</ref><sp/><sp/>=<sp/>5000;</highlight></codeline>
+<codeline lineno="43" refid="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ac9944d61cb7fd45d86c1128e1ac55670" kindref="member">mcs_httpNbThread</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="44" refid="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a9d3ac8218bf47d8ffa6d8b30a6195fa8" kindref="member">mcs_defaultListenInterface</ref>[];</highlight></codeline>
 <codeline lineno="45" refid="classxtd_1_1servers_1_1app_1_1Server_1afae8d71c231f3e48ec8270217fddae10" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1afae8d71c231f3e48ec8270217fddae10" kindref="member">mcs_defaultStructGenDumpPath</ref>;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server" kindref="compound">Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/>~<ref refid="classxtd_1_1servers_1_1app_1_1Server" kindref="compound">Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ac30046979fc32ad42c2436c0f3854ea2" kindref="member">Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a1b30c4e9066d130569acb7d31c125e20" kindref="member">~Server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processRequest(uint32_t<sp/><sp/><sp/><sp/>p_requestID,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ad3c9fd71ba0399f18c27b15cb1d28e65" kindref="member">processRequest</ref>(uint32_t<sp/><sp/><sp/><sp/>p_requestID,</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TReq&amp;<sp/>p_request,</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>p_requestDebug,</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRes&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_response,</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_responseDebug)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>parseConfig(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>parseBipPort(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>checkOptions(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>initialize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>status<sp/>defineProbes(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/>isResponseValid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRes&amp;<sp/>p_response);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>stop(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>start(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isStructgenMode(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a04ac2d5b3a0a229a3b54ef33b9b7056d" kindref="member">parseConfig</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1aeb01b34fd4e8564b8cd18c2041dc253f" kindref="member">parseBipPort</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a6f5fff5c5058dc43aea7b27a046c985b" kindref="member">checkOptions</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1aabde8b6a3810b09f029821dddafe3b8c" kindref="member">initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>status<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1afbe76a86e66e635907229d37b1267037" kindref="member">defineProbes</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a00c2f9aaa3c130299a4c77f86bf37d38" kindref="member">isResponseValid</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRes&amp;<sp/>p_response);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a37fe0eca660f81a9edde0c1ce6938f39" kindref="member">stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a8e21bf6e7993a2e04fd70d0ce88ca487" kindref="member">start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ad1161e88fb26561ffbef7254fb263d15" kindref="member">isStructgenMode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/>status<sp/>h_query(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_requestId,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>status<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ae4ad855e88777c7e5afe9d673037ca6b" kindref="member">h_query</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_requestId,</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>network::http::Request&amp;<sp/>p_req,</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>network::http::Response&amp;<sp/><sp/><sp/><sp/><sp/><sp/>p_res);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/>status<sp/>h_ihm_query(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_requestId,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>status<sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a10fc93bccaf973467b0df7de87b4ae79" kindref="member">h_ihm_query</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_requestId,</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>network::http::Request&amp;<sp/>p_req,</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>network::http::Response&amp;<sp/><sp/><sp/><sp/><sp/><sp/>p_res);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAssertRTT(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_assert);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1ab6700b87291ddfa7de81f11ec4f866e6" kindref="member">setAssertRTT</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_assert);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>process(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
@@ -277,13 +277,13 @@
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/>boost::shared_ptr&lt;counters::AvgTimedValue&gt;<sp/>m_perfCounter;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>t_param_sptr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_assertRTT;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1Server_1a72a3c0bea3f2fc2e87b98e09e54fc9ac" kindref="member">t_param_sptr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_assertRTT;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERVERS_APP_SERVER_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/app/Server.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.hh"/>
   </compounddef>
 </doxygen>

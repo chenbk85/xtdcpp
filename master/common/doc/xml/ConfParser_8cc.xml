@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="ConfParser_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ConfParser_8cc" kind="file">
     <compoundname>ConfParser.cc</compoundname>
     <includes refid="ConfParser_8hh" local="yes">ConfParser.hh</includes>
     <includes local="no">boost/algorithm/string/case_conv.hpp</includes>
@@ -14,78 +14,13 @@
       <node id="319">
         <label>sys/stat.h</label>
       </node>
-      <node id="314">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="304" relation="include">
-        </childnode>
-        <childnode refid="306" relation="include">
-        </childnode>
-        <childnode refid="307" relation="include">
-        </childnode>
-        <childnode refid="305" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-      </node>
-      <node id="324">
-        <label>stdarg.h</label>
-      </node>
-      <node id="313">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="320">
-        <label>boost/format.hpp</label>
-      </node>
-      <node id="322">
-        <label>logger.hh</label>
-        <link refid="logger_8hh"/>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="307" relation="include">
-        </childnode>
-        <childnode refid="306" relation="include">
-        </childnode>
-        <childnode refid="320" relation="include">
-        </childnode>
-        <childnode refid="323" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
+      <node id="321">
+        <label>error.hh</label>
+        <link refid="error_8hh"/>
         <childnode refid="314" relation="include">
         </childnode>
-        <childnode refid="325" relation="include">
+        <childnode refid="322" relation="include">
         </childnode>
-      </node>
-      <node id="304">
-        <label>string</label>
-      </node>
-      <node id="306">
-        <label>map</label>
-      </node>
-      <node id="317">
-        <label>boost/algorithm/string/trim.hpp</label>
-      </node>
-      <node id="315">
-        <label>fstream</label>
-      </node>
-      <node id="323">
-        <label>syslog.h</label>
-      </node>
-      <node id="318">
-        <label>cstdio</label>
-      </node>
-      <node id="307">
-        <label>vector</label>
-      </node>
-      <node id="316">
-        <label>boost/algorithm/string/case_conv.hpp</label>
-      </node>
-      <node id="308">
-        <label>utility</label>
-      </node>
-      <node id="305">
-        <label>sstream</label>
       </node>
       <node id="303">
         <label>ConfParser.hh</label>
@@ -113,8 +48,90 @@
         <childnode refid="314" relation="include">
         </childnode>
       </node>
+      <node id="324">
+        <label>stdarg.h</label>
+      </node>
+      <node id="322">
+        <label>logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="320">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="304">
+        <label>string</label>
+      </node>
+      <node id="306">
+        <label>map</label>
+      </node>
+      <node id="317">
+        <label>boost/algorithm/string/trim.hpp</label>
+      </node>
+      <node id="314">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>fstream</label>
+      </node>
+      <node id="323">
+        <label>syslog.h</label>
+      </node>
+      <node id="318">
+        <label>cstdio</label>
+      </node>
+      <node id="307">
+        <label>vector</label>
+      </node>
+      <node id="316">
+        <label>boost/algorithm/string/case_conv.hpp</label>
+      </node>
+      <node id="308">
+        <label>utility</label>
+      </node>
+      <node id="305">
+        <label>sstream</label>
+      </node>
+      <node id="309">
+        <label>iostream</label>
+      </node>
+      <node id="311">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="325">
+        <label>logger.hxx</label>
+      </node>
       <node id="302">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</label>
         <link refid="ConfParser.cc"/>
         <childnode refid="303" relation="include">
         </childnode>
@@ -131,23 +148,6 @@
         <childnode refid="320" relation="include">
         </childnode>
         <childnode refid="321" relation="include">
-        </childnode>
-      </node>
-      <node id="309">
-        <label>iostream</label>
-      </node>
-      <node id="311">
-        <label>boost/bind.hpp</label>
-      </node>
-      <node id="325">
-        <label>logger.hxx</label>
-      </node>
-      <node id="321">
-        <label>error.hh</label>
-        <link refid="error_8hh"/>
-        <childnode refid="314" relation="include">
-        </childnode>
-        <childnode refid="322" relation="include">
         </childnode>
       </node>
       <node id="312">
@@ -175,7 +175,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::format;</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::str;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kindref="member">ConfParser::ConfParser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_fileName)<sp/>:</highlight></codeline>
@@ -187,8 +187,8 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23" refid="classxtd_1_1ConfParser_1a460c904cfe815a6141feb088022c9564" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kindref="member">ConfParser::ConfParser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/>p_fileName,</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1a715a3e39fd796046c94546e60f22414d" kindref="member">t_param_map</ref>&amp;<sp/>p_params)<sp/>:</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a5203f3b8cb6e9070b33371c9acabbc8c" kindref="member">m_nblines</ref>(0),</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" kindref="member">m_paramMap</ref>(p_params)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_nblines(0),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_paramMap(p_params)</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50a444bcb3a3fcf8389296c49467f27e1d6" kindref="member">status::ok</ref><sp/>!=<sp/>initialize(p_fileName))</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1error_1a34fcbd60f169444fa6b9b410db6ddaaf" kindref="member">error::do_throw</ref>(</highlight><highlight class="stringliteral">&quot;common.configparser&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;could<sp/>not<sp/>initialize<sp/>config<sp/>from<sp/>file<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>p_fileName,<sp/><ref refid="logger_8hh_1a3fe03e23176f4fe277d1d3b41f3d3d06" kindref="member">HERE</ref>);</highlight></codeline>
@@ -794,6 +794,6 @@
 <codeline lineno="629"><highlight class="normal"></highlight></codeline>
 <codeline lineno="630"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/ConfParser.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc"/>
   </compounddef>
 </doxygen>

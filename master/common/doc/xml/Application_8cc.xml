@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Application_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Application_8cc" kind="file">
     <compoundname>Application.cc</compoundname>
     <includes refid="src_2Application_8hh" local="yes">Application.hh</includes>
     <includes local="no">boost/lexical_cast.hpp</includes>
@@ -11,20 +11,6 @@
     <includes local="no">utility</includes>
     <includes local="no">boost/filesystem.hpp</includes>
     <incdepgraph>
-      <node id="256">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="257" relation="include">
-        </childnode>
-        <childnode refid="247" relation="include">
-        </childnode>
-        <childnode refid="258" relation="include">
-        </childnode>
-        <childnode refid="259" relation="include">
-        </childnode>
-        <childnode refid="260" relation="include">
-        </childnode>
-      </node>
       <node id="264">
         <label>stdarg.h</label>
       </node>
@@ -33,41 +19,6 @@
       </node>
       <node id="245">
         <label>iomanip</label>
-      </node>
-      <node id="246">
-        <label>limits</label>
-      </node>
-      <node id="255">
-        <label>boost/asio/signal_set.hpp</label>
-      </node>
-      <node id="267">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="242">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.cc</label>
-        <link refid="Application.cc"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-        <childnode refid="267" relation="include">
-        </childnode>
-        <childnode refid="268" relation="include">
-        </childnode>
-        <childnode refid="269" relation="include">
-        </childnode>
-        <childnode refid="260" relation="include">
-        </childnode>
-        <childnode refid="259" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="271" relation="include">
-        </childnode>
-      </node>
-      <node id="251">
-        <label>stdlib.h</label>
-      </node>
-      <node id="262">
-        <label>boost/format.hpp</label>
       </node>
       <node id="261">
         <label>logger.hh</label>
@@ -88,6 +39,47 @@
         </childnode>
         <childnode refid="265" relation="include">
         </childnode>
+      </node>
+      <node id="246">
+        <label>limits</label>
+      </node>
+      <node id="255">
+        <label>boost/asio/signal_set.hpp</label>
+      </node>
+      <node id="267">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="251">
+        <label>stdlib.h</label>
+      </node>
+      <node id="262">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="257">
+        <label>string</label>
+      </node>
+      <node id="247">
+        <label>map</label>
+      </node>
+      <node id="253">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="256">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>fstream</label>
       </node>
       <node id="243">
         <label>Application.hh</label>
@@ -123,20 +115,28 @@
         <childnode refid="266" relation="include">
         </childnode>
       </node>
-      <node id="257">
-        <label>string</label>
-      </node>
-      <node id="247">
-        <label>map</label>
-      </node>
-      <node id="253">
-        <label>boost/thread.hpp</label>
-      </node>
-      <node id="260">
-        <label>fstream</label>
-      </node>
       <node id="263">
         <label>syslog.h</label>
+      </node>
+      <node id="242">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc</label>
+        <link refid="Application.cc"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
       </node>
       <node id="254">
         <label>boost/asio.hpp</label>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/common/src/Application.cc" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/Application.cc" bodystart="14" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc" line="14" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -210,14 +210,14 @@
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_DEPENDENCY_TRACKING</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[];</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;$rscid:<sp/>include<sp/>&apos;xtdmake/tracking/module.cmake&apos;<sp/>to<sp/>enable<sp/>binary<sp/>tracking<sp/>system<sp/>$&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_DEPENDENCY_TRACKING</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="14" refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="Application_8cc_1a69f59503b72db9ae6ac36f5f5deaeb80" kindref="member">rcsid</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;$rscid:<sp/>include<sp/>&apos;xtdmake/tracking/module.cmake&apos;<sp/>to<sp/>enable<sp/>binary<sp/>tracking<sp/>system<sp/>$&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20" refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1Application_1a2d911d40f42dc2928275538541b91633" kindref="member">Application::Application</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/>m_binName(),</highlight></codeline>
@@ -572,6 +572,6 @@
 <codeline lineno="370"><highlight class="normal"></highlight></codeline>
 <codeline lineno="371"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/Application.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc"/>
   </compounddef>
 </doxygen>

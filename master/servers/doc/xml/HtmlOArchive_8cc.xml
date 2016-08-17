@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="HtmlOArchive_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="HtmlOArchive_8cc" kind="file">
     <compoundname>HtmlOArchive.cc</compoundname>
     <includes refid="HtmlOArchive_8hh" local="yes">app/HtmlOArchive.hh</includes>
     <includes local="no">boost/format.hpp</includes>
@@ -11,6 +11,18 @@
       </node>
       <node id="275">
         <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="274">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="267">
+        <label>boost/archive/xml_oarchive.hpp</label>
+      </node>
+      <node id="269">
+        <label>boost/archive/impl/basic_xml_oarchive.ipp</label>
+      </node>
+      <node id="270">
+        <label>boost/archive/detail/archive_serializer_map.hpp</label>
       </node>
       <node id="263">
         <label>app/HtmlOArchive.hh</label>
@@ -36,11 +48,8 @@
         <childnode refid="273" relation="include">
         </childnode>
       </node>
-      <node id="274">
-        <label>boost/format.hpp</label>
-      </node>
       <node id="262">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.cc</label>
         <link refid="HtmlOArchive.cc"/>
         <childnode refid="263" relation="include">
         </childnode>
@@ -48,15 +57,6 @@
         </childnode>
         <childnode refid="275" relation="include">
         </childnode>
-      </node>
-      <node id="267">
-        <label>boost/archive/xml_oarchive.hpp</label>
-      </node>
-      <node id="269">
-        <label>boost/archive/impl/basic_xml_oarchive.ipp</label>
-      </node>
-      <node id="270">
-        <label>boost/archive/detail/archive_serializer_map.hpp</label>
       </node>
       <node id="268">
         <label>boost/archive/impl/xml_oarchive_impl.ipp</label>
@@ -95,7 +95,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::lexical_cast;</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="12" refid="namespacextd_1_1servers" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="13" refid="namespacextd_1_1servers_1_1app" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">app<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
@@ -301,7 +301,7 @@
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a7bf5587951c58ae1652bb73143e41fbc" kindref="member">HtmlOArchive::HtmlOArchive</ref>(ostream&amp;<sp/>p_stream)<sp/>:</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="namespaceboost" kindref="compound">boost</ref>::archive::xml_oarchive_impl&lt;<ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">HtmlOArchive</ref>&gt;(p_stream,<sp/><ref refid="namespaceboost" kindref="compound">boost</ref>::archive::no_header),</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>boost::archive::xml_oarchive_impl&lt;<ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">HtmlOArchive</ref>&gt;(p_stream,<sp/>boost::archive::no_header),</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/>m_pass(false),</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/>m_depth(0),</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/>m_os(p_stream),</highlight></codeline>
@@ -564,6 +564,6 @@
 <codeline lineno="477"><highlight class="normal"></highlight></codeline>
 <codeline lineno="478"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.cc"/>
   </compounddef>
 </doxygen>

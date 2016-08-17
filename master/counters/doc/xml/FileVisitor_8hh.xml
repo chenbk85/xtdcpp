@@ -1,16 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="FileVisitor_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="FileVisitor_8hh" kind="file">
     <compoundname>FileVisitor.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">fstream</includes>
     <includes local="no">boost/filesystem.hpp</includes>
     <includes refid="Visitor_8hh" local="yes">Visitor.hh</includes>
-    <includedby refid="CounterManager_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</includedby>
-    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="CounterManager_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/CounterManager.cc</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</includedby>
     <incdepgraph>
+      <node id="723">
+        <label>string</label>
+      </node>
+      <node id="724">
+        <label>fstream</label>
+      </node>
+      <node id="725">
+        <label>boost/filesystem.hpp</label>
+      </node>
       <node id="722">
-        <label>/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/FileVisitor.hh</label>
         <link refid="FileVisitor.hh"/>
         <childnode refid="723" relation="include">
         </childnode>
@@ -21,11 +30,8 @@
         <childnode refid="726" relation="include">
         </childnode>
       </node>
-      <node id="723">
-        <label>string</label>
-      </node>
-      <node id="724">
-        <label>fstream</label>
+      <node id="727">
+        <label>types.hh</label>
       </node>
       <node id="726">
         <label>Visitor.hh</label>
@@ -33,29 +39,23 @@
         <childnode refid="727" relation="include">
         </childnode>
       </node>
-      <node id="725">
-        <label>boost/filesystem.hpp</label>
-      </node>
-      <node id="727">
-        <label>types.hh</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="729">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/CounterManager.cc</label>
+        <link refid="CounterManager_8cc"/>
+      </node>
+      <node id="730">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
       <node id="728">
-        <label>/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/FileVisitor.hh</label>
         <link refid="FileVisitor.hh"/>
         <childnode refid="729" relation="include">
         </childnode>
         <childnode refid="730" relation="include">
         </childnode>
-      </node>
-      <node id="729">
-        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</label>
-        <link refid="CounterManager_8cc"/>
-      </node>
-      <node id="730">
-        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
-        <link refid="counters_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1counters_1_1FileVisitor" prot="public">xtd::counters::FileVisitor</innerclass>
@@ -66,9 +66,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_FILEVISITOR_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_FILEVISITOR_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_FILEVISITOR_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_FILEVISITOR_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -76,7 +76,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Visitor_8hh" kindref="compound">Visitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14" refid="classxtd_1_1counters_1_1FileVisitor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1FileVisitor" kindref="compound">FileVisitor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Visitor" kindref="compound">Visitor</ref></highlight></codeline>
@@ -117,6 +117,6 @@
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_FILEVISITOR_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/FileVisitor.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/FileVisitor.hh"/>
   </compounddef>
 </doxygen>

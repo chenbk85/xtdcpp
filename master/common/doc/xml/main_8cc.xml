@@ -1,10 +1,68 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="main_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="main_8cc" kind="file">
     <compoundname>main.cc</compoundname>
     <includes refid="logger_8hh" local="yes">logger.hh</includes>
     <includes refid="src_2Application_8hh" local="yes">Application.hh</includes>
     <incdepgraph>
+      <node id="422">
+        <label>stdarg.h</label>
+      </node>
+      <node id="431">
+        <label>functional</label>
+      </node>
+      <node id="429">
+        <label>iomanip</label>
+      </node>
+      <node id="416">
+        <label>logger.hh</label>
+        <link refid="logger_8hh"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>limits</label>
+      </node>
+      <node id="438">
+        <label>boost/asio/signal_set.hpp</label>
+      </node>
+      <node id="434">
+        <label>stdlib.h</label>
+      </node>
+      <node id="420">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="424">
+        <label>string</label>
+      </node>
+      <node id="415">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/main.cc</label>
+        <link refid="main.cc"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>map</label>
+      </node>
+      <node id="436">
+        <label>boost/thread.hpp</label>
+      </node>
       <node id="423">
         <label>types.hh</label>
         <link refid="types_8hh"/>
@@ -19,26 +77,8 @@
         <childnode refid="426" relation="include">
         </childnode>
       </node>
-      <node id="422">
-        <label>stdarg.h</label>
-      </node>
-      <node id="431">
-        <label>functional</label>
-      </node>
-      <node id="429">
-        <label>iomanip</label>
-      </node>
-      <node id="430">
-        <label>limits</label>
-      </node>
-      <node id="438">
-        <label>boost/asio/signal_set.hpp</label>
-      </node>
-      <node id="434">
-        <label>stdlib.h</label>
-      </node>
-      <node id="420">
-        <label>boost/format.hpp</label>
+      <node id="426">
+        <label>fstream</label>
       </node>
       <node id="428">
         <label>Application.hh</label>
@@ -72,46 +112,6 @@
         <childnode refid="416" relation="include">
         </childnode>
         <childnode refid="439" relation="include">
-        </childnode>
-      </node>
-      <node id="416">
-        <label>logger.hh</label>
-        <link refid="logger_8hh"/>
-        <childnode refid="417" relation="include">
-        </childnode>
-        <childnode refid="418" relation="include">
-        </childnode>
-        <childnode refid="419" relation="include">
-        </childnode>
-        <childnode refid="420" relation="include">
-        </childnode>
-        <childnode refid="421" relation="include">
-        </childnode>
-        <childnode refid="422" relation="include">
-        </childnode>
-        <childnode refid="423" relation="include">
-        </childnode>
-        <childnode refid="427" relation="include">
-        </childnode>
-      </node>
-      <node id="424">
-        <label>string</label>
-      </node>
-      <node id="419">
-        <label>map</label>
-      </node>
-      <node id="436">
-        <label>boost/thread.hpp</label>
-      </node>
-      <node id="426">
-        <label>fstream</label>
-      </node>
-      <node id="415">
-        <label>/home/psyco/dev/xtdcpp/common/src/main.cc</label>
-        <link refid="main.cc"/>
-        <childnode refid="416" relation="include">
-        </childnode>
-        <childnode refid="428" relation="include">
         </childnode>
       </node>
       <node id="421">
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/common/src/main.cc" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/common/src/main.cc" bodystart="38" bodyend="43"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/common/src/main.cc" line="38" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/common/src/main.cc" bodystart="38" bodyend="43"/>
         <references refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" compoundref="Application_8cc" startline="103" endline="130">xtd::Application::execute</references>
       </memberdef>
       </sectiondef>
@@ -178,7 +178,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logger_8hh" kindref="compound">logger.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2Application_8hh" kindref="compound">Application.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">xtd;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7" refid="classApp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classApp" kindref="compound">App</ref><sp/>:<sp/><ref refid="classxtd_1_1Application" kindref="compound">Application</ref></highlight></codeline>
@@ -219,6 +219,6 @@
 <codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lApp.<ref refid="classxtd_1_1Application_1ae9241351a9caefa4b96bc906d3db144c" kindref="member">execute</ref>(pArgc,<sp/>pArgv);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/main.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/main.cc"/>
   </compounddef>
 </doxygen>

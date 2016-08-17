@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="SumExt_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="SumExt_8cc" kind="file">
     <compoundname>SumExt.cc</compoundname>
     <includes refid="SumExt_8hh" local="yes">SumExt.hh</includes>
     <includes local="yes">SumExt.hxx</includes>
@@ -8,14 +8,6 @@
     <incdepgraph>
       <node id="839">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="837">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="835" relation="include">
-        </childnode>
-        <childnode refid="838" relation="include">
-        </childnode>
       </node>
       <node id="838">
         <label>Base.hh</label>
@@ -38,14 +30,13 @@
       <node id="835">
         <label>string</label>
       </node>
-      <node id="842">
-        <label>Visitor.hh</label>
-        <link refid="Visitor_8hh"/>
-        <childnode refid="841" relation="include">
+      <node id="837">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="835" relation="include">
         </childnode>
-      </node>
-      <node id="836">
-        <label>vector</label>
+        <childnode refid="838" relation="include">
+        </childnode>
       </node>
       <node id="834">
         <label>SumExt.hh</label>
@@ -57,8 +48,11 @@
         <childnode refid="837" relation="include">
         </childnode>
       </node>
+      <node id="836">
+        <label>vector</label>
+      </node>
       <node id="833">
-        <label>/home/psyco/dev/xtdcpp/counters/src/SumExt.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/SumExt.cc</label>
         <link refid="SumExt.cc"/>
         <childnode refid="834" relation="include">
         </childnode>
@@ -73,6 +67,12 @@
       <node id="841">
         <label>types.hh</label>
       </node>
+      <node id="842">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="841" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
     <innernamespace refid="namespacextd_1_1counters">xtd::counters</innernamespace>
@@ -85,7 +85,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SumExt.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SumExt&lt;uint32_t&gt;;</highlight></codeline>
@@ -93,6 +93,6 @@
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/SumExt.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/SumExt.cc"/>
   </compounddef>
 </doxygen>

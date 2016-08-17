@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="AvgTimedValue_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="AvgTimedValue_8cc" kind="file">
     <compoundname>AvgTimedValue.cc</compoundname>
     <includes refid="AvgTimedValue_8hh" local="yes">AvgTimedValue.hh</includes>
     <includes local="no">numeric</includes>
@@ -10,88 +10,11 @@
     <includes local="no">boost/date_time/posix_time/posix_time.hpp</includes>
     <includes local="no">logger.hh</includes>
     <incdepgraph>
-      <node id="476">
-        <label>InstantFreq.hh</label>
-        <link refid="InstantFreq_8hh"/>
-        <childnode refid="464" relation="include">
-        </childnode>
-        <childnode refid="467" relation="include">
-        </childnode>
-      </node>
       <node id="470">
         <label>boost/thread/mutex.hpp</label>
       </node>
-      <node id="467">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="468" relation="include">
-        </childnode>
-        <childnode refid="469" relation="include">
-        </childnode>
-      </node>
-      <node id="465">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="469">
-        <label>Base.hh</label>
-        <link refid="Base_8hh"/>
-        <childnode refid="470" relation="include">
-        </childnode>
-        <childnode refid="471" relation="include">
-        </childnode>
-        <childnode refid="466" relation="include">
-        </childnode>
-        <childnode refid="472" relation="include">
-        </childnode>
-      </node>
-      <node id="480">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="477">
-        <label>numeric</label>
-      </node>
-      <node id="471">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="468">
-        <label>string</label>
-      </node>
-      <node id="473">
-        <label>Composed.hh</label>
-        <link refid="Composed_8hh"/>
-        <childnode refid="474" relation="include">
-        </childnode>
-        <childnode refid="469" relation="include">
-        </childnode>
-      </node>
-      <node id="472">
-        <label>Visitor.hh</label>
-        <link refid="Visitor_8hh"/>
-        <childnode refid="466" relation="include">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
-      </node>
-      <node id="475">
-        <label>Freq.hh</label>
-        <link refid="Freq_8hh"/>
-        <childnode refid="468" relation="include">
-        </childnode>
-        <childnode refid="467" relation="include">
-        </childnode>
-      </node>
-      <node id="474">
-        <label>vector</label>
-      </node>
-      <node id="464">
-        <label>deque</label>
-      </node>
-      <node id="479">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="462">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.cc</label>
         <link refid="AvgTimedValue.cc"/>
         <childnode refid="463" relation="include">
         </childnode>
@@ -107,6 +30,86 @@
         </childnode>
         <childnode refid="482" relation="include">
         </childnode>
+      </node>
+      <node id="469">
+        <label>Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="480">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="475">
+        <label>Freq.hh</label>
+        <link refid="Freq_8hh"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>numeric</label>
+      </node>
+      <node id="471">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="468">
+        <label>string</label>
+      </node>
+      <node id="476">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="474">
+        <label>vector</label>
+      </node>
+      <node id="464">
+        <label>deque</label>
+      </node>
+      <node id="473">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="482">
+        <label>logger.hh</label>
+      </node>
+      <node id="466">
+        <label>types.hh</label>
+      </node>
+      <node id="478">
+        <label>algorithm</label>
       </node>
       <node id="463">
         <label>AvgTimedValue.hh</label>
@@ -126,14 +129,11 @@
         <childnode refid="476" relation="include">
         </childnode>
       </node>
-      <node id="482">
-        <label>logger.hh</label>
-      </node>
-      <node id="466">
-        <label>types.hh</label>
-      </node>
-      <node id="478">
-        <label>algorithm</label>
+      <node id="472">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="466" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -155,7 +155,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bpt<sp/>=<sp/>boost::posix_time;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="13" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="14" refid="namespacextd_1_1counters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a2c4e692d5e33a1155d7c869be55af0de" kindref="member">AvgTimedValue::AvgTimedValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,</highlight></codeline>
@@ -288,7 +288,7 @@
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal">AvgTimedValue::is_greater(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kindref="member">t_elem</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_elem,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">AvgTimedValue::is_greater(t_elem&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_elem,</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_maxTime)</highlight></codeline>
 <codeline lineno="155"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_elem.first<sp/>&gt;<sp/>p_maxTime;</highlight></codeline>
@@ -339,6 +339,6 @@
 <codeline lineno="201"><highlight class="normal"></highlight></codeline>
 <codeline lineno="202"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.cc"/>
   </compounddef>
 </doxygen>

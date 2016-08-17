@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Request_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Request_8hh" kind="file">
     <compoundname>Request.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
@@ -9,11 +9,20 @@
     <includes local="no">boost/noncopyable.hpp</includes>
     <includes local="no">types.hh</includes>
     <includes local="yes">Request.hxx</includes>
-    <includedby refid="Request_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/http/Request.cc</includedby>
-    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
+    <includedby refid="Request_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc</includedby>
+    <includedby refid="network_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</includedby>
     <incdepgraph>
+      <node id="1688">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1684">
+        <label>string</label>
+      </node>
+      <node id="1686">
+        <label>map</label>
+      </node>
       <node id="1683">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Request.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.hh</label>
         <link refid="Request.hh"/>
         <childnode refid="1684" relation="include">
         </childnode>
@@ -30,15 +39,6 @@
         <childnode refid="1690" relation="include">
         </childnode>
       </node>
-      <node id="1688">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1684">
-        <label>string</label>
-      </node>
-      <node id="1686">
-        <label>map</label>
-      </node>
       <node id="1685">
         <label>vector</label>
       </node>
@@ -53,21 +53,21 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1693">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
       <node id="1692">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Request.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc</label>
         <link refid="Request_8cc"/>
       </node>
       <node id="1691">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Request.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.hh</label>
         <link refid="Request.hh"/>
         <childnode refid="1692" relation="include">
         </childnode>
         <childnode refid="1693" relation="include">
         </childnode>
-      </node>
-      <node id="1693">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Request" prot="public">xtd::network::http::Request</innerclass>
@@ -79,9 +79,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HTTP_REQUEST_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HTTP_REQUEST_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_HTTP_REQUEST_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_HTTP_REQUEST_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -89,7 +89,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/noncopyable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
@@ -135,15 +135,15 @@
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a0006f0a88dccabdafe9dfed3627730f6" kindref="member">getPath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1ac9aeee4365089901bd216350fdcbe3a2" kindref="member">getQS</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a00428c206d17d2557d5ed3a46a2f139b" kindref="member">getRawUrl</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" kindref="member">getCgis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" kindref="member">getPosts</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/>t_param_map<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1aac37ae370c601f66b17e1ef071081957" kindref="member">getParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a48687de33ff80c714d6bc0112aa23c56" kindref="member">getCgis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a1a849dbe8e258e208325056ac46438c9" kindref="member">getPosts</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1aac37ae370c601f66b17e1ef071081957" kindref="member">getParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a21fc278ee56175b527ae58c909ad97a3" kindref="member">existsCgi</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1ae121fd7a302ea9bb1a3fe66f3cb7f696" kindref="member">existsPost</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a8bc12470bb1a04d71d84ed1053551df9" kindref="member">existsParam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad334cf225213389711b7524a2c637e38" kindref="member">existsHeader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a99a0c9599f0d2bdc51f8e488fb4f78f4" kindref="member">getHeader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_header_map&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" kindref="member">getHeaders</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" kindref="member">t_header_map</ref>&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1abbe34833ea46c5a794c7c49796a192c3" kindref="member">getHeaders</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a609f7328025e89fd8325677212ab307b" kindref="member">getVersionStr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kindref="member">t_version</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1acdf8a64d92f997aa7a0eaf7fc07cf897" kindref="member">getVersion</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/>status<sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a90a878fc6498d5594617329da39d1ac5" kindref="member">getDataSize</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>p_length)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -189,23 +189,23 @@
 <codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TDst&gt;</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>as(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/>TDst&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>existsData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>existsData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>T&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>T&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>vector&lt;T&gt;&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>vector&lt;T&gt;&amp;<sp/>p_dst)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>T&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_default)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>T&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_default)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>vector&lt;T&gt;&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;T&gt;&amp;<sp/>p_default)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key,<sp/>vector&lt;T&gt;&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;T&gt;&amp;<sp/>p_default)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>m_rawUrl;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627" kindref="member">t_method</ref><sp/><sp/><sp/><sp/><sp/>m_method;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>m_path;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/>t_param_map<sp/><sp/>m_cgi;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/>t_param_map<sp/><sp/>m_post;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/>t_header_map<sp/>m_headers;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref><sp/><sp/>m_cgi;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref><sp/><sp/>m_post;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1aeaf2a69c884e81983aebaf36518c310e" kindref="member">t_header_map</ref><sp/>m_headers;</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>m_versionStr;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1ad1842a3667ff0a96222bb69262cda536" kindref="member">t_version</ref><sp/><sp/><sp/><sp/>m_version;</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cgiToLower;</highlight></codeline>
@@ -213,7 +213,7 @@
 <codeline lineno="132"><highlight class="normal"><sp/><sp/>boost::regex<sp/>m_regex_tooManyEndingSlash;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal">std::ostream&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a4ef55dada327d66bc23474520e1ae32c" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>p_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref>&amp;<sp/>p_obj);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>p_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_obj);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
@@ -222,6 +222,6 @@
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_HTTP_REQUEST_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.hh"/>
   </compounddef>
 </doxygen>

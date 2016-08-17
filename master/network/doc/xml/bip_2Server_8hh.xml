@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="bip_2Server_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bip_2Server_8hh" kind="file">
     <compoundname>Server.hh</compoundname>
     <includes refid="base_2Server_8hh" local="yes">base/Server.hh</includes>
-    <includedby refid="bip_2Server_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</includedby>
-    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
+    <includedby refid="bip_2Server_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.cc</includedby>
+    <includedby refid="network_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</includedby>
     <incdepgraph>
       <node id="1552">
         <label>boost/thread/mutex.hpp</label>
@@ -14,18 +14,6 @@
       </node>
       <node id="1554">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
-      </node>
-      <node id="1534">
-        <label>base/Server.hh</label>
-        <link refid="base_2Server_8hh"/>
-        <childnode refid="1535" relation="include">
-        </childnode>
-        <childnode refid="1536" relation="include">
-        </childnode>
-        <childnode refid="1541" relation="include">
-        </childnode>
-        <childnode refid="1548" relation="include">
-        </childnode>
       </node>
       <node id="1540">
         <label>boost/lexical_cast.hpp</label>
@@ -38,6 +26,18 @@
       </node>
       <node id="1556">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1543">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1537">
+        <label>string</label>
+      </node>
+      <node id="1535">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1545">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1548">
         <label>utils/Utils.hh</label>
@@ -69,24 +69,6 @@
         <childnode refid="1556" relation="include">
         </childnode>
       </node>
-      <node id="1543">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1537">
-        <label>string</label>
-      </node>
-      <node id="1535">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1533">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</label>
-        <link refid="bip/Server.hh"/>
-        <childnode refid="1534" relation="include">
-        </childnode>
-      </node>
-      <node id="1545">
-        <label>boost/function.hpp</label>
-      </node>
       <node id="1536">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -106,6 +88,18 @@
       <node id="1539">
         <label>boost/asio.hpp</label>
       </node>
+      <node id="1534">
+        <label>base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
       <node id="1551">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
@@ -114,15 +108,6 @@
       </node>
       <node id="1549">
         <label>vector</label>
-      </node>
-      <node id="1550">
-        <label>streambuf</label>
-      </node>
-      <node id="1553">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1542">
-        <label>deque</label>
       </node>
       <node id="1541">
         <label>utils/CommTypeDefs.hh</label>
@@ -140,26 +125,41 @@
         <childnode refid="1546" relation="include">
         </childnode>
       </node>
+      <node id="1550">
+        <label>streambuf</label>
+      </node>
+      <node id="1553">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1542">
+        <label>deque</label>
+      </node>
       <node id="1546">
         <label>types.hh</label>
+      </node>
+      <node id="1533">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.hh</label>
+        <link refid="bip/Server.hh"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="1558">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.cc</label>
         <link refid="bip_2Server_8cc"/>
       </node>
+      <node id="1559">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
       <node id="1557">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.hh</label>
         <link refid="bip/Server.hh"/>
         <childnode refid="1558" relation="include">
         </childnode>
         <childnode refid="1559" relation="include">
         </childnode>
-      </node>
-      <node id="1559">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1bip_1_1Server" prot="public">xtd::network::bip::Server</innerclass>
@@ -171,12 +171,12 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_SERVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_SERVER_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_SERVER_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="base_2Server_8hh" kindref="compound">base/Server.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
@@ -220,12 +220,12 @@
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/>cnx_sptr_t<sp/>createCnx(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_hostname,<sp/>uint32_t<sp/>p_port);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterAccept(cnx_sptr_t<sp/>p_conn);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterSend(cnx_sptr_t<sp/><sp/><sp/>p_conn);</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterReceive(cnx_sptr_t<sp/>p_conn,<sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_inBuffer);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onReceiveError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/>cnx_sptr_t<sp/>p_conn);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onReceiveTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/>cnx_sptr_t<sp/>p_conn);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/>createCnx(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_hostname,<sp/>uint32_t<sp/>p_port);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterAccept(<ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/>p_conn);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterSend(<ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/><sp/><sp/>p_conn);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterReceive(<ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/>p_conn,<sp/><ref refid="namespacextd_1_1network_1_1utils_1a92b366b7e2a1ab09ac4f4a0401f8fb84" kindref="member">utils::sharedBuf_t</ref><sp/>p_inBuffer);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onReceiveError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/>p_conn);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onReceiveTimeout(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error,<sp/><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref><sp/>p_conn);</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//counter<sp/>to<sp/>monitor<sp/>fake<sp/>on<sp/>receive<sp/>error</highlight><highlight class="normal"></highlight></codeline>
@@ -239,6 +239,6 @@
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BIP_SERVER_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Server.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.hh"/>
   </compounddef>
 </doxygen>

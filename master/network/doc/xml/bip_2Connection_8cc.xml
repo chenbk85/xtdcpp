@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="bip_2Connection_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bip_2Connection_8cc" kind="file">
     <compoundname>Connection.cc</compoundname>
     <includes refid="bip_2Connection_8hh" local="yes">bip/Connection.hh</includes>
     <includes local="yes">bip/Connection.hxx</includes>
@@ -18,6 +18,20 @@
       <node id="1270">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
       </node>
+      <node id="1249">
+        <label>base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+      </node>
       <node id="1253">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -27,28 +41,33 @@
       <node id="1254">
         <label>utils/Config.hxx</label>
       </node>
-      <node id="1240">
-        <label>bip/Connection.hh</label>
-        <link refid="bip_2Connection_8hh"/>
-        <childnode refid="1241" relation="include">
-        </childnode>
-        <childnode refid="1242" relation="include">
-        </childnode>
-        <childnode refid="1249" relation="include">
-        </childnode>
-      </node>
-      <node id="1239">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
-        <link refid="bip/Connection.cc"/>
-        <childnode refid="1240" relation="include">
-        </childnode>
-        <childnode refid="1273" relation="include">
-        </childnode>
-        <childnode refid="1242" relation="include">
-        </childnode>
-      </node>
       <node id="1272">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1245">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1261">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1251">
+        <label>string</label>
+      </node>
+      <node id="1255">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>map</label>
+      </node>
+      <node id="1247">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1266">
         <label>utils/Utils.hh</label>
@@ -80,31 +99,6 @@
         <childnode refid="1272" relation="include">
         </childnode>
       </node>
-      <node id="1245">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1261">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1251">
-        <label>string</label>
-      </node>
-      <node id="1258">
-        <label>map</label>
-      </node>
-      <node id="1247">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1255">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1246" relation="include">
-        </childnode>
-        <childnode refid="1242" relation="include">
-        </childnode>
-        <childnode refid="1256" relation="include">
-        </childnode>
-      </node>
       <node id="1250">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -126,6 +120,52 @@
       </node>
       <node id="1265">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1241">
+        <label>boost/crc.hpp</label>
+      </node>
+      <node id="1271">
+        <label>ctime</label>
+      </node>
+      <node id="1263">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1257">
+        <label>vector</label>
+      </node>
+      <node id="1242">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+      </node>
+      <node id="1267">
+        <label>streambuf</label>
+      </node>
+      <node id="1259">
+        <label>utility</label>
+      </node>
+      <node id="1269">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1273">
+        <label>bip/Connection.hxx</label>
+      </node>
+      <node id="1243">
+        <label>deque</label>
+      </node>
+      <node id="1262">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1256">
         <label>utils/CacheDns.hh</label>
@@ -161,71 +201,31 @@
         <childnode refid="1266" relation="include">
         </childnode>
       </node>
-      <node id="1241">
-        <label>boost/crc.hpp</label>
-      </node>
-      <node id="1271">
-        <label>ctime</label>
-      </node>
-      <node id="1263">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1257">
-        <label>vector</label>
-      </node>
-      <node id="1267">
-        <label>streambuf</label>
-      </node>
-      <node id="1259">
-        <label>utility</label>
-      </node>
-      <node id="1269">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1273">
-        <label>bip/Connection.hxx</label>
-      </node>
-      <node id="1243">
-        <label>deque</label>
-      </node>
-      <node id="1262">
-        <label>boost/bind.hpp</label>
+      <node id="1239">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip/Connection.cc"/>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
       </node>
       <node id="1264">
         <label>boost/make_shared.hpp</label>
       </node>
-      <node id="1242">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1243" relation="include">
-        </childnode>
-        <childnode refid="1244" relation="include">
-        </childnode>
-        <childnode refid="1245" relation="include">
-        </childnode>
-        <childnode refid="1246" relation="include">
-        </childnode>
-        <childnode refid="1247" relation="include">
-        </childnode>
-        <childnode refid="1248" relation="include">
-        </childnode>
+      <node id="1248">
+        <label>types.hh</label>
       </node>
-      <node id="1249">
-        <label>base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="1244" relation="include">
-        </childnode>
-        <childnode refid="1248" relation="include">
-        </childnode>
-        <childnode refid="1250" relation="include">
+      <node id="1240">
+        <label>bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="1241" relation="include">
         </childnode>
         <childnode refid="1242" relation="include">
         </childnode>
-        <childnode refid="1255" relation="include">
+        <childnode refid="1249" relation="include">
         </childnode>
-      </node>
-      <node id="1248">
-        <label>types.hh</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -241,7 +241,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
@@ -251,6 +251,6 @@
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal">}}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc"/>
   </compounddef>
 </doxygen>

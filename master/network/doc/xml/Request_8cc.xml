@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Request_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Request_8cc" kind="file">
     <compoundname>Request.cc</compoundname>
     <includes refid="Request_8hh" local="yes">Request.hh</includes>
     <includes local="no">boost/lexical_cast.hpp</includes>
@@ -30,8 +30,35 @@
       <node id="1666">
         <label>limits</label>
       </node>
+      <node id="1669">
+        <label>iterator</label>
+      </node>
+      <node id="1663">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="1680">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="1677">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="1670">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="1660">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1656">
+        <label>string</label>
+      </node>
+      <node id="1658">
+        <label>map</label>
+      </node>
+      <node id="1672">
+        <label>boost/algorithm/string/trim.hpp</label>
+      </node>
       <node id="1654">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Request.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc</label>
         <link refid="Request.cc"/>
         <childnode refid="1655" relation="include">
         </childnode>
@@ -76,11 +103,8 @@
         <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="1669">
-        <label>iterator</label>
-      </node>
-      <node id="1663">
-        <label>boost/lexical_cast.hpp</label>
+      <node id="1673">
+        <label>boost/algorithm/string/predicate.hpp</label>
       </node>
       <node id="1655">
         <label>Request.hh</label>
@@ -99,30 +123,6 @@
         </childnode>
         <childnode refid="1662" relation="include">
         </childnode>
-      </node>
-      <node id="1680">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="1677">
-        <label>boost/algorithm/string/classification.hpp</label>
-      </node>
-      <node id="1670">
-        <label>boost/format.hpp</label>
-      </node>
-      <node id="1660">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1656">
-        <label>string</label>
-      </node>
-      <node id="1658">
-        <label>map</label>
-      </node>
-      <node id="1672">
-        <label>boost/algorithm/string/trim.hpp</label>
-      </node>
-      <node id="1673">
-        <label>boost/algorithm/string/predicate.hpp</label>
       </node>
       <node id="1674">
         <label>boost/algorithm/string/find_format.hpp</label>
@@ -202,7 +202,7 @@
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::assign::operator+=;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">http<sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
@@ -350,7 +350,7 @@
 <codeline lineno="176"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal">Request::existsData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a3cd6e9ac7c35897002582c4a3b84b17d" kindref="member">t_param_map</ref>&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">Request::existsData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="180"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(p_src.count(p_key)<sp/>!=<sp/>0);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal">}</highlight></codeline>
@@ -546,7 +546,7 @@
 <codeline lineno="372"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//while<sp/>(boost::regex_search(l_value,<sp/>l_match,<sp/>l_hexRegex))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="373"><highlight class="normal"><sp/><sp/>boost::algorithm::find_format_all(l_value,</highlight></codeline>
 <codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::regex_finder(l_hexRegex),</highlight></codeline>
-<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxtd_1_1network_1_1http_1_1hex__to__string" kindref="compound">hex_to_string</ref>());</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hex_to_string());</highlight></codeline>
 <codeline lineno="376"><highlight class="normal"></highlight></codeline>
 <codeline lineno="377"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>duplicate<sp/>spaces</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="378"><highlight class="normal"><sp/><sp/>boost::algorithm::find_format_all(l_value,</highlight></codeline>
@@ -821,7 +821,7 @@
 <codeline lineno="651"><highlight class="normal"></highlight></codeline>
 <codeline lineno="652"><highlight class="normal"></highlight></codeline>
 <codeline lineno="653"><highlight class="normal"></highlight></codeline>
-<codeline lineno="654" refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="classxtd_1_1network_1_1http_1_1Request_1a4ef55dada327d66bc23474520e1ae32c" kindref="member">operator&lt;&lt;</ref>(ostream&amp;<sp/>p_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref>&amp;<sp/>p_obj)</highlight></codeline>
+<codeline lineno="654" refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="namespacextd_1_1network_1_1http_1a9cd58530344372f236be8478d9c41ac3" kindref="member">operator&lt;&lt;</ref>(ostream&amp;<sp/>p_buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Request" kindref="compound">Request</ref>&amp;<sp/>p_obj)</highlight></codeline>
 <codeline lineno="655"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="656"><highlight class="normal"><sp/><sp/>Request::t_param_map::const_iterator<sp/><sp/>cc_cgi;</highlight></codeline>
 <codeline lineno="657"><highlight class="normal"><sp/><sp/>Request::t_param_map::const_iterator<sp/><sp/>cc_post;</highlight></codeline>
@@ -864,6 +864,6 @@
 <codeline lineno="694"><highlight class="normal"></highlight></codeline>
 <codeline lineno="695"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namspaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc"/>
   </compounddef>
 </doxygen>

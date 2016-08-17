@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="namespaceboost" kind="namespace" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespaceboost" kind="namespace">
     <compoundname>boost</compoundname>
     <innernamespace refid="namespaceboost_1_1archive">boost::archive</innernamespace>
+    <innernamespace refid="namespaceboost_1_1serialization">boost::serialization</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.cc" line="18" column="1"/>
+<para>warning: operation on &apos;((boost::unordered::iterator_detail::c_iterator&lt;const boost::unordered::detail::ptr_node&lt;std::pair&lt;const unsigned int, float&gt; &gt;*, boost::unordered::detail::ptr_node&lt;std::pair&lt;const unsigned int, float&gt; &gt;*, std::pair&lt;const unsigned int, float&gt; &gt;*)this)-&gt;boost::unordered::iterator_detail:: c_iterator&lt;const boost::unordered::detail::ptr_node&lt;std::pair&lt;const unsigned int, float&gt; &gt;*, boost::unordered::detail::ptr_node&lt;std::pair&lt;const unsigned int, float&gt; &gt;*, std::pair&lt;const unsigned int, float&gt; &gt;::node_&apos; may be undefined [-Wsequence-point] </para>    </detaileddescription>
+    <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.cc" line="18" column="1"/>
   </compounddef>
 </doxygen>

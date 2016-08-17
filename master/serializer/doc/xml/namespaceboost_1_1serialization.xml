@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespaceboost_1_1serialization" kind="namespace">
+    <compoundname>boost::serialization</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1serialization_1a04a81556a5eda4b2ee2aea89fa8bacab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+          <param>
+            <type>class Type</type>
+          </param>
+          <param>
+            <type>class Key</type>
+          </param>
+          <param>
+            <type>class Hash</type>
+          </param>
+          <param>
+            <type>class Compare</type>
+          </param>
+          <param>
+            <type>class Allocator</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::save</definition>
+        <argsstring>(Archive &amp;ar, const boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;t, const unsigned int)</argsstring>
+        <name>save</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const unsigned</type>
+          <declname>int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" line="28" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_1a8d4be56406f8947db1a1accf28c7e046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+          <param>
+            <type>class Type</type>
+          </param>
+          <param>
+            <type>class Key</type>
+          </param>
+          <param>
+            <type>class Hash</type>
+          </param>
+          <param>
+            <type>class Compare</type>
+          </param>
+          <param>
+            <type>class Allocator</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::load</definition>
+        <argsstring>(Archive &amp;ar, boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;t, const unsigned int)</argsstring>
+        <name>load</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const unsigned</type>
+          <declname>int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" line="40" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" bodystart="40" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_1a38423d04b011754810c08d6e599f4789" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+          <param>
+            <type>class Type</type>
+          </param>
+          <param>
+            <type>class Key</type>
+          </param>
+          <param>
+            <type>class Hash</type>
+          </param>
+          <param>
+            <type>class Compare</type>
+          </param>
+          <param>
+            <type>class Allocator</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::serialize</definition>
+        <argsstring>(Archive &amp;ar, boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;t, const unsigned int file_version)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; Key, Type, Hash, Compare, Allocator &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>file_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" line="60" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" bodystart="60" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/unorderedmap.hh" line="25" column="1"/>
+  </compounddef>
+</doxygen>

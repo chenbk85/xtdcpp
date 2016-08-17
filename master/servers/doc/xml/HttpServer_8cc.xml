@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="HttpServer_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="HttpServer_8cc" kind="file">
     <compoundname>HttpServer.cc</compoundname>
     <includes local="no">unistd.h</includes>
     <includes local="no">ios</includes>
@@ -39,6 +39,28 @@
       <node id="310">
         <label>boost/shared_ptr.hpp</label>
       </node>
+      <node id="331">
+        <label>param/Base.hh</label>
+        <link refid="Base_8hh"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
       <node id="311">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -47,30 +69,6 @@
       </node>
       <node id="313">
         <label>ConfParser.hh</label>
-      </node>
-      <node id="318">
-        <label>app/HtmlOArchive.hh</label>
-        <link refid="HtmlOArchive_8hh"/>
-        <childnode refid="319" relation="include">
-        </childnode>
-        <childnode refid="320" relation="include">
-        </childnode>
-        <childnode refid="321" relation="include">
-        </childnode>
-        <childnode refid="322" relation="include">
-        </childnode>
-        <childnode refid="323" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
-        <childnode refid="325" relation="include">
-        </childnode>
-        <childnode refid="326" relation="include">
-        </childnode>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="328" relation="include">
-        </childnode>
       </node>
       <node id="334">
         <label>boost/foreach.hpp</label>
@@ -96,11 +94,51 @@
       <node id="295">
         <label>fstream</label>
       </node>
+      <node id="329">
+        <label>param/Handler.hh</label>
+        <link refid="Handler_8hh"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+      </node>
       <node id="324">
         <label>boost/archive/impl/basic_xml_oarchive.ipp</label>
       </node>
       <node id="325">
         <label>boost/archive/detail/archive_serializer_map.hpp</label>
+      </node>
+      <node id="318">
+        <label>app/HtmlOArchive.hh</label>
+        <link refid="HtmlOArchive_8hh"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
       </node>
       <node id="333">
         <label>boost/function.hpp</label>
@@ -126,46 +164,8 @@
       <node id="316">
         <label>utils/Config.hh</label>
       </node>
-      <node id="331">
-        <label>param/Base.hh</label>
-        <link refid="Base_8hh"/>
-        <childnode refid="332" relation="include">
-        </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="333" relation="include">
-        </childnode>
-        <childnode refid="334" relation="include">
-        </childnode>
-        <childnode refid="311" relation="include">
-        </childnode>
-        <childnode refid="335" relation="include">
-        </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="302" relation="include">
-        </childnode>
-      </node>
       <node id="309">
         <label>ctime</label>
-      </node>
-      <node id="329">
-        <label>param/Handler.hh</label>
-        <link refid="Handler_8hh"/>
-        <childnode refid="296" relation="include">
-        </childnode>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="310" relation="include">
-        </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="331" relation="include">
-        </childnode>
       </node>
       <node id="292">
         <label>unistd.h</label>
@@ -182,40 +182,8 @@
       <node id="299">
         <label>boost/filesystem.hpp</label>
       </node>
-      <node id="306">
-        <label>app/HttpServer.hh</label>
-        <link refid="HttpServer_8hh"/>
-        <childnode refid="292" relation="include">
-        </childnode>
-        <childnode refid="307" relation="include">
-        </childnode>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="294" relation="include">
-        </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="310" relation="include">
-        </childnode>
-        <childnode refid="311" relation="include">
-        </childnode>
-        <childnode refid="312" relation="include">
-        </childnode>
-        <childnode refid="313" relation="include">
-        </childnode>
-        <childnode refid="314" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="316" relation="include">
-        </childnode>
-        <childnode refid="303" relation="include">
-        </childnode>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
       <node id="291">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</label>
         <link refid="HttpServer.cc"/>
         <childnode refid="292" relation="include">
         </childnode>
@@ -263,17 +231,40 @@
       <node id="320">
         <label>deque</label>
       </node>
+      <node id="306">
+        <label>app/HttpServer.hh</label>
+        <link refid="HttpServer_8hh"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
       <node id="326">
         <label>boost/archive/impl/archive_serializer_map.ipp</label>
-      </node>
-      <node id="332">
-        <label>boost/bind.hpp</label>
-      </node>
-      <node id="302">
-        <label>logger.hh</label>
-      </node>
-      <node id="327">
-        <label>types.hh</label>
       </node>
       <node id="336">
         <label>param/Visitor.hh</label>
@@ -286,6 +277,15 @@
         </childnode>
         <childnode refid="331" relation="include">
         </childnode>
+      </node>
+      <node id="332">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="302">
+        <label>logger.hh</label>
+      </node>
+      <node id="327">
+        <label>types.hh</label>
       </node>
       <node id="337">
         <label>http/Template.hh</label>
@@ -326,12 +326,12 @@
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">app<sp/>{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenetwork" kindref="compound">network</ref>;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">network;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">boost;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">bfs<sp/>=<sp/>boost::filesystem;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">ba<sp/><sp/>=<sp/>boost::algorithm;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">bpt<sp/>=<sp/>boost::property_tree;</highlight></codeline>
@@ -930,9 +930,9 @@
 <codeline lineno="644"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="645"><highlight class="normal"></highlight></codeline>
 <codeline lineno="646"><highlight class="normal"><sp/><sp/>http::Json<sp/>l_tmpl;</highlight></codeline>
-<codeline lineno="647"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor" kindref="compound">param::JsonVisitor</ref><sp/><sp/><sp/>l_json(l_tmpl);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/>param::JsonVisitor<sp/><sp/><sp/>l_json(l_tmpl);</highlight></codeline>
 <codeline lineno="648"><highlight class="normal"></highlight></codeline>
-<codeline lineno="649"><highlight class="normal"><sp/><sp/>l_json.<ref refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" kindref="member">writeExtraInfo</ref>(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">,<sp/>p_req.getQS());</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/>l_json.writeExtraInfo(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">,<sp/>p_req.getQS());</highlight></codeline>
 <codeline lineno="650"><highlight class="normal"></highlight></codeline>
 <codeline lineno="651"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" kindref="member">m_params</ref>-&gt;accept(l_json);</highlight></codeline>
 <codeline lineno="652"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>h_gen(l_tmpl,<sp/>p_requestID,<sp/>p_req,<sp/>p_res);</highlight></codeline>
@@ -1029,6 +1029,6 @@
 <codeline lineno="743"><highlight class="normal"></highlight></codeline>
 <codeline lineno="744"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namspaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc"/>
   </compounddef>
 </doxygen>

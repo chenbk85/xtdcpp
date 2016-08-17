@@ -1,22 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="ExtValue_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ExtValue_8hh" kind="file">
     <compoundname>ExtValue.hh</compoundname>
     <includes local="no">string</includes>
     <includes refid="Base_8hh" local="yes">Base.hh</includes>
-    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
-    <includedby refid="ExtValue_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/ExtValue.cc</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="ExtValue_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/ExtValue.cc</includedby>
     <incdepgraph>
       <node id="715">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="712">
-        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh</label>
-        <link refid="ExtValue.hh"/>
-        <childnode refid="713" relation="include">
-        </childnode>
-        <childnode refid="714" relation="include">
-        </childnode>
       </node>
       <node id="714">
         <label>Base.hh</label>
@@ -36,32 +28,40 @@
       <node id="713">
         <label>string</label>
       </node>
+      <node id="717">
+        <label>types.hh</label>
+      </node>
+      <node id="712">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/ExtValue.hh</label>
+        <link refid="ExtValue.hh"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+      </node>
       <node id="718">
         <label>Visitor.hh</label>
         <link refid="Visitor_8hh"/>
         <childnode refid="717" relation="include">
         </childnode>
       </node>
-      <node id="717">
-        <label>types.hh</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="720">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="721">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/ExtValue.cc</label>
+        <link refid="ExtValue_8cc"/>
+      </node>
       <node id="719">
-        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/ExtValue.hh</label>
         <link refid="ExtValue.hh"/>
         <childnode refid="720" relation="include">
         </childnode>
         <childnode refid="721" relation="include">
         </childnode>
-      </node>
-      <node id="721">
-        <label>/home/psyco/dev/xtdcpp/counters/src/ExtValue.cc</label>
-        <link refid="ExtValue_8cc"/>
-      </node>
-      <node id="720">
-        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
-        <link refid="counters_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1counters_1_1ExtValue" prot="public">xtd::counters::ExtValue</innerclass>
@@ -72,13 +72,13 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_EXTVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_EXTVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_EXTVALUE_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_EXTVALUE_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TType&gt;</highlight></codeline>
@@ -104,6 +104,6 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_EXTVALUE_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/ExtValue.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/ExtValue.hh"/>
   </compounddef>
 </doxygen>

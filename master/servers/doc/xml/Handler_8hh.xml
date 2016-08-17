@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Handler_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Handler_8hh" kind="file">
     <compoundname>Handler.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">map</includes>
@@ -8,32 +8,11 @@
     <includes local="no">boost/any.hpp</includes>
     <includes local="no">types.hh</includes>
     <includes refid="Base_8hh" local="yes">param/Base.hh</includes>
-    <includedby refid="HttpServer_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</includedby>
-    <includedby refid="Handler_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</includedby>
+    <includedby refid="HttpServer_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</includedby>
+    <includedby refid="Handler_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc</includedby>
     <incdepgraph>
       <node id="476">
         <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="483">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="482">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="474">
-        <label>string</label>
-      </node>
-      <node id="475">
-        <label>map</label>
-      </node>
-      <node id="481">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="477">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="484">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
       <node id="479">
         <label>param/Base.hh</label>
@@ -57,11 +36,20 @@
         <childnode refid="486" relation="include">
         </childnode>
       </node>
-      <node id="485">
-        <label>ctime</label>
+      <node id="483">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="482">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="474">
+        <label>string</label>
+      </node>
+      <node id="475">
+        <label>map</label>
       </node>
       <node id="473">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.hh</label>
         <link refid="Handler.hh"/>
         <childnode refid="474" relation="include">
         </childnode>
@@ -76,6 +64,18 @@
         <childnode refid="479" relation="include">
         </childnode>
       </node>
+      <node id="481">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="477">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="484">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="485">
+        <label>ctime</label>
+      </node>
       <node id="480">
         <label>boost/bind.hpp</label>
       </node>
@@ -88,7 +88,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="487">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.hh</label>
         <link refid="Handler.hh"/>
         <childnode refid="488" relation="include">
         </childnode>
@@ -96,11 +96,11 @@
         </childnode>
       </node>
       <node id="489">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc</label>
         <link refid="Handler_8cc"/>
       </node>
       <node id="488">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</label>
         <link refid="HttpServer_8cc"/>
       </node>
     </invincdepgraph>
@@ -114,9 +114,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_PARAM_HANDLER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_PARAM_HANDLER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_PARAM_HANDLER_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_PARAM_HANDLER_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -125,7 +125,7 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">param/Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
@@ -173,7 +173,7 @@
 <codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/>T&amp;<sp/>p_dst);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1af8dbec0f2d639d39fb11605609462dee" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Handler_1a3e71b80a00c962a862c1d3cc4d623c05" kindref="member">listen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name,<sp/>T<sp/>p_handler);</highlight></codeline>
@@ -266,12 +266,12 @@
 <codeline lineno="255"><highlight class="normal"></highlight></codeline>
 <codeline lineno="256"><highlight class="normal">}}}</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERVERS_APP_PARAMHANDLER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERVERS_APP_PARAMHANDLER_HH_</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Local<sp/>Variables:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ispell-local-dictionary:<sp/>&quot;american&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End:</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.hh"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Resolver_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Resolver_8cc" kind="file">
     <compoundname>Resolver.cc</compoundname>
     <includes refid="Resolver_8hh" local="yes">utils/Resolver.hh</includes>
     <includes local="no">logger.hh</includes>
@@ -20,6 +20,41 @@
       </node>
       <node id="1969">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1949">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1958">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1953">
+        <label>string</label>
+      </node>
+      <node id="1944">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+      </node>
+      <node id="1955">
+        <label>map</label>
+      </node>
+      <node id="1943">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.cc</label>
+        <link refid="Resolver.cc"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
+        </childnode>
+      </node>
+      <node id="1950">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1963">
         <label>utils/Utils.hh</label>
@@ -51,46 +86,51 @@
         <childnode refid="1969" relation="include">
         </childnode>
       </node>
-      <node id="1949">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1958">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1953">
-        <label>string</label>
-      </node>
-      <node id="1955">
-        <label>map</label>
-      </node>
-      <node id="1943">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</label>
-        <link refid="Resolver.cc"/>
-        <childnode refid="1944" relation="include">
-        </childnode>
-        <childnode refid="1970" relation="include">
-        </childnode>
-        <childnode refid="1961" relation="include">
-        </childnode>
-      </node>
-      <node id="1950">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1944">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1945" relation="include">
-        </childnode>
-        <childnode refid="1946" relation="include">
-        </childnode>
-        <childnode refid="1952" relation="include">
-        </childnode>
-      </node>
       <node id="1948">
         <label>boost/asio.hpp</label>
       </node>
       <node id="1962">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1968">
+        <label>ctime</label>
+      </node>
+      <node id="1960">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1954">
+        <label>vector</label>
+      </node>
+      <node id="1946">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1947" relation="include">
+        </childnode>
+        <childnode refid="1948" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+      </node>
+      <node id="1964">
+        <label>streambuf</label>
+      </node>
+      <node id="1956">
+        <label>utility</label>
+      </node>
+      <node id="1966">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1947">
+        <label>deque</label>
+      </node>
+      <node id="1959">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1952">
         <label>utils/CacheDns.hh</label>
@@ -126,48 +166,8 @@
         <childnode refid="1963" relation="include">
         </childnode>
       </node>
-      <node id="1968">
-        <label>ctime</label>
-      </node>
-      <node id="1960">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1954">
-        <label>vector</label>
-      </node>
-      <node id="1964">
-        <label>streambuf</label>
-      </node>
-      <node id="1956">
-        <label>utility</label>
-      </node>
-      <node id="1966">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1947">
-        <label>deque</label>
-      </node>
-      <node id="1959">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1961">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1946">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1947" relation="include">
-        </childnode>
-        <childnode refid="1948" relation="include">
-        </childnode>
-        <childnode refid="1949" relation="include">
-        </childnode>
-        <childnode refid="1945" relation="include">
-        </childnode>
-        <childnode refid="1950" relation="include">
-        </childnode>
-        <childnode refid="1951" relation="include">
-        </childnode>
       </node>
       <node id="1970">
         <label>logger.hh</label>
@@ -188,7 +188,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/make_shared.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -297,6 +297,6 @@
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.cc"/>
   </compounddef>
 </doxygen>

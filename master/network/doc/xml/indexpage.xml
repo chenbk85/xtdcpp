@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="indexpage" kind="page">
     <compoundname>index</compoundname>
     <title>xtdcpp [network]</title>
@@ -207,37 +207,37 @@ Serveur générique http. Gère la réception de requête HTTP, les transforme e
 <listitem><para>l&apos;url sur laquelle il à été enregistré correspond a la ressource demandée dans la requête (ce qui suit le GET ou le POST de la première ligne du header). On note le cas spécial où un handler peut être enregistré sur toutes les urls en même temps.</para></listitem><listitem><para>si le handler a été enregistré avec un filtre, on vérifie la condition posée le filtre est vrai pour la requête.</para></listitem></itemizedlist>
 </para><para><linebreak/>
  <heading level="2">Les handlers </heading>
-</para><para>Un handler doit être vu comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">status<sp/>myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-</programlisting></para><para>En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est &quot;h&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this));</highlight></codeline>
+</para><para>Un handler doit être vu comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">status<sp/>myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+</programlisting></para><para>En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est &quot;h&quot;. Exemple : <programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bind(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,<sp/>h(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
 </programlisting></para><para>La raison pour laquelle ces handlers ont été wrappé dans un objet interne est d&apos;une part de ne pas demander à l&apos;utilisateur de systématiquement binder 3 placeholders _1, _2, _3.</para><para><linebreak/>
  <heading level="2">Les filtres </heading>
-</para><para>De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">bool<sp/>filter(const<sp/>Request&amp;);</highlight></codeline>
-</programlisting></para><para>Ils se contruisent à partir de l&apos;objet interne du server dont le raccourcis est &quot;f&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline><highlight class="normal">bool<sp/><sp/>MyServer::myfilter(const<sp/>Request&amp;<sp/>p_req);</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this),<sp/>f(&amp;MyServer::myfilter,<sp/>this));</highlight></codeline>
-</programlisting></para><para>Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens ||, &amp;&amp; et !. Exemple :</para><para><programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline><highlight class="normal">bool<sp/><sp/>MyServer::hasHeader(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_req)</highlight></codeline>
+</para><para>De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>filter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;);</highlight></codeline>
+</programlisting></para><para>Ils se contruisent à partir de l&apos;objet interne du server dont le raccourcis est &quot;f&quot;. Exemple : <programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>MyServer::myfilter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bind(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,<sp/>h(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>f(&amp;MyServer::myfilter,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting></para><para>Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens ||, &amp;&amp; et !. Exemple :</para><para><programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>MyServer::hasHeader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req)</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>return<sp/>p_req.existsHeader(p_headerName);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_req.existsHeader(p_headerName);</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>h(&amp;MyServer::myhandler,<sp/>this),</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-type&quot;)<sp/>&amp;&amp;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-Length&quot;));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bind(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>h(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Content-type&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Content-Length&quot;</highlight><highlight class="normal">));</highlight></codeline>
 </programlisting></para><para><linebreak/>
  <heading level="2">L&apos;enregistrement </heading>
 </para><para>Cet objet founi de nombreuses méthodes utilitaires pour faciliter l&apos;enregistrement des handlers. Elles sont toutes préfixées par &quot;bind&quot;.</para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind(const<sp/>string&amp;<sp/>p_url,<sp/>handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_url,<sp/>handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_url</parametername>
@@ -269,7 +269,7 @@ Serveur générique http. Gère la réception de requête HTTP, les transforme e
 </parameterlist>
 Enregistrement générique de la ressource p_url sous condition optionnelle p_filter sur le handler p_handler. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_any(handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind_any(handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -287,9 +287,9 @@ Enregistrement générique de la ressource p_url sous condition optionnelle p_fi
 <para>filter &quot;filtre&quot; optionnel</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. <linebreak/>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_default(handler<sp/>p_handler);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind_default(handler<sp/>p_handler);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -302,7 +302,7 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2a
 </parameterlist>
 Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a été trouvé. A la construction, le handler par défaut est Server::h_error_template. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_redirect(const<sp/>string&amp;<sp/>p_src,<sp/>const<sp/>string&amp;<sp/>p_dst,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind_redirect(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -329,26 +329,26 @@ Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a
 </parameterlist>
 Enregistrement d&apos;un handler de redirection. Créer une réponse http qui contient le header &quot;Location : p_dst&quot; et le code HTTP Response::STATUS_302. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_file(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind_file(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
- Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> <linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_dir(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind_dir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
- Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" kindref="member">xtd::network::http::Server::h_dir</ref> <linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" kindref="member">xtd::network::http::Server::h_dir</ref> <linebreak/>
 <linebreak/>
 </para></listitem></itemizedlist>
 </para><para><heading level="2">Les handlers prédéfinis </heading>
 </para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">h_redirect(const<sp/>string&amp;<sp/>p_dst,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="normal">h_redirect(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de redirection. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_dst</parametername>
@@ -378,7 +378,7 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_raw(const<sp/>string&amp;<sp/>p_data,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_raw(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de contenu. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
@@ -401,7 +401,7 @@ Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigean
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_file(const<sp/>string&amp;<sp/>p_filePath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_file(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de fichier. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_filePath</parametername>
@@ -445,7 +445,7 @@ Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_dir(const<sp/>string&amp;<sp/>p_dirPath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_dir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dirPath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de répertoire. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_dirPath</parametername>
@@ -489,7 +489,7 @@ Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier p
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_template_file(const<sp/>Template&amp;<sp/>p_tmpl,<sp/>const<sp/>string&amp;<sp/>const<sp/>uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_template_file(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Template&amp;<sp/>p_tmpl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de texte templaté a partir d&apos;un fichier. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_tmpl</parametername>
@@ -526,7 +526,7 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP pré-formatée par l&apos;objet Template p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_text(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Génère une réponse HTTP pré-formatée par l&apos;objet Template p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_text(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de génération de message d&apos;erreur en texte. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_message</parametername>
@@ -556,7 +556,7 @@ Génère une réponse HTTP pré-formatée par l&apos;objet Template p_tmpl Respo
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_html(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_html(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> Handler de génération de message d&apos;erreur en html. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_message</parametername>
@@ -586,60 +586,60 @@ Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Cont
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;.</para></listitem></itemizedlist>
+Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;.</para></listitem></itemizedlist>
 </para><para><heading level="2">Les filtres prédéfinis </heading>
 </para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">static<sp/>bool<sp/>f_none(const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_none(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Toujours vrai. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_cgi_exist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si la requête contient un paramètre GET nommé p_cgiName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_one_cgi_exist(const<sp/>vector<sp/>&lt;string<sp/>&gt;<sp/>&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_req);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_one_cgi_exist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector<sp/>&lt;string<sp/>&gt;<sp/>&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET dont le nom correspond à l&apos;un des éléments du tableau p_cgiName <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_cgi_equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_cgi_match(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_regex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_post_exist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si la requête contient un paramètre POST nommé p_cgiName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_post_equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_post_match(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_regex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_exist(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_header_exist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si p_request contient le header p_headerName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_equal(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_header_equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si p_request contient le header p_headerName dont la valeur est egale a p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_match(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_header_match(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si p_request contient le header p_headerName dont la valeur match la regexp p_value <linebreak/>

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="namespacextd_1_1network_1_1http" kind="namespace" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacextd_1_1network_1_1http" kind="namespace">
     <compoundname>xtd::network::http</compoundname>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Connection" prot="public">xtd::network::http::Connection</innerclass>
-    <innerclass refid="classxtd_1_1network_1_1http_1_1Generator" prot="public">xtd::network::http::Generator</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Server" prot="public">xtd::network::http::Server</innerclass>
     <innerclass refid="structxtd_1_1network_1_1http_1_1hex__to__string" prot="public">xtd::network::http::hex_to_string</innerclass>
-    <innerclass refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" prot="public">xtd::network::http::HtmlTemplate</innerclass>
-    <innerclass refid="classxtd_1_1network_1_1http_1_1Json" prot="public">xtd::network::http::Json</innerclass>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Request" prot="public">xtd::network::http::Request</innerclass>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Response" prot="public">xtd::network::http::Response</innerclass>
-    <innerclass refid="classxtd_1_1network_1_1http_1_1Server" prot="public">xtd::network::http::Server</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Generator" prot="public">xtd::network::http::Generator</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1Json" prot="public">xtd::network::http::Json</innerclass>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Template" prot="public">xtd::network::http::Template</innerclass>
+    <innerclass refid="classxtd_1_1network_1_1http_1_1HtmlTemplate" prot="public">xtd::network::http::HtmlTemplate</innerclass>
     <innerclass refid="classxtd_1_1network_1_1http_1_1XmlTemplate" prot="public">xtd::network::http::XmlTemplate</innerclass>
     <innernamespace refid="namespacextd_1_1network_1_1http_1_1cpptempl">xtd::network::http::cpptempl</innernamespace>
       <sectiondef kind="enum">
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Response.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Response.hh" bodystart="10" bodyend="36"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Response.hh" line="10" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Response.hh" bodystart="10" bodyend="36"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" line="654" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Request.cc" bodystart="654" bodyend="693"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc" line="654" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.cc" bodystart="654" bodyend="693"/>
         <references refid="classxtd_1_1network_1_1http_1_1Request_1af06004afe64f465edfb281407b7f3600" compoundref="Request_8cc" startline="134" endline="137">xtd::network::http::Request::getMethod</references>
         <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627a211feb11ea0c6defc080b91b8174ced6" compoundref="Request_8hh" startline="24">xtd::network::http::Request::METHOD_GET</references>
         <references refid="classxtd_1_1network_1_1http_1_1Request_1a789d6d688af4e63cc725542fc7925627ab832c767db7682c75bc4aa0d169b47cb" compoundref="Request_8hh" startline="25">xtd::network::http::Request::METHOD_POST</references>
@@ -215,13 +215,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Request.hh" line="135" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Request.hh" line="135" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/Connection.cc" line="8" column="1"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.cc" line="8" column="1"/>
   </compounddef>
 </doxygen>

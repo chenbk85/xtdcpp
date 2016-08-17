@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Base_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Base_8hh" kind="file">
     <compoundname>Base.hh</compoundname>
     <includes local="no">boost/bind.hpp</includes>
     <includes local="no">boost/any.hpp</includes>
@@ -11,29 +11,14 @@
     <includes local="no">ctime</includes>
     <includes local="no">types.hh</includes>
     <includes local="no">logger.hh</includes>
-    <includedby refid="Server_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</includedby>
-    <includedby refid="Base_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Base.cc</includedby>
-    <includedby refid="Handler_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</includedby>
-    <includedby refid="Handler_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</includedby>
-    <includedby refid="Visitor_8hh" local="yes">/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh</includedby>
+    <includedby refid="Server_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.hh</includedby>
+    <includedby refid="Base_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/param/Base.cc</includedby>
+    <includedby refid="Handler_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc</includedby>
+    <includedby refid="Handler_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.hh</includedby>
+    <includedby refid="Visitor_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/param/Visitor.hh</includedby>
     <incdepgraph>
-      <node id="436">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="435">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="434">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="433">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="437">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
-      </node>
       <node id="431">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Base.hh</label>
         <link refid="Base.hh"/>
         <childnode refid="432" relation="include">
         </childnode>
@@ -54,6 +39,21 @@
         <childnode refid="440" relation="include">
         </childnode>
       </node>
+      <node id="436">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="435">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="434">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="433">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="437">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
       <node id="438">
         <label>ctime</label>
       </node>
@@ -68,18 +68,8 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="443">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.cc</label>
-        <link refid="Server_8cc"/>
-      </node>
-      <node id="442">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/Server.hh</label>
-        <link refid="Server_8hh"/>
-        <childnode refid="443" relation="include">
-        </childnode>
-      </node>
       <node id="441">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Base.hh</label>
         <link refid="Base.hh"/>
         <childnode refid="442" relation="include">
         </childnode>
@@ -93,7 +83,7 @@
         </childnode>
       </node>
       <node id="446">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.hh</label>
         <link refid="Handler_8hh"/>
         <childnode refid="447" relation="include">
         </childnode>
@@ -101,23 +91,25 @@
         </childnode>
       </node>
       <node id="445">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc</label>
         <link refid="Handler_8cc"/>
       </node>
-      <node id="444">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Base.cc</label>
-        <link refid="Base_8cc"/>
+      <node id="442">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.hh</label>
+        <link refid="Server_8hh"/>
+        <childnode refid="443" relation="include">
+        </childnode>
       </node>
       <node id="447">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</label>
         <link refid="HttpServer_8cc"/>
       </node>
-      <node id="449">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc</label>
-        <link refid="Visitor_8cc"/>
+      <node id="443">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/Server.cc</label>
+        <link refid="Server_8cc"/>
       </node>
       <node id="448">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Visitor.hh</label>
         <link refid="Visitor_8hh"/>
         <childnode refid="447" relation="include">
         </childnode>
@@ -125,6 +117,14 @@
         </childnode>
         <childnode refid="449" relation="include">
         </childnode>
+      </node>
+      <node id="449">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Visitor.cc</label>
+        <link refid="Visitor_8cc"/>
+      </node>
+      <node id="444">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Base.cc</label>
+        <link refid="Base_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1servers_1_1param_1_1Base" prot="public">xtd::servers::param::Base</innerclass>
@@ -137,9 +137,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_PARAM_BASE_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_PARAM_BASE_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/any.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/function.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -151,7 +151,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;logger.hh&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
@@ -216,7 +216,7 @@
 <codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a6161111b66cf64a5b953bd978b498fe8" kindref="member">isAccepted</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1abff2c36296d9d309baafe94e7fd65834" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_src);</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a47d5b5e494732932d25fa992e0a06190" kindref="member">setLog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_log);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
@@ -242,17 +242,17 @@
 <codeline lineno="230" refid="classxtd_1_1servers_1_1param_1_1POD" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base" kindref="compound">Base</ref></highlight></codeline>
 <codeline lineno="231"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value);</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD" kindref="compound">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1a8f374c2b8622bdcec87a746b07bad388" kindref="member">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1a8f374c2b8622bdcec87a746b07bad388" kindref="member">POD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name);</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"></highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74a64bb56c20b892c9be9b786a2d94d1" kindref="member">fromStr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1ac6754089526df6eb0eef539be830c668" kindref="member">fromStr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a74d9a61d65e6e66492b2205489d9b2cf" kindref="member">verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1aded664a97a02450a9270dd04af042d0c" kindref="member">verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src);</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1ab80c9c70cacf5a8cebb98486fba83116" kindref="member">toStr</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1a6b40b7e5cd208c4ab848edb753c612f7" kindref="member">toStr</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1Base_1a37a0c2247274dce2395517186ec70d7a" kindref="member">accept</ref>(<ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1servers_1_1param_1_1POD_1a828a1fa2391bc087f396b87a1d7c793a" kindref="member">accept</ref>(<ref refid="classxtd_1_1servers_1_1param_1_1Visitor" kindref="compound">Visitor</ref>&amp;<sp/>p_visitor)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"></highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight></codeline>
@@ -286,7 +286,7 @@
 <codeline lineno="296"><highlight class="normal"><sp/><sp/>m_name(),</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/>m_sync(true),</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/>m_actionPath(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/>m_timestamp(<ref refid="namespaceboost" kindref="compound">boost</ref>::posix_time::microsec_clock::local_time()),</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/>m_timestamp(boost::posix_time::microsec_clock::local_time()),</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/>m_log(</highlight><highlight class="stringliteral">&quot;no<sp/>log&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="301"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="302"><highlight class="normal">}</highlight></codeline>
@@ -301,7 +301,7 @@
 <codeline lineno="311"><highlight class="normal"><sp/><sp/>m_name(p_name),</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/>m_sync(true),</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"><sp/><sp/>m_actionPath(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
-<codeline lineno="314"><highlight class="normal"><sp/><sp/>m_timestamp(<ref refid="namespaceboost" kindref="compound">boost</ref>::posix_time::microsec_clock::local_time()),</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>m_timestamp(boost::posix_time::microsec_clock::local_time()),</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/>m_log(</highlight><highlight class="stringliteral">&quot;no<sp/>log&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="316"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="317"><highlight class="normal">}</highlight></codeline>
@@ -394,12 +394,12 @@
 <codeline lineno="404"><highlight class="normal"></highlight></codeline>
 <codeline lineno="405"><highlight class="normal">}}}</highlight></codeline>
 <codeline lineno="406"><highlight class="normal"></highlight></codeline>
-<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!KESERVERS_PARAM_BASE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!KESERVERS_PARAM_BASE_HH_</highlight></codeline>
+<codeline lineno="408"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="409"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Local<sp/>Variables:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="410"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ispell-local-dictionary:<sp/>&quot;american&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="411"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End:</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Base.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/param/Base.hh"/>
   </compounddef>
 </doxygen>

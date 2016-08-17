@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Handler_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Handler_8cc" kind="file">
     <compoundname>Handler.cc</compoundname>
     <includes refid="Handler_8hh" local="yes">param/Handler.hh</includes>
     <includes local="no">fstream</includes>
@@ -20,30 +20,6 @@
       </node>
       <node id="454">
         <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="461">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="460">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="452">
-        <label>string</label>
-      </node>
-      <node id="453">
-        <label>map</label>
-      </node>
-      <node id="465">
-        <label>fstream</label>
-      </node>
-      <node id="459">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="455">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="462">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
       <node id="457">
         <label>param/Base.hh</label>
@@ -67,8 +43,20 @@
         <childnode refid="464" relation="include">
         </childnode>
       </node>
-      <node id="463">
-        <label>ctime</label>
+      <node id="461">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="460">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="452">
+        <label>string</label>
+      </node>
+      <node id="453">
+        <label>map</label>
+      </node>
+      <node id="465">
+        <label>fstream</label>
       </node>
       <node id="451">
         <label>param/Handler.hh</label>
@@ -86,8 +74,14 @@
         <childnode refid="457" relation="include">
         </childnode>
       </node>
+      <node id="459">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="455">
+        <label>boost/any.hpp</label>
+      </node>
       <node id="450">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc</label>
         <link refid="Handler.cc"/>
         <childnode refid="451" relation="include">
         </childnode>
@@ -108,20 +102,17 @@
         <childnode refid="469" relation="include">
         </childnode>
       </node>
+      <node id="462">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="463">
+        <label>ctime</label>
+      </node>
       <node id="467">
         <label>boost/filesystem.hpp</label>
       </node>
       <node id="468">
         <label>error.hh</label>
-      </node>
-      <node id="458">
-        <label>boost/bind.hpp</label>
-      </node>
-      <node id="464">
-        <label>logger.hh</label>
-      </node>
-      <node id="456">
-        <label>types.hh</label>
       </node>
       <node id="469">
         <label>param/Visitor.hh</label>
@@ -134,6 +125,15 @@
         </childnode>
         <childnode refid="457" relation="include">
         </childnode>
+      </node>
+      <node id="458">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="464">
+        <label>logger.hh</label>
+      </node>
+      <node id="456">
+        <label>types.hh</label>
       </node>
       <node id="471">
         <label>http/Template.hh</label>
@@ -168,7 +168,7 @@
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bfs<sp/>=<sp/>boost::filesystem;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
@@ -298,6 +298,6 @@
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal">}}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Handler.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/param/Handler.cc"/>
   </compounddef>
 </doxygen>

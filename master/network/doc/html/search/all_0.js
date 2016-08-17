@@ -18,5 +18,6 @@ var searchData=
   ['appenddata',['appendData',['../classxtd_1_1network_1_1http_1_1Response.html#a5c1dd78f683d9660cdb6f28a8ed4fd7c',1,'xtd::network::http::Response']]],
   ['async_5fconnect',['async_connect',['../classxtd_1_1network_1_1base_1_1Client.html#ac7427711e506f5958f80a89028f3f923',1,'xtd::network::base::Client']]],
   ['async_5fread',['async_read',['../classxtd_1_1network_1_1base_1_1Connection.html#ab468f8470260b0ce42b5accf29c352e6',1,'xtd::network::base::Connection']]],
-  ['async_5fwrite',['async_write',['../classxtd_1_1network_1_1base_1_1Connection.html#a650bc7e13969ff9195c95307e0abb2e4',1,'xtd::network::base::Connection']]]
+  ['async_5fwrite',['async_write',['../classxtd_1_1network_1_1base_1_1Connection.html#a650bc7e13969ff9195c95307e0abb2e4',1,'xtd::network::base::Connection']]],
+  ['available',['available',['../classxtd_1_1network_1_1bip_1_1Client.html#a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb',1,'xtd::network::bip::Client']]]
 ];

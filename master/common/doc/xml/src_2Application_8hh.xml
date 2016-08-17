@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="src_2Application_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="src_2Application_8hh" kind="file">
     <compoundname>Application.hh</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">iomanip</includes>
@@ -17,23 +17,9 @@
     <includes refid="types_8hh" local="yes">types.hh</includes>
     <includes refid="logger_8hh" local="yes">logger.hh</includes>
     <includes local="yes">Application.hxx</includes>
-    <includedby refid="Application_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/Application.cc</includedby>
-    <includedby refid="main_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/main.cc</includedby>
+    <includedby refid="Application_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc</includedby>
+    <includedby refid="main_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/main.cc</includedby>
     <incdepgraph>
-      <node id="286">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="287" relation="include">
-        </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
-        </childnode>
-        <childnode refid="289" relation="include">
-        </childnode>
-        <childnode refid="290" relation="include">
-        </childnode>
-      </node>
       <node id="294">
         <label>stdarg.h</label>
       </node>
@@ -42,18 +28,6 @@
       </node>
       <node id="275">
         <label>iomanip</label>
-      </node>
-      <node id="276">
-        <label>limits</label>
-      </node>
-      <node id="285">
-        <label>boost/asio/signal_set.hpp</label>
-      </node>
-      <node id="281">
-        <label>stdlib.h</label>
-      </node>
-      <node id="292">
-        <label>boost/format.hpp</label>
       </node>
       <node id="291">
         <label>logger.hh</label>
@@ -75,8 +49,46 @@
         <childnode refid="295" relation="include">
         </childnode>
       </node>
+      <node id="276">
+        <label>limits</label>
+      </node>
+      <node id="285">
+        <label>boost/asio/signal_set.hpp</label>
+      </node>
+      <node id="281">
+        <label>stdlib.h</label>
+      </node>
+      <node id="292">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="287">
+        <label>string</label>
+      </node>
+      <node id="277">
+        <label>map</label>
+      </node>
+      <node id="283">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="286">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>fstream</label>
+      </node>
       <node id="273">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh</label>
         <link refid="src/Application.hh"/>
         <childnode refid="274" relation="include">
         </childnode>
@@ -108,18 +120,6 @@
         </childnode>
         <childnode refid="296" relation="include">
         </childnode>
-      </node>
-      <node id="287">
-        <label>string</label>
-      </node>
-      <node id="277">
-        <label>map</label>
-      </node>
-      <node id="283">
-        <label>boost/thread.hpp</label>
-      </node>
-      <node id="290">
-        <label>fstream</label>
       </node>
       <node id="293">
         <label>syslog.h</label>
@@ -153,21 +153,21 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="298">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.cc</label>
-        <link refid="Application_8cc"/>
+      <node id="299">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/main.cc</label>
+        <link refid="main_8cc"/>
       </node>
       <node id="297">
-        <label>/home/psyco/dev/xtdcpp/common/src/Application.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh</label>
         <link refid="src/Application.hh"/>
         <childnode refid="298" relation="include">
         </childnode>
         <childnode refid="299" relation="include">
         </childnode>
       </node>
-      <node id="299">
-        <label>/home/psyco/dev/xtdcpp/common/src/main.cc</label>
-        <link refid="main_8cc"/>
+      <node id="298">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/Application.cc</label>
+        <link refid="Application_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1Application" prot="public">xtd::Application</innerclass>
@@ -178,9 +178,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_APPLICATION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_APPLICATION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_APPLICATION_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_APPLICATION_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -198,7 +198,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="logger_8hh" kindref="compound">logger.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
@@ -218,8 +218,8 @@
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="106" refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24" kindref="member">requirement</ref><sp/>:<sp/>uint32_t</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">optional</ref><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a672c075ed901e463609077d571a714c7ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">mandatory</ref><sp/>=<sp/>1<sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ad57c24f3fe52d16e7169b912dd647f0d" kindref="member">optional</ref><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1Application_1a49c0397e9fd22067e3a536443a17fe24ac5e3b9675d114c21ad3367d318f6aa95" kindref="member">mandatory</ref><sp/>=<sp/>1<sp/><sp/></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
@@ -262,7 +262,7 @@
 <codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>misc<sp/>methods<sp/>//</highlight></codeline>
 <codeline lineno="179"><highlight class="comment"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" kindref="member">addSignalHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_signalNumber,<sp/>t_sig_handler<sp/>p_handler);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1Application_1afdb5173d0105fcf549ee6f61e6dcbe49" kindref="member">addSignalHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_signalNumber,<sp/><ref refid="classxtd_1_1Application_1a907b6fe8247636495890e668530863d6" kindref="member">t_sig_handler</ref><sp/>p_handler);</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="classxtd_1_1Application_1ab7be8fa583daa66271562a83817b172c" kindref="member">getVersion</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
@@ -346,12 +346,12 @@
 <codeline lineno="355"><highlight class="normal"></highlight></codeline>
 <codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;Application.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="357"><highlight class="normal"></highlight></codeline>
-<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_APPLICATION_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_APPLICATION_HH_</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Local<sp/>Variables:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ispell-local-dictionary:<sp/>&quot;american&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="362"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End:</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/Application.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/Application.hh"/>
   </compounddef>
 </doxygen>

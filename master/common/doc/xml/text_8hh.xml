@@ -1,11 +1,28 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="text_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="text_8hh" kind="file">
     <compoundname>text.hh</compoundname>
     <includes local="no">boost/tuple/tuple.hpp</includes>
     <includes refid="types_8hh" local="yes">types.hh</includes>
-    <includedby refid="text_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/text.cc</includedby>
+    <includedby refid="text_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/text.cc</includedby>
     <incdepgraph>
+      <node id="454">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="453">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/text.hh</label>
+        <link refid="text.hh"/>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>string</label>
+      </node>
+      <node id="457">
+        <label>map</label>
+      </node>
       <node id="455">
         <label>types.hh</label>
         <link refid="types_8hh"/>
@@ -20,15 +37,6 @@
         <childnode refid="460" relation="include">
         </childnode>
       </node>
-      <node id="454">
-        <label>boost/tuple/tuple.hpp</label>
-      </node>
-      <node id="456">
-        <label>string</label>
-      </node>
-      <node id="457">
-        <label>map</label>
-      </node>
       <node id="460">
         <label>fstream</label>
       </node>
@@ -38,25 +46,17 @@
       <node id="459">
         <label>sstream</label>
       </node>
-      <node id="453">
-        <label>/home/psyco/dev/xtdcpp/common/src/text.hh</label>
-        <link refid="text.hh"/>
-        <childnode refid="454" relation="include">
-        </childnode>
-        <childnode refid="455" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="462">
-        <label>/home/psyco/dev/xtdcpp/common/src/text.cc</label>
-        <link refid="text_8cc"/>
-      </node>
       <node id="461">
-        <label>/home/psyco/dev/xtdcpp/common/src/text.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/text.hh</label>
         <link refid="text.hh"/>
         <childnode refid="462" relation="include">
         </childnode>
+      </node>
+      <node id="462">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/text.cc</label>
+        <link refid="text_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1text_1_1xml" prot="public">xtd::text::xml</innerclass>
@@ -67,12 +67,12 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_TEXT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_TEXT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/tuple/tuple.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_TEXT_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_TEXT_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/tuple/tuple.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">text<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9" refid="classxtd_1_1text_1_1xml" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1text_1_1xml" kindref="compound">xml</ref></highlight></codeline>
@@ -96,6 +96,6 @@
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_TEXT_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/text.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/text.hh"/>
   </compounddef>
 </doxygen>

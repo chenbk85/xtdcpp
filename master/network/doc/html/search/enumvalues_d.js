@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['service_5funavailable',['service_unavailable',['../namespacextd_1_1network_1_1http.html#a55148922a7d13fe756e53e2ccad4b89ca512d23352b911a1e9be84b5119e39095',1,'xtd::network::http']]],
-  ['switch_5fprotocol',['switch_protocol',['../namespacextd_1_1network_1_1http.html#a55148922a7d13fe756e53e2ccad4b89ca95e78c491edb90cfdcd3ff95e4700d46',1,'xtd::network::http']]]
+  ['received',['received',['../classxtd_1_1network_1_1bip_1_1Client.html#a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498',1,'xtd::network::bip::Client']]],
+  ['reserved',['reserved',['../classxtd_1_1network_1_1bip_1_1Client.html#a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072',1,'xtd::network::bip::Client']]],
+  ['reuseaddr',['reuseaddr',['../namespacextd_1_1network_1_1utils.html#a0acc888a3cdabdadb91fe832ea196a4fa087d20314d2967622b76fbf7ce91ebf2',1,'xtd::network::utils']]]
 ];

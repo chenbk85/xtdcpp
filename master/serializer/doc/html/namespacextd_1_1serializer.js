@@ -1,11 +1,11 @@
 var namespacextd_1_1serializer =
 [
-    [ "DebugBinIArchive", "classxtd_1_1serializer_1_1DebugBinIArchive.html", "classxtd_1_1serializer_1_1DebugBinIArchive" ],
-    [ "DebugBinOArchive", "classxtd_1_1serializer_1_1DebugBinOArchive.html", "classxtd_1_1serializer_1_1DebugBinOArchive" ],
-    [ "DebugTextIArchive", "classxtd_1_1serializer_1_1DebugTextIArchive.html", "classxtd_1_1serializer_1_1DebugTextIArchive" ],
-    [ "DebugTextOArchive", "classxtd_1_1serializer_1_1DebugTextOArchive.html", "classxtd_1_1serializer_1_1DebugTextOArchive" ],
-    [ "DebugXmlIArchive", "classxtd_1_1serializer_1_1DebugXmlIArchive.html", "classxtd_1_1serializer_1_1DebugXmlIArchive" ],
     [ "DebugXmlOArchive", "classxtd_1_1serializer_1_1DebugXmlOArchive.html", "classxtd_1_1serializer_1_1DebugXmlOArchive" ],
+    [ "DebugXmlIArchive", "classxtd_1_1serializer_1_1DebugXmlIArchive.html", "classxtd_1_1serializer_1_1DebugXmlIArchive" ],
+    [ "DebugTextOArchive", "classxtd_1_1serializer_1_1DebugTextOArchive.html", "classxtd_1_1serializer_1_1DebugTextOArchive" ],
+    [ "DebugTextIArchive", "classxtd_1_1serializer_1_1DebugTextIArchive.html", "classxtd_1_1serializer_1_1DebugTextIArchive" ],
+    [ "DebugBinOArchive", "classxtd_1_1serializer_1_1DebugBinOArchive.html", "classxtd_1_1serializer_1_1DebugBinOArchive" ],
+    [ "DebugBinIArchive", "classxtd_1_1serializer_1_1DebugBinIArchive.html", "classxtd_1_1serializer_1_1DebugBinIArchive" ],
     [ "Doc", "classxtd_1_1serializer_1_1Doc.html", "classxtd_1_1serializer_1_1Doc" ],
     [ "mode", "structxtd_1_1serializer_1_1mode.html", [
       [ "bin", "structxtd_1_1serializer_1_1mode_1_1bin.html", "structxtd_1_1serializer_1_1mode_1_1bin" ],

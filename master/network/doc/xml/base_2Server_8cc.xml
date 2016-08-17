@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="base_2Server_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="base_2Server_8cc" kind="file">
     <compoundname>Server.cc</compoundname>
     <includes refid="base_2Server_8hh" local="yes">base/Server.hh</includes>
     <includes local="yes">base/Server.hxx</includes>
@@ -15,18 +15,6 @@
       <node id="1437">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
       </node>
-      <node id="1417">
-        <label>base/Server.hh</label>
-        <link refid="base_2Server_8hh"/>
-        <childnode refid="1418" relation="include">
-        </childnode>
-        <childnode refid="1419" relation="include">
-        </childnode>
-        <childnode refid="1424" relation="include">
-        </childnode>
-        <childnode refid="1431" relation="include">
-        </childnode>
-      </node>
       <node id="1423">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -38,6 +26,31 @@
       </node>
       <node id="1439">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1426">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1420">
+        <label>string</label>
+      </node>
+      <node id="1418">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1440">
+        <label>base/Server.hxx</label>
+      </node>
+      <node id="1428">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1416">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.cc</label>
+        <link refid="base/Server.cc"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1440" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
       </node>
       <node id="1431">
         <label>utils/Utils.hh</label>
@@ -69,21 +82,6 @@
         <childnode refid="1439" relation="include">
         </childnode>
       </node>
-      <node id="1426">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1420">
-        <label>string</label>
-      </node>
-      <node id="1418">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1440">
-        <label>base/Server.hxx</label>
-      </node>
-      <node id="1428">
-        <label>boost/function.hpp</label>
-      </node>
       <node id="1419">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -103,6 +101,18 @@
       <node id="1422">
         <label>boost/asio.hpp</label>
       </node>
+      <node id="1417">
+        <label>base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+      </node>
       <node id="1434">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
@@ -111,15 +121,6 @@
       </node>
       <node id="1432">
         <label>vector</label>
-      </node>
-      <node id="1433">
-        <label>streambuf</label>
-      </node>
-      <node id="1436">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1425">
-        <label>deque</label>
       </node>
       <node id="1424">
         <label>utils/CommTypeDefs.hh</label>
@@ -137,18 +138,17 @@
         <childnode refid="1429" relation="include">
         </childnode>
       </node>
+      <node id="1433">
+        <label>streambuf</label>
+      </node>
+      <node id="1436">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1425">
+        <label>deque</label>
+      </node>
       <node id="1429">
         <label>types.hh</label>
-      </node>
-      <node id="1416">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.cc</label>
-        <link refid="base/Server.cc"/>
-        <childnode refid="1417" relation="include">
-        </childnode>
-        <childnode refid="1440" relation="include">
-        </childnode>
-        <childnode refid="1424" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -164,7 +164,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
@@ -173,6 +173,6 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//end<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.cc"/>
   </compounddef>
 </doxygen>

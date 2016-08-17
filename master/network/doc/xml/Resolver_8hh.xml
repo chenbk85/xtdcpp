@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Resolver_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Resolver_8hh" kind="file">
     <compoundname>Resolver.hh</compoundname>
     <includes local="no">boost/shared_ptr.hpp</includes>
     <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
     <includes refid="CacheDns_8hh" local="yes">utils/CacheDns.hh</includes>
-    <includedby refid="base_2Client_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Client.hh</includedby>
-    <includedby refid="base_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</includedby>
-    <includedby refid="Resolver_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</includedby>
+    <includedby refid="base_2Client_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</includedby>
+    <includedby refid="base_2Connection_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.hh</includedby>
+    <includedby refid="Resolver_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.cc</includedby>
     <incdepgraph>
       <node id="1985">
         <label>list</label>
@@ -23,6 +23,31 @@
       </node>
       <node id="1997">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1977">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1986">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1981">
+        <label>string</label>
+      </node>
+      <node id="1972">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.hh</label>
+        <link refid="Resolver.hh"/>
+        <childnode refid="1973" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1980" relation="include">
+        </childnode>
+      </node>
+      <node id="1983">
+        <label>map</label>
+      </node>
+      <node id="1978">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1991">
         <label>utils/Utils.hh</label>
@@ -54,36 +79,51 @@
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="1977">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1986">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1981">
-        <label>string</label>
-      </node>
-      <node id="1983">
-        <label>map</label>
-      </node>
-      <node id="1978">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1972">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</label>
-        <link refid="Resolver.hh"/>
-        <childnode refid="1973" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1980" relation="include">
-        </childnode>
-      </node>
       <node id="1976">
         <label>boost/asio.hpp</label>
       </node>
       <node id="1990">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1996">
+        <label>ctime</label>
+      </node>
+      <node id="1988">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1982">
+        <label>vector</label>
+      </node>
+      <node id="1974">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1975" relation="include">
+        </childnode>
+        <childnode refid="1976" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+        <childnode refid="1978" relation="include">
+        </childnode>
+        <childnode refid="1979" relation="include">
+        </childnode>
+      </node>
+      <node id="1992">
+        <label>streambuf</label>
+      </node>
+      <node id="1984">
+        <label>utility</label>
+      </node>
+      <node id="1994">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1975">
+        <label>deque</label>
+      </node>
+      <node id="1987">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1980">
         <label>utils/CacheDns.hh</label>
@@ -119,92 +159,34 @@
         <childnode refid="1991" relation="include">
         </childnode>
       </node>
-      <node id="1996">
-        <label>ctime</label>
-      </node>
-      <node id="1988">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1982">
-        <label>vector</label>
-      </node>
-      <node id="1992">
-        <label>streambuf</label>
-      </node>
-      <node id="1984">
-        <label>utility</label>
-      </node>
-      <node id="1994">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1975">
-        <label>deque</label>
-      </node>
-      <node id="1987">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1989">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1974">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1975" relation="include">
-        </childnode>
-        <childnode refid="1976" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-        <childnode refid="1973" relation="include">
-        </childnode>
-        <childnode refid="1978" relation="include">
-        </childnode>
-        <childnode refid="1979" relation="include">
-        </childnode>
       </node>
       <node id="1979">
         <label>types.hh</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2006">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
-        <link refid="bip_2Connection_8hh"/>
-        <childnode refid="2007" relation="include">
+      <node id="2004">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2008" relation="include">
         </childnode>
       </node>
-      <node id="2007">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
-        <link refid="bip_2Connection_8cc"/>
+      <node id="2003">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
       </node>
-      <node id="2008">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
-        <link refid="http_2Connection_8hh"/>
-        <childnode refid="2009" relation="include">
-        </childnode>
-      </node>
-      <node id="2009">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
-        <link refid="http_2Connection_8cc"/>
-      </node>
-      <node id="1999">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
-        <link refid="base_2Client_8hh"/>
-        <childnode refid="2000" relation="include">
-        </childnode>
-        <childnode refid="2001" relation="include">
-        </childnode>
-      </node>
-      <node id="2010">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.cc</label>
-        <link refid="Resolver_8cc"/>
-      </node>
-      <node id="2000">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.cc</label>
-        <link refid="base_2Client_8cc"/>
+      <node id="2002">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
       </node>
       <node id="1998">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.hh</label>
         <link refid="Resolver.hh"/>
         <childnode refid="1999" relation="include">
         </childnode>
@@ -214,34 +196,52 @@
         </childnode>
       </node>
       <node id="2001">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</label>
         <link refid="bip_2Client_8hh"/>
         <childnode refid="2002" relation="include">
         </childnode>
         <childnode refid="2003" relation="include">
         </childnode>
       </node>
-      <node id="2002">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
-        <link refid="bip_2Client_8cc"/>
+      <node id="2010">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.cc</label>
+        <link refid="Resolver_8cc"/>
       </node>
-      <node id="2003">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
+      <node id="2009">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
       </node>
-      <node id="2004">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="2005" relation="include">
+      <node id="2008">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http_2Connection_8hh"/>
+        <childnode refid="2009" relation="include">
         </childnode>
-        <childnode refid="2006" relation="include">
-        </childnode>
-        <childnode refid="2008" relation="include">
-        </childnode>
+      </node>
+      <node id="2007">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
       </node>
       <node id="2005">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.cc</label>
         <link refid="base_2Connection_8cc"/>
+      </node>
+      <node id="1999">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+      </node>
+      <node id="2006">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="2007" relation="include">
+        </childnode>
+      </node>
+      <node id="2000">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.cc</label>
+        <link refid="base_2Client_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1utils_1_1Resolver" prot="public">xtd::network::utils::Resolver</innerclass>
@@ -255,14 +255,14 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_UTILS_RESOLVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_UTILS_RESOLVER_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_UTILS_RESOLVER_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_UTILS_RESOLVER_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CacheDns_8hh" kindref="compound">utils/CacheDns.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
@@ -315,6 +315,6 @@
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_UTILS_RESOLVER_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Resolver.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/utils/Resolver.hh"/>
   </compounddef>
 </doxygen>

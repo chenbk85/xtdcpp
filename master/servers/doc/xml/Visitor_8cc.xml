@@ -1,29 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Visitor_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Visitor_8cc" kind="file">
     <compoundname>Visitor.cc</compoundname>
     <includes refid="Visitor_8hh" local="yes">param/Visitor.hh</includes>
     <incdepgraph>
       <node id="493">
         <label>json_parser.hpp</label>
-      </node>
-      <node id="500">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="499">
-        <label>boost/foreach.hpp</label>
-      </node>
-      <node id="492">
-        <label>string</label>
-      </node>
-      <node id="498">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="497">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="501">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
       </node>
       <node id="495">
         <label>param/Base.hh</label>
@@ -47,23 +29,26 @@
         <childnode refid="504" relation="include">
         </childnode>
       </node>
+      <node id="500">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="499">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="492">
+        <label>string</label>
+      </node>
+      <node id="498">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="497">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="501">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
       <node id="502">
         <label>ctime</label>
-      </node>
-      <node id="496">
-        <label>boost/bind.hpp</label>
-      </node>
-      <node id="504">
-        <label>logger.hh</label>
-      </node>
-      <node id="490">
-        <label>/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc</label>
-        <link refid="Visitor.cc"/>
-        <childnode refid="491" relation="include">
-        </childnode>
-      </node>
-      <node id="503">
-        <label>types.hh</label>
       </node>
       <node id="491">
         <label>param/Visitor.hh</label>
@@ -76,6 +61,21 @@
         </childnode>
         <childnode refid="495" relation="include">
         </childnode>
+      </node>
+      <node id="496">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="490">
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/param/Visitor.cc</label>
+        <link refid="Visitor.cc"/>
+        <childnode refid="491" relation="include">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>logger.hh</label>
+      </node>
+      <node id="503">
+        <label>types.hh</label>
       </node>
       <node id="494">
         <label>http/Template.hh</label>
@@ -92,7 +92,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Visitor_8hh" kindref="compound">param/Visitor.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">param<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
@@ -117,6 +117,6 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">}}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/param/Visitor.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/param/Visitor.cc"/>
   </compounddef>
 </doxygen>

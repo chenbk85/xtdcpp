@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="DebugArchive_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="DebugArchive_8hh" kind="file">
     <compoundname>DebugArchive.hh</compoundname>
     <includes local="no">boost/serialization/serialization.hpp</includes>
     <includes local="no">boost/serialization/version.hpp</includes>
@@ -18,134 +18,162 @@
     <includes local="no">boost/archive/xml_iarchive.hpp</includes>
     <includes local="no">boost/archive/text_iarchive.hpp</includes>
     <includes local="no">boost/archive/binary_iarchive.hpp</includes>
-    <includes local="yes">objects/unorderedmap.hh</includes>
-    <includedby refid="DebugArchive_8cc" local="yes">/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.cc</includedby>
-    <includedby refid="serializer_8hh" local="yes">/home/psyco/dev/xtdcpp/serializer/src/serializer.hh</includedby>
+    <includes refid="unorderedmap_8hh" local="yes">objects/unorderedmap.hh</includes>
+    <includedby refid="DebugArchive_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.cc</includedby>
+    <includedby refid="serializer_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/serializer/src/serializer.hh</includedby>
     <incdepgraph>
-      <node id="218">
+      <node id="267">
         <label>boost/serialization/map.hpp</label>
       </node>
-      <node id="215">
+      <node id="264">
         <label>boost/serialization/vector.hpp</label>
       </node>
-      <node id="223">
+      <node id="272">
         <label>boost/archive/text_iarchive.hpp</label>
       </node>
-      <node id="224">
+      <node id="278">
+        <label>boost/serialization/collections_load_imp.hpp</label>
+      </node>
+      <node id="273">
         <label>boost/archive/binary_iarchive.hpp</label>
       </node>
-      <node id="217">
+      <node id="266">
         <label>boost/serialization/utility.hpp</label>
       </node>
-      <node id="219">
+      <node id="268">
         <label>boost/archive/xml_oarchive.hpp</label>
       </node>
-      <node id="211">
+      <node id="279">
+        <label>boost/serialization/split_free.hpp</label>
+      </node>
+      <node id="277">
+        <label>boost/serialization/collections_save_imp.hpp</label>
+      </node>
+      <node id="260">
         <label>boost/serialization/base_object.hpp</label>
       </node>
-      <node id="221">
+      <node id="270">
         <label>boost/archive/binary_oarchive.hpp</label>
       </node>
-      <node id="214">
+      <node id="263">
         <label>boost/serialization/string.hpp</label>
       </node>
-      <node id="220">
+      <node id="269">
         <label>boost/archive/text_oarchive.hpp</label>
       </node>
-      <node id="222">
+      <node id="271">
         <label>boost/archive/xml_iarchive.hpp</label>
       </node>
-      <node id="210">
+      <node id="259">
         <label>boost/serialization/version.hpp</label>
       </node>
-      <node id="213">
+      <node id="274">
+        <label>objects/unorderedmap.hh</label>
+        <link refid="unorderedmap_8hh"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="262">
         <label>boost/serialization/list.hpp</label>
       </node>
-      <node id="212">
+      <node id="261">
         <label>boost/serialization/nvp.hpp</label>
       </node>
-      <node id="216">
+      <node id="276">
+        <label>boost/config.hpp</label>
+      </node>
+      <node id="265">
         <label>boost/serialization/deque.hpp</label>
       </node>
-      <node id="225">
-        <label>objects/unorderedmap.hh</label>
-      </node>
-      <node id="208">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh</label>
+      <node id="257">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.hh</label>
         <link refid="DebugArchive.hh"/>
-        <childnode refid="209" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
-        <childnode refid="210" relation="include">
+        <childnode refid="259" relation="include">
         </childnode>
-        <childnode refid="211" relation="include">
+        <childnode refid="260" relation="include">
         </childnode>
-        <childnode refid="212" relation="include">
+        <childnode refid="261" relation="include">
         </childnode>
-        <childnode refid="213" relation="include">
+        <childnode refid="262" relation="include">
         </childnode>
-        <childnode refid="214" relation="include">
+        <childnode refid="263" relation="include">
         </childnode>
-        <childnode refid="215" relation="include">
+        <childnode refid="264" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
+        <childnode refid="265" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="266" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
+        <childnode refid="267" relation="include">
         </childnode>
-        <childnode refid="219" relation="include">
+        <childnode refid="268" relation="include">
         </childnode>
-        <childnode refid="220" relation="include">
+        <childnode refid="269" relation="include">
         </childnode>
-        <childnode refid="221" relation="include">
+        <childnode refid="270" relation="include">
         </childnode>
-        <childnode refid="222" relation="include">
+        <childnode refid="271" relation="include">
         </childnode>
-        <childnode refid="223" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="273" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
       </node>
-      <node id="209">
+      <node id="258">
         <label>boost/serialization/serialization.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="228">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/serializer.hh</label>
-        <link refid="serializer_8hh"/>
-        <childnode refid="229" relation="include">
-        </childnode>
-        <childnode refid="231" relation="include">
-        </childnode>
-      </node>
-      <node id="231">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/serializer.cc</label>
-        <link refid="serializer_8cc"/>
-      </node>
-      <node id="229">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.hh</label>
-        <link refid="Doc_8hh"/>
-        <childnode refid="230" relation="include">
-        </childnode>
-      </node>
-      <node id="230">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/objects/Doc.cc</label>
+      <node id="284">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/Doc.cc</label>
         <link refid="Doc_8cc"/>
       </node>
-      <node id="226">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh</label>
-        <link refid="DebugArchive.hh"/>
-        <childnode refid="227" relation="include">
-        </childnode>
-        <childnode refid="228" relation="include">
+      <node id="283">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/objects/Doc.hh</label>
+        <link refid="Doc_8hh"/>
+        <childnode refid="284" relation="include">
         </childnode>
       </node>
-      <node id="227">
-        <label>/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.cc</label>
+      <node id="285">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/serializer.cc</label>
+        <link refid="serializer_8cc"/>
+      </node>
+      <node id="282">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/serializer.hh</label>
+        <link refid="serializer_8hh"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.cc</label>
         <link refid="DebugArchive_8cc"/>
+      </node>
+      <node id="280">
+        <label>/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.hh</label>
+        <link refid="DebugArchive.hh"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1serializer_1_1DebugXmlOArchive" prot="public">xtd::serializer::DebugXmlOArchive</innerclass>
@@ -161,9 +189,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERIALIZER_DEBUGARCHIVE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERIALIZER_DEBUGARCHIVE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERIALIZER_DEBUGARCHIVE_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERIALIZER_DEBUGARCHIVE_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/serialization/serialization.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/serialization/version.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/serialization/base_object.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -180,9 +208,9 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/archive/xml_iarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/archive/text_iarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/archive/binary_iarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;objects/unorderedmap.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="unorderedmap_8hh" kindref="compound">objects/unorderedmap.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="namespacextd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="23" refid="namespacextd_1_1serializer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="structxtd_1_1serializer_1_1serializer" kindref="compound">serializer</ref><sp/>{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25" refid="classxtd_1_1serializer_1_1DebugXmlOArchive" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugXmlOArchive" kindref="compound">DebugXmlOArchive</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::archive::xml_oarchive_impl&lt;DebugXmlOArchive&gt;</highlight></codeline>
@@ -235,7 +263,7 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::archive::xml_iarchive_impl&lt;DebugXmlIArchive&gt;<sp/>base;</highlight></codeline>
 <codeline lineno="73" refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1a54f75e33da74496cd06e608f4bec85dc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::detail::interface_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugXmlIArchive" kindref="compound">DebugXmlIArchive</ref>&gt;;</highlight></codeline>
 <codeline lineno="74" refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1a54affbd4684171cc9e5cabf2db73ffe5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::basic_xml_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugXmlIArchive" kindref="compound">DebugXmlIArchive</ref>&gt;;</highlight></codeline>
-<codeline lineno="75" refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::save_access;</highlight></codeline>
+<codeline lineno="75" refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1aaca003bb8a4fc59424e4025130da4edd" kindref="member">boost::archive::save_access</ref>;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="78" refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1a877cd247551b625bec79846a8b9274d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1DebugXmlIArchive_1a877cd247551b625bec79846a8b9274d1" kindref="member">DebugXmlIArchive</ref>(std::istream&amp;<sp/>p_os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_flags<sp/>=<sp/>0)<sp/>:</highlight></codeline>
@@ -285,7 +313,7 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::archive::text_oarchive_impl&lt;DebugTextOArchive&gt;<sp/>base;</highlight></codeline>
 <codeline lineno="123" refid="classxtd_1_1serializer_1_1DebugTextOArchive_1a162d16419084090d0d406eb1f23dfa6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::detail::interface_oarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugTextOArchive" kindref="compound">DebugTextOArchive</ref>&gt;;</highlight></codeline>
 <codeline lineno="124" refid="classxtd_1_1serializer_1_1DebugTextOArchive_1ac712c773113f2ae2a71ee1f638877ab2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::basic_text_oarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugTextOArchive" kindref="compound">DebugTextOArchive</ref>&gt;;</highlight></codeline>
-<codeline lineno="125" refid="classxtd_1_1serializer_1_1DebugTextOArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::save_access;</highlight></codeline>
+<codeline lineno="125" refid="classxtd_1_1serializer_1_1DebugTextOArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugTextOArchive_1aaca003bb8a4fc59424e4025130da4edd" kindref="member">boost::archive::save_access</ref>;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="128" refid="classxtd_1_1serializer_1_1DebugTextOArchive_1ac8705c1c468911d8b0c74b29156a8b8e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1DebugTextOArchive_1ac8705c1c468911d8b0c74b29156a8b8e" kindref="member">DebugTextOArchive</ref>(std::ostream&amp;<sp/>p_os,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_debugState<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_flags<sp/>=<sp/>0)<sp/>:</highlight></codeline>
@@ -330,7 +358,7 @@
 <codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::archive::text_iarchive_impl&lt;DebugTextIArchive&gt;<sp/>base;</highlight></codeline>
 <codeline lineno="168" refid="classxtd_1_1serializer_1_1DebugTextIArchive_1af9e30d7c11da39f8fdf5fd8c21e4e831" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::detail::interface_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref>&gt;;</highlight></codeline>
 <codeline lineno="169" refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a6fe2ce7d54600795abdea507c1270a7a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::basic_text_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">DebugTextIArchive</ref>&gt;;</highlight></codeline>
-<codeline lineno="170" refid="classxtd_1_1serializer_1_1DebugTextIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::save_access;</highlight></codeline>
+<codeline lineno="170" refid="classxtd_1_1serializer_1_1DebugTextIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugTextIArchive_1aaca003bb8a4fc59424e4025130da4edd" kindref="member">boost::archive::save_access</ref>;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="173" refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a97b036aced6a2612a505bca126b8e4da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1DebugTextIArchive_1a97b036aced6a2612a505bca126b8e4da" kindref="member">DebugTextIArchive</ref>(std::istream&amp;<sp/>p_os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_flags<sp/>=<sp/>0)<sp/>:</highlight></codeline>
@@ -381,7 +409,7 @@
 <codeline lineno="218"><highlight class="normal"></highlight></codeline>
 <codeline lineno="219" refid="classxtd_1_1serializer_1_1DebugBinOArchive_1a8319d9e2864d97444125a3c4701611a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::detail::interface_oarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugBinOArchive" kindref="compound">DebugBinOArchive</ref>&gt;;</highlight></codeline>
 <codeline lineno="220" refid="classxtd_1_1serializer_1_1DebugBinOArchive_1a7b9f0abe54deccaffaf59bd14a6f9f53" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::basic_binary_oarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugBinOArchive" kindref="compound">DebugBinOArchive</ref>&gt;;</highlight></codeline>
-<codeline lineno="221" refid="classxtd_1_1serializer_1_1DebugBinOArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::save_access;</highlight></codeline>
+<codeline lineno="221" refid="classxtd_1_1serializer_1_1DebugBinOArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugBinOArchive_1aaca003bb8a4fc59424e4025130da4edd" kindref="member">boost::archive::save_access</ref>;</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
 <codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="224" refid="classxtd_1_1serializer_1_1DebugBinOArchive_1a24ef5240df842821499a32be217018ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1DebugBinOArchive_1a24ef5240df842821499a32be217018ac" kindref="member">DebugBinOArchive</ref>(std::ostream&amp;<sp/>p_os,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_debugState<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_flags<sp/>=<sp/>0)<sp/>:</highlight></codeline>
@@ -427,7 +455,7 @@
 <codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::archive::binary_iarchive_impl&lt;DebugBinIArchive,<sp/>std::istream::char_type,<sp/>std::istream::traits_type&gt;<sp/>base;</highlight></codeline>
 <codeline lineno="265" refid="classxtd_1_1serializer_1_1DebugBinIArchive_1aace6c76e9b138089c32705b6ec13b0e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::detail::interface_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugBinIArchive" kindref="compound">DebugBinIArchive</ref>&gt;;</highlight></codeline>
 <codeline lineno="266" refid="classxtd_1_1serializer_1_1DebugBinIArchive_1abc4efd1d58236e3dbfef39240b5457d4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::basic_binary_iarchive&lt;<ref refid="classxtd_1_1serializer_1_1DebugBinIArchive" kindref="compound">DebugBinIArchive</ref>&gt;;</highlight></codeline>
-<codeline lineno="267" refid="classxtd_1_1serializer_1_1DebugBinIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::archive::save_access;</highlight></codeline>
+<codeline lineno="267" refid="classxtd_1_1serializer_1_1DebugBinIArchive_1aaca003bb8a4fc59424e4025130da4edd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1serializer_1_1DebugBinIArchive_1aaca003bb8a4fc59424e4025130da4edd" kindref="member">boost::archive::save_access</ref>;</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="270" refid="classxtd_1_1serializer_1_1DebugBinIArchive_1a4ea7040c4449afdc0a3559e2b7bc6625" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1serializer_1_1DebugBinIArchive_1a4ea7040c4449afdc0a3559e2b7bc6625" kindref="member">DebugBinIArchive</ref>(std::istream&amp;<sp/>p_os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_flags<sp/>=<sp/>0)<sp/>:</highlight></codeline>
@@ -473,14 +501,14 @@
 <codeline lineno="310"><highlight class="normal">}}</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
 <codeline lineno="312"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugXmlOArchive" kindref="compound">xtd::serializer::DebugXmlOArchive</ref>)</highlight></codeline>
-<codeline lineno="313"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugXmlIArchive" kindref="compound">xtd::serializer::DebugXmlIArchive</ref>)</highlight></codeline>
-<codeline lineno="314"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugTextOArchive" kindref="compound">xtd::serializer::DebugTextOArchive</ref>)</highlight></codeline>
-<codeline lineno="315"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugTextIArchive" kindref="compound">xtd::serializer::DebugTextIArchive</ref>)</highlight></codeline>
-<codeline lineno="316"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugBinOArchive" kindref="compound">xtd::serializer::DebugBinOArchive</ref>)</highlight></codeline>
-<codeline lineno="317"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1serializer_1_1DebugBinIArchive" kindref="compound">xtd::serializer::DebugBinIArchive</ref>)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(xtd::serializer::DebugXmlIArchive)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(xtd::serializer::DebugTextOArchive)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(xtd::serializer::DebugTextIArchive)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(xtd::serializer::DebugBinOArchive)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(xtd::serializer::DebugBinIArchive)</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERIALIZER_DEBUGARCHIVE_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/serializer/src/archives/DebugArchive.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/serializer/src/archives/DebugArchive.hh"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="CounterManager_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="CounterManager_8cc" kind="file">
     <compoundname>CounterManager.cc</compoundname>
     <includes refid="CounterManager_8hh" local="yes">CounterManager.hh</includes>
     <includes local="no">fstream</includes>
@@ -12,6 +12,28 @@
     <includes refid="FileVisitor_8hh" local="yes">FileVisitor.hh</includes>
     <includes local="no">logger.hh</includes>
     <incdepgraph>
+      <node id="632">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/CounterManager.cc</label>
+        <link refid="CounterManager.cc"/>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+      </node>
       <node id="635">
         <label>boost/thread/mutex.hpp</label>
       </node>
@@ -33,6 +55,28 @@
         <childnode refid="642" relation="include">
         </childnode>
       </node>
+      <node id="649">
+        <label>string</label>
+      </node>
+      <node id="641">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="634">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="643">
+        <label>fstream</label>
+      </node>
+      <node id="645">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="636">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="639">
+        <label>counters_fwd.hh</label>
+        <link refid="counters__fwd_8hh"/>
+      </node>
       <node id="651">
         <label>FileVisitor.hh</label>
         <link refid="FileVisitor_8hh"/>
@@ -45,36 +89,32 @@
         <childnode refid="642" relation="include">
         </childnode>
       </node>
-      <node id="649">
-        <label>string</label>
+      <node id="637">
+        <label>boost/property_tree/ptree.hpp</label>
       </node>
-      <node id="641">
-        <label>boost/noncopyable.hpp</label>
+      <node id="644">
+        <label>iostream</label>
       </node>
-      <node id="632">
-        <label>/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc</label>
-        <link refid="CounterManager.cc"/>
-        <childnode refid="633" relation="include">
+      <node id="646">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="652">
+        <label>logger.hh</label>
+      </node>
+      <node id="648">
+        <label>JsonVisitor.hh</label>
+        <link refid="JsonVisitor_8hh"/>
+        <childnode refid="649" relation="include">
         </childnode>
-        <childnode refid="643" relation="include">
+        <childnode refid="637" relation="include">
         </childnode>
-        <childnode refid="644" relation="include">
+        <childnode refid="650" relation="include">
         </childnode>
-        <childnode refid="645" relation="include">
-        </childnode>
-        <childnode refid="646" relation="include">
-        </childnode>
-        <childnode refid="647" relation="include">
-        </childnode>
-        <childnode refid="648" relation="include">
-        </childnode>
-        <childnode refid="651" relation="include">
-        </childnode>
-        <childnode refid="652" relation="include">
+        <childnode refid="642" relation="include">
         </childnode>
       </node>
-      <node id="634">
-        <label>boost/thread.hpp</label>
+      <node id="638">
+        <label>types.hh</label>
       </node>
       <node id="633">
         <label>CounterManager.hh</label>
@@ -94,51 +134,11 @@
         <childnode refid="640" relation="include">
         </childnode>
       </node>
-      <node id="643">
-        <label>fstream</label>
-      </node>
       <node id="642">
         <label>Visitor.hh</label>
         <link refid="Visitor_8hh"/>
         <childnode refid="638" relation="include">
         </childnode>
-      </node>
-      <node id="645">
-        <label>boost/date_time/posix_time/posix_time.hpp</label>
-      </node>
-      <node id="648">
-        <label>JsonVisitor.hh</label>
-        <link refid="JsonVisitor_8hh"/>
-        <childnode refid="649" relation="include">
-        </childnode>
-        <childnode refid="637" relation="include">
-        </childnode>
-        <childnode refid="650" relation="include">
-        </childnode>
-        <childnode refid="642" relation="include">
-        </childnode>
-      </node>
-      <node id="636">
-        <label>boost/filesystem.hpp</label>
-      </node>
-      <node id="639">
-        <label>counters_fwd.hh</label>
-        <link refid="counters__fwd_8hh"/>
-      </node>
-      <node id="637">
-        <label>boost/property_tree/ptree.hpp</label>
-      </node>
-      <node id="644">
-        <label>iostream</label>
-      </node>
-      <node id="646">
-        <label>boost/bind.hpp</label>
-      </node>
-      <node id="652">
-        <label>logger.hh</label>
-      </node>
-      <node id="638">
-        <label>types.hh</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -165,7 +165,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bp<sp/><sp/>=<sp/>boost::posix_time;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bt<sp/><sp/>=<sp/>boost::this_thread;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21" refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1CounterManager_1a13c765c1d8c326d3a040c779975d0149" kindref="member">CounterManager::CounterManager</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_delay,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path)<sp/>:</highlight></codeline>
@@ -277,6 +277,6 @@
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/CounterManager.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/CounterManager.cc"/>
   </compounddef>
 </doxygen>

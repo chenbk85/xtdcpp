@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1network_1_1base_1_1Server" kind="class" language="C++" prot="public" abstract="yes">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1network_1_1base_1_1Server" kind="class" prot="public" abstract="yes">
     <compoundname>xtd::network::base::Server</compoundname>
     <basecompoundref prot="private" virt="non-virtual">noncopyable</basecompoundref>
     <derivedcompoundref refid="classxtd_1_1network_1_1bip_1_1Server" prot="public" virt="non-virtual">xtd::network::bip::Server&lt; TReq, TRes, Domain &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classxtd_1_1network_1_1http_1_1Server" prot="public" virt="non-virtual">xtd::network::http::Server&lt; Domain &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classxtd_1_1network_1_1http_1_1Server" prot="public" virt="non-virtual">xtd::network::http::Server&lt; TDomain &gt;</derivedcompoundref>
     <includes refid="base_2Server_8hh" local="no">Server.hh</includes>
     <templateparamlist>
       <param>
@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="33" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="33" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="33" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="130" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="130" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="130" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a5092eab162e1e793aaeac42368c5c06f" prot="protected" static="no" mutable="no">
         <type><ref refid="classxtd_1_1network_1_1utils_1_1deque__id" kindref="compound">utils::deque_id</ref>&lt; uint32_t &gt;</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="131" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="131" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="131" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a2b67486dfc934466300fa48295f94b46" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacextd_1_1network_1_1utils_1a67dfba91438896976d636d5aea36c848" kindref="member">utils::ioServicePtr_t</ref></type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="132" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="132" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="132" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1ad762843698e4e7b4e70974c2daab0932" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacextd_1_1network_1_1utils_1a9e0bae7b0da2b42ca8930a927f3a7c4d" kindref="member">utils::workPtr_t</ref></type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="133" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="133" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="133" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a03e4c0a664c471e756217b20b2209980" prot="protected" static="no" mutable="no">
         <type>boost::shared_ptr&lt; boost::asio::basic_socket_acceptor&lt; Domain &gt; &gt;</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="134" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="134" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="134" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="134" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="137" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="137" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="137" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a3ce79f479d41ffd4e9f3f743e49025e5" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="138" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="138" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="138" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a63c8a13ef560a52c296265cbfe2579cc" prot="private" static="no" mutable="no">
         <type>boost::thread_group</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="139" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="139" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="139" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1aaeae7aed0a64f2d0d8512729411f0d9f" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="141" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="141" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="141" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1ac4d53505a5ff9cc386eb17dd59f0fa39" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="142" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="142" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="142" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1aec9999ba9e323c9d2c2c513fbfa68acd" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="143" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="143" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="143" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a3af4804a9af2e71c3dadfe70ba25a121" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="144" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="144" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="144" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a07932b7815dde6a739eb58ee76a854b0" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="145" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="145" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="145" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1aeda025ea258c6ba4fcea23ad0085c7ab" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="146" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="146" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="146" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1ab5832995a54e862cb1c3cdb5e87dfade" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="147" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="147" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="147" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1ade7493305209a5cf8e514361d9a25bb9" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="148" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="148" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="148" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1afb2c98dc048e2a5f2b9750b6ecddd4f8" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="149" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="149" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="149" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1ae03e6e43c227deb9a09492753b9349ca" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="150" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="150" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="150" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a4eb65a9447a35d1a9a978731ed838bc9" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="151" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="151" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="151" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a9fa2307f16252ff84d98bc58cabd627a" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="152" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="152" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="152" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1Server_1a5a0f2c8ad46a998fb95f33cd20907060" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="153" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="153" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="153" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="153" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="36" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1ab17ca2e2332664f4cb83e89d027976d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -326,7 +326,7 @@
         <argsstring>(void)</argsstring>
         <name>~Server</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a9731cfd5eda9f51604b9b0195acfb208">~Server</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a85da5acf9ddab934f5cddb330eae9f99">~Server</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a4aad3adc6af7be603a62778687c2f20b">~Server</reimplementedby>
         <param>
           <type>void</type>
         </param>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="37" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a97d54b5ded7a8b02333347a5ffbbd347" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -395,7 +395,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="48" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="48" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a30e423831ba183c16425422f07f207c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -411,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="56" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="56" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1aabee855541e60adeb2115856d123637b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -427,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="61" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1ae9d5a1070819996c244003adc92a35ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -435,7 +435,7 @@
         <argsstring>(void)</argsstring>
         <name>start</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1aaa19f560d98c05518caa68bf94c36b91">start</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a8f2c0ce0dd0d150d74d3cfd89edb9332">start</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a5985de0bca1726c449f6bfd06b802070">start</reimplementedby>
         <param>
           <type>void</type>
         </param>
@@ -445,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="66" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a0746f85458e7eff28cfe6e156ad99402" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -453,7 +453,7 @@
         <argsstring>(void)</argsstring>
         <name>stop</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a12041b5218057930724c15e83c478c50">stop</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a8683467193d33cef96950fad43b8f47c">stop</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1aead46dedab8830d3b7adff33d0ac548d">stop</reimplementedby>
         <param>
           <type>void</type>
         </param>
@@ -463,7 +463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="71" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="71" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -473,7 +473,7 @@
         <argsstring>(string p_hostname, uint32_t p_port)=0</argsstring>
         <name>createCnx</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a06d5795d318f97108b94f2999243e84a">createCnx</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1ab6f6b7177c80b0dd9de8aadb096f5305">createCnx</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1aa9d2797de229b3958c63ad126f5976df">createCnx</reimplementedby>
         <param>
           <type>string</type>
           <declname>p_hostname</declname>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="76" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="76" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a872b44334ff62df80a5a19502ca867b2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -496,7 +496,7 @@
         <argsstring>(cnx_sptr_t p_conn)=0</argsstring>
         <name>afterAccept</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1af575a90e9a26255da6b45ea2a7f7a1ce">afterAccept</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a5015d684d23b282b09913827daf3c641">afterAccept</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1ad6b7cbfe32568cbfdd4a64d86553ca25">afterAccept</reimplementedby>
         <param>
           <type><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref></type>
           <declname>p_conn</declname>
@@ -507,7 +507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="77" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a64224be1bf7d053bfbbbaf5c6be00f31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -515,7 +515,7 @@
         <argsstring>(cnx_sptr_t p_conn)=0</argsstring>
         <name>afterSend</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a0839a381be68528566b5e1f34b2afe82">afterSend</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a2a4360dc57ca76ab49892af974fe4a05">afterSend</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a7caa5b7aee55d6903c1ff9f0a634d4a2">afterSend</reimplementedby>
         <param>
           <type><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref></type>
           <declname>p_conn</declname>
@@ -526,7 +526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="78" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a29450e21c9aba7147eb26ac9563efd01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -534,7 +534,7 @@
         <argsstring>(cnx_sptr_t p_conn, utils::sharedBuf_t p_inBuffer)=0</argsstring>
         <name>afterReceive</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a7678b6614804e0241c0e49b000a81abe">afterReceive</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a27f646179758bf4269a43675a8932201">afterReceive</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a18bfea1a6ac536d6bb444666b3d2b778">afterReceive</reimplementedby>
         <param>
           <type><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref></type>
           <declname>p_conn</declname>
@@ -549,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="79" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="79" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a5fb03fd67e85a6315c0b591f12feaaeb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -557,7 +557,7 @@
         <argsstring>(const boost::system::error_code p_error, cnx_sptr_t p_conn)</argsstring>
         <name>onReceiveError</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a6765d1465e88e97a5c782301b026497b">onReceiveError</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a549144050ca07087e7f90ce32e604574">onReceiveError</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1ae52c6feb308e5d06180c614f094a0a6a">onReceiveError</reimplementedby>
         <param>
           <type>const boost::system::error_code</type>
           <declname>p_error</declname>
@@ -572,7 +572,7 @@
 <para>Est appelé lorsqu&apos;une erreur de receive est détectée. Par défault, cela provoque un LOG_ERR et l&apos;incrément du compteur d&apos;erreur. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les erreur à reporter. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="89" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="89" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a2692cfb3f754e05b032564a289ea361c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -580,7 +580,7 @@
         <argsstring>(const boost::system::error_code p_error, cnx_sptr_t p_conn)</argsstring>
         <name>onReceiveTimeout</name>
         <reimplementedby refid="classxtd_1_1network_1_1bip_1_1Server_1a632d903fa3e329a9d67f32b2b7745fbf">onReceiveTimeout</reimplementedby>
-        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1a9955a1f35bb950e610aac7c9129ebe23">onReceiveTimeout</reimplementedby>
+        <reimplementedby refid="classxtd_1_1network_1_1http_1_1Server_1afb7451b6d2ecba6ef15ca323b228a8ba">onReceiveTimeout</reimplementedby>
         <param>
           <type>const boost::system::error_code</type>
           <declname>p_error</declname>
@@ -595,7 +595,7 @@
 <para>Est appelé lorsqu&apos;un timeout de receive est détecté. Par défault, cela provoque un LOG_ERR et l&apos;incrément du compteur de timeout. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les timeout à reporter. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="99" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="99" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a5852cbdc5fa348c25797962a69d6b115" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -612,7 +612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="102" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1aa633c11edb82dcfc0b3804f4d57cdc5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -633,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="103" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="103" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1afdbfe06eac7640eed92c86ea38c089d2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -649,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="115" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="157" bodyend="157"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="115" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a2f1c82fa4d94a0868ab1a9b957b0e1ed" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -665,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="116" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="158" bodyend="158"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="116" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="158" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a798d800b0cda41fb3d6bc9be0cb07036" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -681,7 +681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="117" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="159" bodyend="159"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="117" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="159" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a897bb823741706c6f3f91aef601ab3d9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -697,7 +697,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="160" bodyend="160"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="118" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="160" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1ae2e9b2858e9a7f142f98fcc4299b2a4a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -713,7 +713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="161" bodyend="161"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="119" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="161" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a48e49f13ebcc958cb05737af08c761fc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -729,7 +729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="120" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="162" bodyend="162"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="120" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="162" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a4b5d9bb1401c63af63598ab987dc1ea1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -745,7 +745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="121" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="163" bodyend="163"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="121" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="163" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1ad225f1e73ec0fc1ba2a54e3363881aa4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -761,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="122" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="164" bodyend="164"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="122" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="164" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1adeb8afa131ea136a61297f6d6e7af96a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -777,7 +777,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="123" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="165" bodyend="165"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="123" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="165" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1af7fb5d4acd247d070d7330686d2d0717" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -793,7 +793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="124" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="166" bodyend="166"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="124" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="166" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1aaed2e2436b27ebb7609c66e1002a8c56" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -809,7 +809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="125" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="167" bodyend="167"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="125" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="167" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a3025e5dd8f30f36ebe52568d5c45966b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -825,7 +825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="126" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="168" bodyend="168"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="126" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="168" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a07a3891c57d59f642d491e1d30e3eaa1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t &amp;</type>
@@ -841,7 +841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="127" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="169" bodyend="169"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="127" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="169" bodyend="169"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -859,7 +859,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="106" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="106" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a64b62b462fee3a0a044d999bcdbb38a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -880,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="107" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="107" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a1ae58685b7c49fde41ad8fbe6a807904" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -905,7 +905,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="108" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="108" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1Server_1a1d7498477f41cfaf735b07bdae527d0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -926,7 +926,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="111" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="111" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -983,7 +983,7 @@
         <link refid="classxtd_1_1network_1_1utils_1_1deque__id"/>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/Server.hh" bodystart="30" bodyend="154"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" line="31" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh" bodystart="30" bodyend="154"/>
     <listofallmembers>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1ae700d5273fcd7217d28cb3ac5f59e232" prot="private" virt="non-virtual"><scope>xtd::network::base::Server</scope><name>accept</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a872b44334ff62df80a5a19502ca867b2" prot="protected" virt="pure-virtual"><scope>xtd::network::base::Server</scope><name>afterAccept</name></member>

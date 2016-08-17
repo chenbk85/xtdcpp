@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="ConfParser_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ConfParser_8hh" kind="file">
     <compoundname>ConfParser.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">sstream</includes>
@@ -13,45 +13,10 @@
     <includes local="no">algorithm</includes>
     <includes local="no">boost/shared_ptr.hpp</includes>
     <includes refid="types_8hh" local="yes">types.hh</includes>
-    <includedby refid="ConfParser_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</includedby>
+    <includedby refid="ConfParser_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</includedby>
     <incdepgraph>
-      <node id="338">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="328" relation="include">
-        </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="331" relation="include">
-        </childnode>
-        <childnode refid="329" relation="include">
-        </childnode>
-        <childnode refid="339" relation="include">
-        </childnode>
-      </node>
-      <node id="337">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="328">
-        <label>string</label>
-      </node>
-      <node id="330">
-        <label>map</label>
-      </node>
-      <node id="339">
-        <label>fstream</label>
-      </node>
-      <node id="331">
-        <label>vector</label>
-      </node>
-      <node id="332">
-        <label>utility</label>
-      </node>
-      <node id="329">
-        <label>sstream</label>
-      </node>
       <node id="327">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh</label>
         <link refid="ConfParser.hh"/>
         <childnode refid="328" relation="include">
         </childnode>
@@ -76,6 +41,41 @@
         <childnode refid="338" relation="include">
         </childnode>
       </node>
+      <node id="337">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="328">
+        <label>string</label>
+      </node>
+      <node id="330">
+        <label>map</label>
+      </node>
+      <node id="338">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>fstream</label>
+      </node>
+      <node id="331">
+        <label>vector</label>
+      </node>
+      <node id="332">
+        <label>utility</label>
+      </node>
+      <node id="329">
+        <label>sstream</label>
+      </node>
       <node id="333">
         <label>iostream</label>
       </node>
@@ -91,13 +91,13 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="340">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh</label>
         <link refid="ConfParser.hh"/>
         <childnode refid="341" relation="include">
         </childnode>
       </node>
       <node id="341">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</label>
         <link refid="ConfParser_8cc"/>
       </node>
     </invincdepgraph>
@@ -109,9 +109,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_CONFPARSER_HH</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_CONFPARSER_HH</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_CONFPARSER_HH</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_CONFPARSER_HH</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -125,7 +125,7 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="23" refid="classxtd_1_1ConfParser" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1ConfParser" kindref="compound">ConfParser</ref></highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -161,7 +161,7 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kindref="member">ConfParser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kindref="member">ConfParser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/>p_params);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a5f7729df32b946dba9690494b6fee762" kindref="member">ConfParser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1a715a3e39fd796046c94546e60f22414d" kindref="member">t_param_map</ref>&amp;<sp/>p_params);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a2a72cefc513e103b86d90785862c620f" kindref="member">getFilePath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -200,7 +200,7 @@
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1ae7e7ade9440517b79cc22f21b10df7a5" kindref="member">dumpKeys</ref>(std::ostream&amp;<sp/>p_stream)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>t_param_map&amp;<sp/><ref refid="classxtd_1_1ConfParser_1a1be1c2813abf959d85bb6cf695c74dec" kindref="member">getParamMap</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1a715a3e39fd796046c94546e60f22414d" kindref="member">t_param_map</ref>&amp;<sp/><ref refid="classxtd_1_1ConfParser_1a1be1c2813abf959d85bb6cf695c74dec" kindref="member">getParamMap</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="namespacextd_1a68ed4fe8e9c11116b68efe5b102aec50" kindref="member">status</ref><sp/>initialize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_fileName);</highlight></codeline>
@@ -222,7 +222,7 @@
 <codeline lineno="125" refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" refkind="member"><highlight class="normal"><sp/><sp/>t_section_list<sp/><ref refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kindref="member">m_sections</ref>;</highlight></codeline>
 <codeline lineno="126" refid="classxtd_1_1ConfParser_1a5203f3b8cb6e9070b33371c9acabbc8c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a5203f3b8cb6e9070b33371c9acabbc8c" kindref="member">m_nblines</ref>;</highlight></codeline>
 <codeline lineno="127" refid="classxtd_1_1ConfParser_1abc9e0b073f91de77b76db39bfbc27508" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1ConfParser_1abc9e0b073f91de77b76db39bfbc27508" kindref="member">m_filename</ref>;</highlight></codeline>
-<codeline lineno="128" refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" refkind="member"><highlight class="normal"><sp/><sp/>t_param_map<sp/><sp/><sp/><sp/><ref refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" kindref="member">m_paramMap</ref>;</highlight></codeline>
+<codeline lineno="128" refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1ConfParser_1a715a3e39fd796046c94546e60f22414d" kindref="member">t_param_map</ref><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1ConfParser_1abe309999c7964603bde870c7bda16d2e" kindref="member">m_paramMap</ref>;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
@@ -284,7 +284,7 @@
 <codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="188" refid="classxtd_1_1ConfParser_1_1const__iterator_1a380f55fdaee860e5cc7c4f8fcfade27b" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1_1const__iterator_1a380f55fdaee860e5cc7c4f8fcfade27b" kindref="member">ConfParser::const_iterator::operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator" kindref="compound">const_iterator</ref>&amp;<sp/>p_obj)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="189"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator_1a1acb3ce9b1fb4892d77dcd649ec7768a" kindref="member">operator==</ref>(p_obj);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<sp/>operator==(p_obj);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
@@ -312,19 +312,19 @@
 <codeline lineno="215"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1_1const__iterator" kindref="compound">ConfParser::const_iterator</ref></highlight></codeline>
 <codeline lineno="216" refid="classxtd_1_1ConfParser_1a18fa4083def8aaf86796b9ddbc331daf" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1a18fa4083def8aaf86796b9ddbc331daf" kindref="member">ConfParser::begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="217"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator_1a9c17a000740a8558dddb0dd1187939b5" kindref="member">const_iterator</ref>(<ref refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kindref="member">m_sections</ref>.begin());</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator" kindref="compound">const_iterator</ref>(<ref refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kindref="member">m_sections</ref>.begin());</highlight></codeline>
 <codeline lineno="219"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1_1const__iterator" kindref="compound">ConfParser::const_iterator</ref></highlight></codeline>
 <codeline lineno="222" refid="classxtd_1_1ConfParser_1ab772ae8e571f1a3f719eca2f9d056d7c" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1ConfParser_1ab772ae8e571f1a3f719eca2f9d056d7c" kindref="member">ConfParser::end</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="223"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator_1a9c17a000740a8558dddb0dd1187939b5" kindref="member">const_iterator</ref>(<ref refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kindref="member">m_sections</ref>.end());</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1ConfParser_1_1const__iterator" kindref="compound">const_iterator</ref>(<ref refid="classxtd_1_1ConfParser_1a100cffb5f33795e50c87ab5fb2a43963" kindref="member">m_sections</ref>.end());</highlight></codeline>
 <codeline lineno="225"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
 <codeline lineno="227"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_CONF_HH</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/ConfParser.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.hh"/>
   </compounddef>
 </doxygen>

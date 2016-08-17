@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1network_1_1bip_1_1Client" kind="class" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1network_1_1bip_1_1Client" kind="class" prot="public">
     <compoundname>xtd::network::bip::Client</compoundname>
     <basecompoundref refid="classxtd_1_1network_1_1base_1_1Client" prot="public" virt="non-virtual">xtd::network::base::Client&lt; TDomain &gt;</basecompoundref>
     <derivedcompoundref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1_1PersistentClient" prot="protected" virt="non-virtual">xtd::network::bip::ClientPool&lt; TRequest, TResponse, TDomain &gt;::PersistentClient</derivedcompoundref>
@@ -20,7 +20,7 @@
       <sectiondef kind="private-type">
       <memberdef kind="enum" id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdc" prot="private" static="no">
         <name>cnxstatus</name>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb" prot="public">
           <name>available</name>
           <initializer>= 0</initializer>
           <briefdescription>
@@ -28,7 +28,7 @@
           <detaileddescription>
 <para>pret à envoyer une nouvelle requête (nouveau send) </para>          </detaileddescription>
         </enumvalue>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072" prot="public">
           <name>reserved</name>
           <initializer>= 1</initializer>
           <briefdescription>
@@ -36,7 +36,7 @@
           <detaileddescription>
 <para>requête en cours d&apos;envoi sur le réseau </para>          </detaileddescription>
         </enumvalue>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca789183b7e98646c11d5f0544c8f3c4c9" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca789183b7e98646c11d5f0544c8f3c4c9" prot="public">
           <name>sent</name>
           <initializer>= 2</initializer>
           <briefdescription>
@@ -44,7 +44,7 @@
           <detaileddescription>
 <para>requête envoyé, en attente de réception réseau de la réponse </para>          </detaileddescription>
         </enumvalue>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498" prot="public">
           <name>received</name>
           <initializer>= 3</initializer>
           <briefdescription>
@@ -52,7 +52,7 @@
           <detaileddescription>
 <para>réponse réseau reçue, en attente de l&apos;appel à client à receive </para>          </detaileddescription>
         </enumvalue>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcacb5e100e5a9a3e7f6d1fd97512215282" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcacb5e100e5a9a3e7f6d1fd97512215282" prot="public">
           <name>error</name>
           <initializer>= 4</initializer>
           <briefdescription>
@@ -60,7 +60,7 @@
           <detaileddescription>
 <para>envoi ou reception réseau en timeout, en attente d&apos;un appel client à receive </para>          </detaileddescription>
         </enumvalue>
-        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca90272dda245ae1fb3cf197e91a8689dc" prot="private">
+        <enumvalue id="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca90272dda245ae1fb3cf197e91a8689dc" prot="public">
           <name>timeout</name>
           <initializer>= 5</initializer>
           <briefdescription>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="49" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="48" bodyend="56"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="49" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="48" bodyend="56"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1a684e9805457e5e4cfda0b8bce4409d3c" prot="private" static="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1Client" kindref="compound">base::Client</ref>&lt; TDomain &gt;</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="42" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="42" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="42" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1aa7faac9a3c9a0f0eb53321c8c7df9d98" prot="private" static="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1Client_1a3cef8310676dac754d630bcc1628ab56" kindref="member">TBase::cnx_sptr_t</ref></type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="43" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="43" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="43" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="38" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="38" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1network_1_1bip_1_1Client_1a1fc57254a811008a795987c49c222e77" prot="public" static="no">
         <type>TResponse</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="39" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="39" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="39" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -143,7 +143,7 @@
 <para>Semaphore uitilise pour bloquer l&apos;utilisateur soit dans le send (noget) soit dans le receive </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="108" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="108" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="108" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a8be16f1921257fd8794321735e3e798d" prot="private" static="no" mutable="no">
         <type>cnxstatus</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="109" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="109" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="109" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a3b76131e7d3737efac6eeb14d8db164b" prot="private" static="no" mutable="no">
         <type><ref refid="namespacextd_1_1network_1_1utils_1a9fedf0d18549b8034e9ae347955e9a9a" kindref="member">utils::vectorBytes_t</ref></type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="110" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="110" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="110" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a22b13e92b0a5b58a9a1ece1531a8dfeb" prot="private" static="no" mutable="no">
         <type>boost::posix_time::ptime</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="111" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="111" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="111" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a658bca55f210342896a0d271e4c4f683" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="112" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="112" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="112" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1ae6b4f7f763bd968b35843a9ed9affd88" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="113" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="113" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="113" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aae185aa3a352ec920b89ac4077576eb6" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="114" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="114" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="114" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1abcbb7a2fb310294186a48ae769e4b59c" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="115" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="115" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="115" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a9d9e6b29b6bd75efbff4b9c0e3d848d1" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -247,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="116" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="116" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="116" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aa6918b71230f0c46ffca33da3aa3de87" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="117" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="117" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="117" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a2fa9179430d947c2c848019dd877105e" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="118" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="118" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="118" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1a5b95c294332b6f6ab397e1923a7b6202" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="119" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="119" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="119" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1bip_1_1Client_1aedf2347add535389919dd27f445f6275" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="120" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="120" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="120" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="120" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="59" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="59" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ac16a5d30bae2e5ac5ae616034943d219" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -335,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="60" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ad9097285a9937b9b16922ea3f5154cd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="63" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="63" bodyend="63"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="63" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ae0112d61b8a18823bffb8c7b3bde9b4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="64" bodyend="64"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="64" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="64" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ad7b29723945a80df67837c41b4570272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -383,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="65" bodyend="65"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="65" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="65" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1afa332d8733f5a96b85546de8dc37dffc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="66" bodyend="66"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="66" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1af8c4e73103c9e483f78c9b62496daf47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -415,7 +415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="67" bodyend="67"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="67" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="67" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a7fb2624e39723bae24d8286b98795e70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -431,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="68" bodyend="68"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="68" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1adfcc8fafdf138d104d78133ff5f419df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -447,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="69" bodyend="69"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="69" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1ab04f56d8e2cb6ac3d7fdaa2e1791c7cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -463,7 +463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="70" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="70" bodyend="70"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="70" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const uint32_t &amp;</type>
@@ -479,10 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="71" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="71" bodyend="71"/>
-        <references refid="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::send</references>
-        <references refid="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::receive</references>
-        <references refid="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::shouldReceive</references>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="71" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="71" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1acda47c19d4fc71705f4db91226cec1b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -519,8 +516,7 @@
 Non bloquant, status::ok ne veut pas dire que le message est bien arrivé, simplement que l&apos;objet étaient en étant d&apos;envoyer une requête (pas déjà en attente de réponse par exemple). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="84" column="1"/>
-        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="84" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a0e259e8174324fdbc199eb87427aa237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -557,8 +553,7 @@ Non bloquant, status::ok ne veut pas dire que le message est bien arrivé, simpl
 Cette méthode est bloquante, elle attend la réception effective de la réponse du serveur ou la survenue d&apos;une erreur/timeout. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="95" column="1"/>
-        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a5721e7ec64739ab5a252d5ac59e4a86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -579,8 +574,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="97" column="1"/>
-        <referencedby refid="classxtd_1_1network_1_1bip_1_1Client_1a44ee99fff5318cdd6e6b54b4b5e2f62f" compoundref="bip_2Client_8hh" startline="71" endline="71">xtd::network::bip::Client&lt; TRequest, TResponse, TDomain &gt;::getLastRTTMs</referencedby>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="97" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -604,7 +598,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="101" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1a234c7704dd00f42bfbb6c58c5ce8e546" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -620,7 +614,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="102" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1afcc67044ebcd51cd48be9743ab69aec1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -641,7 +635,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="103" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="103" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1bip_1_1Client_1addf0b516315701576b9b2752d3a9c99f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -662,7 +656,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="104" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="104" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -740,7 +734,7 @@ Cette méthode est bloquante, elle attend la réception effective de la réponse
         <link refid="classxtd_1_1network_1_1utils_1_1Config"/>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh" bodystart="35" bodyend="121"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" line="36" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh" bodystart="35" bodyend="121"/>
     <listofallmembers>
       <member refid="classxtd_1_1network_1_1base_1_1Client_1ac7427711e506f5958f80a89028f3f923" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>async_connect</name></member>
       <member refid="classxtd_1_1network_1_1bip_1_1Client_1a49c9e08bee4169c40c92d9870d882295" prot="public" virt="non-virtual"><scope>xtd::network::bip::Client</scope><name>Client</name></member>

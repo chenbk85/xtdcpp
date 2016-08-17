@@ -1,33 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="logger_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="logger_8cc" kind="file">
     <compoundname>logger.cc</compoundname>
     <includes refid="logger_8hh" local="yes">logger.hh</includes>
     <includes local="no">boost/algorithm/string.hpp</includes>
     <includes local="no">regex</includes>
     <incdepgraph>
-      <node id="388">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="389" relation="include">
-        </childnode>
-        <childnode refid="384" relation="include">
-        </childnode>
-        <childnode refid="383" relation="include">
-        </childnode>
-        <childnode refid="390" relation="include">
-        </childnode>
-        <childnode refid="391" relation="include">
-        </childnode>
-      </node>
       <node id="393">
         <label>boost/algorithm/string.hpp</label>
       </node>
       <node id="387">
         <label>stdarg.h</label>
-      </node>
-      <node id="385">
-        <label>boost/format.hpp</label>
       </node>
       <node id="381">
         <label>logger.hh</label>
@@ -49,14 +32,8 @@
         <childnode refid="392" relation="include">
         </childnode>
       </node>
-      <node id="389">
-        <label>string</label>
-      </node>
-      <node id="384">
-        <label>map</label>
-      </node>
       <node id="380">
-        <label>/home/psyco/dev/xtdcpp/common/src/logger.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/logger.cc</label>
         <link refid="logger.cc"/>
         <childnode refid="381" relation="include">
         </childnode>
@@ -65,8 +42,31 @@
         <childnode refid="394" relation="include">
         </childnode>
       </node>
+      <node id="385">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="389">
+        <label>string</label>
+      </node>
+      <node id="384">
+        <label>map</label>
+      </node>
       <node id="394">
         <label>regex</label>
+      </node>
+      <node id="388">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
       </node>
       <node id="391">
         <label>fstream</label>
@@ -98,7 +98,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;regex&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal">logger*<sp/>logger::ms_pInstance<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
@@ -337,6 +337,6 @@
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
 <codeline lineno="243"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/logger.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/logger.cc"/>
   </compounddef>
 </doxygen>

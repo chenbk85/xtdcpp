@@ -1,20 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1network_1_1http_1_1Server" kind="class" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1network_1_1http_1_1Server" kind="class" prot="public">
     <compoundname>xtd::network::http::Server</compoundname>
     <basecompoundref refid="classxtd_1_1network_1_1base_1_1Server" prot="public" virt="non-virtual">xtd::network::base::Server&lt; Domain &gt;</basecompoundref>
     <includes refid="fwd_8hh" local="no">fwd.hh</includes>
     <innerclass refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" prot="protected">xtd::network::http::Server::Handler</innerclass>
     <templateparamlist>
       <param>
-        <type>typename Domain</type>
-        <defval><ref refid="namespacextd_1_1network_1_1utils_1a6238bab7a616eda8c9424721444a18d1" kindref="member">utils::af_inet</ref></defval>
+        <type>typename TDomain</type>
       </param>
     </templateparamlist>
       <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a81fa6d7d3e4dff53a34b190e5790cdb5" prot="private" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1ade82f1473c5447299c924f7ef4e6968a" prot="private" static="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1Server" kindref="compound">base::Server</ref>&lt; Domain &gt;</type>
-        <definition>typedef base::Server&lt;Domain&gt; xtd::network::http::Server&lt; Domain &gt;::TBase</definition>
+        <definition>typedef base::Server&lt;Domain&gt; xtd::network::http::Server&lt; TDomain &gt;::TBase</definition>
         <argsstring></argsstring>
         <name>TBase</name>
         <briefdescription>
@@ -23,11 +22,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="211" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="211" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="211" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="211" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a79c236355d2dc1bf274cecd6aa7be336" prot="private" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a11574e8580999b08125023d731f21ff5" prot="private" static="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">TBase::cnx_sptr_t</ref></type>
-        <definition>typedef TBase::cnx_sptr_t xtd::network::http::Server&lt; Domain &gt;::cnx_sptr_t</definition>
+        <definition>typedef TBase::cnx_sptr_t xtd::network::http::Server&lt; TDomain &gt;::cnx_sptr_t</definition>
         <argsstring></argsstring>
         <name>cnx_sptr_t</name>
         <briefdescription>
@@ -36,11 +35,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="212" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="212" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="212" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="212" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a0bb8fb6aae3f16cb051c064d26e7d666" prot="private" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a91490886cb3c66e12d9d493b76964ad1" prot="private" static="no">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kindref="compound">Handler::handler</ref></type>
-        <definition>typedef Handler::handler xtd::network::http::Server&lt; Domain &gt;::handler</definition>
+        <definition>typedef Handler::handler xtd::network::http::Server&lt; TDomain &gt;::handler</definition>
         <argsstring></argsstring>
         <name>handler</name>
         <briefdescription>
@@ -49,11 +48,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="325" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="325" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="325" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="325" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1ad02807b9fde8d63ebf7c256834c0a6d2" prot="private" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1af69f7a562a05ed2e83556832d9e077de" prot="private" static="no">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">Handler::filter</ref></type>
-        <definition>typedef Handler::filter xtd::network::http::Server&lt; Domain &gt;::filter</definition>
+        <definition>typedef Handler::filter xtd::network::http::Server&lt; TDomain &gt;::filter</definition>
         <argsstring></argsstring>
         <name>filter</name>
         <briefdescription>
@@ -62,13 +61,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="326" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="326" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="326" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="326" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-type">
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1af55090adba952bd4ddcd6eb467974ac8" prot="protected" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1adfa2951649119f630d33ce9083bd989c" prot="protected" static="no">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kindref="compound">Handler::handler</ref></type>
-        <definition>typedef Handler::handler xtd::network::http::Server&lt; Domain &gt;::h</definition>
+        <definition>typedef Handler::handler xtd::network::http::Server&lt; TDomain &gt;::h</definition>
         <argsstring></argsstring>
         <name>h</name>
         <briefdescription>
@@ -77,11 +76,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="320" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="320" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="320" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="320" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" prot="protected" static="no">
+      <memberdef kind="typedef" id="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" prot="protected" static="no">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">Handler::filter</ref></type>
-        <definition>typedef Handler::filter xtd::network::http::Server&lt; Domain &gt;::f</definition>
+        <definition>typedef Handler::filter xtd::network::http::Server&lt; TDomain &gt;::f</definition>
         <argsstring></argsstring>
         <name>f</name>
         <briefdescription>
@@ -90,13 +89,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="321" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="321" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="321" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="321" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1a455755a4dcb1d2331a49c2667369254b" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1a00cc0c3777f8f21d373dbab412605751" prot="private" static="no" mutable="no">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kindref="compound">handler</ref></type>
-        <definition>handler xtd::network::http::Server&lt; Domain &gt;::m_defaultHandler</definition>
+        <definition>handler xtd::network::http::Server&lt; TDomain &gt;::m_defaultHandler</definition>
         <argsstring></argsstring>
         <name>m_defaultHandler</name>
         <briefdescription>
@@ -105,11 +104,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="659" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="659" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="659" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="659" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1a31fbc2589302e054ffcf88be6becb0f2" prot="private" static="no" mutable="no">
-        <type><ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a840883d08fcdd990dbe33b660ee6febb" kindref="member">Handler::t_listof</ref></type>
-        <definition>Handler::t_listof xtd::network::http::Server&lt; Domain &gt;::m_handlerList</definition>
+      <memberdef kind="variable" id="classxtd_1_1network_1_1http_1_1Server_1a9183ac5822d909767b9d80b570cb2624" prot="private" static="no" mutable="no">
+        <type><ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1af76f154d74b7f92f26852b8ea4829b72" kindref="member">Handler::t_listof</ref></type>
+        <definition>Handler::t_listof xtd::network::http::Server&lt; TDomain &gt;::m_handlerList</definition>
         <argsstring></argsstring>
         <name>m_handlerList</name>
         <briefdescription>
@@ -118,13 +117,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="660" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" bodystart="660" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="660" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" bodystart="660" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a15132ec2b08249a3dc54c9d228620ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a8fb4b6d275b0bbbd0895e87a1f7beaa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>xtd::network::http::Server&lt; Domain &gt;::Server</definition>
+        <definition>xtd::network::http::Server&lt; TDomain &gt;::Server</definition>
         <argsstring>(void)</argsstring>
         <name>Server</name>
         <param>
@@ -136,11 +135,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="215" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="215" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a85da5acf9ddab934f5cddb330eae9f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a4aad3adc6af7be603a62778687c2f20b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
-        <definition>virtual xtd::network::http::Server&lt; Domain &gt;::~Server</definition>
+        <definition>virtual xtd::network::http::Server&lt; TDomain &gt;::~Server</definition>
         <argsstring>(void)</argsstring>
         <name>~Server</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1ab17ca2e2332664f4cb83e89d027976d9">~Server</reimplements>
@@ -153,11 +152,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="216" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="216" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a8f2c0ce0dd0d150d74d3cfd89edb9332" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a5985de0bca1726c449f6bfd06b802070" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void xtd::network::http::Server&lt; Domain &gt;::start</definition>
+        <definition>virtual void xtd::network::http::Server&lt; TDomain &gt;::start</definition>
         <argsstring>(void)</argsstring>
         <name>start</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1ae9d5a1070819996c244003adc92a35ee">start</reimplements>
@@ -170,11 +169,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="221" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="221" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a8683467193d33cef96950fad43b8f47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aead46dedab8830d3b7adff33d0ac548d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void xtd::network::http::Server&lt; Domain &gt;::stop</definition>
+        <definition>virtual void xtd::network::http::Server&lt; TDomain &gt;::stop</definition>
         <argsstring>(void)</argsstring>
         <name>stop</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a0746f85458e7eff28cfe6e156ad99402">stop</reimplements>
@@ -187,13 +186,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="226" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="226" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ab6f6b7177c80b0dd9de8aadb096f5305" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aa9d2797de229b3958c63ad126f5976df" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxtd_1_1network_1_1base_1_1Server_1aea8c26b2edf1f6c8802db01b3c6b6036" kindref="member">cnx_sptr_t</ref></type>
-        <definition>cnx_sptr_t xtd::network::http::Server&lt; Domain &gt;::createCnx</definition>
+        <definition>cnx_sptr_t xtd::network::http::Server&lt; TDomain &gt;::createCnx</definition>
         <argsstring>(string p_hostname, uint32_t p_port)</argsstring>
         <name>createCnx</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a4ab9c2f5d30622f1ca4166c7126a16f5">createCnx</reimplements>
@@ -211,11 +210,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="229" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="229" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a5015d684d23b282b09913827daf3c641" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ad6b7cbfe32568cbfdd4a64d86553ca25" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::afterAccept</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::afterAccept</definition>
         <argsstring>(cnx_sptr_t p_conn)</argsstring>
         <name>afterAccept</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a872b44334ff62df80a5a19502ca867b2">afterAccept</reimplements>
@@ -229,11 +228,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="230" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="230" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a2a4360dc57ca76ab49892af974fe4a05" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a7caa5b7aee55d6903c1ff9f0a634d4a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::afterSend</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::afterSend</definition>
         <argsstring>(cnx_sptr_t p_conn)</argsstring>
         <name>afterSend</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a64224be1bf7d053bfbbbaf5c6be00f31">afterSend</reimplements>
@@ -247,11 +246,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="231" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="231" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a27f646179758bf4269a43675a8932201" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a18bfea1a6ac536d6bb444666b3d2b778" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::afterReceive</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::afterReceive</definition>
         <argsstring>(cnx_sptr_t p_conn, utils::sharedBuf_t p_inBuffer)</argsstring>
         <name>afterReceive</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a29450e21c9aba7147eb26ac9563efd01">afterReceive</reimplements>
@@ -269,11 +268,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="232" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="232" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a9cf39271bfddeaaee6415ece8b686ab5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a04ac63f85e8c10522b27287dffb91ac0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::processRequest</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::processRequest</definition>
         <argsstring>(uint32_t p_processID, std::istream &amp;p_request, Request &amp;p_req, Response &amp;p_res)</argsstring>
         <name>processRequest</name>
         <param>
@@ -298,11 +297,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="233" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="233" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a549144050ca07087e7f90ce32e604574" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ae52c6feb308e5d06180c614f094a0a6a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::onReceiveError</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::onReceiveError</definition>
         <argsstring>(const boost::system::error_code p_error, cnx_sptr_t p_conn)</argsstring>
         <name>onReceiveError</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a5fb03fd67e85a6315c0b591f12feaaeb">onReceiveError</reimplements>
@@ -320,11 +319,11 @@
 <para>Est appelé lorsqu&apos;une erreur de receive est détectée. Par défault, cela provoque un LOG_ERR et l&apos;incrément du compteur d&apos;erreur. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les erreur à reporter. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="234" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="234" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a9955a1f35bb950e610aac7c9129ebe23" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1afb7451b6d2ecba6ef15ca323b228a8ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::onReceiveTimeout</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::onReceiveTimeout</definition>
         <argsstring>(const boost::system::error_code p_error, cnx_sptr_t p_conn)</argsstring>
         <name>onReceiveTimeout</name>
         <reimplements refid="classxtd_1_1network_1_1base_1_1Server_1a2692cfb3f754e05b032564a289ea361c">onReceiveTimeout</reimplements>
@@ -342,11 +341,11 @@
 <para>Est appelé lorsqu&apos;un timeout de receive est détecté. Par défault, cela provoque un LOG_ERR et l&apos;incrément du compteur de timeout. Une classe fille peut surcharger ce comportement pour filtrer plus précisement les timeout à reporter. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="235" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="235" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a9b2c8bfa6de7b72742422814fbebed2f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a5d18cf5a150357494585687ed6b7858b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::isUrlBinded</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::isUrlBinded</definition>
         <argsstring>(const string &amp;p_urlPath) const </argsstring>
         <name>isUrlBinded</name>
         <param>
@@ -359,11 +358,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="655" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="655" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a1d2baa33d7fb89d6d73258e2cb030b3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ae78e87d0e7de0c0ae2a81bb8a531bccd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler" kindref="compound">handler</ref> &amp;</type>
-        <definition>handler&amp; xtd::network::http::Server&lt; Domain &gt;::findHandler</definition>
+        <definition>handler&amp; xtd::network::http::Server&lt; TDomain &gt;::findHandler</definition>
         <argsstring>(const Request &amp;p_req)</argsstring>
         <name>findHandler</name>
         <param>
@@ -376,13 +375,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="656" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="656" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-static-func">
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>static bool xtd::network::http::Server&lt; Domain &gt;::f_none</definition>
+        <definition>static bool xtd::network::http::Server&lt; TDomain &gt;::f_none</definition>
         <argsstring>(const Request &amp;p_request)</argsstring>
         <name>f_none</name>
         <param>
@@ -395,13 +394,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="333" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="333" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a90d357c7890d9ca17d5eeb38a33343f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a415d74507fdd7b587653c7b348070f09" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_cgi_exist</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_cgi_exist</definition>
         <argsstring>(const string &amp;p_cgiName, const Request &amp;p_request)</argsstring>
         <name>f_cgi_exist</name>
         <param>
@@ -418,11 +417,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="338" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="338" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aa66d761aaa278f3123aa11d565475281" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a0d97dc94a40126765adcbd3330d2e5a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_one_cgi_exist</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_one_cgi_exist</definition>
         <argsstring>(const vector&lt; string &gt; &amp;p_cgiName, const Request &amp;p_req)</argsstring>
         <name>f_one_cgi_exist</name>
         <param>
@@ -439,11 +438,11 @@
 <para>Vrai si la requête contient un paramètre GET dont le nom correspond à l&apos;un des éléments du tableau p_cgiName </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="347" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="347" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a66975ce2c93998c5e5916ee93ac8bf99" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a66ddce9c1059014c26110cfc06541baf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_cgi_equal</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_cgi_equal</definition>
         <argsstring>(const string &amp;p_cgiName, const string &amp;p_value, const Request &amp;p_request)</argsstring>
         <name>f_cgi_equal</name>
         <param>
@@ -464,11 +463,11 @@
 <para>Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur est égale à p_value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="355" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="355" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ae8122d6287a52f0933af7ab687710768" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a0218f1e1bed9e1ae09b6a772a38645ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_cgi_match</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_cgi_match</definition>
         <argsstring>(const string &amp;p_cgiName, const string &amp;p_regex, const Request &amp;p_request)</argsstring>
         <name>f_cgi_match</name>
         <param>
@@ -489,11 +488,11 @@
 <para>Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur match la regexp p_regex </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="364" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="364" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1adbd0e1d940294921e1d79b7e747d98fb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aa6ea204c5132836f0c4112aaa331b3a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_post_exist</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_post_exist</definition>
         <argsstring>(const string &amp;p_cgiName, const Request &amp;p_request)</argsstring>
         <name>f_post_exist</name>
         <param>
@@ -510,11 +509,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="371" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="371" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a9f45a8c3b4a6dfa05041cb7190317c4e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a3563c3986e43c84e4130af46dd16103c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_param_exist</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_param_exist</definition>
         <argsstring>(const string &amp;p_cgiName, const Request &amp;p_request)</argsstring>
         <name>f_param_exist</name>
         <param>
@@ -531,11 +530,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="377" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="377" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a5ffcf38b185fc098c12969df414fe732" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aa9b902188ce45e96f65fc53a20ff06ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_post_equal</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_post_equal</definition>
         <argsstring>(const string &amp;p_cgiName, const string &amp;p_value, const Request &amp;p_request)</argsstring>
         <name>f_post_equal</name>
         <param>
@@ -556,11 +555,11 @@
 <para>Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur est égale à p_value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="385" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="385" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1af5dbf38109b8345e6dcc7f29dfdd781a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ad343ecdd51be8e982a37cd6fa4ee55ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_post_match</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_post_match</definition>
         <argsstring>(const string &amp;p_cgiName, const string &amp;p_regex, const Request &amp;p_request)</argsstring>
         <name>f_post_match</name>
         <param>
@@ -581,11 +580,11 @@
 <para>Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur match la regexp p_regex </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="395" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="395" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a7f7478d5e4c12fed3743b42f7d118398" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a5994c8b6d70b220ded5ab33a73b3295f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_header_exist</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_header_exist</definition>
         <argsstring>(const string &amp;p_headerName, const Request &amp;p_request)</argsstring>
         <name>f_header_exist</name>
         <param>
@@ -602,11 +601,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="402" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="402" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a68192c550d0c9aa2d3341c3b7acbbb55" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a3216fa7e19f62235f9988b681f33a06d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_header_equal</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_header_equal</definition>
         <argsstring>(const string &amp;p_headerName, const string &amp;p_value, const Request &amp;p_request)</argsstring>
         <name>f_header_equal</name>
         <param>
@@ -627,11 +626,11 @@
 <para>Vrai si p_request contient le header p_headerName dont la valeur est egale a p_value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="410" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="410" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a015a4e5a2f93dc0df58e4c28af2e5e31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a60788c00e470ed21293129be27e7115c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool xtd::network::http::Server&lt; Domain &gt;::f_header_match</definition>
+        <definition>bool xtd::network::http::Server&lt; TDomain &gt;::f_header_match</definition>
         <argsstring>(const string &amp;p_headerName, const string &amp;p_value, const Request &amp;p_request)</argsstring>
         <name>f_header_match</name>
         <param>
@@ -652,11 +651,11 @@
 <para>Vrai si p_request contient le header p_headerName dont la valeur match la regexp p_value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="419" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="419" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a172fc1cfb74fb3ca9930b1285ba80f9d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a7019a45601be34deed0a321a6be66cbf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_redirect</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_redirect</definition>
         <argsstring>(const string &amp;p_dst, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_redirect</name>
         <param>
@@ -710,11 +709,11 @@
 Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="434" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="434" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a39fef0364300dcc2ff7391c821d5310d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1afa9cd0274280f47c74fe27ab4e2bfe38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_raw</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_raw</definition>
         <argsstring>(const string &amp;p_data, const string &amp;p_contentType, const uint32_t, const Request &amp;, Response &amp;p_response)</argsstring>
         <name>h_raw</name>
         <param>
@@ -763,11 +762,11 @@ Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigean
 Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="448" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="448" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_file</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_file</definition>
         <argsstring>(const string &amp;p_filePath, const string &amp;p_contentType, bool p_cachable, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_file</name>
         <param>
@@ -840,14 +839,14 @@ Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
+Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="467" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="467" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_dir</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_dir</definition>
         <argsstring>(const string &amp;p_dirPath, const string &amp;p_contentType, bool p_cachable, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_dir</name>
         <param>
@@ -920,14 +919,14 @@ Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier p
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request. </para>        </detaileddescription>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="486" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="486" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a96229b97d8ee79a57d1ab66b7af5b32d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a28cc571d0a2e9a88abde8da286ad6a77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_template_file</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_template_file</definition>
         <argsstring>(Template &amp;p_tmpl, const string &amp;p_filePath, const uint32_t p_requestID, const Request &amp;p_req, Response &amp;p_res)</argsstring>
         <name>h_template_file</name>
         <param>
@@ -989,14 +988,14 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
+Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="507" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="507" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a6c9d2c89310fc7aa9aba0a001dc28728" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ab1be437b8993afc7875d94a6abbc9bad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_gen</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_gen</definition>
         <argsstring>(Generator &amp;p_gen, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_gen</name>
         <param>
@@ -1047,14 +1046,14 @@ Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la résolution des variable du template échoue, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
+Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la résolution des variable du template échoue, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="525" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="525" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_error_text</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_error_text</definition>
         <argsstring>(const string &amp;p_message, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_error_text</name>
         <param>
@@ -1108,11 +1107,11 @@ Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_
 Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="541" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="541" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a0edee265d48418b258fb450426e10905" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ac2b937b63242559f3a2dd45627f31de3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
-        <definition>status xtd::network::http::Server&lt; Domain &gt;::h_error_html</definition>
+        <definition>status xtd::network::http::Server&lt; TDomain &gt;::h_error_html</definition>
         <argsstring>(const string &amp;p_message, const uint32_t p_requestId, const Request &amp;p_request, Response &amp;p_response)</argsstring>
         <name>h_error_html</name>
         <param>
@@ -1163,14 +1162,14 @@ Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Cont
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;. </para>        </detaileddescription>
+Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="556" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="556" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a08caadcbcc43f73a1f63364b5dfdbd6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a4eed9eec0caf2f786f45e07161512cad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_redirect</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_redirect</definition>
         <argsstring>(const string &amp;p_src, const string &amp;p_dst, filter p_filter=f(&amp;Server::f_none))</argsstring>
         <name>bind_redirect</name>
         <param>
@@ -1184,7 +1183,7 @@ Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff442
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1214,11 +1213,11 @@ Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff442
 Enregistrement d&apos;un handler de redirection. Créer une réponse http qui contient le header &quot;Location : p_dst&quot; et le code HTTP Response::STATUS_302. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="572" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="572" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ae8903860178fb48bd136fcb52a14de5b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ac8a629eca201fca1dee43fa6b58be0e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_xml</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_xml</definition>
         <argsstring>(const string &amp;p_url, const string &amp;p_xmlPath, const string &amp;p_xsltPath, filter p_filter=f(&amp;Server::f_none))</argsstring>
         <name>bind_xml</name>
         <param>
@@ -1236,7 +1235,7 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1244,11 +1243,11 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="576" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="576" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ad3788397b3bd576b156823267d377dcc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a20602f089753d9aa01e389730d7c38fa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_file</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_file</definition>
         <argsstring>(const string &amp;p_path, const string &amp;p_filePath, const string &amp;p_contentType, bool p_cachable, filter p_filter=f(&amp;Server::f_none))</argsstring>
         <name>bind_file</name>
         <param>
@@ -1270,19 +1269,19 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> </para>        </detaileddescription>
+<para>Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="585" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="585" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a58cb8102e486dd24780b876561ae6c11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a9c5984fbcd1ea24860660a670250cb36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_dir</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_dir</definition>
         <argsstring>(const string &amp;p_url, const string &amp;p_filePath, const string &amp;p_contentType, bool p_cachable, filter p_filter=f(&amp;Server::f_none))</argsstring>
         <name>bind_dir</name>
         <param>
@@ -1304,19 +1303,19 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" kindref="member">xtd::network::http::Server::h_dir</ref> </para>        </detaileddescription>
+<para>Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" kindref="member">xtd::network::http::Server::h_dir</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="595" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="595" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind</definition>
         <argsstring>(const string &amp;p_url, handler p_handler, filter p_filter=f(&amp;Server::f_none), const string &amp;p_descr=string())</argsstring>
         <name>bind</name>
         <param>
@@ -1330,7 +1329,7 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <param>
           <type>const string &amp;</type>
@@ -1372,11 +1371,11 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
 Enregistrement générique de la ressource p_url sous condition optionnelle p_filter sur le handler p_handler. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="610" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="610" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ac6876f1c054c6ebbe802381692fe05e2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a6bbc192f6029ae9b02ca75c25d5bd3c8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_public</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_public</definition>
         <argsstring>(const string &amp;p_url, handler p_handler, const string &amp;p_descr)</argsstring>
         <name>bind_public</name>
         <param>
@@ -1419,11 +1418,11 @@ Enregistrement générique de la ressource p_url sous condition optionnelle p_fi
 Enregistrement générique de la ressource p_url sur le handler p_handler. Cette ressource sera automatique mise a disposition dans la création de l&apos;index automatique. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="625" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="625" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a6e448be2d0ca71f808bec243cefc4000" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a8a14495899a4a6a4287597d8c7cc808a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_any</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_any</definition>
         <argsstring>(handler p_handler, filter p_filter=f(&amp;Server::f_none))</argsstring>
         <name>bind_any</name>
         <param>
@@ -1433,7 +1432,7 @@ Enregistrement générique de la ressource p_url sur le handler p_handler. Cette
         <param>
           <type><ref refid="structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter" kindref="compound">filter</ref></type>
           <declname>p_filter</declname>
-          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" kindref="member">Server::f_none</ref>)</defval>
+          <defval><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;<ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">Server::f_none</ref>)</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1453,14 +1452,14 @@ Enregistrement générique de la ressource p_url sur le handler p_handler. Cette
 <para>filter &quot;filtre&quot; optionnel</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. </para>        </detaileddescription>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="636" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="636" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ab132be70e91c14a18638f93d28078b7b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1ac5121491ca4ae4f9c062e513b1a8e507" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::bind_default</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::bind_default</definition>
         <argsstring>(handler p_handler)</argsstring>
         <name>bind_default</name>
         <param>
@@ -1481,11 +1480,11 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2a
 Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a été trouvé. A la construction, le handler par défaut est Server::h_error_template. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="645" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="645" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a302af1d5323a8c300f0de7acc27ffade" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classxtd_1_1network_1_1http_1_1Server_1a895f176f94cc13d68a82b6718bdd20a0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void xtd::network::http::Server&lt; Domain &gt;::getMatchingHandlers</definition>
+        <definition>void xtd::network::http::Server&lt; TDomain &gt;::getMatchingHandlers</definition>
         <argsstring>(const Request &amp;p_req, typename Handler::t_listof &amp;p_res) const </argsstring>
         <name>getMatchingHandlers</name>
         <param>
@@ -1493,7 +1492,7 @@ Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a
           <declname>p_req</declname>
         </param>
         <param>
-          <type>typename <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1a840883d08fcdd990dbe33b660ee6febb" kindref="member">Handler::t_listof</ref> &amp;</type>
+          <type>typename <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler_1af76f154d74b7f92f26852b8ea4829b72" kindref="member">Handler::t_listof</ref> &amp;</type>
           <declname>p_res</declname>
         </param>
         <briefdescription>
@@ -1502,7 +1501,7 @@ Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a
 <para>Cree la liste des handler accessibles sans parametres </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/http/Server.hh" line="651" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh" line="651" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1524,37 +1523,37 @@ Serveur générique http. Gère la réception de requête HTTP, les transforme e
 <listitem><para>l&apos;url sur laquelle il à été enregistré correspond a la ressource demandée dans la requête (ce qui suit le GET ou le POST de la première ligne du header). On note le cas spécial où un handler peut être enregistré sur toutes les urls en même temps.</para></listitem><listitem><para>si le handler a été enregistré avec un filtre, on vérifie la condition posée le filtre est vrai pour la requête.</para></listitem></itemizedlist>
 </para><para><linebreak/>
  <heading level="2">Les handlers </heading>
-</para><para>Un handler doit être vu comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">status<sp/>myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-</programlisting></para><para>En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est &quot;h&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this));</highlight></codeline>
+</para><para>Un handler doit être vu comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">status<sp/>myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+</programlisting></para><para>En réalité, cet objet demande à ce que les handlers soient construit à partir de ses classes internes, dont le raccourcis est &quot;h&quot;. Exemple : <programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">bind</ref>(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,<sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1adfa2951649119f630d33ce9083bd989c" kindref="member">h</ref>(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
 </programlisting></para><para>La raison pour laquelle ces handlers ont été wrappé dans un objet interne est d&apos;une part de ne pas demander à l&apos;utilisateur de systématiquement binder 3 placeholders _1, _2, _3.</para><para><linebreak/>
  <heading level="2">Les filtres </heading>
-</para><para>De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="normal">bool<sp/>filter(const<sp/>Request&amp;);</highlight></codeline>
-</programlisting></para><para>Ils se contruisent à partir de l&apos;objet interne du server dont le raccourcis est &quot;f&quot;. Exemple : <programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline><highlight class="normal">bool<sp/><sp/>MyServer::myfilter(const<sp/>Request&amp;<sp/>p_req);</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,<sp/>h(&amp;MyServer::myhandler,<sp/>this),<sp/>f(&amp;MyServer::myfilter,<sp/>this));</highlight></codeline>
-</programlisting></para><para>Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens ||, &amp;&amp; et !. Exemple :</para><para><programlisting><codeline><highlight class="normal">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight></codeline>
-<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
-<codeline><highlight class="normal">bool<sp/><sp/>MyServer::hasHeader(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_req)</highlight></codeline>
+</para><para>De la même façon, les filtres doivent être vus comme un pointeur sur fonction dont le prototype serait : <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>filter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;);</highlight></codeline>
+</programlisting></para><para>Ils se contruisent à partir de l&apos;objet interne du server dont le raccourcis est &quot;f&quot;. Exemple : <programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>MyServer::myfilter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">bind</ref>(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,<sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1adfa2951649119f630d33ce9083bd989c" kindref="member">h</ref>(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;MyServer::myfilter,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting></para><para>Ils ont également une autre fonctionnalité, il peuvent se composer avec les opérateurs standards booléens ||, &amp;&amp; et !. Exemple :</para><para><programlisting><codeline><highlight class="comment">//<sp/>une<sp/>fonction<sp/>à<sp/>moi<sp/>que<sp/>j&apos;aime</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">status<sp/>MyServer::myhandler(uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req,<sp/>Response&amp;<sp/>p_res);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>MyServer::hasHeader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req)</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>return<sp/>p_req.existsHeader(p_headerName);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_req.existsHeader(p_headerName);</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight></codeline>
-<codeline><highlight class="normal">bind(&quot;/index&quot;,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>h(&amp;MyServer::myhandler,<sp/>this),</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-type&quot;)<sp/>&amp;&amp;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>f(&amp;MyServer::hasHeader,<sp/>this,<sp/>&quot;Content-Length&quot;));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>enregistrement<sp/>de<sp/>ma<sp/>fonction<sp/>comme<sp/>handler<sp/>de<sp/>la<sp/>ressources<sp/>/index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">bind</ref>(</highlight><highlight class="stringliteral">&quot;/index&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1adfa2951649119f630d33ce9083bd989c" kindref="member">h</ref>(&amp;MyServer::myhandler,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;MyServer::hasHeader,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Content-type&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" kindref="member">f</ref>(&amp;MyServer::hasHeader,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Content-Length&quot;</highlight><highlight class="normal">));</highlight></codeline>
 </programlisting></para><para><linebreak/>
  <heading level="2">L&apos;enregistrement </heading>
 </para><para>Cet objet founi de nombreuses méthodes utilitaires pour faciliter l&apos;enregistrement des handlers. Elles sont toutes préfixées par &quot;bind&quot;.</para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind(const<sp/>string&amp;<sp/>p_url,<sp/>handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">bind</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_url,<sp/>handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_url</parametername>
@@ -1586,7 +1585,7 @@ Serveur générique http. Gère la réception de requête HTTP, les transforme e
 </parameterlist>
 Enregistrement générique de la ressource p_url sous condition optionnelle p_filter sur le handler p_handler. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_any(handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a8a14495899a4a6a4287597d8c7cc808a" kindref="member">bind_any</ref>(handler<sp/>p_handler,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -1604,9 +1603,9 @@ Enregistrement générique de la ressource p_url sous condition optionnelle p_fi
 <para>filter &quot;filtre&quot; optionnel</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. <linebreak/>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" kindref="member">xtd::network::http::Server::bind</ref> mais se déclenche quelque soit la ressource demandée. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_default(handler<sp/>p_handler);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1ac5121491ca4ae4f9c062e513b1a8e507" kindref="member">bind_default</ref>(handler<sp/>p_handler);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -1619,7 +1618,7 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2a
 </parameterlist>
 Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a été trouvé. A la construction, le handler par défaut est Server::h_error_template. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_redirect(const<sp/>string&amp;<sp/>p_src,<sp/>const<sp/>string&amp;<sp/>p_dst,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a4eed9eec0caf2f786f45e07161512cad" kindref="member">bind_redirect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst,<sp/>[filter<sp/>p_filter]);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  <parameterlist kind="param"><parameteritem>
@@ -1646,26 +1645,26 @@ Enregistrement du handler à exécuter lorsqu&apos;aucun handler valide n&apos;a
 </parameterlist>
 Enregistrement d&apos;un handler de redirection. Créer une réponse http qui contient le header &quot;Location : p_dst&quot; et le code HTTP Response::STATUS_302. <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_file(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a20602f089753d9aa01e389730d7c38fa" kindref="member">bind_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
- Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> <linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">void<sp/>bind_dir(const<sp/>string&amp;<sp/>p_path,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_filePath,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>string&amp;<sp/>p_contentType<sp/>=<sp/>&quot;text/plain&quot;,</highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a9c5984fbcd1ea24860660a670250cb36" kindref="member">bind_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_path,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[filter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter]);</highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
- Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" kindref="member">xtd::network::http::Server::h_dir</ref> <linebreak/>
+ Voir <ref refid="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" kindref="member">xtd::network::http::Server::h_dir</ref> <linebreak/>
 <linebreak/>
 </para></listitem></itemizedlist>
 </para><para><heading level="2">Les handlers prédéfinis </heading>
 </para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">h_redirect(const<sp/>string&amp;<sp/>p_dst,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a7019a45601be34deed0a321a6be66cbf" kindref="member">h_redirect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de redirection. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_dst</parametername>
@@ -1695,7 +1694,7 @@ Enregistrement d&apos;un handler de redirection. Créer une réponse http qui co
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_raw(const<sp/>string&amp;<sp/>p_data,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigeant sur p_dst</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1afa9cd0274280f47c74fe27ab4e2bfe38" kindref="member">h_raw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de contenu. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
@@ -1718,7 +1717,7 @@ Créer une redirection HTTP Response::STATUS_302 &quot;code 302&quot; redirigean
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_file(const<sp/>string&amp;<sp/>p_filePath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le header <bold>Content-Type</bold> p_contentType</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">h_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_filePath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de fichier. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_filePath</parametername>
@@ -1762,7 +1761,7 @@ Créer une réponse HTTP (Response::STATUS_200 contenant la donnée p_data et le
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_dir(const<sp/>string&amp;<sp/>p_dirPath,<sp/>const<sp/>string&amp;<sp/>p_contentType,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier pointé par p_filePath et le header <bold>Content-Type</bold> p_contentType. Si p_filePath n&apos;éxiste pas, la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" kindref="member">h_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_dirPath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_contentType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de répertoire. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_dirPath</parametername>
@@ -1806,7 +1805,7 @@ Créer une réponse HTTP Response::STATUS_200 embarquant le contenu du fichier p
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_template_file(const<sp/>Template&amp;<sp/>p_tmpl,<sp/>const<sp/>string&amp;<sp/>const<sp/>uint32_t<sp/>p_requestID,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" kindref="member">xtd::network::http::Server::h_file</ref> mais trouve automatiquement quel fichier de p_dirPath à servir en fonction de la ressource demandé dans p_request.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a28cc571d0a2e9a88abde8da286ad6a77" kindref="member">h_template_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Template&amp;<sp/>p_tmpl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de texte templaté a partir d&apos;un fichier. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_tmpl</parametername>
@@ -1843,7 +1842,7 @@ Comme <ref refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_text(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_1_1network_1_1http_1_1Template" kindref="compound">Template</ref> p_tmpl Response::STATUS_200. Le header <bold>Content-Type</bold> est également donné par p_tmpl. Si la lecture du fichier p_filePath ou si la résolution des variable du template échouent, alors la réponse sera générée par <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref>.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">h_error_text</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de génération de message d&apos;erreur en texte. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_message</parametername>
@@ -1873,7 +1872,7 @@ Génère une réponse HTTP pré-formatée par l&apos;objet <ref refid="classxtd_
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">h_error_html(const<sp/>string&amp;<sp/>p_message,<sp/>const<sp/>uint32_t<sp/>p_requestId,<sp/>const<sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
+Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Content-Type</bold> &quot;text/plain&quot; contenant le message p_message.</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="classxtd_1_1network_1_1http_1_1Server_1ac2b937b63242559f3a2dd45627f31de3" kindref="member">h_error_html</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>p_requestId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request,<sp/>Response&amp;<sp/>p_response);<sp/></highlight></codeline>
 </programlisting> <ref refid="classxtd_1_1network_1_1http_1_1Server_1_1Handler" kindref="compound">Handler</ref> de génération de message d&apos;erreur en html. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_message</parametername>
@@ -1903,60 +1902,60 @@ Génère une réponse HTTP d&apos;erreur Response::STATUS_500 de type <bold>Cont
 <para><ref refid="classxtd_1_1network_1_1http_1_1Response" kindref="compound">réponse</ref></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;.</para></listitem></itemizedlist>
+Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" kindref="member">xtd::network::http::Server::h_error_text</ref> mais le méssage généré est de type &quot;text/html&quot;.</para></listitem></itemizedlist>
 </para><para><heading level="2">Les filtres prédéfinis </heading>
 </para><para><itemizedlist>
-<listitem><para><programlisting><codeline><highlight class="normal">static<sp/>bool<sp/>f_none(const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+<listitem><para><programlisting><codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" kindref="member">f_none</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Toujours vrai. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a415d74507fdd7b587653c7b348070f09" kindref="member">f_cgi_exist</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si la requête contient un paramètre GET nommé p_cgiName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_one_cgi_exist(const<sp/>vector<sp/>&lt;string<sp/>&gt;<sp/>&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_req);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a0d97dc94a40126765adcbd3330d2e5a2" kindref="member">f_one_cgi_exist</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector<sp/>&lt;string<sp/>&gt;<sp/>&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_req);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET dont le nom correspond à l&apos;un des éléments du tableau p_cgiName <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a66ddce9c1059014c26110cfc06541baf" kindref="member">f_cgi_equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_cgi_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a0218f1e1bed9e1ae09b6a772a38645ef" kindref="member">f_cgi_match</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_regex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre GET nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_exist(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1aa6ea204c5132836f0c4112aaa331b3a1" kindref="member">f_post_exist</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si la requête contient un paramètre POST nommé p_cgiName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_equal(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1aa9b902188ce45e96f65fc53a20ff06ce" kindref="member">f_post_equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur est égale à p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_post_match(const<sp/>string&amp;<sp/>p_cgiName,<sp/>const<sp/>string&amp;<sp/>p_regex,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1ad343ecdd51be8e982a37cd6fa4ee55ac" kindref="member">f_post_match</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_cgiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_regex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si la requête contient un paramètre POST nommé p_cgiName et dont la valeur match la regexp p_regex <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_exist(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a5994c8b6d70b220ded5ab33a73b3295f" kindref="member">f_header_exist</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> Vrai si p_request contient le header p_headerName. <linebreak/>
 <linebreak/>
  <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_equal(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a3216fa7e19f62235f9988b681f33a06d" kindref="member">f_header_equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si p_request contient le header p_headerName dont la valeur est egale a p_value <linebreak/>
 <linebreak/>
-</para></listitem><listitem><para><programlisting><codeline><highlight class="normal">bool<sp/>f_header_match(const<sp/>string&amp;<sp/>p_headerName,<sp/>const<sp/>string&amp;<sp/>p_value,<sp/>const<sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
+</para></listitem><listitem><para><programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1http_1_1Server_1a60788c00e470ed21293129be27e7115c" kindref="member">f_header_match</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_headerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Request&amp;<sp/>p_request);<sp/></highlight></codeline>
 </programlisting> <linebreak/>
 <linebreak/>
  Vrai si p_request contient le header p_headerName dont la valeur match la regexp p_value <linebreak/>
@@ -1967,28 +1966,22 @@ Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff442
       <node id="333">
         <label>noncopyable</label>
       </node>
-      <node id="331">
-        <label>xtd::network::http::Server&lt; Domain &gt;</label>
-        <link refid="classxtd_1_1network_1_1http_1_1Server"/>
-        <childnode refid="332" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="332">
         <label>xtd::network::base::Server&lt; Domain &gt;</label>
         <link refid="classxtd_1_1network_1_1base_1_1Server"/>
         <childnode refid="333" relation="private-inheritance">
         </childnode>
       </node>
+      <node id="331">
+        <label>xtd::network::http::Server&lt; TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Server"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="336">
         <label>noncopyable</label>
-      </node>
-      <node id="334">
-        <label>xtd::network::http::Server&lt; Domain &gt;</label>
-        <link refid="classxtd_1_1network_1_1http_1_1Server"/>
-        <childnode refid="335" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="337">
         <label>xtd::network::utils::Config</label>
@@ -2006,47 +1999,53 @@ Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff442
           <edgelabel>m_dequeId</edgelabel>
         </childnode>
       </node>
+      <node id="334">
+        <label>xtd::network::http::Server&lt; TDomain &gt;</label>
+        <link refid="classxtd_1_1network_1_1http_1_1Server"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="338">
         <label>xtd::network::utils::deque_id&lt; uint32_t &gt;</label>
         <link refid="classxtd_1_1network_1_1utils_1_1deque__id"/>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/network/src/http/fwd.hh" line="10" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/http/fwd.hh" bodystart="10" bodyend="-1"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/http/fwd.hh" line="10" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/http/fwd.hh" bodystart="10" bodyend="-1"/>
     <listofallmembers>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a5015d684d23b282b09913827daf3c641" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterAccept</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a27f646179758bf4269a43675a8932201" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterReceive</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a2a4360dc57ca76ab49892af974fe4a05" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterSend</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1aa964ab0b0c3ba29238cb2aae49181537" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a6e448be2d0ca71f808bec243cefc4000" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_any</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ab132be70e91c14a18638f93d28078b7b" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_default</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a58cb8102e486dd24780b876561ae6c11" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_dir</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ad3788397b3bd576b156823267d377dcc" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_file</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ac6876f1c054c6ebbe802381692fe05e2" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_public</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a08caadcbcc43f73a1f63364b5dfdbd6b" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_redirect</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ae8903860178fb48bd136fcb52a14de5b" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_xml</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a79c236355d2dc1bf274cecd6aa7be336" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>cnx_sptr_t</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ab6f6b7177c80b0dd9de8aadb096f5305" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>createCnx</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ad6b7cbfe32568cbfdd4a64d86553ca25" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterAccept</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a18bfea1a6ac536d6bb444666b3d2b778" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterReceive</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a7caa5b7aee55d6903c1ff9f0a634d4a2" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>afterSend</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a7281ae7cdda6d7b2334b27e530ce000f" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a8a14495899a4a6a4287597d8c7cc808a" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_any</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ac5121491ca4ae4f9c062e513b1a8e507" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_default</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9c5984fbcd1ea24860660a670250cb36" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_dir</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a20602f089753d9aa01e389730d7c38fa" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_file</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a6bbc192f6029ae9b02ca75c25d5bd3c8" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_public</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a4eed9eec0caf2f786f45e07161512cad" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_redirect</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ac8a629eca201fca1dee43fa6b58be0e7" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>bind_xml</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a11574e8580999b08125023d731f21ff5" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>cnx_sptr_t</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1aa9d2797de229b3958c63ad126f5976df" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>createCnx</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a5852cbdc5fa348c25797962a69d6b115" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>do_receive</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1aa633c11edb82dcfc0b3804f4d57cdc5c" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>do_send</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a94d4867ec740265b62b7505584387240" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a66975ce2c93998c5e5916ee93ac8bf99" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_equal</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a90d357c7890d9ca17d5eeb38a33343f6" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_exist</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ae8122d6287a52f0933af7ab687710768" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_match</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a68192c550d0c9aa2d3341c3b7acbbb55" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_equal</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a7f7478d5e4c12fed3743b42f7d118398" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_exist</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a015a4e5a2f93dc0df58e4c28af2e5e31" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_match</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a862d3098ef04ad7c503ab4e6d04a93cf" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_none</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1aa66d761aaa278f3123aa11d565475281" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_one_cgi_exist</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9f45a8c3b4a6dfa05041cb7190317c4e" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_param_exist</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a5ffcf38b185fc098c12969df414fe732" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_equal</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1adbd0e1d940294921e1d79b7e747d98fb" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_exist</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1af5dbf38109b8345e6dcc7f29dfdd781a" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_match</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ad02807b9fde8d63ebf7c256834c0a6d2" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>filter</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a1d2baa33d7fb89d6d73258e2cb030b3a" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>findHandler</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a49f38021cb4d61f2c3027785f8fa561c" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a66ddce9c1059014c26110cfc06541baf" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_equal</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a415d74507fdd7b587653c7b348070f09" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_exist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a0218f1e1bed9e1ae09b6a772a38645ef" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_cgi_match</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a3216fa7e19f62235f9988b681f33a06d" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_equal</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a5994c8b6d70b220ded5ab33a73b3295f" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_exist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a60788c00e470ed21293129be27e7115c" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_header_match</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a1007cdff295e30f0009f07c70e8bafcc" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_none</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a0d97dc94a40126765adcbd3330d2e5a2" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_one_cgi_exist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a3563c3986e43c84e4130af46dd16103c" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_param_exist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1aa9b902188ce45e96f65fc53a20ff06ce" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_equal</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1aa6ea204c5132836f0c4112aaa331b3a1" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_exist</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ad343ecdd51be8e982a37cd6fa4ee55ac" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>f_post_match</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1af69f7a562a05ed2e83556832d9e077de" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>filter</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ae78e87d0e7de0c0ae2a81bb8a531bccd" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>findHandler</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a3025e5dd8f30f36ebe52568d5c45966b" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getCnxAccepted</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a07a3891c57d59f642d491e1d30e3eaa1" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getCnxRejected</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1aaed2e2436b27ebb7609c66e1002a8c56" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getCnxTotal</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a302af1d5323a8c300f0de7acc27ffade" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getMatchingHandlers</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a895f176f94cc13d68a82b6718bdd20a0" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getMatchingHandlers</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1afdbfe06eac7640eed92c86ea38c089d2" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getNbCurrentThread</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a48e49f13ebcc958cb05737af08c761fc" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getReceivedLastTime</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a798d800b0cda41fb3d6bc9be0cb07036" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getReceiveError</name></member>
@@ -2057,35 +2056,35 @@ Même chose que <ref refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff442
       <member refid="classxtd_1_1network_1_1base_1_1Server_1ad225f1e73ec0fc1ba2a54e3363881aa4" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getSendSuccess</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1af7fb5d4acd247d070d7330686d2d0717" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getSendTimeout</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a4b5d9bb1401c63af63598ab987dc1ea1" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>getSendTotal</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1af55090adba952bd4ddcd6eb467974ac8" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a7b7fb002ef005e7dd7b502c95587f4f2" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_dir</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a0edee265d48418b258fb450426e10905" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_error_html</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ad57a524ff44201af997e2d3557557623" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_error_text</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1ab3525557fb71fe7ffec9bf68b61db107" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_file</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a6c9d2c89310fc7aa9aba0a001dc28728" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_gen</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a39fef0364300dcc2ff7391c821d5310d" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_raw</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a172fc1cfb74fb3ca9930b1285ba80f9d" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_redirect</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a96229b97d8ee79a57d1ab66b7af5b32d" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_template_file</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a0bb8fb6aae3f16cb051c064d26e7d666" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>handler</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1adfa2951649119f630d33ce9083bd989c" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a71d7415223786f5451ef36f62c91782e" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_dir</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ac2b937b63242559f3a2dd45627f31de3" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_error_html</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a39656db929894be1af465c0409c22f35" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_error_text</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a4358a20d2246a84f67d299f385c5bce8" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_file</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ab1be437b8993afc7875d94a6abbc9bad" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_gen</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1afa9cd0274280f47c74fe27ab4e2bfe38" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_raw</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a7019a45601be34deed0a321a6be66cbf" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_redirect</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a28cc571d0a2e9a88abde8da286ad6a77" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>h_template_file</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a91490886cb3c66e12d9d493b76964ad1" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>handler</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a97d54b5ded7a8b02333347a5ffbbd347" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>initialize</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9b2c8bfa6de7b72742422814fbebed2f" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>isUrlBinded</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a5d18cf5a150357494585687ed6b7858b" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>isUrlBinded</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1aabee855541e60adeb2115856d123637b" prot="public" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>join</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a03e4c0a664c471e756217b20b2209980" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_acceptor</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a5465aab6a4cbdaa664eeaf9eef6da5ac" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_conf</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a455755a4dcb1d2331a49c2667369254b" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_defaultHandler</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a00cc0c3777f8f21d373dbab412605751" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_defaultHandler</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a5092eab162e1e793aaeac42368c5c06f" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_dequeId</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a31fbc2589302e054ffcf88be6becb0f2" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_handlerList</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9183ac5822d909767b9d80b570cb2624" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_handlerList</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a2b67486dfc934466300fa48295f94b46" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_ioService</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1ad762843698e4e7b4e70974c2daab0932" prot="protected" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>m_work</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a549144050ca07087e7f90ce32e604574" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>onReceiveError</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9955a1f35bb950e610aac7c9129ebe23" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>onReceiveTimeout</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a9cf39271bfddeaaee6415ece8b686ab5" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>processRequest</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ae52c6feb308e5d06180c614f094a0a6a" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>onReceiveError</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1afb7451b6d2ecba6ef15ca323b228a8ba" prot="private" virt="virtual"><scope>xtd::network::http::Server</scope><name>onReceiveTimeout</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a04ac63f85e8c10522b27287dffb91ac0" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>processRequest</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1Server_1a30e423831ba183c16425422f07f207c5" prot="public" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>run</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a15132ec2b08249a3dc54c9d228620ee5" prot="public" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>Server</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a8f2c0ce0dd0d150d74d3cfd89edb9332" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>start</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a8683467193d33cef96950fad43b8f47c" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>stop</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a81fa6d7d3e4dff53a34b190e5790cdb5" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>TBase</name></member>
-      <member refid="classxtd_1_1network_1_1http_1_1Server_1a85da5acf9ddab934f5cddb330eae9f99" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>~Server</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a8fb4b6d275b0bbbd0895e87a1f7beaa0" prot="public" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>Server</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a5985de0bca1726c449f6bfd06b802070" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>start</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1aead46dedab8830d3b7adff33d0ac548d" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>stop</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1ade82f1473c5447299c924f7ef4e6968a" prot="private" virt="non-virtual"><scope>xtd::network::http::Server</scope><name>TBase</name></member>
+      <member refid="classxtd_1_1network_1_1http_1_1Server_1a4aad3adc6af7be603a62778687c2f20b" prot="public" virt="virtual"><scope>xtd::network::http::Server</scope><name>~Server</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

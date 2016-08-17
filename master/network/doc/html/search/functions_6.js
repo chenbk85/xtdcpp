@@ -30,7 +30,7 @@ var searchData=
   ['getlingertime',['getLingerTime',['../classxtd_1_1network_1_1utils_1_1Config.html#aacb13cdd90746d5684feb00d7cdbefcc',1,'xtd::network::utils::Config']]],
   ['getlist',['getlist',['../classxtd_1_1network_1_1http_1_1cpptempl_1_1Data.html#abb82f257b867cd0da2469cc6c5ecdbae',1,'xtd::network::http::cpptempl::Data::getlist()'],['../classxtd_1_1network_1_1http_1_1cpptempl_1_1DataList.html#a104f3da36e9cc95c9ebb7439febe6eac',1,'xtd::network::http::cpptempl::DataList::getlist()']]],
   ['getmap',['getmap',['../classxtd_1_1network_1_1http_1_1cpptempl_1_1Data.html#a39713cc7cdc05a2375c1c5d4f00772db',1,'xtd::network::http::cpptempl::Data::getmap()'],['../classxtd_1_1network_1_1http_1_1cpptempl_1_1DataMap.html#abfcc73cb22b66dd0be8ad9cd66a75117',1,'xtd::network::http::cpptempl::DataMap::getmap()']]],
-  ['getmatchinghandlers',['getMatchingHandlers',['../classxtd_1_1network_1_1http_1_1Server.html#a302af1d5323a8c300f0de7acc27ffade',1,'xtd::network::http::Server']]],
+  ['getmatchinghandlers',['getMatchingHandlers',['../classxtd_1_1network_1_1http_1_1Server.html#a895f176f94cc13d68a82b6718bdd20a0',1,'xtd::network::http::Server']]],
   ['getmethod',['getMethod',['../classxtd_1_1network_1_1http_1_1Request.html#af06004afe64f465edfb281407b7f3600',1,'xtd::network::http::Request']]],
   ['getnbcurrentthread',['getNbCurrentThread',['../classxtd_1_1network_1_1base_1_1Server.html#afdbfe06eac7640eed92c86ea38c089d2',1,'xtd::network::base::Server']]],
   ['getnodelay',['getNoDelay',['../classxtd_1_1network_1_1utils_1_1Config.html#a499712a4fd63e48be43ff24eb94e72ff',1,'xtd::network::utils::Config']]],

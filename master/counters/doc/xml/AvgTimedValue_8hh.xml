@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="AvgTimedValue_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="AvgTimedValue_8hh" kind="file">
     <compoundname>AvgTimedValue.hh</compoundname>
     <includes local="no">deque</includes>
     <includes local="no">boost/shared_ptr.hpp</includes>
@@ -9,30 +9,11 @@
     <includes refid="Composed_8hh" local="yes">Composed.hh</includes>
     <includes refid="Freq_8hh" local="yes">Freq.hh</includes>
     <includes refid="InstantFreq_8hh" local="yes">InstantFreq.hh</includes>
-    <includedby refid="AvgTimedValue_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</includedby>
-    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="AvgTimedValue_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.cc</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</includedby>
     <incdepgraph>
-      <node id="497">
-        <label>InstantFreq.hh</label>
-        <link refid="InstantFreq_8hh"/>
-        <childnode refid="485" relation="include">
-        </childnode>
-        <childnode refid="488" relation="include">
-        </childnode>
-      </node>
       <node id="491">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="488">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="489" relation="include">
-        </childnode>
-        <childnode refid="490" relation="include">
-        </childnode>
-      </node>
-      <node id="486">
-        <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="490">
         <label>Base.hh</label>
@@ -46,25 +27,8 @@
         <childnode refid="493" relation="include">
         </childnode>
       </node>
-      <node id="492">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="489">
-        <label>string</label>
-      </node>
-      <node id="494">
-        <label>Composed.hh</label>
-        <link refid="Composed_8hh"/>
-        <childnode refid="495" relation="include">
-        </childnode>
-        <childnode refid="490" relation="include">
-        </childnode>
-      </node>
-      <node id="493">
-        <label>Visitor.hh</label>
-        <link refid="Visitor_8hh"/>
-        <childnode refid="487" relation="include">
-        </childnode>
+      <node id="486">
+        <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="496">
         <label>Freq.hh</label>
@@ -74,14 +38,47 @@
         <childnode refid="488" relation="include">
         </childnode>
       </node>
+      <node id="492">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="489">
+        <label>string</label>
+      </node>
+      <node id="497">
+        <label>InstantFreq.hh</label>
+        <link refid="InstantFreq_8hh"/>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
       <node id="495">
         <label>vector</label>
       </node>
       <node id="485">
         <label>deque</label>
       </node>
+      <node id="494">
+        <label>Composed.hh</label>
+        <link refid="Composed_8hh"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>types.hh</label>
+      </node>
       <node id="484">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.hh</label>
         <link refid="AvgTimedValue.hh"/>
         <childnode refid="485" relation="include">
         </childnode>
@@ -98,21 +95,24 @@
         <childnode refid="497" relation="include">
         </childnode>
       </node>
-      <node id="487">
-        <label>types.hh</label>
+      <node id="493">
+        <label>Visitor.hh</label>
+        <link refid="Visitor_8hh"/>
+        <childnode refid="487" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="500">
-        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
-        <link refid="counters_8hh"/>
-      </node>
       <node id="499">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.cc</label>
         <link refid="AvgTimedValue_8cc"/>
       </node>
+      <node id="500">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
       <node id="498">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.hh</label>
         <link refid="AvgTimedValue.hh"/>
         <childnode refid="499" relation="include">
         </childnode>
@@ -129,9 +129,9 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COUNTERS_AVGTIMEDVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_AVGTIMEDVALUE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COUNTERS_AVGTIMEDVALUE_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_AVGTIMEDVALUE_HH_</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libommon</highlight><highlight class="normal"></highlight></codeline>
@@ -142,7 +142,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
@@ -176,15 +176,15 @@
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1430fd5ff91e960a251b0656c2b5c0ca" kindref="member">update_safe</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_greater(t_elem&amp;<sp/>p_elem,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_maxTime);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_greater(<ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a1495aff37899fa6b011aed1b4283db18" kindref="member">t_elem</ref>&amp;<sp/>p_elem,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::posix_time::ptime&amp;<sp/>p_maxTime);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shrink_safe(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute_safe(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thresdhold_safe(uint32_t<sp/>p_timeUs);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>responsetime_safe(uint32_t<sp/>p_timeUs);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="56" refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" refkind="member"><highlight class="normal"><sp/><sp/>t_samples<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>;</highlight></codeline>
-<codeline lineno="57" refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" refkind="member"><highlight class="normal"><sp/><sp/>t_timevect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" kindref="member">m_startTimes</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a71d5e67cb282762c880dc4986e5a8d7c" kindref="member">t_samples</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1af33c7f1f69e37ef49e4195de8f4ac6e2" kindref="member">m_samples</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a901afa3b937939c2132a593d4a801cad" kindref="member">t_timevect</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1aff4e550c326e9e16ad2f9e5ff384ae2e" kindref="member">m_startTimes</ref>;</highlight></codeline>
 <codeline lineno="58" refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;uint32_t&gt;<sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a9f3477cd3eb3fb75f2ba8d75d706eb88" kindref="member">m_reseted</ref>;</highlight></codeline>
 <codeline lineno="59" refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1ad0b3148989210f269416e5af2169278e" kindref="member">m_globalPerf</ref>;</highlight></codeline>
 <codeline lineno="60" refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1counters_1_1InstantFreq" kindref="compound">InstantFreq</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1counters_1_1AvgTimedValue_1a16f6336d72850b29aa10a97d72309ec4" kindref="member">m_instantPerf</ref>;</highlight></codeline>
@@ -201,6 +201,6 @@
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_AVGTIMEDVALUE_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.hh"/>
   </compounddef>
 </doxygen>

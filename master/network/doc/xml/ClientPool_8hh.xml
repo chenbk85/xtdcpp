@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="ClientPool_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ClientPool_8hh" kind="file">
     <compoundname>ClientPool.hh</compoundname>
     <includes local="no">deque</includes>
     <includes local="no">set</includes>
@@ -20,8 +20,42 @@
       <node id="1598">
         <label>boost/shared_ptr.hpp</label>
       </node>
+      <node id="1606">
+        <label>ClientPool.hxx</label>
+      </node>
+      <node id="1603">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1596">
+        <label>string</label>
+      </node>
+      <node id="1600">
+        <label>protocol/bip/Client.hh</label>
+      </node>
+      <node id="1604">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1602">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="1601">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+      </node>
       <node id="1593">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/ClientPool.hh</label>
         <link refid="ClientPool.hh"/>
         <childnode refid="1594" relation="include">
         </childnode>
@@ -46,24 +80,6 @@
         <childnode refid="1608" relation="include">
         </childnode>
       </node>
-      <node id="1606">
-        <label>ClientPool.hxx</label>
-      </node>
-      <node id="1603">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1596">
-        <label>string</label>
-      </node>
-      <node id="1600">
-        <label>protocol/bip/Client.hh</label>
-      </node>
-      <node id="1604">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1602">
-        <label>boost/asio.hpp</label>
-      </node>
       <node id="1608">
         <label>boost/interprocess/detail/atomic.hpp</label>
       </node>
@@ -72,22 +88,6 @@
       </node>
       <node id="1599">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1601">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1594" relation="include">
-        </childnode>
-        <childnode refid="1602" relation="include">
-        </childnode>
-        <childnode refid="1603" relation="include">
-        </childnode>
-        <childnode refid="1598" relation="include">
-        </childnode>
-        <childnode refid="1604" relation="include">
-        </childnode>
-        <childnode refid="1605" relation="include">
-        </childnode>
       </node>
       <node id="1595">
         <label>set</label>
@@ -109,9 +109,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CLIENTPOOL_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -124,7 +124,7 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
@@ -181,21 +181,21 @@
 <codeline lineno="76" refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0432fecefc0e16d58581e71d9796a423" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a0432fecefc0e16d58581e71d9796a423" kindref="member">getRecycleMiss</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_recycleMiss;<sp/>}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/>t_client_sptr<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a9d2d89926ce38e5fbb73ef297945c586" kindref="member">acquire</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kindref="member">t_client_sptr</ref><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a9d2d89926ce38e5fbb73ef297945c586" kindref="member">acquire</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/>status<sp/>send(t_client_sptr&amp;<sp/>p_client,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRequest&amp;<sp/>p_request,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>p_debug);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>status<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a1cba2c44a7995319a0aa2bbb7f823ff4" kindref="member">send</ref>(<ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kindref="member">t_client_sptr</ref>&amp;<sp/>p_client,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TRequest&amp;<sp/>p_request,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/>p_debug);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/>status<sp/>receive(t_client_sptr&amp;<sp/>p_client,<sp/>TResponse&amp;<sp/>p_response,<sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_debug);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>status<sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a5884f162a9ca3dee26768eb1f683b6ec" kindref="member">receive</ref>(<ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kindref="member">t_client_sptr</ref>&amp;<sp/>p_client,<sp/>TResponse&amp;<sp/>p_response,<sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>p_debug);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a390ed6d8afa1812690fbe120bdea5059" kindref="member">release</ref>(t_client_sptr&amp;<sp/>p_client);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1a390ed6d8afa1812690fbe120bdea5059" kindref="member">release</ref>(<ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ac3b215a76aeb124011801824f993a52b" kindref="member">t_client_sptr</ref>&amp;<sp/>p_client);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/>boost::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mutex;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/>t_pool<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_available;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1ClientPool_1ab0b045804570a41e6e491a715d56a469" kindref="member">t_pool</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_available;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>m_hostname;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>m_port;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>m_ttlMs;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" kindref="member">m_conf</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/>m_conf;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/>uint32_t<sp/>m_sendTotal;</highlight></codeline>
@@ -218,6 +218,6 @@
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BIP_CLIENTPOOL_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/ClientPool.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/ClientPool.hh"/>
   </compounddef>
 </doxygen>

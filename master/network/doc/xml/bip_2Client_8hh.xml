@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="bip_2Client_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bip_2Client_8hh" kind="file">
     <compoundname>Client.hh</compoundname>
     <includes refid="base_2Client_8hh" local="yes">base/Client.hh</includes>
-    <includedby refid="bip_2Client_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</includedby>
-    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
+    <includedby refid="bip_2Client_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.cc</includedby>
+    <includedby refid="network_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</includedby>
     <incdepgraph>
       <node id="1178">
         <label>list</label>
@@ -29,6 +29,37 @@
       </node>
       <node id="1173">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1163">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1154">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1151">
+        <label>string</label>
+      </node>
+      <node id="1174">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1176">
+        <label>map</label>
+      </node>
+      <node id="1149">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</label>
+        <link refid="bip/Client.hh"/>
+        <childnode refid="1150" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1167">
         <label>utils/Utils.hh</label>
@@ -60,57 +91,6 @@
         <childnode refid="1173" relation="include">
         </childnode>
       </node>
-      <node id="1163">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1154">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1151">
-        <label>string</label>
-      </node>
-      <node id="1176">
-        <label>map</label>
-      </node>
-      <node id="1150">
-        <label>base/Client.hh</label>
-        <link refid="base_2Client_8hh"/>
-        <childnode refid="1151" relation="include">
-        </childnode>
-        <childnode refid="1152" relation="include">
-        </childnode>
-        <childnode refid="1153" relation="include">
-        </childnode>
-        <childnode refid="1154" relation="include">
-        </childnode>
-        <childnode refid="1155" relation="include">
-        </childnode>
-        <childnode refid="1156" relation="include">
-        </childnode>
-        <childnode refid="1157" relation="include">
-        </childnode>
-        <childnode refid="1158" relation="include">
-        </childnode>
-        <childnode refid="1161" relation="include">
-        </childnode>
-        <childnode refid="1167" relation="include">
-        </childnode>
-        <childnode refid="1174" relation="include">
-        </childnode>
-      </node>
-      <node id="1165">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1174">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1164" relation="include">
-        </childnode>
-        <childnode refid="1161" relation="include">
-        </childnode>
-        <childnode refid="1175" relation="include">
-        </childnode>
-      </node>
       <node id="1158">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -130,14 +110,48 @@
       <node id="1152">
         <label>boost/asio.hpp</label>
       </node>
-      <node id="1149">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
-        <link refid="bip/Client.hh"/>
-        <childnode refid="1150" relation="include">
-        </childnode>
-      </node>
       <node id="1170">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1172">
+        <label>ctime</label>
+      </node>
+      <node id="1180">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1168">
+        <label>vector</label>
+      </node>
+      <node id="1161">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1162" relation="include">
+        </childnode>
+        <childnode refid="1152" relation="include">
+        </childnode>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1156" relation="include">
+        </childnode>
+      </node>
+      <node id="1169">
+        <label>streambuf</label>
+      </node>
+      <node id="1177">
+        <label>utility</label>
+      </node>
+      <node id="1155">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1162">
+        <label>deque</label>
+      </node>
+      <node id="1179">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1175">
         <label>utils/CacheDns.hh</label>
@@ -173,48 +187,8 @@
         <childnode refid="1167" relation="include">
         </childnode>
       </node>
-      <node id="1172">
-        <label>ctime</label>
-      </node>
-      <node id="1180">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1168">
-        <label>vector</label>
-      </node>
-      <node id="1169">
-        <label>streambuf</label>
-      </node>
-      <node id="1177">
-        <label>utility</label>
-      </node>
-      <node id="1155">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1162">
-        <label>deque</label>
-      </node>
-      <node id="1179">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1181">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1161">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1162" relation="include">
-        </childnode>
-        <childnode refid="1152" relation="include">
-        </childnode>
-        <childnode refid="1163" relation="include">
-        </childnode>
-        <childnode refid="1164" relation="include">
-        </childnode>
-        <childnode refid="1165" relation="include">
-        </childnode>
-        <childnode refid="1156" relation="include">
-        </childnode>
       </node>
       <node id="1157">
         <label>logger.hh</label>
@@ -222,23 +196,49 @@
       <node id="1156">
         <label>types.hh</label>
       </node>
+      <node id="1150">
+        <label>base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="1151" relation="include">
+        </childnode>
+        <childnode refid="1152" relation="include">
+        </childnode>
+        <childnode refid="1153" relation="include">
+        </childnode>
+        <childnode refid="1154" relation="include">
+        </childnode>
+        <childnode refid="1155" relation="include">
+        </childnode>
+        <childnode refid="1156" relation="include">
+        </childnode>
+        <childnode refid="1157" relation="include">
+        </childnode>
+        <childnode refid="1158" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1184">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1183">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
+      </node>
       <node id="1182">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</label>
         <link refid="bip/Client.hh"/>
         <childnode refid="1183" relation="include">
         </childnode>
         <childnode refid="1184" relation="include">
         </childnode>
-      </node>
-      <node id="1183">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
-        <link refid="bip_2Client_8cc"/>
-      </node>
-      <node id="1184">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1bip_1_1Client" prot="public">xtd::network::bip::Client</innerclass>
@@ -250,12 +250,12 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CLIENT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CLIENT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BIP_CLIENT_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BIP_CLIENT_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="base_2Client_8hh" kindref="compound">base/Client.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">bip<sp/>{</highlight></codeline>
@@ -273,12 +273,12 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>cnxstatus<sp/>:<sp/>int32_t</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>available<sp/>=<sp/>0,<sp/></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>reserved<sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sent<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>received<sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timeout<sp/><sp/><sp/>=<sp/>5<sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcae4894ca167b08880bfc35862f18575eb" kindref="member">available</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca7f005c3fa691e77c52d3297cc2699072" kindref="member">reserved</ref><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca789183b7e98646c11d5f0544c8f3c4c9" kindref="member">sent</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcac5946eb9400717fd6f40e26e36cdb498" kindref="member">received</ref><sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdcacb5e100e5a9a3e7f6d1fd97512215282" kindref="member">error</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1bip_1_1Client_1a25d3a99b923943b110a3092d37c8cbdca90272dda245ae1fb3cf197e91a8689dc" kindref="member">timeout</ref><sp/><sp/><sp/>=<sp/>5<sp/><sp/></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -330,6 +330,6 @@
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BIPCLIENT_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/bip/Client.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh"/>
   </compounddef>
 </doxygen>

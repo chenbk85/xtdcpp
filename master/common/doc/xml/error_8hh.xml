@@ -1,30 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="error_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="error_8hh" kind="file">
     <compoundname>error.hh</compoundname>
     <includes refid="types_8hh" local="yes">types.hh</includes>
     <includes refid="logger_8hh" local="yes">logger.hh</includes>
-    <includedby refid="ConfParser_8cc" local="yes">/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</includedby>
+    <includedby refid="ConfParser_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</includedby>
     <incdepgraph>
-      <node id="343">
-        <label>types.hh</label>
-        <link refid="types_8hh"/>
-        <childnode refid="344" relation="include">
+      <node id="342">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/error.hh</label>
+        <link refid="error.hh"/>
+        <childnode refid="343" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
-        </childnode>
-        <childnode refid="346" relation="include">
-        </childnode>
-        <childnode refid="347" relation="include">
-        </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
       </node>
       <node id="353">
         <label>stdarg.h</label>
-      </node>
-      <node id="351">
-        <label>boost/format.hpp</label>
       </node>
       <node id="349">
         <label>logger.hh</label>
@@ -46,11 +37,28 @@
         <childnode refid="354" relation="include">
         </childnode>
       </node>
+      <node id="351">
+        <label>boost/format.hpp</label>
+      </node>
       <node id="344">
         <label>string</label>
       </node>
       <node id="345">
         <label>map</label>
+      </node>
+      <node id="343">
+        <label>types.hh</label>
+        <link refid="types_8hh"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
       </node>
       <node id="348">
         <label>fstream</label>
@@ -70,25 +78,17 @@
       <node id="354">
         <label>logger.hxx</label>
       </node>
-      <node id="342">
-        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
-        <link refid="error.hh"/>
-        <childnode refid="343" relation="include">
-        </childnode>
-        <childnode refid="349" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="356">
-        <label>/home/psyco/dev/xtdcpp/common/src/ConfParser.cc</label>
-        <link refid="ConfParser_8cc"/>
-      </node>
       <node id="355">
-        <label>/home/psyco/dev/xtdcpp/common/src/error.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/error.hh</label>
         <link refid="error.hh"/>
         <childnode refid="356" relation="include">
         </childnode>
+      </node>
+      <node id="356">
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/ConfParser.cc</label>
+        <link refid="ConfParser_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1error" prot="public">xtd::error</innerclass>
@@ -98,12 +98,12 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_ERROR_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_ERROR_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_ERROR_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COMMON_ERROR_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="types_8hh" kindref="compound">types.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="logger_8hh" kindref="compound">logger.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8" refid="classxtd_1_1error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1error" kindref="compound">error</ref><sp/>:<sp/>std::exception</highlight></codeline>
 <codeline lineno="9"><highlight class="normal">{</highlight></codeline>
@@ -136,6 +136,6 @@
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COMMON_ERROR_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/error.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/error.hh"/>
   </compounddef>
 </doxygen>

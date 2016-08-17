@@ -1,25 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Freq_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Freq_8hh" kind="file">
     <compoundname>Freq.hh</compoundname>
     <includes local="no">string</includes>
     <includes refid="Value_8hh" local="yes">Value.hh</includes>
-    <includedby refid="AvgTimedValue_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
-    <includedby refid="Cache_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Cache.hh</includedby>
-    <includedby refid="counters_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/counters.hh</includedby>
-    <includedby refid="Perf_8hh" local="yes">/home/psyco/dev/xtdcpp/counters/src/Perf.hh</includedby>
-    <includedby refid="Freq_8cc" local="yes">/home/psyco/dev/xtdcpp/counters/src/Freq.cc</includedby>
+    <includedby refid="AvgTimedValue_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.hh</includedby>
+    <includedby refid="Cache_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/Cache.hh</includedby>
+    <includedby refid="counters_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</includedby>
+    <includedby refid="Perf_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/Perf.hh</includedby>
+    <includedby refid="Freq_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/counters/src/Freq.cc</includedby>
     <incdepgraph>
       <node id="746">
         <label>boost/thread/mutex.hpp</label>
-      </node>
-      <node id="744">
-        <label>Value.hh</label>
-        <link refid="Value_8hh"/>
-        <childnode refid="743" relation="include">
-        </childnode>
-        <childnode refid="745" relation="include">
-        </childnode>
       </node>
       <node id="745">
         <label>Base.hh</label>
@@ -33,11 +25,30 @@
         <childnode refid="749" relation="include">
         </childnode>
       </node>
+      <node id="742">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Freq.hh</label>
+        <link refid="Freq.hh"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+      </node>
       <node id="747">
         <label>boost/noncopyable.hpp</label>
       </node>
       <node id="743">
         <label>string</label>
+      </node>
+      <node id="744">
+        <label>Value.hh</label>
+        <link refid="Value_8hh"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>types.hh</label>
       </node>
       <node id="749">
         <label>Visitor.hh</label>
@@ -45,49 +56,14 @@
         <childnode refid="748" relation="include">
         </childnode>
       </node>
-      <node id="742">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
-        <link refid="Freq.hh"/>
-        <childnode refid="743" relation="include">
-        </childnode>
-        <childnode refid="744" relation="include">
-        </childnode>
-      </node>
-      <node id="748">
-        <label>types.hh</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="757">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.cc</label>
-        <link refid="Perf_8cc"/>
-      </node>
-      <node id="756">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Perf.hh</label>
-        <link refid="Perf_8hh"/>
-        <childnode refid="753" relation="include">
-        </childnode>
-        <childnode refid="757" relation="include">
-        </childnode>
-      </node>
-      <node id="753">
-        <label>/home/psyco/dev/xtdcpp/counters/src/counters.hh</label>
-        <link refid="counters_8hh"/>
-      </node>
-      <node id="755">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.cc</label>
-        <link refid="Cache_8cc"/>
-      </node>
-      <node id="754">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Cache.hh</label>
-        <link refid="Cache_8hh"/>
-        <childnode refid="755" relation="include">
-        </childnode>
-        <childnode refid="753" relation="include">
-        </childnode>
+      <node id="752">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.cc</label>
+        <link refid="AvgTimedValue_8cc"/>
       </node>
       <node id="750">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Freq.hh</label>
         <link refid="Freq.hh"/>
         <childnode refid="751" relation="include">
         </childnode>
@@ -101,19 +77,43 @@
         </childnode>
       </node>
       <node id="758">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Freq.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Freq.cc</label>
         <link refid="Freq_8cc"/>
       </node>
-      <node id="752">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.cc</label>
-        <link refid="AvgTimedValue_8cc"/>
+      <node id="755">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Cache.cc</label>
+        <link refid="Cache_8cc"/>
+      </node>
+      <node id="753">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/counters.hh</label>
+        <link refid="counters_8hh"/>
+      </node>
+      <node id="754">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Cache.hh</label>
+        <link refid="Cache_8hh"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Perf.cc</label>
+        <link refid="Perf_8cc"/>
       </node>
       <node id="751">
-        <label>/home/psyco/dev/xtdcpp/counters/src/AvgTimedValue.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/AvgTimedValue.hh</label>
         <link refid="AvgTimedValue_8hh"/>
         <childnode refid="752" relation="include">
         </childnode>
         <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Perf.hh</label>
+        <link refid="Perf_8hh"/>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -125,14 +125,14 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_FREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_FREQ_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COUNTERS_FREQ_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>COUNTERS_FREQ_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Value_8hh" kindref="compound">Value.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11" refid="classxtd_1_1counters_1_1Freq" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Freq" kindref="compound">Freq</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1counters_1_1Value" kindref="compound">Value</ref>&lt;uint32_t&gt;</highlight></codeline>
@@ -159,6 +159,6 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!COUNTERS_FREQ_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/Freq.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Freq.hh"/>
   </compounddef>
 </doxygen>

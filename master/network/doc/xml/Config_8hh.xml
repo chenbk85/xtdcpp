@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Config_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Config_8hh" kind="file">
     <compoundname>Config.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">cstdint</includes>
@@ -8,13 +8,13 @@
     <includes local="no">boost/lexical_cast.hpp</includes>
     <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
     <includes local="yes">utils/Config.hxx</includes>
-    <includedby refid="base_2Client_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Client.hh</includedby>
-    <includedby refid="base_2Connection_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</includedby>
-    <includedby refid="base_2Server_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Server.hh</includedby>
-    <includedby refid="tools_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/tools.hh</includedby>
-    <includedby refid="network_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/network.hh</includedby>
-    <includedby refid="Config_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Config.cc</includedby>
-    <includedby refid="Utils_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc</includedby>
+    <includedby refid="base_2Client_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</includedby>
+    <includedby refid="base_2Connection_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.hh</includedby>
+    <includedby refid="base_2Server_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh</includedby>
+    <includedby refid="tools_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/bip/tools.hh</includedby>
+    <includedby refid="network_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</includedby>
+    <includedby refid="Config_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/utils/Config.cc</includedby>
+    <includedby refid="Utils_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/utils/Utils.cc</includedby>
     <incdepgraph>
       <node id="1918">
         <label>boost/shared_ptr.hpp</label>
@@ -38,7 +38,7 @@
         <label>boost/function.hpp</label>
       </node>
       <node id="1910">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Config.hh</label>
         <link refid="Config.hh"/>
         <childnode refid="1911" relation="include">
         </childnode>
@@ -56,9 +56,6 @@
       <node id="1913">
         <label>boost/asio.hpp</label>
       </node>
-      <node id="1916">
-        <label>deque</label>
-      </node>
       <node id="1915">
         <label>utils/CommTypeDefs.hh</label>
         <link refid="CommTypeDefs_8hh"/>
@@ -75,79 +72,54 @@
         <childnode refid="1920" relation="include">
         </childnode>
       </node>
+      <node id="1916">
+        <label>deque</label>
+      </node>
       <node id="1920">
         <label>types.hh</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1939">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.cc</label>
-        <link refid="http_2Server_8cc"/>
-      </node>
-      <node id="1934">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.hh</label>
-        <link refid="base_2Server_8hh"/>
-        <childnode refid="1935" relation="include">
+      <node id="1928">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1929" relation="include">
         </childnode>
-        <childnode refid="1936" relation="include">
+        <childnode refid="1930" relation="include">
         </childnode>
-        <childnode refid="1938" relation="include">
+        <childnode refid="1932" relation="include">
         </childnode>
-      </node>
-      <node id="1930">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.hh</label>
-        <link refid="bip_2Connection_8hh"/>
-        <childnode refid="1931" relation="include">
-        </childnode>
-      </node>
-      <node id="1931">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Connection.cc</label>
-        <link refid="bip_2Connection_8cc"/>
       </node>
       <node id="1937">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.cc</label>
         <link refid="bip_2Server_8cc"/>
       </node>
-      <node id="1932">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.hh</label>
-        <link refid="http_2Connection_8hh"/>
-        <childnode refid="1933" relation="include">
-        </childnode>
+      <node id="1940">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/tools.hh</label>
+        <link refid="tools_8hh"/>
       </node>
-      <node id="1942">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Utils.cc</label>
-        <link refid="Utils_8cc"/>
+      <node id="1927">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
       </node>
-      <node id="1933">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Connection.cc</label>
-        <link refid="http_2Connection_8cc"/>
+      <node id="1926">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
       </node>
-      <node id="1923">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
-        <link refid="base_2Client_8hh"/>
-        <childnode refid="1924" relation="include">
-        </childnode>
-        <childnode refid="1925" relation="include">
-        </childnode>
-      </node>
-      <node id="1936">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Server.hh</label>
-        <link refid="bip_2Server_8hh"/>
-        <childnode refid="1937" relation="include">
+      <node id="1925">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</label>
+        <link refid="bip_2Client_8hh"/>
+        <childnode refid="1926" relation="include">
         </childnode>
         <childnode refid="1927" relation="include">
         </childnode>
       </node>
-      <node id="1941">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.cc</label>
-        <link refid="Config_8cc"/>
-      </node>
-      <node id="1924">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.cc</label>
-        <link refid="base_2Client_8cc"/>
+      <node id="1935">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.cc</label>
+        <link refid="base_2Server_8cc"/>
       </node>
       <node id="1922">
-        <label>/home/psyco/dev/xtdcpp/network/src/utils/Config.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Config.hh</label>
         <link refid="Config.hh"/>
         <childnode refid="1923" relation="include">
         </childnode>
@@ -164,51 +136,79 @@
         <childnode refid="1942" relation="include">
         </childnode>
       </node>
-      <node id="1925">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
-        <link refid="bip_2Client_8hh"/>
-        <childnode refid="1926" relation="include">
+      <node id="1934">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Server.hh</label>
+        <link refid="base_2Server_8hh"/>
+        <childnode refid="1935" relation="include">
         </childnode>
-        <childnode refid="1927" relation="include">
+        <childnode refid="1936" relation="include">
         </childnode>
-      </node>
-      <node id="1926">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
-        <link refid="bip_2Client_8cc"/>
-      </node>
-      <node id="1927">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
-      </node>
-      <node id="1928">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="1929" relation="include">
-        </childnode>
-        <childnode refid="1930" relation="include">
-        </childnode>
-        <childnode refid="1932" relation="include">
+        <childnode refid="1938" relation="include">
         </childnode>
       </node>
-      <node id="1929">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
-        <link refid="base_2Connection_8cc"/>
+      <node id="1942">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Utils.cc</label>
+        <link refid="Utils_8cc"/>
+      </node>
+      <node id="1941">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/utils/Config.cc</label>
+        <link refid="Config_8cc"/>
+      </node>
+      <node id="1933">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.cc</label>
+        <link refid="http_2Connection_8cc"/>
       </node>
       <node id="1938">
-        <label>/home/psyco/dev/xtdcpp/network/src/http/Server.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.hh</label>
         <link refid="http_2Server_8hh"/>
         <childnode refid="1939" relation="include">
         </childnode>
         <childnode refid="1927" relation="include">
         </childnode>
       </node>
-      <node id="1935">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Server.cc</label>
-        <link refid="base_2Server_8cc"/>
+      <node id="1939">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Server.cc</label>
+        <link refid="http_2Server_8cc"/>
       </node>
-      <node id="1940">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/tools.hh</label>
-        <link refid="tools_8hh"/>
+      <node id="1932">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/http/Connection.hh</label>
+        <link refid="http_2Connection_8hh"/>
+        <childnode refid="1933" relation="include">
+        </childnode>
+      </node>
+      <node id="1931">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.cc</label>
+        <link refid="bip_2Connection_8cc"/>
+      </node>
+      <node id="1929">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.cc</label>
+        <link refid="base_2Connection_8cc"/>
+      </node>
+      <node id="1923">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</label>
+        <link refid="base_2Client_8hh"/>
+        <childnode refid="1924" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+      </node>
+      <node id="1930">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Connection.hh</label>
+        <link refid="bip_2Connection_8hh"/>
+        <childnode refid="1931" relation="include">
+        </childnode>
+      </node>
+      <node id="1936">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Server.hh</label>
+        <link refid="bip_2Server_8hh"/>
+        <childnode refid="1937" relation="include">
+        </childnode>
+        <childnode refid="1927" relation="include">
+        </childnode>
+      </node>
+      <node id="1924">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.cc</label>
+        <link refid="base_2Client_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1utils_1_1Config" prot="public">xtd::network::utils::Config</innerclass>
@@ -220,16 +220,16 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_UTILS_CONFIG_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_UTILS_CONFIG_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_UTILS_CONFIG_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_UTILS_CONFIG_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/lexical_cast.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="CommTypeDefs_8hh" kindref="compound">utils/CommTypeDefs.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
@@ -239,30 +239,30 @@
 <codeline lineno="17" refid="classxtd_1_1network_1_1utils_1_1Config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">Config</ref></highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">Config</ref>(uint32_t<sp/>p_flags,<sp/>uint32_t<sp/>p_lingerInterval<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" kindref="member">Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a38494ac8cb1f19047196843e3b911f8a" kindref="member">Config</ref>(uint32_t<sp/>p_flags,<sp/>uint32_t<sp/>p_lingerInterval<sp/>=<sp/>0);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>getLinger(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>getLingerTime(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>getNoDelay(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>getReuseAddr(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>getCompress(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref><sp/><sp/><sp/><sp/>getCompressionCodec(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>getConnectTimeoutMs(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>getSendTimeoutMs(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>getReceiveTimeoutMs(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>getDnsCacheTTL(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1ab43d43856cea3b9bf159b38d2d13d82b" kindref="member">getLinger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1aacb13cdd90746d5684feb00d7cdbefcc" kindref="member">getLingerTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a499712a4fd63e48be43ff24eb94e72ff" kindref="member">getNoDelay</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a3914a56737d69dd8879e03ed9b3dc855" kindref="member">getReuseAddr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a89faeb4f4a949ae6fe18b907814987ee" kindref="member">getCompress</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a82a7b809f4d41f4124badef452b9698d" kindref="member">getCompressionCodec</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a2dfd5c85238ef930891d3696e6f6246c" kindref="member">getConnectTimeoutMs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a300d76106dcc338d662894dd04373d91" kindref="member">getSendTimeoutMs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a4484d8887f26682beb5aaa45f801dc57" kindref="member">getReceiveTimeoutMs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a1ef6d7fcee95df86143dfbdd007f64f9" kindref="member">getDnsCacheTTL</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setLinger(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_linger,<sp/>uint32_t<sp/>p_lingerTime);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setNoDelay(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_noDelay);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setReuseAddr(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_reuseAddr);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCompress(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_compress);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCompressionCodec(<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref><sp/>p_compressionCodec);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConnectTimeoutMs(uint32_t<sp/>p_ms);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSendTimeoutMs(uint32_t<sp/>p_ms);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setReceiveTimeoutMs(uint32_t<sp/>p_ms);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDnsCacheTTL(uint32_t<sp/>p_ms);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a1a0e52354981c89c5aaf2b31d4490de2" kindref="member">setLinger</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_linger,<sp/>uint32_t<sp/>p_lingerTime);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a1dbcee3c0f2631269ea3e716a62ce333" kindref="member">setNoDelay</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_noDelay);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a5e78cf9920484c88da5f42bae16b7a1f" kindref="member">setReuseAddr</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_reuseAddr);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1aab76e2174465ead19cc97fa3f5a7f009" kindref="member">setCompress</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p_compress);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a604e4ade1c49d83d204024f28a3d461d" kindref="member">setCompressionCodec</ref>(<ref refid="namespacextd_1_1network_1_1utils_1a3ac1216ad2037b366cc1f9051a978161" kindref="member">codec</ref><sp/>p_compressionCodec);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a5ecd1cd77dd3bd937aa021d3bf0ad860" kindref="member">setConnectTimeoutMs</ref>(uint32_t<sp/>p_ms);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a583358bf6945cbddd657f6db8c31618e" kindref="member">setSendTimeoutMs</ref>(uint32_t<sp/>p_ms);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1ad633fb35c7202550d444e4bf5ae213df" kindref="member">setReceiveTimeoutMs</ref>(uint32_t<sp/>p_ms);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config_1a9a2d3e9de6f26708a4bddc4ba7c31428" kindref="member">setDnsCacheTTL</ref>(uint32_t<sp/>p_ms);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_noDelay;</highlight></codeline>
@@ -283,6 +283,6 @@
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_COMMCONFIGURATION_HXX_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/utils/Config.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/utils/Config.hh"/>
   </compounddef>
 </doxygen>

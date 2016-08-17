@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1counters_1_1Base" kind="class" language="C++" prot="public" abstract="yes">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1counters_1_1Base" kind="class" prot="public" abstract="yes">
     <compoundname>xtd::counters::Base</compoundname>
     <basecompoundref prot="private" virt="non-virtual">noncopyable</basecompoundref>
     <derivedcompoundref refid="classxtd_1_1counters_1_1Value" prot="public" virt="non-virtual">xtd::counters::Value&lt; uint32_t &gt;</derivedcompoundref>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="18" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="18" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="18" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1counters_1_1Base_1a8bb7d024911a4c454c003a18e330d268" prot="public" static="no">
         <type>map&lt; string, string &gt;</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="19" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="19" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="15" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="15" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="15" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="35" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="35" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="35" bodyend="-1"/>
         <referencedby refid="classxtd_1_1counters_1_1Base_1a64ef0c0b30b420384494fd06c535f84d" compoundref="Base_8cc" startline="37" endline="40">getName</referencedby>
         <referencedby refid="classxtd_1_1counters_1_1Composed_1ac2efbce59510b352a2d47b3118e0d02a" compoundref="Composed_8cc" startline="15" endline="20">xtd::counters::Composed::addItem</referencedby>
       </memberdef>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="36" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="36" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="36" bodyend="-1"/>
         <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a9a6818ff8c4f882a1445e9c49ed79e0f" compoundref="AvgTimedValue_8cc" startline="65" endline="81">xtd::counters::AvgTimedValue::stopChrono</referencedby>
         <referencedby refid="classxtd_1_1counters_1_1AvgTimedValue_1a8d3f9dbf787c7c307957038a879fb69a" compoundref="AvgTimedValue_8cc" startline="84" endline="88">xtd::counters::AvgTimedValue::addResponseTime</referencedby>
         <referencedby refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" compoundref="Base_8cc" startline="18" endline="22">visit</referencedby>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="7" bodyend="10"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="22" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="7" bodyend="10"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1counters_1_1Base_1aa2bddc0c397ef1e77eff98969ba3bc7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="12" bodyend="14"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="23" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="12" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="18" bodyend="22"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="26" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="18" bodyend="22"/>
         <references refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" compoundref="Base_8hh" startline="36">m_mutex</references>
         <references refid="classxtd_1_1counters_1_1Base_1a0b8f3bdc6880dc03da750aa815dfdf0b">visit_safe</references>
         <referencedby refid="classxtd_1_1counters_1_1Composed_1a0ef35ed872c3c19d29e2ecc3fa524474" compoundref="Composed_8cc" startline="23" endline="26">xtd::counters::Composed::visit_safe</referencedby>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="25" bodyend="29"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="27" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="25" bodyend="29"/>
         <references refid="classxtd_1_1counters_1_1Base_1aeeac2ffcae02eb6341418d708188a353" compoundref="Base_8hh" startline="36">m_mutex</references>
         <references refid="classxtd_1_1counters_1_1Base_1a8b3d10c9fb2bea1d240f887bbe4008ea" compoundref="Base_8cc" startline="32" endline="34">update_safe</references>
         <referencedby refid="classxtd_1_1counters_1_1Composed_1ab6c13e603340cd00da4edc968d747c4d" compoundref="Composed_8cc" startline="29" endline="32">xtd::counters::Composed::update_safe</referencedby>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="37" bodyend="40"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="28" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="37" bodyend="40"/>
         <references refid="classxtd_1_1counters_1_1Base_1ab07d4a6071bfa8263b24d5992bca6960" compoundref="Base_8hh" startline="35">m_name</references>
       </memberdef>
       </sectiondef>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="31" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.cc" bodystart="32" bodyend="34"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="31" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc" bodystart="32" bodyend="34"/>
         <referencedby refid="classxtd_1_1counters_1_1Base_1a5ba0d495403ba1ca4e1c6c30d8038dad" compoundref="Base_8cc" startline="25" endline="29">update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1counters_1_1Base_1a0b8f3bdc6880dc03da750aa815dfdf0b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="32" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="32" column="1"/>
         <referencedby refid="classxtd_1_1counters_1_1Base_1a0c743f0686dc24bada97c2ed31238c02" compoundref="Base_8cc" startline="18" endline="22">visit</referencedby>
       </memberdef>
       </sectiondef>
@@ -321,7 +321,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/Base.hh" line="14" column="1" bodyfile="/home/psyco/dev/xtdcpp/counters/src/Base.hh" bodystart="13" bodyend="37"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" line="14" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.hh" bodystart="13" bodyend="37"/>
     <listofallmembers>
       <member refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" prot="public" virt="non-virtual"><scope>xtd::counters::Base</scope><name>Base</name></member>
       <member refid="classxtd_1_1counters_1_1Base_1a93e934ad70d5b32b14beed5572450abf" prot="private" virt="non-virtual"><scope>xtd::counters::Base</scope><name>Composed</name></member>

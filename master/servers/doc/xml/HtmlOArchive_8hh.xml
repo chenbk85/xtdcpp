@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="HtmlOArchive_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="HtmlOArchive_8hh" kind="file">
     <compoundname>HtmlOArchive.hh</compoundname>
     <includes local="no">stack</includes>
     <includes local="no">deque</includes>
@@ -12,14 +12,23 @@
     <includes local="no">boost/archive/impl/archive_serializer_map.ipp</includes>
     <includes local="no">types.hh</includes>
     <includes local="yes">app/HtmlOArchive.hxx</includes>
-    <includedby refid="HtmlOArchive_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc</includedby>
-    <includedby refid="HttpServer_8cc" local="yes">/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</includedby>
+    <includedby refid="HtmlOArchive_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.cc</includedby>
+    <includedby refid="HttpServer_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</includedby>
     <incdepgraph>
       <node id="280">
         <label>list</label>
       </node>
+      <node id="281">
+        <label>boost/archive/xml_oarchive.hpp</label>
+      </node>
+      <node id="283">
+        <label>boost/archive/impl/basic_xml_oarchive.ipp</label>
+      </node>
+      <node id="284">
+        <label>boost/archive/detail/archive_serializer_map.hpp</label>
+      </node>
       <node id="277">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.hh</label>
         <link refid="HtmlOArchive.hh"/>
         <childnode refid="278" relation="include">
         </childnode>
@@ -42,15 +51,6 @@
         <childnode refid="287" relation="include">
         </childnode>
       </node>
-      <node id="281">
-        <label>boost/archive/xml_oarchive.hpp</label>
-      </node>
-      <node id="283">
-        <label>boost/archive/impl/basic_xml_oarchive.ipp</label>
-      </node>
-      <node id="284">
-        <label>boost/archive/detail/archive_serializer_map.hpp</label>
-      </node>
       <node id="282">
         <label>boost/archive/impl/xml_oarchive_impl.ipp</label>
       </node>
@@ -72,7 +72,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="288">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.hh</label>
         <link refid="HtmlOArchive.hh"/>
         <childnode refid="289" relation="include">
         </childnode>
@@ -80,11 +80,11 @@
         </childnode>
       </node>
       <node id="289">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.cc</label>
         <link refid="HtmlOArchive_8cc"/>
       </node>
       <node id="290">
-        <label>/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc</label>
         <link refid="HttpServer_8cc"/>
       </node>
     </invincdepgraph>
@@ -102,9 +102,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_APP_HTMLOARCHIVE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_APP_HTMLOARCHIVE_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVERS_APP_HTMLOARCHIVE_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SERVERS_APP_HTMLOARCHIVE_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -116,7 +116,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/archive/impl/archive_serializer_map.ipp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;types.hh&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servers<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">app<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
@@ -283,8 +283,8 @@
 <codeline lineno="179" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::stack&lt;context&gt;<sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" kindref="member">t_info</ref>;</highlight></codeline>
 <codeline lineno="180" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::stack&lt;Object*&gt;<sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" kindref="member">t_objects</ref>;</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" refkind="member"><highlight class="normal"><sp/><sp/>t_info<sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" kindref="member">m_info</ref>;</highlight></codeline>
-<codeline lineno="183" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" refkind="member"><highlight class="normal"><sp/><sp/>t_objects<sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" kindref="member">m_objects</ref>;</highlight></codeline>
+<codeline lineno="182" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1aedb461454d0c255709664fcccc379cf5" kindref="member">t_info</ref><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a03bd854507f8457a3b5b575203108ff7" kindref="member">m_info</ref>;</highlight></codeline>
+<codeline lineno="183" refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a0409a4336819121b7ec0d402ffca9cdf" kindref="member">t_objects</ref><sp/><ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive_1a69e333ff9b2b0743e14976cfa4afd6d2" kindref="member">m_objects</ref>;</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
 <codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_pass;</highlight></codeline>
@@ -301,10 +301,10 @@
 <codeline lineno="197"><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"><highlight class="normal">BOOST_SERIALIZATION_REGISTER_ARCHIVE(<ref refid="classxtd_1_1servers_1_1app_1_1HtmlOArchive" kindref="compound">xtd::servers::app::HtmlOArchive</ref>)</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;app/HtmlOArchive.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;app/HtmlOArchive.hxx&quot;</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!SERVERS_APP_HTMLOARCHIVE_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HtmlOArchive.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HtmlOArchive.hh"/>
   </compounddef>
 </doxygen>

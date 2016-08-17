@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="json__parser_8hpp" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="json__parser_8hpp" kind="file">
     <compoundname>json_parser.hpp</compoundname>
     <includes local="no">boost/property_tree/ptree.hpp</includes>
     <includes local="no">boost/property_tree/detail/json_parser_read.hpp</includes>
@@ -35,12 +35,6 @@
       <node id="364">
         <label>ostream</label>
       </node>
-      <node id="362">
-        <label>boost/type_traits/make_unsigned.hpp</label>
-      </node>
-      <node id="358">
-        <label>boost/property_tree/ptree.hpp</label>
-      </node>
       <node id="360">
         <label>json_parser_write.hpp</label>
         <link refid="json__parser__write_8hpp"/>
@@ -57,11 +51,17 @@
         <childnode refid="365" relation="include">
         </childnode>
       </node>
+      <node id="362">
+        <label>boost/type_traits/make_unsigned.hpp</label>
+      </node>
+      <node id="358">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
       <node id="359">
         <label>boost/property_tree/detail/json_parser_read.hpp</label>
       </node>
       <node id="357">
-        <label>/home/psyco/dev/xtdcpp/common/src/json_parser.hpp</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp</label>
         <link refid="json_parser.hpp"/>
         <childnode refid="358" relation="include">
         </childnode>
@@ -96,7 +96,7 @@
 <para>On a copier le header de boost pour palier a une limitation du writer json qui ne gere que des strings ptree.put&lt;int&gt;(&quot;key&quot;, 5) ptree.put&lt;string&gt;(&quot;key1&quot;, &quot;salut&quot;) write_json(cout, ptree) -&gt; { &quot;key&quot; : &quot;5&quot;, &quot;key1&quot; : &quot;salut&quot; } on coudrait avoir : -&gt; { &quot;key&quot; : 5, &quot;key1&quot; : &quot;salut&quot; } </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" line="27" column="10" bodyfile="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp" bodystart="27" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp" line="27" column="10" bodyfile="/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -114,26 +114,26 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>more<sp/>information,<sp/>see<sp/>www.boost.org</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>on<sp/>empeche<sp/>l&apos;inclusion<sp/>du<sp/>header<sp/>de<sp/>boost</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="json__parser_8hpp_1a021df3c720c2c295aa44478b28940a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_JSON_PARSER_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>on<sp/>empeche<sp/>l&apos;inclusion<sp/>du<sp/>header<sp/>de<sp/>boost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="json__parser_8hpp_1a021df3c720c2c295aa44478b28940a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BOOST_PROPERTY_TREE_DETAIL_JSON_PARSER_WRITE_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/ptree.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/detail/json_parser_read.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wtype-limits&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;<ref refid="json__parser__write_8hpp" kindref="compound">json_parser_write.hpp</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/detail/json_parser_error.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wtype-limits&quot;</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;<ref refid="json__parser__write_8hpp" kindref="compound">json_parser_write.hpp</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>libcommon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/property_tree/detail/json_parser_error.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;locale&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/lexical_cast.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="namespaceboost_1_1property__tree_1_1json__parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref><sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">json_parser</highlight></codeline>
+<codeline lineno="47" refid="namespaceboost_1_1property__tree_1_1json__parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">boost<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">json_parser</highlight></codeline>
 <codeline lineno="48"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
@@ -219,7 +219,7 @@
 <codeline lineno="187"><highlight class="normal"></highlight></codeline>
 <codeline lineno="188"><highlight class="normal">}<sp/>}<sp/>}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceboost" kindref="compound">boost</ref><sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">boost<sp/>{<sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">property_tree</highlight></codeline>
 <codeline lineno="191"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1a7aed126d35d2893e51c49399ba33c51e" kindref="member">json_parser::read_json</ref>;</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceboost_1_1property__tree_1_1json__parser_1ad290247428581132003df8706e3ef9d0" kindref="member">json_parser::write_json</ref>;</highlight></codeline>
@@ -228,6 +228,6 @@
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/common/src/json_parser.hpp"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/common/src/json_parser.hpp"/>
   </compounddef>
 </doxygen>

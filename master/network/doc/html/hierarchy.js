@@ -23,8 +23,8 @@ var hierarchy =
       [ "xtd::network::http::cpptempl::TemplateException", "classxtd_1_1network_1_1http_1_1cpptempl_1_1TemplateException.html", null ]
     ] ],
     [ "function", null, [
-      [ "xtd::network::http::Server< Domain >::Handler::filter", "structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter.html", null ],
-      [ "xtd::network::http::Server< Domain >::Handler::handler", "structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler.html", null ]
+      [ "xtd::network::http::Server< TDomain >::Handler::filter", "structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1filter.html", null ],
+      [ "xtd::network::http::Server< TDomain >::Handler::handler", "structxtd_1_1network_1_1http_1_1Server_1_1Handler_1_1handler.html", null ]
     ] ],
     [ "xtd::network::http::Generator", "classxtd_1_1network_1_1http_1_1Generator.html", [
       [ "xtd::network::http::Json", "classxtd_1_1network_1_1http_1_1Json.html", null ],
@@ -33,7 +33,7 @@ var hierarchy =
         [ "xtd::network::http::XmlTemplate", "classxtd_1_1network_1_1http_1_1XmlTemplate.html", null ]
       ] ]
     ] ],
-    [ "xtd::network::http::Server< Domain >::Handler", "classxtd_1_1network_1_1http_1_1Server_1_1Handler.html", null ],
+    [ "xtd::network::http::Server< TDomain >::Handler", "classxtd_1_1network_1_1http_1_1Server_1_1Handler.html", null ],
     [ "xtd::network::http::hex_to_string", "structxtd_1_1network_1_1http_1_1hex__to__string.html", null ],
     [ "noncopyable", null, [
       [ "xtd::network::base::Client< TDomain >", "classxtd_1_1network_1_1base_1_1Client.html", [
@@ -45,7 +45,7 @@ var hierarchy =
       [ "xtd::network::base::Connection< Domain >", "classxtd_1_1network_1_1base_1_1Connection.html", null ],
       [ "xtd::network::base::Server< Domain >", "classxtd_1_1network_1_1base_1_1Server.html", [
         [ "xtd::network::bip::Server< TReq, TRes, Domain >", "classxtd_1_1network_1_1bip_1_1Server.html", null ],
-        [ "xtd::network::http::Server< Domain >", "classxtd_1_1network_1_1http_1_1Server.html", null ]
+        [ "xtd::network::http::Server< TDomain >", "classxtd_1_1network_1_1http_1_1Server.html", null ]
       ] ],
       [ "xtd::network::base::ThreadManager", "classxtd_1_1network_1_1base_1_1ThreadManager.html", null ],
       [ "xtd::network::utils::CacheDns", "classxtd_1_1network_1_1utils_1_1CacheDns.html", null ],

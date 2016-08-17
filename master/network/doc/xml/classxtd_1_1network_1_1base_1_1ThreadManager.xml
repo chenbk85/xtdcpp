@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1network_1_1base_1_1ThreadManager" kind="class" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1network_1_1base_1_1ThreadManager" kind="class" prot="public">
     <compoundname>xtd::network::base::ThreadManager</compoundname>
     <basecompoundref prot="private" virt="non-virtual">noncopyable</basecompoundref>
     <includes refid="ClientThreadManager_8hh" local="no">ClientThreadManager.hh</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="19" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="19" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="19" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="33" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="33" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="33" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1ThreadManager_1ac15e38254f31bebd7b1de0dea691fbd7" prot="private" static="yes" mutable="no">
         <type>boost::mutex</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="34" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="34" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="34" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1ThreadManager_1a9b76ef125f9c74b33eef82b2f04cd48b" prot="private" static="yes" mutable="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager" kindref="compound">ThreadManager</ref> *</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="35" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="35" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="35" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="36" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="36" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="36" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1ThreadManager_1ad13715176aa2f9fe658154556bd7d1aa" prot="private" static="no" mutable="no">
         <type><ref refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a589ebd86682829a8dc09475c24d303c7" kindref="member">threadMap_t</ref></type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="37" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="37" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="37" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1network_1_1base_1_1ThreadManager_1a81471107647877ca255b642a39a47bd6" prot="private" static="no" mutable="no">
         <type>boost::shared_ptr&lt; boost::thread &gt;</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="38" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="38" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="38" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="22" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="13" bodyend="18"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="22" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="13" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1ThreadManager_1a92f0cafe7ae5fa07036e894b81a3efeb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="23" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="21" bodyend="29"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="23" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="21" bodyend="29"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="26" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="51" bodyend="59"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="26" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="51" bodyend="59"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="27" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="33" bodyend="40"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="27" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="33" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1network_1_1base_1_1ThreadManager_1afe3f6bc402d13a07cad5fc8d09473739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>boost::asio::io_service &amp;</type>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="28" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="44" bodyend="47"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="28" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc" bodystart="44" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -216,7 +216,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" line="17" column="1" bodyfile="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="16" bodyend="39"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" line="17" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.hh" bodystart="16" bodyend="39"/>
     <listofallmembers>
       <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a8401b77963df643d6ca29e5abd7da9ba" prot="public" virt="non-virtual"><scope>xtd::network::base::ThreadManager</scope><name>createThread</name></member>
       <member refid="classxtd_1_1network_1_1base_1_1ThreadManager_1a987b37b09ba82f07f870f4720561c958" prot="public" virt="non-virtual"><scope>xtd::network::base::ThreadManager</scope><name>getInstance</name></member>

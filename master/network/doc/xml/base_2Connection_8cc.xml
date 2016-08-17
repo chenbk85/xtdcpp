@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="base_2Connection_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="base_2Connection_8cc" kind="file">
     <compoundname>Connection.cc</compoundname>
     <includes refid="base_2Connection_8hh" local="yes">base/Connection.hh</includes>
     <includes local="yes">base/Connection.hxx</includes>
@@ -17,6 +17,20 @@
       <node id="1234">
         <label>boost/interprocess/sync/interprocess_semaphore.hpp</label>
       </node>
+      <node id="1206">
+        <label>base/Connection.hh</label>
+        <link refid="base_2Connection_8hh"/>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+      </node>
       <node id="1212">
         <label>boost/lexical_cast.hpp</label>
       </node>
@@ -31,6 +45,31 @@
       </node>
       <node id="1236">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1215">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1225">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1210">
+        <label>string</label>
+      </node>
+      <node id="1219">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>map</label>
+      </node>
+      <node id="1217">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1230">
         <label>utils/Utils.hh</label>
@@ -62,31 +101,6 @@
         <childnode refid="1236" relation="include">
         </childnode>
       </node>
-      <node id="1215">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1225">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1210">
-        <label>string</label>
-      </node>
-      <node id="1222">
-        <label>map</label>
-      </node>
-      <node id="1217">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1219">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1216" relation="include">
-        </childnode>
-        <childnode refid="1213" relation="include">
-        </childnode>
-        <childnode refid="1220" relation="include">
-        </childnode>
-      </node>
       <node id="1209">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -108,6 +122,46 @@
       </node>
       <node id="1229">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1235">
+        <label>ctime</label>
+      </node>
+      <node id="1227">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1221">
+        <label>vector</label>
+      </node>
+      <node id="1213">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>streambuf</label>
+      </node>
+      <node id="1223">
+        <label>utility</label>
+      </node>
+      <node id="1233">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1214">
+        <label>deque</label>
+      </node>
+      <node id="1226">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1220">
         <label>utils/CacheDns.hh</label>
@@ -143,68 +197,14 @@
         <childnode refid="1230" relation="include">
         </childnode>
       </node>
-      <node id="1235">
-        <label>ctime</label>
-      </node>
-      <node id="1227">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1221">
-        <label>vector</label>
-      </node>
-      <node id="1231">
-        <label>streambuf</label>
-      </node>
-      <node id="1223">
-        <label>utility</label>
-      </node>
-      <node id="1233">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1214">
-        <label>deque</label>
-      </node>
-      <node id="1226">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1228">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1213">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1214" relation="include">
-        </childnode>
-        <childnode refid="1207" relation="include">
-        </childnode>
-        <childnode refid="1215" relation="include">
-        </childnode>
-        <childnode refid="1216" relation="include">
-        </childnode>
-        <childnode refid="1217" relation="include">
-        </childnode>
-        <childnode refid="1208" relation="include">
-        </childnode>
-      </node>
-      <node id="1206">
-        <label>base/Connection.hh</label>
-        <link refid="base_2Connection_8hh"/>
-        <childnode refid="1207" relation="include">
-        </childnode>
-        <childnode refid="1208" relation="include">
-        </childnode>
-        <childnode refid="1209" relation="include">
-        </childnode>
-        <childnode refid="1213" relation="include">
-        </childnode>
-        <childnode refid="1219" relation="include">
-        </childnode>
       </node>
       <node id="1208">
         <label>types.hh</label>
       </node>
       <node id="1205">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Connection.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.cc</label>
         <link refid="base/Connection.cc"/>
         <childnode refid="1206" relation="include">
         </childnode>
@@ -223,7 +223,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="base_2Connection_8hh" kindref="compound">base/Connection.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;base/Connection.hxx&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
@@ -277,6 +277,6 @@
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal">}}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/Connection.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Connection.cc"/>
   </compounddef>
 </doxygen>

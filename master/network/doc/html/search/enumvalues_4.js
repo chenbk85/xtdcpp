@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gzip',['gzip',['../namespacextd_1_1network_1_1utils.html#a3ac1216ad2037b366cc1f9051a978161a749cadba7b2ed8d4a2aaa91a9cb1896c',1,'xtd::network::utils']]]
+  ['forbidden',['forbidden',['../namespacextd_1_1network_1_1http.html#a55148922a7d13fe756e53e2ccad4b89ca350f9d68221a0db19024ee40cfc3c7f8',1,'xtd::network::http']]]
 ];

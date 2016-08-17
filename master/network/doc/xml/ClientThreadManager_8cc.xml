@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="ClientThreadManager_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ClientThreadManager_8cc" kind="file">
     <compoundname>ClientThreadManager.cc</compoundname>
     <includes refid="ClientThreadManager_8hh" local="yes">base/ClientThreadManager.hh</includes>
     <incdepgraph>
@@ -19,14 +19,8 @@
       <node id="1187">
         <label>boost/asio.hpp</label>
       </node>
-      <node id="1192">
-        <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1193">
-        <label>types.hh</label>
-      </node>
       <node id="1185">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc</label>
         <link refid="ClientThreadManager.cc"/>
         <childnode refid="1186" relation="include">
         </childnode>
@@ -49,6 +43,12 @@
         <childnode refid="1193" relation="include">
         </childnode>
       </node>
+      <node id="1192">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="1193">
+        <label>types.hh</label>
+      </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
     <innernamespace refid="namespacextd_1_1network">xtd::network</innernamespace>
@@ -61,7 +61,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ClientThreadManager_8hh" kindref="compound">base/ClientThreadManager.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
@@ -120,6 +120,6 @@
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/ClientThreadManager.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/ClientThreadManager.cc"/>
   </compounddef>
 </doxygen>

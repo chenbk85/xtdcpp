@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="base_2Client_8hh" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="base_2Client_8hh" kind="file">
     <compoundname>Client.hh</compoundname>
     <includes local="no">string</includes>
     <includes local="no">boost/asio.hpp</includes>
@@ -13,8 +13,8 @@
     <includes refid="CommTypeDefs_8hh" local="yes">utils/CommTypeDefs.hh</includes>
     <includes refid="Utils_8hh" local="yes">utils/Utils.hh</includes>
     <includes refid="Resolver_8hh" local="yes">utils/Resolver.hh</includes>
-    <includedby refid="base_2Client_8cc" local="yes">/home/psyco/dev/xtdcpp/network/src/base/Client.cc</includedby>
-    <includedby refid="bip_2Client_8hh" local="yes">/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</includedby>
+    <includedby refid="base_2Client_8cc" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.cc</includedby>
+    <includedby refid="bip_2Client_8hh" local="yes">/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</includedby>
     <incdepgraph>
       <node id="1140">
         <label>list</label>
@@ -39,6 +39,31 @@
       </node>
       <node id="1135">
         <label>utils/Utils.hxx</label>
+      </node>
+      <node id="1125">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1116">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1113">
+        <label>string</label>
+      </node>
+      <node id="1136">
+        <label>utils/Resolver.hh</label>
+        <link refid="Resolver_8hh"/>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+      </node>
+      <node id="1138">
+        <label>map</label>
+      </node>
+      <node id="1127">
+        <label>boost/function.hpp</label>
       </node>
       <node id="1129">
         <label>utils/Utils.hh</label>
@@ -70,57 +95,6 @@
         <childnode refid="1135" relation="include">
         </childnode>
       </node>
-      <node id="1125">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="1116">
-        <label>boost/noncopyable.hpp</label>
-      </node>
-      <node id="1113">
-        <label>string</label>
-      </node>
-      <node id="1138">
-        <label>map</label>
-      </node>
-      <node id="1112">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
-        <link refid="base/Client.hh"/>
-        <childnode refid="1113" relation="include">
-        </childnode>
-        <childnode refid="1114" relation="include">
-        </childnode>
-        <childnode refid="1115" relation="include">
-        </childnode>
-        <childnode refid="1116" relation="include">
-        </childnode>
-        <childnode refid="1117" relation="include">
-        </childnode>
-        <childnode refid="1118" relation="include">
-        </childnode>
-        <childnode refid="1119" relation="include">
-        </childnode>
-        <childnode refid="1120" relation="include">
-        </childnode>
-        <childnode refid="1123" relation="include">
-        </childnode>
-        <childnode refid="1129" relation="include">
-        </childnode>
-        <childnode refid="1136" relation="include">
-        </childnode>
-      </node>
-      <node id="1127">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="1136">
-        <label>utils/Resolver.hh</label>
-        <link refid="Resolver_8hh"/>
-        <childnode refid="1126" relation="include">
-        </childnode>
-        <childnode refid="1123" relation="include">
-        </childnode>
-        <childnode refid="1137" relation="include">
-        </childnode>
-      </node>
       <node id="1120">
         <label>utils/Config.hh</label>
         <link refid="Config_8hh"/>
@@ -142,6 +116,46 @@
       </node>
       <node id="1132">
         <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="1134">
+        <label>ctime</label>
+      </node>
+      <node id="1142">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1130">
+        <label>vector</label>
+      </node>
+      <node id="1123">
+        <label>utils/CommTypeDefs.hh</label>
+        <link refid="CommTypeDefs_8hh"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>streambuf</label>
+      </node>
+      <node id="1139">
+        <label>utility</label>
+      </node>
+      <node id="1117">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1124">
+        <label>deque</label>
+      </node>
+      <node id="1141">
+        <label>boost/bind.hpp</label>
       </node>
       <node id="1137">
         <label>utils/CacheDns.hh</label>
@@ -177,48 +191,8 @@
         <childnode refid="1129" relation="include">
         </childnode>
       </node>
-      <node id="1134">
-        <label>ctime</label>
-      </node>
-      <node id="1142">
-        <label>boost/unordered_map.hpp</label>
-      </node>
-      <node id="1130">
-        <label>vector</label>
-      </node>
-      <node id="1131">
-        <label>streambuf</label>
-      </node>
-      <node id="1139">
-        <label>utility</label>
-      </node>
-      <node id="1117">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="1124">
-        <label>deque</label>
-      </node>
-      <node id="1141">
-        <label>boost/bind.hpp</label>
-      </node>
       <node id="1143">
         <label>boost/make_shared.hpp</label>
-      </node>
-      <node id="1123">
-        <label>utils/CommTypeDefs.hh</label>
-        <link refid="CommTypeDefs_8hh"/>
-        <childnode refid="1124" relation="include">
-        </childnode>
-        <childnode refid="1114" relation="include">
-        </childnode>
-        <childnode refid="1125" relation="include">
-        </childnode>
-        <childnode refid="1126" relation="include">
-        </childnode>
-        <childnode refid="1127" relation="include">
-        </childnode>
-        <childnode refid="1118" relation="include">
-        </childnode>
       </node>
       <node id="1119">
         <label>logger.hh</label>
@@ -226,10 +200,52 @@
       <node id="1118">
         <label>types.hh</label>
       </node>
+      <node id="1112">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</label>
+        <link refid="base/Client.hh"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1148">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/network.hh</label>
+        <link refid="network_8hh"/>
+      </node>
+      <node id="1147">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.cc</label>
+        <link refid="bip_2Client_8cc"/>
+      </node>
+      <node id="1146">
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/bip/Client.hh</label>
+        <link refid="bip_2Client_8hh"/>
+        <childnode refid="1147" relation="include">
+        </childnode>
+        <childnode refid="1148" relation="include">
+        </childnode>
+      </node>
       <node id="1144">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.hh</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh</label>
         <link refid="base/Client.hh"/>
         <childnode refid="1145" relation="include">
         </childnode>
@@ -237,24 +253,8 @@
         </childnode>
       </node>
       <node id="1145">
-        <label>/home/psyco/dev/xtdcpp/network/src/base/Client.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.cc</label>
         <link refid="base_2Client_8cc"/>
-      </node>
-      <node id="1146">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.hh</label>
-        <link refid="bip_2Client_8hh"/>
-        <childnode refid="1147" relation="include">
-        </childnode>
-        <childnode refid="1148" relation="include">
-        </childnode>
-      </node>
-      <node id="1147">
-        <label>/home/psyco/dev/xtdcpp/network/src/bip/Client.cc</label>
-        <link refid="bip_2Client_8cc"/>
-      </node>
-      <node id="1148">
-        <label>/home/psyco/dev/xtdcpp/network/src/network.hh</label>
-        <link refid="network_8hh"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classxtd_1_1network_1_1base_1_1Connection" prot="public">xtd::network::base::Connection</innerclass>
@@ -267,9 +267,9 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BASE_CLIENT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BASE_CLIENT_HH_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORK_BASE_CLIENT_HH_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NETWORK_BASE_CLIENT_HH_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/interprocess/sync/interprocess_semaphore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -284,7 +284,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Utils_8hh" kindref="compound">utils/Utils.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="Resolver_8hh" kindref="compound">utils/Resolver.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">network<sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">base<sp/>{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
@@ -322,7 +322,7 @@
 <codeline lineno="56" refid="classxtd_1_1network_1_1base_1_1Client_1a3023500754c12ccfdd200706d9995fd7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a3023500754c12ccfdd200706d9995fd7" kindref="member">getCnxError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_cnxError;<sp/>}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>cnx_sptr_t<sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1ad7964979939106d0c496c4f78a834b0d" kindref="member">createCnx</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_hostname,<sp/>uint32_t<sp/>p_port)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a3cef8310676dac754d630bcc1628ab56" kindref="member">cnx_sptr_t</ref><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1ad7964979939106d0c496c4f78a834b0d" kindref="member">createCnx</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>p_hostname,<sp/>uint32_t<sp/>p_port)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a05ea029f4bfed5d9581ebc606e198336" kindref="member">onConnected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>p_error);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -335,7 +335,7 @@
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="70" refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1utils_1_1Config" kindref="compound">utils::Config</ref><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1addb0f7fb40585d3db038b16f11e466cd" kindref="member">m_conf</ref>;</highlight></codeline>
 <codeline lineno="71" refid="classxtd_1_1network_1_1base_1_1Client_1ae3945e4771a207872ab45b73de2e040f" refkind="member"><highlight class="normal"><sp/><sp/>boost::asio::io_service&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1ae3945e4771a207872ab45b73de2e040f" kindref="member">m_ioService</ref>;</highlight></codeline>
-<codeline lineno="72" refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" refkind="member"><highlight class="normal"><sp/><sp/>cnx_sptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" kindref="member">m_connection</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a3cef8310676dac754d630bcc1628ab56" kindref="member">cnx_sptr_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a9293a756af76e066790a1f389dbedb77" kindref="member">m_connection</ref>;</highlight></codeline>
 <codeline lineno="73" refid="classxtd_1_1network_1_1base_1_1Client_1a99e6d675c7617cd6d8e94793d8af4871" refkind="member"><highlight class="normal"><sp/><sp/>status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxtd_1_1network_1_1base_1_1Client_1a99e6d675c7617cd6d8e94793d8af4871" kindref="member">m_connectStatus</ref>;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -350,6 +350,6 @@
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!NETWORK_BASE_CLIENT_HH_</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/network/src/base/Client.hh"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/network/src/base/Client.hh"/>
   </compounddef>
 </doxygen>

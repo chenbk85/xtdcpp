@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
   <compound refid="structxtd_1_1serializer_1_1mode_1_1bin" kind="struct"><name>xtd::serializer::mode::bin</name>
     <member refid="structxtd_1_1serializer_1_1mode_1_1bin_1a796ef43a002a185030eed66012cf57fb" kind="typedef"><name>saver</name></member>
     <member refid="structxtd_1_1serializer_1_1mode_1_1bin_1a123c17c4e327f82c8c188630e623ba91" kind="typedef"><name>loader</name></member>
@@ -107,6 +107,11 @@
   </compound>
   <compound refid="namespaceboost_1_1archive" kind="namespace"><name>boost::archive</name>
   </compound>
+  <compound refid="namespaceboost_1_1serialization" kind="namespace"><name>boost::serialization</name>
+    <member refid="namespaceboost_1_1serialization_1a04a81556a5eda4b2ee2aea89fa8bacab" kind="function"><name>save</name></member>
+    <member refid="namespaceboost_1_1serialization_1a8d4be56406f8947db1a1accf28c7e046" kind="function"><name>load</name></member>
+    <member refid="namespaceboost_1_1serialization_1a38423d04b011754810c08d6e599f4789" kind="function"><name>serialize</name></member>
+  </compound>
   <compound refid="namespacextd" kind="namespace"><name>xtd</name>
   </compound>
   <compound refid="namespacextd_1_1serializer" kind="namespace"><name>xtd::serializer</name>
@@ -126,6 +131,8 @@
   </compound>
   <compound refid="Doc_8hh" kind="file"><name>Doc.hh</name>
   </compound>
+  <compound refid="unorderedmap_8hh" kind="file"><name>unorderedmap.hh</name>
+  </compound>
   <compound refid="serializer_8cc" kind="file"><name>serializer.cc</name>
   </compound>
   <compound refid="serializer_8hh" kind="file"><name>serializer.hh</name>
@@ -133,12 +140,12 @@
   </compound>
   <compound refid="serializer__fwd_8hh" kind="file"><name>serializer_fwd.hh</name>
   </compound>
-  <compound refid="dir_a820ce5385aa0d2b39b2f73183758383" kind="dir"><name>/home/psyco/dev/xtdcpp/serializer/src/archives</name>
+  <compound refid="dir_d4253bec889f435d5e21013d1c2973ce" kind="dir"><name>/home/travis/build/psycofdj/xtdcpp/serializer/src/archives</name>
   </compound>
-  <compound refid="dir_fa1324132e98c6fc5d7c9c4615e808b8" kind="dir"><name>/home/psyco/dev/xtdcpp/serializer/src/objects</name>
+  <compound refid="dir_35f6119bc01418a2e7272ab5f45cdbbf" kind="dir"><name>/home/travis/build/psycofdj/xtdcpp/serializer/src/objects</name>
   </compound>
-  <compound refid="dir_c3358e6f366aea159d1cbed6c4abea1b" kind="dir"><name>/home/psyco/dev/xtdcpp/serializer</name>
+  <compound refid="dir_f77cb4ec45b01432a7089acb34f91b0a" kind="dir"><name>/home/travis/build/psycofdj/xtdcpp/serializer</name>
   </compound>
-  <compound refid="dir_fc76706c3b82b5456f6c7bba31749f89" kind="dir"><name>/home/psyco/dev/xtdcpp/serializer/src</name>
+  <compound refid="dir_ed1480b3ce0b874d2ceee6d0b5e7ed44" kind="dir"><name>/home/travis/build/psycofdj/xtdcpp/serializer/src</name>
   </compound>
 </doxygenindex>

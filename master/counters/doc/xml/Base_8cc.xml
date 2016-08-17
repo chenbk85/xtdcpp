@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="Base_8cc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Base_8cc" kind="file">
     <compoundname>Base.cc</compoundname>
     <includes refid="Base_8hh" local="yes">Base.hh</includes>
     <incdepgraph>
@@ -20,7 +20,7 @@
         </childnode>
       </node>
       <node id="534">
-        <label>/home/psyco/dev/xtdcpp/counters/src/Base.cc</label>
+        <label>/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc</label>
         <link refid="Base.cc"/>
         <childnode refid="535" relation="include">
         </childnode>
@@ -28,14 +28,14 @@
       <node id="537">
         <label>boost/noncopyable.hpp</label>
       </node>
+      <node id="538">
+        <label>types.hh</label>
+      </node>
       <node id="539">
         <label>Visitor.hh</label>
         <link refid="Visitor_8hh"/>
         <childnode refid="538" relation="include">
         </childnode>
-      </node>
-      <node id="538">
-        <label>types.hh</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacextd">xtd</innernamespace>
@@ -48,7 +48,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Base_8hh" kindref="compound">Base.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacextd" kindref="compound">xtd</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">xtd<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">counters<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7" refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" refkind="member"><highlight class="normal"><ref refid="classxtd_1_1counters_1_1Base_1ab370a97f3a40bd529e871daedfce60c7" kindref="member">Base::Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>p_name)<sp/>:</highlight></codeline>
@@ -88,6 +88,6 @@
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal">}}</highlight></codeline>
     </programlisting>
-    <location file="/home/psyco/dev/xtdcpp/counters/src/Base.cc"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/counters/src/Base.cc"/>
   </compounddef>
 </doxygen>

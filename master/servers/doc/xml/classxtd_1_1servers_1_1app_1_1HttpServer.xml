@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
-  <compounddef id="classxtd_1_1servers_1_1app_1_1HttpServer" kind="class" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classxtd_1_1servers_1_1app_1_1HttpServer" kind="class" prot="public">
     <compoundname>xtd::servers::app::HttpServer</compoundname>
     <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">network::http::Server&lt; network::utils::af_inet &gt;</basecompoundref>
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="64" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="64" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="64" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac5263de622bb17c3ec921a00266ea053" prot="protected" static="no">
         <type>network::http::Server&lt; network::utils::af_inet &gt;</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="65" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="65" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" prot="protected" static="no">
         <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1servers_1_1param_1_1Handler" kindref="compound">servers::param::Handler</ref> &gt;</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="66" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="66" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="66" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ace89439f838ede46ec55a6ec7cc27888" prot="protected" static="no">
         <type>counters::CounterManager::t_sptr</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="67" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="67" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="67" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" prot="protected" static="no">
         <type>boost::shared_ptr&lt; <ref refid="classxtd_1_1servers_1_1app_1_1Action" kindref="compound">Action</ref> &gt;</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="68" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="68" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="68" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac61c9a29bf64b94cb8ca4c766f8309c3" prot="protected" static="no">
         <type>map&lt; string, <ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a1353c6e9098dd5f8a74d978a7049ad27" kindref="member">t_action</ref> &gt;</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="69" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="69" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="69" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aaef467afe1f5191f38758088615c09c0" prot="protected" static="no">
         <type>boost::shared_ptr&lt; counters::Base &gt;</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="70" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="70" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="70" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="70" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="73" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="73" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="73" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abdc02697ffc7fa9f8f88252101b5d1b9" prot="public" static="yes" mutable="no">
         <type>const uint32_t</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="74" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="74" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="74" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad21741083478d35b92ba0b1da7499950" prot="public" static="yes" mutable="no">
         <type>const uint32_t</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="75" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="75" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="75" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a38433b4c2d0bba9f0bae81266b42bac1" prot="public" static="yes" mutable="no">
         <type>const char</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="76" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="76" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="76" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="76" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
       </memberdef>
       </sectiondef>
@@ -171,9 +171,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="173" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="173" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="173" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="173" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
-        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" prot="protected" static="no" mutable="no">
         <type>string</type>
@@ -186,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="174" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="174" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="174" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="174" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
       </memberdef>
@@ -201,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="175" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="175" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="175" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="175" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
@@ -219,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="176" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="176" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="176" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="176" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
       </memberdef>
@@ -234,9 +233,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="177" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="177" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="177" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="177" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" compoundref="HttpServer_8cc" startline="312" endline="315">modeProbeActivation</referencedby>
-        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -249,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="178" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="178" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="178" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="178" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" prot="protected" static="no" mutable="no">
@@ -263,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="181" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="181" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="181" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="181" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
       </memberdef>
@@ -278,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="182" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="182" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="182" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="182" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
@@ -293,13 +291,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="183" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="183" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="183" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="183" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" compoundref="HttpServer_8cc" startline="82" endline="88">start</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" compoundref="HttpServer_8cc" startline="91" endline="96">stop</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" compoundref="HttpServer_8cc" startline="206" endline="211">addProbe</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
-        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" prot="protected" static="no" mutable="no">
         <type>counters::Value32::t_sptr</type>
@@ -312,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="184" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="184" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="184" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="184" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
@@ -327,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="185" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="185" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="185" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="185" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
@@ -342,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="186" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="186" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="186" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="186" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
@@ -357,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="189" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="189" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="189" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="189" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
       </memberdef>
@@ -372,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="190" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="190" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="190" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="190" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a381e3736b9c8fa89891da50b29ad8ae9" compoundref="HttpServer_8cc" startline="193" endline="203">checkOptions</referencedby>
@@ -389,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="191" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="191" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="191" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="191" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
@@ -405,10 +402,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="192" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="192" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="192" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="192" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
-        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" prot="protected" static="no" mutable="no">
         <type><ref refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a9704ed4f011ec3a7424da2f2229477e1" kindref="member">t_param_handler</ref></type>
@@ -421,10 +417,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="195" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="195" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="195" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="195" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6fac87218bf8d69ef6baeb56819411f9" compoundref="HttpServer_8cc" startline="82" endline="88">start</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
-        <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1affc53261a7c36873c73a06013d6b1fe6" compoundref="HttpServer_8cc" startline="435" endline="438">getSnmpPath</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ad12543f950574ac8a0d813cb4ceeff4c" prot="protected" static="no" mutable="no">
         <type>string</type>
@@ -437,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="196" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="196" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="196" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="196" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
@@ -452,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="197" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="197" bodyend="-1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="197" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="197" bodyend="-1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" compoundref="HttpServer_8cc" startline="318" endline="326">bind_action</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</referencedby>
       </memberdef>
@@ -474,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="79" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="38" bodyend="68"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="79" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="38" bodyend="68"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" compoundref="HttpServer_8hh" startline="174">m_configPath</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
@@ -497,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="80" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="70" bodyend="72"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="80" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="70" bodyend="72"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -515,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="83" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="423" bodyend="426"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="83" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="423" bodyend="426"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</referencedby>
       </memberdef>
@@ -533,7 +528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="84" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="429" bodyend="432"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="84" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="429" bodyend="432"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" compoundref="HttpServer_8cc" startline="423" endline="426">getCommonConfKey</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
@@ -552,13 +547,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="85" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="435" bodyend="438"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="85" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="435" bodyend="438"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a555ce1e115602fda522a5c0a675dace3" compoundref="HttpServer_8hh" startline="181">m_snmpPath</references>
-        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1abfb9586e84fa5149da3226eeea39980f" compoundref="HttpServer_8hh" startline="192">m_httpConfigPath</references>
-        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
-        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" compoundref="HttpServer_8hh" startline="195">m_params</references>
-        <references refid="classxtd_1_1servers_1_1param_1_1JsonVisitor_1a764dbadc7c9d477c5bda84ed901de3a1" compoundref="Visitor_8cc" startline="22" endline="25">xtd::servers::param::JsonVisitor::writeExtraInfo</references>
-        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ada282c895467a8d2fcaee543560958dc" compoundref="HttpServer_8hh" startline="173">m_config</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0924e53b6bc9de7563c33690d619ce9d" compoundref="HttpServer_8cc" startline="240" endline="270">initialize</referencedby>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -575,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="86" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="75" bodyend="79"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="86" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="75" bodyend="79"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a7fdba08e0fa4dc9bbec30a989ccf4049" compoundref="HttpServer_8cc" startline="91" endline="96">stop</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
       </memberdef>
@@ -594,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="87" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="273" bodyend="297"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="87" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="273" bodyend="297"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af1676247676379d0c12008bdcd5b7e17" compoundref="HttpServer_8hh" startline="189">m_httpHost</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
@@ -618,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="88" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="91" bodyend="96"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="88" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="91" bodyend="96"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a022eecad815296f1d27b19a4b6cca908" compoundref="HttpServer_8cc" startline="75" endline="79">handleTERM</referencedby>
       </memberdef>
@@ -637,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="89" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="82" bodyend="88"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="89" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="82" bodyend="88"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ac4f9a2c40867f4f2ba8d30ec9876e51e" compoundref="HttpServer_8hh" startline="195">m_params</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b52e7d39c3b1937a4802bf7c3d159f8" compoundref="HttpServer_8cc" startline="273" endline="297">process</referencedby>
@@ -657,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="90" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="99" bodyend="182"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="90" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="99" bodyend="182"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3c838a2599ff485454ca19790ae0529c" compoundref="HttpServer_8cc" startline="423" endline="426">getCommonConfKey</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa07526617267875dd907e29b99711ab6" compoundref="HttpServer_8hh" startline="174">m_configPath</references>
@@ -688,7 +678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="91" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="185" bodyend="189"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="91" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="185" bodyend="189"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b8fdc59d125cae41a833da5daf16d97" compoundref="HttpServer_8cc" startline="429" endline="432">getSpecificConfKey</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd">readConf</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
@@ -709,7 +699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="92" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="193" bodyend="203"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="92" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="193" bodyend="203"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a75ed3bcfa895cad365f6bf0955efcf9e" compoundref="HttpServer_8hh" startline="190">m_httpPort</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1adcaefcc003e9503dbe6ebea90bf70ef7" compoundref="HttpServer_8hh" startline="176">m_timeoutMs</references>
@@ -729,7 +719,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="93" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="240" bodyend="270"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="93" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="240" bodyend="270"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" compoundref="HttpServer_8hh" startline="184">m_ramCounter</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afc57d4c9bc2f9a47440e3c54eb92b1fb" compoundref="HttpServer_8hh" startline="185">m_perfCounter</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f0812d24ccfd55e943f3144c672b473" compoundref="HttpServer_8hh" startline="175">m_nbThread</references>
@@ -756,7 +746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="94" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="215" bodyend="236"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="94" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="215" bodyend="236"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1ae8b1e546b8f464e0a18c6b737ed82df8" compoundref="HttpServer_8hh" startline="178">m_isDebug</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" compoundref="HttpServer_8cc" startline="206" endline="211">addProbe</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0758f122d486bc068d796d4ce550e99f" compoundref="HttpServer_8hh" startline="184">m_ramCounter</references>
@@ -777,7 +767,7 @@
 <para>gestion vip hebex desactivation du service http et reponse 503 mode probe. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="96" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="306" bodyend="310"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="96" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="306" bodyend="310"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a4b2a904b65659aa4e5d67d1ad4a02603" compoundref="HttpServer_8cc" startline="312" endline="315">modeProbeActivation</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ebbe8af998a3e3738e41a72375ffea9" compoundref="HttpServer_8cc" startline="38" endline="68">HttpServer</referencedby>
       </memberdef>
@@ -795,7 +785,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="97" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="312" bodyend="315"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="97" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="312" bodyend="315"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" compoundref="HttpServer_8hh" startline="177">m_isModeProbe</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6c6bb7c70218f171e327ed2197d0f6dc" compoundref="HttpServer_8cc" startline="306" endline="310">handleUSR2</referencedby>
       </memberdef>
@@ -814,7 +804,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="98" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="98" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -839,7 +829,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="100" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="318" bodyend="326"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="100" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="318" bodyend="326"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" compoundref="HttpServer_8hh" startline="197">m_actions</references>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a89a77d0dd8391a54b9560d2a32ab5ec6" compoundref="HttpServer_8cc" startline="329" endline="376">h_runAction</references>
       </memberdef>
@@ -874,9 +864,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="104" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="329" bodyend="376"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="104" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="329" bodyend="376"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1afa5363da18a3aa9de651e53e409116e9" compoundref="HttpServer_8hh" startline="197">m_actions</references>
-        <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a3ae2e35fc931b303e244b01e277cb8dd" compoundref="HttpServer_8hh" startline="177">m_isModeProbe</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a981ab09b5f746a0cb7372816aede1115" compoundref="HttpServer_8cc" startline="318" endline="326">bind_action</referencedby>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -898,7 +887,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="111" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="206" bodyend="211"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="111" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="206" bodyend="211"/>
         <references refid="classxtd_1_1servers_1_1app_1_1HttpServer_1aa26ddc958ab07774e8ba45e89dc0011b" compoundref="HttpServer_8hh" startline="183">m_prober</references>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a66c2a3b5bca8390d96b35daebfccabf3" compoundref="HttpServer_8cc" startline="215" endline="236">defineProbes</referencedby>
       </memberdef>
@@ -930,7 +919,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="115" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="115" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1ae1cffd988b56081fba6f124e9f0743fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -960,7 +949,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="120" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="120" column="1"/>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1af4baf6c6e7397177a20122e1f1101f9f" compoundref="HttpServer_8cc" startline="99" endline="182">parseConfig</referencedby>
         <referencedby refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a2b65812ed2afa6629f115b76c4ab6e41" compoundref="HttpServer_8cc" startline="185" endline="189">parseHttpPort</referencedby>
       </memberdef>
@@ -988,7 +977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="125" column="1"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="125" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1011,7 +1000,7 @@
 <para>process_mem_usage(double &amp;, double &amp;) - takes two doubles by reference, attempts to read the system-dependent data for a process&apos; virtual memory size and resident set size, and return the results in KB.</para><para>On failure, returns 0.0, 0.0 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="136" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="710" bodyend="742"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="136" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="710" bodyend="742"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a34edc125aba91eca5cd8483a6c3f9532" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1036,7 +1025,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="138" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="380" bodyend="398"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="138" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="380" bodyend="398"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a899871bd03f884d5cf2e639a614e3cbf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1065,7 +1054,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="142" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="489" bodyend="524"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="142" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="489" bodyend="524"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa24805a306ebd89203c5704cef2123d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1090,7 +1079,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="146" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="442" bodyend="479"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="146" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="442" bodyend="479"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa564d54e5f78c0dc6d16ec7dc4b6c8a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1119,7 +1108,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="150" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="533" bodyend="586"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="150" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="533" bodyend="586"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1aa080d8e425c895bea7e989c214c18440" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1144,7 +1133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="154" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="589" bodyend="653"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="154" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="589" bodyend="653"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a1450d81f9f62d9e10d2c360252b7a32c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1169,7 +1158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="159" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="656" bodyend="669"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="159" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="656" bodyend="669"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1abcb898bb9cc6817fba1dd0dc950b908b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1194,7 +1183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="163" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="673" bodyend="707"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="163" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="673" bodyend="707"/>
       </memberdef>
       <memberdef kind="function" id="classxtd_1_1servers_1_1app_1_1HttpServer_1a2f4454e3d32ab7ab793a59987977f20b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>status</type>
@@ -1219,7 +1208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="167" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.cc" bodystart="401" bodyend="417"/>
+        <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="167" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.cc" bodystart="401" bodyend="417"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1264,7 +1253,7 @@
         <label>network::http::Server&lt; network::utils::af_inet &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" line="50" column="1" bodyfile="/home/psyco/dev/xtdcpp/servers/src/app/HttpServer.hh" bodystart="47" bodyend="198"/>
+    <location file="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" line="50" column="1" bodyfile="/home/travis/build/psycofdj/xtdcpp/servers/src/app/HttpServer.hh" bodystart="47" bodyend="198"/>
     <listofallmembers>
       <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a0ff20a40a0e31dbb1e82be87be0e255f" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>addProbe</name></member>
       <member refid="classxtd_1_1servers_1_1app_1_1HttpServer_1a6126daf3a088048921d4e809231c3716" prot="protected" virt="non-virtual"><scope>xtd::servers::app::HttpServer</scope><name>addProbe</name></member>
